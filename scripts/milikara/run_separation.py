@@ -1,4 +1,4 @@
-"""Repeat fixed/automatic readings over six separators and two persistence paths."""
+"""Repeat confirmed human readings over six separators and two persistence paths."""
 from common import *
 product_imports()
 from concat import make_map,concatenate,map_unit
@@ -16,7 +16,7 @@ args=parser.parse_args()
 torch.set_num_threads(8)
 backend=NextFireBackend(NextFireConfig(ROOT/'.models/nextfire','cuda'))
 vocab=read(ROOT/'.models/nextfire/vocab.json')
-targets={kind:{s['id']:s for s in read(OUT/(kind+'.json'))} for kind in ('confirmed-targets','auto-readings')}
+targets={kind:{s['id']:s for s in read(OUT/(kind+'.json'))} for kind in ('confirmed-targets',)}
 refs={s['id']:s for s in read(ROOT/'results/timing/reference.json')}
 destination=ROOT/'results/separation-alignment'
 for name in args.models:

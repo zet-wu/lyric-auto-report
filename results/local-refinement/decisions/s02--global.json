@@ -1,0 +1,2008 @@
+{
+  "song": "s02",
+  "baseline": "global",
+  "decisions": [
+    {
+      "line": 0,
+      "line_id": "s02-n400",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9693663628973598,
+        "confidence": 0.484246025301723,
+        "longest": 1.6400000000000148,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        129.3,
+        134.4
+      ],
+      "cached_window": {
+        "seconds": 0.0003801174461841583,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9693663628973602,
+          "confidence": 0.484246025301723,
+          "longest": 1.6400000000000148,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 129.62,
+            "end": 129.8,
+            "score": 0.4588744342327118
+          },
+          {
+            "text": "na",
+            "start": 129.8,
+            "end": 129.94,
+            "score": 0.2088128759060055
+          },
+          {
+            "text": "yu",
+            "start": 129.94,
+            "end": 130.34,
+            "score": 0.488662451505661
+          },
+          {
+            "text": "ki",
+            "start": 130.34,
+            "end": 130.60000000000002,
+            "score": 0.46115028858184814
+          },
+          {
+            "text": "ga",
+            "start": 130.62,
+            "end": 130.92000000000002,
+            "score": 0.39383192360401154
+          },
+          {
+            "text": "so",
+            "start": 131.0,
+            "end": 131.68,
+            "score": 0.592370480298996
+          },
+          {
+            "text": "ra",
+            "start": 131.68,
+            "end": 131.94,
+            "score": 0.44049781560897827
+          },
+          {
+            "text": "ka",
+            "start": 132.06,
+            "end": 132.44,
+            "score": 0.5587510168552399
+          },
+          {
+            "text": "ra",
+            "start": 132.44,
+            "end": 134.08,
+            "score": 0.755262941122055
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01508386805653572,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9976900417487875,
+          "confidence": 0.4678534643931521,
+          "longest": 1.579999999999984,
+          "cross_gap": false
+        },
+        "max_shift": 0.12000000000000455,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 129.62,
+            "end": 129.9,
+            "score": 0.4178076237440109
+          },
+          {
+            "text": "na",
+            "start": 129.9,
+            "end": 129.94,
+            "score": 0.09748918749392033
+          },
+          {
+            "text": "yu",
+            "start": 129.94,
+            "end": 130.3,
+            "score": 0.46421757340431213
+          },
+          {
+            "text": "ki",
+            "start": 130.3,
+            "end": 130.60000000000002,
+            "score": 0.4496576339006424
+          },
+          {
+            "text": "ga",
+            "start": 130.60000000000002,
+            "end": 130.92000000000002,
+            "score": 0.399784192442894
+          },
+          {
+            "text": "so",
+            "start": 130.92000000000002,
+            "end": 131.66000000000003,
+            "score": 0.6290550231933594
+          },
+          {
+            "text": "ra",
+            "start": 131.66000000000003,
+            "end": 131.96,
+            "score": 0.4684702605009079
+          },
+          {
+            "text": "ka",
+            "start": 132.02,
+            "end": 132.38000000000002,
+            "score": 0.5290743112564087
+          },
+          {
+            "text": "ra",
+            "start": 132.38000000000002,
+            "end": 133.96,
+            "score": 0.7551253736019135
+          }
+        ]
+      }
+    },
+    {
+      "line": 1,
+      "line_id": "s02-n420",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9707385346483033,
+        "confidence": 0.5299482367656849,
+        "longest": 1.700000000000017,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        134.88,
+        140.18
+      ],
+      "cached_window": {
+        "seconds": 0.0003801882266998291,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9707385346483098,
+          "confidence": 0.5299482367656849,
+          "longest": 1.6999999999999886,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "ya",
+            "start": 135.18,
+            "end": 135.4,
+            "score": 0.4508369117975235
+          },
+          {
+            "text": "sa",
+            "start": 135.4,
+            "end": 135.51999999999998,
+            "score": 0.4851144999265671
+          },
+          {
+            "text": "shi",
+            "start": 135.51999999999998,
+            "end": 135.92,
+            "score": 0.4784635504086812
+          },
+          {
+            "text": "ku",
+            "start": 135.92,
+            "end": 136.38,
+            "score": 0.5314300209283829
+          },
+          {
+            "text": "o",
+            "start": 136.88,
+            "end": 137.29999999999998,
+            "score": 0.6512547135353088
+          },
+          {
+            "text": "ri",
+            "start": 137.29999999999998,
+            "end": 137.57999999999998,
+            "score": 0.48050840198993683
+          },
+          {
+            "text": "te",
+            "start": 137.57999999999998,
+            "end": 137.94,
+            "score": 0.4468134194612503
+          },
+          {
+            "text": "ku",
+            "start": 137.94,
+            "end": 138.16,
+            "score": 0.49502702057361603
+          },
+          {
+            "text": "ru",
+            "start": 138.16,
+            "end": 139.85999999999999,
+            "score": 0.7500855922698975
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01495649479329586,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 0.9859655573941302,
+          "confidence": 0.6337643817619042,
+          "longest": 1.5999999999999943,
+          "cross_gap": false
+        },
+        "max_shift": 0.36000000000001364,
+        "predictions": [
+          {
+            "text": "ya",
+            "start": 135.22,
+            "end": 135.42,
+            "score": 0.5558727979660034
+          },
+          {
+            "text": "sa",
+            "start": 135.42,
+            "end": 135.56,
+            "score": 0.5288337767124176
+          },
+          {
+            "text": "shi",
+            "start": 135.56,
+            "end": 135.96,
+            "score": 0.6426762541135153
+          },
+          {
+            "text": "ku",
+            "start": 135.96,
+            "end": 136.74,
+            "score": 0.6957038640975952
+          },
+          {
+            "text": "o",
+            "start": 136.88,
+            "end": 137.34,
+            "score": 0.7169623374938965
+          },
+          {
+            "text": "ri",
+            "start": 137.34,
+            "end": 137.66,
+            "score": 0.6408618688583374
+          },
+          {
+            "text": "te",
+            "start": 137.66,
+            "end": 137.98,
+            "score": 0.5678688585758209
+          },
+          {
+            "text": "ku",
+            "start": 137.98,
+            "end": 138.2,
+            "score": 0.5425329804420471
+          },
+          {
+            "text": "ru",
+            "start": 138.2,
+            "end": 139.79999999999998,
+            "score": 0.8125666975975037
+          }
+        ]
+      }
+    },
+    {
+      "line": 2,
+      "line_id": "s02-n437",
+      "reasons": [],
+      "quality": {
+        "coverage": 0.9367665194732898,
+        "confidence": 0.701315751671791,
+        "longest": 1.0600000000000023,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 3,
+      "line_id": "s02-n458",
+      "reasons": [],
+      "quality": {
+        "coverage": 0.984529900114315,
+        "confidence": 0.6903053777558463,
+        "longest": 1.6599999999999966,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 4,
+      "line_id": "s02-n473",
+      "reasons": [],
+      "quality": {
+        "coverage": 0.9961778015427375,
+        "confidence": 0.6514677405357361,
+        "longest": 1.7800000000000011,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 5,
+      "line_id": "s02-n487",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.646974422796457,
+        "longest": 1.8799999999999955,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 6,
+      "line_id": "s02-n504",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.694758007923762,
+        "longest": 1.4399999999999977,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 7,
+      "line_id": "s02-n522",
+      "reasons": [],
+      "quality": {
+        "coverage": 0.9747596272861377,
+        "confidence": 0.6968247476551268,
+        "longest": 1.5200000000000102,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 8,
+      "line_id": "s02-n542",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6382374730375078,
+        "longest": 0.5999999999999943,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 9,
+      "line_id": "s02-n553",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6630954811206231,
+        "longest": 1.0600000000000023,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 10,
+      "line_id": "s02-n577",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.13316721992887323,
+        "longest": 0.8799999999999955,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        184.94,
+        187.4
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 11,
+      "line_id": "s02-n584",
+      "reasons": [
+        "duration"
+      ],
+      "quality": {
+        "coverage": 0.9890407858600893,
+        "confidence": 0.6334028547043326,
+        "longest": 3.539999999999992,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        186.94,
+        199.44
+      ],
+      "cached_window": {
+        "seconds": 0.0007705632597208023,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9890407858600893,
+          "confidence": 0.6334028547043326,
+          "longest": 3.539999999999992,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "wa",
+            "start": 187.24,
+            "end": 187.57999999999998,
+            "score": 0.6388449966907501
+          },
+          {
+            "text": "ta",
+            "start": 187.57999999999998,
+            "end": 187.84,
+            "score": 0.6224001348018646
+          },
+          {
+            "text": "shi",
+            "start": 187.84,
+            "end": 188.2,
+            "score": 0.5399149060249329
+          },
+          {
+            "text": "ni",
+            "start": 188.2,
+            "end": 188.6,
+            "score": 0.48939667642116547
+          },
+          {
+            "text": "ha",
+            "start": 188.66,
+            "end": 189.26,
+            "score": 0.20198894944041967
+          },
+          {
+            "text": "ho",
+            "start": 189.94,
+            "end": 190.38,
+            "score": 0.7155210673809052
+          },
+          {
+            "text": "n",
+            "start": 190.38,
+            "end": 190.7,
+            "score": 0.7711655497550964
+          },
+          {
+            "text": "to",
+            "start": 190.7,
+            "end": 191.07999999999998,
+            "score": 0.6698133945465088
+          },
+          {
+            "text": "u",
+            "start": 191.07999999999998,
+            "end": 191.34,
+            "score": 0.5479599237442017
+          },
+          {
+            "text": "ni",
+            "start": 191.34,
+            "end": 192.3,
+            "score": 0.6056187748908997
+          },
+          {
+            "text": "i",
+            "start": 192.78,
+            "end": 193.16,
+            "score": 0.6741065979003906
+          },
+          {
+            "text": "to",
+            "start": 193.16,
+            "end": 193.42,
+            "score": 0.6343777775764465
+          },
+          {
+            "text": "o",
+            "start": 193.44,
+            "end": 193.78,
+            "score": 0.6788510680198669
+          },
+          {
+            "text": "shi",
+            "start": 193.78,
+            "end": 194.16,
+            "score": 0.6346049706141154
+          },
+          {
+            "text": "ku",
+            "start": 194.16,
+            "end": 194.6,
+            "score": 0.6561424136161804
+          },
+          {
+            "text": "mi",
+            "start": 194.84,
+            "end": 195.26,
+            "score": 0.6791266202926636
+          },
+          {
+            "text": "e",
+            "start": 195.26,
+            "end": 195.6,
+            "score": 0.8311663866043091
+          },
+          {
+            "text": "ta",
+            "start": 195.6,
+            "end": 199.14,
+            "score": 0.8102511763572693
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.022409997880458832,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 0.9619306055755649,
+          "confidence": 0.6749625191765113,
+          "longest": 3.5200000000000102,
+          "cross_gap": false
+        },
+        "max_shift": 0.18000000000000682,
+        "predictions": [
+          {
+            "text": "wa",
+            "start": 187.24,
+            "end": 187.6,
+            "score": 0.7227296829223633
+          },
+          {
+            "text": "ta",
+            "start": 187.6,
+            "end": 187.88,
+            "score": 0.6785754263401031
+          },
+          {
+            "text": "shi",
+            "start": 187.88,
+            "end": 188.24,
+            "score": 0.5871466795603434
+          },
+          {
+            "text": "ni",
+            "start": 188.24,
+            "end": 188.64,
+            "score": 0.5285130441188812
+          },
+          {
+            "text": "ha",
+            "start": 188.64,
+            "end": 189.44,
+            "score": 0.1913182777352631
+          },
+          {
+            "text": "ho",
+            "start": 189.96,
+            "end": 190.42,
+            "score": 0.7372009754180908
+          },
+          {
+            "text": "n",
+            "start": 190.42,
+            "end": 190.72,
+            "score": 0.8198193311691284
+          },
+          {
+            "text": "to",
+            "start": 190.72,
+            "end": 191.1,
+            "score": 0.7298727333545685
+          },
+          {
+            "text": "u",
+            "start": 191.1,
+            "end": 191.38,
+            "score": 0.5527833700180054
+          },
+          {
+            "text": "ni",
+            "start": 191.38,
+            "end": 192.42,
+            "score": 0.6733054518699646
+          },
+          {
+            "text": "i",
+            "start": 192.76,
+            "end": 193.18,
+            "score": 0.7440131306648254
+          },
+          {
+            "text": "to",
+            "start": 193.18,
+            "end": 193.44,
+            "score": 0.6820246279239655
+          },
+          {
+            "text": "o",
+            "start": 193.46,
+            "end": 193.78,
+            "score": 0.7211247086524963
+          },
+          {
+            "text": "shi",
+            "start": 193.78,
+            "end": 194.18,
+            "score": 0.68754114707311
+          },
+          {
+            "text": "ku",
+            "start": 194.18,
+            "end": 194.68,
+            "score": 0.6992760896682739
+          },
+          {
+            "text": "mi",
+            "start": 194.84,
+            "end": 195.28,
+            "score": 0.70923712849617
+          },
+          {
+            "text": "e",
+            "start": 195.28,
+            "end": 195.64,
+            "score": 0.8578605651855469
+          },
+          {
+            "text": "ta",
+            "start": 195.64,
+            "end": 199.16,
+            "score": 0.8269829750061035
+          }
+        ]
+      }
+    },
+    {
+      "line": 12,
+      "line_id": "s02-n616",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6969961851835251,
+        "longest": 1.0400000000000205,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 13,
+      "line_id": "s02-n634",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9785390346614874,
+        "confidence": 0.5657551270542723,
+        "longest": 1.6199999999999761,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        206.1,
+        212.0
+      ],
+      "cached_window": {
+        "seconds": 0.0004661101847887039,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9785390346614874,
+          "confidence": 0.5657551270542723,
+          "longest": 1.6200000000000045,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "a",
+            "start": 206.4,
+            "end": 206.62,
+            "score": 0.6858932971954346
+          },
+          {
+            "text": "no",
+            "start": 206.62,
+            "end": 206.76,
+            "score": 0.4652244746685028
+          },
+          {
+            "text": "hi",
+            "start": 206.76,
+            "end": 207.46,
+            "score": 0.6199048757553101
+          },
+          {
+            "text": "mi",
+            "start": 207.72,
+            "end": 207.96,
+            "score": 0.5527808964252472
+          },
+          {
+            "text": "ta",
+            "start": 207.96,
+            "end": 208.14,
+            "score": 0.47429169714450836
+          },
+          {
+            "text": "yu",
+            "start": 208.14,
+            "end": 208.78,
+            "score": 0.6264222860336304
+          },
+          {
+            "text": "ki",
+            "start": 208.78,
+            "end": 209.1,
+            "score": 0.5406132340431213
+          },
+          {
+            "text": "no",
+            "start": 209.1,
+            "end": 209.44,
+            "score": 0.4763989597558975
+          },
+          {
+            "text": "shi",
+            "start": 209.44,
+            "end": 209.88,
+            "score": 0.54127965370814
+          },
+          {
+            "text": "ro",
+            "start": 209.88,
+            "end": 210.07999999999998,
+            "score": 0.48651182651519775
+          },
+          {
+            "text": "sa",
+            "start": 210.07999999999998,
+            "end": 211.7,
+            "score": 0.753985196352005
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01572066731750965,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9904057240426093,
+          "confidence": 0.5626124527418251,
+          "longest": 1.5,
+          "cross_gap": false
+        },
+        "max_shift": 0.060000000000002274,
+        "predictions": [
+          {
+            "text": "a",
+            "start": 206.44,
+            "end": 206.66,
+            "score": 0.6456325054168701
+          },
+          {
+            "text": "no",
+            "start": 206.66,
+            "end": 206.82,
+            "score": 0.47728413343429565
+          },
+          {
+            "text": "hi",
+            "start": 206.82,
+            "end": 207.51999999999998,
+            "score": 0.64605712890625
+          },
+          {
+            "text": "mi",
+            "start": 207.7,
+            "end": 208.0,
+            "score": 0.5141896903514862
+          },
+          {
+            "text": "ta",
+            "start": 208.0,
+            "end": 208.16,
+            "score": 0.48652711510658264
+          },
+          {
+            "text": "yu",
+            "start": 208.16,
+            "end": 208.82,
+            "score": 0.6224961280822754
+          },
+          {
+            "text": "ki",
+            "start": 208.82,
+            "end": 209.1,
+            "score": 0.5222727060317993
+          },
+          {
+            "text": "no",
+            "start": 209.1,
+            "end": 209.46,
+            "score": 0.4568053185939789
+          },
+          {
+            "text": "shi",
+            "start": 209.46,
+            "end": 209.88,
+            "score": 0.5120592912038168
+          },
+          {
+            "text": "ro",
+            "start": 209.88,
+            "end": 210.14,
+            "score": 0.4964893013238907
+          },
+          {
+            "text": "sa",
+            "start": 210.14,
+            "end": 211.64,
+            "score": 0.8089236617088318
+          }
+        ]
+      }
+    },
+    {
+      "line": 14,
+      "line_id": "s02-n659",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6362720920759088,
+        "longest": 1.0400000000000205,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 15,
+      "line_id": "s02-n690",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5948791563510895,
+        "longest": 0.4000000000000057,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        219.88,
+        222.3
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 16,
+      "line_id": "s02-n700",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5539525939772526,
+        "longest": 2.819999999999993,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        221.72,
+        227.02
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 17,
+      "line_id": "s02-n706",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9989207221350062,
+        "confidence": 0.49521754599279827,
+        "longest": 1.4399999999999977,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        250.66,
+        255.44
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 18,
+      "line_id": "s02-n726",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9871714117745771,
+        "confidence": 0.5449121561315324,
+        "longest": 1.5600000000000023,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        256.26,
+        261.24
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 19,
+      "line_id": "s02-n740",
+      "reasons": [],
+      "quality": {
+        "coverage": 0.9784481043879574,
+        "confidence": 0.6948376132382287,
+        "longest": 1.160000000000025,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 20,
+      "line_id": "s02-n754",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9374020610954465,
+        "confidence": 0.5727505827391589,
+        "longest": 1.8199999999999932,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        267.38,
+        272.92
+      ],
+      "cached_window": {
+        "seconds": 0.0003902055323123932,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9374020610954465,
+          "confidence": 0.5727505827391589,
+          "longest": 1.8199999999999932,
+          "cross_gap": false
+        },
+        "max_shift": 0.0,
+        "predictions": [
+          {
+            "text": "ya",
+            "start": 267.7,
+            "end": 268.14,
+            "score": 0.5822170078754425
+          },
+          {
+            "text": "sa",
+            "start": 268.14,
+            "end": 268.48,
+            "score": 0.6176369786262512
+          },
+          {
+            "text": "shi",
+            "start": 268.48,
+            "end": 268.68,
+            "score": 0.4689027468363444
+          },
+          {
+            "text": "sa",
+            "start": 268.68,
+            "end": 269.14,
+            "score": 0.5889473855495453
+          },
+          {
+            "text": "ni",
+            "start": 269.14,
+            "end": 269.48,
+            "score": 0.4686053991317749
+          },
+          {
+            "text": "ni",
+            "start": 269.48,
+            "end": 270.28,
+            "score": 0.6368750333786011
+          },
+          {
+            "text": "te",
+            "start": 270.28,
+            "end": 270.6,
+            "score": 0.44385001063346863
+          },
+          {
+            "text": "i",
+            "start": 270.6,
+            "end": 270.8,
+            "score": 0.6286168694496155
+          },
+          {
+            "text": "ru",
+            "start": 270.8,
+            "end": 272.62,
+            "score": 0.7191038131713867
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.015081914141774178,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9252069391442266,
+          "confidence": 0.5396832371199572,
+          "longest": 1.900000000000034,
+          "cross_gap": false
+        },
+        "max_shift": 0.060000000000002274,
+        "predictions": [
+          {
+            "text": "ya",
+            "start": 267.76,
+            "end": 268.12,
+            "score": 0.5841411650180817
+          },
+          {
+            "text": "sa",
+            "start": 268.12,
+            "end": 268.46,
+            "score": 0.5737006366252899
+          },
+          {
+            "text": "shi",
+            "start": 268.46,
+            "end": 268.65999999999997,
+            "score": 0.40436069170633954
+          },
+          {
+            "text": "sa",
+            "start": 268.65999999999997,
+            "end": 269.12,
+            "score": 0.5713522732257843
+          },
+          {
+            "text": "ni",
+            "start": 269.12,
+            "end": 269.48,
+            "score": 0.42614686489105225
+          },
+          {
+            "text": "ni",
+            "start": 269.48,
+            "end": 270.24,
+            "score": 0.5735867023468018
+          },
+          {
+            "text": "te",
+            "start": 270.24,
+            "end": 270.58,
+            "score": 0.4048416316509247
+          },
+          {
+            "text": "i",
+            "start": 270.58,
+            "end": 270.78,
+            "score": 0.5559724569320679
+          },
+          {
+            "text": "ru",
+            "start": 270.78,
+            "end": 272.68,
+            "score": 0.7630467116832733
+          }
+        ]
+      }
+    },
+    {
+      "line": 21,
+      "line_id": "s02-n771",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6030183202690548,
+        "longest": 0.7199999999999704,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 22,
+      "line_id": "s02-n782",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5998383420400131,
+        "longest": 1.2000000000000455,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        276.02,
+        283.42
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 23,
+      "line_id": "s02-n800",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.09699065927416087,
+        "longest": 0.6200000000000045,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        282.8,
+        284.92
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 24,
+      "line_id": "s02-n807",
+      "reasons": [
+        "duration",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9621382703694459,
+        "confidence": 0.507051274318386,
+        "longest": 4.039999999999964,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        284.3,
+        297.64
+      ],
+      "cached_window": {
+        "seconds": 0.0008826758712530136,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9631074272712425,
+          "confidence": 0.5058512594895783,
+          "longest": 4.0400000000000205,
+          "cross_gap": false
+        },
+        "max_shift": 0.30000000000001137,
+        "predictions": [
+          {
+            "text": "wa",
+            "start": 284.3,
+            "end": 285.26,
+            "score": 0.2230635192245245
+          },
+          {
+            "text": "ta",
+            "start": 285.26,
+            "end": 285.52000000000004,
+            "score": 0.3639628291130066
+          },
+          {
+            "text": "shi",
+            "start": 285.52000000000004,
+            "end": 285.86,
+            "score": 0.320613960425059
+          },
+          {
+            "text": "ni",
+            "start": 285.90000000000003,
+            "end": 286.26,
+            "score": 0.40183866024017334
+          },
+          {
+            "text": "ha",
+            "start": 286.38,
+            "end": 286.90000000000003,
+            "score": 0.30222050473093987
+          },
+          {
+            "text": "ko",
+            "start": 287.66,
+            "end": 288.06,
+            "score": 0.5405655801296234
+          },
+          {
+            "text": "ko",
+            "start": 288.06,
+            "end": 288.40000000000003,
+            "score": 0.5440605282783508
+          },
+          {
+            "text": "ro",
+            "start": 288.40000000000003,
+            "end": 288.7,
+            "score": 0.4803910553455353
+          },
+          {
+            "text": "ka",
+            "start": 288.7,
+            "end": 289.1,
+            "score": 0.556431770324707
+          },
+          {
+            "text": "ra",
+            "start": 289.1,
+            "end": 290.02000000000004,
+            "score": 0.6448858380317688
+          },
+          {
+            "text": "ko",
+            "start": 290.42,
+            "end": 290.84000000000003,
+            "score": 0.554230272769928
+          },
+          {
+            "text": "i",
+            "start": 290.84000000000003,
+            "end": 291.12,
+            "score": 0.6084330677986145
+          },
+          {
+            "text": "shi",
+            "start": 291.12,
+            "end": 291.5,
+            "score": 0.4546436667442322
+          },
+          {
+            "text": "ku",
+            "start": 291.5,
+            "end": 291.8,
+            "score": 0.4685307741165161
+          },
+          {
+            "text": "o",
+            "start": 291.8,
+            "end": 292.54,
+            "score": 0.6717401742935181
+          },
+          {
+            "text": "mo",
+            "start": 292.54,
+            "end": 292.90000000000003,
+            "score": 0.5725190341472626
+          },
+          {
+            "text": "e",
+            "start": 292.90000000000003,
+            "end": 293.3,
+            "score": 0.6054554581642151
+          },
+          {
+            "text": "ta",
+            "start": 293.3,
+            "end": 297.34000000000003,
+            "score": 0.791735976934433
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.025778302922844887,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 0.9393697999645955,
+          "confidence": 0.5209619883745391,
+          "longest": 3.6200000000000045,
+          "cross_gap": false
+        },
+        "max_shift": 0.4199999999999591,
+        "predictions": [
+          {
+            "text": "wa",
+            "start": 284.94,
+            "end": 285.26,
+            "score": 0.41460856795310974
+          },
+          {
+            "text": "ta",
+            "start": 285.26,
+            "end": 285.52000000000004,
+            "score": 0.4084726572036743
+          },
+          {
+            "text": "shi",
+            "start": 285.52000000000004,
+            "end": 285.78000000000003,
+            "score": 0.3542354802290599
+          },
+          {
+            "text": "ni",
+            "start": 285.92,
+            "end": 286.28000000000003,
+            "score": 0.4444586783647537
+          },
+          {
+            "text": "ha",
+            "start": 286.40000000000003,
+            "end": 287.14,
+            "score": 0.2268956316402182
+          },
+          {
+            "text": "ko",
+            "start": 287.68,
+            "end": 288.04,
+            "score": 0.560425341129303
+          },
+          {
+            "text": "ko",
+            "start": 288.04,
+            "end": 288.36,
+            "score": 0.5052095055580139
+          },
+          {
+            "text": "ro",
+            "start": 288.36,
+            "end": 288.68,
+            "score": 0.47017674148082733
+          },
+          {
+            "text": "ka",
+            "start": 288.68,
+            "end": 289.1,
+            "score": 0.5042309165000916
+          },
+          {
+            "text": "ra",
+            "start": 289.1,
+            "end": 290.0,
+            "score": 0.6628721356391907
+          },
+          {
+            "text": "ko",
+            "start": 290.42,
+            "end": 290.82,
+            "score": 0.5626334846019745
+          },
+          {
+            "text": "i",
+            "start": 290.82,
+            "end": 291.1,
+            "score": 0.6463319063186646
+          },
+          {
+            "text": "shi",
+            "start": 291.1,
+            "end": 291.48,
+            "score": 0.4587943454583486
+          },
+          {
+            "text": "ku",
+            "start": 291.48,
+            "end": 291.8,
+            "score": 0.5000654757022858
+          },
+          {
+            "text": "o",
+            "start": 291.8,
+            "end": 292.56,
+            "score": 0.6933527588844299
+          },
+          {
+            "text": "mo",
+            "start": 292.56,
+            "end": 292.88,
+            "score": 0.5743184983730316
+          },
+          {
+            "text": "e",
+            "start": 292.88,
+            "end": 293.3,
+            "score": 0.6203707456588745
+          },
+          {
+            "text": "ta",
+            "start": 293.3,
+            "end": 296.92,
+            "score": 0.7698629200458527
+          }
+        ]
+      }
+    },
+    {
+      "line": 25,
+      "line_id": "s02-n839",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6496387273073196,
+        "longest": 1.0600000000000023,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 26,
+      "line_id": "s02-n860",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6346032018914367,
+        "longest": 1.1200000000000045,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 27,
+      "line_id": "s02-n888",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6278347650579379,
+        "longest": 1.0400000000000205,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 28,
+      "line_id": "s02-n922",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6848944008350373,
+        "longest": 0.5,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 29,
+      "line_id": "s02-n932",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4053369213361293,
+        "longest": 0.8600000000000136,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        319.44,
+        322.8
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 30,
+      "line_id": "s02-n938",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.512684989819536,
+        "longest": 0.6800000000000068,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        322.18,
+        326.36
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 31,
+      "line_id": "s02-n956",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9985922146636478,
+        "confidence": 0.5362600788022532,
+        "longest": 1.419999999999959,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        326.06,
+        331.76
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 32,
+      "line_id": "s02-n981",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6274022679118549,
+        "longest": 1.0600000000000023,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 33,
+      "line_id": "s02-n1012",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.623987478017807,
+        "longest": 0.39999999999997726,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 34,
+      "line_id": "s02-n1022",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9612645058023281,
+        "confidence": 0.5303984336399784,
+        "longest": 0.9799999999999613,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        341.88,
+        348.1
+      ],
+      "cached_window": {
+        "seconds": 0.000495152547955513,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9612645058023281,
+          "confidence": 0.5303984336399784,
+          "longest": 0.9799999999999613,
+          "cross_gap": false
+        },
+        "max_shift": 0.0,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 342.18,
+            "end": 342.48,
+            "score": 0.43326103687286377
+          },
+          {
+            "text": "na",
+            "start": 342.48,
+            "end": 342.8,
+            "score": 0.4841245859861374
+          },
+          {
+            "text": "yu",
+            "start": 342.8,
+            "end": 343.18,
+            "score": 0.5713214576244354
+          },
+          {
+            "text": "ki",
+            "start": 343.18,
+            "end": 343.48,
+            "score": 0.566525012254715
+          },
+          {
+            "text": "no",
+            "start": 343.48,
+            "end": 344.12,
+            "score": 0.566912442445755
+          },
+          {
+            "text": "yo",
+            "start": 344.56,
+            "end": 344.92,
+            "score": 0.6261791288852692
+          },
+          {
+            "text": "u",
+            "start": 344.92,
+            "end": 345.9,
+            "score": 0.5620666146278381
+          },
+          {
+            "text": "na",
+            "start": 345.9,
+            "end": 346.24,
+            "score": 0.49351444840431213
+          },
+          {
+            "text": "a",
+            "start": 346.26,
+            "end": 346.68,
+            "score": 0.6627009510993958
+          },
+          {
+            "text": "na",
+            "start": 346.68,
+            "end": 347.0,
+            "score": 0.6653708517551422
+          },
+          {
+            "text": "ta",
+            "start": 347.0,
+            "end": 347.34,
+            "score": 0.534581333398819
+          },
+          {
+            "text": "ha",
+            "start": 347.4,
+            "end": 347.8,
+            "score": 0.1982233403250575
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.015183772891759872,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9603009086846513,
+          "confidence": 0.5098924586297168,
+          "longest": 0.9399999999999977,
+          "cross_gap": false
+        },
+        "max_shift": 0.30000000000001137,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 341.88,
+            "end": 342.44,
+            "score": 0.3007209524512291
+          },
+          {
+            "text": "na",
+            "start": 342.44,
+            "end": 342.76,
+            "score": 0.4927993416786194
+          },
+          {
+            "text": "yu",
+            "start": 342.76,
+            "end": 343.14,
+            "score": 0.573859453201294
+          },
+          {
+            "text": "ki",
+            "start": 343.14,
+            "end": 343.44,
+            "score": 0.5924898982048035
+          },
+          {
+            "text": "no",
+            "start": 343.44,
+            "end": 344.2,
+            "score": 0.5765610337257385
+          },
+          {
+            "text": "yo",
+            "start": 344.52,
+            "end": 344.92,
+            "score": 0.6547468304634094
+          },
+          {
+            "text": "u",
+            "start": 344.92,
+            "end": 345.86,
+            "score": 0.4188065230846405
+          },
+          {
+            "text": "na",
+            "start": 345.86,
+            "end": 346.21999999999997,
+            "score": 0.5250690579414368
+          },
+          {
+            "text": "a",
+            "start": 346.24,
+            "end": 346.65999999999997,
+            "score": 0.5494365096092224
+          },
+          {
+            "text": "na",
+            "start": 346.65999999999997,
+            "end": 346.98,
+            "score": 0.6696464419364929
+          },
+          {
+            "text": "ta",
+            "start": 346.98,
+            "end": 347.34,
+            "score": 0.5776423215866089
+          },
+          {
+            "text": "ha",
+            "start": 347.38,
+            "end": 347.74,
+            "score": 0.18693113967310637
+          }
+        ]
+      }
+    },
+    {
+      "line": 35,
+      "line_id": "s02-n1042",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9572481712350288,
+        "confidence": 0.5949943597531981,
+        "longest": 1.079999999999984,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        347.7,
+        353.14
+      ],
+      "cached_window": {
+        "seconds": 0.0003724023699760437,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9572481712350288,
+          "confidence": 0.5949943597531981,
+          "longest": 1.079999999999984,
+          "cross_gap": false
+        },
+        "max_shift": 5.684341886080802e-14,
+        "predictions": [
+          {
+            "text": "ke",
+            "start": 348.0,
+            "end": 348.46,
+            "score": 0.5777961313724518
+          },
+          {
+            "text": "ga",
+            "start": 348.46,
+            "end": 348.71999999999997,
+            "score": 0.30338859744369984
+          },
+          {
+            "text": "re",
+            "start": 348.71999999999997,
+            "end": 349.09999999999997,
+            "score": 0.5752233564853668
+          },
+          {
+            "text": "na",
+            "start": 349.09999999999997,
+            "end": 349.76,
+            "score": 0.7307431995868683
+          },
+          {
+            "text": "ku",
+            "start": 349.76,
+            "end": 350.32,
+            "score": 0.6409368813037872
+          },
+          {
+            "text": "ki",
+            "start": 350.38,
+            "end": 351.0,
+            "score": 0.6502936780452728
+          },
+          {
+            "text": "re",
+            "start": 351.0,
+            "end": 351.47999999999996,
+            "score": 0.6911322772502899
+          },
+          {
+            "text": "i",
+            "start": 351.47999999999996,
+            "end": 351.76,
+            "score": 0.559108316898346
+          },
+          {
+            "text": "de",
+            "start": 351.76,
+            "end": 352.84,
+            "score": 0.6263267993927002
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01510675996541977,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 0.9946592672156679,
+          "confidence": 0.6413791003481796,
+          "longest": 0.9199999999999591,
+          "cross_gap": false
+        },
+        "max_shift": 0.18000000000000682,
+        "predictions": [
+          {
+            "text": "ke",
+            "start": 347.96,
+            "end": 348.4,
+            "score": 0.7005185186862946
+          },
+          {
+            "text": "ga",
+            "start": 348.4,
+            "end": 348.71999999999997,
+            "score": 0.27692975639365613
+          },
+          {
+            "text": "re",
+            "start": 348.71999999999997,
+            "end": 349.08,
+            "score": 0.6415936946868896
+          },
+          {
+            "text": "na",
+            "start": 349.08,
+            "end": 349.76,
+            "score": 0.7908348143100739
+          },
+          {
+            "text": "ku",
+            "start": 349.76,
+            "end": 350.24,
+            "score": 0.6722664535045624
+          },
+          {
+            "text": "ki",
+            "start": 350.38,
+            "end": 350.97999999999996,
+            "score": 0.7305774390697479
+          },
+          {
+            "text": "re",
+            "start": 350.97999999999996,
+            "end": 351.46,
+            "score": 0.719899982213974
+          },
+          {
+            "text": "i",
+            "start": 351.46,
+            "end": 351.74,
+            "score": 0.5545024275779724
+          },
+          {
+            "text": "de",
+            "start": 351.74,
+            "end": 352.65999999999997,
+            "score": 0.685288816690445
+          }
+        ]
+      }
+    },
+    {
+      "line": 36,
+      "line_id": "s02-n1062",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6401660232632249,
+        "longest": 0.9800000000000182,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 37,
+      "line_id": "s02-n1076",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.37858302146196365,
+        "longest": 1.259999999999991,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        359.52,
+        361.64
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 38,
+      "line_id": "s02-n1084",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5924416830142339,
+        "longest": 1.259999999999991,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        361.02,
+        364.48
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 39,
+      "line_id": "s02-n1091",
+      "reasons": [
+        "duration",
+        "coverage",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.3039910707842207,
+        "confidence": 0.41900823190808295,
+        "longest": 81.27999999999997,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        364.06,
+        448.26
+      ],
+      "skip": "window_length"
+    }
+  ]
+}

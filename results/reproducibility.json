@@ -6,16 +6,16 @@
   "ctc_equivalence_cases": 120,
   "timing_pipeline_cases": 42,
   "module_matrix_cases": 1092,
-  "milikara_configurations": 274,
-  "milikara_song_cases": 3266,
-  "separation_alignment_cases": 828,
+  "milikara_configurations": 252,
+  "milikara_song_cases": 3024,
+  "separation_alignment_cases": 432,
   "serial_resource_runs": 6,
   "clean_scoring": {
     "files": "Independent copy of the Git publication inventory",
     "dependencies": "requirements/scoring.txt installed in a new virtual environment",
     "downloaded_project_sources_present": false,
     "model_weights_present": false,
-    "metric_objects_equal": 9,
+    "metric_objects_equal": 11,
     "verify_passed": true,
     "verify_results_passed": true,
     "semantic_hash_encoding": "SHA256 of UTF-8 JSON, sorted object keys, compact separators, ensure_ascii=False",
@@ -42,7 +42,7 @@
       },
       {
         "path": "results/separation-alignment/metrics.json",
-        "semantic_sha256": "2b6d6907171f78cd5eb4af0102c36e2817f596cfa74bf50ac8371df277c30d2e"
+        "semantic_sha256": "2e9a3307bba86e445e798a2b4ff190a7dec1be3d2017f0bd2148d64685b67975"
       },
       {
         "path": "results/ablation/metrics.json",
@@ -54,13 +54,20 @@
       },
       {
         "path": "results/milikara/metrics.json",
-        "semantic_sha256": "4dcf23fcfeab1d6c8a48ca057f6a7513398ce4ebb5a98986fae434fbf1341858"
+        "semantic_sha256": "8cea570510eedc5c0a55ea60e2a761de5891fc03e9c4f941e8f5a88be58f39a1"
+      },
+      {
+        "path": "results/reading/metrics.json",
+        "semantic_sha256": "8216b1af36f79825a8a3973392e7649a75fb591d259f31f4a745f4684e5230ef"
+      },
+      {
+        "path": "results/local-refinement/metrics.json",
+        "semantic_sha256": "b7a66c6ffa1fff8f5bc011680f4d85c08f627ce5bf90d7bcc2ba9c9cb0d83734"
       }
     ]
   },
-  "fresh_run_backup_smoke": {
-    "passed": true,
-    "scheduled_stages": 63,
-    "inference_mocked": true
-  }
+  "local_refinement_cases": 66,
+  "reading_song_cases": 110,
+  "reading_methods": 10,
+  "retained_manual_results_unchanged": true
 }

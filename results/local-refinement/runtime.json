@@ -1,0 +1,447 @@
+{
+  "model_setup_and_warmup_seconds": 4.5872932523489,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torch": "2.14.0+cu130",
+  "records": [
+    {
+      "song": "s01",
+      "baseline": "global",
+      "audio_seconds": 218.517375,
+      "first_pass_audio_seconds": 218.517375,
+      "first_forward_seconds": 0.473510317504406,
+      "first_decode_seconds": 0.08307005651295185,
+      "selected_lines": 8,
+      "total_lines": 39,
+      "selected_audio_seconds": 38.54,
+      "additional_seconds": {
+        "cached_window": 0.00407053530216217,
+        "local_fresh": 0.13062908127903938
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 5
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s01",
+      "baseline": "concat_core",
+      "audio_seconds": 218.517375,
+      "first_pass_audio_seconds": 144.986875,
+      "first_forward_seconds": 0.3104441873729229,
+      "first_decode_seconds": 0.058073995634913445,
+      "selected_lines": 8,
+      "total_lines": 39,
+      "selected_audio_seconds": 33.48,
+      "additional_seconds": {
+        "cached_window": 0.004955066367983818,
+        "local_fresh": 0.1199974101036787
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 5
+      },
+      "baseline_max_endpoint_difference_seconds": 0.0
+    },
+    {
+      "song": "s02",
+      "baseline": "global",
+      "audio_seconds": 448.725375,
+      "first_pass_audio_seconds": 448.725375,
+      "first_forward_seconds": 1.0057931374758482,
+      "first_decode_seconds": 0.10151167027652264,
+      "selected_lines": 8,
+      "total_lines": 40,
+      "selected_audio_seconds": 59.339999999999996,
+      "additional_seconds": {
+        "cached_window": 0.004137415438890457,
+        "local_fresh": 0.13932177796959877
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 2
+      },
+      "baseline_max_endpoint_difference_seconds": 5.684341886080802e-14
+    },
+    {
+      "song": "s02",
+      "baseline": "concat_core",
+      "audio_seconds": 448.725375,
+      "first_pass_audio_seconds": 221.1315,
+      "first_forward_seconds": 0.47710566222667694,
+      "first_decode_seconds": 0.05724488943815231,
+      "selected_lines": 8,
+      "total_lines": 40,
+      "selected_audio_seconds": 68.16000000000001,
+      "additional_seconds": {
+        "cached_window": 0.004406549036502838,
+        "local_fresh": 0.15144534967839718
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 4
+      },
+      "baseline_max_endpoint_difference_seconds": 0.0
+    },
+    {
+      "song": "s03",
+      "baseline": "global",
+      "audio_seconds": 238.421375,
+      "first_pass_audio_seconds": 238.421375,
+      "first_forward_seconds": 0.5347020886838436,
+      "first_decode_seconds": 0.09264513291418552,
+      "selected_lines": 9,
+      "total_lines": 47,
+      "selected_audio_seconds": 47.26,
+      "additional_seconds": {
+        "cached_window": 0.0043500494211912155,
+        "local_fresh": 0.1445100475102663
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 2
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s03",
+      "baseline": "concat_core",
+      "audio_seconds": 238.421375,
+      "first_pass_audio_seconds": 179.200375,
+      "first_forward_seconds": 0.37439883686602116,
+      "first_decode_seconds": 0.07367218285799026,
+      "selected_lines": 7,
+      "total_lines": 47,
+      "selected_audio_seconds": 45.63999999999999,
+      "additional_seconds": {
+        "cached_window": 0.004181360825896263,
+        "local_fresh": 0.12438621744513512
+      },
+      "accepted_lines": {
+        "cached_window": 2,
+        "local_fresh": 3
+      },
+      "baseline_max_endpoint_difference_seconds": 0.0
+    },
+    {
+      "song": "s04",
+      "baseline": "global",
+      "audio_seconds": 215.7226875,
+      "first_pass_audio_seconds": 215.7226875,
+      "first_forward_seconds": 0.44812786765396595,
+      "first_decode_seconds": 0.060343893244862556,
+      "selected_lines": 8,
+      "total_lines": 40,
+      "selected_audio_seconds": 36.019999999999996,
+      "additional_seconds": {
+        "cached_window": 0.0034631453454494476,
+        "local_fresh": 0.11743946745991707
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 4
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s04",
+      "baseline": "concat_core",
+      "audio_seconds": 215.7226875,
+      "first_pass_audio_seconds": 146.3035,
+      "first_forward_seconds": 0.3073340430855751,
+      "first_decode_seconds": 0.046456264331936836,
+      "selected_lines": 8,
+      "total_lines": 40,
+      "selected_audio_seconds": 36.92,
+      "additional_seconds": {
+        "cached_window": 0.004080913960933685,
+        "local_fresh": 0.11869634315371513
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 3
+      },
+      "baseline_max_endpoint_difference_seconds": 7.105427357601002e-15
+    },
+    {
+      "song": "s05",
+      "baseline": "global",
+      "audio_seconds": 255.048,
+      "first_pass_audio_seconds": 255.048,
+      "first_forward_seconds": 0.5563543029129505,
+      "first_decode_seconds": 0.06608846783638,
+      "selected_lines": 9,
+      "total_lines": 42,
+      "selected_audio_seconds": 50.18,
+      "additional_seconds": {
+        "cached_window": 0.003783600404858589,
+        "local_fresh": 0.1415078565478325
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 6
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s05",
+      "baseline": "concat_core",
+      "audio_seconds": 255.048,
+      "first_pass_audio_seconds": 171.0270625,
+      "first_forward_seconds": 0.3593553062528372,
+      "first_decode_seconds": 0.04891743138432503,
+      "selected_lines": 7,
+      "total_lines": 42,
+      "selected_audio_seconds": 50.08,
+      "additional_seconds": {
+        "cached_window": 0.0036032292991876602,
+        "local_fresh": 0.11035599932074547
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 2
+      },
+      "baseline_max_endpoint_difference_seconds": 1.4210854715202004e-14
+    },
+    {
+      "song": "s06",
+      "baseline": "global",
+      "audio_seconds": 247.246125,
+      "first_pass_audio_seconds": 247.246125,
+      "first_forward_seconds": 0.5225289557129145,
+      "first_decode_seconds": 0.08536583930253983,
+      "selected_lines": 10,
+      "total_lines": 47,
+      "selected_audio_seconds": 42.040000000000006,
+      "additional_seconds": {
+        "cached_window": 0.0037278402596712112,
+        "local_fresh": 0.14793244004249573
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 8
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s06",
+      "baseline": "concat_core",
+      "audio_seconds": 247.246125,
+      "first_pass_audio_seconds": 190.16125,
+      "first_forward_seconds": 0.40072580613195896,
+      "first_decode_seconds": 0.07325145974755287,
+      "selected_lines": 10,
+      "total_lines": 47,
+      "selected_audio_seconds": 39.82,
+      "additional_seconds": {
+        "cached_window": 0.00505584292113781,
+        "local_fresh": 0.14601183123886585
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 6
+      },
+      "baseline_max_endpoint_difference_seconds": 8.881784197001252e-16
+    },
+    {
+      "song": "s07",
+      "baseline": "global",
+      "audio_seconds": 253.9306875,
+      "first_pass_audio_seconds": 253.9306875,
+      "first_forward_seconds": 0.5822584070265293,
+      "first_decode_seconds": 0.09099957533180714,
+      "selected_lines": 12,
+      "total_lines": 62,
+      "selected_audio_seconds": 50.34,
+      "additional_seconds": {
+        "cached_window": 0.0030224137008190155,
+        "local_fresh": 0.19439890049397945
+      },
+      "accepted_lines": {
+        "cached_window": 1,
+        "local_fresh": 3
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s07",
+      "baseline": "concat_core",
+      "audio_seconds": 253.9306875,
+      "first_pass_audio_seconds": 190.8394375,
+      "first_forward_seconds": 0.40298222564160824,
+      "first_decode_seconds": 0.07327245734632015,
+      "selected_lines": 12,
+      "total_lines": 62,
+      "selected_audio_seconds": 50.54,
+      "additional_seconds": {
+        "cached_window": 0.0033861156553030014,
+        "local_fresh": 0.19294985383749008
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 3
+      },
+      "baseline_max_endpoint_difference_seconds": 0.0
+    },
+    {
+      "song": "s08",
+      "baseline": "global",
+      "audio_seconds": 266.4258125,
+      "first_pass_audio_seconds": 266.4258125,
+      "first_forward_seconds": 0.5903369076550007,
+      "first_decode_seconds": 0.06298409402370453,
+      "selected_lines": 4,
+      "total_lines": 23,
+      "selected_audio_seconds": 53.2,
+      "additional_seconds": {
+        "cached_window": 0.0028301235288381577,
+        "local_fresh": 0.11057869717478752
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 3
+      },
+      "baseline_max_endpoint_difference_seconds": 5.684341886080802e-14
+    },
+    {
+      "song": "s08",
+      "baseline": "concat_core",
+      "audio_seconds": 266.4258125,
+      "first_pass_audio_seconds": 190.463125,
+      "first_forward_seconds": 0.4029161296784878,
+      "first_decode_seconds": 0.04873630777001381,
+      "selected_lines": 5,
+      "total_lines": 23,
+      "selected_audio_seconds": 40.74,
+      "additional_seconds": {
+        "cached_window": 0.0037479065358638763,
+        "local_fresh": 0.08137838542461395
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 0
+      },
+      "baseline_max_endpoint_difference_seconds": 0.0
+    },
+    {
+      "song": "s09",
+      "baseline": "global",
+      "audio_seconds": 247.803375,
+      "first_pass_audio_seconds": 247.803375,
+      "first_forward_seconds": 0.5245404615998268,
+      "first_decode_seconds": 0.07971707358956337,
+      "selected_lines": 10,
+      "total_lines": 48,
+      "selected_audio_seconds": 39.64,
+      "additional_seconds": {
+        "cached_window": 0.004767753183841705,
+        "local_fresh": 0.1488234791904688
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 5
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s09",
+      "baseline": "concat_core",
+      "audio_seconds": 247.803375,
+      "first_pass_audio_seconds": 161.5534375,
+      "first_forward_seconds": 0.35025786980986595,
+      "first_decode_seconds": 0.06899772770702839,
+      "selected_lines": 10,
+      "total_lines": 48,
+      "selected_audio_seconds": 43.160000000000004,
+      "additional_seconds": {
+        "cached_window": 0.005709297955036163,
+        "local_fresh": 0.1435781680047512
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 6
+      },
+      "baseline_max_endpoint_difference_seconds": 0.0
+    },
+    {
+      "song": "s10",
+      "baseline": "global",
+      "audio_seconds": 261.9675625,
+      "first_pass_audio_seconds": 261.9675625,
+      "first_forward_seconds": 0.6172810848802328,
+      "first_decode_seconds": 0.08528561890125275,
+      "selected_lines": 10,
+      "total_lines": 49,
+      "selected_audio_seconds": 38.080000000000005,
+      "additional_seconds": {
+        "cached_window": 0.004345530644059181,
+        "local_fresh": 0.14104806259274483
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 6
+      },
+      "baseline_max_endpoint_difference_seconds": 2.842170943040401e-14
+    },
+    {
+      "song": "s10",
+      "baseline": "concat_core",
+      "audio_seconds": 261.9675625,
+      "first_pass_audio_seconds": 193.005,
+      "first_forward_seconds": 0.4055623672902584,
+      "first_decode_seconds": 0.06889853067696095,
+      "selected_lines": 10,
+      "total_lines": 49,
+      "selected_audio_seconds": 39.42,
+      "additional_seconds": {
+        "cached_window": 0.004924267530441284,
+        "local_fresh": 0.1434770580381155
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 2
+      },
+      "baseline_max_endpoint_difference_seconds": 7.105427357601002e-15
+    },
+    {
+      "song": "s12",
+      "baseline": "global",
+      "audio_seconds": 328.4266875,
+      "first_pass_audio_seconds": 328.4266875,
+      "first_forward_seconds": 0.6977135185152292,
+      "first_decode_seconds": 0.09689350426197052,
+      "selected_lines": 9,
+      "total_lines": 41,
+      "selected_audio_seconds": 50.040000000000006,
+      "additional_seconds": {
+        "cached_window": 0.0042279306799173355,
+        "local_fresh": 0.14229631796479225
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 6
+      },
+      "baseline_max_endpoint_difference_seconds": 5.684341886080802e-14
+    },
+    {
+      "song": "s12",
+      "baseline": "concat_core",
+      "audio_seconds": 328.4266875,
+      "first_pass_audio_seconds": 204.7613125,
+      "first_forward_seconds": 0.43649495393037796,
+      "first_decode_seconds": 0.07404684089124203,
+      "selected_lines": 8,
+      "total_lines": 41,
+      "selected_audio_seconds": 63.980000000000004,
+      "additional_seconds": {
+        "cached_window": 0.006956839933991432,
+        "local_fresh": 0.18253728933632374
+      },
+      "accepted_lines": {
+        "cached_window": 0,
+        "local_fresh": 7
+      },
+      "baseline_max_endpoint_difference_seconds": 0.0
+    }
+  ]
+}

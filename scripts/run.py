@@ -20,9 +20,9 @@ groups={
  'milikara': [('milikara/prepare_inputs.py',),('milikara/prepare_audio.py',),('milikara/validate_real.py',),('milikara/prepare_anchors.py',),
               ('milikara/run_factorial.py',),('milikara/run_text.py',),('milikara/run_context.py',),
               ('milikara/run_runner.py',),('milikara/run_calibration.py',),('milikara/run_audio.py',),
-              ('milikara/run_original_controls.py',),('milikara/prepare_auto.py',),('milikara/run_auto.py',),
-              ('milikara/auto_iteration.py','--resume'),('milikara/auto_iteration.py','--gpu','--resume'),
-              ('milikara/auto_self_fresh.py',),('milikara/export_iterations.py',),('milikara/evaluate.py',)],
+              ('milikara/run_original_controls.py',),('milikara/evaluate.py',)],
+ 'reading': [('reading/prepare.py',),('reading/local.py',)],
+ 'local-refinement': [('milikara/local_refinement.py',),('milikara/score_local.py',)],
  'additional': [('timing/additional_separators.py',model) for model in ('scnet','dttnet','bs_roformer','mel_roformer','windowed')]+[
      ('timing/ablation_run.py',stage,'--separators','scnet','dttnet','bs_roformer','mel_roformer','windowed','--strategies','concat','padded','full')
      for stage in ('audio','nextfire')]+[('timing/ablation_score.py',),('timing/ablation_tables.py',)],

@@ -2,31 +2,6 @@
 from common import *
 import numpy as np,csv,collections
 
-def clean(s):return ''.join(s.lower().replace('’',"'").split())
-def project(ref,ps):
-    # Exact edit mapping, whole-unit endpoints only, no timing interpolation.
-    ps=[p for p in ps if p is not None and not p.get('crosses_removed_gap',False)]
-    a=''.join(clean(u['text']) for u in ref);b=''.join(clean(u['text']) for u in ps)
-    d=np.zeros((len(a)+1,len(b)+1),int);d[:,0]=np.arange(len(a)+1);d[0,:]=np.arange(len(b)+1)
-    for i in range(1,len(a)+1):
-        for j in range(1,len(b)+1):d[i,j]=min(d[i-1,j-1]+(a[i-1]!=b[j-1]),d[i-1,j]+1,d[i,j-1]+1)
-    i,j=len(a),len(b);match={}
-    while i or j:
-        if i and j and d[i,j]==d[i-1,j-1]+(a[i-1]!=b[j-1]):
-            if a[i-1]==b[j-1]:match[i-1]=j-1
-            i-=1;j-=1
-        elif i and d[i,j]==d[i-1,j]+1:i-=1
-        else:j-=1
-    start={};end={};offset=0
-    for p in ps:
-        start[offset]=p['start'];offset+=len(clean(p['text']));end[offset]=p['end']
-    out=[];offset=0
-    for u in ref:
-        n=len(clean(u['text']));m=[match.get(k) for k in range(offset,offset+n)];offset+=n
-        good=m and None not in m and m==list(range(m[0],m[0]+n)) and m[0] in start and m[-1]+1 in end
-        out.append({'start':start[m[0]],'end':end[m[-1]+1]} if good else None)
-    return out
-
 def stats(rows):
     es=np.array([r['errors'] for r in rows if r['valid']],float).reshape(-1,2)
     n=len(rows);v=len(es)
@@ -42,7 +17,7 @@ def score(song,r):
     details=[];lines=[]
     assert len(song['lines'])==len(r['predictions'])
     for l,ps in zip(song['lines'],r['predictions']):
-        ref=l['reference'];mapped=project(ref,ps) if r['kind']=='auto-readings' else ps
+        ref=l['reference'];mapped=ps
         assert len(ref)==len(mapped)
         for j,(u,p) in enumerate(zip(ref,mapped)):
             valid=p is not None and p['end']>p['start'] and not p.get('crosses_removed_gap',False)

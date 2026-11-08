@@ -1,7 +1,0 @@
-{
-  "purpose": "Isolate local acoustic recomputation without DP; added after primary results, before this ablation scoring",
-  "rounds": 1,
-  "window": "initial global line bounds +/-0.3 sec; >35s kept unchanged",
-  "acceptance": "exact same gate/score thresholds as frozen main protocol",
-  "human_inputs": false
-}

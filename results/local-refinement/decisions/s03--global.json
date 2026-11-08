@@ -1,0 +1,2226 @@
+{
+  "song": "s03",
+  "baseline": "global",
+  "decisions": [
+    {
+      "line": 0,
+      "line_id": "s03-n651",
+      "reasons": [
+        "duration",
+        "coverage",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.0,
+        "confidence": 0.10125090576087437,
+        "longest": 2.540000000000001,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        1.42,
+        12.4
+      ],
+      "cached_window": {
+        "seconds": 0.0006734710186719894,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.0,
+          "confidence": 0.0979566154898041,
+          "longest": 2.540000000000001,
+          "cross_gap": false
+        },
+        "max_shift": 0.6799999999999997,
+        "predictions": [
+          {
+            "text": "ye",
+            "start": 1.72,
+            "end": 1.7999999999999998,
+            "score": 0.09765578433871269
+          },
+          {
+            "text": "e",
+            "start": 1.8199999999999998,
+            "end": 2.7,
+            "score": 0.20267510414123535
+          },
+          {
+            "text": "ye",
+            "start": 2.7,
+            "end": 3.7399999999999998,
+            "score": 0.14401939883828163
+          },
+          {
+            "text": "e",
+            "start": 4.279999999999999,
+            "end": 6.28,
+            "score": 0.15618757903575897
+          },
+          {
+            "text": "ha",
+            "start": 6.28,
+            "end": 6.88,
+            "score": 0.03915838152170181
+          },
+          {
+            "text": "a",
+            "start": 6.9,
+            "end": 6.92,
+            "score": 0.040035318583250046
+          },
+          {
+            "text": "kort",
+            "start": 6.92,
+            "end": 9.46,
+            "score": 0.11849150061607361
+          },
+          {
+            "text": "gun",
+            "start": 9.46,
+            "end": 9.82,
+            "score": 0.11510216413686673
+          },
+          {
+            "text": "g",
+            "start": 9.82,
+            "end": 9.84,
+            "score": 0.008264856413006783
+          },
+          {
+            "text": "ni",
+            "start": 9.84,
+            "end": 10.24,
+            "score": 0.11684159189462662
+          },
+          {
+            "text": "r",
+            "start": 10.24,
+            "end": 10.26,
+            "score": 0.009248955175280571
+          },
+          {
+            "text": "me",
+            "start": 10.26,
+            "end": 10.68,
+            "score": 0.16515813022851944
+          },
+          {
+            "text": "ssa",
+            "start": 10.68,
+            "end": 11.02,
+            "score": 0.14418513576189676
+          },
+          {
+            "text": "bag",
+            "start": 11.02,
+            "end": 11.48,
+            "score": 0.0791367688216269
+          },
+          {
+            "text": "gy",
+            "start": 12.14,
+            "end": 12.4,
+            "score": 0.03318856284022331
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.02094731479883194,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.0,
+          "confidence": 0.06812264421670179,
+          "longest": 3.32,
+          "cross_gap": false
+        },
+        "max_shift": 5.74,
+        "predictions": [
+          {
+            "text": "ye",
+            "start": 1.5999999999999999,
+            "end": 1.64,
+            "score": 0.09544858522713184
+          },
+          {
+            "text": "e",
+            "start": 1.66,
+            "end": 1.68,
+            "score": 0.036358416080474854
+          },
+          {
+            "text": "ye",
+            "start": 1.68,
+            "end": 1.72,
+            "score": 0.06950469315052032
+          },
+          {
+            "text": "e",
+            "start": 1.74,
+            "end": 1.76,
+            "score": 0.012445567175745964
+          },
+          {
+            "text": "ha",
+            "start": 1.76,
+            "end": 1.7999999999999998,
+            "score": 0.0501679303124547
+          },
+          {
+            "text": "a",
+            "start": 1.8199999999999998,
+            "end": 1.8399999999999999,
+            "score": 0.06932157278060913
+          },
+          {
+            "text": "kort",
+            "start": 1.8399999999999999,
+            "end": 3.72,
+            "score": 0.06493227908504196
+          },
+          {
+            "text": "gun",
+            "start": 3.72,
+            "end": 7.04,
+            "score": 0.12085718649905175
+          },
+          {
+            "text": "g",
+            "start": 7.04,
+            "end": 7.06,
+            "score": 0.008078969083726406
+          },
+          {
+            "text": "ni",
+            "start": 7.06,
+            "end": 9.120000000000001,
+            "score": 0.18003642559051514
+          },
+          {
+            "text": "r",
+            "start": 9.6,
+            "end": 9.62,
+            "score": 0.008557177148759365
+          },
+          {
+            "text": "me",
+            "start": 9.66,
+            "end": 10.7,
+            "score": 0.14147575944662094
+          },
+          {
+            "text": "ssa",
+            "start": 10.7,
+            "end": 11.08,
+            "score": 0.13768822016815344
+          },
+          {
+            "text": "bag",
+            "start": 11.08,
+            "end": 11.32,
+            "score": 0.012965537171112373
+          },
+          {
+            "text": "gy",
+            "start": 11.34,
+            "end": 12.38,
+            "score": 0.014001344330608845
+          }
+        ]
+      }
+    },
+    {
+      "line": 1,
+      "line_id": "s03-n667",
+      "reasons": [
+        "duration",
+        "coverage",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.38266012972104907,
+        "confidence": 0.07670131955962337,
+        "longest": 2.139999999999999,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        11.8,
+        20.900000000000002
+      ],
+      "cached_window": {
+        "seconds": 0.0007751155644655228,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.38076107200531195,
+          "confidence": 0.07612861720525532,
+          "longest": 2.1400000000000023,
+          "cross_gap": false
+        },
+        "max_shift": 0.03999999999999915,
+        "predictions": [
+          {
+            "text": "ye",
+            "start": 12.08,
+            "end": 14.200000000000001,
+            "score": 0.11064199730753899
+          },
+          {
+            "text": "e",
+            "start": 14.56,
+            "end": 16.700000000000003,
+            "score": 0.16821205615997314
+          },
+          {
+            "text": "ye",
+            "start": 16.700000000000003,
+            "end": 16.78,
+            "score": 0.05577879212796688
+          },
+          {
+            "text": "e",
+            "start": 16.8,
+            "end": 16.82,
+            "score": 0.07709655910730362
+          },
+          {
+            "text": "ha",
+            "start": 16.880000000000003,
+            "end": 17.46,
+            "score": 0.05299908295273781
+          },
+          {
+            "text": "a",
+            "start": 17.48,
+            "end": 18.02,
+            "score": 0.20153144001960754
+          },
+          {
+            "text": "kort",
+            "start": 18.02,
+            "end": 18.36,
+            "score": 0.05161213059909642
+          },
+          {
+            "text": "gun",
+            "start": 18.36,
+            "end": 18.44,
+            "score": 0.04543648671824485
+          },
+          {
+            "text": "g",
+            "start": 18.44,
+            "end": 18.46,
+            "score": 0.0024317651987075806
+          },
+          {
+            "text": "ni",
+            "start": 18.46,
+            "end": 18.5,
+            "score": 0.0583882387727499
+          },
+          {
+            "text": "r",
+            "start": 18.5,
+            "end": 18.52,
+            "score": 0.06409115344285965
+          },
+          {
+            "text": "me",
+            "start": 18.52,
+            "end": 19.26,
+            "score": 0.11073414329439402
+          },
+          {
+            "text": "ssa",
+            "start": 19.26,
+            "end": 19.34,
+            "score": 0.023187427315860987
+          },
+          {
+            "text": "bro",
+            "start": 19.34,
+            "end": 19.72,
+            "score": 0.04700963835542401
+          },
+          {
+            "text": "ssy",
+            "start": 19.72,
+            "end": 19.8,
+            "score": 0.0182608791316549
+          },
+          {
+            "text": "gung",
+            "start": 19.8,
+            "end": 19.880000000000003,
+            "score": 0.05547756236046553
+          },
+          {
+            "text": "nir",
+            "start": 19.880000000000003,
+            "end": 20.6,
+            "score": 0.15129713962475458
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01801048219203949,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 0.3886284976510544,
+          "confidence": 0.1279983382589896,
+          "longest": 1.92,
+          "cross_gap": false
+        },
+        "max_shift": 2.799999999999999,
+        "predictions": [
+          {
+            "text": "ye",
+            "start": 11.84,
+            "end": 12.66,
+            "score": 0.12236450798809528
+          },
+          {
+            "text": "e",
+            "start": 12.680000000000001,
+            "end": 13.9,
+            "score": 0.1608022302389145
+          },
+          {
+            "text": "ye",
+            "start": 13.9,
+            "end": 14.68,
+            "score": 0.08153372071683407
+          },
+          {
+            "text": "e",
+            "start": 14.700000000000001,
+            "end": 16.62,
+            "score": 0.21920371055603027
+          },
+          {
+            "text": "ha",
+            "start": 16.62,
+            "end": 16.66,
+            "score": 0.01926474750507623
+          },
+          {
+            "text": "a",
+            "start": 16.68,
+            "end": 16.92,
+            "score": 0.10585429519414902
+          },
+          {
+            "text": "kort",
+            "start": 17.44,
+            "end": 18.42,
+            "score": 0.21199879795312881
+          },
+          {
+            "text": "gun",
+            "start": 18.42,
+            "end": 18.48,
+            "score": 0.035836216295138
+          },
+          {
+            "text": "g",
+            "start": 18.48,
+            "end": 18.5,
+            "score": 0.00254854466766119
+          },
+          {
+            "text": "ni",
+            "start": 18.5,
+            "end": 18.54,
+            "score": 0.03689283481799066
+          },
+          {
+            "text": "r",
+            "start": 18.54,
+            "end": 18.66,
+            "score": 0.38415321707725525
+          },
+          {
+            "text": "me",
+            "start": 18.66,
+            "end": 19.46,
+            "score": 0.16844683326780796
+          },
+          {
+            "text": "ssa",
+            "start": 19.46,
+            "end": 19.54,
+            "score": 0.02946845938762029
+          },
+          {
+            "text": "bro",
+            "start": 19.54,
+            "end": 19.6,
+            "score": 0.004616026145716508
+          },
+          {
+            "text": "ssy",
+            "start": 19.64,
+            "end": 19.880000000000003,
+            "score": 0.2183537296174715
+          },
+          {
+            "text": "gung",
+            "start": 19.880000000000003,
+            "end": 20.18,
+            "score": 0.17567175428848714
+          },
+          {
+            "text": "nir",
+            "start": 20.18,
+            "end": 20.82,
+            "score": 0.1989621246854464
+          }
+        ]
+      }
+    },
+    {
+      "line": 2,
+      "line_id": "s03-n685",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9875232604252464,
+        "confidence": 0.5674675206343333,
+        "longest": 0.8599999999999994,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        27.16,
+        32.38
+      ],
+      "cached_window": {
+        "seconds": 0.0004829391837120056,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9875232604252464,
+          "confidence": 0.5674675206343333,
+          "longest": 0.8599999999999994,
+          "cross_gap": false
+        },
+        "max_shift": 0.0,
+        "predictions": [
+          {
+            "text": "i",
+            "start": 27.46,
+            "end": 27.8,
+            "score": 0.7216647267341614
+          },
+          {
+            "text": "ku",
+            "start": 27.8,
+            "end": 28.06,
+            "score": 0.5143088847398758
+          },
+          {
+            "text": "o",
+            "start": 28.06,
+            "end": 28.46,
+            "score": 0.6150285601615906
+          },
+          {
+            "text": "ku",
+            "start": 28.46,
+            "end": 28.6,
+            "score": 0.419246181845665
+          },
+          {
+            "text": "no",
+            "start": 28.6,
+            "end": 29.22,
+            "score": 0.5789869725704193
+          },
+          {
+            "text": "re",
+            "start": 29.38,
+            "end": 29.72,
+            "score": 0.5978057682514191
+          },
+          {
+            "text": "ki",
+            "start": 29.72,
+            "end": 30.02,
+            "score": 0.5754620432853699
+          },
+          {
+            "text": "shi",
+            "start": 30.02,
+            "end": 30.32,
+            "score": 0.4536873698234558
+          },
+          {
+            "text": "wo",
+            "start": 30.32,
+            "end": 30.64,
+            "score": 0.4545650780200958
+          },
+          {
+            "text": "ko",
+            "start": 30.64,
+            "end": 31.02,
+            "score": 0.5508899986743927
+          },
+          {
+            "text": "e",
+            "start": 31.02,
+            "end": 31.22,
+            "score": 0.6422675251960754
+          },
+          {
+            "text": "te",
+            "start": 31.22,
+            "end": 32.08,
+            "score": 0.6856971383094788
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.015021931380033493,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.5472503784630034,
+          "longest": 0.8000000000000007,
+          "cross_gap": false
+        },
+        "max_shift": 0.14000000000000057,
+        "predictions": [
+          {
+            "text": "i",
+            "start": 27.52,
+            "end": 27.88,
+            "score": 0.7424065470695496
+          },
+          {
+            "text": "ku",
+            "start": 27.88,
+            "end": 28.2,
+            "score": 0.5573082268238068
+          },
+          {
+            "text": "o",
+            "start": 28.2,
+            "end": 28.54,
+            "score": 0.5924785137176514
+          },
+          {
+            "text": "ku",
+            "start": 28.54,
+            "end": 28.7,
+            "score": 0.38039879500865936
+          },
+          {
+            "text": "no",
+            "start": 28.7,
+            "end": 29.3,
+            "score": 0.5577321648597717
+          },
+          {
+            "text": "re",
+            "start": 29.4,
+            "end": 29.8,
+            "score": 0.5531509220600128
+          },
+          {
+            "text": "ki",
+            "start": 29.8,
+            "end": 30.06,
+            "score": 0.5034468173980713
+          },
+          {
+            "text": "shi",
+            "start": 30.06,
+            "end": 30.38,
+            "score": 0.4293187657992045
+          },
+          {
+            "text": "wo",
+            "start": 30.38,
+            "end": 30.7,
+            "score": 0.42434002459049225
+          },
+          {
+            "text": "ko",
+            "start": 30.7,
+            "end": 31.08,
+            "score": 0.5125192403793335
+          },
+          {
+            "text": "e",
+            "start": 31.08,
+            "end": 31.3,
+            "score": 0.613724946975708
+          },
+          {
+            "text": "te",
+            "start": 31.3,
+            "end": 32.1,
+            "score": 0.7001795768737793
+          }
+        ]
+      }
+    },
+    {
+      "line": 3,
+      "line_id": "s03-n713",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.46108882278203966,
+        "longest": 0.5200000000000031,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        31.88,
+        34.660000000000004
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 4,
+      "line_id": "s03-n733",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9611245628194771,
+        "confidence": 0.5244022738933564,
+        "longest": 1.259999999999998,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        34.92,
+        37.88
+      ],
+      "cached_window": {
+        "seconds": 0.0002650190144777298,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9611245628194771,
+          "confidence": 0.5244022738933564,
+          "longest": 1.259999999999998,
+          "cross_gap": false
+        },
+        "max_shift": 0.0,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 35.22,
+            "end": 35.58,
+            "score": 0.603346586227417
+          },
+          {
+            "text": "ta",
+            "start": 35.58,
+            "end": 35.88,
+            "score": 0.5952845513820648
+          },
+          {
+            "text": "e",
+            "start": 35.88,
+            "end": 36.08,
+            "score": 0.4728115499019623
+          },
+          {
+            "text": "yo",
+            "start": 36.08,
+            "end": 36.32,
+            "score": 0.39184698462486267
+          },
+          {
+            "text": "shine",
+            "start": 36.32,
+            "end": 37.58,
+            "score": 0.5587216973304748
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014849843457341194,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.5287236773967743,
+          "longest": 1.220000000000006,
+          "cross_gap": false
+        },
+        "max_shift": 0.12000000000000455,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 35.34,
+            "end": 35.660000000000004,
+            "score": 0.6457502841949463
+          },
+          {
+            "text": "ta",
+            "start": 35.660000000000004,
+            "end": 35.96,
+            "score": 0.6336710453033447
+          },
+          {
+            "text": "e",
+            "start": 35.96,
+            "end": 36.14,
+            "score": 0.43499884009361267
+          },
+          {
+            "text": "yo",
+            "start": 36.14,
+            "end": 36.4,
+            "score": 0.371725931763649
+          },
+          {
+            "text": "shine",
+            "start": 36.4,
+            "end": 37.620000000000005,
+            "score": 0.5574722856283187
+          }
+        ]
+      }
+    },
+    {
+      "line": 5,
+      "line_id": "s03-n742",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5416915189060899,
+        "longest": 0.8400000000000034,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        37.58,
+        42.72
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 6,
+      "line_id": "s03-n764",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4987520518402258,
+        "longest": 0.6400000000000006,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        42.32,
+        45.14
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 7,
+      "line_id": "s03-n784",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3732350446468141,
+        "longest": 0.8200000000000003,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        44.82,
+        48.32
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 8,
+      "line_id": "s03-n796",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.46630188083166585,
+        "longest": 0.740000000000002,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        48.0,
+        53.56
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 9,
+      "line_id": "s03-n835",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5517437290400267,
+        "longest": 0.9799999999999969,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        53.22,
+        56.56
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 10,
+      "line_id": "s03-n856",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4762937945722822,
+        "longest": 1.0399999999999991,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        56.120000000000005,
+        60.9
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 11,
+      "line_id": "s03-n882",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.7046737968921661,
+        "longest": 1.4399999999999977,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 12,
+      "line_id": "s03-n905",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.524017876242363,
+        "longest": 1.519999999999996,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        63.56,
+        67.96000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 13,
+      "line_id": "s03-n943",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6030891528900932,
+        "longest": 1.8800000000000097,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 14,
+      "line_id": "s03-n978",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.529001448448576,
+        "longest": 1.519999999999996,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        74.5,
+        78.38
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 15,
+      "line_id": "s03-n1016",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5453960318118334,
+        "longest": 0.35999999999999943,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        78.12,
+        80.76
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 16,
+      "line_id": "s03-n1028",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9942002442002452,
+        "confidence": 0.42498467381422717,
+        "longest": 2.819999999999993,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        80.36,
+        87.62
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 17,
+      "line_id": "s03-n1050",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.46612274398406345,
+        "longest": 0.8599999999999994,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        89.48,
+        94.64
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 18,
+      "line_id": "s03-n1075",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3124811048309008,
+        "longest": 0.7000000000000028,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        94.18,
+        97.42
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 19,
+      "line_id": "s03-n1095",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9920344206058519,
+        "confidence": 0.47705800235271456,
+        "longest": 1.1400000000000006,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        97.24000000000001,
+        100.18
+      ],
+      "cached_window": {
+        "seconds": 0.00021465681493282318,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.992034420605852,
+          "confidence": 0.47705800235271456,
+          "longest": 1.1400000000000006,
+          "cross_gap": false
+        },
+        "max_shift": 1.4210854715202004e-14,
+        "predictions": [
+          {
+            "text": "mi",
+            "start": 97.54,
+            "end": 97.88000000000001,
+            "score": 0.5347416996955872
+          },
+          {
+            "text": "te",
+            "start": 97.88000000000001,
+            "end": 98.18,
+            "score": 0.43312543630599976
+          },
+          {
+            "text": "go",
+            "start": 98.18,
+            "end": 98.42000000000002,
+            "score": 0.43604110181331635
+          },
+          {
+            "text": "ra",
+            "start": 98.42000000000002,
+            "end": 98.74000000000001,
+            "score": 0.422774076461792
+          },
+          {
+            "text": "n",
+            "start": 98.74000000000001,
+            "end": 99.88000000000001,
+            "score": 0.5586076974868774
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014437014237046242,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.5909622579813003,
+          "longest": 1.0799999999999983,
+          "cross_gap": false
+        },
+        "max_shift": 0.12000000000001876,
+        "predictions": [
+          {
+            "text": "mi",
+            "start": 97.60000000000001,
+            "end": 97.94000000000001,
+            "score": 0.6725619435310364
+          },
+          {
+            "text": "te",
+            "start": 97.94000000000001,
+            "end": 98.24000000000001,
+            "score": 0.5615393817424774
+          },
+          {
+            "text": "go",
+            "start": 98.24000000000001,
+            "end": 98.46000000000001,
+            "score": 0.5253839790821075
+          },
+          {
+            "text": "ra",
+            "start": 98.46000000000001,
+            "end": 98.86000000000001,
+            "score": 0.5081296116113663
+          },
+          {
+            "text": "n",
+            "start": 98.86000000000001,
+            "end": 99.94000000000001,
+            "score": 0.6871963739395142
+          }
+        ]
+      }
+    },
+    {
+      "line": 20,
+      "line_id": "s03-n1104",
+      "reasons": [],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.6401387713849545,
+        "longest": 0.7599999999999909,
+        "cross_gap": false
+      },
+      "selected": false
+    },
+    {
+      "line": 21,
+      "line_id": "s03-n1120",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5252656767765681,
+        "longest": 0.35999999999999943,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        104.60000000000001,
+        107.34
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 22,
+      "line_id": "s03-n1146",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.45779796394344885,
+        "longest": 1.1800000000000068,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        107.24000000000001,
+        110.64
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 23,
+      "line_id": "s03-n1161",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5332365171776877,
+        "longest": 1.0999999999999943,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        110.26,
+        115.74000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 24,
+      "line_id": "s03-n1191",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4755140636116266,
+        "longest": 0.8400000000000034,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        115.46000000000001,
+        118.74000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 25,
+      "line_id": "s03-n1212",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5225005759434267,
+        "longest": 0.35999999999999943,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        118.4,
+        122.44
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 26,
+      "line_id": "s03-n1250",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4795232199449813,
+        "longest": 1.1399999999999864,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        121.84,
+        126.12
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 27,
+      "line_id": "s03-n1270",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4215195512860427,
+        "longest": 0.8199999999999932,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        125.82000000000001,
+        130.22
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 28,
+      "line_id": "s03-n1308",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5355988881167244,
+        "longest": 1.1599999999999966,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        129.68,
+        136.52
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 29,
+      "line_id": "s03-n1344",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.44101315097779864,
+        "longest": 0.8199999999999932,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        136.16,
+        140.6
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 30,
+      "line_id": "s03-n1382",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.509856464607375,
+        "longest": 0.4000000000000057,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        140.4,
+        143.0
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 31,
+      "line_id": "s03-n1397",
+      "reasons": [
+        "duration",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4935697689652443,
+        "longest": 4.340000000000003,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        142.66,
+        151.4
+      ],
+      "cached_window": {
+        "seconds": 0.0006775278598070145,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.4935697689652443,
+          "longest": 4.339999999999975,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "na",
+            "start": 142.96,
+            "end": 143.28,
+            "score": 0.528063029050827
+          },
+          {
+            "text": "ni",
+            "start": 143.28,
+            "end": 143.44,
+            "score": 0.39049530029296875
+          },
+          {
+            "text": "mo",
+            "start": 143.44,
+            "end": 143.6,
+            "score": 0.3649233728647232
+          },
+          {
+            "text": "ka",
+            "start": 143.6,
+            "end": 143.79999999999998,
+            "score": 0.4159086346626282
+          },
+          {
+            "text": "mo",
+            "start": 143.79999999999998,
+            "end": 143.96,
+            "score": 0.31520378589630127
+          },
+          {
+            "text": "wo",
+            "start": 143.96,
+            "end": 144.14,
+            "score": 0.36263447999954224
+          },
+          {
+            "text": "ze",
+            "start": 144.29999999999998,
+            "end": 144.56,
+            "score": 0.4985846281051636
+          },
+          {
+            "text": "n",
+            "start": 144.56,
+            "end": 144.76,
+            "score": 0.5129057765007019
+          },
+          {
+            "text": "bu",
+            "start": 144.76,
+            "end": 145.64,
+            "score": 0.6360471546649933
+          },
+          {
+            "text": "ta",
+            "start": 145.9,
+            "end": 146.1,
+            "score": 0.45760378241539
+          },
+          {
+            "text": "ba",
+            "start": 146.1,
+            "end": 146.28,
+            "score": 0.5107809603214264
+          },
+          {
+            "text": "ne",
+            "start": 146.28,
+            "end": 146.52,
+            "score": 0.5276783108711243
+          },
+          {
+            "text": "yo",
+            "start": 146.52,
+            "end": 146.74,
+            "score": 0.5094772279262543
+          },
+          {
+            "text": "u",
+            "start": 146.74,
+            "end": 151.07999999999998,
+            "score": 0.8796703219413757
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.016810046508908272,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.5802472361496517,
+          "longest": 4.02000000000001,
+          "cross_gap": false
+        },
+        "max_shift": 0.2600000000000193,
+        "predictions": [
+          {
+            "text": "na",
+            "start": 143.0,
+            "end": 143.35999999999999,
+            "score": 0.65179243683815
+          },
+          {
+            "text": "ni",
+            "start": 143.35999999999999,
+            "end": 143.48,
+            "score": 0.5171571969985962
+          },
+          {
+            "text": "mo",
+            "start": 143.48,
+            "end": 143.64,
+            "score": 0.4775082617998123
+          },
+          {
+            "text": "ka",
+            "start": 143.64,
+            "end": 143.84,
+            "score": 0.5993441939353943
+          },
+          {
+            "text": "mo",
+            "start": 143.84,
+            "end": 144.0,
+            "score": 0.34808046370744705
+          },
+          {
+            "text": "wo",
+            "start": 144.0,
+            "end": 144.18,
+            "score": 0.32086101919412613
+          },
+          {
+            "text": "ze",
+            "start": 144.32,
+            "end": 144.64,
+            "score": 0.5942158102989197
+          },
+          {
+            "text": "n",
+            "start": 144.64,
+            "end": 144.82,
+            "score": 0.5004600286483765
+          },
+          {
+            "text": "bu",
+            "start": 144.82,
+            "end": 145.6,
+            "score": 0.6575603485107422
+          },
+          {
+            "text": "ta",
+            "start": 145.92,
+            "end": 146.14,
+            "score": 0.6311474442481995
+          },
+          {
+            "text": "ba",
+            "start": 146.14,
+            "end": 146.29999999999998,
+            "score": 0.6432899236679077
+          },
+          {
+            "text": "ne",
+            "start": 146.29999999999998,
+            "end": 146.6,
+            "score": 0.6556680500507355
+          },
+          {
+            "text": "yo",
+            "start": 146.6,
+            "end": 146.79999999999998,
+            "score": 0.6306036710739136
+          },
+          {
+            "text": "u",
+            "start": 146.79999999999998,
+            "end": 150.82,
+            "score": 0.8957724571228027
+          }
+        ]
+      }
+    },
+    {
+      "line": 32,
+      "line_id": "s03-n1424",
+      "reasons": [
+        "coverage",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.0,
+        "confidence": 0.05397633483007666,
+        "longest": 0.21999999999999886,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        152.4,
+        153.74
+      ],
+      "cached_window": {
+        "seconds": 0.0004866383969783783,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.0,
+          "confidence": 0.05457469385388928,
+          "longest": 0.46000000000000796,
+          "cross_gap": false
+        },
+        "max_shift": 0.4200000000000159,
+        "predictions": [
+          {
+            "text": "bal",
+            "start": 152.78,
+            "end": 152.84,
+            "score": 0.021014034437636536
+          },
+          {
+            "text": "wi",
+            "start": 152.84,
+            "end": 152.9,
+            "score": 0.10787131614051759
+          },
+          {
+            "text": "syall",
+            "start": 152.9,
+            "end": 153.36,
+            "score": 0.14727252939483151
+          },
+          {
+            "text": "ne",
+            "start": 153.36,
+            "end": 153.4,
+            "score": 0.03685900941491127
+          },
+          {
+            "text": "scell",
+            "start": 153.4,
+            "end": 153.52,
+            "score": 0.06152624902315438
+          },
+          {
+            "text": "gung",
+            "start": 153.52,
+            "end": 153.6,
+            "score": 0.005839208548422903
+          },
+          {
+            "text": "nir",
+            "start": 153.6,
+            "end": 153.66,
+            "score": 0.0049687714005510015
+          },
+          {
+            "text": "tron",
+            "start": 153.66,
+            "end": 153.74,
+            "score": 0.051246432471089065
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014716079458594322,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 0.0,
+          "confidence": 0.07610909978739072,
+          "longest": 0.29999999999998295,
+          "cross_gap": false
+        },
+        "max_shift": 0.3199999999999932,
+        "predictions": [
+          {
+            "text": "bal",
+            "start": 152.4,
+            "end": 152.46,
+            "score": 0.005177692752719547
+          },
+          {
+            "text": "wi",
+            "start": 152.48000000000002,
+            "end": 152.78,
+            "score": 0.2408512318506837
+          },
+          {
+            "text": "syall",
+            "start": 152.78,
+            "end": 152.9,
+            "score": 0.015791433776030317
+          },
+          {
+            "text": "ne",
+            "start": 152.9,
+            "end": 152.94,
+            "score": 0.004024137509986758
+          },
+          {
+            "text": "scell",
+            "start": 152.94,
+            "end": 153.20000000000002,
+            "score": 0.1119260228719213
+          },
+          {
+            "text": "gung",
+            "start": 153.20000000000002,
+            "end": 153.28,
+            "score": 0.049269128881860524
+          },
+          {
+            "text": "nir",
+            "start": 153.28,
+            "end": 153.34,
+            "score": 0.06935672335869943
+          },
+          {
+            "text": "tron",
+            "start": 153.34,
+            "end": 153.58,
+            "score": 0.11247642729722429
+          }
+        ]
+      }
+    },
+    {
+      "line": 33,
+      "line_id": "s03-n1433",
+      "reasons": [
+        "coverage",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.0,
+        "confidence": 0.11990068513126365,
+        "longest": 1.4000000000000057,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        153.12,
+        157.16
+      ],
+      "cached_window": {
+        "seconds": 0.0005103517323732376,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.0,
+          "confidence": 0.11669581733876838,
+          "longest": 1.4000000000000057,
+          "cross_gap": false
+        },
+        "max_shift": 0.09999999999999432,
+        "predictions": [
+          {
+            "text": "bal",
+            "start": 153.34,
+            "end": 153.5,
+            "score": 0.1432495187424744
+          },
+          {
+            "text": "wi",
+            "start": 153.5,
+            "end": 153.54,
+            "score": 0.003158216713927686
+          },
+          {
+            "text": "syall",
+            "start": 153.54,
+            "end": 154.26,
+            "score": 0.11877289868425578
+          },
+          {
+            "text": "ne",
+            "start": 154.26,
+            "end": 154.5,
+            "score": 0.2979031950235367
+          },
+          {
+            "text": "scell",
+            "start": 154.5,
+            "end": 154.62,
+            "score": 0.055384927755221726
+          },
+          {
+            "text": "gung",
+            "start": 154.62,
+            "end": 155.38,
+            "score": 0.13479379343334585
+          },
+          {
+            "text": "nir",
+            "start": 155.38,
+            "end": 155.44,
+            "score": 0.03799281600125445
+          },
+          {
+            "text": "tron",
+            "start": 155.44,
+            "end": 156.84,
+            "score": 0.14231117235613056
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014937642961740494,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.0,
+          "confidence": 0.10579998269871188,
+          "longest": 2.180000000000007,
+          "cross_gap": false
+        },
+        "max_shift": 1.1599999999999966,
+        "predictions": [
+          {
+            "text": "bal",
+            "start": 153.12,
+            "end": 153.18,
+            "score": 0.021951588646819193
+          },
+          {
+            "text": "wi",
+            "start": 153.18,
+            "end": 153.22,
+            "score": 0.038397375494241714
+          },
+          {
+            "text": "syall",
+            "start": 153.22,
+            "end": 153.34,
+            "score": 0.02380807101726532
+          },
+          {
+            "text": "ne",
+            "start": 153.34,
+            "end": 153.66,
+            "score": 0.1708291694521904
+          },
+          {
+            "text": "scell",
+            "start": 153.66,
+            "end": 154.14000000000001,
+            "score": 0.103388916188851
+          },
+          {
+            "text": "gung",
+            "start": 154.14000000000001,
+            "end": 154.22,
+            "score": 0.06208036746829748
+          },
+          {
+            "text": "nir",
+            "start": 154.22,
+            "end": 154.66,
+            "score": 0.07781142772485812
+          },
+          {
+            "text": "tron",
+            "start": 154.66,
+            "end": 156.84,
+            "score": 0.3481329455971718
+          }
+        ]
+      }
+    },
+    {
+      "line": 34,
+      "line_id": "s03-n1442",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.49104734882712364,
+        "longest": 0.30000000000001137,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        169.88,
+        172.96
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 35,
+      "line_id": "s03-n1465",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.542420510541309,
+        "longest": 0.37999999999999545,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        172.5,
+        175.74
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 36,
+      "line_id": "s03-n1488",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5404907216628393,
+        "longest": 1.5600000000000023,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        175.38,
+        180.74
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 37,
+      "line_id": "s03-n1508",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5225559286773205,
+        "longest": 0.28000000000000114,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        180.32,
+        183.5
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 38,
+      "line_id": "s03-n1536",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.26547185828288394,
+        "longest": 0.28000000000000114,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        182.88,
+        184.82
+      ],
+      "cached_window": {
+        "seconds": 0.00026432983577251434,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2482707211286955,
+          "longest": 0.3400000000000034,
+          "cross_gap": false
+        },
+        "max_shift": 0.3199999999999932,
+        "predictions": [
+          {
+            "text": "na",
+            "start": 182.88,
+            "end": 183.22,
+            "score": 0.15182704381004442
+          },
+          {
+            "text": "mi",
+            "start": 183.32,
+            "end": 183.6,
+            "score": 0.37693604826927185
+          },
+          {
+            "text": "da",
+            "start": 183.6,
+            "end": 183.78,
+            "score": 0.16818560101091862
+          },
+          {
+            "text": "na",
+            "start": 183.84,
+            "end": 184.04,
+            "score": 0.1932672105031088
+          },
+          {
+            "text": "mi",
+            "start": 184.04,
+            "end": 184.24,
+            "score": 0.41538242995738983
+          },
+          {
+            "text": "da",
+            "start": 184.24,
+            "end": 184.51999999999998,
+            "score": 0.18402599322143942
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014779692515730858,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2287163071402271,
+          "longest": 0.3800000000000239,
+          "cross_gap": false
+        },
+        "max_shift": 0.3199999999999932,
+        "predictions": [
+          {
+            "text": "na",
+            "start": 182.88,
+            "end": 183.18,
+            "score": 0.18939104117453098
+          },
+          {
+            "text": "mi",
+            "start": 183.29999999999998,
+            "end": 183.68,
+            "score": 0.30721764266490936
+          },
+          {
+            "text": "da",
+            "start": 183.68,
+            "end": 183.72,
+            "score": 0.004497851041378453
+          },
+          {
+            "text": "na",
+            "start": 183.82,
+            "end": 184.04,
+            "score": 0.2168072090134956
+          },
+          {
+            "text": "mi",
+            "start": 184.04,
+            "end": 184.28,
+            "score": 0.35436806082725525
+          },
+          {
+            "text": "da",
+            "start": 184.28,
+            "end": 184.51999999999998,
+            "score": 0.30001603811979294
+          }
+        ]
+      }
+    },
+    {
+      "line": 39,
+      "line_id": "s03-n1548",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5509583912789822,
+        "longest": 0.7800000000000011,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        184.56,
+        190.22
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 40,
+      "line_id": "s03-n1577",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5830164790153504,
+        "longest": 2.420000000000016,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        189.70000000000002,
+        193.64000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 41,
+      "line_id": "s03-n1589",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.44288463606844064,
+        "longest": 0.8800000000000239,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        193.26,
+        197.72
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 42,
+      "line_id": "s03-n1627",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5291889114122764,
+        "longest": 1.2600000000000193,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        197.1,
+        204.04
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 43,
+      "line_id": "s03-n1662",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.46275392450668196,
+        "longest": 0.9200000000000159,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        203.6,
+        208.12
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 44,
+      "line_id": "s03-n1700",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4964328446449378,
+        "longest": 0.4399999999999977,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        207.82,
+        211.96
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 45,
+      "line_id": "s03-n1720",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5105935235818228,
+        "longest": 2.1399999999999864,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        211.42000000000002,
+        216.62
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 46,
+      "line_id": "s03-n1750",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5446743577718735,
+        "longest": 2.4799999999999898,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        216.28,
+        222.14000000000001
+      ],
+      "skip": "budget"
+    }
+  ]
+}

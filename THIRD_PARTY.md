@@ -9,6 +9,7 @@
 | [Timing](https://github.com/Zennmn/Timing) | 项目链路、MMS 定位、TIFA 与分离适配 |
 | [MiliKara](https://github.com/BilyHurington/MiliKara) | CTC 解码、活动代价、窗口、重试与尾点处理 |
 | [MSST](https://github.com/ZFTurbo/Music-Source-Separation-Training) | SCNet、DTTNet 和 RoFormer 推理 |
+| [pyopenjtalk](https://github.com/r9y9/pyopenjtalk) | OpenJTalk 日语发音前端，包版本与词典下载身份固定 |
 | [Windowed RoFormer](https://github.com/smulelabs/windowed-roformer) | 局部注意力人声分离 |
 
 [scripts/milikara/fast_ctc.py](scripts/milikara/fast_ctc.py) 改编自 MiliKara 的 CTC 递推，保留上游评分、回溯和并列路径选择。对应 MIT 许可见 [licenses/MiliKara-MIT.txt](licenses/MiliKara-MIT.txt)。

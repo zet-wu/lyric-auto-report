@@ -1,0 +1,1995 @@
+{
+  "song": "s04",
+  "baseline": "global",
+  "decisions": [
+    {
+      "line": 0,
+      "line_id": "s04-n497",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4038606957842906,
+        "longest": 0.35999999999999993,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        0.0,
+        3.0
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 1,
+      "line_id": "s04-n514",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.48281403879324597,
+        "longest": 2.5999999999999996,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        2.62,
+        7.88
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 2,
+      "line_id": "s04-n533",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.419465877793052,
+        "longest": 0.3000000000000007,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        20.12,
+        22.8
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 3,
+      "line_id": "s04-n554",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3957722093577364,
+        "longest": 1.1599999999999966,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        22.34,
+        25.88
+      ],
+      "cached_window": {
+        "seconds": 0.00031920522451400757,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3957722093577364,
+          "longest": 1.1599999999999966,
+          "cross_gap": false
+        },
+        "max_shift": 0.0,
+        "predictions": [
+          {
+            "text": "mi",
+            "start": 22.64,
+            "end": 22.88,
+            "score": 0.46720080077648163
+          },
+          {
+            "text": "chi",
+            "start": 22.88,
+            "end": 23.02,
+            "score": 0.34027305245399475
+          },
+          {
+            "text": "no",
+            "start": 23.02,
+            "end": 23.34,
+            "score": 0.4576130360364914
+          },
+          {
+            "text": "sa",
+            "start": 23.34,
+            "end": 23.6,
+            "score": 0.4139481782913208
+          },
+          {
+            "text": "ki",
+            "start": 23.6,
+            "end": 23.88,
+            "score": 0.4795800596475601
+          },
+          {
+            "text": "ni",
+            "start": 23.88,
+            "end": 24.38,
+            "score": 0.3505200892686844
+          },
+          {
+            "text": "ha",
+            "start": 24.42,
+            "end": 25.58,
+            "score": 0.2612702490296215
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014342665672302246,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.39900503885222693,
+          "longest": 0.9400000000000013,
+          "cross_gap": false
+        },
+        "max_shift": 0.1599999999999966,
+        "predictions": [
+          {
+            "text": "mi",
+            "start": 22.72,
+            "end": 22.919999999999998,
+            "score": 0.46851494908332825
+          },
+          {
+            "text": "chi",
+            "start": 22.919999999999998,
+            "end": 23.12,
+            "score": 0.3873550097147624
+          },
+          {
+            "text": "no",
+            "start": 23.12,
+            "end": 23.4,
+            "score": 0.42729319632053375
+          },
+          {
+            "text": "sa",
+            "start": 23.44,
+            "end": 23.66,
+            "score": 0.45948630571365356
+          },
+          {
+            "text": "ki",
+            "start": 23.66,
+            "end": 23.98,
+            "score": 0.46475183963775635
+          },
+          {
+            "text": "ni",
+            "start": 23.98,
+            "end": 24.38,
+            "score": 0.3891306519508362
+          },
+          {
+            "text": "ha",
+            "start": 24.58,
+            "end": 25.52,
+            "score": 0.19650331954471767
+          }
+        ]
+      }
+    },
+    {
+      "line": 4,
+      "line_id": "s04-n568",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3699022603757454,
+        "longest": 0.33999999999999986,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        25.740000000000002,
+        28.46
+      ],
+      "cached_window": {
+        "seconds": 0.0004533156752586365,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3699022603757454,
+          "longest": 0.3400000000000034,
+          "cross_gap": false
+        },
+        "max_shift": 3.552713678800501e-15,
+        "predictions": [
+          {
+            "text": "yu",
+            "start": 26.040000000000003,
+            "end": 26.240000000000002,
+            "score": 0.390200138092041
+          },
+          {
+            "text": "me",
+            "start": 26.240000000000002,
+            "end": 26.42,
+            "score": 0.3670225888490677
+          },
+          {
+            "text": "ni",
+            "start": 26.42,
+            "end": 26.6,
+            "score": 0.3347622752189636
+          },
+          {
+            "text": "ma",
+            "start": 26.6,
+            "end": 26.840000000000003,
+            "score": 0.3719872683286667
+          },
+          {
+            "text": "de",
+            "start": 26.840000000000003,
+            "end": 26.96,
+            "score": 0.2967260032892227
+          },
+          {
+            "text": "mi",
+            "start": 26.96,
+            "end": 27.12,
+            "score": 0.3870941996574402
+          },
+          {
+            "text": "ta",
+            "start": 27.12,
+            "end": 27.3,
+            "score": 0.3609817326068878
+          },
+          {
+            "text": "ke",
+            "start": 27.3,
+            "end": 27.520000000000003,
+            "score": 0.41303880512714386
+          },
+          {
+            "text": "shi",
+            "start": 27.520000000000003,
+            "end": 27.680000000000003,
+            "score": 0.29851027329762775
+          },
+          {
+            "text": "ki",
+            "start": 27.680000000000003,
+            "end": 27.82,
+            "score": 0.3836396485567093
+          },
+          {
+            "text": "ga",
+            "start": 27.82,
+            "end": 28.160000000000004,
+            "score": 0.4649619311094284
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01415700651705265,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.4950602578394341,
+          "longest": 0.35999999999999943,
+          "cross_gap": false
+        },
+        "max_shift": 0.060000000000002274,
+        "predictions": [
+          {
+            "text": "yu",
+            "start": 26.080000000000002,
+            "end": 26.28,
+            "score": 0.5308928787708282
+          },
+          {
+            "text": "me",
+            "start": 26.28,
+            "end": 26.44,
+            "score": 0.45353086292743683
+          },
+          {
+            "text": "ni",
+            "start": 26.44,
+            "end": 26.64,
+            "score": 0.44868890941143036
+          },
+          {
+            "text": "ma",
+            "start": 26.64,
+            "end": 26.840000000000003,
+            "score": 0.5079807639122009
+          },
+          {
+            "text": "de",
+            "start": 26.840000000000003,
+            "end": 26.98,
+            "score": 0.4242102652788162
+          },
+          {
+            "text": "mi",
+            "start": 26.98,
+            "end": 27.14,
+            "score": 0.5355454385280609
+          },
+          {
+            "text": "ta",
+            "start": 27.14,
+            "end": 27.340000000000003,
+            "score": 0.5486344248056412
+          },
+          {
+            "text": "ke",
+            "start": 27.340000000000003,
+            "end": 27.540000000000003,
+            "score": 0.4894328713417053
+          },
+          {
+            "text": "shi",
+            "start": 27.540000000000003,
+            "end": 27.700000000000003,
+            "score": 0.4252716402212779
+          },
+          {
+            "text": "ki",
+            "start": 27.700000000000003,
+            "end": 27.860000000000003,
+            "score": 0.4931112825870514
+          },
+          {
+            "text": "ga",
+            "start": 27.860000000000003,
+            "end": 28.220000000000002,
+            "score": 0.5883634984493256
+          }
+        ]
+      }
+    },
+    {
+      "line": 5,
+      "line_id": "s04-n592",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3209134198654543,
+        "longest": 0.3000000000000007,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        28.04,
+        29.900000000000002
+      ],
+      "cached_window": {
+        "seconds": 0.00027231499552726746,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.31193434570793344,
+          "longest": 0.5400000000000027,
+          "cross_gap": false
+        },
+        "max_shift": 0.3000000000000007,
+        "predictions": [
+          {
+            "text": "yu",
+            "start": 28.34,
+            "end": 28.52,
+            "score": 0.40068070590496063
+          },
+          {
+            "text": "re",
+            "start": 28.52,
+            "end": 28.7,
+            "score": 0.4555388391017914
+          },
+          {
+            "text": "ru",
+            "start": 28.7,
+            "end": 29.0,
+            "score": 0.4933048486709595
+          },
+          {
+            "text": "i",
+            "start": 29.0,
+            "end": 29.259999999999998,
+            "score": 0.5760308504104614
+          },
+          {
+            "text": "me",
+            "start": 29.259999999999998,
+            "end": 29.8,
+            "score": 0.2464278661645949
+          },
+          {
+            "text": "e",
+            "start": 29.82,
+            "end": 29.84,
+            "score": 0.011139309965074062
+          },
+          {
+            "text": "ji",
+            "start": 29.86,
+            "end": 29.9,
+            "score": 0.00041799973769229837
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014613879844546318,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.1423860470198893,
+          "longest": 0.35999999999999943,
+          "cross_gap": false
+        },
+        "max_shift": 0.14000000000000057,
+        "predictions": [
+          {
+            "text": "yu",
+            "start": 28.48,
+            "end": 28.619999999999997,
+            "score": 0.2735219746828079
+          },
+          {
+            "text": "re",
+            "start": 28.619999999999997,
+            "end": 28.779999999999998,
+            "score": 0.2021174654364586
+          },
+          {
+            "text": "ru",
+            "start": 28.779999999999998,
+            "end": 28.96,
+            "score": 0.14011945948004723
+          },
+          {
+            "text": "i",
+            "start": 28.96,
+            "end": 29.32,
+            "score": 0.23252902925014496
+          },
+          {
+            "text": "me",
+            "start": 29.36,
+            "end": 29.4,
+            "score": 0.04346847161650658
+          },
+          {
+            "text": "e",
+            "start": 29.419999999999998,
+            "end": 29.439999999999998,
+            "score": 0.06278695166110992
+          },
+          {
+            "text": "ji",
+            "start": 29.439999999999998,
+            "end": 29.48,
+            "score": 0.04215897701214999
+          }
+        ]
+      }
+    },
+    {
+      "line": 6,
+      "line_id": "s04-n603",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.36411753217168247,
+        "longest": 1.0399999999999991,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        29.3,
+        35.160000000000004
+      ],
+      "cached_window": {
+        "seconds": 0.0005789622664451599,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3619902209886883,
+          "longest": 1.0400000000000027,
+          "cross_gap": false
+        },
+        "max_shift": 0.3000000000000007,
+        "predictions": [
+          {
+            "text": "da",
+            "start": 29.3,
+            "end": 30.2,
+            "score": 0.18385160091565922
+          },
+          {
+            "text": "ke",
+            "start": 30.2,
+            "end": 31.240000000000002,
+            "score": 0.2606616030152509
+          },
+          {
+            "text": "do",
+            "start": 31.68,
+            "end": 32.2,
+            "score": 0.33189657330513
+          },
+          {
+            "text": "na",
+            "start": 32.2,
+            "end": 32.480000000000004,
+            "score": 0.4821581244468689
+          },
+          {
+            "text": "n",
+            "start": 32.480000000000004,
+            "end": 32.74,
+            "score": 0.48940786719322205
+          },
+          {
+            "text": "da",
+            "start": 32.74,
+            "end": 32.78,
+            "score": 0.10400126123568043
+          },
+          {
+            "text": "ka",
+            "start": 32.78,
+            "end": 32.92,
+            "score": 0.43297097086906433
+          },
+          {
+            "text": "ko",
+            "start": 32.92,
+            "end": 33.120000000000005,
+            "score": 0.3800160586833954
+          },
+          {
+            "text": "no",
+            "start": 33.120000000000005,
+            "end": 33.3,
+            "score": 0.35656945407390594
+          },
+          {
+            "text": "hi",
+            "start": 33.3,
+            "end": 33.46,
+            "score": 0.34131920337677
+          },
+          {
+            "text": "ni",
+            "start": 33.46,
+            "end": 33.9,
+            "score": 0.4988897293806076
+          },
+          {
+            "text": "ka",
+            "start": 33.9,
+            "end": 34.160000000000004,
+            "score": 0.3867335766553879
+          },
+          {
+            "text": "gi",
+            "start": 34.160000000000004,
+            "end": 34.56,
+            "score": 0.4437257647514343
+          },
+          {
+            "text": "t",
+            "start": 34.56,
+            "end": 34.620000000000005,
+            "score": 0.36894500255584717
+          },
+          {
+            "text": "te",
+            "start": 34.64,
+            "end": 34.88,
+            "score": 0.36870652437210083
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.013905791565775871,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.34510525192308705,
+          "longest": 1.8399999999999999,
+          "cross_gap": false
+        },
+        "max_shift": 0.8599999999999994,
+        "predictions": [
+          {
+            "text": "da",
+            "start": 29.3,
+            "end": 29.34,
+            "score": 0.04493342194473371
+          },
+          {
+            "text": "ke",
+            "start": 29.34,
+            "end": 31.18,
+            "score": 0.14798204963153694
+          },
+          {
+            "text": "do",
+            "start": 31.740000000000002,
+            "end": 32.24,
+            "score": 0.3607592135667801
+          },
+          {
+            "text": "na",
+            "start": 32.24,
+            "end": 32.6,
+            "score": 0.517959326505661
+          },
+          {
+            "text": "n",
+            "start": 32.6,
+            "end": 32.8,
+            "score": 0.501383364200592
+          },
+          {
+            "text": "da",
+            "start": 32.8,
+            "end": 32.84,
+            "score": 0.08175154938362539
+          },
+          {
+            "text": "ka",
+            "start": 32.84,
+            "end": 32.980000000000004,
+            "score": 0.47775065898895264
+          },
+          {
+            "text": "ko",
+            "start": 32.980000000000004,
+            "end": 33.160000000000004,
+            "score": 0.4746014177799225
+          },
+          {
+            "text": "no",
+            "start": 33.160000000000004,
+            "end": 33.34,
+            "score": 0.4197784513235092
+          },
+          {
+            "text": "hi",
+            "start": 33.34,
+            "end": 33.54,
+            "score": 0.40617845952510834
+          },
+          {
+            "text": "ni",
+            "start": 33.54,
+            "end": 33.88,
+            "score": 0.5037880539894104
+          },
+          {
+            "text": "ka",
+            "start": 34.0,
+            "end": 34.26,
+            "score": 0.4763823002576828
+          },
+          {
+            "text": "gi",
+            "start": 34.26,
+            "end": 34.7,
+            "score": 0.3772414028644562
+          },
+          {
+            "text": "t",
+            "start": 34.7,
+            "end": 34.72,
+            "score": 0.159388467669487
+          },
+          {
+            "text": "te",
+            "start": 34.74,
+            "end": 35.06,
+            "score": 0.22670064121484756
+          }
+        ]
+      }
+    },
+    {
+      "line": 7,
+      "line_id": "s04-n628",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4671843838360574,
+        "longest": 0.9799999999999969,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        34.56,
+        40.02
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 8,
+      "line_id": "s04-n659",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.48748215471083917,
+        "longest": 0.46000000000000085,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        39.660000000000004,
+        45.42
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 9,
+      "line_id": "s04-n684",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4231659538112581,
+        "longest": 0.36000000000000654,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        45.02,
+        48.22
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 10,
+      "line_id": "s04-n701",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4927833234822308,
+        "longest": 0.480000000000004,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        47.82,
+        51.0
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 11,
+      "line_id": "s04-n720",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4866014401583622,
+        "longest": 0.6400000000000006,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        50.58,
+        56.660000000000004
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 12,
+      "line_id": "s04-n754",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.421100265358109,
+        "longest": 0.38000000000000256,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        56.28,
+        59.54
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 13,
+      "line_id": "s04-n771",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.45040772805611284,
+        "longest": 0.6599999999999966,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        59.14,
+        62.42
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 14,
+      "line_id": "s04-n794",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.44864283688366413,
+        "longest": 0.5400000000000063,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        62.2,
+        65.3
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 15,
+      "line_id": "s04-n809",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5003840098778407,
+        "longest": 2.6599999999999966,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        65.06,
+        71.46000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 16,
+      "line_id": "s04-n832",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5346464465061823,
+        "longest": 0.3199999999999932,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        80.84,
+        83.54
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 17,
+      "line_id": "s04-n853",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4964145501809461,
+        "longest": 0.8799999999999955,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        83.12,
+        86.22
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 18,
+      "line_id": "s04-n867",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5341593108393929,
+        "longest": 0.3199999999999932,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        86.5,
+        89.18
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 19,
+      "line_id": "s04-n888",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5520100870302745,
+        "longest": 1.3199999999999932,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        88.8,
+        92.18
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 20,
+      "line_id": "s04-n905",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5547891137274829,
+        "longest": 0.3400000000000034,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        92.14,
+        94.84
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 21,
+      "line_id": "s04-n929",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.538661667963283,
+        "longest": 1.1400000000000006,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        94.4,
+        100.74000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 22,
+      "line_id": "s04-n960",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.492638667838441,
+        "longest": 0.480000000000004,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        100.38,
+        106.16
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 23,
+      "line_id": "s04-n982",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4117142332640166,
+        "longest": 0.4000000000000057,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        105.9,
+        108.96000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 24,
+      "line_id": "s04-n1005",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.472330242395401,
+        "longest": 0.5400000000000063,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        108.54,
+        111.74000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 25,
+      "line_id": "s04-n1024",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5424356106668711,
+        "longest": 0.5,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        111.36,
+        114.72
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 26,
+      "line_id": "s04-n1036",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5535513141325542,
+        "longest": 0.45999999999999375,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        114.54,
+        117.26
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 27,
+      "line_id": "s04-n1053",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.47243818854913117,
+        "longest": 0.4399999999999977,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        116.96000000000001,
+        120.2
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 28,
+      "line_id": "s04-n1067",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.2894428336643614,
+        "longest": 0.7000000000000028,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        119.94,
+        123.38000000000001
+      ],
+      "cached_window": {
+        "seconds": 0.0003905370831489563,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2894428336643614,
+          "longest": 0.7000000000000028,
+          "cross_gap": false
+        },
+        "max_shift": 1.4210854715202004e-14,
+        "predictions": [
+          {
+            "text": "fu",
+            "start": 120.24,
+            "end": 120.28,
+            "score": 0.05119437875691801
+          },
+          {
+            "text": "ka",
+            "start": 120.28,
+            "end": 120.5,
+            "score": 0.13320715725421906
+          },
+          {
+            "text": "ku",
+            "start": 120.5,
+            "end": 120.78,
+            "score": 0.19140224158763885
+          },
+          {
+            "text": "shi",
+            "start": 120.78,
+            "end": 120.98,
+            "score": 0.21770809590816498
+          },
+          {
+            "text": "zu",
+            "start": 120.98,
+            "end": 121.36,
+            "score": 0.37625768780708313
+          },
+          {
+            "text": "n",
+            "start": 121.36,
+            "end": 121.75999999999999,
+            "score": 0.48500919342041016
+          },
+          {
+            "text": "da",
+            "start": 121.75999999999999,
+            "end": 121.98,
+            "score": 0.22963900119066238
+          },
+          {
+            "text": "ki",
+            "start": 121.98,
+            "end": 122.14,
+            "score": 0.250228188931942
+          },
+          {
+            "text": "o",
+            "start": 122.14,
+            "end": 122.38,
+            "score": 0.4701792895793915
+          },
+          {
+            "text": "ku",
+            "start": 122.38,
+            "end": 123.08,
+            "score": 0.48960310220718384
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.013777431100606918,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.4588392107126613,
+          "longest": 0.6200000000000045,
+          "cross_gap": false
+        },
+        "max_shift": 0.14000000000000057,
+        "predictions": [
+          {
+            "text": "fu",
+            "start": 120.2,
+            "end": 120.36,
+            "score": 0.18988629430532455
+          },
+          {
+            "text": "ka",
+            "start": 120.36,
+            "end": 120.53999999999999,
+            "score": 0.18655289057642221
+          },
+          {
+            "text": "ku",
+            "start": 120.53999999999999,
+            "end": 120.78,
+            "score": 0.3323991298675537
+          },
+          {
+            "text": "shi",
+            "start": 120.78,
+            "end": 121.08,
+            "score": 0.42215170462926227
+          },
+          {
+            "text": "zu",
+            "start": 121.08,
+            "end": 121.44,
+            "score": 0.6764528453350067
+          },
+          {
+            "text": "n",
+            "start": 121.44,
+            "end": 121.86,
+            "score": 0.585399329662323
+          },
+          {
+            "text": "da",
+            "start": 121.86,
+            "end": 122.06,
+            "score": 0.3649526461958885
+          },
+          {
+            "text": "ki",
+            "start": 122.06,
+            "end": 122.28,
+            "score": 0.48630328476428986
+          },
+          {
+            "text": "o",
+            "start": 122.28,
+            "end": 122.46,
+            "score": 0.689384937286377
+          },
+          {
+            "text": "ku",
+            "start": 122.46,
+            "end": 123.08,
+            "score": 0.6549090445041656
+          }
+        ]
+      }
+    },
+    {
+      "line": 29,
+      "line_id": "s04-n1090",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3356508342549205,
+        "longest": 0.519999999999996,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        122.96000000000001,
+        126.04
+      ],
+      "cached_window": {
+        "seconds": 0.0003077816218137741,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3356508342549205,
+          "longest": 0.519999999999996,
+          "cross_gap": false
+        },
+        "max_shift": 1.4210854715202004e-14,
+        "predictions": [
+          {
+            "text": "mo",
+            "start": 123.26,
+            "end": 123.42,
+            "score": 0.26941806823015213
+          },
+          {
+            "text": "u",
+            "start": 123.42,
+            "end": 123.60000000000001,
+            "score": 0.27247223258018494
+          },
+          {
+            "text": "hi",
+            "start": 123.74000000000001,
+            "end": 124.14000000000001,
+            "score": 0.3909175544977188
+          },
+          {
+            "text": "to",
+            "start": 124.14000000000001,
+            "end": 124.46000000000001,
+            "score": 0.28913428634405136
+          },
+          {
+            "text": "ri",
+            "start": 124.46000000000001,
+            "end": 124.50000000000001,
+            "score": 0.15722764283418655
+          },
+          {
+            "text": "ja",
+            "start": 124.50000000000001,
+            "end": 124.98,
+            "score": 0.35411083698272705
+          },
+          {
+            "text": "na",
+            "start": 124.98,
+            "end": 125.22000000000001,
+            "score": 0.4044454097747803
+          },
+          {
+            "text": "i",
+            "start": 125.22000000000001,
+            "end": 125.74000000000001,
+            "score": 0.5474806427955627
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.014667540788650513,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.48993918113410473,
+          "longest": 0.539999999999992,
+          "cross_gap": false
+        },
+        "max_shift": 0.15999999999998238,
+        "predictions": [
+          {
+            "text": "mo",
+            "start": 123.26,
+            "end": 123.52000000000001,
+            "score": 0.5239831805229187
+          },
+          {
+            "text": "u",
+            "start": 123.52000000000001,
+            "end": 123.68,
+            "score": 0.3649936318397522
+          },
+          {
+            "text": "hi",
+            "start": 123.7,
+            "end": 124.16000000000001,
+            "score": 0.549915999174118
+          },
+          {
+            "text": "to",
+            "start": 124.16000000000001,
+            "end": 124.30000000000001,
+            "score": 0.442050963640213
+          },
+          {
+            "text": "ri",
+            "start": 124.30000000000001,
+            "end": 124.50000000000001,
+            "score": 0.418113112449646
+          },
+          {
+            "text": "ja",
+            "start": 124.50000000000001,
+            "end": 124.94000000000001,
+            "score": 0.4877239614725113
+          },
+          {
+            "text": "na",
+            "start": 124.94000000000001,
+            "end": 125.24000000000001,
+            "score": 0.47441747784614563
+          },
+          {
+            "text": "i",
+            "start": 125.24000000000001,
+            "end": 125.78,
+            "score": 0.658315122127533
+          }
+        ]
+      }
+    },
+    {
+      "line": 30,
+      "line_id": "s04-n1102",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.39929675397773584,
+        "longest": 2.9799999999999898,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        125.78,
+        132.52
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 31,
+      "line_id": "s04-n1119",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9924692284940752,
+        "confidence": 0.5385762724611494,
+        "longest": 1.2399999999999807,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        151.18,
+        157.78
+      ],
+      "cached_window": {
+        "seconds": 0.0006327573210000992,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9924692284940752,
+          "confidence": 0.5385762724611494,
+          "longest": 1.240000000000009,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 151.5,
+            "end": 151.82,
+            "score": 0.5460278987884521
+          },
+          {
+            "text": "ko",
+            "start": 151.82,
+            "end": 152.14000000000001,
+            "score": 0.591817319393158
+          },
+          {
+            "text": "ro",
+            "start": 152.14000000000001,
+            "end": 152.48000000000002,
+            "score": 0.5100367665290833
+          },
+          {
+            "text": "ni",
+            "start": 152.48000000000002,
+            "end": 152.82,
+            "score": 0.44774241745471954
+          },
+          {
+            "text": "fu",
+            "start": 152.82,
+            "end": 153.20000000000002,
+            "score": 0.3156408667564392
+          },
+          {
+            "text": "wa",
+            "start": 153.20000000000002,
+            "end": 153.58,
+            "score": 0.6137943863868713
+          },
+          {
+            "text": "ri",
+            "start": 153.58,
+            "end": 153.9,
+            "score": 0.4968087822198868
+          },
+          {
+            "text": "to",
+            "start": 153.9,
+            "end": 154.26000000000002,
+            "score": 0.61287721991539
+          },
+          {
+            "text": "do",
+            "start": 154.26000000000002,
+            "end": 154.62,
+            "score": 0.6502166986465454
+          },
+          {
+            "text": "ke",
+            "start": 154.62,
+            "end": 154.96,
+            "score": 0.6524435579776764
+          },
+          {
+            "text": "ta",
+            "start": 154.96,
+            "end": 155.34,
+            "score": 0.5926729738712311
+          },
+          {
+            "text": "i",
+            "start": 155.34,
+            "end": 155.58,
+            "score": 0.48010531067848206
+          },
+          {
+            "text": "fly",
+            "start": 155.58,
+            "end": 155.96,
+            "score": 0.4506014784177144
+          },
+          {
+            "text": "a",
+            "start": 155.96,
+            "end": 156.24,
+            "score": 0.5522488355636597
+          },
+          {
+            "text": "way",
+            "start": 156.24,
+            "end": 157.48000000000002,
+            "score": 0.5656095743179321
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.015331830829381943,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9877997100479586,
+          "confidence": 0.506177156832483,
+          "longest": 1.3600000000000136,
+          "cross_gap": false
+        },
+        "max_shift": 0.10000000000002274,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 151.48000000000002,
+            "end": 151.8,
+            "score": 0.5241253077983856
+          },
+          {
+            "text": "ko",
+            "start": 151.8,
+            "end": 152.14000000000001,
+            "score": 0.5637478828430176
+          },
+          {
+            "text": "ro",
+            "start": 152.14000000000001,
+            "end": 152.48000000000002,
+            "score": 0.49543504416942596
+          },
+          {
+            "text": "ni",
+            "start": 152.48000000000002,
+            "end": 152.82,
+            "score": 0.4033481031656265
+          },
+          {
+            "text": "fu",
+            "start": 152.82,
+            "end": 153.20000000000002,
+            "score": 0.4325374662876129
+          },
+          {
+            "text": "wa",
+            "start": 153.20000000000002,
+            "end": 153.6,
+            "score": 0.5537351369857788
+          },
+          {
+            "text": "ri",
+            "start": 153.6,
+            "end": 153.88,
+            "score": 0.4668617397546768
+          },
+          {
+            "text": "to",
+            "start": 153.88,
+            "end": 154.26000000000002,
+            "score": 0.5382248759269714
+          },
+          {
+            "text": "do",
+            "start": 154.26000000000002,
+            "end": 154.62,
+            "score": 0.60570427775383
+          },
+          {
+            "text": "ke",
+            "start": 154.62,
+            "end": 154.98000000000002,
+            "score": 0.573954313993454
+          },
+          {
+            "text": "ta",
+            "start": 154.98000000000002,
+            "end": 155.34,
+            "score": 0.5522027611732483
+          },
+          {
+            "text": "i",
+            "start": 155.34,
+            "end": 155.62,
+            "score": 0.42314353585243225
+          },
+          {
+            "text": "fly",
+            "start": 155.62,
+            "end": 155.94,
+            "score": 0.36439700921376544
+          },
+          {
+            "text": "a",
+            "start": 155.94,
+            "end": 156.22,
+            "score": 0.5261226892471313
+          },
+          {
+            "text": "way",
+            "start": 156.22,
+            "end": 157.58,
+            "score": 0.5691172083218893
+          }
+        ]
+      }
+    },
+    {
+      "line": 32,
+      "line_id": "s04-n1141",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.46426789900287985,
+        "longest": 0.3800000000000239,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        157.88,
+        161.28
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 33,
+      "line_id": "s04-n1161",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5620740795577013,
+        "longest": 0.4200000000000159,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        160.78,
+        164.02
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 34,
+      "line_id": "s04-n1177",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5646130790313084,
+        "longest": 0.5800000000000125,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        163.6,
+        167.12
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 35,
+      "line_id": "s04-n1192",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5667487680912018,
+        "longest": 0.5199999999999818,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        166.76,
+        169.68
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 36,
+      "line_id": "s04-n1206",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.43584500304423274,
+        "longest": 0.4000000000000057,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        169.28,
+        172.52
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 37,
+      "line_id": "s04-n1223",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.46688407237331064,
+        "longest": 0.700000000000017,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        172.06,
+        175.70000000000002
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 38,
+      "line_id": "s04-n1246",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.44429863383993506,
+        "longest": 0.6800000000000068,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        175.20000000000002,
+        178.4
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 39,
+      "line_id": "s04-n1261",
+      "reasons": [
+        "duration",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.49765956997871397,
+        "longest": 5.159999999999997,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        178.0,
+        186.92000000000002
+      ],
+      "cached_window": {
+        "seconds": 0.0005082711577415466,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.49765956997871397,
+          "longest": 5.159999999999997,
+          "cross_gap": false
+        },
+        "max_shift": 0.0,
+        "predictions": [
+          {
+            "text": "e",
+            "start": 178.3,
+            "end": 178.72,
+            "score": 0.6563572883605957
+          },
+          {
+            "text": "ga",
+            "start": 178.72,
+            "end": 178.92,
+            "score": 0.5751638114452362
+          },
+          {
+            "text": "ku",
+            "start": 178.92,
+            "end": 179.8,
+            "score": 0.6425228714942932
+          },
+          {
+            "text": "a",
+            "start": 180.08,
+            "end": 180.34,
+            "score": 0.5237986445426941
+          },
+          {
+            "text": "shi",
+            "start": 180.34,
+            "end": 180.4,
+            "score": 0.18740509450435638
+          },
+          {
+            "text": "ta",
+            "start": 180.4,
+            "end": 180.58,
+            "score": 0.3325206786394119
+          },
+          {
+            "text": "no",
+            "start": 180.58,
+            "end": 180.92,
+            "score": 0.37886981666088104
+          },
+          {
+            "text": "ki",
+            "start": 180.92,
+            "end": 181.26,
+            "score": 0.4690864682197571
+          },
+          {
+            "text": "se",
+            "start": 181.26,
+            "end": 181.46,
+            "score": 0.4317869693040848
+          },
+          {
+            "text": "ki",
+            "start": 181.46,
+            "end": 186.62,
+            "score": 0.7790840566158295
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01664332114160061,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.590909627576669,
+          "longest": 5.099999999999994,
+          "cross_gap": false
+        },
+        "max_shift": 0.12000000000000455,
+        "predictions": [
+          {
+            "text": "e",
+            "start": 178.34,
+            "end": 178.7,
+            "score": 0.6522472500801086
+          },
+          {
+            "text": "ga",
+            "start": 178.7,
+            "end": 178.96,
+            "score": 0.6049354076385498
+          },
+          {
+            "text": "ku",
+            "start": 178.96,
+            "end": 179.74,
+            "score": 0.6702357530593872
+          },
+          {
+            "text": "a",
+            "start": 180.16,
+            "end": 180.36,
+            "score": 0.6528784036636353
+          },
+          {
+            "text": "shi",
+            "start": 180.36,
+            "end": 180.52,
+            "score": 0.40735455354054767
+          },
+          {
+            "text": "ta",
+            "start": 180.52,
+            "end": 180.7,
+            "score": 0.46605807542800903
+          },
+          {
+            "text": "no",
+            "start": 180.7,
+            "end": 180.98,
+            "score": 0.4767550975084305
+          },
+          {
+            "text": "ki",
+            "start": 180.98,
+            "end": 181.34,
+            "score": 0.5408346652984619
+          },
+          {
+            "text": "se",
+            "start": 181.34,
+            "end": 181.56,
+            "score": 0.5950393974781036
+          },
+          {
+            "text": "ki",
+            "start": 181.56,
+            "end": 186.66,
+            "score": 0.8427576720714569
+          }
+        ]
+      }
+    }
+  ]
+}

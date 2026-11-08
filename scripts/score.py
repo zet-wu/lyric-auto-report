@@ -3,5 +3,5 @@ from pathlib import Path
 import subprocess,sys,os
 ROOT=Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
-for script in ('timing/metrics.py','timing/ablation_score.py','timing/ablation_tables.py','milikara/evaluate.py','milikara/score_separation.py'):
+for script in ('timing/metrics.py','timing/ablation_score.py','timing/ablation_tables.py','milikara/evaluate.py','milikara/score_separation.py','milikara/score_local.py','reading/score.py'):
     subprocess.run([sys.executable,str(ROOT/'scripts'/script)],check=True,cwd=ROOT)

@@ -33,6 +33,13 @@ def sources():
         run('git','-C',folder,'fetch','--depth','1',item['url'],item['commit'])
         run('git','-C',folder,'checkout','--detach','FETCH_HEAD')
 
+def reading():
+    import tarfile
+    asset=json.loads((ROOT/'configs/reading-assets.json').read_text())['openjtalk']
+    fetch(asset['url'],asset['path'],asset['sha256'])
+    with tarfile.open(ROOT/asset['path']) as archive:
+        archive.extractall(ROOT/'.models/openjtalk',filter='data')
+
 def models():
     from huggingface_hub import snapshot_download
     snapshot_download('NextFire/mms-300m-ForcedAligner-karaoke-ja-Latn',
@@ -55,7 +62,9 @@ def models():
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('part',choices=['sources','models','all'],default='all',nargs='?')
+    parser.add_argument('part',choices=['sources','models','reading','all'],default='all',nargs='?')
     args=parser.parse_args()
     if args.part in ('sources','all'):sources()
     if args.part in ('models','all'):models()
+
+    if args.part in ('reading','models','all'):reading()

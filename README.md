@@ -8,7 +8,8 @@
 
 - 固定人工读音时，NextFire 配合 BS Karaoke 的 core 拼接取得 86.05% 双端 100 ms 宏平均命中率。TIFA 在准确行窗口中明显改善；MMS_FA 的延音尾点普遍偏早。
 - 六模型下游比较中，浮点 core 路径的 Windowed 为 84.94%，PCM24 路径的 DTTNet 为 84.88%；保存与活动检测路径会改变排名。
-- MiliKara 的分隔符折叠在本测试集降低命中，停顿代价的收益较小。自动读音实验中，一次局部声学重算把日语 100 ms 命中从 70.99% 提升至 76.00%，DP 分组未超过这一简单对照。
+- MiliKara 的分隔符折叠在本测试集降低命中，停顿代价的收益较小。人工读音下，异常行局部重算使整曲基线增加 109 个 100 ms 命中，core 基线只净增 2 个。
+- 自动注音的共同片段匹配率：Studio 为 94.52%，Terra／Luna 修正 Studio 候选后分别为 97.65%／97.43%。该指标比较人工 Ruby 的书写一致性。
 - Timing 原生链路在每种输入条件下完成 6/14 份标注，其中日语主组为 4/11；未完成项与部分输出保留在评分分母中。
 
 以上数字对应不同输入与评分单元，比较范围见各报告。完整链路、固定人工读音、人工行窗口三个层次分别呈现。
@@ -22,10 +23,11 @@
 | [历史分离性能](reports/separation-performance.md) | 六模型五曲 GPU 与短片段 CPU 资源记录 |
 | [当前分离资源](reports/resources.md) | Demucs、BS Karaoke、Kim 串行测量 |
 | [对齐后端与窗口](reports/alignment-backends.md) | 1092 个模块条件、延音和窗口覆盖 |
-| [六模型下游对齐](reports/separation-alignment.md) | 828 个条件、两条保存路径、人工与自动读音 |
+| [六模型下游对齐](reports/separation-alignment.md) | 432 个条件、两条保存路径、人工读音 |
 | [Timing 完整链路](reports/timing.md) | 三种输入、失败分析、受控与混合链路 |
-| [MiliKara 模块](reports/milikara.md) | 固定目标的 264 种配置及消融 |
-| [自动读音与迭代](reports/auto-reading.md) | 6 种终态及 4 种候选对照 |
+| [MiliKara 模块](reports/milikara.md) | 固定目标的 252 种配置及消融 |
+| [自动读音](reports/auto-reading.md) | Studio、词典规则及 Terra／Luna 注音准确率 |
+| [异常行局部重算](reports/local-refinement.md) | 人工读音，整曲与 core 两种基线 |
 | [复现说明](reports/reproduce.md) | 环境、下载、推理与独立评分 |
 
 ## 快速复核
@@ -46,6 +48,8 @@ python3.13 scripts/verify_results.py
 python3.13 scripts/setup.py --models
 .venvs/research/bin/python scripts/run.py all --fresh
 ```
+
+四组 LLM 注音由独立模型代理按公开提示生成，完整重跑后需单独生成或导入，步骤见复现说明。
 
 --fresh 将已有 results 与 .cache 移入被忽略的 .runs/run-001 等编号备份，再重新推理。中断后去掉 --fresh 续跑；分阶段入口见[复现说明](reports/reproduce.md)。
 

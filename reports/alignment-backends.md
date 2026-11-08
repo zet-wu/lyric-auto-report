@@ -51,7 +51,7 @@ NextFire 的 BS Karaoke core 条件命中 3969/4590 个单元，缺失 15 个，
 
 固定 NextFire 后，core 拼接的宏平均为 SCNet 82.62%、DTTNet 84.74%、BS-RoFormer Viperx 84.96%、MelBand 84.80%、Windowed 85.25%。这里的 BS-RoFormer Viperx 与主表 BS Karaoke 使用不同权重；Kim 与 MelBand 使用同一权重但推理路径不同。
 
-六模型的自动读音、原始叶级单元和持久化路径比较见 [分离与下游对齐](separation-alignment.md)。本表固定人工读音，不能直接代表正文输入后的完整自动化效果。
+六模型的原始叶级单元和持久化路径比较见 [分离与下游对齐](separation-alignment.md)。本表固定人工读音，不能直接代表正文输入后的完整自动化效果。
 
 ## 记录
 

@@ -35,7 +35,7 @@ for doc in [ROOT/'README.md',*(ROOT/'reports').glob('*.md'),ROOT/'THIRD_PARTY.md
         if '://' in link or link.startswith('#'):continue
         path=doc.parent/link.split('#')[0]
         assert path.exists(),(doc,link)
-for kind in ('confirmed-targets','auto-readings'):
+for kind in ('confirmed-targets',):
     path=ROOT/'results/milikara'/(kind+'.json')
     if path.exists():
         def check(v):

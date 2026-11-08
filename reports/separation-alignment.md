@@ -2,7 +2,7 @@
 
 在人声 core 拼接、人工读音条件下，浮点路径的最高歌曲宏平均为 Windowed 的 84.94%；PCM24 路径的最高值为 DTTNet 的 84.88%。Demucs 在两条路径中均为 83.93%。选择分离器时，保存和活动分析路径会影响最终端点成绩。
 
-本轮完成 432 个歌曲条件，覆盖六种分离配置、浮点与 PCM24 两条路径、整曲与两种拼接策略，使用相同的人工读音。主组为 11 首日语歌曲，4871 个日语定时单元；另有 113 个拉丁单元和单列的潮汕语假名结果。
+本轮完成 432 个歌曲条件，覆盖六种分离配置、浮点与 PCM24 两条路径、整曲与两种拼接策略，使用相同的人工读音。主组为 11 首日语歌曲，4871 个日语定时单元；另有 113 个拉丁单元和单列的潮汕话假名结果。
 
 ## 人工读音
 
@@ -27,6 +27,6 @@ core 拼接相对完整人声提高了各分离器的命中率。浮点路径中
 
 ## 复核与应用
 
-完整的日语、拉丁文本、逐曲及潮汕语假名结果见 [metrics.json](../results/separation-alignment/metrics.json)，汇总表见 [tables.md](../results/separation-alignment/tables.md)，表格数据见 [metrics.csv](../results/separation-alignment/metrics.csv)。
+完整的日语、拉丁文本、逐曲及潮汕话假名结果见 [metrics.json](../results/separation-alignment/metrics.json)，汇总表见 [tables.md](../results/separation-alignment/tables.md)，表格数据见 [metrics.csv](../results/separation-alignment/metrics.csv)。
 
 这些结果支持把 core 拼接作为有效对照，并结合实际保存路径比较分离器。计算成本另见[六模型资源实测](separation-performance.md)：Demucs 在该性能测试中耗时最低，质量收益与资源成本应按部署场景权衡。

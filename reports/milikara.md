@@ -45,7 +45,7 @@ MiliKara 分别运行正文自动读音、原标注人工读音两组。自动�
 
 在本组 11 首日语歌曲中，core 拼接和保留分隔符概率对严格端点精度影响最大。人工读音下，标准 CTC 的 100 ms 命中从整曲的 3631/4871 提高到 core 拼接的 4107/4871；开启行内与活动代价后为 4120/4871。把分隔符概率合并到 blank 后，同一配置降至 3804/4871。
 
-模块实验运行 252 组配置，共 3024 个歌曲条件。主组包含 4871 个日语单元、113 个拉丁单元；潮汕语假名转写单列。推理调用固定版本的 MiliKara 模块，声学模型统一为 NextFire。全部逐曲结果见 [metrics.csv](../results/milikara/metrics.csv)，完整表见 [tables-japanese.md](../results/milikara/tables-japanese.md)。
+模块实验运行 252 组配置，共 3024 个歌曲条件。主组包含 4871 个日语单元、113 个拉丁单元；潮汕话假名转写单列。推理调用固定版本的 MiliKara 模块，声学模型统一为 NextFire。全部逐曲结果见 [metrics.csv](../results/milikara/metrics.csv)，完整表见 [tables-japanese.md](../results/milikara/tables-japanese.md)。
 
 ### 五个开关
 

@@ -23,6 +23,8 @@ groups={
               ('milikara/run_original_controls.py',),('milikara/evaluate.py',)],
  'reading': [('reading/prepare.py',),('reading/local.py',)],
  'local-refinement': [('milikara/local_refinement.py',),('milikara/score_local.py',)],
+ 'mms-gap-fill': [('timing/mms_gap_fill.py',)],
+ 'milikara-native': [('milikara/prepare_native.py',),('milikara/run_native.py',),('milikara/score_native.py',)],
  'additional': [('timing/additional_separators.py',model) for model in ('scnet','dttnet','bs_roformer','mel_roformer','windowed')]+[
      ('timing/ablation_run.py',stage,'--separators','scnet','dttnet','bs_roformer','mel_roformer','windowed','--strategies','concat','padded','full')
      for stage in ('audio','nextfire')]+[('timing/ablation_score.py',),('timing/ablation_tables.py',)],
@@ -56,7 +58,8 @@ for group in groups if args.stage=='all' else [args.stage]:
         print('RUN',group,*task,flush=True)
         path=logdir/f'{group}-{index:02}-{Path(task[0]).stem}.log'
         with path.open('w') as stream:
-            subprocess.run([sys.executable,str(ROOT/'scripts'/task[0]),*task[1:]],check=True,
+            interpreter=str(ROOT/'.venvs/milikara/bin/python') if task[0]=='milikara/run_native.py' else sys.executable
+            subprocess.run([interpreter,str(ROOT/'scripts'/task[0]),*task[1:]],check=True,
                            stdout=stream,stderr=subprocess.STDOUT,cwd=ROOT)
         print('DONE',group,*task,flush=True)
 

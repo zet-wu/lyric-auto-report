@@ -4,8 +4,10 @@ import gzip, json
 
 ROOT = Path(__file__).resolve().parents[1]
 count = before = after = 0
-for group in ('ablation', 'milikara', 'separation-alignment'):
-    for source in sorted((ROOT / 'results' / group / 'predictions').rglob('*.json')):
+folders=[ROOT/'results'/group/'predictions' for group in ('ablation','milikara','separation-alignment')]
+folders.append(ROOT/'results/milikara-native/runs')
+for folder in folders:
+    for source in sorted(folder.rglob('*.json')):
         raw = source.read_bytes()
         target = source.with_suffix('.json.gz')
         packed = gzip.compress(raw, compresslevel=9, mtime=0)

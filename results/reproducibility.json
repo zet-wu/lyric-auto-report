@@ -15,7 +15,7 @@
     "dependencies": "requirements/scoring.txt installed in a new virtual environment",
     "downloaded_project_sources_present": false,
     "model_weights_present": false,
-    "metric_objects_equal": 11,
+    "metric_objects_equal": 13,
     "verify_passed": true,
     "verify_results_passed": true,
     "semantic_hash_encoding": "SHA256 of UTF-8 JSON, sorted object keys, compact separators, ensure_ascii=False",
@@ -63,11 +63,25 @@
       {
         "path": "results/local-refinement/metrics.json",
         "semantic_sha256": "b7a66c6ffa1fff8f5bc011680f4d85c08f627ce5bf90d7bcc2ba9c9cb0d83734"
+      },
+      {
+        "path": "results/mms-gap-fill/metrics.json",
+        "semantic_sha256": "736229e48a7f10c0badfd38b9f2fc3b4f7981a6522344658b55d0e5e09ec2413"
+      },
+      {
+        "path": "results/milikara-native/metrics.json",
+        "semantic_sha256": "99902048dec52bd99b3238cc7c8b928aa54d2dd63e0a175cf64e19c4a3925cb9"
       }
-    ]
+    ],
+    "new_per_unit_artifacts_equal": true
   },
   "local_refinement_cases": 66,
   "reading_song_cases": 110,
   "reading_methods": 10,
-  "retained_manual_results_unchanged": true
+  "retained_manual_results_unchanged": true,
+  "mms_gap_fill_cases": 1518,
+  "native_milikara_cases": 28,
+  "native_separation_audios": 13,
+  "native_alignment_exports_verified": 28,
+  "native_environment": "Independent requirements/milikara-native-lock.txt environment; upstream UniDic Lite and audio-separator 0.30.2"
 }

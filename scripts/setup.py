@@ -26,4 +26,8 @@ run(bindir/'uv','pip','install','--python',python,'--target',ROOT/'.deps/timing/
     '--no-deps','-r',ROOT/'.deps/timing/scripts/tifa-requirements.txt')
 run(bindir/'uv','pip','install','--python',python,'--target',ROOT/'.deps/msst-packages',
     '--no-deps','-r',ROOT/'requirements/separation.txt')
+native=ROOT/'.venvs/milikara'
+if not native.exists():run(bindir/'uv','venv',native,'--python',sys.executable)
+run(bindir/'uv','pip','install','--python',native/'bin/python',
+    '-r',ROOT/'requirements/milikara-native.txt','-c',ROOT/'requirements/milikara-native-lock.txt')
 if args.models:run(python,ROOT/'scripts/download.py','models')

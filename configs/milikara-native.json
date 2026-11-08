@@ -1,0 +1,15 @@
+{
+  "upstream": "ff2d2f54706ecb140bc5b275037eff64187ef6ef",
+  "conditions": ["auto", "manual"],
+  "mode": "plain",
+  "separation": "melband-roformer",
+  "model_directory": ".models/nextfire",
+  "config_overrides": {"device": "cuda"},
+  "line_timestamps": false,
+  "ai_reading": false,
+  "default_decode_retry_tail": true,
+  "primary_songs": ["s01", "s02", "s03", "s04", "s05", "s06", "s07", "s08", "s09", "s10", "s12"],
+  "comparison": "Common text-boundary groups for auto/manual/Studio; original reference leaf IDs for manual/Studio. Missing predictions remain in the denominator.",
+  "manual_stress_cases": "s11 has 147 Cantonese Han units and s14 has 300 Teochew Han units without phonetic annotations. Retain them as untranscribed text in stress outputs, not as supplied human readings; all primary Japanese targets and s13 kana readings are phonetic.",
+  "timing": "One native separation per unique audio; independent emission caches per alignment condition. The initial s01 separation includes the first model download and is flagged; remaining records use downloaded weights."
+}

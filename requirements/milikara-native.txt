@@ -1,0 +1,7 @@
+# Independent upstream runtime: avoid the research environment's full UniDic override.
+milikara[ml,separation] @ git+https://github.com/BilyHurington/MiliKara.git@ff2d2f54706ecb140bc5b275037eff64187ef6ef
+audio-separator[cpu]==0.30.2
+torch==2.14.0
+torchaudio==2.11.0
+transformers==4.57.6
+unidic-lite==1.0.8

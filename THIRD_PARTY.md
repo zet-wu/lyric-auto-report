@@ -8,6 +8,7 @@
 | [Lazulite Studio](https://github.com/zet-wu/Lazulite-studio) | TTML 投影、注音与罗马字转换 |
 | [Timing](https://github.com/Zennmn/Timing) | 项目链路、MMS 定位、TIFA 与分离适配 |
 | [MiliKara](https://github.com/BilyHurington/MiliKara) | CTC 解码、活动代价、窗口、重试与尾点处理 |
+| [python-audio-separator](https://github.com/nomadkaraoke/python-audio-separator) | MiliKara 原生 Mel-RoFormer 分离服务，固定 0.30.2 |
 | [MSST](https://github.com/ZFTurbo/Music-Source-Separation-Training) | SCNet、DTTNet 和 RoFormer 推理 |
 | [pyopenjtalk](https://github.com/r9y9/pyopenjtalk) | OpenJTalk 日语发音前端，包版本与词典下载身份固定 |
 | [Windowed RoFormer](https://github.com/smulelabs/windowed-roformer) | 局部注意力人声分离 |

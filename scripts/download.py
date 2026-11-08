@@ -40,6 +40,10 @@ def reading():
     with tarfile.open(ROOT/asset['path']) as archive:
         archive.extractall(ROOT/'.models/openjtalk',filter='data')
 
+def milikara_native():
+    for asset in json.loads((ROOT/'configs/milikara-native-assets.json').read_text()):
+        fetch(asset['url'],asset['path'],asset['sha256'])
+
 def models():
     from huggingface_hub import snapshot_download
     snapshot_download('NextFire/mms-300m-ForcedAligner-karaoke-ja-Latn',
@@ -62,9 +66,10 @@ def models():
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('part',choices=['sources','models','reading','all'],default='all',nargs='?')
+    parser.add_argument('part',choices=['sources','models','reading','milikara-native','all'],default='all',nargs='?')
     args=parser.parse_args()
     if args.part in ('sources','all'):sources()
     if args.part in ('models','all'):models()
 
     if args.part in ('reading','models','all'):reading()
+    if args.part in ('milikara-native','models','all'):milikara_native()

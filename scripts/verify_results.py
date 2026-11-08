@@ -74,3 +74,55 @@ for sid in primary:
  for row in inp['lines']:
   assert set(row)=={'id','text','words'} and ''.join(row['words'])==row['text']
   assert not any(c in row['text'] for c in '\n\r\t')
+
+# Postprocessing must preserve the established MMS_FA baseline and every start/missing value.
+gap=read(ROOT/'results/mms-gap-fill/metrics.json')
+old=read(matrix/'metrics.json')['aggregate']
+variants=set(read(ROOT/'configs/mms-gap-fill.json')['variants'])
+lookup={(r['separator'],r['strategy'],r['variant'],r['subset'],r['song']):r for r in gap}
+for original in old:
+ if (original['backend'],original['cohort'],original['subset'])!=('mms_fa','primary','all'):continue
+ key=(original['separator'],original['strategy'])
+ base=lookup[(*key,'baseline','all','ALL')]
+ for field in ('n','valid','missing','hit100','hit200'):
+  assert base[field]==original[field],(key,field)
+ assert abs(base['macro100']-original['macro100'])<1e-12
+ for variant in variants:
+  current=lookup[(*key,variant,'all','ALL')]
+  assert current['n']==4590 and current['missing']==base['missing']
+  assert current['start_mae_ms']==base['start_mae_ms']
+  assert current['hit100']==base['hit100']+current['gained100']-current['lost100']
+  final=lookup[(*key,variant,'line_final','ALL')]
+  assert final['changed']==0
+  assert final['hit100']==lookup[(*key,'baseline','line_final','ALL')]['hit100']
+assert len([r for r in gap if r['subset']=='all' and r['song']=='ALL'])==23*6
+edits=read(ROOT/'results/mms-gap-fill/edits.json')
+for row in edits:
+ assert row['before'][0]==row['after'][0] and row['after'][1]>row['before'][1]
+
+native=ROOT/'results/milikara-native'
+for sid,condition in itertools.product(all_ids,('auto','manual')):
+ result=read(native/'runs'/f'{sid}-{condition}.json')
+ assert result['song']==sid and result['condition']==condition
+ assert result['status']=='ok' or result.get('error')
+ if result['status']=='ok':assert result['export']['units_and_lines_equal']
+ for line in result.get('lyrics',{}).get('lines',[]):
+  assert line['imported_start_ms'] is None and line['imported_end_ms'] is None and line['anchor'] is None
+ for kind in ('text','manual'):
+  inp=read(native/'inputs'/kind/f'{sid}.json')
+  def untimed(value):
+   if isinstance(value,dict):
+    assert not {'start','end','start_ms','end_ms','anchor','begin','duration'}.intersection(value)
+    for v in value.values():untimed(v)
+   elif isinstance(value,list):
+    for v in value:untimed(v)
+  untimed(inp)
+metric=read(native/'metrics.json')
+assert len(metric['completion'])==28
+for row in metric['aggregate']:
+ if row['comparison']=='leaf' and row['language']=='ja':assert row['n']==4871 and row['songs']==11
+ if row['comparison']=='leaf' and row['language']=='latin':assert row['n']==113
+common=[r for r in metric['aggregate'] if r['comparison']=='common_text' and r['language']=='ja']
+assert len({r['n'] for r in common})==1 and all(r['songs']==11 for r in common)
+assert len(list((native/'separation').glob('*.json')))==13
+print('Complete: 1518 MMS_FA postprocessing cases and 28 native MiliKara alignment cases.')

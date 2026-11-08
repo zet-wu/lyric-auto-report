@@ -1,0 +1,65 @@
+{
+  "audio_sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+  "seconds": 30.071388710290194,
+  "result": {
+    "report": {
+      "preset": "melband-roformer",
+      "model_filename": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+      "architecture": "MelBand RoFormer",
+      "license_note": "Weights come from the audio-separator model registry; check upstream licence before redistribution.",
+      "audio_separator_version": "0.30.2",
+      "config": {
+        "sample_rate": 48000,
+        "output_format": "WAV",
+        "normalization": 0.9,
+        "device": "auto"
+      },
+      "original_sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+      "original_num_samples": 11444224,
+      "extra_outputs": [],
+      "vocals_length_fix": {
+        "input_len": 11444224,
+        "original_len": 11444224,
+        "leading_padding_removed": 0,
+        "end_trimmed": 0,
+        "end_padded": 0,
+        "stretched": false,
+        "output_len": 11444224
+      },
+      "instrumental_length_fix": {
+        "input_len": 11444224,
+        "original_len": 11444224,
+        "leading_padding_removed": 0,
+        "end_trimmed": 0,
+        "end_padded": 0,
+        "stretched": false,
+        "output_len": 11444224
+      },
+      "sync": {
+        "vocals": {
+          "role": "vocals",
+          "lag_ms": 0.0,
+          "correlation": 0.6755,
+          "length_diff_samples": 0,
+          "ok": true,
+          "message": "与原曲同步（延迟在容差内）",
+          "sum_residual_db": -15.36
+        },
+        "instrumental": {
+          "role": "instrumental",
+          "lag_ms": 0.0,
+          "correlation": 0.7642,
+          "length_diff_samples": 0,
+          "ok": true,
+          "message": "与原曲同步（延迟在容差内）"
+        }
+      },
+      "elapsed_s": 28.5
+    },
+    "assets": [
+      "abf7132ef6c",
+      "ab46020d9ac"
+    ]
+  },
+  "includes_model_download": false
+}

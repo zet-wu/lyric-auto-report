@@ -39,6 +39,8 @@ Timing 的模块实验采用本仓库固定的 Transformers 4.57.6 研究环境�
 .venvs/research/bin/python scripts/run.py milikara
 .venvs/research/bin/python scripts/run.py reading
 .venvs/research/bin/python scripts/run.py local-refinement
+.venvs/research/bin/python scripts/run.py mms-gap-fill
+.venvs/research/bin/python scripts/run.py milikara-native
 .venvs/research/bin/python scripts/run.py additional
 .venvs/research/bin/python scripts/run.py separation-alignment
 .venvs/research/bin/python scripts/run.py resources
@@ -64,6 +66,25 @@ prepare 提取标注、生成 Demucs 人声和产品基线，完成统一读音�
 
 OpenJTalk 使用 pyopenjtalk 0.4.1 和固定哈希的 1.11 词典。setup --models 一并下载；单独准备可运行 scripts/download.py reading，资产见[清单](../configs/reading-assets.json)。
 
+## 原生 MiliKara 与 MMS_FA 补测
+
+`mms-gap-fill` 从已有 MMS_FA 端点生成六种固定后处理结果，覆盖 23 种输入组合、11 首主组歌曲，共 1518 个条件，无需 GPU。`score.py` 同时重算这些指标。
+
+`milikara-native` 准备无时间戳的正文与人工读音输入，调用固定提交的 MiliKara 原生服务，再以原始叶级单元和共同文本边界评分。14 份歌词各运行自动、人工两组；13 份音频各做一次原生分离，两组共享分离结果，声学概率缓存彼此独立。
+
+原生环境为 `.venvs/milikara`，依赖见 [milikara-native.txt](../requirements/milikara-native.txt) 和[完整锁定版本](../requirements/milikara-native-lock.txt)。它使用上游声明的 UniDic Lite，独立于研究环境中的完整 UniDic。Python 3.13 下部分包需要源码构建，系统需有 C/C++ 编译工具链。`setup.py` 创建两个环境。已有研究环境时可单独补装：
+
+```sh
+UV_CACHE_DIR=.cache/uv .venvs/research/bin/uv venv .venvs/milikara --python python3.13
+UV_CACHE_DIR=.cache/uv .venvs/research/bin/uv pip install --python .venvs/milikara/bin/python -r requirements/milikara-native.txt -c requirements/milikara-native-lock.txt
+.venvs/research/bin/python scripts/download.py milikara-native
+.venvs/research/bin/python scripts/run.py milikara-native
+```
+
+NextFire 仍由通用模型下载步骤准备。原生分离采用默认 Mel-RoFormer Viperx 1143；权重、YAML 和模型目录清单的来源及 SHA256 见[下载清单](../configs/milikara-native-assets.json)。该权重与六模型实验中的 Kimberley MelBand 不同。下载内容位于 `.models/milikara-native`，原生项目和缓存位于 `.cache/milikara-native`，均不纳入 Git。
+
+原生服务保留默认的分隔符处理、整曲输入、活动代价、重试和尾点设置；只把模型位置指向仓库内的固定 NextFire，并指定 CUDA。人工组通过原生数据模型写入已确认的读音和原标注单元边界。视频渲染不属于本次对齐计时。首曲第一次分离包含模型下载，记录中单独标记；其余耗时是质量实验的执行记录。
+
 ## 只复核已有结果
 
 评分只需要 NumPy 和 Matplotlib：
@@ -82,8 +103,8 @@ verify 核对输入哈希、相对路径和文档链接。verify_results 要求�
 
 ## 复现检查结果
 
-推理使用仓库内的固定公开源码、模型和研究环境，完成 42 个 Timing 链路条件、1092 个模块矩阵条件、432 个六模型下游条件，以及 MiliKara 的 252 种配置、3024 个歌曲条件。另有 66 个人工读音局部重算条件、110 个自动注音歌曲条件。三条分离路径各做两次串行资源测量。
+推理使用仓库内的固定公开源码、模型和研究环境，完成 42 个 Timing 链路条件、1092 个模块矩阵条件、432 个六模型下游条件，以及 MiliKara 的 252 种配置、3024 个歌曲条件。另有 66 个人工读音局部重算条件、110 个自动注音歌曲条件、28 个 MiliKara 原生完整对齐条件及 1518 个 MMS_FA 后处理条件。原生流程完成 13 份音频的分离和 28 份标准导出时间核对。三条分离路径各做两次串行资源测量。
 
-另把 Git 发布清单复制到独立目录，只安装评分依赖，再运行 score.py、verify.py 和 verify_results.py。副本没有 .deps 或 .models，11 份指标 JSON 与推理环境中的结果逐项一致。27 个输入文件的哈希、全部预定条件、文档链接和仓库相对路径检查通过。
+另把 Git 发布清单复制到独立目录，只安装评分依赖，再运行 score.py、verify.py 和 verify_results.py。副本没有 .deps 或 .models，13 份指标 JSON 与推理环境中的结果逐项一致，新增的逐项端点修改及原生评分记录也完全相同。27 个输入文件的哈希、全部预定条件、文档链接和仓库相对路径检查通过。
 
 机器可读记录及指标语义哈希见 [reproducibility.json](../results/reproducibility.json)。

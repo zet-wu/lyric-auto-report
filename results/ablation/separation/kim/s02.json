@@ -1,0 +1,18 @@
+{
+  "song": "s02",
+  "model": "kim",
+  "source": "datasets/audio/POWDER SNOW (Live Ver.).m4a",
+  "sha256": "c7d4ed30ee55e6f9252252de4162086be57ddbbb85ba1e3ffbd870afa106c531",
+  "frames": 19788788,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 21.741706676781178,
+  "peak_gib": 2.398587226867676,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 19788788,
+    "timeline_preserved": true
+  }
+}

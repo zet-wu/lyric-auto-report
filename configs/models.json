@@ -1,0 +1,52 @@
+{
+  "mms-fa": {
+    "sha256": "20ef12963ab4924bef49ac4fc7f58ad5da2ee43b2c11bc8c853c9b90ecdbc680"
+  },
+  "nextfire": {
+    "repository": "NextFire/mms-300m-ForcedAligner-karaoke-ja-Latn",
+    "revision": "2ab2b5f46539ee284703c281f286b01d2410ee12",
+    "files": {
+      "vocab.json": {
+        "sha256": "26dc928520b2bde28e1c9e7fd425aae6b4eb40cd992bcb0bcc16ca6fada46491",
+        "bytes": 331
+      },
+      "config.json": {
+        "sha256": "665dbd5be3a170d0b53f86e702a4f65f755471a2d81c1e0cf35ba566a72bf382",
+        "bytes": 2034
+      },
+      "model.safetensors": {
+        "sha256": "4d1d6fbb543534ab32bcceac5f5a42052c7fde3d16a83cbbce858473d5735042",
+        "bytes": 1261938632
+      },
+      "processor_config.json": {
+        "sha256": "8bc3c8d6d97ea61524d5c15d8554b4baf072d2264c0bda1839bc7a822c200d66",
+        "bytes": 299
+      },
+      "tokenizer_config.json": {
+        "sha256": "b96525cd12d87182b9edd1613b47bc691f64184ad9d37c8a2f8b44a5fb3b8043",
+        "bytes": 1364
+      },
+      "added_tokens.json": {
+        "sha256": "ad6e3518e1ac75c1f277c3af874f8d73e62efe8bfb9ed78ff1745e6cffdd8318",
+        "bytes": 30
+      }
+    }
+  },
+  "timing-ctc": {
+    "repo": "MahmoudAshraf/mms-300m-1130-forced-aligner",
+    "revision": "49402e9577b1158620820667c218cd494cc44486"
+  },
+  "tifa": {
+    "runtime_revision": "d246be1cc2e202613213ca60a4e5d35e71a2fb6a",
+    "release_sha256": "6da6832cd2cb981aae1ccc2d9330f8f7c085ce7977d1eb13bff63531d038a88b",
+    "model": "TIFA-1.0-ST"
+  },
+  "bs-karaoke": {
+    "revision": "f7849ae934209184dc288d1018cd8a76a7fc8b3c",
+    "runtime_revision": "6fdad13686bb7e84d029ec66f9dbe76e65c93ebf"
+  },
+  "kim-vocals": {
+    "sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "bytes": 913106900
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "song": "s09",
+  "model": "bs",
+  "source": "datasets/audio/恋のルチはや♡ローリング.m4a",
+  "sha256": "6e373aa8929f1f6e8de336763a603e4462e3b4ce1c41cb9ce8d6b57804a2e36c",
+  "frames": 10928128,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 22.51805319264531,
+  "peak_gib": 1.7993812561035156,
+  "upstream": {
+    "frames": 10928128,
+    "sample_rate": 44100,
+    "channels": 2,
+    "timeline_preserved": true,
+    "reconstruction_max_error": 0.0,
+    "lead_energy_ratio": 0.18356345755629616,
+    "residual_energy_ratio": 0.784290883005477,
+    "model": "frazer/becruily BS-Roformer Karaoke",
+    "revision": "f7849ae934209184dc288d1018cd8a76a7fc8b3c",
+    "checkpoint_sha256": "eb90ee24c1154d83fbcfd27e96182f19e061557cc6e4746953125e08c29389f9",
+    "input": "datasets/audio/恋のルチはや♡ローリング.m4a",
+    "route": "bs_lead",
+    "residual_includes_accompaniment": true,
+    "lead": "lead_vocals.wav",
+    "residual": "residual.wav",
+    "quality": "unreviewed",
+    "note": "残余轨包含伴奏与和声，不能当作独立背景人声。"
+  }
+}

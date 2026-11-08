@@ -1,0 +1,18 @@
+{
+  "song": "s11",
+  "model": "kim",
+  "source": "datasets/audio/星 (鄧麗君演唱會1982 live).m4a",
+  "sha256": "ef403f4f7920c4461a0ec848f127ecf14c07820dc6f8be3392e2f5d17090588a",
+  "frames": 12201984,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 16.163395972922444,
+  "peak_gib": 2.2286500930786133,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 12201984,
+    "timeline_preserved": true
+  }
+}

@@ -1,0 +1,1043 @@
+{
+  "song": "s10",
+  "separator": "dttnet",
+  "files": {
+    "full": ".cache/ablation/audio/dttnet/s10/full.wav",
+    "concat": ".cache/ablation/audio/dttnet/s10/concat.wav",
+    "padded": ".cache/ablation/audio/dttnet/s10/padded.wav",
+    "fixed_cores": ".cache/ablation/audio/dttnet/s10/fixed_cores.wav"
+  },
+  "mapping": {
+    "concat": [
+      {
+        "source_start": 642263,
+        "source_end": 1859640,
+        "concat_start": 0,
+        "concat_end": 1217377
+      },
+      {
+        "source_start": 1881094,
+        "source_end": 2172274,
+        "concat_start": 1217377,
+        "concat_end": 1508557
+      },
+      {
+        "source_start": 2195957,
+        "source_end": 4203555,
+        "concat_start": 1508557,
+        "concat_end": 3516155
+      },
+      {
+        "source_start": 4686715,
+        "source_end": 4723497,
+        "concat_start": 3516155,
+        "concat_end": 3552937
+      },
+      {
+        "source_start": 4763062,
+        "source_end": 4791763,
+        "concat_start": 3552937,
+        "concat_end": 3581638
+      },
+      {
+        "source_start": 4858914,
+        "source_end": 6074619,
+        "concat_start": 3581638,
+        "concat_end": 4797343
+      },
+      {
+        "source_start": 6652238,
+        "source_end": 7886054,
+        "concat_start": 4797343,
+        "concat_end": 6031159
+      },
+      {
+        "source_start": 7907787,
+        "source_end": 8193672,
+        "concat_start": 6031159,
+        "concat_end": 6317044
+      },
+      {
+        "source_start": 8207603,
+        "source_end": 11286292,
+        "concat_start": 6317044,
+        "concat_end": 9395733
+      },
+      {
+        "source_start": 11763600,
+        "source_end": 11874500,
+        "concat_start": 9395733,
+        "concat_end": 9506633
+      }
+    ],
+    "padded": [
+      {
+        "source_start": 633623,
+        "source_end": 1868280,
+        "concat_start": 0,
+        "concat_end": 1234657
+      },
+      {
+        "source_start": 1872454,
+        "source_end": 2180914,
+        "concat_start": 1234657,
+        "concat_end": 1543117
+      },
+      {
+        "source_start": 2187317,
+        "source_end": 4212195,
+        "concat_start": 1543117,
+        "concat_end": 3567995
+      },
+      {
+        "source_start": 4678075,
+        "source_end": 4732137,
+        "concat_start": 3567995,
+        "concat_end": 3622057
+      },
+      {
+        "source_start": 4754422,
+        "source_end": 4800403,
+        "concat_start": 3622057,
+        "concat_end": 3668038
+      },
+      {
+        "source_start": 4850274,
+        "source_end": 6083259,
+        "concat_start": 3668038,
+        "concat_end": 4901023
+      },
+      {
+        "source_start": 6643598,
+        "source_end": 7894694,
+        "concat_start": 4901023,
+        "concat_end": 6152119
+      },
+      {
+        "source_start": 7899147,
+        "source_end": 11294932,
+        "concat_start": 6152119,
+        "concat_end": 9547904
+      },
+      {
+        "source_start": 11754960,
+        "source_end": 11883140,
+        "concat_start": 9547904,
+        "concat_end": 9676084
+      }
+    ],
+    "fixed_cores": [
+      {
+        "source_start": 643099,
+        "source_end": 1808649,
+        "concat_start": 0,
+        "concat_end": 1165550
+      },
+      {
+        "source_start": 1823416,
+        "source_end": 1863263,
+        "concat_start": 1165550,
+        "concat_end": 1205397
+      },
+      {
+        "source_start": 1883602,
+        "source_end": 2171159,
+        "concat_start": 1205397,
+        "concat_end": 1492954
+      },
+      {
+        "source_start": 2187877,
+        "source_end": 3717887,
+        "concat_start": 1492954,
+        "concat_end": 3022964
+      },
+      {
+        "source_start": 3729589,
+        "source_end": 4201883,
+        "concat_start": 3022964,
+        "concat_end": 3495258
+      },
+      {
+        "source_start": 4860029,
+        "source_end": 6080192,
+        "concat_start": 3495258,
+        "concat_end": 4715421
+      },
+      {
+        "source_start": 6668678,
+        "source_end": 7884940,
+        "concat_start": 4715421,
+        "concat_end": 5931683
+      },
+      {
+        "source_start": 7908902,
+        "source_end": 8188657,
+        "concat_start": 5931683,
+        "concat_end": 6211438
+      },
+      {
+        "source_start": 8208161,
+        "source_end": 9966098,
+        "concat_start": 6211438,
+        "concat_end": 7969375
+      },
+      {
+        "source_start": 9988667,
+        "source_end": 11283505,
+        "concat_start": 7969375,
+        "concat_end": 9264213
+      }
+    ]
+  },
+  "segments": [
+    {
+      "id": "vocal-0",
+      "section_id": "section-1",
+      "start": 13.200498866213152,
+      "end": 20.08530612244898,
+      "core_start": 13.380498866213152,
+      "core_end": 19.90530612244898,
+      "presence": 0.8387461900950876,
+      "off_center_risk": 0.0276326120727111
+    },
+    {
+      "id": "vocal-1",
+      "section_id": "section-1",
+      "start": 19.72530612244898,
+      "end": 26.00639455782313,
+      "core_start": 19.90530612244898,
+      "core_end": 25.82639455782313,
+      "presence": 0.842685988966829,
+      "off_center_risk": 0.01683335454084215
+    },
+    {
+      "id": "vocal-2",
+      "section_id": "section-1",
+      "start": 25.64639455782313,
+      "end": 32.5021768707483,
+      "core_start": 25.82639455782313,
+      "core_end": 32.3221768707483,
+      "presence": 0.830916502093167,
+      "off_center_risk": 0.026066502422128962
+    },
+    {
+      "id": "vocal-3",
+      "section_id": "section-1",
+      "start": 32.1421768707483,
+      "end": 35.665895691609975,
+      "core_start": 32.3221768707483,
+      "core_end": 35.485895691609976,
+      "presence": 0.8330274552543506,
+      "off_center_risk": 0.019010977947464047
+    },
+    {
+      "id": "vocal-4",
+      "section_id": "section-1",
+      "start": 35.305895691609976,
+      "end": 38.92249433106576,
+      "core_start": 35.485895691609976,
+      "core_end": 38.74249433106576,
+      "presence": 0.8603135202575611,
+      "off_center_risk": 0.02446823742766249
+    },
+    {
+      "id": "vocal-5",
+      "section_id": "section-2",
+      "start": 39.009478458049884,
+      "end": 45.435691609977326,
+      "core_start": 39.189478458049884,
+      "core_end": 45.255691609977326,
+      "presence": 0.8275524817652662,
+      "off_center_risk": 0.04520611503705032
+    },
+    {
+      "id": "vocal-6",
+      "section_id": "section-3",
+      "start": 45.5691156462585,
+      "end": 47.98988662131519,
+      "core_start": 45.7491156462585,
+      "core_end": 47.809886621315194,
+      "presence": 0.8430617146606249,
+      "off_center_risk": 0.08360221988965733
+    },
+    {
+      "id": "vocal-7",
+      "section_id": "section-3",
+      "start": 47.629886621315194,
+      "end": 54.20122448979592,
+      "core_start": 47.809886621315194,
+      "core_end": 54.02122448979592,
+      "presence": 0.8381060252875681,
+      "off_center_risk": 0.04825357977867129
+    },
+    {
+      "id": "vocal-8",
+      "section_id": "section-3",
+      "start": 53.84122448979592,
+      "end": 58.35759637188209,
+      "core_start": 54.02122448979592,
+      "core_end": 58.17759637188209,
+      "presence": 0.8333855948061781,
+      "off_center_risk": 0.07111512787379942
+    },
+    {
+      "id": "vocal-9",
+      "section_id": "section-3",
+      "start": 57.99759637188209,
+      "end": 63.04222222222222,
+      "core_start": 58.17759637188209,
+      "core_end": 62.86222222222222,
+      "presence": 0.834477275633746,
+      "off_center_risk": 0.039174672187387585
+    },
+    {
+      "id": "vocal-10",
+      "section_id": "section-3",
+      "start": 62.68222222222222,
+      "end": 67.58752834467121,
+      "core_start": 62.86222222222222,
+      "core_end": 67.4075283446712,
+      "presence": 0.7545535670089343,
+      "off_center_risk": 0.177919009192526
+    },
+    {
+      "id": "vocal-11",
+      "section_id": "section-3",
+      "start": 67.2275283446712,
+      "end": 75.54616780045352,
+      "core_start": 67.4075283446712,
+      "core_end": 75.36616780045351,
+      "presence": 0.8312555508860839,
+      "off_center_risk": 0.06020971942891475
+    },
+    {
+      "id": "vocal-12",
+      "section_id": "section-3",
+      "start": 75.1861678004535,
+      "end": 77.94943310657597,
+      "core_start": 75.36616780045351,
+      "core_end": 77.76943310657596,
+      "presence": 0.7636009518291125,
+      "off_center_risk": 0.12714306772077913
+    },
+    {
+      "id": "vocal-13",
+      "section_id": "section-3",
+      "start": 77.58943310657595,
+      "end": 85.06054421768708,
+      "core_start": 77.76943310657596,
+      "core_end": 84.88054421768707,
+      "presence": 0.7326819295971769,
+      "off_center_risk": 0.2231620274862201
+    },
+    {
+      "id": "vocal-14",
+      "section_id": "section-3",
+      "start": 84.70054421768707,
+      "end": 87.75405895691611,
+      "core_start": 84.88054421768707,
+      "core_end": 87.5740589569161,
+      "presence": 0.8345552731427184,
+      "off_center_risk": 0.023746323495082752
+    },
+    {
+      "id": "vocal-15",
+      "section_id": "section-4",
+      "start": 97.45990929705215,
+      "end": 98.58616780045352,
+      "core_start": 97.63990929705216,
+      "core_end": 98.40616780045352,
+      "presence": 0.5470560645064385,
+      "off_center_risk": 0.02450838669884696
+    },
+    {
+      "id": "vocal-16",
+      "section_id": "section-5",
+      "start": 99.05047619047619,
+      "end": 100.00839002267574,
+      "core_start": 99.2304761904762,
+      "core_end": 99.82839002267573,
+      "presence": 0.5439800982722302,
+      "off_center_risk": 0.06196636195397574
+    },
+    {
+      "id": "vocal-17",
+      "section_id": "section-6",
+      "start": 101.04739229024942,
+      "end": 104.44920634920635,
+      "core_start": 101.22739229024943,
+      "core_end": 104.26920634920634,
+      "presence": 0.8717785940633649,
+      "off_center_risk": 0.028754725454032213
+    },
+    {
+      "id": "vocal-18",
+      "section_id": "section-6",
+      "start": 104.08920634920634,
+      "end": 109.49374149659864,
+      "core_start": 104.26920634920634,
+      "core_end": 109.31374149659864,
+      "presence": 0.8486301832932919,
+      "off_center_risk": 0.019082313057008554
+    },
+    {
+      "id": "vocal-19",
+      "section_id": "section-6",
+      "start": 109.13374149659863,
+      "end": 116.41909297052155,
+      "core_start": 109.31374149659864,
+      "core_end": 116.23909297052154,
+      "presence": 0.8618392101241705,
+      "off_center_risk": 0.01338128245335502
+    },
+    {
+      "id": "vocal-20",
+      "section_id": "section-6",
+      "start": 116.05909297052153,
+      "end": 123.54181405895692,
+      "core_start": 116.23909297052154,
+      "core_end": 123.36181405895691,
+      "presence": 0.8505381506294825,
+      "off_center_risk": 0.02207662696175719
+    },
+    {
+      "id": "vocal-21",
+      "section_id": "section-6",
+      "start": 123.1818140589569,
+      "end": 126.73455782312926,
+      "core_start": 123.36181405895691,
+      "core_end": 126.55455782312926,
+      "presence": 0.8577306858446865,
+      "off_center_risk": 0.01242840820226565
+    },
+    {
+      "id": "vocal-22",
+      "section_id": "section-7",
+      "start": 138.4082993197279,
+      "end": 145.60657596371883,
+      "core_start": 138.5882993197279,
+      "core_end": 145.42657596371882,
+      "presence": 0.823398070230257,
+      "off_center_risk": 0.02593974923641661
+    },
+    {
+      "id": "vocal-23",
+      "section_id": "section-7",
+      "start": 145.2465759637188,
+      "end": 147.16811791383222,
+      "core_start": 145.42657596371882,
+      "core_end": 146.9881179138322,
+      "presence": 0.8439055690763437,
+      "off_center_risk": 0.009691051478239378
+    },
+    {
+      "id": "vocal-24",
+      "section_id": "section-7",
+      "start": 146.8081179138322,
+      "end": 153.30399092970524,
+      "core_start": 146.9881179138322,
+      "core_end": 153.12399092970523,
+      "presence": 0.8805757741087633,
+      "off_center_risk": 0.01654937294965757
+    },
+    {
+      "id": "vocal-25",
+      "section_id": "section-7",
+      "start": 152.94399092970522,
+      "end": 158.1279365079365,
+      "core_start": 153.12399092970523,
+      "core_end": 157.9479365079365,
+      "presence": 0.8329185497949239,
+      "off_center_risk": 0.03447530913870632
+    },
+    {
+      "id": "vocal-26",
+      "section_id": "section-7",
+      "start": 157.7679365079365,
+      "end": 164.47278911564626,
+      "core_start": 157.9479365079365,
+      "core_end": 164.29278911564626,
+      "presence": 0.8806943955858243,
+      "off_center_risk": 0.012748011687623321
+    },
+    {
+      "id": "vocal-27",
+      "section_id": "section-8",
+      "start": 164.5655782312925,
+      "end": 170.88149659863947,
+      "core_start": 164.7455782312925,
+      "core_end": 170.70149659863947,
+      "presence": 0.8075445447704972,
+      "off_center_risk": 0.08539888459142174
+    },
+    {
+      "id": "vocal-28",
+      "section_id": "section-9",
+      "start": 170.81174603174603,
+      "end": 177.52240362811793,
+      "core_start": 170.99174603174603,
+      "core_end": 177.34240362811792,
+      "presence": 0.8329059503505496,
+      "off_center_risk": 0.06398534257730275
+    },
+    {
+      "id": "vocal-29",
+      "section_id": "section-9",
+      "start": 177.16240362811791,
+      "end": 183.66408163265308,
+      "core_start": 177.34240362811792,
+      "core_end": 183.48408163265307,
+      "presence": 0.835241615149524,
+      "off_center_risk": 0.06895097396756092
+    },
+    {
+      "id": "vocal-30",
+      "section_id": "section-9",
+      "start": 183.30408163265307,
+      "end": 191.3498866213152,
+      "core_start": 183.48408163265307,
+      "core_end": 191.1698866213152,
+      "presence": 0.7933234857361575,
+      "off_center_risk": 0.09176938820340728
+    },
+    {
+      "id": "vocal-31",
+      "section_id": "section-9",
+      "start": 190.98988662131518,
+      "end": 194.82707482993197,
+      "core_start": 191.1698866213152,
+      "core_end": 194.64707482993197,
+      "presence": 0.7224944246365613,
+      "off_center_risk": 0.20406915038082654
+    },
+    {
+      "id": "vocal-32",
+      "section_id": "section-9",
+      "start": 194.46707482993196,
+      "end": 201.0732426303855,
+      "core_start": 194.64707482993197,
+      "core_end": 200.8932426303855,
+      "presence": 0.8401190550258186,
+      "off_center_risk": 0.0599611946973502
+    },
+    {
+      "id": "vocal-33",
+      "section_id": "section-9",
+      "start": 200.71324263038548,
+      "end": 205.61274376417234,
+      "core_start": 200.8932426303855,
+      "core_end": 205.43274376417233,
+      "presence": 0.7632558610676479,
+      "off_center_risk": 0.14163053239908963
+    },
+    {
+      "id": "vocal-34",
+      "section_id": "section-9",
+      "start": 205.25274376417232,
+      "end": 208.08566893424037,
+      "core_start": 205.43274376417233,
+      "core_end": 207.90566893424037,
+      "presence": 0.7234166071160812,
+      "off_center_risk": 0.17760163823900668
+    },
+    {
+      "id": "vocal-35",
+      "section_id": "section-9",
+      "start": 207.72566893424036,
+      "end": 212.8631746031746,
+      "core_start": 207.90566893424037,
+      "core_end": 212.6831746031746,
+      "presence": 0.7768203367176421,
+      "off_center_risk": 0.1300169748745699
+    },
+    {
+      "id": "vocal-36",
+      "section_id": "section-9",
+      "start": 212.50317460317459,
+      "end": 215.21419501133786,
+      "core_start": 212.6831746031746,
+      "core_end": 215.03419501133786,
+      "presence": 0.7302188185979799,
+      "off_center_risk": 0.21285461604644446
+    },
+    {
+      "id": "vocal-37",
+      "section_id": "section-9",
+      "start": 214.85419501133785,
+      "end": 223.0451247165533,
+      "core_start": 215.03419501133786,
+      "core_end": 222.86512471655328,
+      "presence": 0.8139605834171255,
+      "off_center_risk": 0.08178256887480638
+    },
+    {
+      "id": "vocal-38",
+      "section_id": "section-9",
+      "start": 222.68512471655328,
+      "end": 225.29746031746032,
+      "core_start": 222.86512471655328,
+      "core_end": 225.1174603174603,
+      "presence": 0.8181495864563239,
+      "off_center_risk": 0.107998703791567
+    },
+    {
+      "id": "vocal-39",
+      "section_id": "section-9",
+      "start": 224.9374603174603,
+      "end": 229.98789115646258,
+      "core_start": 225.1174603174603,
+      "core_end": 229.80789115646257,
+      "presence": 0.7349149906759208,
+      "off_center_risk": 0.1917734991204583
+    },
+    {
+      "id": "vocal-40",
+      "section_id": "section-9",
+      "start": 229.62789115646257,
+      "end": 235.3110657596372,
+      "core_start": 229.80789115646257,
+      "core_end": 235.13106575963718,
+      "presence": 0.7403748583871455,
+      "off_center_risk": 0.2339848124438969
+    },
+    {
+      "id": "vocal-41",
+      "section_id": "section-10",
+      "start": 244.89501133786848,
+      "end": 247.56539682539685,
+      "core_start": 245.0750113378685,
+      "core_end": 247.38539682539684,
+      "presence": 0.5356279276789027,
+      "off_center_risk": 0.04879679181363004
+    }
+  ],
+  "analysis": {
+    "source_id": "datasets/audio/恋桜開花前線.m4a",
+    "segments": [
+      {
+        "id": "vocal-0",
+        "section_id": "section-1",
+        "start": 13.200498866213152,
+        "end": 20.08530612244898,
+        "core_start": 13.380498866213152,
+        "core_end": 19.90530612244898,
+        "presence": 0.8387461900950876,
+        "off_center_risk": 0.0276326120727111
+      },
+      {
+        "id": "vocal-1",
+        "section_id": "section-1",
+        "start": 19.72530612244898,
+        "end": 26.00639455782313,
+        "core_start": 19.90530612244898,
+        "core_end": 25.82639455782313,
+        "presence": 0.842685988966829,
+        "off_center_risk": 0.01683335454084215
+      },
+      {
+        "id": "vocal-2",
+        "section_id": "section-1",
+        "start": 25.64639455782313,
+        "end": 32.5021768707483,
+        "core_start": 25.82639455782313,
+        "core_end": 32.3221768707483,
+        "presence": 0.830916502093167,
+        "off_center_risk": 0.026066502422128962
+      },
+      {
+        "id": "vocal-3",
+        "section_id": "section-1",
+        "start": 32.1421768707483,
+        "end": 35.665895691609975,
+        "core_start": 32.3221768707483,
+        "core_end": 35.485895691609976,
+        "presence": 0.8330274552543506,
+        "off_center_risk": 0.019010977947464047
+      },
+      {
+        "id": "vocal-4",
+        "section_id": "section-1",
+        "start": 35.305895691609976,
+        "end": 38.92249433106576,
+        "core_start": 35.485895691609976,
+        "core_end": 38.74249433106576,
+        "presence": 0.8603135202575611,
+        "off_center_risk": 0.02446823742766249
+      },
+      {
+        "id": "vocal-5",
+        "section_id": "section-2",
+        "start": 39.009478458049884,
+        "end": 45.435691609977326,
+        "core_start": 39.189478458049884,
+        "core_end": 45.255691609977326,
+        "presence": 0.8275524817652662,
+        "off_center_risk": 0.04520611503705032
+      },
+      {
+        "id": "vocal-6",
+        "section_id": "section-3",
+        "start": 45.5691156462585,
+        "end": 47.98988662131519,
+        "core_start": 45.7491156462585,
+        "core_end": 47.809886621315194,
+        "presence": 0.8430617146606249,
+        "off_center_risk": 0.08360221988965733
+      },
+      {
+        "id": "vocal-7",
+        "section_id": "section-3",
+        "start": 47.629886621315194,
+        "end": 54.20122448979592,
+        "core_start": 47.809886621315194,
+        "core_end": 54.02122448979592,
+        "presence": 0.8381060252875681,
+        "off_center_risk": 0.04825357977867129
+      },
+      {
+        "id": "vocal-8",
+        "section_id": "section-3",
+        "start": 53.84122448979592,
+        "end": 58.35759637188209,
+        "core_start": 54.02122448979592,
+        "core_end": 58.17759637188209,
+        "presence": 0.8333855948061781,
+        "off_center_risk": 0.07111512787379942
+      },
+      {
+        "id": "vocal-9",
+        "section_id": "section-3",
+        "start": 57.99759637188209,
+        "end": 63.04222222222222,
+        "core_start": 58.17759637188209,
+        "core_end": 62.86222222222222,
+        "presence": 0.834477275633746,
+        "off_center_risk": 0.039174672187387585
+      },
+      {
+        "id": "vocal-10",
+        "section_id": "section-3",
+        "start": 62.68222222222222,
+        "end": 67.58752834467121,
+        "core_start": 62.86222222222222,
+        "core_end": 67.4075283446712,
+        "presence": 0.7545535670089343,
+        "off_center_risk": 0.177919009192526
+      },
+      {
+        "id": "vocal-11",
+        "section_id": "section-3",
+        "start": 67.2275283446712,
+        "end": 75.54616780045352,
+        "core_start": 67.4075283446712,
+        "core_end": 75.36616780045351,
+        "presence": 0.8312555508860839,
+        "off_center_risk": 0.06020971942891475
+      },
+      {
+        "id": "vocal-12",
+        "section_id": "section-3",
+        "start": 75.1861678004535,
+        "end": 77.94943310657597,
+        "core_start": 75.36616780045351,
+        "core_end": 77.76943310657596,
+        "presence": 0.7636009518291125,
+        "off_center_risk": 0.12714306772077913
+      },
+      {
+        "id": "vocal-13",
+        "section_id": "section-3",
+        "start": 77.58943310657595,
+        "end": 85.06054421768708,
+        "core_start": 77.76943310657596,
+        "core_end": 84.88054421768707,
+        "presence": 0.7326819295971769,
+        "off_center_risk": 0.2231620274862201
+      },
+      {
+        "id": "vocal-14",
+        "section_id": "section-3",
+        "start": 84.70054421768707,
+        "end": 87.75405895691611,
+        "core_start": 84.88054421768707,
+        "core_end": 87.5740589569161,
+        "presence": 0.8345552731427184,
+        "off_center_risk": 0.023746323495082752
+      },
+      {
+        "id": "vocal-15",
+        "section_id": "section-4",
+        "start": 97.45990929705215,
+        "end": 98.58616780045352,
+        "core_start": 97.63990929705216,
+        "core_end": 98.40616780045352,
+        "presence": 0.5470560645064385,
+        "off_center_risk": 0.02450838669884696
+      },
+      {
+        "id": "vocal-16",
+        "section_id": "section-5",
+        "start": 99.05047619047619,
+        "end": 100.00839002267574,
+        "core_start": 99.2304761904762,
+        "core_end": 99.82839002267573,
+        "presence": 0.5439800982722302,
+        "off_center_risk": 0.06196636195397574
+      },
+      {
+        "id": "vocal-17",
+        "section_id": "section-6",
+        "start": 101.04739229024942,
+        "end": 104.44920634920635,
+        "core_start": 101.22739229024943,
+        "core_end": 104.26920634920634,
+        "presence": 0.8717785940633649,
+        "off_center_risk": 0.028754725454032213
+      },
+      {
+        "id": "vocal-18",
+        "section_id": "section-6",
+        "start": 104.08920634920634,
+        "end": 109.49374149659864,
+        "core_start": 104.26920634920634,
+        "core_end": 109.31374149659864,
+        "presence": 0.8486301832932919,
+        "off_center_risk": 0.019082313057008554
+      },
+      {
+        "id": "vocal-19",
+        "section_id": "section-6",
+        "start": 109.13374149659863,
+        "end": 116.41909297052155,
+        "core_start": 109.31374149659864,
+        "core_end": 116.23909297052154,
+        "presence": 0.8618392101241705,
+        "off_center_risk": 0.01338128245335502
+      },
+      {
+        "id": "vocal-20",
+        "section_id": "section-6",
+        "start": 116.05909297052153,
+        "end": 123.54181405895692,
+        "core_start": 116.23909297052154,
+        "core_end": 123.36181405895691,
+        "presence": 0.8505381506294825,
+        "off_center_risk": 0.02207662696175719
+      },
+      {
+        "id": "vocal-21",
+        "section_id": "section-6",
+        "start": 123.1818140589569,
+        "end": 126.73455782312926,
+        "core_start": 123.36181405895691,
+        "core_end": 126.55455782312926,
+        "presence": 0.8577306858446865,
+        "off_center_risk": 0.01242840820226565
+      },
+      {
+        "id": "vocal-22",
+        "section_id": "section-7",
+        "start": 138.4082993197279,
+        "end": 145.60657596371883,
+        "core_start": 138.5882993197279,
+        "core_end": 145.42657596371882,
+        "presence": 0.823398070230257,
+        "off_center_risk": 0.02593974923641661
+      },
+      {
+        "id": "vocal-23",
+        "section_id": "section-7",
+        "start": 145.2465759637188,
+        "end": 147.16811791383222,
+        "core_start": 145.42657596371882,
+        "core_end": 146.9881179138322,
+        "presence": 0.8439055690763437,
+        "off_center_risk": 0.009691051478239378
+      },
+      {
+        "id": "vocal-24",
+        "section_id": "section-7",
+        "start": 146.8081179138322,
+        "end": 153.30399092970524,
+        "core_start": 146.9881179138322,
+        "core_end": 153.12399092970523,
+        "presence": 0.8805757741087633,
+        "off_center_risk": 0.01654937294965757
+      },
+      {
+        "id": "vocal-25",
+        "section_id": "section-7",
+        "start": 152.94399092970522,
+        "end": 158.1279365079365,
+        "core_start": 153.12399092970523,
+        "core_end": 157.9479365079365,
+        "presence": 0.8329185497949239,
+        "off_center_risk": 0.03447530913870632
+      },
+      {
+        "id": "vocal-26",
+        "section_id": "section-7",
+        "start": 157.7679365079365,
+        "end": 164.47278911564626,
+        "core_start": 157.9479365079365,
+        "core_end": 164.29278911564626,
+        "presence": 0.8806943955858243,
+        "off_center_risk": 0.012748011687623321
+      },
+      {
+        "id": "vocal-27",
+        "section_id": "section-8",
+        "start": 164.5655782312925,
+        "end": 170.88149659863947,
+        "core_start": 164.7455782312925,
+        "core_end": 170.70149659863947,
+        "presence": 0.8075445447704972,
+        "off_center_risk": 0.08539888459142174
+      },
+      {
+        "id": "vocal-28",
+        "section_id": "section-9",
+        "start": 170.81174603174603,
+        "end": 177.52240362811793,
+        "core_start": 170.99174603174603,
+        "core_end": 177.34240362811792,
+        "presence": 0.8329059503505496,
+        "off_center_risk": 0.06398534257730275
+      },
+      {
+        "id": "vocal-29",
+        "section_id": "section-9",
+        "start": 177.16240362811791,
+        "end": 183.66408163265308,
+        "core_start": 177.34240362811792,
+        "core_end": 183.48408163265307,
+        "presence": 0.835241615149524,
+        "off_center_risk": 0.06895097396756092
+      },
+      {
+        "id": "vocal-30",
+        "section_id": "section-9",
+        "start": 183.30408163265307,
+        "end": 191.3498866213152,
+        "core_start": 183.48408163265307,
+        "core_end": 191.1698866213152,
+        "presence": 0.7933234857361575,
+        "off_center_risk": 0.09176938820340728
+      },
+      {
+        "id": "vocal-31",
+        "section_id": "section-9",
+        "start": 190.98988662131518,
+        "end": 194.82707482993197,
+        "core_start": 191.1698866213152,
+        "core_end": 194.64707482993197,
+        "presence": 0.7224944246365613,
+        "off_center_risk": 0.20406915038082654
+      },
+      {
+        "id": "vocal-32",
+        "section_id": "section-9",
+        "start": 194.46707482993196,
+        "end": 201.0732426303855,
+        "core_start": 194.64707482993197,
+        "core_end": 200.8932426303855,
+        "presence": 0.8401190550258186,
+        "off_center_risk": 0.0599611946973502
+      },
+      {
+        "id": "vocal-33",
+        "section_id": "section-9",
+        "start": 200.71324263038548,
+        "end": 205.61274376417234,
+        "core_start": 200.8932426303855,
+        "core_end": 205.43274376417233,
+        "presence": 0.7632558610676479,
+        "off_center_risk": 0.14163053239908963
+      },
+      {
+        "id": "vocal-34",
+        "section_id": "section-9",
+        "start": 205.25274376417232,
+        "end": 208.08566893424037,
+        "core_start": 205.43274376417233,
+        "core_end": 207.90566893424037,
+        "presence": 0.7234166071160812,
+        "off_center_risk": 0.17760163823900668
+      },
+      {
+        "id": "vocal-35",
+        "section_id": "section-9",
+        "start": 207.72566893424036,
+        "end": 212.8631746031746,
+        "core_start": 207.90566893424037,
+        "core_end": 212.6831746031746,
+        "presence": 0.7768203367176421,
+        "off_center_risk": 0.1300169748745699
+      },
+      {
+        "id": "vocal-36",
+        "section_id": "section-9",
+        "start": 212.50317460317459,
+        "end": 215.21419501133786,
+        "core_start": 212.6831746031746,
+        "core_end": 215.03419501133786,
+        "presence": 0.7302188185979799,
+        "off_center_risk": 0.21285461604644446
+      },
+      {
+        "id": "vocal-37",
+        "section_id": "section-9",
+        "start": 214.85419501133785,
+        "end": 223.0451247165533,
+        "core_start": 215.03419501133786,
+        "core_end": 222.86512471655328,
+        "presence": 0.8139605834171255,
+        "off_center_risk": 0.08178256887480638
+      },
+      {
+        "id": "vocal-38",
+        "section_id": "section-9",
+        "start": 222.68512471655328,
+        "end": 225.29746031746032,
+        "core_start": 222.86512471655328,
+        "core_end": 225.1174603174603,
+        "presence": 0.8181495864563239,
+        "off_center_risk": 0.107998703791567
+      },
+      {
+        "id": "vocal-39",
+        "section_id": "section-9",
+        "start": 224.9374603174603,
+        "end": 229.98789115646258,
+        "core_start": 225.1174603174603,
+        "core_end": 229.80789115646257,
+        "presence": 0.7349149906759208,
+        "off_center_risk": 0.1917734991204583
+      },
+      {
+        "id": "vocal-40",
+        "section_id": "section-9",
+        "start": 229.62789115646257,
+        "end": 235.3110657596372,
+        "core_start": 229.80789115646257,
+        "core_end": 235.13106575963718,
+        "presence": 0.7403748583871455,
+        "off_center_risk": 0.2339848124438969
+      },
+      {
+        "id": "vocal-41",
+        "section_id": "section-10",
+        "start": 244.89501133786848,
+        "end": 247.56539682539685,
+        "core_start": 245.0750113378685,
+        "core_end": 247.38539682539684,
+        "presence": 0.5356279276789027,
+        "off_center_risk": 0.04879679181363004
+      }
+    ],
+    "diagnostics": [],
+    "is_vocal": true,
+    "vocal_seconds": 167.5784126984127
+  },
+  "duration": 261.9675283446712
+}

@@ -1,0 +1,16 @@
+{
+  "timing_commit": "3a16732e9525e11cc3dc2b5aad10c12be73abb8f",
+  "studio_commit": "87b96dbbc9ea1f66eaeed4e2c123b74b9d413050",
+  "input": "13 audio files / 14 TTML variants; primary chain only; background counts reported separately",
+  "audio": "same Demucs htdemucs seed=0 complete stem supplied to both systems; all stems generated in this evaluation",
+  "conditions": [
+    "current Studio projection + default NextFire, no hints or gap fill",
+    "Timing tifa with untimed surface text, source mode on shared stem",
+    "Timing tifa with trusted human line windows, surface text"
+  ],
+  "dialects": "Cantonese and Teochew out of declared model scope, kept separate; kana transcription is not Japanese speech",
+  "metrics": "positive duration, both endpoints <=100/200 ms; missing boundaries stay in denominator; no timestamp interpolation; paired common surface groups secondary",
+  "no_external_llm": true,
+  "product_changes": false,
+  "reference_changes": false
+}

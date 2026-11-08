@@ -1,0 +1,18 @@
+{
+  "song": "s06",
+  "model": "kim",
+  "source": "datasets/audio/Worlds Pain.m4a",
+  "sha256": "a1824f6eee8be4587a0011be3984d7d74bd648c35d414318dfec3db87a255618",
+  "frames": 10903552,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 13.830243034288287,
+  "peak_gib": 2.1993532180786133,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 10903552,
+    "timeline_preserved": true
+  }
+}

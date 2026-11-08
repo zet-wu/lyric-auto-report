@@ -1,0 +1,7 @@
+{
+  "song": "s11",
+  "separator": "demucs",
+  "windows": {},
+  "error": "Traceback (most recent call last):\n  File \"scripts/timing/ablation_run.py\", line 144, in <module>\n    if sid=='s11':raise ValueError('Yue unsupported in this shared Japanese/English coarse locator; no Mandarin substitution')\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Yue unsupported in this shared Japanese/English coarse locator; no Mandarin substitution\n",
+  "seconds": 0.00041372887790203094
+}

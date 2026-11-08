@@ -1,0 +1,18 @@
+{
+  "song": "s04",
+  "model": "kim",
+  "source": "datasets/audio/TSU-BA-SA.m4a",
+  "sha256": "494c52e913c040721014196972da093ffe76189d3aad2206cc895c4b908b60de",
+  "frames": 9513369,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 13.166473854333162,
+  "peak_gib": 2.1700563430786133,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 9513369,
+    "timeline_preserved": true
+  }
+}

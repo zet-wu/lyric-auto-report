@@ -1,0 +1,18 @@
+{
+  "song": "s07",
+  "model": "kim",
+  "source": "datasets/audio/両翼のBrilliance.m4a",
+  "sha256": "4d54949941c8c7a0fcfccd3f9558cfa5d9a513b5eb87250e65300724f2fe3eef",
+  "frames": 11198343,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 16.960488913580775,
+  "peak_gib": 2.2059779167175293,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 11198343,
+    "timeline_preserved": true
+  }
+}

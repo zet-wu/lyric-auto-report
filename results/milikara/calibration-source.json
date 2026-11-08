@@ -1,0 +1,15 @@
+{
+  "source": ".deps/milikara/kara_align/auto_calibrate.py",
+  "sha256": "f9f3d66d3b79bce0b273658afc666d565494ea553ff0602dc24fea99780378ca",
+  "functions": [
+    "fit_offset",
+    "_drift_ms"
+  ],
+  "constants": {
+    "MIN_LINES": 4,
+    "TIGHT_MS": 300,
+    "MIN_TIGHT": 0.6,
+    "MAX_DRIFT_MS": 400
+  },
+  "synthetic_constant_shift_and_drift_checks": true
+}

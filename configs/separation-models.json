@@ -1,0 +1,82 @@
+[
+  {
+    "model": "scnet",
+    "kind": "config",
+    "url": "https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v.1.0.6/config_musdb18_scnet.yaml",
+    "path": ".models/separation/scnet/config.yaml",
+    "bytes": 1739,
+    "sha256": "19103def86d549701f824804fc5f3d244e8e8ccd4032da6ee9d5b4f2a5f2da16"
+  },
+  {
+    "model": "scnet",
+    "kind": "weights",
+    "url": "https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v.1.0.6/scnet_checkpoint_musdb18.ckpt",
+    "path": ".models/separation/scnet/model.ckpt",
+    "bytes": 42434986,
+    "sha256": "1bc0d1abb20bfdf966dcd07637bafd03e4bc13653d09ef18bc9b3e342eafe2aa"
+  },
+  {
+    "model": "dttnet",
+    "kind": "config",
+    "url": "https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.22/config_DTTNet_vocals.yaml",
+    "path": ".models/separation/dttnet/config.yaml",
+    "bytes": 1335,
+    "sha256": "a7a05eb2ba73205d8d62428c589412cf12c898e58dff2f981f4be2a93a5109a1"
+  },
+  {
+    "model": "dttnet",
+    "kind": "weights",
+    "url": "https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.22/dttnet_vocalsg32_ep4082_fix.ckpt",
+    "path": ".models/separation/dttnet/model.ckpt",
+    "bytes": 20003347,
+    "sha256": "a60988a1f9c0e0e20e1e0b784e606a50e64eb3855925cfeb0291dfca138ff56c"
+  },
+  {
+    "model": "bs_roformer",
+    "kind": "config",
+    "url": "https://raw.githubusercontent.com/ZFTurbo/Music-Source-Separation-Training/84b1eac0887756b4f1a9d7a1ff49105939749ed2/configs/viperx/model_bs_roformer_ep_317_sdr_12.9755.yaml",
+    "path": ".models/separation/bs_roformer/config.yaml",
+    "bytes": 1881,
+    "sha256": "42e5635ceab7287b83d9591c9880966f0b61cff26a0a40a29d236bacb32e5f2c"
+  },
+  {
+    "model": "bs_roformer",
+    "kind": "weights",
+    "url": "https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/model_bs_roformer_ep_317_sdr_12.9755.ckpt",
+    "path": ".models/separation/bs_roformer/model.ckpt",
+    "bytes": 639331213,
+    "sha256": "5b84f37e8d444c8cb30c79d77f613a41c05868ff9c9ac6c7049c00aefae115aa"
+  },
+  {
+    "model": "mel_roformer",
+    "kind": "config",
+    "url": "https://raw.githubusercontent.com/ZFTurbo/Music-Source-Separation-Training/84b1eac0887756b4f1a9d7a1ff49105939749ed2/configs/KimberleyJensen/config_vocals_mel_band_roformer_kj.yaml",
+    "path": ".models/separation/mel_roformer/config.yaml",
+    "bytes": 1721,
+    "sha256": "f63f38eb1e6e40a7db0dade714a5ae257555dd8748f4e774eae8679275a81926"
+  },
+  {
+    "model": "mel_roformer",
+    "kind": "weights",
+    "url": "https://huggingface.co/KimberleyJSN/melbandroformer/resolve/main/MelBandRoformer.ckpt",
+    "path": ".models/separation/mel_roformer/model.ckpt",
+    "bytes": 913106900,
+    "sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e"
+  },
+  {
+    "model": "windowed",
+    "kind": "config",
+    "url": "https://raw.githubusercontent.com/smulelabs/windowed-roformer/cc43c280518ee5ebab7826d8efe3b5a342df8857/config.yaml",
+    "path": ".models/separation/windowed/config.yaml",
+    "bytes": 854,
+    "sha256": "c9bdda4881d65b76bbfb078219cade32ef149c8607b1997d48c034b193fc5838"
+  },
+  {
+    "model": "windowed",
+    "kind": "weights",
+    "url": "https://huggingface.co/smulelabs/windowed-roformer/resolve/main/mbr-win10-sink8.ckpt",
+    "path": ".models/separation/windowed/model.ckpt",
+    "bytes": 913837877,
+    "sha256": "7afe79947745faf8cddd650afc822aa7c387882047e65fe65f136f539365a656"
+  }
+]

@@ -1,0 +1,1136 @@
+{
+  "demucs": {
+    "gpu_identity": {
+      "model": "demucs",
+      "device": "cuda",
+      "config": {
+        "model_name": "htdemucs",
+        "device": "cuda",
+        "model_revision": null,
+        "split": true,
+        "overlap": 0.25
+      },
+      "parameters": 41984456,
+      "state_sha256": "7f570237bc0bd28e792bfba06fa7420e06c5271d31a72da3e4a8e5de469d2366",
+      "model_load_seconds": 0.7290224442258477,
+      "load_and_identity_seconds": 0.8964906577020884,
+      "process_import_load_seconds": 2.344526829198003,
+      "torch": "2.14.1+cu130",
+      "python": "3.13.2",
+      "threads": 8,
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "demucs": "4.0.1",
+        "librosa": "1.0.0",
+        "rotary_embedding_torch": "0.3.5"
+      }
+    },
+    "performance": {
+      "per_song": {
+        "kouin": {
+          "audio_seconds": 266.4257596371882,
+          "seconds_median": 2.481624216772616,
+          "seconds_min": 2.4678370347246528,
+          "seconds_max": 2.505301143974066,
+          "gpu_board_joules_median": 499.21321299335176
+        },
+        "brave": {
+          "audio_seconds": 255.04798185941044,
+          "seconds_median": 2.4019496832042933,
+          "seconds_min": 2.368799858726561,
+          "seconds_max": 2.429712968878448,
+          "gpu_board_joules_median": 438.67422273564387
+        },
+        "powder": {
+          "audio_seconds": 448.7253514739229,
+          "seconds_median": 4.118527171202004,
+          "seconds_min": 4.0777075393125415,
+          "seconds_max": 4.1449459455907345,
+          "gpu_board_joules_median": 823.1321842337446
+        },
+        "brilliance": {
+          "audio_seconds": 253.93068027210884,
+          "seconds_median": 2.358210220001638,
+          "seconds_min": 2.3482636138796806,
+          "seconds_max": 2.367545684799552,
+          "gpu_board_joules_median": 439.9427067188146
+        },
+        "rainbow": {
+          "audio_seconds": 238.42133786848072,
+          "seconds_median": 2.191814278252423,
+          "seconds_min": 2.1897894656285644,
+          "seconds_max": 2.1946722688153386,
+          "gpu_board_joules_median": 405.65421211609527
+        }
+      },
+      "five_song_seconds": 13.552125569432974,
+      "audio_seconds": 1462.5511111111111,
+      "gpu_board_joules": 2606.6165387976503,
+      "first_full_song": {
+        "model": "demucs",
+        "song": "kouin",
+        "device": "cuda",
+        "repeat": -1,
+        "phase": "cold",
+        "audio_seconds": 266.4257596371882,
+        "seconds": 2.990660642273724,
+        "rtf": 0.011225118195576618,
+        "shape": [
+          2,
+          11749376
+        ],
+        "peak_amplitude": 1.0369940996170044,
+        "rss_peak_bytes": 1750769664,
+        "sample_count": 27,
+        "gpu_board_peak_bytes": 2921398272,
+        "gpu_board_peak_watts": 219.876,
+        "gpu_board_joules": 431.3950806198111,
+        "allocated_peak_bytes": 1189603328,
+        "reserved_peak_bytes": 1753219072,
+        "decode_seconds": 0.4971718583256006
+      },
+      "rss_peak_bytes": 2044563456,
+      "allocated_peak_bytes": 1762049024,
+      "reserved_peak_bytes": 3021996032,
+      "gpu_board_peak_bytes": 4190175232,
+      "gpu_board_peak_watts": 227.531,
+      "weighted_rtf": 0.009266086816711193,
+      "cpu": {
+        "completed_warm_repeats": 3,
+        "seconds_median": 7.957724845036864,
+        "seconds_min": 7.793949145823717,
+        "seconds_max": 8.54171054251492,
+        "rss_peak_bytes": 1952182272,
+        "first_clip": {
+          "model": "demucs",
+          "song": "rainbow-30-60",
+          "device": "cpu",
+          "repeat": -1,
+          "phase": "cold",
+          "audio_seconds": 30.0,
+          "seconds": 9.492380475625396,
+          "rtf": 0.31641268252084653,
+          "shape": [
+            2,
+            1323000
+          ],
+          "peak_amplitude": 0.9295096397399902,
+          "rss_peak_bytes": 1748361216,
+          "sample_count": 104
+        }
+      }
+    }
+  },
+  "scnet": {
+    "gpu_identity": {
+      "model": "scnet",
+      "device": "cuda",
+      "config": {
+        "audio": {
+          "chunk_size": 485100,
+          "num_channels": 2,
+          "sample_rate": 44100,
+          "min_mean_abs": 0.0
+        },
+        "model": {
+          "sources": [
+            "drums",
+            "bass",
+            "other",
+            "vocals"
+          ],
+          "audio_channels": 2,
+          "dims": [
+            4,
+            32,
+            64,
+            128
+          ],
+          "nfft": 4096,
+          "hop_size": 1024,
+          "win_size": 4096,
+          "normalized": true,
+          "band_SR": [
+            0.175,
+            0.392,
+            0.433
+          ],
+          "band_stride": [
+            1,
+            4,
+            16
+          ],
+          "band_kernel": [
+            3,
+            4,
+            16
+          ],
+          "conv_depths": [
+            3,
+            2,
+            1
+          ],
+          "compress": 4,
+          "conv_kernel": 3,
+          "num_dplayer": 6,
+          "expand": 1
+        },
+        "training": {
+          "batch_size": 10,
+          "gradient_accumulation_steps": 1,
+          "grad_clip": 0,
+          "instruments": [
+            "drums",
+            "bass",
+            "other",
+            "vocals"
+          ],
+          "lr": 0.0005,
+          "patience": 2,
+          "reduce_factor": 0.95,
+          "target_instrument": null,
+          "num_epochs": 1000,
+          "num_steps": 1000,
+          "q": 0.95,
+          "coarse_loss_clip": true,
+          "ema_momentum": 0.999,
+          "optimizer": "adam",
+          "other_fix": false,
+          "use_amp": true
+        },
+        "augmentations": {
+          "enable": true,
+          "loudness": true,
+          "loudness_min": 0.5,
+          "loudness_max": 1.5,
+          "mixup": true,
+          "mixup_probs": [
+            0.2,
+            0.02
+          ],
+          "mixup_loudness_min": 0.5,
+          "mixup_loudness_max": 1.5
+        },
+        "inference": {
+          "batch_size": 1,
+          "dim_t": 256,
+          "num_overlap": 4,
+          "normalize": true
+        }
+      },
+      "parameters": 10578768,
+      "state_sha256": "254aa47c11ced915e9e8682bed5599462d0de90cf5fdbb63cfc613fd931bb44c",
+      "model_load_seconds": 0.3316993173211813,
+      "load_and_identity_seconds": 0.3743768772110343,
+      "process_import_load_seconds": 1.7046911725774407,
+      "torch": "2.14.1+cu130",
+      "python": "3.13.2",
+      "threads": 8,
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "demucs": "4.0.1",
+        "librosa": "1.0.0",
+        "rotary_embedding_torch": "0.3.5"
+      }
+    },
+    "performance": {
+      "per_song": {
+        "kouin": {
+          "audio_seconds": 266.4257596371882,
+          "seconds_median": 5.266335899010301,
+          "seconds_min": 5.234789397567511,
+          "seconds_max": 5.336868155747652,
+          "gpu_board_joules_median": 1081.494482369354
+        },
+        "brave": {
+          "audio_seconds": 255.04798185941044,
+          "seconds_median": 5.078116609714925,
+          "seconds_min": 5.054285808466375,
+          "seconds_max": 5.102343595586717,
+          "gpu_board_joules_median": 1007.9181974828332
+        },
+        "powder": {
+          "audio_seconds": 448.7253514739229,
+          "seconds_median": 8.712529258802533,
+          "seconds_min": 8.663370390422642,
+          "seconds_max": 8.918798556551337,
+          "gpu_board_joules_median": 1787.136745383184
+        },
+        "brilliance": {
+          "audio_seconds": 253.93068027210884,
+          "seconds_median": 5.099598194472492,
+          "seconds_min": 5.057658524252474,
+          "seconds_max": 5.13601125497371,
+          "gpu_board_joules_median": 1015.144305814438
+        },
+        "rainbow": {
+          "audio_seconds": 238.42133786848072,
+          "seconds_median": 4.757787776179612,
+          "seconds_min": 4.7531314408406615,
+          "seconds_max": 4.800376450642943,
+          "gpu_board_joules_median": 959.0907212609025
+        }
+      },
+      "five_song_seconds": 28.914367738179862,
+      "audio_seconds": 1462.5511111111111,
+      "gpu_board_joules": 5850.7844523107115,
+      "first_full_song": {
+        "model": "scnet",
+        "song": "kouin",
+        "device": "cuda",
+        "repeat": -1,
+        "phase": "cold",
+        "audio_seconds": 266.4257596371882,
+        "seconds": 5.910610337741673,
+        "rtf": 0.022184830572654052,
+        "shape": [
+          2,
+          11749376
+        ],
+        "peak_amplitude": 1.0127108097076416,
+        "rss_peak_bytes": 2095935488,
+        "sample_count": 57,
+        "gpu_board_peak_bytes": 2587951104,
+        "gpu_board_peak_watts": 216.525,
+        "gpu_board_joules": 1031.1925436685397,
+        "allocated_peak_bytes": 1004608512,
+        "reserved_peak_bytes": 1413480448,
+        "decode_seconds": 0.5168906236067414
+      },
+      "rss_peak_bytes": 2905587712,
+      "allocated_peak_bytes": 1615413760,
+      "reserved_peak_bytes": 2705326080,
+      "gpu_board_peak_bytes": 3879796736,
+      "gpu_board_peak_watts": 222.529,
+      "weighted_rtf": 0.01976981694418419,
+      "cpu": {
+        "completed_warm_repeats": 3,
+        "seconds_median": 35.11974135041237,
+        "seconds_min": 31.205280444584787,
+        "seconds_max": 36.571240765973926,
+        "rss_peak_bytes": 1355194368,
+        "first_clip": {
+          "model": "scnet",
+          "song": "rainbow-30-60",
+          "device": "cpu",
+          "repeat": -1,
+          "phase": "cold",
+          "audio_seconds": 30.0,
+          "seconds": 34.08381341956556,
+          "rtf": 1.1361271139855187,
+          "shape": [
+            2,
+            1323000
+          ],
+          "peak_amplitude": 0.9815499186515808,
+          "rss_peak_bytes": 1355825152,
+          "sample_count": 361
+        }
+      }
+    }
+  },
+  "dttnet": {
+    "gpu_identity": {
+      "model": "dttnet",
+      "device": "cuda",
+      "config": {
+        "audio": {
+          "chunk_size": 261120,
+          "dim_f": 2048,
+          "dim_t": 256,
+          "hop_length": 1024,
+          "n_fft": 6144,
+          "num_channels": 2,
+          "sample_rate": 44100,
+          "min_mean_abs": 0.0
+        },
+        "model": {
+          "norm": "BatchNorm",
+          "act": "relu",
+          "num_blocks": 5,
+          "g": 32,
+          "l": 3,
+          "k": 3,
+          "bn": 8,
+          "bias": false,
+          "block_type": "TFC_TDF_Res2",
+          "bandsequence": {
+            "rnn_type": "LSTM",
+            "bidirectional": true,
+            "num_layers": 4,
+            "n_heads": 2
+          }
+        },
+        "training": {
+          "batch_size": 2,
+          "gradient_accumulation_steps": 1,
+          "grad_clip": 0.0,
+          "instruments": [
+            "vocals",
+            "other"
+          ],
+          "lr": 0.0001,
+          "patience": 8,
+          "reduce_factor": 0.9,
+          "target_instrument": "vocals",
+          "num_epochs": 1000,
+          "num_steps": 1000,
+          "q": 0.95,
+          "coarse_loss_clip": false,
+          "ema_momentum": 0.999,
+          "optimizer": "adamw",
+          "read_metadata_procs": 8,
+          "other_fix": false,
+          "use_amp": true
+        },
+        "augmentations": {
+          "enable": true,
+          "loudness": true,
+          "loudness_min": 0.5,
+          "loudness_max": 2.0,
+          "all": {
+            "channel_shuffle": 0.5,
+            "random_polarity": 0.5
+          },
+          "vocals": {
+            "seven_band_parametric_eq": 0.25,
+            "seven_band_parametric_eq_min_gain_db": -3,
+            "seven_band_parametric_eq_max_gain_db": 3,
+            "tanh_distortion": 0.1,
+            "tanh_distortion_min": 0.1,
+            "tanh_distortion_max": 0.4
+          }
+        },
+        "inference": {
+          "batch_size": 1,
+          "chunk_size": 261120,
+          "num_overlap": 4
+        }
+      },
+      "parameters": 4958468,
+      "state_sha256": "fd3f927f36db0fa27e52de9a495f028acab0526ac4d12d26c7aaf036d41f2640",
+      "model_load_seconds": 0.2767936736345291,
+      "load_and_identity_seconds": 0.3105805115774274,
+      "process_import_load_seconds": 1.6647062059491873,
+      "torch": "2.14.1+cu130",
+      "python": "3.13.2",
+      "threads": 8,
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "demucs": "4.0.1",
+        "librosa": "1.0.0",
+        "rotary_embedding_torch": "0.3.5"
+      }
+    },
+    "performance": {
+      "per_song": {
+        "kouin": {
+          "audio_seconds": 266.4257596371882,
+          "seconds_median": 3.9736473774537444,
+          "seconds_min": 3.941074880771339,
+          "seconds_max": 3.9746813410893083,
+          "gpu_board_joules_median": 1162.0555421028496
+        },
+        "brave": {
+          "audio_seconds": 255.04798185941044,
+          "seconds_median": 3.7689936803653836,
+          "seconds_min": 3.7539690202102065,
+          "seconds_max": 3.8116104435175657,
+          "gpu_board_joules_median": 1031.9689277371917
+        },
+        "powder": {
+          "audio_seconds": 448.7253514739229,
+          "seconds_median": 6.551711375825107,
+          "seconds_min": 6.544526542536914,
+          "seconds_max": 6.662651845254004,
+          "gpu_board_joules_median": 1860.7259191708335
+        },
+        "brilliance": {
+          "audio_seconds": 253.93068027210884,
+          "seconds_median": 3.76410289760679,
+          "seconds_min": 3.707257764413953,
+          "seconds_max": 3.8436577636748552,
+          "gpu_board_joules_median": 1007.4869911840916
+        },
+        "rainbow": {
+          "audio_seconds": 238.42133786848072,
+          "seconds_median": 3.569311562925577,
+          "seconds_min": 3.514755120500922,
+          "seconds_max": 3.62158068921417,
+          "gpu_board_joules_median": 960.3800008546995
+        }
+      },
+      "five_song_seconds": 21.627766894176602,
+      "audio_seconds": 1462.5511111111111,
+      "gpu_board_joules": 6022.617381049666,
+      "first_full_song": {
+        "model": "dttnet",
+        "song": "kouin",
+        "device": "cuda",
+        "repeat": -1,
+        "phase": "cold",
+        "audio_seconds": 266.4257596371882,
+        "seconds": 4.466081026941538,
+        "rtf": 0.016762947520627635,
+        "shape": [
+          2,
+          11749376
+        ],
+        "peak_amplitude": 0.9835488200187683,
+        "rss_peak_bytes": 1683083264,
+        "sample_count": 40,
+        "gpu_board_peak_bytes": 2183200768,
+        "gpu_board_peak_watts": 306.277,
+        "gpu_board_joules": 1025.5064674926502,
+        "allocated_peak_bytes": 834618368,
+        "reserved_peak_bytes": 1010827264,
+        "decode_seconds": 0.4987382348626852
+      },
+      "rss_peak_bytes": 2330783744,
+      "allocated_peak_bytes": 995515392,
+      "reserved_peak_bytes": 1577058304,
+      "gpu_board_peak_bytes": 2749431808,
+      "gpu_board_peak_watts": 311.895,
+      "weighted_rtf": 0.014787699882669963,
+      "cpu": {
+        "completed_warm_repeats": 3,
+        "seconds_median": 70.4482165388763,
+        "seconds_min": 68.61203087959439,
+        "seconds_max": 74.31604576203972,
+        "rss_peak_bytes": 1442799616,
+        "first_clip": {
+          "model": "dttnet",
+          "song": "rainbow-30-60",
+          "device": "cpu",
+          "repeat": -1,
+          "phase": "cold",
+          "audio_seconds": 30.0,
+          "seconds": 79.5149158583954,
+          "rtf": 2.6504971952798466,
+          "shape": [
+            2,
+            1323000
+          ],
+          "peak_amplitude": 0.9506404399871826,
+          "rss_peak_bytes": 1451708416,
+          "sample_count": 832
+        }
+      }
+    }
+  },
+  "bs_roformer": {
+    "gpu_identity": {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "config": {
+        "audio": {
+          "chunk_size": 352800,
+          "dim_f": 1024,
+          "dim_t": 801,
+          "hop_length": 441,
+          "n_fft": 2048,
+          "num_channels": 2,
+          "sample_rate": 44100,
+          "min_mean_abs": 0.0
+        },
+        "model": {
+          "dim": 512,
+          "depth": 12,
+          "stereo": true,
+          "num_stems": 1,
+          "time_transformer_depth": 1,
+          "freq_transformer_depth": 1,
+          "linear_transformer_depth": 0,
+          "freqs_per_bands": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            24,
+            48,
+            48,
+            48,
+            48,
+            48,
+            48,
+            48,
+            48,
+            128,
+            129
+          ],
+          "dim_head": 64,
+          "heads": 8,
+          "attn_dropout": 0.1,
+          "ff_dropout": 0.1,
+          "flash_attn": true,
+          "dim_freqs_in": 1025,
+          "stft_n_fft": 2048,
+          "stft_hop_length": 441,
+          "stft_win_length": 2048,
+          "stft_normalized": false,
+          "mask_estimator_depth": 2,
+          "multi_stft_resolution_loss_weight": 1.0,
+          "multi_stft_resolutions_window_sizes": [
+            4096,
+            2048,
+            1024,
+            512,
+            256
+          ],
+          "multi_stft_hop_size": 147,
+          "multi_stft_normalized": false
+        },
+        "training": {
+          "batch_size": 2,
+          "gradient_accumulation_steps": 1,
+          "grad_clip": 0,
+          "instruments": [
+            "vocals",
+            "other"
+          ],
+          "lr": 1e-05,
+          "patience": 2,
+          "reduce_factor": 0.95,
+          "target_instrument": "vocals",
+          "num_epochs": 1000,
+          "num_steps": 1000,
+          "q": 0.95,
+          "coarse_loss_clip": true,
+          "ema_momentum": 0.999,
+          "optimizer": "adam",
+          "other_fix": true,
+          "use_amp": true
+        },
+        "inference": {
+          "batch_size": 1,
+          "dim_t": 801,
+          "num_overlap": 2
+        }
+      },
+      "parameters": 159758092,
+      "state_sha256": "d9de1db3825b92cd4807e60c1ca26731e98c2d2a76bfd8863687dcef8dce327d",
+      "model_load_seconds": 1.9044804275035858,
+      "load_and_identity_seconds": 2.415778337046504,
+      "process_import_load_seconds": 3.756912836804986,
+      "torch": "2.14.1+cu130",
+      "python": "3.13.2",
+      "threads": 8,
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "demucs": "4.0.1",
+        "librosa": "1.0.0",
+        "rotary_embedding_torch": "0.3.5"
+      }
+    },
+    "performance": {
+      "per_song": {
+        "kouin": {
+          "audio_seconds": 266.4257596371882,
+          "seconds_median": 13.009654460474849,
+          "seconds_min": 13.001990696415305,
+          "seconds_max": 13.013743995688856,
+          "gpu_board_joules_median": 4951.903655295519
+        },
+        "brave": {
+          "audio_seconds": 255.04798185941044,
+          "seconds_median": 12.492758958600461,
+          "seconds_min": 12.44360840972513,
+          "seconds_max": 12.496920505538583,
+          "gpu_board_joules_median": 4657.880810303537
+        },
+        "powder": {
+          "audio_seconds": 448.7253514739229,
+          "seconds_median": 21.67227966338396,
+          "seconds_min": 21.64943515881896,
+          "seconds_max": 21.677649756893516,
+          "gpu_board_joules_median": 8161.345894724306
+        },
+        "brilliance": {
+          "audio_seconds": 253.93068027210884,
+          "seconds_median": 12.413916216231883,
+          "seconds_min": 12.412029250524938,
+          "seconds_max": 12.439566268585622,
+          "gpu_board_joules_median": 4675.106737925217
+        },
+        "rainbow": {
+          "audio_seconds": 238.42133786848072,
+          "seconds_median": 11.673261614516377,
+          "seconds_min": 11.672069421969354,
+          "seconds_max": 11.759280355647206,
+          "gpu_board_joules_median": 4303.657126495556
+        }
+      },
+      "five_song_seconds": 71.26187091320753,
+      "audio_seconds": 1462.5511111111111,
+      "gpu_board_joules": 26749.894224744137,
+      "first_full_song": {
+        "model": "bs_roformer",
+        "song": "kouin",
+        "device": "cuda",
+        "repeat": -1,
+        "phase": "cold",
+        "audio_seconds": 266.4257596371882,
+        "seconds": 13.429357631132007,
+        "rtf": 0.05040562762932444,
+        "shape": [
+          2,
+          11749376
+        ],
+        "peak_amplitude": 1.031198501586914,
+        "rss_peak_bytes": 1721327616,
+        "sample_count": 142,
+        "gpu_board_peak_bytes": 3131113472,
+        "gpu_board_peak_watts": 382.991,
+        "gpu_board_joules": 4700.58257372997,
+        "allocated_peak_bytes": 1439054336,
+        "reserved_peak_bytes": 1958739968,
+        "decode_seconds": 0.4768939493224025
+      },
+      "rss_peak_bytes": 2085335040,
+      "allocated_peak_bytes": 1600913920,
+      "reserved_peak_bytes": 2365587456,
+      "gpu_board_peak_bytes": 3537960960,
+      "gpu_board_peak_watts": 394.487,
+      "weighted_rtf": 0.048724362773940495,
+      "cpu": {
+        "completed_warm_repeats": 3,
+        "seconds_median": 275.9862371822819,
+        "seconds_min": 272.78870403021574,
+        "seconds_max": 291.78196664433926,
+        "rss_peak_bytes": 2894110720,
+        "first_clip": {
+          "model": "bs_roformer",
+          "song": "rainbow-30-60",
+          "device": "cpu",
+          "repeat": -1,
+          "phase": "cold",
+          "audio_seconds": 30.0,
+          "seconds": 289.31939399894327,
+          "rtf": 9.643979799964775,
+          "shape": [
+            2,
+            1323000
+          ],
+          "peak_amplitude": 1.022685170173645,
+          "rss_peak_bytes": 2539655168,
+          "sample_count": 3085
+        }
+      }
+    }
+  },
+  "mel_roformer": {
+    "gpu_identity": {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "config": {
+        "audio": {
+          "chunk_size": 352800,
+          "dim_f": 1024,
+          "dim_t": 256,
+          "hop_length": 441,
+          "n_fft": 2048,
+          "num_channels": 2,
+          "sample_rate": 44100,
+          "min_mean_abs": 0.0
+        },
+        "model": {
+          "dim": 384,
+          "depth": 6,
+          "stereo": true,
+          "num_stems": 1,
+          "time_transformer_depth": 1,
+          "freq_transformer_depth": 1,
+          "num_bands": 60,
+          "dim_head": 64,
+          "heads": 8,
+          "attn_dropout": 0,
+          "ff_dropout": 0,
+          "flash_attn": true,
+          "dim_freqs_in": 1025,
+          "sample_rate": 44100,
+          "stft_n_fft": 2048,
+          "stft_hop_length": 441,
+          "stft_win_length": 2048,
+          "stft_normalized": false,
+          "mask_estimator_depth": 2,
+          "multi_stft_resolution_loss_weight": 1.0,
+          "multi_stft_resolutions_window_sizes": [
+            4096,
+            2048,
+            1024,
+            512,
+            256
+          ],
+          "multi_stft_hop_size": 147,
+          "multi_stft_normalized": false
+        },
+        "training": {
+          "batch_size": 4,
+          "gradient_accumulation_steps": 1,
+          "grad_clip": 0,
+          "instruments": [
+            "vocals",
+            "other"
+          ],
+          "lr": 1e-05,
+          "patience": 2,
+          "reduce_factor": 0.95,
+          "target_instrument": "vocals",
+          "num_epochs": 1000,
+          "num_steps": 1000,
+          "augmentation": false,
+          "augmentation_type": null,
+          "use_mp3_compress": false,
+          "augmentation_mix": false,
+          "augmentation_loudness": false,
+          "augmentation_loudness_type": 1,
+          "augmentation_loudness_min": 0,
+          "augmentation_loudness_max": 0,
+          "q": 0.95,
+          "coarse_loss_clip": false,
+          "ema_momentum": 0.999,
+          "optimizer": "adam",
+          "other_fix": true,
+          "use_amp": true
+        },
+        "inference": {
+          "batch_size": 1,
+          "dim_t": 256,
+          "num_overlap": 2
+        }
+      },
+      "parameters": 228202852,
+      "state_sha256": "8ab33e8ffd9f4f9477a06b89ea791ec7df231af98409aae9be1581ec0eb23f64",
+      "model_load_seconds": 2.415918885730207,
+      "load_and_identity_seconds": 3.1850855443626642,
+      "process_import_load_seconds": 4.532984483987093,
+      "torch": "2.14.1+cu130",
+      "python": "3.13.2",
+      "threads": 8,
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "demucs": "4.0.1",
+        "librosa": "1.0.0",
+        "rotary_embedding_torch": "0.3.5"
+      }
+    },
+    "performance": {
+      "per_song": {
+        "kouin": {
+          "audio_seconds": 266.4257596371882,
+          "seconds_median": 6.446495959535241,
+          "seconds_min": 6.431615870445967,
+          "seconds_max": 6.462366729974747,
+          "gpu_board_joules_median": 2299.3087917165885
+        },
+        "brave": {
+          "audio_seconds": 255.04798185941044,
+          "seconds_median": 6.150220953859389,
+          "seconds_min": 6.150032516568899,
+          "seconds_max": 6.181418061256409,
+          "gpu_board_joules_median": 2093.640217444242
+        },
+        "powder": {
+          "audio_seconds": 448.7253514739229,
+          "seconds_median": 10.739121144637465,
+          "seconds_min": 10.733339457772672,
+          "seconds_max": 10.797750261612236,
+          "gpu_board_joules_median": 3729.4737864828803
+        },
+        "brilliance": {
+          "audio_seconds": 253.93068027210884,
+          "seconds_median": 6.146733256056905,
+          "seconds_min": 6.1422489089891315,
+          "seconds_max": 6.147135800682008,
+          "gpu_board_joules_median": 2083.1079928106387
+        },
+        "rainbow": {
+          "audio_seconds": 238.42133786848072,
+          "seconds_median": 5.7666878355666995,
+          "seconds_min": 5.764483442530036,
+          "seconds_max": 5.778471049852669,
+          "gpu_board_joules_median": 1944.548319914847
+        }
+      },
+      "five_song_seconds": 35.2492591496557,
+      "audio_seconds": 1462.5511111111111,
+      "gpu_board_joules": 12150.079108369197,
+      "first_full_song": {
+        "model": "mel_roformer",
+        "song": "kouin",
+        "device": "cuda",
+        "repeat": -1,
+        "phase": "cold",
+        "audio_seconds": 266.4257596371882,
+        "seconds": 6.916106794029474,
+        "rtf": 0.02595885173959024,
+        "shape": [
+          2,
+          11749376
+        ],
+        "peak_amplitude": 1.0330382585525513,
+        "rss_peak_bytes": 1794035712,
+        "sample_count": 77,
+        "gpu_board_peak_bytes": 3365994496,
+        "gpu_board_peak_watts": 369.79,
+        "gpu_board_joules": 2169.067381459856,
+        "allocated_peak_bytes": 1693331968,
+        "reserved_peak_bytes": 2193620992,
+        "decode_seconds": 0.4772120025008917
+      },
+      "rss_peak_bytes": 2143485952,
+      "allocated_peak_bytes": 1854949888,
+      "reserved_peak_bytes": 2675965952,
+      "gpu_board_peak_bytes": 3848339456,
+      "gpu_board_peak_watts": 370.121,
+      "weighted_rtf": 0.02410121525454011,
+      "cpu": {
+        "completed_warm_repeats": 3,
+        "seconds_median": 100.14139209873974,
+        "seconds_min": 98.62212403770536,
+        "seconds_max": 107.26868767756969,
+        "rss_peak_bytes": 2820210688,
+        "first_clip": {
+          "model": "mel_roformer",
+          "song": "rainbow-30-60",
+          "device": "cpu",
+          "repeat": -1,
+          "phase": "cold",
+          "audio_seconds": 30.0,
+          "seconds": 100.57030965294689,
+          "rtf": 3.3523436550982297,
+          "shape": [
+            2,
+            1323000
+          ],
+          "peak_amplitude": 0.9842823147773743,
+          "rss_peak_bytes": 2693492736,
+          "sample_count": 1075
+        }
+      }
+    }
+  },
+  "windowed": {
+    "gpu_identity": {
+      "model": "windowed",
+      "device": "cuda",
+      "config": {
+        "sample_rate": 44100,
+        "audio": {
+          "chunk_size": 352800,
+          "dim_f": 1024,
+          "dim_t": 256,
+          "hop_length": 441,
+          "min_mean_abs": 0.0,
+          "n_fft": 2048,
+          "num_channels": 2,
+          "sample_rate": 44100
+        },
+        "inference": {
+          "batch_size": 1,
+          "dim_t": 256,
+          "num_overlap": 1
+        },
+        "model": {
+          "attn_dropout": 0,
+          "depth": 6,
+          "dim": 384,
+          "dim_freqs_in": 1025,
+          "dim_head": 64,
+          "ff_dropout": 0,
+          "flash_attn": true,
+          "freq_transformer_depth": 1,
+          "heads": 8,
+          "mask_estimator_depth": 2,
+          "multi_stft_hop_size": 147,
+          "multi_stft_normalized": true,
+          "multi_stft_resolution_loss_weight": 1.0,
+          "multi_stft_resolutions_window_sizes": [
+            4096,
+            2048,
+            1024,
+            512,
+            256
+          ],
+          "num_bands": 60,
+          "num_sink_tokens": 8,
+          "num_stems": 1,
+          "sample_rate": 44100,
+          "stereo": true,
+          "stft_hop_length": 441,
+          "stft_n_fft": 2048,
+          "stft_normalized": false,
+          "stft_win_length": 2048,
+          "time_transformer_depth": 1,
+          "use_flex_attention": true,
+          "window_size": 10
+        },
+        "training": {
+          "use_amp": true
+        }
+      },
+      "parameters": 228387172,
+      "state_sha256": "c836a10b17b8ba242a720822e20172158adbecfde5f6033fe426785e99b02031",
+      "model_load_seconds": 9.447815153747797,
+      "load_and_identity_seconds": 10.209771372377872,
+      "process_import_load_seconds": 11.557986626401544,
+      "torch": "2.14.1+cu130",
+      "python": "3.13.2",
+      "threads": 8,
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "demucs": "4.0.1",
+        "librosa": "1.0.0",
+        "rotary_embedding_torch": "0.3.5"
+      }
+    },
+    "performance": {
+      "per_song": {
+        "kouin": {
+          "audio_seconds": 266.4257596371882,
+          "seconds_median": 3.3797921305522323,
+          "seconds_min": 3.3573897033929825,
+          "seconds_max": 3.3883591955527663,
+          "gpu_board_joules_median": 1120.9182049196731
+        },
+        "brave": {
+          "audio_seconds": 255.04798185941044,
+          "seconds_median": 3.1739693647250533,
+          "seconds_min": 3.1729569006711245,
+          "seconds_max": 3.189479419030249,
+          "gpu_board_joules_median": 928.3898323958758
+        },
+        "powder": {
+          "audio_seconds": 448.7253514739229,
+          "seconds_median": 5.664463288150728,
+          "seconds_min": 5.650285045616329,
+          "seconds_max": 5.671403291635215,
+          "gpu_board_joules_median": 1790.2805217086193
+        },
+        "brilliance": {
+          "audio_seconds": 253.93068027210884,
+          "seconds_median": 3.1465639108791947,
+          "seconds_min": 3.133906690403819,
+          "seconds_max": 3.176360690034926,
+          "gpu_board_joules_median": 924.131790471219
+        },
+        "rainbow": {
+          "audio_seconds": 238.42133786848072,
+          "seconds_median": 2.9389564357697964,
+          "seconds_min": 2.9206816386431456,
+          "seconds_max": 2.9637961611151695,
+          "gpu_board_joules_median": 892.3997421866296
+        }
+      },
+      "five_song_seconds": 18.303745130077004,
+      "audio_seconds": 1462.5511111111111,
+      "gpu_board_joules": 5656.120091682017,
+      "first_full_song": {
+        "model": "windowed",
+        "song": "kouin",
+        "device": "cuda",
+        "repeat": -1,
+        "phase": "cold",
+        "audio_seconds": 266.4257596371882,
+        "seconds": 4.8424920020624995,
+        "rtf": 0.01817576501858109,
+        "shape": [
+          2,
+          11749376
+        ],
+        "peak_amplitude": 1.011653184890747,
+        "rss_peak_bytes": 2834714624,
+        "sample_count": 45,
+        "gpu_board_peak_bytes": 3313565696,
+        "gpu_board_peak_watts": 352.67,
+        "gpu_board_joules": 1052.7289110203874,
+        "allocated_peak_bytes": 1681772032,
+        "reserved_peak_bytes": 2122317824,
+        "decode_seconds": 0.4697613390162587
+      },
+      "rss_peak_bytes": 17058942976,
+      "allocated_peak_bytes": 1489396224,
+      "reserved_peak_bytes": 2122317824,
+      "gpu_board_peak_bytes": 3313565696,
+      "gpu_board_peak_watts": 359.438,
+      "weighted_rtf": 0.012514943916162705,
+      "cpu": {
+        "completed_warm_repeats": 3,
+        "seconds_median": 59.04196160007268,
+        "seconds_min": 45.067429477348924,
+        "seconds_max": 60.95088574569672,
+        "rss_peak_bytes": 3147489280,
+        "first_clip": {
+          "model": "windowed",
+          "song": "rainbow-30-60",
+          "device": "cpu",
+          "repeat": -1,
+          "phase": "cold",
+          "audio_seconds": 30.0,
+          "seconds": 64.81161524914205,
+          "rtf": 2.160387174971402,
+          "shape": [
+            2,
+            1323000
+          ],
+          "peak_amplitude": 0.9706865549087524,
+          "rss_peak_bytes": 3395014656,
+          "sample_count": 594
+        }
+      }
+    }
+  }
+}

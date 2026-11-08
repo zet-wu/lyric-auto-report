@@ -1,0 +1,602 @@
+{
+  "summary": {
+    "nextfire": {
+      "n": 22,
+      "valid": 22,
+      "missing": 0,
+      "both_100": 12,
+      "both_200": 17,
+      "start_mae_ms": 107.27272727271885,
+      "end_mae_ms": 139.68181818181594,
+      "abs_p95_ms": 527.0000000000437,
+      "max_ms": 964.0000000000555,
+      "over_1s": 0
+    },
+    "tifa": {
+      "n": 22,
+      "valid": 22,
+      "missing": 0,
+      "both_100": 11,
+      "both_200": 21,
+      "start_mae_ms": 48.181827474723804,
+      "end_mae_ms": 74.40911488640852,
+      "abs_p95_ms": 136.0000762939535,
+      "max_ms": 629.0000286102213,
+      "over_1s": 0
+    }
+  },
+  "units": [
+    {
+      "line": "011",
+      "method": "nextfire",
+      "text": "In",
+      "reference": [
+        185.106,
+        185.352
+      ],
+      "prediction": [
+        185.12,
+        185.16
+      ]
+    },
+    {
+      "line": "011",
+      "method": "tifa",
+      "text": "In",
+      "reference": [
+        185.106,
+        185.352
+      ],
+      "prediction": [
+        185.1,
+        185.33999999463558
+      ]
+    },
+    {
+      "line": "011",
+      "method": "nextfire",
+      "text": " the",
+      "reference": [
+        185.352,
+        185.676
+      ],
+      "prediction": [
+        185.35999999999999,
+        185.68
+      ]
+    },
+    {
+      "line": "011",
+      "method": "tifa",
+      "text": " the",
+      "reference": [
+        185.352,
+        185.676
+      ],
+      "prediction": [
+        185.33999999463558,
+        185.5699999988079
+      ]
+    },
+    {
+      "line": "011",
+      "method": "nextfire",
+      "text": " white",
+      "reference": [
+        185.676,
+        186.058
+      ],
+      "prediction": [
+        185.7,
+        186.1
+      ]
+    },
+    {
+      "line": "011",
+      "method": "tifa",
+      "text": " white",
+      "reference": [
+        185.676,
+        186.058
+      ],
+      "prediction": [
+        185.5699999988079,
+        186.05999997854232
+      ]
+    },
+    {
+      "line": "011",
+      "method": "nextfire",
+      "text": " snow",
+      "reference": [
+        186.058,
+        186.556
+      ],
+      "prediction": [
+        186.1,
+        186.54
+      ]
+    },
+    {
+      "line": "011",
+      "method": "tifa",
+      "text": " snow",
+      "reference": [
+        186.058,
+        186.556
+      ],
+      "prediction": [
+        186.05999997854232,
+        186.42999992370605
+      ]
+    },
+    {
+      "line": "011",
+      "method": "nextfire",
+      "text": " fall",
+      "reference": [
+        186.556,
+        187.209
+      ],
+      "prediction": [
+        186.54,
+        187.2
+      ]
+    },
+    {
+      "line": "011",
+      "method": "tifa",
+      "text": " fall",
+      "reference": [
+        186.556,
+        187.209
+      ],
+      "prediction": [
+        186.42999992370605,
+        187.21999988555908
+      ]
+    },
+    {
+      "line": "017",
+      "method": "nextfire",
+      "text": "I",
+      "reference": [
+        222.053,
+        222.608
+      ],
+      "prediction": [
+        222.1,
+        222.62
+      ]
+    },
+    {
+      "line": "017",
+      "method": "tifa",
+      "text": "I",
+      "reference": [
+        222.053,
+        222.608
+      ],
+      "prediction": [
+        222.1299999961257,
+        222.60999999284743
+      ]
+    },
+    {
+      "line": "017",
+      "method": "nextfire",
+      "text": "still",
+      "reference": [
+        222.608,
+        223.46800000000002
+      ],
+      "prediction": [
+        222.62,
+        223.38
+      ]
+    },
+    {
+      "line": "017",
+      "method": "tifa",
+      "text": "still",
+      "reference": [
+        222.608,
+        223.46800000000002
+      ],
+      "prediction": [
+        222.60999999284743,
+        223.3599999332428
+      ]
+    },
+    {
+      "line": "017",
+      "method": "nextfire",
+      "text": "love",
+      "reference": [
+        223.46800000000002,
+        224.0
+      ],
+      "prediction": [
+        223.4,
+        224.07999999999998
+      ]
+    },
+    {
+      "line": "017",
+      "method": "tifa",
+      "text": "love",
+      "reference": [
+        223.46800000000002,
+        224.0
+      ],
+      "prediction": [
+        223.3599999332428,
+        224.04
+      ]
+    },
+    {
+      "line": "017",
+      "method": "nextfire",
+      "text": "you",
+      "reference": [
+        224.0,
+        226.5
+      ],
+      "prediction": [
+        224.07999999999998,
+        226.44
+      ]
+    },
+    {
+      "line": "017",
+      "method": "tifa",
+      "text": "you",
+      "reference": [
+        224.0,
+        226.5
+      ],
+      "prediction": [
+        224.04,
+        226.50000003814696
+      ]
+    },
+    {
+      "line": "024",
+      "method": "nextfire",
+      "text": "In",
+      "reference": [
+        282.788,
+        283.04
+      ],
+      "prediction": [
+        282.78000000000003,
+        282.88000000000005
+      ]
+    },
+    {
+      "line": "024",
+      "method": "tifa",
+      "text": "In",
+      "reference": [
+        282.788,
+        283.04
+      ],
+      "prediction": [
+        282.78000000000003,
+        283.0099999892712
+      ]
+    },
+    {
+      "line": "024",
+      "method": "nextfire",
+      "text": "the",
+      "reference": [
+        283.04,
+        283.24
+      ],
+      "prediction": [
+        282.88000000000005,
+        283.22
+      ]
+    },
+    {
+      "line": "024",
+      "method": "tifa",
+      "text": "the",
+      "reference": [
+        283.04,
+        283.24
+      ],
+      "prediction": [
+        283.0099999892712,
+        283.23999997854236
+      ]
+    },
+    {
+      "line": "024",
+      "method": "nextfire",
+      "text": "white",
+      "reference": [
+        283.24,
+        283.646
+      ],
+      "prediction": [
+        283.22,
+        283.6
+      ]
+    },
+    {
+      "line": "024",
+      "method": "tifa",
+      "text": "white",
+      "reference": [
+        283.24,
+        283.646
+      ],
+      "prediction": [
+        283.23999997854236,
+        283.6699999856949
+      ]
+    },
+    {
+      "line": "024",
+      "method": "nextfire",
+      "text": "snow",
+      "reference": [
+        283.646,
+        284.173
+      ],
+      "prediction": [
+        283.6,
+        284.70000000000005
+      ]
+    },
+    {
+      "line": "024",
+      "method": "tifa",
+      "text": "snow",
+      "reference": [
+        283.646,
+        284.173
+      ],
+      "prediction": [
+        283.6699999856949,
+        284.0999999332428
+      ]
+    },
+    {
+      "line": "024",
+      "method": "nextfire",
+      "text": "fall",
+      "reference": [
+        284.173,
+        285.939
+      ],
+      "prediction": [
+        284.70000000000005,
+        285.8
+      ]
+    },
+    {
+      "line": "024",
+      "method": "tifa",
+      "text": "fall",
+      "reference": [
+        284.173,
+        285.939
+      ],
+      "prediction": [
+        284.0999999332428,
+        285.3099999713898
+      ]
+    },
+    {
+      "line": "030",
+      "method": "nextfire",
+      "text": "I",
+      "reference": [
+        319.734,
+        320.335
+      ],
+      "prediction": [
+        319.72,
+        320.32000000000005
+      ]
+    },
+    {
+      "line": "030",
+      "method": "tifa",
+      "text": "I",
+      "reference": [
+        319.734,
+        320.335
+      ],
+      "prediction": [
+        319.79000000029805,
+        320.33000001430514
+      ]
+    },
+    {
+      "line": "030",
+      "method": "nextfire",
+      "text": "still",
+      "reference": [
+        320.335,
+        321.131
+      ],
+      "prediction": [
+        320.32000000000005,
+        321.06
+      ]
+    },
+    {
+      "line": "030",
+      "method": "tifa",
+      "text": "still",
+      "reference": [
+        320.335,
+        321.131
+      ],
+      "prediction": [
+        320.33000001430514,
+        321.0399999332428
+      ]
+    },
+    {
+      "line": "030",
+      "method": "nextfire",
+      "text": "love",
+      "reference": [
+        321.131,
+        322.056
+      ],
+      "prediction": [
+        321.08000000000004,
+        323.02000000000004
+      ]
+    },
+    {
+      "line": "030",
+      "method": "tifa",
+      "text": "love",
+      "reference": [
+        321.131,
+        322.056
+      ],
+      "prediction": [
+        321.0399999332428,
+        322.05999991416934
+      ]
+    },
+    {
+      "line": "030",
+      "method": "nextfire",
+      "text": "you",
+      "reference": [
+        322.056,
+        324.0
+      ],
+      "prediction": [
+        323.02000000000004,
+        323.98
+      ]
+    },
+    {
+      "line": "030",
+      "method": "tifa",
+      "text": "you",
+      "reference": [
+        322.056,
+        324.0
+      ],
+      "prediction": [
+        322.05999991416934,
+        323.9999997329712
+      ]
+    },
+    {
+      "line": "040",
+      "method": "nextfire",
+      "text": "I",
+      "reference": [
+        364.377,
+        364.932
+      ],
+      "prediction": [
+        364.42,
+        364.98
+      ]
+    },
+    {
+      "line": "040",
+      "method": "tifa",
+      "text": "I",
+      "reference": [
+        364.377,
+        364.932
+      ],
+      "prediction": [
+        364.48999999523164,
+        364.94999997377397
+      ]
+    },
+    {
+      "line": "040",
+      "method": "nextfire",
+      "text": "still",
+      "reference": [
+        364.932,
+        365.826
+      ],
+      "prediction": [
+        364.98,
+        365.7
+      ]
+    },
+    {
+      "line": "040",
+      "method": "tifa",
+      "text": "still",
+      "reference": [
+        364.932,
+        365.826
+      ],
+      "prediction": [
+        364.94999997377397,
+        365.68999992370607
+      ]
+    },
+    {
+      "line": "040",
+      "method": "nextfire",
+      "text": "love",
+      "reference": [
+        365.826,
+        366.847
+      ],
+      "prediction": [
+        365.72,
+        366.8
+      ]
+    },
+    {
+      "line": "040",
+      "method": "tifa",
+      "text": "love",
+      "reference": [
+        365.826,
+        366.847
+      ],
+      "prediction": [
+        365.68999992370607,
+        366.86999999046327
+      ]
+    },
+    {
+      "line": "040",
+      "method": "nextfire",
+      "text": "you",
+      "reference": [
+        366.847,
+        369.907
+      ],
+      "prediction": [
+        366.8,
+        369.52000000000004
+      ]
+    },
+    {
+      "line": "040",
+      "method": "tifa",
+      "text": "you",
+      "reference": [
+        366.847,
+        369.907
+      ],
+      "prediction": [
+        366.86999999046327,
+        369.7099999046326
+      ]
+    }
+  ]
+}

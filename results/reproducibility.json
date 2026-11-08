@@ -1,0 +1,66 @@
+{
+  "input_files_verified": 27,
+  "public_source_commits_verified": 6,
+  "source_worktrees_clean": true,
+  "inference_environment": "Repository-local research environment; Linux Python 3.13, NVIDIA CUDA",
+  "ctc_equivalence_cases": 120,
+  "timing_pipeline_cases": 42,
+  "module_matrix_cases": 1092,
+  "milikara_configurations": 274,
+  "milikara_song_cases": 3266,
+  "separation_alignment_cases": 828,
+  "serial_resource_runs": 6,
+  "clean_scoring": {
+    "files": "Independent copy of the Git publication inventory",
+    "dependencies": "requirements/scoring.txt installed in a new virtual environment",
+    "downloaded_project_sources_present": false,
+    "model_weights_present": false,
+    "metric_objects_equal": 9,
+    "verify_passed": true,
+    "verify_results_passed": true,
+    "semantic_hash_encoding": "SHA256 of UTF-8 JSON, sorted object keys, compact separators, ensure_ascii=False",
+    "metrics": [
+      {
+        "path": "results/timing/yue-native-metrics.json",
+        "semantic_sha256": "c3ae72c0a3c3dcabd64cc6465d043c3fbc43e4265054dd2400685327e7019ed2"
+      },
+      {
+        "path": "results/timing/hybrid-metrics.json",
+        "semantic_sha256": "eecf64f108e3bd013818a198fe20a62d3e9e453a884871a353b4341f185eeb1b"
+      },
+      {
+        "path": "results/timing/controlled-metrics.json",
+        "semantic_sha256": "64e914de7efcce31719e0840f8490836fff1ad34369d3fd6301952df73b68620"
+      },
+      {
+        "path": "results/timing/metrics.json",
+        "semantic_sha256": "fb40ef0eedbcb70bcc98f73cf74bd9e03669563f65791920ad3a2bdf0be878f9"
+      },
+      {
+        "path": "results/timing/english-metrics.json",
+        "semantic_sha256": "05fb1698028c86f3ab95034b931cd984dee5cefe9ff72ff76e3adcaaeab99e90"
+      },
+      {
+        "path": "results/separation-alignment/metrics.json",
+        "semantic_sha256": "2b6d6907171f78cd5eb4af0102c36e2817f596cfa74bf50ac8371df277c30d2e"
+      },
+      {
+        "path": "results/ablation/metrics.json",
+        "semantic_sha256": "363240210a4fd7fda00333aad71f26ca5df11c37c3d327983774844263d8d736"
+      },
+      {
+        "path": "results/milikara/factor-effects.json",
+        "semantic_sha256": "c1a77b3a581e77caf510665cddd14723599ecdc1fdceff86688cd86681705259"
+      },
+      {
+        "path": "results/milikara/metrics.json",
+        "semantic_sha256": "4dcf23fcfeab1d6c8a48ca057f6a7513398ce4ebb5a98986fae434fbf1341858"
+      }
+    ]
+  },
+  "fresh_run_backup_smoke": {
+    "passed": true,
+    "scheduled_stages": 63,
+    "inference_mocked": true
+  }
+}

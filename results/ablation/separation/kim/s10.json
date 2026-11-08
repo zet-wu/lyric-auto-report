@@ -1,0 +1,18 @@
+{
+  "song": "s10",
+  "model": "kim",
+  "source": "datasets/audio/恋桜開花前線.m4a",
+  "sha256": "33f6493f7380df04f6238634af56a5bf412fcac0e6a24a7c0d695ac7a1d8c66a",
+  "frames": 11552768,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 14.796280708163977,
+  "peak_gib": 2.2118372917175293,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 11552768,
+    "timeline_preserved": true
+  }
+}

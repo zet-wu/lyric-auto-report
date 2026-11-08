@@ -1,0 +1,392 @@
+{
+  "song": "s08",
+  "separator": "kim",
+  "windows": {
+    "1": [
+      4.92,
+      12.41
+    ],
+    "2": [
+      13.36,
+      20.869999999999997
+    ],
+    "3": [
+      21.84,
+      29.279999999999998
+    ],
+    "4": [
+      30.4,
+      37.91
+    ],
+    "5": [
+      38.7,
+      47.81
+    ],
+    "6": [
+      47.160000000000004,
+      56.089999999999996
+    ],
+    "7": [
+      75.08,
+      82.71000000000001
+    ],
+    "8": [
+      83.5,
+      91.41000000000001
+    ],
+    "9": [
+      91.96000000000001,
+      99.59
+    ],
+    "10": [
+      100.38000000000001,
+      107.99000000000001
+    ],
+    "11": [
+      108.86,
+      117.79
+    ],
+    "12": [
+      117.32000000000001,
+      126.17
+    ],
+    "13": [
+      126.56,
+      132.35
+    ],
+    "14": [
+      131.7,
+      137.39
+    ],
+    "15": [
+      136.73999999999998,
+      147.98000000000002
+    ],
+    "16": [
+      172.2,
+      179.92000000000002
+    ],
+    "17": [
+      180.67999999999998,
+      188.46
+    ],
+    "18": [
+      189.14,
+      196.9
+    ],
+    "19": [
+      197.7,
+      205.37
+    ],
+    "20": [
+      206.06,
+      215.15
+    ],
+    "21": [
+      214.5,
+      223.28
+    ],
+    "22": [
+      223.35999999999999,
+      232.47
+    ],
+    "23": [
+      231.82,
+      241.97
+    ]
+  },
+  "details": {
+    "1": {
+      "coarse": [
+        5.22,
+        11.7
+      ],
+      "limit": 14.01,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -34.72281598597215,
+        "coarse_end": 11.7,
+        "crop_end": 12.41,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "2": {
+      "coarse": [
+        13.66,
+        20.16
+      ],
+      "limit": 22.490000000000002,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -34.106260150891366,
+        "coarse_end": 20.16,
+        "crop_end": 20.869999999999997,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "3": {
+      "coarse": [
+        22.14,
+        28.58
+      ],
+      "limit": 31.05,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -34.5432297146107,
+        "coarse_end": 28.58,
+        "crop_end": 29.279999999999998,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "4": {
+      "coarse": [
+        30.7,
+        37.1
+      ],
+      "limit": 39.35,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -34.05933665403394,
+        "coarse_end": 37.1,
+        "crop_end": 37.91,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "5": {
+      "coarse": [
+        39.0,
+        45.9
+      ],
+      "limit": 47.81,
+      "gate": null
+    },
+    "6": {
+      "coarse": [
+        47.46,
+        54.4
+      ],
+      "limit": 75.72999999999999,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -33.33076747325665,
+        "coarse_end": 54.4,
+        "crop_end": 56.089999999999996,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "7": {
+      "coarse": [
+        75.38,
+        81.84
+      ],
+      "limit": 84.14999999999999,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.87534240064491,
+        "coarse_end": 81.84,
+        "crop_end": 82.71000000000001,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "8": {
+      "coarse": [
+        83.8,
+        90.32
+      ],
+      "limit": 92.61,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.54893452956421,
+        "coarse_end": 90.32,
+        "crop_end": 91.41000000000001,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "9": {
+      "coarse": [
+        92.26,
+        98.72
+      ],
+      "limit": 101.03,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.0943432935098,
+        "coarse_end": 98.72,
+        "crop_end": 99.59,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "10": {
+      "coarse": [
+        100.68,
+        107.2
+      ],
+      "limit": 109.50999999999999,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.339574098523826,
+        "coarse_end": 107.2,
+        "crop_end": 107.99000000000001,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "11": {
+      "coarse": [
+        109.16,
+        116.08
+      ],
+      "limit": 117.97,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.61445688223684,
+        "coarse_end": 116.08,
+        "crop_end": 117.79,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "12": {
+      "coarse": [
+        117.62,
+        124.52
+      ],
+      "limit": 127.21,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.14918636340638,
+        "coarse_end": 124.52,
+        "crop_end": 126.17,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "13": {
+      "coarse": [
+        126.86,
+        130.84
+      ],
+      "limit": 132.35,
+      "gate": null
+    },
+    "14": {
+      "coarse": [
+        132.0,
+        135.9
+      ],
+      "limit": 137.39,
+      "gate": null
+    },
+    "15": {
+      "coarse": [
+        137.04,
+        144.82
+      ],
+      "limit": 172.85,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -33.951249855302244,
+        "coarse_end": 144.82,
+        "crop_end": 147.98000000000002,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "16": {
+      "coarse": [
+        172.5,
+        179.06
+      ],
+      "limit": 181.32999999999998,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.029554024669295,
+        "coarse_end": 179.06,
+        "crop_end": 179.92000000000002,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "17": {
+      "coarse": [
+        180.98,
+        187.46
+      ],
+      "limit": 189.79,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -31.97280348723713,
+        "coarse_end": 187.46,
+        "crop_end": 188.46,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "18": {
+      "coarse": [
+        189.44,
+        195.9
+      ],
+      "limit": 198.35,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.35916985810881,
+        "coarse_end": 195.9,
+        "crop_end": 196.9,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "19": {
+      "coarse": [
+        198.0,
+        204.4
+      ],
+      "limit": 206.71,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.45303437980856,
+        "coarse_end": 204.4,
+        "crop_end": 205.37,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "20": {
+      "coarse": [
+        206.36,
+        213.24
+      ],
+      "limit": 215.15,
+      "gate": null
+    },
+    "21": {
+      "coarse": [
+        214.8,
+        221.72
+      ],
+      "limit": 224.01,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -32.1788005542825,
+        "coarse_end": 221.72,
+        "crop_end": 223.28,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    },
+    "22": {
+      "coarse": [
+        223.66,
+        230.58
+      ],
+      "limit": 232.47,
+      "gate": null
+    },
+    "23": {
+      "coarse": [
+        232.12,
+        238.88
+      ],
+      "limit": 266.42577083333333,
+      "gate": {
+        "method": "lead_energy_pause_after_ctc",
+        "threshold_db": -33.019913645400266,
+        "coarse_end": 238.88,
+        "crop_end": 241.97,
+        "note": "句段上下文，不是字尾标注。"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "model": "demucs",
+  "repeat": 1,
+  "song": "s01",
+  "audio": "datasets/audio/003 - 撃槍・ガングニール.m4a",
+  "duration_seconds": 218.51734693877552,
+  "weight_path": ".models/torch/hub/checkpoints/955717e8-8726e21a.th",
+  "weight_bytes": 84141911,
+  "weight_sha256": "8726e21a993978c7ba086d3872e7608d7d5bfca646ca4aca459ffda844faa8b4",
+  "seconds": 4.11974292807281,
+  "realtime_factor": 0.018853161937880773,
+  "torch_peak_allocated_bytes": 1079989248,
+  "torch_peak_reserved_bytes": 1577058304,
+  "nvidia_process_peak_mib_sampled": 1974,
+  "nvidia_samples": 33,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_bytes": 50866487296,
+  "torch": "2.14.0+cu130",
+  "threads": 8,
+  "timing_scope": "New process per run; CUDA initialized and entry-point imports done before timer. Weights local; includes lazy runtime imports, decode, model load, separation, native output/checks and close. Excludes downloads, interpreter startup and post-run hashing. Original wrappers differ in ancillary validation and output count."
+}

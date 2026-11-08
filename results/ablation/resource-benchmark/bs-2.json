@@ -1,0 +1,21 @@
+{
+  "model": "bs",
+  "repeat": 2,
+  "song": "s01",
+  "audio": "datasets/audio/003 - 撃槍・ガングニール.m4a",
+  "duration_seconds": 218.51734693877552,
+  "weight_path": ".deps/timing/models/bs-karaoke/bs_roformer_karaoke_frazer_becruily.ckpt",
+  "weight_bytes": 204436907,
+  "weight_sha256": "eb90ee24c1154d83fbcfd27e96182f19e061557cc6e4746953125e08c29389f9",
+  "seconds": 20.875641809776425,
+  "realtime_factor": 0.09553311031011827,
+  "torch_peak_allocated_bytes": 1900022784,
+  "torch_peak_reserved_bytes": 2298478592,
+  "nvidia_process_peak_mib_sampled": 2666,
+  "nvidia_samples": 161,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_bytes": 50866487296,
+  "torch": "2.14.0+cu130",
+  "threads": 8,
+  "timing_scope": "New process per run; CUDA initialized and entry-point imports done before timer. Weights local; includes lazy runtime imports, decode, model load, separation, native output/checks and close. Excludes downloads, interpreter startup and post-run hashing. Original wrappers differ in ancillary validation and output count."
+}

@@ -1,0 +1,18 @@
+{
+  "song": "s03",
+  "model": "kim",
+  "source": "datasets/audio/Rainbow Flower.m4a",
+  "sha256": "bb9da723d9fdf577bdfadd83c407cdb3e8c5ca250718629f3c441a2979b1c24e",
+  "frames": 10514381,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 15.263362489640713,
+  "peak_gib": 2.190300941467285,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 10514381,
+    "timeline_preserved": true
+  }
+}

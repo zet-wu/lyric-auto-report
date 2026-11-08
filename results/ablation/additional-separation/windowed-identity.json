@@ -1,0 +1,64 @@
+{
+  "model": "windowed",
+  "device": "cuda",
+  "config": {
+    "sample_rate": 44100,
+    "audio": {
+      "chunk_size": 352800,
+      "dim_f": 1024,
+      "dim_t": 256,
+      "hop_length": 441,
+      "min_mean_abs": 0.0,
+      "n_fft": 2048,
+      "num_channels": 2,
+      "sample_rate": 44100
+    },
+    "inference": {
+      "batch_size": 1,
+      "dim_t": 256,
+      "num_overlap": 1
+    },
+    "model": {
+      "attn_dropout": 0,
+      "depth": 6,
+      "dim": 384,
+      "dim_freqs_in": 1025,
+      "dim_head": 64,
+      "ff_dropout": 0,
+      "flash_attn": true,
+      "freq_transformer_depth": 1,
+      "heads": 8,
+      "mask_estimator_depth": 2,
+      "multi_stft_hop_size": 147,
+      "multi_stft_normalized": true,
+      "multi_stft_resolution_loss_weight": 1.0,
+      "multi_stft_resolutions_window_sizes": [
+        4096,
+        2048,
+        1024,
+        512,
+        256
+      ],
+      "num_bands": 60,
+      "num_sink_tokens": 8,
+      "num_stems": 1,
+      "sample_rate": 44100,
+      "stereo": true,
+      "stft_hop_length": 441,
+      "stft_n_fft": 2048,
+      "stft_normalized": false,
+      "stft_win_length": 2048,
+      "time_transformer_depth": 1,
+      "use_flex_attention": true,
+      "window_size": 10
+    },
+    "training": {
+      "use_amp": true
+    }
+  },
+  "parameters": 228387172,
+  "state_sha256": "c836a10b17b8ba242a720822e20172158adbecfde5f6033fe426785e99b02031",
+  "model_load_seconds": 8.714502355083823,
+  "load_and_identity_seconds": 9.565469881519675,
+  "process_import_load_seconds": 12.180061737075448
+}

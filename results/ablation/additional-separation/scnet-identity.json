@@ -1,0 +1,102 @@
+{
+  "model": "scnet",
+  "device": "cuda",
+  "config": {
+    "audio": {
+      "chunk_size": 485100,
+      "num_channels": 2,
+      "sample_rate": 44100,
+      "min_mean_abs": 0.0
+    },
+    "model": {
+      "sources": [
+        "drums",
+        "bass",
+        "other",
+        "vocals"
+      ],
+      "audio_channels": 2,
+      "dims": [
+        4,
+        32,
+        64,
+        128
+      ],
+      "nfft": 4096,
+      "hop_size": 1024,
+      "win_size": 4096,
+      "normalized": true,
+      "band_SR": [
+        0.175,
+        0.392,
+        0.433
+      ],
+      "band_stride": [
+        1,
+        4,
+        16
+      ],
+      "band_kernel": [
+        3,
+        4,
+        16
+      ],
+      "conv_depths": [
+        3,
+        2,
+        1
+      ],
+      "compress": 4,
+      "conv_kernel": 3,
+      "num_dplayer": 6,
+      "expand": 1
+    },
+    "training": {
+      "batch_size": 10,
+      "gradient_accumulation_steps": 1,
+      "grad_clip": 0,
+      "instruments": [
+        "drums",
+        "bass",
+        "other",
+        "vocals"
+      ],
+      "lr": 0.0005,
+      "patience": 2,
+      "reduce_factor": 0.95,
+      "target_instrument": null,
+      "num_epochs": 1000,
+      "num_steps": 1000,
+      "q": 0.95,
+      "coarse_loss_clip": true,
+      "ema_momentum": 0.999,
+      "optimizer": "adam",
+      "other_fix": false,
+      "use_amp": true
+    },
+    "augmentations": {
+      "enable": true,
+      "loudness": true,
+      "loudness_min": 0.5,
+      "loudness_max": 1.5,
+      "mixup": true,
+      "mixup_probs": [
+        0.2,
+        0.02
+      ],
+      "mixup_loudness_min": 0.5,
+      "mixup_loudness_max": 1.5
+    },
+    "inference": {
+      "batch_size": 1,
+      "dim_t": 256,
+      "num_overlap": 4,
+      "normalize": true
+    }
+  },
+  "parameters": 10578768,
+  "state_sha256": "254aa47c11ced915e9e8682bed5599462d0de90cf5fdbb63cfc613fd931bb44c",
+  "model_load_seconds": 0.40361935645341873,
+  "load_and_identity_seconds": 0.44892521016299725,
+  "process_import_load_seconds": 2.670639030635357
+}

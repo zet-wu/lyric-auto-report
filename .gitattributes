@@ -1,0 +1,6 @@
+* text=auto eol=lf
+datasets/audio/** -text
+datasets/annotations/** -text whitespace=cr-at-eol
+*.csv -text whitespace=cr-at-eol
+*.gz -text
+*.png -text

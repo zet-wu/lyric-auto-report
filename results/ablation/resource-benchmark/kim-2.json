@@ -1,0 +1,21 @@
+{
+  "model": "kim",
+  "repeat": 2,
+  "song": "s01",
+  "audio": "datasets/audio/003 - 撃槍・ガングニール.m4a",
+  "duration_seconds": 218.51734693877552,
+  "weight_path": ".deps/timing/models/separator/melband-roformer-kim-vocals/MelBandRoformer.ckpt",
+  "weight_bytes": 913106900,
+  "weight_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+  "seconds": 15.156376196071506,
+  "realtime_factor": 0.06936005954858146,
+  "torch_peak_allocated_bytes": 2330122752,
+  "torch_peak_reserved_bytes": 2424307712,
+  "nvidia_process_peak_mib_sampled": 2784,
+  "nvidia_samples": 117,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_bytes": 50866487296,
+  "torch": "2.14.0+cu130",
+  "threads": 8,
+  "timing_scope": "New process per run; CUDA initialized and entry-point imports done before timer. Weights local; includes lazy runtime imports, decode, model load, separation, native output/checks and close. Excludes downloads, interpreter startup and post-run hashing. Original wrappers differ in ancillary validation and output count."
+}

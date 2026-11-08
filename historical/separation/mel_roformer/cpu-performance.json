@@ -1,0 +1,70 @@
+[
+  {
+    "model": "mel_roformer",
+    "song": "rainbow-30-60",
+    "device": "cpu",
+    "repeat": -1,
+    "phase": "cold",
+    "audio_seconds": 30.0,
+    "seconds": 100.57030965294689,
+    "rtf": 3.3523436550982297,
+    "shape": [
+      2,
+      1323000
+    ],
+    "peak_amplitude": 0.9842823147773743,
+    "rss_peak_bytes": 2693492736,
+    "sample_count": 1075
+  },
+  {
+    "model": "mel_roformer",
+    "song": "rainbow-30-60",
+    "device": "cpu",
+    "repeat": 0,
+    "phase": "warm",
+    "audio_seconds": 30.0,
+    "seconds": 100.14139209873974,
+    "rtf": 3.3380464032913246,
+    "shape": [
+      2,
+      1323000
+    ],
+    "peak_amplitude": 0.9842823147773743,
+    "rss_peak_bytes": 2820210688,
+    "sample_count": 1097
+  },
+  {
+    "model": "mel_roformer",
+    "song": "rainbow-30-60",
+    "device": "cpu",
+    "repeat": 1,
+    "phase": "warm",
+    "audio_seconds": 30.0,
+    "seconds": 98.62212403770536,
+    "rtf": 3.2874041345901786,
+    "shape": [
+      2,
+      1323000
+    ],
+    "peak_amplitude": 0.9842823147773743,
+    "rss_peak_bytes": 2691817472,
+    "sample_count": 1121
+  },
+  {
+    "model": "mel_roformer",
+    "song": "rainbow-30-60",
+    "device": "cpu",
+    "repeat": 2,
+    "phase": "warm",
+    "audio_seconds": 30.0,
+    "seconds": 107.26868767756969,
+    "rtf": 3.5756229225856564,
+    "shape": [
+      2,
+      1323000
+    ],
+    "peak_amplitude": 0.9842823147773743,
+    "rss_peak_bytes": 2699165696,
+    "sample_count": 1191
+  }
+]

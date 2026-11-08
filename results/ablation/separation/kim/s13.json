@@ -1,0 +1,18 @@
+{
+  "song": "s13",
+  "model": "kim",
+  "source": "datasets/audio/骹车破尼.m4a",
+  "sha256": "7af8846baaa481b792f279f9ab0c7191b3757c7f74117a657b194d99c5e9091d",
+  "frames": 7742784,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 13.02078684978187,
+  "peak_gib": 2.1290407180786133,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 7742784,
+    "timeline_preserved": true
+  }
+}

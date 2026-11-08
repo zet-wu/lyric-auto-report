@@ -1,0 +1,18 @@
+{
+  "song": "s08",
+  "model": "kim",
+  "source": "datasets/audio/光陰の海原.m4a",
+  "sha256": "bad8797e8c4df7fe616622c455cdeabfafd38e2961fb53b0ea3a48f3ecf319e5",
+  "frames": 11749376,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 16.54076978005469,
+  "peak_gib": 2.2179627418518066,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 11749376,
+    "timeline_preserved": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "song": "s01",
+  "model": "kim",
+  "source": "datasets/audio/003 - 撃槍・ガングニール.m4a",
+  "sha256": "235c38630122db244596e7b2fc4d554a62a11d89a32c783da953b7c819553d35",
+  "frames": 9636615,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 15.02888073772192,
+  "peak_gib": 2.170095920562744,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 9636615,
+    "timeline_preserved": true
+  }
+}

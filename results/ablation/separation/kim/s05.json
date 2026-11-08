@@ -1,0 +1,18 @@
+{
+  "song": "s05",
+  "model": "kim",
+  "source": "datasets/audio/The Brave Under The Summer Sky.m4a",
+  "sha256": "208bd116bcbca97d749b45fd5a7b68441aacfc33cb9da0ea345fa95a71d73fee",
+  "frames": 11247616,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 14.216427372768521,
+  "peak_gib": 2.2059779167175293,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 11247616,
+    "timeline_preserved": true
+  }
+}

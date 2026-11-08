@@ -1,0 +1,18 @@
+{
+  "reason": "Post-matrix diagnosis: MMS lexical ends often precede sustained vowel offsets; test existing pause finder rather than only fixed +300ms.",
+  "separators": [
+    "demucs",
+    "bs",
+    "kim"
+  ],
+  "backends": [
+    "nextfire",
+    "tifa",
+    "mms_fa"
+  ],
+  "strategy": "auto_mms_pause",
+  "start": "max(0, MMS start - 0.3)",
+  "end": "Unmodified Timing quiet_crop_end(coarse_start, coarse_end, limit). limit=min(duration, left+60, max(coarse_end+0.35, next predicted line onset+0.35)); final line next onset=duration.",
+  "reference_use": "None during window generation. Same frozen targets and scoring as primary matrix; original failed MMS songs remain failures.",
+  "scope": "Separate pause-window conditions. Not the full Timing neighbour-context pipeline; no threshold tuning."
+}

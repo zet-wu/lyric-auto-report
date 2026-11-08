@@ -1,0 +1,30 @@
+{
+  "song": "s11",
+  "model": "bs",
+  "source": "datasets/audio/星 (鄧麗君演唱會1982 live).m4a",
+  "sha256": "1f9b857438e60adfd21dbc8639785a906bf92c38d1a288dd6df718c46b6a82f9",
+  "frames": 12201984,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 31.959110368043184,
+  "peak_gib": 1.8286781311035156,
+  "upstream": {
+    "frames": 12201984,
+    "sample_rate": 44100,
+    "channels": 2,
+    "timeline_preserved": true,
+    "reconstruction_max_error": 0.0,
+    "lead_energy_ratio": 0.3535568382046811,
+    "residual_energy_ratio": 0.6085133257238045,
+    "model": "frazer/becruily BS-Roformer Karaoke",
+    "revision": "f7849ae934209184dc288d1018cd8a76a7fc8b3c",
+    "checkpoint_sha256": "eb90ee24c1154d83fbcfd27e96182f19e061557cc6e4746953125e08c29389f9",
+    "input": "datasets/audio/星 (鄧麗君演唱會1982 live).m4a",
+    "route": "bs_lead",
+    "residual_includes_accompaniment": true,
+    "lead": "lead_vocals.wav",
+    "residual": "residual.wav",
+    "quality": "unreviewed",
+    "note": "残余轨包含伴奏与和声，不能当作独立背景人声。"
+  }
+}

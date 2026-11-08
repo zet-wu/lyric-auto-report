@@ -14,7 +14,7 @@ Demucs 提供了有实际收益的速度与质量平衡。尽管换用 BS-RoForm
 
 ### 对齐模型
 
-- `NextFire-karaoke-ja-Latn`：这个模型对于日语歌的效果极好，对于独唱、歌唱清晰的歌曲，完全自动化可以交付相当准确的轴（平均误差 50-70 ms，绝对误差上 95 分位数小于 200 ms），主要的出错点出现在连续两个相同读音的时候，两个词的分隔点会找得不太好。其他的错误集中在日语歌中经常出现的长音缩成一个音拍，促音被省略等情况，但这属于歌词和音频本身不匹配了，可以说是非战之过。
+- `NextFire-karaoke-ja-Latn`：这个模型对于日语歌的效果极好，对于独唱、歌唱清晰的歌曲，完全自动化可以交付相当准确的轴（平均误差 50-70 ms，绝对误差上 95 分位数小于 200 ms），主要的出错点出现在连续两个相同读音的时候，两个词的分隔点会找得不太好。其他的错误集中在日语歌中经常出现的长音缩成一个音拍，促音被省略等情况，但这严格来讲属于歌词和音频本身不匹配的问题。
 
 - `MMS_FA`：即 `torchaudio` 自带的 `MMS_FA`，这个模型的优势是跨语言通用。NextFire 毕竟是用日语做的后训练，实测发现，对于日语中不存在的元音、闭音节（如汉语方言中的入声、英语中的辅音尾）表现很差。`MMS_FA` 的问题是普遍的结束时间过早，不止出现在刻意延长的尾音上，即使在行内正常时长或者略长一点的词也会给一个很早的结束时间，留下大量空隙，这可能还是歌唱和平时说话的区别导致的，不过，它给出的起始时间还是挺准的，所以在行内，可以用把空隙并入前一个词的方式来优化结果（相当于拿后一个词的起始来校正前词的结束）
 
@@ -34,21 +34,21 @@ Demucs 提供了有实际收益的速度与质量平衡。尽管换用 BS-RoForm
 
 Lazulite Studio 的“智能日文注音”使用 Sudachi + JmdictFurigana，以行作为单位处理，以充分利用上下文，这一技术路线的注音准确率（94.52%）以及整行完全匹配率（89.09%）做到了不依赖 LLM 的最佳，超过了 MiliKara 和 Timing 使用的 MeCab／UniDic 或 pykakasi 路线。而仅靠文本的情况下，LLM 也无法做到完全正确，最好的结果仅做到注音准确率 97.65% 和整行完全匹配率 95.10%。见 [自动注音](reports/auto-reading.md)。
 
-## 目录
+## 报告目录
 
 | 报告 | 内容 |
 | --- | --- |
-| [测试集](datasets/README.md)与[方法](reports/methods.md) | 歌曲、人工标注、分母、失败处理和条件诊断 |
-| [分离模型选择](reports/separation-survey.md) | 候选、权重身份和工作流目标 |
-| [历史分离性能](reports/separation-performance.md) | 六模型五曲 GPU 与短片段 CPU 资源记录 |
-| [当前分离资源](reports/resources.md) | Demucs、BS Karaoke、Kim 串行测量 |
-| [对齐后端与窗口](reports/alignment-backends.md) | 1092 个模块条件、延音和窗口覆盖 |
-| [六模型下游对齐](reports/separation-alignment.md) | 432 个条件、两条保存路径、人工读音 |
-| [Timing 完整链路](reports/timing.md) | 三种输入、失败分析、受控与混合链路 |
-| [MiliKara 模块](reports/milikara.md) | 固定目标的 252 种配置及消融 |
-| [自动读音](reports/auto-reading.md) | Studio、词典规则及 Terra／Luna 注音准确率 |
-| [异常行局部重算](reports/local-refinement.md) | 人工读音，整曲与 core 两种基线 |
-| [复现说明](reports/reproduce.md) | 环境、下载、推理与独立评分 |
+| [测试集](datasets/README.md)与[方法](reports/methods.md) | 13 段录音、14 份标注；比较层次、不同评分分母、缺失处理、人工读音与窗口条件 |
+| [分离模型选择](reports/separation-survey.md) | 候选分离器、权重与推理路径的区别，以及选择依据 |
+| [历史分离性能](reports/separation-performance.md) | 六模型五曲 GPU 与 30 秒片段 CPU 测量；耗时、内存、显存和能量 |
+| [当前分离资源](reports/resources.md) | Demucs、BS Karaoke、Kim Vocals 的单曲串行重复测量与计时边界 |
+| [对齐后端与窗口](reports/alignment-backends.md) | 1092 个模块条件；延音与窗口覆盖；1518 个 MMS_FA 空隙填补条件及真实停顿、行末问题 |
+| [六模型下游对齐](reports/separation-alignment.md) | 432 个条件；人工读音下，分离器、浮点与 24 位保存路径、整曲与拼接策略的端点表现 |
+| [Timing 完整链路](reports/timing.md) | 三种输入条件与逐曲失败原因；固定人工读音／行窗口、局部修正及英文／粤语诊断 |
+| [MiliKara 原生管线与模块](reports/milikara.md) | 原生自动／人工读音两组与 Studio 对照；252 种模块配置，分隔符、活动代价、尾点与重试消融 |
+| [自动读音](reports/auto-reading.md) | Studio 与词典／规则注音、Terra／Luna 直接注音及候选修正；片段、整行准确率与字符错误率 |
+| [异常行局部重算](reports/local-refinement.md) | 人工读音、整曲与 core 两种首轮；复用概率和局部声学重算的准确率、缺失与新增计算代价 |
+| [复现说明](reports/reproduce.md) | 固定版本环境、源码与模型下载、各阶段重跑、模型代理注音步骤及独立评分验证 |
 
 ## 快速复核
 
@@ -73,11 +73,11 @@ python3.13 scripts/setup.py --models
 
 --fresh 将已有 results 与 .cache 移入被忽略的 .runs/run-001 等编号备份，再重新推理。中断后去掉 --fresh 续跑；分阶段入口见[复现说明](reports/reproduce.md)。
 
-## 目录
+## 仓库结构
 
 ```text
 datasets/       原始音频、TTML、哈希清单
-reports/        重写后的报告
+reports/        实验报告
 results/        当前测试集的预测、决策、评分、表格和图
 historical/     历史分离资源记录
 configs/        源码提交、模型身份和实验协议

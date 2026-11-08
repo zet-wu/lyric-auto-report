@@ -109,7 +109,7 @@ for row in aggregate:print(row)
 references={s['id']:s for s in read(ROOT/'results/timing/reference.json')}
 index={(r['song'],r['comparison'],r['language'],r['method']):r for r in by_song}
 lines=['# 原生 MiliKara：逐曲对照','',
-    '所有命中均要求起止同时在 100 ms 内。主报告按歌曲等权；本表逐曲列出计数和比例。','',
+    '所有命中均要求起止同时在 100 ms 内。主报告按歌曲等权；本表逐曲列出计数和比例。叶级单元是原标注中不再细分的最小定时对象；共同文本区间由各方法共有的文本边界确定。','',
     '## 人工读音、原标注日语叶级单元','',
     '| 歌曲 | 单元数 | Studio 命中 | MiliKara 命中 | Studio / MiliKara 缺失 | Studio / MiliKara >1s |',
     '| --- | ---: | ---: | ---: | ---: | ---: |']

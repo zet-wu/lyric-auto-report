@@ -56,9 +56,9 @@ prepare 提取标注、生成 Demucs 人声和产品基线，完成统一读音�
 
 更改输入、源码、模型或参数后，使用 all --fresh 开始新运行，确保输入与缓存一致。权重、依赖和源码目录可继续使用。
 
-## LLM 注音复现
+## 大语言模型注音复现
 
-四组 LLM 输出保存在 results/reading/predictions 的 terra-direct、terra-corrected、luna-direct、luna-corrected。每组含 11 个歌曲 JSON，均使用 inputs 中的行 ID 和 words 顺序。公开结果可直接评分；生成新输出需要访问相应模型。
+四组 LLM（大语言模型）输出保存在 results/reading/predictions 的 terra-direct、terra-corrected、luna-direct、luna-corrected。每组含 11 个歌曲 JSON，均使用 inputs 中的行 ID 和 words 顺序。公开结果可直接评分；生成新输出需要访问相应模型。
 
 [reading.json](../configs/reading.json)保存模型名称、推理强度、统一提示和输入限制。分别启动 gpt-6.1-terra、gpt-6-luna 两个独立代理，每个先读取 results/reading/inputs，输出 direct，再读取 Studio 候选，输出 corrected。代理只能访问正文、Studio 候选和自身输出；人工参考、音频、其他模型结果与网络查询不提供给代理。生成后运行 scripts/score.py 和 scripts/verify_results.py。
 
@@ -66,7 +66,7 @@ prepare 提取标注、生成 Demucs 人声和产品基线，完成统一读音�
 
 OpenJTalk 使用 pyopenjtalk 0.4.1 和固定哈希的 1.11 词典。setup --models 一并下载；单独准备可运行 scripts/download.py reading，资产见[清单](../configs/reading-assets.json)。
 
-## 原生 MiliKara 与 MMS_FA 补测
+## 原生 MiliKara 与强制对齐后处理补测
 
 `mms-gap-fill` 从已有 MMS_FA 端点生成六种固定后处理结果，覆盖 23 种输入组合、11 首主组歌曲，共 1518 个条件，无需 GPU。`score.py` 同时重算这些指标。
 

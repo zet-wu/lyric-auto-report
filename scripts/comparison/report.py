@@ -1,13 +1,26 @@
 from common import *
 from collections import Counter
 NAMES={'studio-nextfire':'Lazulite Studio + NextFire','studio-mms-fa':'Lazulite Studio + MMS_FA + 智能延长','milikara':'MiliKara（NextFire）','timing':'Timing（BS Karaoke + TIFA）','sug-nextfire':'SUG（NextFire）','sug-mms-fa':'SUG（MMS_FA）','yohane':'yohane（NextFire）','fa-kara':'FA-Kara（MMS_FA）'}
+ROUTES={
+ 'studio-nextfire':('Lazulite Studio','Demucs htdemucs','NextFire'),
+ 'studio-mms-fa':('Lazulite Studio','Demucs htdemucs','MMS_FA + 智能延长'),
+ 'milikara':('MiliKara','MelBand RoFormer ep_3005','NextFire'),
+ 'timing':('Timing','BS Karaoke','TIFA'),
+ 'sug-nextfire':('SUG','MDX-Net Inst HQ 3','NextFire'),
+ 'sug-mms-fa':('SUG','MDX-Net Inst HQ 3','MMS_FA'),
+ 'yohane':('yohane','HybridDemucs MUSDB Plus','NextFire'),
+ 'fa-kara':('FA-Kara','BS Karaoke','MMS_FA'),
+}
+def route_cells(route,group):
+ project,separator,aligner=ROUTES[route]
+ return ' | '.join((project,'BS Karaoke' if group=='G2' else separator,aligner))
 readings=read(OUT/'scores/reading-summary.json');scores=read(OUT/'scores/summary.json');states=read(OUT/'scores/status.json');pins=read(ROOT/'configs/comparison-sources.json')
 assert not any(s['status']=='pending' for s in states),'Do not publish unfinished runs'
 def val(x):return '—' if x is None else f'{x:.2f}'
-def table(metrics, reading=False, merges=False):
- out=['| 路线 | 100 ms 命中 | 200 ms 命中 | MAE 起 / 止 ms | 绝对误差 P95 起 / 止 ms | 缺失 | >1 s |','| --- | ---: | ---: | ---: | ---: | ---: | ---: |']
+def table(metrics, group, reading=False, merges=False):
+ out=['| 项目 | 人声分离模型 | 对齐模型 | 100 ms 命中 | 200 ms 命中 | MAE 起 / 止 ms | 绝对误差 P95 起 / 止 ms | 缺失 | >1 s |','| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |']
  for route,m in metrics.items():
-  out.append(f"| {NAMES[route]} | {m['hit100']}/{m['n']}（{val(m['hit100_pct'])}%） | {m['hit200']}/{m['n']}（{val(m['hit200_pct'])}%） | {val(m['start_mae_ms'])} / {val(m['end_mae_ms'])} | {val(m['start_p95_ms'])} / {val(m['end_p95_ms'])} | {m['missing']} | {m['over1s']} |")
+  out.append(f"| {route_cells(route,group)} | {m['hit100']}/{m['n']}（{val(m['hit100_pct'])}%） | {m['hit200']}/{m['n']}（{val(m['hit200_pct'])}%） | {val(m['start_mae_ms'])} / {val(m['end_mae_ms'])} | {val(m['start_p95_ms'])} / {val(m['end_p95_ms'])} | {m['missing']} | {m['over1s']} |")
  if reading or merges:
   extra=' 合并边界 / 涉及单元 |' if reading else ' 合并边界 |'
   out[0]+=extra;out[1]+=' ---: |'
@@ -15,21 +28,22 @@ def table(metrics, reading=False, merges=False):
  return out
 text=['# 八条路线的歌词对齐准确率','','12 首日语歌曲、三组输入条件。每组分别报告组内共同正文边界和参考读音单元两张表；100 ms、200 ms 均要求起止两端同时命中，缺失保留在分母。MAE（Mean Absolute Error，平均绝对误差）及绝对误差 P95（第 95 百分位数）按起点／终点分列，只统计有效预测。超过 1 s 按至少一端超限计数。','','输入、边界构造、叠唱处理及原生导出语义见[方法](methods.md)。逐项误差、分区、逐曲指标及失败状态分别位于 [scores](../results/comparison/scores/)。','']
 for group,title in [('G1','人工读音 + 各自人声分离'),('G2','人工读音 + 统一 BS Karaoke'),('G3','自动读音 + 各自人声分离')]:
- text+=['## '+group+'：'+title,'','### 共同正文边界','']+table({k:x['overall'] for k,x in scores[group].items()},merges=True)+['','### 读音单元（人工标注分母）','']+table({k:x['overall'] for k,x in readings[group].items()},reading=True)+['']
+ text+=['## '+group+'：'+title,'','### 共同正文边界','']+table({k:x['overall'] for k,x in scores[group].items()},group,merges=True)+['','### 读音单元（人工标注分母）','']+table({k:x['overall'] for k,x in readings[group].items()},group,reading=True)+['']
 text+=['正文表的合并边界数是共同分区合并掉的原正文内部边界数。读音表固定原标注中 5370 个日语读音单元；“合并边界 / 涉及单元”分别表示原生输出没有保留的内部读音边界数，以及因此计入缺失的人工单元数。例如两个单元合为一个，记 1 个合并边界、2 个缺失单元；这些单元仍留在分母。整曲失败、无效时间及读音对应不唯一也计缺失，分类见 [reading-summary.json](../results/comparison/scores/reading-summary.json)。','','Timing 的各自分离器就是 BS Karaoke，FA-Kara 使用外部 BS Karaoke；这两条路线在 G1、G2 复用相同结果。G3 不含 yohane 与 FA-Kara。','','## 正文边界：单曲与叠唱','','s15 为《リトルミラクル -Grip it tight-》，包含 44 行主歌词、14 行背景歌词。背景词不作为目标。先单列 s15 的全曲与叠唱区间结果，再汇总全部 12 首歌曲中与背景歌词重叠的主歌词区间；后者包括 s03、s06、s07、s15。']
 for group in scores:
- text+=['','### '+group+'：s15 全曲','']+table({k:x['s15'] for k,x in scores[group].items()})
- text+=['','### '+group+'：s15 叠唱区间主歌词','']+table({k:x['s15_overlap'] for k,x in scores[group].items()})
- text+=['','### '+group+'：全部歌曲叠唱区间主歌词','']+table({k:x['overlap'] for k,x in scores[group].items()})
+ text+=['','### '+group+'：s15 全曲','']+table({k:x['s15'] for k,x in scores[group].items()},group)
+ text+=['','### '+group+'：s15 叠唱区间主歌词','']+table({k:x['s15_overlap'] for k,x in scores[group].items()},group)
+ text+=['','### '+group+'：全部歌曲叠唱区间主歌词','']+table({k:x['overlap'] for k,x in scores[group].items()},group)
 text+=['','逐曲双端 100 ms 命中率如下；完整六项逐曲指标见 [summary.json](../results/comparison/scores/summary.json)。','']
 for group in scores:
- text+=['### '+group+' 逐曲','', '| 歌曲 | '+' | '.join(NAMES[k] for k in scores[group])+' |','| --- | '+' | '.join('---:' for _ in scores[group])+' |']
- for s in songs():text.append('| '+s['id']+' | '+' | '.join(val(x['per_song'][s['id']]['hit100_pct'])+'%' for x in scores[group].values())+' |')
+ song_ids=[s['id'] for s in songs()]
+ text+=['### '+group+' 逐曲','', '| 项目 | 人声分离模型 | 对齐模型 | '+' | '.join(song_ids)+' |','| --- | --- | --- | '+' | '.join('---:' for _ in song_ids)+' |']
+ for route,x in scores[group].items():text.append('| '+route_cells(route,group)+' | '+' | '.join(val(x['per_song'][sid]['hit100_pct'])+'%' for sid in song_ids)+' |')
  text+=['']
 text+=['读音单元的逐曲及叠唱指标见 [reading-summary.json](../results/comparison/scores/reading-summary.json)，逐项映射、合并与缺失原因见 [reading-items.json.gz](../results/comparison/scores/reading-items.json.gz)。Lazulite Studio 人工读音的原标注细项及宏平均（先逐曲计算，再对歌曲等权平均）见 [studio-leaf-summary.json](../results/comparison/scores/studio-leaf-summary.json)。','']
-text+=['## 完成情况与原生失败','','整曲失败的项目保留全部参考分母。环境安装、输入格式适配、缓存损坏等问题修复后重跑，不作为算法失败。','', '| 组别 | 路线 | 有结果歌曲 / 12 |','| --- | --- | ---: |']
+text+=['## 完成情况与原生失败','','整曲失败的项目保留全部参考分母。环境安装、输入格式适配、缓存损坏等问题修复后重跑，不作为算法失败。','', '| 组别 | 项目 | 人声分离模型 | 对齐模型 | 有结果歌曲 / 12 |','| --- | --- | --- | --- | ---: |']
 for group in scores:
- for route in scores[group]:text.append(f"| {group} | {NAMES[route]} | {sum(x['status']=='ok' for x in states if x['group']==group and x['route']==route)}/12 |")
+ for route in scores[group]:text.append(f"| {group} | {route_cells(route,group)} | {sum(x['status']=='ok' for x in states if x['group']==group and x['route']==route)}/12 |")
 failures=[x for x in states if x['status']!='ok'];text+=['','失败明细：','']
 for x in failures:
  error=next((l for l in reversed(x.get('error','').splitlines()) if l.strip()),'未返回结果')

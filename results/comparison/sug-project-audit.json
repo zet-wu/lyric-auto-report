@@ -1,0 +1,482 @@
+{
+  "projects": [
+    {
+      "path": "results/comparison/sug/projects/s01-sug-nextfire-manual.sug",
+      "sha256": "1910e47db809adb85b73a42bcbcc9c9cafe4fecbd436a6ec5f02dc47b8231ace",
+      "round_trip_equal": true,
+      "checkpoint_count": 502,
+      "sentence_end_count": 39
+    },
+    {
+      "path": "results/comparison/sug/projects/s01-bs-nextfire-manual.sug",
+      "sha256": "593d2b12f6691e3f908fa1e200f5df1fc3851c20d79888a124d340e6f534fac1",
+      "round_trip_equal": true,
+      "checkpoint_count": 502,
+      "sentence_end_count": 39
+    },
+    {
+      "path": "results/comparison/sug/projects/s01-sug-mms-fa-manual.sug",
+      "sha256": "8ee476c979ce06c9f26e5d03e12e671464636e4914123b5ce216d8d9a82a6b78",
+      "round_trip_equal": true,
+      "checkpoint_count": 502,
+      "sentence_end_count": 39
+    },
+    {
+      "path": "results/comparison/sug/projects/s01-bs-mms-fa-manual.sug",
+      "sha256": "97b17e6e09609d656314c6a3f33d597fdc9dfdac07aee30f8b01ce37fb391e8c",
+      "round_trip_equal": true,
+      "checkpoint_count": 502,
+      "sentence_end_count": 39
+    },
+    {
+      "path": "results/comparison/sug/projects/s15-sug-nextfire-manual.sug",
+      "sha256": "9b70e31ac4aae70a3d45cbc3d54cf171634effe1932fd0ad69bbbedb2c63808c",
+      "round_trip_equal": true,
+      "checkpoint_count": 504,
+      "sentence_end_count": 44
+    },
+    {
+      "path": "results/comparison/sug/projects/s15-bs-nextfire-manual.sug",
+      "sha256": "638a42a975607a0b889ab5bcbdc2d72204f3edfa3e07067a397e1bfdc9b65131",
+      "round_trip_equal": true,
+      "checkpoint_count": 504,
+      "sentence_end_count": 44
+    },
+    {
+      "path": "results/comparison/sug/projects/s15-sug-nextfire-auto.sug",
+      "sha256": "eae6518cdf92728a4ecf8fbcd54c55b8e7dc9aa23e91896a05d91e38464e8951",
+      "round_trip_equal": true,
+      "checkpoint_count": 462,
+      "sentence_end_count": 44
+    },
+    {
+      "path": "results/comparison/sug/projects/s15-sug-mms-fa-manual.sug",
+      "sha256": "d3c8a78d419abdb0214b7b72076e0d7119fa565ccaf4f6bb906026d24a06c28b",
+      "round_trip_equal": true,
+      "checkpoint_count": 504,
+      "sentence_end_count": 44
+    },
+    {
+      "path": "results/comparison/sug/projects/s15-bs-mms-fa-manual.sug",
+      "sha256": "65aec3fd70214faa0585599c9cc937b36b2821f18373efdb42c08407b94c4298",
+      "round_trip_equal": true,
+      "checkpoint_count": 504,
+      "sentence_end_count": 44
+    },
+    {
+      "path": "results/comparison/sug/projects/s15-sug-mms-fa-auto.sug",
+      "sha256": "20fa07133a8b98e794c8757d4c7335328fbb3abcf9743bc8f81f490c8bd22822",
+      "round_trip_equal": true,
+      "checkpoint_count": 462,
+      "sentence_end_count": 44
+    },
+    {
+      "path": "results/comparison/sug/projects/s02-sug-nextfire-manual.sug",
+      "sha256": "8643d78c13eed5319d063710e7c15ecaad4a134e4ad28b5f4fd6b709aff1d87a",
+      "round_trip_equal": true,
+      "checkpoint_count": 369,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s02-bs-nextfire-manual.sug",
+      "sha256": "e240739740a0af065b075175e8227636f32febf50e43f46cbe5d1f64266d1c41",
+      "round_trip_equal": true,
+      "checkpoint_count": 369,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s02-sug-nextfire-auto.sug",
+      "sha256": "ca68f55405555fdcca34c13fdae962135a2af843155878f0fd2fc294c4ce1497",
+      "round_trip_equal": true,
+      "checkpoint_count": 375,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s02-sug-mms-fa-manual.sug",
+      "sha256": "272c78914448eb380f79007ce97fa0bafc594a1857793b465643ddbd17d0c52c",
+      "round_trip_equal": true,
+      "checkpoint_count": 369,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s02-bs-mms-fa-manual.sug",
+      "sha256": "7ed9ad441f602fb2426c9e91489448c591654cef8226bc91d9e62338b81795f7",
+      "round_trip_equal": true,
+      "checkpoint_count": 369,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s02-sug-mms-fa-auto.sug",
+      "sha256": "3d8c086e3f4c23cbe7485826fd64ed5ab06e4559b44ce0804d864ed60f9e8c73",
+      "round_trip_equal": true,
+      "checkpoint_count": 375,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s03-sug-nextfire-manual.sug",
+      "sha256": "e0601dd2163526a7d9bf03a4d51e59ef0fa3f604aec4b7ec7045e04717d00181",
+      "round_trip_equal": true,
+      "checkpoint_count": 498,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s03-bs-nextfire-manual.sug",
+      "sha256": "4b26ff5a3c7a8205932b3acb8050bcbad48bc68a7c0a45f96ed41ae6af4e505e",
+      "round_trip_equal": true,
+      "checkpoint_count": 498,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s03-sug-nextfire-auto.sug",
+      "sha256": "49948b7a4015687114d18cf2d686c60f9d57ac256117b1b1e31b3e204bbc3cc4",
+      "round_trip_equal": true,
+      "checkpoint_count": 4837,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s03-sug-mms-fa-manual.sug",
+      "sha256": "1e0f551af6e5e52ae535e548818ed6cd87e1023abaf0b901f28603ba15ad8b9e",
+      "round_trip_equal": true,
+      "checkpoint_count": 498,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s03-bs-mms-fa-manual.sug",
+      "sha256": "01e232e155fd71e564554822a0f99b61e5ffd40e6bccf248c3e7470fc80510ec",
+      "round_trip_equal": true,
+      "checkpoint_count": 498,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s03-sug-mms-fa-auto.sug",
+      "sha256": "5754d15bc8a9dba53e372d5813e971278b197b7e0af02b2679bd86d935f0ac82",
+      "round_trip_equal": true,
+      "checkpoint_count": 4837,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s04-sug-nextfire-manual.sug",
+      "sha256": "c93e85cda7901255f4557e187aa04d469ce5922df1c023e07e536ec42f9ef816",
+      "round_trip_equal": true,
+      "checkpoint_count": 405,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s04-bs-nextfire-manual.sug",
+      "sha256": "428f750937e70225f604ec1c8032f2e06b48c8bf4969bc797824ccf872038a9b",
+      "round_trip_equal": true,
+      "checkpoint_count": 405,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s04-sug-nextfire-auto.sug",
+      "sha256": "db015b093ea690155b35464847cd54627e6f990cebaf5baa34112d2b6dccf25d",
+      "round_trip_equal": true,
+      "checkpoint_count": 354,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s04-sug-mms-fa-manual.sug",
+      "sha256": "373fa8b90459c407d8b214369d4438d7f92b29a81a548112e26761cebf25561e",
+      "round_trip_equal": true,
+      "checkpoint_count": 405,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s04-bs-mms-fa-manual.sug",
+      "sha256": "cb59aacc7e7f6cb159e2ea29b244688c6e939a74efa526694f36dc9bf1be8728",
+      "round_trip_equal": true,
+      "checkpoint_count": 405,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s04-sug-mms-fa-auto.sug",
+      "sha256": "0a18e2420e796cf22aedddf7c0e0ca136159f1f317e30a89f5248d3e2242094d",
+      "round_trip_equal": true,
+      "checkpoint_count": 354,
+      "sentence_end_count": 40
+    },
+    {
+      "path": "results/comparison/sug/projects/s05-sug-nextfire-manual.sug",
+      "sha256": "e72061fb045508b0dd48d33889dd88b728d4d6974ebf7d5192679360f78cc4df",
+      "round_trip_equal": true,
+      "checkpoint_count": 398,
+      "sentence_end_count": 42
+    },
+    {
+      "path": "results/comparison/sug/projects/s05-bs-nextfire-manual.sug",
+      "sha256": "192551dbb16789ae95bc2df17a5d74ee1561917203eaae97e1e0cb7ee815ad21",
+      "round_trip_equal": true,
+      "checkpoint_count": 398,
+      "sentence_end_count": 42
+    },
+    {
+      "path": "results/comparison/sug/projects/s05-sug-mms-fa-manual.sug",
+      "sha256": "997eb47fdde44277c975cdc97ea6728a9c626b9788509df186c8545bfa091c22",
+      "round_trip_equal": true,
+      "checkpoint_count": 398,
+      "sentence_end_count": 42
+    },
+    {
+      "path": "results/comparison/sug/projects/s05-bs-mms-fa-manual.sug",
+      "sha256": "ca6334e79c933393de57d2fe34992a0676f90b3fad56fae527ab3dd286fac4ba",
+      "round_trip_equal": true,
+      "checkpoint_count": 398,
+      "sentence_end_count": 42
+    },
+    {
+      "path": "results/comparison/sug/projects/s06-sug-nextfire-manual.sug",
+      "sha256": "64de2f55f45ea68a32105c6c8eeabddfc935fdd349b13ee6577c78199fc04b5b",
+      "round_trip_equal": true,
+      "checkpoint_count": 507,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s06-bs-nextfire-manual.sug",
+      "sha256": "54d2a8477d6df1d29c4aae6e633fb3caaecccd18374ba6ba4d86736e0977e31d",
+      "round_trip_equal": true,
+      "checkpoint_count": 507,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s06-sug-nextfire-auto.sug",
+      "sha256": "5a1ad9c59fb942aea9dd34a9095edb2dfac731b39fb36e84d867fff7a1b26037",
+      "round_trip_equal": true,
+      "checkpoint_count": 398,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s06-sug-mms-fa-manual.sug",
+      "sha256": "512b51f9cb6b417e50c6e24cbf746ba142dacca84b628b5465bfd9f2c463b697",
+      "round_trip_equal": true,
+      "checkpoint_count": 507,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s06-bs-mms-fa-manual.sug",
+      "sha256": "82b4effe9018fc437e2a9fa8a5e71d10d459f3d5b7cdef431f97ccd2947e0fd0",
+      "round_trip_equal": true,
+      "checkpoint_count": 507,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s06-sug-mms-fa-auto.sug",
+      "sha256": "da35d0ab0a831d38bf1fc7ea9cf0fd591778897ac88d8555849f62f38a4d4eed",
+      "round_trip_equal": true,
+      "checkpoint_count": 398,
+      "sentence_end_count": 47
+    },
+    {
+      "path": "results/comparison/sug/projects/s07-sug-nextfire-manual.sug",
+      "sha256": "d27cf53d33a908a4752b1b8917828437cc1764e6b683f19874f847617612f30b",
+      "round_trip_equal": true,
+      "checkpoint_count": 518,
+      "sentence_end_count": 62
+    },
+    {
+      "path": "results/comparison/sug/projects/s07-bs-nextfire-manual.sug",
+      "sha256": "e95a4db6db1e1d4b14d38f54e07a7c8151688f619bff7480beca6e113563ffda",
+      "round_trip_equal": true,
+      "checkpoint_count": 518,
+      "sentence_end_count": 62
+    },
+    {
+      "path": "results/comparison/sug/projects/s07-sug-nextfire-auto.sug",
+      "sha256": "fa3ef246bfe6effb538988b50f49f07ed82bcf7c5ad6e0f7ccabf1ddec187532",
+      "round_trip_equal": true,
+      "checkpoint_count": 440,
+      "sentence_end_count": 62
+    },
+    {
+      "path": "results/comparison/sug/projects/s07-sug-mms-fa-manual.sug",
+      "sha256": "79ead41c92fd25a53b8f13bc2d5867a179d07ce0c8361bb5f85e4f57c2ae19af",
+      "round_trip_equal": true,
+      "checkpoint_count": 518,
+      "sentence_end_count": 62
+    },
+    {
+      "path": "results/comparison/sug/projects/s07-bs-mms-fa-manual.sug",
+      "sha256": "97eba0ad3dc82216fd8dcdfefaa46aeac0e9a5f1b01944c4509a1e10c6f17473",
+      "round_trip_equal": true,
+      "checkpoint_count": 518,
+      "sentence_end_count": 62
+    },
+    {
+      "path": "results/comparison/sug/projects/s07-sug-mms-fa-auto.sug",
+      "sha256": "e4bb846bb91e03cc152756450c5717c017cb3e2ced7402e0d74513b4e9a7af15",
+      "round_trip_equal": true,
+      "checkpoint_count": 440,
+      "sentence_end_count": 62
+    },
+    {
+      "path": "results/comparison/sug/projects/s08-sug-nextfire-manual.sug",
+      "sha256": "05743ac3eeb967d27c87c260a3764ed3a85c79042edca8802f0fdcddf5d5a8a0",
+      "round_trip_equal": true,
+      "checkpoint_count": 377,
+      "sentence_end_count": 23
+    },
+    {
+      "path": "results/comparison/sug/projects/s08-bs-nextfire-manual.sug",
+      "sha256": "c52feb1aa3904d09f0f5c63b6b5c189f7cb5bcad74fef9a491106c70da848b6a",
+      "round_trip_equal": true,
+      "checkpoint_count": 377,
+      "sentence_end_count": 23
+    },
+    {
+      "path": "results/comparison/sug/projects/s08-sug-nextfire-auto.sug",
+      "sha256": "ba4366fa4c8b68cd935e91202e60777736e52a74c2db3f0251cdb17895985e37",
+      "round_trip_equal": true,
+      "checkpoint_count": 315,
+      "sentence_end_count": 23
+    },
+    {
+      "path": "results/comparison/sug/projects/s08-sug-mms-fa-manual.sug",
+      "sha256": "e9e16cdaddbeff1abb5bf436686bb0a73588db96be05511dc15874f6acea5e87",
+      "round_trip_equal": true,
+      "checkpoint_count": 377,
+      "sentence_end_count": 23
+    },
+    {
+      "path": "results/comparison/sug/projects/s08-bs-mms-fa-manual.sug",
+      "sha256": "b8c11427e7f2ede81c883aca377062e33e295133ec2132b298e42fc8b533ed29",
+      "round_trip_equal": true,
+      "checkpoint_count": 377,
+      "sentence_end_count": 23
+    },
+    {
+      "path": "results/comparison/sug/projects/s08-sug-mms-fa-auto.sug",
+      "sha256": "dcc85486233055526c443fe2fed74b09c7a362c454dca4cae68055e6071fb083",
+      "round_trip_equal": true,
+      "checkpoint_count": 315,
+      "sentence_end_count": 23
+    },
+    {
+      "path": "results/comparison/sug/projects/s09-sug-nextfire-manual.sug",
+      "sha256": "e883cf4929c89be62b785b804c243d80a1684e675a1b8d66df5493b62c2983e9",
+      "round_trip_equal": true,
+      "checkpoint_count": 487,
+      "sentence_end_count": 48
+    },
+    {
+      "path": "results/comparison/sug/projects/s09-bs-nextfire-manual.sug",
+      "sha256": "17070af9f4e4ea9b40ecbf36edd614fcd219679dc0278997f556998b7fc233d2",
+      "round_trip_equal": true,
+      "checkpoint_count": 487,
+      "sentence_end_count": 48
+    },
+    {
+      "path": "results/comparison/sug/projects/s09-sug-nextfire-auto.sug",
+      "sha256": "6cc40469a0add8c61cb8e3abd65862e0601f8ab67dc426d95c72291868ea413c",
+      "round_trip_equal": true,
+      "checkpoint_count": 448,
+      "sentence_end_count": 48
+    },
+    {
+      "path": "results/comparison/sug/projects/s09-sug-mms-fa-manual.sug",
+      "sha256": "47ddd706ef51494a10f82aa3a4d7757613293de7b7d3c208f73566ec69f19190",
+      "round_trip_equal": true,
+      "checkpoint_count": 487,
+      "sentence_end_count": 48
+    },
+    {
+      "path": "results/comparison/sug/projects/s09-bs-mms-fa-manual.sug",
+      "sha256": "6bdbe7bb7f17c5969687471adcb73216cafe4a1ee9b3c9476091bd8d9338cd9c",
+      "round_trip_equal": true,
+      "checkpoint_count": 487,
+      "sentence_end_count": 48
+    },
+    {
+      "path": "results/comparison/sug/projects/s09-sug-mms-fa-auto.sug",
+      "sha256": "39a3934b5fe88225410842609b02e27125e76966aa134ac7970207485df0ea93",
+      "round_trip_equal": true,
+      "checkpoint_count": 448,
+      "sentence_end_count": 48
+    },
+    {
+      "path": "results/comparison/sug/projects/s10-sug-nextfire-manual.sug",
+      "sha256": "9e07cb7059a3477cedd34c3f48eef6387be7780ce7a82c6aba498c40a7c7d06f",
+      "round_trip_equal": true,
+      "checkpoint_count": 496,
+      "sentence_end_count": 49
+    },
+    {
+      "path": "results/comparison/sug/projects/s10-bs-nextfire-manual.sug",
+      "sha256": "01b12e6915e1478ce2cd7f22644f0a2b92c56ee2c264ca9e843afecdde96ba85",
+      "round_trip_equal": true,
+      "checkpoint_count": 496,
+      "sentence_end_count": 49
+    },
+    {
+      "path": "results/comparison/sug/projects/s10-sug-nextfire-auto.sug",
+      "sha256": "86323cb7da7796d8bdfcdfe150ac2cf2668f47aaa342cabc94a12bc2ab223af2",
+      "round_trip_equal": true,
+      "checkpoint_count": 415,
+      "sentence_end_count": 49
+    },
+    {
+      "path": "results/comparison/sug/projects/s10-sug-mms-fa-manual.sug",
+      "sha256": "e55ac7829f787747e7589cc6e7b9a3031e3a6f9c6a5037afc3309a3228204472",
+      "round_trip_equal": true,
+      "checkpoint_count": 496,
+      "sentence_end_count": 49
+    },
+    {
+      "path": "results/comparison/sug/projects/s10-bs-mms-fa-manual.sug",
+      "sha256": "9f9779dba684a531fa4fca2cadf95f1dde8ecb693c2864eb4532059c7448944b",
+      "round_trip_equal": true,
+      "checkpoint_count": 496,
+      "sentence_end_count": 49
+    },
+    {
+      "path": "results/comparison/sug/projects/s10-sug-mms-fa-auto.sug",
+      "sha256": "cfac5a43d683566750ca518f0269307897c85fb96f51d3bc9054b9149275bad1",
+      "round_trip_equal": true,
+      "checkpoint_count": 415,
+      "sentence_end_count": 49
+    },
+    {
+      "path": "results/comparison/sug/projects/s12-sug-nextfire-manual.sug",
+      "sha256": "8334631479935da8bbc116f6eefe0b38ff5c4b45bd2210c8a6788dc5dc685fe0",
+      "round_trip_equal": true,
+      "checkpoint_count": 427,
+      "sentence_end_count": 41
+    },
+    {
+      "path": "results/comparison/sug/projects/s12-bs-nextfire-manual.sug",
+      "sha256": "5024ce19ea5a347a65b3d44ea7f71aff05a8219f38019a22ee9a725deba3f5c8",
+      "round_trip_equal": true,
+      "checkpoint_count": 427,
+      "sentence_end_count": 41
+    },
+    {
+      "path": "results/comparison/sug/projects/s12-sug-nextfire-auto.sug",
+      "sha256": "0241db097a363a2e0760d8ee44bb54e0454276399ea62368790e9e86b5a5574d",
+      "round_trip_equal": true,
+      "checkpoint_count": 358,
+      "sentence_end_count": 41
+    },
+    {
+      "path": "results/comparison/sug/projects/s12-sug-mms-fa-manual.sug",
+      "sha256": "ec141e80cd48e8118aeda65d9089c6555aca294c3b8a97b1eebaa6e974f9db88",
+      "round_trip_equal": true,
+      "checkpoint_count": 427,
+      "sentence_end_count": 41
+    },
+    {
+      "path": "results/comparison/sug/projects/s12-bs-mms-fa-manual.sug",
+      "sha256": "ddfe24a7feda7f2b130f5a38c7ebb19afde25daf21b41ee5d39265cf85836f42",
+      "round_trip_equal": true,
+      "checkpoint_count": 427,
+      "sentence_end_count": 41
+    },
+    {
+      "path": "results/comparison/sug/projects/s12-sug-mms-fa-auto.sug",
+      "sha256": "424edc08a1994d93742340d57d0c3c591d25fea5751056aff9e37e8f4f023570",
+      "round_trip_equal": true,
+      "checkpoint_count": 358,
+      "sentence_end_count": 41
+    }
+  ],
+  "source": "Native ApplyAiTimingCommand, SugProjectParser.save and load; original frozen model results reused.",
+  "round_trip_equal": true
+}

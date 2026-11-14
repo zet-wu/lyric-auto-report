@@ -1,0 +1,71 @@
+{
+  "song": "s08",
+  "method": "milikara",
+  "source_sha256": "92d32d4fda0dd4a91b8a303f8d1451f4d5b94d8836d2b5dbdf8f0e5c09411664",
+  "sha256": "617ccd90076c31a4ac41907193789502d5f68373ae7977af9ed77f4728682c31",
+  "path": ".cache/comparison/stems/milikara/s08.wav",
+  "origin": "fresh CUDA",
+  "seconds": 31.641450379043818,
+  "frames": 11749376,
+  "rate": 44100,
+  "details": {
+    "report": {
+      "preset": "melband-roformer",
+      "model_filename": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+      "architecture": "MelBand RoFormer",
+      "license_note": "Weights come from the audio-separator model registry; check upstream licence before redistribution.",
+      "audio_separator_version": "0.30.2",
+      "config": {
+        "sample_rate": 44100,
+        "output_format": "WAV",
+        "normalization": 0.9,
+        "device": "auto"
+      },
+      "original_sha256": "92d32d4fda0dd4a91b8a303f8d1451f4d5b94d8836d2b5dbdf8f0e5c09411664",
+      "original_num_samples": 11749376,
+      "extra_outputs": [],
+      "vocals_length_fix": {
+        "input_len": 11749376,
+        "original_len": 11749376,
+        "leading_padding_removed": 0,
+        "end_trimmed": 0,
+        "end_padded": 0,
+        "stretched": false,
+        "output_len": 11749376
+      },
+      "instrumental_length_fix": {
+        "input_len": 11749376,
+        "original_len": 11749376,
+        "leading_padding_removed": 0,
+        "end_trimmed": 0,
+        "end_padded": 0,
+        "stretched": false,
+        "output_len": 11749376
+      },
+      "sync": {
+        "vocals": {
+          "role": "vocals",
+          "lag_ms": 0.0,
+          "correlation": 0.627,
+          "length_diff_samples": 0,
+          "ok": true,
+          "message": "与原曲同步（延迟在容差内）",
+          "sum_residual_db": -14.41
+        },
+        "instrumental": {
+          "role": "instrumental",
+          "lag_ms": 0.0,
+          "correlation": 0.8085,
+          "length_diff_samples": 0,
+          "ok": true,
+          "message": "与原曲同步（延迟在容差内）"
+        }
+      },
+      "elapsed_s": 29.42
+    },
+    "assets": [
+      "ad9e7d5461b",
+      "a742fe290c3"
+    ]
+  }
+}

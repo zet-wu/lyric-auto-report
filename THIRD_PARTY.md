@@ -1,6 +1,6 @@
 # 来源与许可
 
-研究运行时从以下公开仓库下载固定版本，提交记录见 [configs/sources.json](configs/sources.json)。
+研究运行时从以下公开仓库下载固定版本，提交记录见 [configs/sources.json](configs/sources.json) 与 [比较路线版本](configs/comparison-sources.json)。
 
 | 项目 | 用途 |
 | --- | --- |
@@ -8,7 +8,10 @@
 | [Lazulite Studio](https://github.com/zet-wu/Lazulite-studio) | TTML 投影、注音与罗马字转换 |
 | [Timing](https://github.com/Zennmn/Timing) | 项目链路、MMS 定位、TIFA 与分离适配 |
 | [MiliKara](https://github.com/BilyHurington/MiliKara) | CTC 解码、活动代价、窗口、重试与尾点处理 |
-| [python-audio-separator](https://github.com/nomadkaraoke/python-audio-separator) | MiliKara 原生 Mel-RoFormer 分离服务，固定 0.30.2 |
+| [python-audio-separator](https://github.com/nomadkaraoke/python-audio-separator) | MiliKara 分离使用 0.30.2，SUG 的 UVR 分离使用 0.47.0 |
+| [StrangeUtaGame](https://github.com/karaoke-studio/StrangeUtaGame) | NextFire／MMS_FA 对齐、注音、采用与 TTML 导出 |
+| [yohane](https://github.com/Japan7/yohane) | HybridDemucs、NextFire 与 ASS 输出 |
+| [FA-Kara](https://github.com/moriwx/FA-Kara) | MMS_FA 与原生首尾修正 |
 | [MSST](https://github.com/ZFTurbo/Music-Source-Separation-Training) | SCNet、DTTNet 和 RoFormer 推理 |
 | [pyopenjtalk](https://github.com/r9y9/pyopenjtalk) | OpenJTalk 日语发音前端，包版本与词典下载身份固定 |
 | [Windowed RoFormer](https://github.com/smulelabs/windowed-roformer) | 局部注意力人声分离 |

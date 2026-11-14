@@ -1,0 +1,89 @@
+{
+  "python": "3.13.2",
+  "platform": "Linux-6.1.170-redroid-x86_64-with-glibc2.36",
+  "gpu": "NVIDIA GeForce RTX 4090, 49140 MiB, 595.58.03",
+  "research_packages": {
+    "torch": "2.14.0",
+    "torchaudio": "2.11.0",
+    "transformers": "4.57.6",
+    "numpy": "2.5.2",
+    "soundfile": "0.14.0",
+    "SudachiPy": "0.7.0",
+    "SudachiDict-core": "20261015",
+    "pykakasi": "2.3.0",
+    "jaconv": "0.5.0",
+    "Janome": "0.5.0",
+    "PyQt6": "6.10.2",
+    "nltk": "3.10.4",
+    "pysubs2": "1.8.1",
+    "yohane": "0.1.dev1+ge31891af6",
+    "nvidia-ml-py": "13.615.71"
+  },
+  "sug_packages": {
+    "torch": "2.14.0",
+    "torchaudio": "2.11.0",
+    "transformers": "5.15.0",
+    "audio-separator": "0.47.0",
+    "librosa": "0.10.2.post1",
+    "onnxruntime-gpu": "1.23.2"
+  },
+  "other_native_packages": {
+    "native5": {
+      "torch": "2.14.0",
+      "torchaudio": "2.11.0",
+      "transformers": "5.15.0",
+      "librosa": "1.0.0"
+    },
+    "milikara": {
+      "torch": "2.14.0",
+      "torchaudio": "2.11.0",
+      "transformers": "4.57.6",
+      "audio-separator": "0.30.2",
+      "unidic-lite": "1.0.8"
+    },
+    "fakara": {
+      "torch": "2.14.0",
+      "torchaudio": "2.11.0",
+      "transformers": "5.14.1",
+      "librosa": "0.11.0"
+    }
+  },
+  "source_commits": {
+    "studio": {
+      "commit": "5d3183e326614760a8fa9d41473c58248c3432ce",
+      "url": "https://github.com/zet-wu/Lazulite-studio.git"
+    },
+    "lazulite": {
+      "commit": "b050b73c3db384044caec3a0699d1f260729d023",
+      "url": "https://github.com/wuchenyanmo/Lazulite.git"
+    },
+    "timing": {
+      "commit": "d2b46eec1e8ba7ae6e03a3d57f086277943e1f8c",
+      "url": "https://github.com/Zennmn/Timing.git"
+    },
+    "milikara": {
+      "commit": "80c062ba280941b8957236cf37e3e0506ee293a0",
+      "url": "https://github.com/BilyHurington/MiliKara.git"
+    },
+    "sug": {
+      "commit": "423cf28c2b41f3772ddda361dde67026389aa4ee",
+      "url": "https://github.com/karaoke-studio/StrangeUtaGame.git"
+    },
+    "yohane": {
+      "commit": "e31891af6d29773e4999b5bf84525745a4394b03",
+      "url": "https://github.com/Japan7/yohane.git"
+    },
+    "fa-kara": {
+      "commit": "168ca5f01cecaa1290e31c0ce8dc44af8c7451bb",
+      "url": "https://github.com/moriwx/FA-Kara.git"
+    }
+  },
+  "inference": "CUDA; no CPU alignment fallback",
+  "concurrency": "quality runs may overlap; durations are diagnostic, not a performance benchmark",
+  "studio_postprocessing_refresh": {
+    "commit": "5d3183e326614760a8fa9d41473c58248c3432ce",
+    "acoustic_results_reused": true,
+    "native_postprocessing_and_frontend_adoption_rerun": true,
+    "audit": "results/comparison/studio-postprocessing-audit.json"
+  }
+}

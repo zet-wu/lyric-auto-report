@@ -1,0 +1,309 @@
+{
+  "format": "kara-align/project",
+  "version": 1,
+  "id": "pba2d213aad",
+  "name": "Rainbow Flower",
+  "created": "2026-11-13T15:14:35+00:00",
+  "updated": "2026-11-13T15:15:15+00:00",
+  "mode": "plain",
+  "lyrics": {
+    "format": "kara-align/lyrics",
+    "version": 1,
+    "language": "ja",
+    "meta": {
+      "title": null,
+      "artist": null,
+      "album": null,
+      "duration_ms": null,
+      "extra": {}
+    },
+    "lines": [],
+    "embedded_offset_raw": null,
+    "embedded_shift_ms": 0,
+    "embedded_offset_note": ""
+  },
+  "sources": [],
+  "calibration": {
+    "user_shift_ms": 0,
+    "confirmed": false,
+    "reference_line_id": null,
+    "marked_ms": null,
+    "checks": [],
+    "history": []
+  },
+  "ai_roundtrips": [],
+  "config": {
+    "backend": "mms-ja",
+    "model_id": null,
+    "model_revision": null,
+    "device": "auto",
+    "audio_role": "original",
+    "chunk_s": 20.0,
+    "context_s": 3.0,
+    "decode": {
+      "left_margin_ms": 1500,
+      "right_margin_ms": 1500,
+      "soft_sigma_ms": 400,
+      "soft_lambda": 4.0,
+      "huber_delta": 1.0,
+      "hard_tolerance_ms": 80,
+      "joint_context_lines": 1,
+      "tight_gap_ms": 400,
+      "band_frames": null,
+      "line_gap_cost": 1.0,
+      "rest_gap_cost": 4.0,
+      "rest_token_cost": 25.0,
+      "end_marker_margin_ms": 6000
+    },
+    "checks": {
+      "min_unit_ms": 40,
+      "max_unit_ms": 6000,
+      "anchor_deviation_ms": 700,
+      "edge_crowd_ms": 120,
+      "stability_tolerance_ms": 150,
+      "min_coverage": 0.999,
+      "max_line_gap_ms": 4000,
+      "cross_check_ms": 1000
+    },
+    "retry": {
+      "enabled": true,
+      "max_candidates_per_line": 4,
+      "max_total_candidates": 60
+    },
+    "tail": {
+      "strategy": "off",
+      "max_extend_ms": 800,
+      "max_trim_ms": 600,
+      "energy_floor_db": -35.0
+    }
+  },
+  "audio": [
+    {
+      "id": "ab091c1385a",
+      "role": "original",
+      "sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+      "path": "assets/d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5.m4a",
+      "duration_ms": 238421,
+      "sample_rate": 48000,
+      "channels": 2,
+      "num_samples": 11444224,
+      "origin_offset_samples": 0,
+      "sync_checked": false,
+      "sync_report": null,
+      "source": {
+        "kind": "upload",
+        "filename": "Rainbow Flower.m4a",
+        "model": null,
+        "model_version": null,
+        "config": {},
+        "parent_sha256": null,
+        "notes": []
+      }
+    },
+    {
+      "id": "a3de1879237",
+      "role": "vocals",
+      "sha256": "c58871ec216c36b4abaf212bcae2b559a93d34a56021db08483c6fadcff28328",
+      "path": "assets/c58871ec216c36b4abaf212bcae2b559a93d34a56021db08483c6fadcff28328.flac",
+      "duration_ms": 238421,
+      "sample_rate": 48000,
+      "channels": 2,
+      "num_samples": 11444224,
+      "origin_offset_samples": 0,
+      "sync_checked": true,
+      "sync_report": {
+        "role": "vocals",
+        "lag_ms": 0.0,
+        "correlation": 0.6755,
+        "length_diff_samples": 0,
+        "ok": true,
+        "message": "与原曲同步（延迟在容差内）",
+        "sum_residual_db": -15.36
+      },
+      "source": {
+        "kind": "separation",
+        "filename": "vocals.flac",
+        "model": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+        "model_version": "0.30.2",
+        "config": {
+          "preset": "melband-roformer",
+          "device": "auto"
+        },
+        "parent_sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+        "notes": []
+      }
+    },
+    {
+      "id": "a3fd58e8464",
+      "role": "instrumental",
+      "sha256": "1f5d6420ba314bea6c91a27776d7d4d81e8192a8e29df9a2fbd036157a47d878",
+      "path": "assets/1f5d6420ba314bea6c91a27776d7d4d81e8192a8e29df9a2fbd036157a47d878.flac",
+      "duration_ms": 238421,
+      "sample_rate": 48000,
+      "channels": 2,
+      "num_samples": 11444224,
+      "origin_offset_samples": 0,
+      "sync_checked": true,
+      "sync_report": {
+        "role": "instrumental",
+        "lag_ms": 0.0,
+        "correlation": 0.7642,
+        "length_diff_samples": 0,
+        "ok": true,
+        "message": "与原曲同步（延迟在容差内）"
+      },
+      "source": {
+        "kind": "separation",
+        "filename": "instrumental.flac",
+        "model": "model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+        "model_version": "0.30.2",
+        "config": {
+          "preset": "melband-roformer",
+          "device": "auto"
+        },
+        "parent_sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+        "notes": []
+      }
+    }
+  ],
+  "results": [],
+  "active_result_id": null,
+  "mix": {
+    "vocal_keep_pct": 100.0,
+    "instrumental_pct": 100.0,
+    "master": 1.0,
+    "limiter": "normalize_peak"
+  },
+  "video": null,
+  "background": null,
+  "karaoke": {
+    "version": 2,
+    "preset": "",
+    "layout": {
+      "position": "bottom",
+      "lines": 2,
+      "arrangement": "alternate",
+      "margin_v": 70,
+      "line_spacing": 26,
+      "margin_h": 140,
+      "alternate_indent": 240,
+      "wrap": "auto",
+      "edge_margin": 50,
+      "shrink_long_lines": true
+    },
+    "text": {
+      "font": "",
+      "size": 88,
+      "bold": true,
+      "color_unsung": "#FFFFFF",
+      "color_sung": "#2F80ED",
+      "outline_color": "#0B1F3A",
+      "outline_color_sung": "",
+      "outline": 4.5,
+      "shadow": 2.0,
+      "shadow_color": "#000000",
+      "shadow_opacity": 45
+    },
+    "ruby": {
+      "enabled": true,
+      "script": "hiragana",
+      "target": "kanji",
+      "size_pct": 45,
+      "gap": 2,
+      "fit": "widen",
+      "sweep": "own",
+      "follow_colors": true,
+      "font": "",
+      "color_unsung": "#FFFFFF",
+      "color_sung": "#2F80ED",
+      "outline_color": "#0B1F3A",
+      "outline_color_sung": "",
+      "outline": 3.0
+    },
+    "translation": {
+      "enabled": false,
+      "position": "opposite",
+      "size_pct": 60,
+      "font": "",
+      "bold": true,
+      "color": "#FFFFFF",
+      "outline_color": "#0B1F3A",
+      "outline": 3.0,
+      "shadow": 1.5,
+      "glow": true,
+      "singer_glow": true
+    },
+    "glow": {
+      "enabled": false,
+      "color_unsung": "#FF8AC2",
+      "color_sung": "#FFF2B3",
+      "size": 9.0,
+      "blur": 7.0,
+      "strength": 85,
+      "ruby": true
+    },
+    "timing": {
+      "lead_in_ms": 2000,
+      "hold_ms": 500,
+      "early_show": true,
+      "highlight": "sweep",
+      "advance_ms": 150,
+      "fade_in_ms": 200,
+      "fade_out_ms": 200
+    },
+    "effects": {
+      "kind": "none",
+      "amount": 100,
+      "size": 100,
+      "color": "",
+      "ruby": false,
+      "behind": true
+    },
+    "info": {
+      "enabled": false,
+      "position": "top-left",
+      "fields": [
+        "title",
+        "artist"
+      ],
+      "start_ms": 500,
+      "duration_ms": 7000,
+      "outro": true,
+      "outro_duration_ms": 7000,
+      "size": 56,
+      "margin": 56,
+      "color": "",
+      "accent": ""
+    },
+    "theme": null,
+    "output": {
+      "vocal_keep_pct": 20.0
+    },
+    "singers": {
+      "members": [],
+      "mix": "split",
+      "direction": "vertical",
+      "ruby": "auto",
+      "combos": [],
+      "legend": true,
+      "legend_ms": 5000,
+      "labels": "off",
+      "label_content": "both"
+    },
+    "countdown": {
+      "intro": true,
+      "interlude": true,
+      "min_gap_ms": 6000,
+      "dots": 3
+    },
+    "decor": {
+      "start": "",
+      "end": "",
+      "start_picture": "",
+      "end_picture": "",
+      "color": "",
+      "size_pct": 80
+    }
+  },
+  "song_info_text": null
+}

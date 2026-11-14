@@ -1,0 +1,6272 @@
+{
+  "version": "0.3.0",
+  "id": "s02-sug-nextfire-auto",
+  "metadata": {
+    "title": "",
+    "artist": "",
+    "album": "",
+    "language": "ja",
+    "created_at": "2026-11-14T08:27:57.699163",
+    "updated_at": "2026-11-14T08:27:57.699179",
+    "extra": {}
+  },
+  "audio_duration_ms": 448726,
+  "singers": [
+    {
+      "id": "s1",
+      "name": "main",
+      "color": "#FF6B6B",
+      "complement_color": "#6BFFFF",
+      "color_mode": "solid",
+      "split_colors": [],
+      "is_default": false,
+      "is_placeholder": false,
+      "display_priority": 0,
+      "enabled": true,
+      "backend_number": 0,
+      "group": ""
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s02-sug-nextfire-auto-line-0",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "粉",
+          "check_count": 1,
+          "timestamps": [
+            27177
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            129863
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "が",
+          "check_count": 1,
+          "timestamps": [
+            130643
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "空",
+          "check_count": 1,
+          "timestamps": [
+            130943
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            132024
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ら",
+          "check_count": 1,
+          "timestamps": [
+            132464
+          ],
+          "sentence_end_ts": 134025,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-1",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "優",
+          "check_count": 1,
+          "timestamps": [
+            135206
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            135546
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            135946
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "降",
+          "check_count": 1,
+          "timestamps": [
+            136847
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "り",
+          "check_count": 1,
+          "timestamps": [
+            137327
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            137628
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            137988
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "る",
+          "check_count": 1,
+          "timestamps": [
+            138188
+          ],
+          "sentence_end_ts": 139789,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-2",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "手",
+          "check_count": 1,
+          "timestamps": [
+            141150
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            141490
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ひ",
+          "check_count": 1,
+          "timestamps": [
+            141690
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ら",
+          "check_count": 1,
+          "timestamps": [
+            142230
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "で",
+          "check_count": 1,
+          "timestamps": [
+            142471
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "受",
+          "check_count": 1,
+          "timestamps": [
+            143551
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "け",
+          "check_count": 1,
+          "timestamps": [
+            143932
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "止",
+          "check_count": 1,
+          "timestamps": [
+            144292
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "め",
+          "check_count": 1,
+          "timestamps": [
+            144632
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            144972
+          ],
+          "sentence_end_ts": 146093,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-3",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            146413
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "が",
+          "check_count": 1,
+          "timestamps": [
+            146733
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "切",
+          "check_count": 1,
+          "timestamps": [
+            147474
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            148815
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            149575
+          ],
+          "sentence_end_ts": 151196,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-4",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "ど",
+          "check_count": 1,
+          "timestamps": [
+            151957
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "こ",
+          "check_count": 1,
+          "timestamps": [
+            152177
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            152337
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "で",
+          "check_count": 1,
+          "timestamps": [
+            152657
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "見",
+          "check_count": 1,
+          "timestamps": [
+            153277
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            153758
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ま",
+          "check_count": 1,
+          "timestamps": [
+            154118
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "す",
+          "check_count": 1,
+          "timestamps": [
+            154438
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            154758
+          ],
+          "sentence_end_ts": 156540,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-5",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            157580
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            157760
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            157940
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "は",
+          "check_count": 1,
+          "timestamps": [
+            158321
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "立",
+          "check_count": 1,
+          "timestamps": [
+            158901
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ち",
+          "check_count": 1,
+          "timestamps": [
+            159301
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "止",
+          "check_count": 1,
+          "timestamps": [
+            159662
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ま",
+          "check_count": 1,
+          "timestamps": [
+            160002
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "り",
+          "check_count": 1,
+          "timestamps": [
+            160382
+          ],
+          "sentence_end_ts": 162283,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-6",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "思",
+          "check_count": 1,
+          "timestamps": [
+            163484
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            164004
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "出",
+          "check_count": 1,
+          "timestamps": [
+            164585
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            164885
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            165265
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            165946
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ま",
+          "check_count": 1,
+          "timestamps": [
+            166346
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "す",
+          "check_count": 1,
+          "timestamps": [
+            166986
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            167607
+          ],
+          "sentence_end_ts": 169068,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-7",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "空",
+          "check_count": 1,
+          "timestamps": [
+            170108
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "を",
+          "check_count": 1,
+          "timestamps": [
+            170829
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "見",
+          "check_count": 1,
+          "timestamps": [
+            171069
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "上",
+          "check_count": 1,
+          "timestamps": [
+            171569
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "げ",
+          "check_count": 1,
+          "timestamps": [
+            171909
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            172570
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "が",
+          "check_count": 1,
+          "timestamps": [
+            172950
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ら",
+          "check_count": 1,
+          "timestamps": [
+            173130
+          ],
+          "sentence_end_ts": 174651,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-8",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "嬉",
+          "check_count": 1,
+          "timestamps": [
+            176072
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            176732
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "そ",
+          "check_count": 1,
+          "timestamps": [
+            177053
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "う",
+          "check_count": 1,
+          "timestamps": [
+            177493
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            178013
+          ],
+          "sentence_end_ts": 178634,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-9",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            178874
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            179494
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "上",
+          "check_count": 1,
+          "timestamps": [
+            179834
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "を",
+          "check_count": 1,
+          "timestamps": [
+            180955
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "歩",
+          "check_count": 1,
+          "timestamps": [
+            181656
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            182316
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            182596
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            183016
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            183717
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "が",
+          "check_count": 1,
+          "timestamps": [
+            184177
+          ],
+          "sentence_end_ts": 185098,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-10",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "I",
+          "check_count": 1,
+          "timestamps": [
+            185118
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "n",
+          "check_count": 1,
+          "timestamps": [
+            185158
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            185198
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            185198
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "t",
+          "check_count": 1,
+          "timestamps": [
+            185198
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "h",
+          "check_count": 1,
+          "timestamps": [
+            185238
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "e",
+          "check_count": 1,
+          "timestamps": [
+            185318
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            185338
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            185338
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "w",
+          "check_count": 1,
+          "timestamps": [
+            185338
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "h",
+          "check_count": 1,
+          "timestamps": [
+            185478
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "i",
+          "check_count": 1,
+          "timestamps": [
+            185718
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "t",
+          "check_count": 1,
+          "timestamps": [
+            185838
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "e",
+          "check_count": 1,
+          "timestamps": [
+            185898
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            185918
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            185918
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "s",
+          "check_count": 1,
+          "timestamps": [
+            185918
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "n",
+          "check_count": 1,
+          "timestamps": [
+            186018
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            186318
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "w",
+          "check_count": 1,
+          "timestamps": [
+            186419
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            186559
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            186559
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "f",
+          "check_count": 1,
+          "timestamps": [
+            186559
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "a",
+          "check_count": 1,
+          "timestamps": [
+            186799
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            186819
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            187059
+          ],
+          "sentence_end_ts": 187179,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-11",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "私",
+          "check_count": 1,
+          "timestamps": [
+            187219
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            188200
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "は",
+          "check_count": 1,
+          "timestamps": [
+            188640
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "本",
+          "check_count": 1,
+          "timestamps": [
+            189941
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "当",
+          "check_count": 1,
+          "timestamps": [
+            190701
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            191342
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            192322
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            192783
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "と",
+          "check_count": 1,
+          "timestamps": [
+            193163
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "お",
+          "check_count": 1,
+          "timestamps": [
+            193623
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            193783
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            194163
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "見",
+          "check_count": 1,
+          "timestamps": [
+            194824
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "え",
+          "check_count": 1,
+          "timestamps": [
+            195264
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            195604
+          ],
+          "sentence_end_ts": 199347,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-12",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "今",
+          "check_count": 1,
+          "timestamps": [
+            201188
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "で",
+          "check_count": 1,
+          "timestamps": [
+            202529
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            202949
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "覚",
+          "check_count": 1,
+          "timestamps": [
+            203249
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "え",
+          "check_count": 1,
+          "timestamps": [
+            203990
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            204690
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            205050
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "る",
+          "check_count": 1,
+          "timestamps": [
+            205391
+          ],
+          "sentence_end_ts": 206011,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-13",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            206411
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            206631
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "日",
+          "check_count": 1,
+          "timestamps": [
+            206772
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "見",
+          "check_count": 1,
+          "timestamps": [
+            207732
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            207992
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            208152
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            209113
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "白",
+          "check_count": 1,
+          "timestamps": [
+            209453
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "さ",
+          "check_count": 1,
+          "timestamps": [
+            210054
+          ],
+          "sentence_end_ts": 211635,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-14",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "初",
+          "check_count": 1,
+          "timestamps": [
+            212255
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "め",
+          "check_count": 1,
+          "timestamps": [
+            213676
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            214036
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "触",
+          "check_count": 1,
+          "timestamps": [
+            214336
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            214737
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            215077
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "唇",
+          "check_count": 1,
+          "timestamps": [
+            215377
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            217058
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "温",
+          "check_count": 1,
+          "timestamps": [
+            217899
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            218599
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "り",
+          "check_count": 1,
+          "timestamps": [
+            218919
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            219219
+          ],
+          "sentence_end_ts": 220060,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-15",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "忘",
+          "check_count": 1,
+          "timestamps": [
+            220220
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            221021
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            221401
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            221681
+          ],
+          "sentence_end_ts": 221701,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-16",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "I",
+          "check_count": 1,
+          "timestamps": [
+            221701
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            222562
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "s",
+          "check_count": 1,
+          "timestamps": [
+            222562
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "t",
+          "check_count": 1,
+          "timestamps": [
+            222862
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "i",
+          "check_count": 1,
+          "timestamps": [
+            223162
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            223202
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            223242
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            223282
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            223282
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            223322
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "v",
+          "check_count": 1,
+          "timestamps": [
+            223702
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "e",
+          "check_count": 1,
+          "timestamps": [
+            223862
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            223882
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "y",
+          "check_count": 1,
+          "timestamps": [
+            223882
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            223942
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "u",
+          "check_count": 1,
+          "timestamps": [
+            223962
+          ],
+          "sentence_end_ts": 226504,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-17",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "粉",
+          "check_count": 1,
+          "timestamps": [
+            251040
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            251420
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "が",
+          "check_count": 1,
+          "timestamps": [
+            252040
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "私",
+          "check_count": 1,
+          "timestamps": [
+            252421
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            253801
+          ],
+          "sentence_end_ts": 255182,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-18",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            256643
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            256843
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "つ",
+          "check_count": 1,
+          "timestamps": [
+            257003
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            257364
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "降",
+          "check_count": 1,
+          "timestamps": [
+            257884
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "り",
+          "check_count": 1,
+          "timestamps": [
+            258384
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            258765
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            259105
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "る",
+          "check_count": 1,
+          "timestamps": [
+            259505
+          ],
+          "sentence_end_ts": 260726,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-19",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "暖",
+          "check_count": 1,
+          "timestamps": [
+            262567
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            263628
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            263988
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            265009
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            265389
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            265889
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            266329
+          ],
+          "sentence_end_ts": 267470,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-20",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "優",
+          "check_count": 1,
+          "timestamps": [
+            267770
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            268491
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "さ",
+          "check_count": 1,
+          "timestamps": [
+            268671
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            269111
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "似",
+          "check_count": 1,
+          "timestamps": [
+            269471
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            270052
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            270552
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "る",
+          "check_count": 1,
+          "timestamps": [
+            270792
+          ],
+          "sentence_end_ts": 272814,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-21",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "楽",
+          "check_count": 1,
+          "timestamps": [
+            273694
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            274374
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "そ",
+          "check_count": 1,
+          "timestamps": [
+            274735
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "う",
+          "check_count": 1,
+          "timestamps": [
+            275075
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            275615
+          ],
+          "sentence_end_ts": 276276,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-22",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "話",
+          "check_count": 1,
+          "timestamps": [
+            276476
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "を",
+          "check_count": 1,
+          "timestamps": [
+            277516
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            277817
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            278577
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            279278
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            279678
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            279978
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            280338
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            280699
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            281339
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "が",
+          "check_count": 1,
+          "timestamps": [
+            281839
+          ],
+          "sentence_end_ts": 283180,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-23",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "I",
+          "check_count": 1,
+          "timestamps": [
+            283200
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "n",
+          "check_count": 1,
+          "timestamps": [
+            283240
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            283280
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "t",
+          "check_count": 1,
+          "timestamps": [
+            283280
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "h",
+          "check_count": 1,
+          "timestamps": [
+            283320
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "e",
+          "check_count": 1,
+          "timestamps": [
+            283400
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            283420
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "w",
+          "check_count": 1,
+          "timestamps": [
+            283420
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "h",
+          "check_count": 1,
+          "timestamps": [
+            283560
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "i",
+          "check_count": 1,
+          "timestamps": [
+            283640
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "t",
+          "check_count": 1,
+          "timestamps": [
+            283700
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "e",
+          "check_count": 1,
+          "timestamps": [
+            283760
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            283780
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "s",
+          "check_count": 1,
+          "timestamps": [
+            283780
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "n",
+          "check_count": 1,
+          "timestamps": [
+            283821
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            283961
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "w",
+          "check_count": 1,
+          "timestamps": [
+            284001
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            284141
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "f",
+          "check_count": 1,
+          "timestamps": [
+            284141
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "a",
+          "check_count": 1,
+          "timestamps": [
+            284781
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            284801
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            284841
+          ],
+          "sentence_end_ts": 284881,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-24",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "私",
+          "check_count": 1,
+          "timestamps": [
+            284881
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            285902
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "は",
+          "check_count": 1,
+          "timestamps": [
+            286362
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "心",
+          "check_count": 1,
+          "timestamps": [
+            287663
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "か",
+          "check_count": 1,
+          "timestamps": [
+            288664
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "ら",
+          "check_count": 1,
+          "timestamps": [
+            289084
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "恋",
+          "check_count": 1,
+          "timestamps": [
+            290425
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "し",
+          "check_count": 1,
+          "timestamps": [
+            291125
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            291505
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "思",
+          "check_count": 1,
+          "timestamps": [
+            291806
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "え",
+          "check_count": 1,
+          "timestamps": [
+            292886
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            293267
+          ],
+          "sentence_end_ts": 297649,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-25",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "今",
+          "check_count": 1,
+          "timestamps": [
+            298790
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "で",
+          "check_count": 1,
+          "timestamps": [
+            300211
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            300591
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "夢",
+          "check_count": 1,
+          "timestamps": [
+            300871
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "を",
+          "check_count": 1,
+          "timestamps": [
+            301632
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "見",
+          "check_count": 1,
+          "timestamps": [
+            302192
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "る",
+          "check_count": 1,
+          "timestamps": [
+            302713
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            303013
+          ],
+          "sentence_end_ts": 303753,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-26",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            304073
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            304294
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "日",
+          "check_count": 1,
+          "timestamps": [
+            304434
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "見",
+          "check_count": 1,
+          "timestamps": [
+            305374
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            305654
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "白",
+          "check_count": 1,
+          "timestamps": [
+            305814
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            306875
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "世",
+          "check_count": 1,
+          "timestamps": [
+            307095
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "界",
+          "check_count": 1,
+          "timestamps": [
+            307856
+          ],
+          "sentence_end_ts": 309217,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-27",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            309977
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            311018
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "時",
+          "check_count": 1,
+          "timestamps": [
+            311338
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "触",
+          "check_count": 1,
+          "timestamps": [
+            312038
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            312459
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            312779
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "指",
+          "check_count": 1,
+          "timestamps": [
+            313079
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "先",
+          "check_count": 1,
+          "timestamps": [
+            313820
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            314780
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "冷",
+          "check_count": 1,
+          "timestamps": [
+            315581
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            316281
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "さ",
+          "check_count": 1,
+          "timestamps": [
+            316601
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            316922
+          ],
+          "sentence_end_ts": 317722,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-28",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "忘",
+          "check_count": 1,
+          "timestamps": [
+            317922
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            318743
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            319083
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            319383
+          ],
+          "sentence_end_ts": 319403,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-29",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "I",
+          "check_count": 1,
+          "timestamps": [
+            319403
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            320324
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "s",
+          "check_count": 1,
+          "timestamps": [
+            320324
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "t",
+          "check_count": 1,
+          "timestamps": [
+            320524
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "i",
+          "check_count": 1,
+          "timestamps": [
+            320844
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            320884
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            320924
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            320964
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            321204
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            321244
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "v",
+          "check_count": 1,
+          "timestamps": [
+            321464
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "e",
+          "check_count": 1,
+          "timestamps": [
+            321825
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            321845
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "y",
+          "check_count": 1,
+          "timestamps": [
+            321845
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            321905
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "u",
+          "check_count": 1,
+          "timestamps": [
+            321925
+          ],
+          "sentence_end_ts": 322605,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-30",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "今",
+          "check_count": 1,
+          "timestamps": [
+            322605
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "で",
+          "check_count": 1,
+          "timestamps": [
+            322665
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            322945
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "覚",
+          "check_count": 1,
+          "timestamps": [
+            323246
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "え",
+          "check_count": 1,
+          "timestamps": [
+            323986
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            324666
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            325047
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "る",
+          "check_count": 1,
+          "timestamps": [
+            325387
+          ],
+          "sentence_end_ts": 326027,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-31",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            326408
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            326628
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "日",
+          "check_count": 1,
+          "timestamps": [
+            326768
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "見",
+          "check_count": 1,
+          "timestamps": [
+            327728
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            328009
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            328149
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            329129
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "白",
+          "check_count": 1,
+          "timestamps": [
+            329470
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "さ",
+          "check_count": 1,
+          "timestamps": [
+            330070
+          ],
+          "sentence_end_ts": 331331,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-32",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "初",
+          "check_count": 1,
+          "timestamps": [
+            332271
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "め",
+          "check_count": 1,
+          "timestamps": [
+            333712
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "て",
+          "check_count": 1,
+          "timestamps": [
+            334092
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "触",
+          "check_count": 1,
+          "timestamps": [
+            334373
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            334753
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            335093
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "唇",
+          "check_count": 1,
+          "timestamps": [
+            335413
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            337094
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "温",
+          "check_count": 1,
+          "timestamps": [
+            337895
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            338595
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "り",
+          "check_count": 1,
+          "timestamps": [
+            338956
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            339236
+          ],
+          "sentence_end_ts": 339956,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-33",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "忘",
+          "check_count": 1,
+          "timestamps": [
+            340316
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            341077
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            341397
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            341737
+          ],
+          "sentence_end_ts": 342058,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-34",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "粉",
+          "check_count": 1,
+          "timestamps": [
+            342078
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            342738
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "の",
+          "check_count": 1,
+          "timestamps": [
+            343418
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "よ",
+          "check_count": 1,
+          "timestamps": [
+            344559
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "う",
+          "check_count": 1,
+          "timestamps": [
+            344899
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            345880
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "あ",
+          "check_count": 1,
+          "timestamps": [
+            346240
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            346660
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            347001
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "は",
+          "check_count": 1,
+          "timestamps": [
+            347361
+          ],
+          "sentence_end_ts": 347761,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-35",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "汚",
+          "check_count": 1,
+          "timestamps": [
+            348161
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "れ",
+          "check_count": 1,
+          "timestamps": [
+            348642
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            349082
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "く",
+          "check_count": 1,
+          "timestamps": [
+            349762
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "綺",
+          "check_count": 1,
+          "timestamps": [
+            350383
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "麗",
+          "check_count": 1,
+          "timestamps": [
+            351484
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "で",
+          "check_count": 1,
+          "timestamps": [
+            351724
+          ],
+          "sentence_end_ts": 352784,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-36",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "私",
+          "check_count": 1,
+          "timestamps": [
+            354325
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "も",
+          "check_count": 1,
+          "timestamps": [
+            356066
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "な",
+          "check_count": 1,
+          "timestamps": [
+            356667
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "り",
+          "check_count": 1,
+          "timestamps": [
+            357447
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "た",
+          "check_count": 1,
+          "timestamps": [
+            357988
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "い",
+          "check_count": 1,
+          "timestamps": [
+            358488
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "と",
+          "check_count": 1,
+          "timestamps": [
+            358768
+          ],
+          "sentence_end_ts": 359529,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-37",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "雪",
+          "check_count": 1,
+          "timestamps": [
+            359829
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "に",
+          "check_count": 1,
+          "timestamps": [
+            360229
+          ],
+          "sentence_end_ts": 361390,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-38",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "願",
+          "check_count": 1,
+          "timestamps": [
+            361390
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "う",
+          "check_count": 1,
+          "timestamps": [
+            363031
+          ],
+          "sentence_end_ts": 364252,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    },
+    {
+      "id": "s02-sug-nextfire-auto-line-39",
+      "singer_id": "s1",
+      "characters": [
+        {
+          "char": "I",
+          "check_count": 1,
+          "timestamps": [
+            364392
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            364952
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "s",
+          "check_count": 1,
+          "timestamps": [
+            364952
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "t",
+          "check_count": 1,
+          "timestamps": [
+            365192
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "i",
+          "check_count": 1,
+          "timestamps": [
+            365572
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            366033
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            366073
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            366113
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "l",
+          "check_count": 1,
+          "timestamps": [
+            366113
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            367013
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "v",
+          "check_count": 1,
+          "timestamps": [
+            395792
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "e",
+          "check_count": 1,
+          "timestamps": [
+            421968
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": " ",
+          "check_count": 1,
+          "timestamps": [
+            425010
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "y",
+          "check_count": 1,
+          "timestamps": [
+            425110
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "o",
+          "check_count": 1,
+          "timestamps": [
+            430754
+          ],
+          "sentence_end_ts": null,
+          "linked_to_next": false,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        },
+        {
+          "char": "u",
+          "check_count": 1,
+          "timestamps": [
+            431715
+          ],
+          "sentence_end_ts": 433336,
+          "linked_to_next": false,
+          "is_line_end": true,
+          "is_sentence_end": true,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false
+        }
+      ]
+    }
+  ]
+}

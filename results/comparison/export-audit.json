@@ -1,0 +1,301 @@
+{
+  "independent_positive_event_origins_and_text": "pysubs2 1.8.1",
+  "negative_time_probe": {
+    "renderer": "FFmpeg libass",
+    "source": "[Script Info]\nScriptType: v4.00+\nPlayResX: 320\nPlayResY: 180\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Default,DejaVu Sans,48,&H000000FF,&H00FF0000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\nDialogue: 0,-1:59:59.96,0:00:03.22,Default,,0,0,0,,{\\k20}{\\k100}A{\\k100}B\n",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-f",
+      "lavfi",
+      "-i",
+      "color=c=black:s=320x180:r=5:d=0.4",
+      "-vf",
+      "ass=configs/ass-time-probe.ass",
+      "-frames:v",
+      "2",
+      "-pix_fmt",
+      "rgb24",
+      "-f",
+      "rawvideo",
+      "-"
+    ],
+    "header": "-1:59:59.96",
+    "interpreted_seconds": -0.04,
+    "empty_lead_karaoke_centiseconds": 20,
+    "frames": [
+      {
+        "seconds": 0.0,
+        "red_pixels": 0,
+        "blue_pixels": 682
+      },
+      {
+        "seconds": 0.2,
+        "red_pixels": 292,
+        "blue_pixels": 386
+      }
+    ],
+    "meaning": "First syllable activates at 0.16 seconds; negative hours use arithmetic component parsing."
+  },
+  "records": [
+    {
+      "file": "results/comparison/fa-kara/s01-bs-manual.json",
+      "events": 39,
+      "ass_sha256": "cba116c39cfd8695e84ecc7b6eecd11217d48c8d093b9d6e09f911c52d65186f",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s02-bs-manual.json",
+      "events": 40,
+      "ass_sha256": "96a60264bb9bf9af904c7c2808025b36bf4b5fef5c43519a2072249b3acae595",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s03-bs-manual.json",
+      "events": 47,
+      "ass_sha256": "d4aa5065ff117aaeb997ef23273fbd7a1127904bab6e8f7cc245a5d8cfff5601",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s04-bs-manual.json",
+      "events": 40,
+      "ass_sha256": "8903c81d9b0481e418c8fa1c5a1c6a995a1d8db63e362227f1e594b56d1a5198",
+      "negative_headers": [
+        {
+          "line": 0,
+          "encoded": "-1:59:59.96",
+          "libass_arithmetic_ms": -40
+        }
+      ],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s05-bs-manual.json",
+      "events": 42,
+      "ass_sha256": "0be6d67cb5c01f2f253226ed03c092d175153055c530c610c8dccc1bfe211ae7",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s06-bs-manual.json",
+      "events": 47,
+      "ass_sha256": "31fd2f7cc02006c7f7a2ed0181ee61b80f65cfb55b63de9b78c5907dc6cebd30",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s07-bs-manual.json",
+      "events": 62,
+      "ass_sha256": "0114b57588c7dadc6b3c0d5c0f1d4776c1b4d9d60ceed2afa7e7f2cb8f4b6b1d",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s08-bs-manual.json",
+      "events": 23,
+      "ass_sha256": "0e82f2f7ce74e7d821777aed48c2aa285e8d8fc6ef38899e3c8525ef6ff28da1",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s09-bs-manual.json",
+      "events": 48,
+      "ass_sha256": "2d323d8009fe1b72f5fe7f6d67e6817a0812a5fc955ed41f2b3ea1e9df0ea13c",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s10-bs-manual.json",
+      "events": 49,
+      "ass_sha256": "4fad60d81dba285f544e43b326fde1a8d3a2ea5d0a2b459fa5b7af7f76829431",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s12-bs-manual.json",
+      "events": 41,
+      "ass_sha256": "759af824417d1e5e4b35880ac897c23e96fc0499fea8f997f7fc32373ecd9099",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/fa-kara/s15-bs-manual.json",
+      "events": 44,
+      "ass_sha256": "0d47fadf13ead4b4b948eef7a946929eb545cb6619748d7f319d42fa5dc4a20d",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s01-bs-manual.json",
+      "events": 39,
+      "ass_sha256": "2c27decaf7ba980e8db814ccb62457b73d44f45b900fefa442824c587df7e9ce",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s01-yohane-manual.json",
+      "events": 39,
+      "ass_sha256": "584804769a004b70187c18585255f422eb59836080e6c914ef9dc25722d593c4",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s02-bs-manual.json",
+      "events": 40,
+      "ass_sha256": "3b03d4c96ca5aff38362067ff9e820a8e10fa0da0af61d87a96ef2f0d2f13ab9",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s02-yohane-manual.json",
+      "events": 40,
+      "ass_sha256": "9b37282027d3d45013b1161a3e789ef2e1ce4513705ea860670bab8fd7acf11d",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s03-bs-manual.json",
+      "events": 47,
+      "ass_sha256": "ed7462408d4d10922da51664860532ed8ac91857e9e9acf6ee0141b97f97fc9b",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s03-yohane-manual.json",
+      "events": 47,
+      "ass_sha256": "c41957bd8d1ba3219ef530b87b3081b6b43dfe78628d357f7292c135fc90b750",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s04-bs-manual.json",
+      "events": 40,
+      "ass_sha256": "b25e8ef9f72a2a5c194c18585b0cf1200e589f65de5e8a651f174655966b4b4c",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s04-yohane-manual.json",
+      "events": 40,
+      "ass_sha256": "a0af0ef19cc4922c63511f2737384c8b19ea97edcab09586f50c8995614c3a66",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s05-bs-manual.json",
+      "events": 42,
+      "ass_sha256": "537560c1bdd291e2f479db5946ccd28dc572fd645b9532181791fc45907b169b",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s05-yohane-manual.json",
+      "events": 42,
+      "ass_sha256": "778d884c73b29e52fd2db07b84cfd31bd23d904505d11b4af6d4682274a278a9",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s06-bs-manual.json",
+      "events": 47,
+      "ass_sha256": "6e02c53040d6cf27e74c0c5083bc3987ba62ad161619fc767faacf116f2d73fb",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s06-yohane-manual.json",
+      "events": 47,
+      "ass_sha256": "016f0f4da76b71cbb28c9df37dcd763972b5132f6cb8428dd9478ffb2a50ee2c",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s07-bs-manual.json",
+      "events": 62,
+      "ass_sha256": "e7e601c773ff10acfb6355411c3f82668b48b982ddf9ef883b3b8493d0adfd5b",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s07-yohane-manual.json",
+      "events": 62,
+      "ass_sha256": "6b03f4a750ebe1c6e363ed26cc9ea570a97a899c14e29def12707d6fe423124d",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s08-bs-manual.json",
+      "events": 23,
+      "ass_sha256": "778f7a9c06a0c4503e98de224bb57f1f7287005b0b846a6988772f7285bf8d12",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s08-yohane-manual.json",
+      "events": 23,
+      "ass_sha256": "f308db634e28780dad1e87b83c47d3d0e6c442e4b1632018d468b8d810a07305",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s09-bs-manual.json",
+      "events": 48,
+      "ass_sha256": "ed83a5a14840fcc15456fae07f20ce4ebfedeb2e9bb2dfea0b7ec914b0723f3a",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s09-yohane-manual.json",
+      "events": 48,
+      "ass_sha256": "299cee6a5102e5c0a90de87f78d4bf90d1c3da30a42a18b834de6ff5eaf6fffe",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s10-bs-manual.json",
+      "events": 49,
+      "ass_sha256": "06f36be9ad23bdcc9fccc88aff6b47decb90187c0dca38a6f11d2e31d3412619",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s10-yohane-manual.json",
+      "events": 49,
+      "ass_sha256": "78260d0be7ab6e7ca551e4a5b776edd5a82596dab0f983547a0972395b7009c2",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s12-bs-manual.json",
+      "events": 41,
+      "ass_sha256": "c1e8c05b18f0297e76555590ae71f9ce4af575fc5a4dba39c73bfb19cd46606a",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s12-yohane-manual.json",
+      "events": 41,
+      "ass_sha256": "72dc346b6e99c2bee35b76fa21f5d50ec8776561a1e5e6e57f7a80f1c11ed861",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s15-bs-manual.json",
+      "events": 44,
+      "ass_sha256": "57c651ac85787933667c2ba5b139314ee2b7733997c49ff79a90a3753b277baf",
+      "negative_headers": [],
+      "negative_durations": []
+    },
+    {
+      "file": "results/comparison/yohane/s15-yohane-manual.json",
+      "events": 44,
+      "ass_sha256": "8ebe9fc1cda19fa8aa5813c4bef511325cdc9bb29d5b225a32c8d9604debcf09",
+      "negative_headers": [],
+      "negative_durations": []
+    }
+  ]
+}

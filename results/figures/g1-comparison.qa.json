@@ -1,0 +1,17 @@
+{
+  "visual_review": "Revised compact chart inspected: Chinese panel titles render correctly; top/bottom explanatory text and panel letters removed. All eight routes, axes, legends and six best-value stars remain visible; no overlaps or clipping.",
+  "source_values_verified": 48,
+  "best_markers_verified": 6,
+  "readme_changed_regions": 3,
+  "source_preflight": {
+    "ready": true,
+    "strict": false,
+    "counts": {
+      "PASS": 20,
+      "WARN": 1,
+      "FAIL": 0
+    }
+  },
+  "pdf_minimum_font_pt": 6.5,
+  "palette": "Paired dark/light blue; order and legends distinguish series in grayscale; no red-green dependency."
+}

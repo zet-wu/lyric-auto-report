@@ -1,0 +1,167 @@
+{
+  "model": "milikara",
+  "device": "cpu",
+  "identity": {
+    "model": "milikara",
+    "device": "cpu",
+    "weight_sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+    "audio_separator": "0.30.2",
+    "config": {
+      "model_data": {
+        "audio": {
+          "chunk_size": 352800,
+          "dim_f": 1024,
+          "dim_t": 801,
+          "hop_length": 441,
+          "n_fft": 2048,
+          "num_channels": 2,
+          "sample_rate": 44100,
+          "min_mean_abs": 0.001
+        },
+        "model": {
+          "dim": 384,
+          "depth": 12,
+          "stereo": true,
+          "num_stems": 1,
+          "time_transformer_depth": 1,
+          "freq_transformer_depth": 1,
+          "num_bands": 60,
+          "dim_head": 64,
+          "heads": 8,
+          "attn_dropout": 0.1,
+          "ff_dropout": 0.1,
+          "flash_attn": true,
+          "dim_freqs_in": 1025,
+          "sample_rate": 44100,
+          "stft_n_fft": 2048,
+          "stft_hop_length": 441,
+          "stft_win_length": 2048,
+          "stft_normalized": false,
+          "mask_estimator_depth": 2,
+          "multi_stft_resolution_loss_weight": 1.0,
+          "multi_stft_resolutions_window_sizes": [
+            4096,
+            2048,
+            1024,
+            512,
+            256
+          ],
+          "multi_stft_hop_size": 147,
+          "multi_stft_normalized": false
+        },
+        "training": {
+          "batch_size": 9,
+          "gradient_accumulation_steps": 8,
+          "grad_clip": 0,
+          "instruments": [
+            "Vocals",
+            "Instrumental"
+          ],
+          "lr": 4e-05,
+          "patience": 2,
+          "reduce_factor": 0.95,
+          "target_instrument": "Vocals",
+          "num_epochs": 1000,
+          "num_steps": 1000,
+          "augmentation": false,
+          "augmentation_type": "simple1",
+          "use_mp3_compress": false,
+          "augmentation_mix": true,
+          "augmentation_loudness": true,
+          "augmentation_loudness_type": 1,
+          "augmentation_loudness_min": 0.5,
+          "augmentation_loudness_max": 1.5,
+          "q": 0.95,
+          "coarse_loss_clip": true,
+          "ema_momentum": 0.999,
+          "optimizer": "adam",
+          "other_fix": false,
+          "use_amp": true
+        },
+        "inference": {
+          "batch_size": 1,
+          "dim_t": 801,
+          "num_overlap": 4
+        },
+        "is_roformer": true
+      },
+      "segment_size": 256,
+      "overlap": 8,
+      "batch_size": 1,
+      "normalization_threshold": 0.9,
+      "amplification_threshold": 0.0,
+      "use_autocast": null,
+      "override_model_segment_size": false
+    },
+    "parameters": 251869636,
+    "state_sha256": "a3b33a6c10356d0a71e7e5cb8c75f776f020e91524cebfcd7727ddb2cc831007"
+  },
+  "inputs": [
+    {
+      "id": "rainbow-30-60",
+      "audio": "datasets/audio/Rainbow Flower.m4a",
+      "sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+      "start_seconds": 30,
+      "end_seconds": 60
+    }
+  ],
+  "records": [
+    {
+      "song": "rainbow-30-60",
+      "repeat": 1,
+      "seconds": 80.62561298906803,
+      "duration": 30.0,
+      "realtime_factor": 2.687520432968934,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2991001600,
+      "board_energy_joules": null,
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow-30-60",
+      "repeat": 2,
+      "seconds": 83.67184518836439,
+      "duration": 30.0,
+      "realtime_factor": 2.789061506278813,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2991124480,
+      "board_energy_joules": null,
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow-30-60",
+      "repeat": 3,
+      "seconds": 83.35236492939293,
+      "duration": 30.0,
+      "realtime_factor": 2.7784121643130977,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2991288320,
+      "board_energy_joules": null,
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    }
+  ],
+  "torch": "2.14.0+cu130",
+  "gpu": null,
+  "threads": 8,
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           43 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  128\nOn-line CPU(s) list:                     0-127\nVendor ID:                               AuthenticAMD\nModel name:                              AMD EPYC 7502 32-Core Processor\nCPU family:                              23\nModel:                                   49\nThread(s) per core:                      2\nCore(s) per socket:                      32\nSocket(s):                               2\nStepping:                                0\nFrequency boost:                         enabled\nCPU(s) scaling MHz:                      63%\nCPU max MHz:                             2500.0000\nCPU min MHz:                             1500.0000\nBogoMIPS:                                4990.69\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sev sev_es ibpb_exit_to_user\nVirtualization:                          AMD-V\nL1d cache:                               2 MiB (64 instances)\nL1i cache:                               2 MiB (64 instances)\nL2 cache:                                32 MiB (64 instances)\nL3 cache:                                256 MiB (16 instances)\nNUMA node(s):                            8\nNUMA node0 CPU(s):                       0-7,64-71\nNUMA node1 CPU(s):                       8-15,72-79\nNUMA node2 CPU(s):                       16-23,80-87\nNUMA node3 CPU(s):                       24-31,88-95\nNUMA node4 CPU(s):                       32-39,96-103\nNUMA node5 CPU(s):                       40-47,104-111\nNUMA node6 CPU(s):                       48-55,112-119\nNUMA node7 CPU(s):                       56-63,120-127\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT enabled with STIBP protection\nVulnerability Spec rstack overflow:      Mitigation; safe RET\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+  "platform": "Linux-6.1.170-redroid-x86_64-with-glibc2.36",
+  "scope": "Serial warm inference including transfer and CPU return; decode, load, encoding and disk output excluded. Three repeats per song; GPU board energy includes idle consumption."
+}

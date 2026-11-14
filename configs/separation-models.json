@@ -78,5 +78,53 @@
     "path": ".models/separation/windowed/model.ckpt",
     "bytes": 913837877,
     "sha256": "7afe79947745faf8cddd650afc822aa7c387882047e65fe65f136f539365a656"
+  },
+  {
+    "model": "sug",
+    "kind": "weights",
+    "path": ".models/comparison/sug/UVR-MDX-NET-Inst_HQ_3.onnx",
+    "url": "https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/UVR-MDX-NET-Inst_HQ_3.onnx",
+    "bytes": 66759214,
+    "sha256": "317554b07fe1ea5279a77f2b1520a41ea4b93432560c4ffd08792c30fddf9adc"
+  },
+  {
+    "model": "yohane",
+    "kind": "weights",
+    "path": ".models/torch/hub/torchaudio/models/hdemucs_high_trained.pt",
+    "url": "https://download.pytorch.org/torchaudio/models/hdemucs_high_trained.pt",
+    "bytes": 334697255,
+    "sha256": "a004b2790d73ffeaa535db458a1a79b539dfdbafbccc31f275d07e632ebd7816"
+  },
+  {
+    "model": "milikara",
+    "kind": "weights",
+    "path": ".models/milikara-native/separation/model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+    "url": "https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+    "bytes": 1007816988,
+    "sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139"
+  },
+  {
+    "model": "milikara",
+    "kind": "config",
+    "path": ".models/milikara-native/separation/model_mel_band_roformer_ep_3005_sdr_11.4360.yaml",
+    "url": "https://raw.githubusercontent.com/TRvlvr/application_data/3826b05b570dbd4fbedbc807758803b35348ba1b/mdx_model_data/mdx_c_configs/model_mel_band_roformer_ep_3005_sdr_11.4360.yaml",
+    "bytes": 1794,
+    "sha256": "d9b083b48dfdd0bd10f8a29a9c18777b0419496d938827f48a1db31bf0193aa3"
+  },
+  {
+    "model": "bs",
+    "kind": "weights",
+    "path": ".deps/timing/models/bs-karaoke/bs_roformer_karaoke_frazer_becruily.ckpt",
+    "url": "https://huggingface.co/becruily/bs-roformer-karaoke/resolve/f7849ae934209184dc288d1018cd8a76a7fc8b3c/bs_roformer_karaoke_frazer_becruily.ckpt",
+    "sha256": "eb90ee24c1154d83fbcfd27e96182f19e061557cc6e4746953125e08c29389f9",
+    "bytes": 204436907
+  },
+  {
+    "model": "bs",
+    "kind": "config",
+    "path": ".deps/timing/models/bs-karaoke/config_karaoke_frazer_becruily.yaml",
+    "url": "https://huggingface.co/becruily/bs-roformer-karaoke/resolve/f7849ae934209184dc288d1018cd8a76a7fc8b3c/config_karaoke_frazer_becruily.yaml",
+    "sha256": "1d3b58b473025183d0d3c91e7a444cb5f1418d9f34e8f46b8d2fb10d2cc8ab34",
+    "bytes": 1903
   }
 ]

@@ -1,0 +1,222 @@
+{
+  "model": "milikara",
+  "identity": {
+    "model": "milikara",
+    "device": "cuda",
+    "weight_sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+    "audio_separator": "0.30.2",
+    "config": {
+      "model_data": {
+        "audio": {
+          "chunk_size": 352800,
+          "dim_f": 1024,
+          "dim_t": 801,
+          "hop_length": 441,
+          "n_fft": 2048,
+          "num_channels": 2,
+          "sample_rate": 44100,
+          "min_mean_abs": 0.001
+        },
+        "model": {
+          "dim": 384,
+          "depth": 12,
+          "stereo": true,
+          "num_stems": 1,
+          "time_transformer_depth": 1,
+          "freq_transformer_depth": 1,
+          "num_bands": 60,
+          "dim_head": 64,
+          "heads": 8,
+          "attn_dropout": 0.1,
+          "ff_dropout": 0.1,
+          "flash_attn": true,
+          "dim_freqs_in": 1025,
+          "sample_rate": 44100,
+          "stft_n_fft": 2048,
+          "stft_hop_length": 441,
+          "stft_win_length": 2048,
+          "stft_normalized": false,
+          "mask_estimator_depth": 2,
+          "multi_stft_resolution_loss_weight": 1.0,
+          "multi_stft_resolutions_window_sizes": [
+            4096,
+            2048,
+            1024,
+            512,
+            256
+          ],
+          "multi_stft_hop_size": 147,
+          "multi_stft_normalized": false
+        },
+        "training": {
+          "batch_size": 9,
+          "gradient_accumulation_steps": 8,
+          "grad_clip": 0,
+          "instruments": [
+            "Vocals",
+            "Instrumental"
+          ],
+          "lr": 4e-05,
+          "patience": 2,
+          "reduce_factor": 0.95,
+          "target_instrument": "Vocals",
+          "num_epochs": 1000,
+          "num_steps": 1000,
+          "augmentation": false,
+          "augmentation_type": "simple1",
+          "use_mp3_compress": false,
+          "augmentation_mix": true,
+          "augmentation_loudness": true,
+          "augmentation_loudness_type": 1,
+          "augmentation_loudness_min": 0.5,
+          "augmentation_loudness_max": 1.5,
+          "q": 0.95,
+          "coarse_loss_clip": true,
+          "ema_momentum": 0.999,
+          "optimizer": "adam",
+          "other_fix": false,
+          "use_amp": true
+        },
+        "inference": {
+          "batch_size": 1,
+          "dim_t": 801,
+          "num_overlap": 4
+        },
+        "is_roformer": true
+      },
+      "segment_size": 256,
+      "overlap": 8,
+      "batch_size": 1,
+      "normalization_threshold": 0.9,
+      "amplification_threshold": 0.0,
+      "use_autocast": null,
+      "override_model_segment_size": false
+    },
+    "parameters": 251869636,
+    "state_sha256": "a3b33a6c10356d0a71e7e5cb8c75f776f020e91524cebfcd7727ddb2cc831007"
+  },
+  "native_equivalence": {
+    "input": "s01 first 30 seconds",
+    "max_absolute_difference": 4.947185516357422e-05,
+    "tolerance": 6.103515625e-05
+  },
+  "records": [
+    {
+      "song": "s01",
+      "source_sha256": "cf2f998f273b46e4d197c70cb935f8f36686c5bc5064dd3d3ff1fe67a2ae7e24",
+      "path": ".cache/comparison/stems/milikara/s01.wav",
+      "sha256": "c57014f06030e513774cf31e6f013609e2b37760e0e2a08f710e004b72f91e96",
+      "frames": 10488832,
+      "rate": 48000,
+      "origin": "comparison"
+    },
+    {
+      "song": "s15",
+      "source_sha256": "4e1eb928703416af75203404bbd2c770fc99963144d3a4ce7bd6bcef97751ef9",
+      "path": ".cache/comparison/stems/milikara/s15.wav",
+      "sha256": "3c90fb9b29ac9d0b33f067254e066e78a75dd5a66907829c5858950fac420786",
+      "frames": 13094912,
+      "rate": 48000,
+      "origin": "comparison"
+    },
+    {
+      "song": "s02",
+      "source_sha256": "678980e3cad36970579c48cfe7b79fd798e309e50383363506657150b31c5978",
+      "path": ".cache/comparison/stems/milikara/s02.wav",
+      "sha256": "f1b019a1e0b3f935cdc1b87b728cba10e3f588e76788e57874c770346f07bcca",
+      "frames": 21538816,
+      "rate": 48000,
+      "origin": "comparison"
+    },
+    {
+      "song": "s03",
+      "source_sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+      "path": ".cache/comparison/stems/milikara/s03.wav",
+      "sha256": "c58871ec216c36b4abaf212bcae2b559a93d34a56021db08483c6fadcff28328",
+      "frames": 11444224,
+      "rate": 48000,
+      "origin": "comparison"
+    },
+    {
+      "song": "s04",
+      "source_sha256": "982648c01ecbdf1bc13587f678c93836da6642823d30f7d3823c4ece192f09a0",
+      "path": ".cache/comparison/stems/milikara/s04.wav",
+      "sha256": "8e1f7c43306b65b5995e5ab3e6b1dc1e29e9b1e40ba8b556d2cae11765cc90e4",
+      "frames": 10354688,
+      "rate": 48000,
+      "origin": "comparison"
+    },
+    {
+      "song": "s05",
+      "source_sha256": "a4612ccb881a83e8407a9a30d44dd0dc3245b36b10e9078d68065bce3ec5ce6a",
+      "path": ".cache/comparison/stems/milikara/s05.wav",
+      "sha256": "9151506de7cbb4ba44fa36aecb7385e2a6b03a5d7dc97df2f25f109db5547b9c",
+      "frames": 11247616,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s06",
+      "source_sha256": "62e9efbcff72c3c54d62818773dd4053908bb3e25db4ba904705a9c7075b4e30",
+      "path": ".cache/comparison/stems/milikara/s06.wav",
+      "sha256": "355c0eb81594b7c27238f0f24d4454b49c2ce7e72b2e5fe859cb5bc8128524f9",
+      "frames": 10903552,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s07",
+      "source_sha256": "107e5e3b04f348a6494706198046fc770c37f0fc683cfcda42e7a78a47fe9f89",
+      "path": ".cache/comparison/stems/milikara/s07.wav",
+      "sha256": "09c31fd3a30c1d2a6f47e4d96829b5c95f0e314e9522fa491d2858aea972a4b0",
+      "frames": 12188672,
+      "rate": 48000,
+      "origin": "comparison"
+    },
+    {
+      "song": "s08",
+      "source_sha256": "92d32d4fda0dd4a91b8a303f8d1451f4d5b94d8836d2b5dbdf8f0e5c09411664",
+      "path": ".cache/comparison/stems/milikara/s08.wav",
+      "sha256": "617ccd90076c31a4ac41907193789502d5f68373ae7977af9ed77f4728682c31",
+      "frames": 11749376,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s09",
+      "source_sha256": "2db068ce0af9598ad2b404e58a23fd672528dd9e70c0239c8a918ced5a9d42d1",
+      "path": ".cache/comparison/stems/milikara/s09.wav",
+      "sha256": "518fe25da156bf4ecae0460eb1adbf1be095decb117dd391bccfc181a674c70a",
+      "frames": 10928128,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s10",
+      "source_sha256": "85a0af63d03771e5dfaadcecfe7092bc5d4d7563de316cf7a846a880e348f042",
+      "path": ".cache/comparison/stems/milikara/s10.wav",
+      "sha256": "07abe8eea94b95305febd4c76d89c98f9aeacf7927ed4ed4664fddf54296f57a",
+      "frames": 11552768,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s12",
+      "source_sha256": "d58af67fde39b00d5c664e83b317b1dfbd5c10cc473cee2cd84130f18605cb2a",
+      "path": ".cache/comparison/stems/milikara/s12.wav",
+      "sha256": "0c1cde7e1157a08da5778acc32c9c0353dab854832b0da4ddeec00157696f7b2",
+      "frames": 15764480,
+      "rate": 48000,
+      "origin": "comparison"
+    },
+    {
+      "song": "s13",
+      "source_sha256": "71664af845b58c7a4363071bc7310abafdd23cdf88231f6f30f0d67f0a63b76e",
+      "path": ".cache/separator-adapter/milikara/s13.wav",
+      "sha256": "969e20cb95fc34ebc8157b2a39ce0125704fb680d0f28c5ff03a7fbeb8cc501c",
+      "frames": 8427520,
+      "rate": 48000,
+      "origin": "native GPU inference"
+    }
+  ]
+}

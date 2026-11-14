@@ -1,0 +1,140 @@
+{
+  "model": "yohane",
+  "identity": {
+    "model": "yohane",
+    "device": "cuda",
+    "config": {
+      "bundle": "HDEMUCS_HIGH_MUSDB_PLUS",
+      "segment": 10.0,
+      "overlap": 0.1,
+      "training": false
+    },
+    "weight_sha256": "a004b2790d73ffeaa535db458a1a79b539dfdbafbccc31f275d07e632ebd7816",
+    "parameters": 83639368,
+    "state_sha256": "4c018cc185b5d089f23debf5b329e28b4f35008a32aad4a25e4f35b8eaf52d96"
+  },
+  "native_equivalence": {
+    "input": "s01 first 30 seconds",
+    "max_absolute_difference": 0.0,
+    "tolerance": 1e-05
+  },
+  "records": [
+    {
+      "song": "s01",
+      "source_sha256": "cf2f998f273b46e4d197c70cb935f8f36686c5bc5064dd3d3ff1fe67a2ae7e24",
+      "path": ".cache/comparison/stems/yohane/s01.wav",
+      "sha256": "c56d4218728f91b3ce539a94540cb305a731fd103f015491751304baa780c529",
+      "frames": 9636615,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s15",
+      "source_sha256": "4e1eb928703416af75203404bbd2c770fc99963144d3a4ce7bd6bcef97751ef9",
+      "path": ".cache/comparison/stems/yohane/s15.wav",
+      "sha256": "e778bbc7ff40781ce66a13d4177274ee16a9c4e39b94953fb96c537e55518445",
+      "frames": 12030951,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s02",
+      "source_sha256": "678980e3cad36970579c48cfe7b79fd798e309e50383363506657150b31c5978",
+      "path": ".cache/comparison/stems/yohane/s02.wav",
+      "sha256": "538dcecafe1b5afa772767a0abe6017b50cacf17eb9c925ec41d6f2ec6c07971",
+      "frames": 19788788,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s03",
+      "source_sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+      "path": ".cache/comparison/stems/yohane/s03.wav",
+      "sha256": "064e1ba6168eeb04c35686aa4e7f32e05ebbb91cf44a6dda04718cc1f838317c",
+      "frames": 10514381,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s04",
+      "source_sha256": "982648c01ecbdf1bc13587f678c93836da6642823d30f7d3823c4ece192f09a0",
+      "path": ".cache/comparison/stems/yohane/s04.wav",
+      "sha256": "a2f5e8dbd5842b48c226e89a721f64e72aa19023462e0f98dfe5e96db536f7d2",
+      "frames": 9513369,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s05",
+      "source_sha256": "a4612ccb881a83e8407a9a30d44dd0dc3245b36b10e9078d68065bce3ec5ce6a",
+      "path": ".cache/comparison/stems/yohane/s05.wav",
+      "sha256": "2e521daf070b178398327a545f72b248e4bf52f9cec142cb7696f1dcdc1bf52b",
+      "frames": 11247616,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s06",
+      "source_sha256": "62e9efbcff72c3c54d62818773dd4053908bb3e25db4ba904705a9c7075b4e30",
+      "path": ".cache/comparison/stems/yohane/s06.wav",
+      "sha256": "7c909df947fecff631b6bc69b70ed3022e88020bd3228e4db1c9470f90f872ec",
+      "frames": 10903552,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s07",
+      "source_sha256": "107e5e3b04f348a6494706198046fc770c37f0fc683cfcda42e7a78a47fe9f89",
+      "path": ".cache/comparison/stems/yohane/s07.wav",
+      "sha256": "beaec7a17554cd0262e9098f7ed3744640d33603933310ffb96d5ad2107e74d9",
+      "frames": 11198343,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s08",
+      "source_sha256": "92d32d4fda0dd4a91b8a303f8d1451f4d5b94d8836d2b5dbdf8f0e5c09411664",
+      "path": ".cache/comparison/stems/yohane/s08.wav",
+      "sha256": "58abbaded2a7355670f4400add7041ab555139347bfc0d9b13a2f565dd28ec99",
+      "frames": 11749376,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s09",
+      "source_sha256": "2db068ce0af9598ad2b404e58a23fd672528dd9e70c0239c8a918ced5a9d42d1",
+      "path": ".cache/comparison/stems/yohane/s09.wav",
+      "sha256": "9d9a7c1a34d8081189167eb891d0e259165e4d9e5a070797650e649fd5f3bf17",
+      "frames": 10928128,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s10",
+      "source_sha256": "85a0af63d03771e5dfaadcecfe7092bc5d4d7563de316cf7a846a880e348f042",
+      "path": ".cache/comparison/stems/yohane/s10.wav",
+      "sha256": "663977fdae506ed59b6d6a90acdca03486f0f6bf90e0fba001e1733027ab4580",
+      "frames": 11552768,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s12",
+      "source_sha256": "d58af67fde39b00d5c664e83b317b1dfbd5c10cc473cee2cd84130f18605cb2a",
+      "path": ".cache/comparison/stems/yohane/s12.wav",
+      "sha256": "b6457913792e5dbbdf4aebf649be6a5fdd4c400043a5e1a326de723a00be4d8d",
+      "frames": 14483616,
+      "rate": 44100,
+      "origin": "comparison"
+    },
+    {
+      "song": "s13",
+      "source_sha256": "71664af845b58c7a4363071bc7310abafdd23cdf88231f6f30f0d67f0a63b76e",
+      "path": ".cache/separator-adapter/yohane/s13.wav",
+      "sha256": "af4434f26869faf6faeea1926b8da46cd39323850d797b4bd67c1d4135460778",
+      "frames": 7742784,
+      "rate": 44100,
+      "origin": "native-equivalent GPU inference"
+    }
+  ]
+}

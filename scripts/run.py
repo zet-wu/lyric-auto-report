@@ -28,8 +28,8 @@ groups={
  'additional': [('timing/additional_separators.py',model) for model in ('scnet','dttnet','bs_roformer','mel_roformer','windowed')]+[
      ('timing/ablation_run.py',stage,'--separators','scnet','dttnet','bs_roformer','mel_roformer','windowed','--strategies','concat','padded','full')
      for stage in ('audio','nextfire')]+[('timing/ablation_score.py',),('timing/ablation_tables.py',)],
- 'separation-alignment': [('milikara/run_separation.py',),('milikara/score_separation.py',)],
- 'resources': [('timing/resource_benchmark.py', model, str(repeat)) for repeat in (1,2) for model in ('demucs','bs','kim')]+[('timing/separation_resources.py',model) for model in ('demucs','scnet','dttnet','bs_roformer','mel_roformer','windowed')],
+ 'separation-alignment': [('timing/separation_stems.py',name) for name in ('bs','sug','milikara','yohane')]+[('milikara/run_separation.py',),('milikara/score_separation.py',)],
+ 'resources': [('timing/resource_benchmark.py', model, str(repeat)) for repeat in (1,2) for model in ('demucs','bs','kim')]+[('timing/separation_suite.py',),('timing/separation_reuse.py',)],
 }
 parser=argparse.ArgumentParser()
 parser.add_argument('stage',choices=[*groups,'all'])
@@ -61,6 +61,9 @@ for group in groups if args.stage=='all' else [args.stage]:
         path=logdir/f'{group}-{index:02}-{Path(task[0]).stem}.log'
         with path.open('w') as stream:
             interpreter=str(ROOT/'.venvs/sug/bin/python') if task[0]=='reading/sug.py' else sys.executable
+            if task[0]=='timing/separation_stems.py':
+                runtime={'bs':'research','sug':'sug','milikara':'milikara','yohane':'native5'}[task[1]]
+                interpreter=str(ROOT/'.venvs'/runtime/'bin/python')
             subprocess.run([interpreter,str(ROOT/'scripts'/task[0]),*task[1:]],check=True,
                            stdout=stream,stderr=subprocess.STDOUT,cwd=ROOT)
         print('DONE',group,*task,flush=True)

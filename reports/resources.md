@@ -12,4 +12,4 @@
 
 实时因子是处理耗时除以歌曲时长。Torch 峰值指张量分配，采样进程显存还包括框架上下文，两者不能互换；显存列取两次运行中的最大值。两次重复只用于检查本机运行稳定性。
 
-[六份原始记录](../results/ablation/resource-benchmark)保留环境、权重哈希与计时边界。六模型预热后分离成本见[分离性能](separation-performance.md)，对齐质量见[八路线比较](comparison.md)。
+[六份原始记录](../results/ablation/resource-benchmark)保留环境、权重哈希与计时边界。十种配置预热后分离成本见[分离性能](separation-performance.md)，对齐质量见[八路线比较](comparison.md)。

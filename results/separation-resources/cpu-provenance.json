@@ -1,0 +1,53 @@
+{
+  "protocol": "Rainbow Flower 30–60 seconds; one warmup, three repeats, eight threads, seed zero",
+  "archived_evidence": [
+    {
+      "path": ".cache/current-refresh-superseded/historical/separation/bs_roformer/cpu-performance.json",
+      "sha256": "19a754d614f5fae975067ace31e600f99fc2150013560c2c434bacff5bc925d1",
+      "reuse": "protocol only; archived Torch 2.14.1+cu130 differs from current Torch 2.14.0+cu130"
+    },
+    {
+      "path": ".cache/current-refresh-superseded/historical/separation/demucs/cpu-performance.json",
+      "sha256": "04b1ec7621b953dd794afe4365411bf140f83c38dc6f634e18c9689663977434",
+      "reuse": "protocol only; archived Torch 2.14.1+cu130 differs from current Torch 2.14.0+cu130"
+    },
+    {
+      "path": ".cache/current-refresh-superseded/historical/separation/dttnet/cpu-performance.json",
+      "sha256": "9d9ced10299ffa2c9ef1a04fa75cf7305a2ef8643f366aa4db38389709efe655",
+      "reuse": "protocol only; archived Torch 2.14.1+cu130 differs from current Torch 2.14.0+cu130"
+    },
+    {
+      "path": ".cache/current-refresh-superseded/historical/separation/mel_roformer/cpu-performance.json",
+      "sha256": "8fb6b707752d7e836ab0559424fe15757c0ed7ec5a4f7670f8df33b506c7d995",
+      "reuse": "protocol only; archived Torch 2.14.1+cu130 differs from current Torch 2.14.0+cu130"
+    },
+    {
+      "path": ".cache/current-refresh-superseded/historical/separation/scnet/cpu-performance.json",
+      "sha256": "70582b30f4e2e187290279c1f4cf4fa2a9005adbd6a0a96f622434b51220561b",
+      "reuse": "protocol only; archived Torch 2.14.1+cu130 differs from current Torch 2.14.0+cu130"
+    },
+    {
+      "path": ".cache/current-refresh-superseded/historical/separation/windowed/cpu-performance.json",
+      "sha256": "105352b303eeaa4f4dbbc2d0fc660bc1e8bea2d3c841430a64595c9357c76b65",
+      "reuse": "protocol only; archived Torch 2.14.1+cu130 differs from current Torch 2.14.0+cu130"
+    },
+    {
+      "path": ".cache/separation-cpu-full-song-archive/demucs-cpu.json",
+      "sha256": "131ff826935188215170b1d7376416de759c8896233d7c2d86dbe57ed8e7bcd1",
+      "records": 15,
+      "reuse": "excluded from formal statistics after CPU scope changed to 30–60 second clip; preserved in local archive"
+    },
+    {
+      "path": ".cache/separation-cpu-full-song-archive/scnet-cpu-error.json",
+      "sha256": "a197579be24af1be8da0f0f3eaaa9d1944946e7999eddd7662d9b24c73648bc5",
+      "records": 0,
+      "reuse": "excluded from formal statistics after CPU scope changed to 30–60 second clip; preserved in local archive"
+    },
+    {
+      "path": ".cache/separation-cpu-full-song-archive/scnet-cpu.json",
+      "sha256": "dbda24b467db5eb1f4d6ecc94c5c1a73a8cf2bad883d369181b65bd55d2c8dbc",
+      "records": 4,
+      "reuse": "excluded from formal statistics after CPU scope changed to 30–60 second clip; preserved in local archive"
+    }
+  ]
+}

@@ -13,7 +13,8 @@ models=ROOT/'.deps/comparison/timing/models'
 if not models.exists():models.symlink_to(ROOT/'.deps/timing/models',target_is_directory=True)
 run(research,'-m','pip','install','PyQt6==6.10.2','Janome==0.5.0','pysubs2==1.8.1','jieba==0.42.1','jaconv==0.5.0','nltk==3.10.4','nvidia-ml-py==13.615.71')
 run(research,'-m','pip','install','--no-deps',ROOT/'.deps/comparison/yohane')
-run(research,'-m','pip','--python',native,'install','onnxruntime-gpu==1.23.2','ml_dtypes==0.5.3')
+run(research,'-m','pip','--python',native,'install','onnxruntime-gpu==1.23.2','ml_dtypes==0.5.3',
+    'mutagen==1.47.0','psutil==7.2.2','nvidia-ml-py==13.615.71')
 sug=ROOT/'.venvs/sug/bin/python'
 if not sug.exists():run(research,'-m','venv','--without-pip',sug.parent.parent)
 # Share the pinned CUDA runtime; explicitly required SUG packages take priority.

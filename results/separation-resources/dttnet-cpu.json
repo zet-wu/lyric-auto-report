@@ -1,0 +1,155 @@
+{
+  "model": "dttnet",
+  "device": "cpu",
+  "identity": {
+    "model": "dttnet",
+    "device": "cpu",
+    "config": {
+      "audio": {
+        "chunk_size": 261120,
+        "dim_f": 2048,
+        "dim_t": 256,
+        "hop_length": 1024,
+        "n_fft": 6144,
+        "num_channels": 2,
+        "sample_rate": 44100,
+        "min_mean_abs": 0.0
+      },
+      "model": {
+        "norm": "BatchNorm",
+        "act": "relu",
+        "num_blocks": 5,
+        "g": 32,
+        "l": 3,
+        "k": 3,
+        "bn": 8,
+        "bias": false,
+        "block_type": "TFC_TDF_Res2",
+        "bandsequence": {
+          "rnn_type": "LSTM",
+          "bidirectional": true,
+          "num_layers": 4,
+          "n_heads": 2
+        }
+      },
+      "training": {
+        "batch_size": 2,
+        "gradient_accumulation_steps": 1,
+        "grad_clip": 0.0,
+        "instruments": [
+          "vocals",
+          "other"
+        ],
+        "lr": 0.0001,
+        "patience": 8,
+        "reduce_factor": 0.9,
+        "target_instrument": "vocals",
+        "num_epochs": 1000,
+        "num_steps": 1000,
+        "q": 0.95,
+        "coarse_loss_clip": false,
+        "ema_momentum": 0.999,
+        "optimizer": "adamw",
+        "read_metadata_procs": 8,
+        "other_fix": false,
+        "use_amp": false
+      },
+      "augmentations": {
+        "enable": true,
+        "loudness": true,
+        "loudness_min": 0.5,
+        "loudness_max": 2.0,
+        "all": {
+          "channel_shuffle": 0.5,
+          "random_polarity": 0.5
+        },
+        "vocals": {
+          "seven_band_parametric_eq": 0.25,
+          "seven_band_parametric_eq_min_gain_db": -3,
+          "seven_band_parametric_eq_max_gain_db": 3,
+          "tanh_distortion": 0.1,
+          "tanh_distortion_min": 0.1,
+          "tanh_distortion_max": 0.4
+        }
+      },
+      "inference": {
+        "batch_size": 1,
+        "chunk_size": 261120,
+        "num_overlap": 4
+      }
+    },
+    "parameters": 4958468,
+    "state_sha256": "fd3f927f36db0fa27e52de9a495f028acab0526ac4d12d26c7aaf036d41f2640",
+    "model_load_seconds": 0.12158857472240925,
+    "load_and_identity_seconds": 0.13846562057733536,
+    "process_import_load_seconds": 0.16267947480082512
+  },
+  "inputs": [
+    {
+      "id": "rainbow-30-60",
+      "audio": "datasets/audio/Rainbow Flower.m4a",
+      "sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5",
+      "start_seconds": 30,
+      "end_seconds": 60
+    }
+  ],
+  "records": [
+    {
+      "song": "rainbow-30-60",
+      "repeat": 1,
+      "seconds": 72.25605653226376,
+      "duration": 30.0,
+      "realtime_factor": 2.4085352177421253,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1485864960,
+      "board_energy_joules": null,
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow-30-60",
+      "repeat": 2,
+      "seconds": 72.60528938472271,
+      "duration": 30.0,
+      "realtime_factor": 2.4201763128240903,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1457684480,
+      "board_energy_joules": null,
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow-30-60",
+      "repeat": 3,
+      "seconds": 72.09226405248046,
+      "duration": 30.0,
+      "realtime_factor": 2.403075468416015,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1436639232,
+      "board_energy_joules": null,
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    }
+  ],
+  "torch": "2.14.0+cu130",
+  "gpu": null,
+  "threads": 8,
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           43 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  128\nOn-line CPU(s) list:                     0-127\nVendor ID:                               AuthenticAMD\nModel name:                              AMD EPYC 7502 32-Core Processor\nCPU family:                              23\nModel:                                   49\nThread(s) per core:                      2\nCore(s) per socket:                      32\nSocket(s):                               2\nStepping:                                0\nFrequency boost:                         enabled\nCPU(s) scaling MHz:                      63%\nCPU max MHz:                             2500.0000\nCPU min MHz:                             1500.0000\nBogoMIPS:                                4990.69\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sev sev_es ibpb_exit_to_user\nVirtualization:                          AMD-V\nL1d cache:                               2 MiB (64 instances)\nL1i cache:                               2 MiB (64 instances)\nL2 cache:                                32 MiB (64 instances)\nL3 cache:                                256 MiB (16 instances)\nNUMA node(s):                            8\nNUMA node0 CPU(s):                       0-7,64-71\nNUMA node1 CPU(s):                       8-15,72-79\nNUMA node2 CPU(s):                       16-23,80-87\nNUMA node3 CPU(s):                       24-31,88-95\nNUMA node4 CPU(s):                       32-39,96-103\nNUMA node5 CPU(s):                       40-47,104-111\nNUMA node6 CPU(s):                       48-55,112-119\nNUMA node7 CPU(s):                       56-63,120-127\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT enabled with STIBP protection\nVulnerability Spec rstack overflow:      Mitigation; safe RET\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+  "platform": "Linux-6.1.170-redroid-x86_64-with-glibc2.36",
+  "scope": "Serial warm inference including transfer and CPU return; decode, load, encoding and disk output excluded. Three repeats per song; GPU board energy includes idle consumption."
+}

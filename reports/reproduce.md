@@ -99,8 +99,28 @@ python3.13 scripts/comparison/verify.py
 
 verify 检查输入哈希、相对路径、语法与文档链接；verify_results 检查全部预定条件和分母；comparison/verify 检查组内正文分区、固定读音分母、合并缺失及原生时间端点，并使用独立的统计实现重算命中、MAE（Mean Absolute Error，平均绝对误差）、绝对误差 P95（第 95 百分位数）、缺失与超过 1 秒的项数。缺失保留在命中分母，误差分布只统计有效端点。
 
-预测可无损压缩为 .json.gz，评分同时支持两种形式。报告由 scripts/refresh_reports.py、scripts/comparison/report.py 和 scripts/reading/report.py 从当前指标生成。README 的结论表述按作者要求保留，只更新数据与目录。
+预测可无损压缩为 .json.gz，评分同时支持两种形式。报告由 scripts/refresh_reports.py、scripts/comparison/report.py 和 scripts/reading/report.py 从当前指标生成。README 保持原样，由作者另行统一修改。
 
 原 Linux 发布结果曾在不含 .deps 与 .models 的独立发布目录中，使用仅安装 NumPy 和 Matplotlib 的评分环境重新计分。23 份指标对象逐项一致，29 份输入文件、全部实验条件与文档链接通过检查；指标语义哈希和检查范围见[复核记录](../results/reproducibility.json)。该记录中的自动注音指标哈希对应纳入独立 Windows 实验结果之前的快照，当前自动注音结果以[独立 Windows 实验核验](../results/reading/sug-winrt-audit.json)为准。
 
 SUG 按原生 .sug 项目评分。已有冻结模型结果可通过 `.venvs/sug/bin/python scripts/comparison/sug_project.py` 重新执行采用、保存与加载校验；此步骤不重新运行声学模型。项目里的节奏点和句末点是正文与读音两层评分的时间来源。
+
+
+## 十种分离配置实验
+
+GPU 资源实验使用 configs/separation-resources-inputs.json 固定的五曲整曲；CPU 使用 configs/separation-cpu-inputs.json 固定的《Rainbow Flower》30–60 秒片段，均预热后三次重复，共 180 条记录。质量实验保持人工读音、NextFire 与标准 CTC，主组为 12 首日语歌曲，s13 单列；两条保存路径与三种音频组织方式组成每配置六个条件。资源测试统一使用 44.1 kHz 双声道，质量测试保留原生输出采样率与保存语义，再由统一下游流程重采样。
+
+先完成源码、模型和 comparison 环境安装。MiliKara 的测量环境另需 mutagen==1.47.0、psutil==7.2.2、nvidia-ml-py==13.615.71；分离运行库保持 audio-separator 0.30.2，SUG 保持 0.47.0。脚本按配置选择固定环境：research、sug、milikara、native5。
+
+```sh
+.venvs/research/bin/python scripts/timing/separation_reuse.py
+.venvs/research/bin/python scripts/run.py separation-alignment
+.venvs/research/bin/python scripts/timing/separation_suite.py
+.venvs/research/bin/python scripts/refresh_reports.py separation performance
+python3.13 scripts/verify.py
+python3.13 scripts/verify_results.py
+```
+
+separation_reuse 核验本机固定资产及保留结果；发布目录仅评分时无需执行该入口。资源调度串行执行 CPU／GPU 任务，测量期间不运行下游质量计算。单独恢复某种配置可使用 separation_suite.py --models sug --devices cpu；已完整且身份一致的结果直接复用。
+
+资源计时覆盖输入搬运、计算及结果返回 CPU，排除解码、加载、编码和写盘。CPU 片段协议沿用归档实验；旧记录因 Torch 版本不同未计入当前统计，来源与未纳入统计的整曲记录见 results/separation-resources/cpu-provenance.json。原生一致性核验及人声身份保存在 results/separation-alignment/stems-*.json，保留数据的来源核验在 reuse-audit.json。下游和资源输出按统一配置汇总；原八路线评分及 README 保持不变。

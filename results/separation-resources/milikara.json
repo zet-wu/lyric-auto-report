@@ -1,0 +1,389 @@
+{
+  "model": "milikara",
+  "device": "cuda",
+  "identity": {
+    "model": "milikara",
+    "device": "cuda",
+    "weight_sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+    "audio_separator": "0.30.2",
+    "config": {
+      "model_data": {
+        "audio": {
+          "chunk_size": 352800,
+          "dim_f": 1024,
+          "dim_t": 801,
+          "hop_length": 441,
+          "n_fft": 2048,
+          "num_channels": 2,
+          "sample_rate": 44100,
+          "min_mean_abs": 0.001
+        },
+        "model": {
+          "dim": 384,
+          "depth": 12,
+          "stereo": true,
+          "num_stems": 1,
+          "time_transformer_depth": 1,
+          "freq_transformer_depth": 1,
+          "num_bands": 60,
+          "dim_head": 64,
+          "heads": 8,
+          "attn_dropout": 0.1,
+          "ff_dropout": 0.1,
+          "flash_attn": true,
+          "dim_freqs_in": 1025,
+          "sample_rate": 44100,
+          "stft_n_fft": 2048,
+          "stft_hop_length": 441,
+          "stft_win_length": 2048,
+          "stft_normalized": false,
+          "mask_estimator_depth": 2,
+          "multi_stft_resolution_loss_weight": 1.0,
+          "multi_stft_resolutions_window_sizes": [
+            4096,
+            2048,
+            1024,
+            512,
+            256
+          ],
+          "multi_stft_hop_size": 147,
+          "multi_stft_normalized": false
+        },
+        "training": {
+          "batch_size": 9,
+          "gradient_accumulation_steps": 8,
+          "grad_clip": 0,
+          "instruments": [
+            "Vocals",
+            "Instrumental"
+          ],
+          "lr": 4e-05,
+          "patience": 2,
+          "reduce_factor": 0.95,
+          "target_instrument": "Vocals",
+          "num_epochs": 1000,
+          "num_steps": 1000,
+          "augmentation": false,
+          "augmentation_type": "simple1",
+          "use_mp3_compress": false,
+          "augmentation_mix": true,
+          "augmentation_loudness": true,
+          "augmentation_loudness_type": 1,
+          "augmentation_loudness_min": 0.5,
+          "augmentation_loudness_max": 1.5,
+          "q": 0.95,
+          "coarse_loss_clip": true,
+          "ema_momentum": 0.999,
+          "optimizer": "adam",
+          "other_fix": false,
+          "use_amp": true
+        },
+        "inference": {
+          "batch_size": 1,
+          "dim_t": 801,
+          "num_overlap": 4
+        },
+        "is_roformer": true
+      },
+      "segment_size": 256,
+      "overlap": 8,
+      "batch_size": 1,
+      "normalization_threshold": 0.9,
+      "amplification_threshold": 0.0,
+      "use_autocast": null,
+      "override_model_segment_size": false
+    },
+    "parameters": 251869636,
+    "state_sha256": "a3b33a6c10356d0a71e7e5cb8c75f776f020e91524cebfcd7727ddb2cc831007"
+  },
+  "inputs": [
+    {
+      "id": "kouin",
+      "audio": "datasets/audio/光陰の海原.m4a",
+      "sha256": "92d32d4fda0dd4a91b8a303f8d1451f4d5b94d8836d2b5dbdf8f0e5c09411664"
+    },
+    {
+      "id": "brave",
+      "audio": "datasets/audio/The Brave Under The Summer Sky.m4a",
+      "sha256": "a4612ccb881a83e8407a9a30d44dd0dc3245b36b10e9078d68065bce3ec5ce6a"
+    },
+    {
+      "id": "powder",
+      "audio": "datasets/audio/POWDER SNOW (Live Ver.).m4a",
+      "sha256": "678980e3cad36970579c48cfe7b79fd798e309e50383363506657150b31c5978"
+    },
+    {
+      "id": "brilliance",
+      "audio": "datasets/audio/両翼のBrilliance.m4a",
+      "sha256": "107e5e3b04f348a6494706198046fc770c37f0fc683cfcda42e7a78a47fe9f89"
+    },
+    {
+      "id": "rainbow",
+      "audio": "datasets/audio/Rainbow Flower.m4a",
+      "sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5"
+    }
+  ],
+  "records": [
+    {
+      "song": "kouin",
+      "repeat": 1,
+      "seconds": 12.041273152455688,
+      "duration": 266.4257596371882,
+      "realtime_factor": 0.0451956040919361,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2487832576,
+      "board_energy_joules": 4787.437715153183,
+      "power_samples": 194,
+      "output_shape": [
+        2,
+        11749376
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "kouin",
+      "repeat": 2,
+      "seconds": 12.050030078738928,
+      "duration": 266.4257596371882,
+      "realtime_factor": 0.04522847225864478,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2549219328,
+      "board_energy_joules": 4762.823229976496,
+      "power_samples": 198,
+      "output_shape": [
+        2,
+        11749376
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "kouin",
+      "repeat": 3,
+      "seconds": 12.037741906940937,
+      "duration": 266.4257596371882,
+      "realtime_factor": 0.04518234994744362,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2382041088,
+      "board_energy_joules": 4818.7713083838225,
+      "power_samples": 199,
+      "output_shape": [
+        2,
+        11749376
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brave",
+      "repeat": 1,
+      "seconds": 11.388877442106605,
+      "duration": 255.04798185941044,
+      "realtime_factor": 0.044653862222616886,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2202394624,
+      "board_energy_joules": 4651.015785239902,
+      "power_samples": 187,
+      "output_shape": [
+        2,
+        11247616
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brave",
+      "repeat": 2,
+      "seconds": 11.3545374404639,
+      "duration": 255.04798185941044,
+      "realtime_factor": 0.04451922088418186,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2349584384,
+      "board_energy_joules": 4548.878103751959,
+      "power_samples": 186,
+      "output_shape": [
+        2,
+        11247616
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brave",
+      "repeat": 3,
+      "seconds": 11.379458444193006,
+      "duration": 255.04798185941044,
+      "realtime_factor": 0.04461693192485514,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2408255488,
+      "board_energy_joules": 4561.625838106733,
+      "power_samples": 188,
+      "output_shape": [
+        2,
+        11247616
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "powder",
+      "repeat": 1,
+      "seconds": 20.2760373596102,
+      "duration": 448.7253514739229,
+      "realtime_factor": 0.0451858520874957,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 3135619072,
+      "board_energy_joules": 8309.229664136124,
+      "power_samples": 321,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "powder",
+      "repeat": 2,
+      "seconds": 20.202805971726775,
+      "duration": 448.7253514739229,
+      "realtime_factor": 0.045022653401165895,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 3271798784,
+      "board_energy_joules": 8143.342716389119,
+      "power_samples": 329,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "powder",
+      "repeat": 3,
+      "seconds": 20.169463464990258,
+      "duration": 448.7253514739229,
+      "realtime_factor": 0.04494834846914679,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 3078991872,
+      "board_energy_joules": 8144.667432324104,
+      "power_samples": 323,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brilliance",
+      "repeat": 1,
+      "seconds": 11.321065861731768,
+      "duration": 253.93068027210884,
+      "realtime_factor": 0.04458329276950804,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2551451648,
+      "board_energy_joules": 4638.549115746136,
+      "power_samples": 186,
+      "output_shape": [
+        2,
+        11198343
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brilliance",
+      "repeat": 2,
+      "seconds": 11.301875196397305,
+      "duration": 253.93068027210884,
+      "realtime_factor": 0.044507718343787216,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2447122432,
+      "board_energy_joules": 4514.318491624066,
+      "power_samples": 181,
+      "output_shape": [
+        2,
+        11198343
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brilliance",
+      "repeat": 3,
+      "seconds": 11.311897400766611,
+      "duration": 253.93068027210884,
+      "realtime_factor": 0.044547186612680784,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2199650304,
+      "board_energy_joules": 4535.670439721492,
+      "power_samples": 185,
+      "output_shape": [
+        2,
+        11198343
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow",
+      "repeat": 1,
+      "seconds": 10.643076622858644,
+      "duration": 238.42133786848072,
+      "realtime_factor": 0.044639782319859454,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2346344448,
+      "board_energy_joules": 4390.138877617983,
+      "power_samples": 175,
+      "output_shape": [
+        2,
+        10514381
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow",
+      "repeat": 2,
+      "seconds": 10.59947337768972,
+      "duration": 238.42133786848072,
+      "realtime_factor": 0.04445689917039497,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2161344512,
+      "board_energy_joules": 4246.711534609048,
+      "power_samples": 174,
+      "output_shape": [
+        2,
+        10514381
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow",
+      "repeat": 3,
+      "seconds": 10.674225931987166,
+      "duration": 238.42133786848072,
+      "realtime_factor": 0.0447704304799906,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2330857472,
+      "board_energy_joules": 4325.890834321151,
+      "power_samples": 170,
+      "output_shape": [
+        2,
+        10514381
+      ],
+      "output_finite": true
+    }
+  ],
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "threads": 8,
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           43 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  128\nOn-line CPU(s) list:                     0-127\nVendor ID:                               AuthenticAMD\nModel name:                              AMD EPYC 7502 32-Core Processor\nCPU family:                              23\nModel:                                   49\nThread(s) per core:                      2\nCore(s) per socket:                      32\nSocket(s):                               2\nStepping:                                0\nFrequency boost:                         enabled\nCPU(s) scaling MHz:                      61%\nCPU max MHz:                             2500.0000\nCPU min MHz:                             1500.0000\nBogoMIPS:                                4990.69\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sev sev_es ibpb_exit_to_user\nVirtualization:                          AMD-V\nL1d cache:                               2 MiB (64 instances)\nL1i cache:                               2 MiB (64 instances)\nL2 cache:                                32 MiB (64 instances)\nL3 cache:                                256 MiB (16 instances)\nNUMA node(s):                            8\nNUMA node0 CPU(s):                       0-7,64-71\nNUMA node1 CPU(s):                       8-15,72-79\nNUMA node2 CPU(s):                       16-23,80-87\nNUMA node3 CPU(s):                       24-31,88-95\nNUMA node4 CPU(s):                       32-39,96-103\nNUMA node5 CPU(s):                       40-47,104-111\nNUMA node6 CPU(s):                       48-55,112-119\nNUMA node7 CPU(s):                       56-63,120-127\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT enabled with STIBP protection\nVulnerability Spec rstack overflow:      Mitigation; safe RET\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+  "platform": "Linux-6.1.170-redroid-x86_64-with-glibc2.36",
+  "scope": "Serial warm inference including transfer and CPU return; decode, load, encoding and disk output excluded. Three repeats per song; GPU board energy includes idle consumption."
+}

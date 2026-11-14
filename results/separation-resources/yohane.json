@@ -1,0 +1,307 @@
+{
+  "model": "yohane",
+  "device": "cuda",
+  "identity": {
+    "model": "yohane",
+    "device": "cuda",
+    "config": {
+      "bundle": "HDEMUCS_HIGH_MUSDB_PLUS",
+      "segment": 10.0,
+      "overlap": 0.1,
+      "training": false
+    },
+    "weight_sha256": "a004b2790d73ffeaa535db458a1a79b539dfdbafbccc31f275d07e632ebd7816",
+    "parameters": 83639368,
+    "state_sha256": "4c018cc185b5d089f23debf5b329e28b4f35008a32aad4a25e4f35b8eaf52d96"
+  },
+  "inputs": [
+    {
+      "id": "kouin",
+      "audio": "datasets/audio/光陰の海原.m4a",
+      "sha256": "92d32d4fda0dd4a91b8a303f8d1451f4d5b94d8836d2b5dbdf8f0e5c09411664"
+    },
+    {
+      "id": "brave",
+      "audio": "datasets/audio/The Brave Under The Summer Sky.m4a",
+      "sha256": "a4612ccb881a83e8407a9a30d44dd0dc3245b36b10e9078d68065bce3ec5ce6a"
+    },
+    {
+      "id": "powder",
+      "audio": "datasets/audio/POWDER SNOW (Live Ver.).m4a",
+      "sha256": "678980e3cad36970579c48cfe7b79fd798e309e50383363506657150b31c5978"
+    },
+    {
+      "id": "brilliance",
+      "audio": "datasets/audio/両翼のBrilliance.m4a",
+      "sha256": "107e5e3b04f348a6494706198046fc770c37f0fc683cfcda42e7a78a47fe9f89"
+    },
+    {
+      "id": "rainbow",
+      "audio": "datasets/audio/Rainbow Flower.m4a",
+      "sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5"
+    }
+  ],
+  "records": [
+    {
+      "song": "kouin",
+      "repeat": 1,
+      "seconds": 1.449785428121686,
+      "duration": 266.4257596371882,
+      "realtime_factor": 0.005441611314521414,
+      "allocated_bytes": 1370262016,
+      "process_gpu_bytes": 2583691264,
+      "rss_bytes": 2061615104,
+      "board_energy_joules": 216.27799340373,
+      "power_samples": 23,
+      "output_shape": [
+        2,
+        11749376
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "kouin",
+      "repeat": 2,
+      "seconds": 1.442438893020153,
+      "duration": 266.4257596371882,
+      "realtime_factor": 0.0054140368971244725,
+      "allocated_bytes": 1370262016,
+      "process_gpu_bytes": 2583691264,
+      "rss_bytes": 2061619200,
+      "board_energy_joules": 278.2301405662829,
+      "power_samples": 23,
+      "output_shape": [
+        2,
+        11749376
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "kouin",
+      "repeat": 3,
+      "seconds": 1.436199327930808,
+      "duration": 266.4257596371882,
+      "realtime_factor": 0.005390617370807491,
+      "allocated_bytes": 1370262016,
+      "process_gpu_bytes": 2583691264,
+      "rss_bytes": 2076823552,
+      "board_energy_joules": 289.6782177018253,
+      "power_samples": 24,
+      "output_shape": [
+        2,
+        11749376
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brave",
+      "repeat": 1,
+      "seconds": 1.3846036903560162,
+      "duration": 255.04798185941044,
+      "realtime_factor": 0.005428796888576238,
+      "allocated_bytes": 1346924544,
+      "process_gpu_bytes": 2583691264,
+      "rss_bytes": 2067820544,
+      "board_energy_joules": 235.1132045194097,
+      "power_samples": 22,
+      "output_shape": [
+        2,
+        11247616
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brave",
+      "repeat": 2,
+      "seconds": 1.3744099102914333,
+      "duration": 255.04798185941044,
+      "realtime_factor": 0.005388828801041234,
+      "allocated_bytes": 1346924544,
+      "process_gpu_bytes": 2583691264,
+      "rss_bytes": 2070024192,
+      "board_energy_joules": 269.7678394881738,
+      "power_samples": 22,
+      "output_shape": [
+        2,
+        11247616
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brave",
+      "repeat": 3,
+      "seconds": 1.381506284698844,
+      "duration": 255.04798185941044,
+      "realtime_factor": 0.005416652484866039,
+      "allocated_bytes": 1346924544,
+      "process_gpu_bytes": 2583691264,
+      "rss_bytes": 2070032384,
+      "board_energy_joules": 269.4446049758401,
+      "power_samples": 22,
+      "output_shape": [
+        2,
+        11247616
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "powder",
+      "repeat": 1,
+      "seconds": 2.4054566100239754,
+      "duration": 448.7253514739229,
+      "realtime_factor": 0.005360643436174935,
+      "allocated_bytes": 1848553472,
+      "process_gpu_bytes": 3850371072,
+      "rss_bytes": 2194776064,
+      "board_energy_joules": 431.86546744866206,
+      "power_samples": 37,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "powder",
+      "repeat": 2,
+      "seconds": 2.398165287449956,
+      "duration": 448.7253514739229,
+      "realtime_factor": 0.005344394471078423,
+      "allocated_bytes": 1848553472,
+      "process_gpu_bytes": 3850371072,
+      "rss_bytes": 2194776064,
+      "board_energy_joules": 475.65335187028535,
+      "power_samples": 36,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "powder",
+      "repeat": 3,
+      "seconds": 2.3969407472759485,
+      "duration": 448.7253514739229,
+      "realtime_factor": 0.005341665540854212,
+      "allocated_bytes": 1848553472,
+      "process_gpu_bytes": 3850371072,
+      "rss_bytes": 2194780160,
+      "board_energy_joules": 485.2900241717771,
+      "power_samples": 38,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brilliance",
+      "repeat": 1,
+      "seconds": 1.3877766486257315,
+      "duration": 253.93068027210884,
+      "realtime_factor": 0.0054651791076943046,
+      "allocated_bytes": 1344757760,
+      "process_gpu_bytes": 3850371072,
+      "rss_bytes": 2071707648,
+      "board_energy_joules": 224.25992964904012,
+      "power_samples": 22,
+      "output_shape": [
+        2,
+        11198343
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brilliance",
+      "repeat": 2,
+      "seconds": 1.3737029284238815,
+      "duration": 253.93068027210884,
+      "realtime_factor": 0.005409755634694631,
+      "allocated_bytes": 1344757760,
+      "process_gpu_bytes": 3850371072,
+      "rss_bytes": 2075504640,
+      "board_energy_joules": 265.73514905640945,
+      "power_samples": 21,
+      "output_shape": [
+        2,
+        11198343
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "brilliance",
+      "repeat": 3,
+      "seconds": 1.3718801084905863,
+      "duration": 253.93068027210884,
+      "realtime_factor": 0.005402577219186343,
+      "allocated_bytes": 1344757760,
+      "process_gpu_bytes": 3850371072,
+      "rss_bytes": 2075504640,
+      "board_energy_joules": 266.61901047037543,
+      "power_samples": 22,
+      "output_shape": [
+        2,
+        11198343
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow",
+      "repeat": 1,
+      "seconds": 1.2846463304013014,
+      "duration": 238.42133786848072,
+      "realtime_factor": 0.005388134895501447,
+      "allocated_bytes": 1314662912,
+      "process_gpu_bytes": 3852468224,
+      "rss_bytes": 2063142912,
+      "board_energy_joules": 205.85793961758165,
+      "power_samples": 21,
+      "output_shape": [
+        2,
+        10514381
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow",
+      "repeat": 2,
+      "seconds": 1.2766847647726536,
+      "duration": 238.42133786848072,
+      "realtime_factor": 0.0053547420553310765,
+      "allocated_bytes": 1314662912,
+      "process_gpu_bytes": 3852468224,
+      "rss_bytes": 2065305600,
+      "board_energy_joules": 252.88288696232624,
+      "power_samples": 21,
+      "output_shape": [
+        2,
+        10514381
+      ],
+      "output_finite": true
+    },
+    {
+      "song": "rainbow",
+      "repeat": 3,
+      "seconds": 1.2779752500355244,
+      "duration": 238.42133786848072,
+      "realtime_factor": 0.005360154680201015,
+      "allocated_bytes": 1314662912,
+      "process_gpu_bytes": 3852468224,
+      "rss_bytes": 2065281024,
+      "board_energy_joules": 253.52288671126217,
+      "power_samples": 21,
+      "output_shape": [
+        2,
+        10514381
+      ],
+      "output_finite": true
+    }
+  ],
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "threads": 8,
+  "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           43 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  128\nOn-line CPU(s) list:                     0-127\nVendor ID:                               AuthenticAMD\nModel name:                              AMD EPYC 7502 32-Core Processor\nCPU family:                              23\nModel:                                   49\nThread(s) per core:                      2\nCore(s) per socket:                      32\nSocket(s):                               2\nStepping:                                0\nFrequency boost:                         enabled\nCPU(s) scaling MHz:                      61%\nCPU max MHz:                             2500.0000\nCPU min MHz:                             1500.0000\nBogoMIPS:                                4990.69\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sev sev_es ibpb_exit_to_user\nVirtualization:                          AMD-V\nL1d cache:                               2 MiB (64 instances)\nL1i cache:                               2 MiB (64 instances)\nL2 cache:                                32 MiB (64 instances)\nL3 cache:                                256 MiB (16 instances)\nNUMA node(s):                            8\nNUMA node0 CPU(s):                       0-7,64-71\nNUMA node1 CPU(s):                       8-15,72-79\nNUMA node2 CPU(s):                       16-23,80-87\nNUMA node3 CPU(s):                       24-31,88-95\nNUMA node4 CPU(s):                       32-39,96-103\nNUMA node5 CPU(s):                       40-47,104-111\nNUMA node6 CPU(s):                       48-55,112-119\nNUMA node7 CPU(s):                       56-63,120-127\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT enabled with STIBP protection\nVulnerability Spec rstack overflow:      Mitigation; safe RET\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace\n",
+  "platform": "Linux-6.1.170-redroid-x86_64-with-glibc2.36",
+  "scope": "Serial warm inference including transfer and CPU return; decode, load, encoding and disk output excluded. Three repeats per song; GPU board energy includes idle consumption."
+}

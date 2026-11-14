@@ -1,6 +1,8 @@
 """Render current module reports from completed, independently scored results."""
 from pathlib import Path
-import argparse, json, statistics
+import argparse, json, statistics, sys, csv
+sys.path.insert(0,str(Path(__file__).resolve().parent/'timing'))
+from separator_registry import MODELS
 
 ROOT = Path(__file__).resolve().parents[1]
 def read(name):
@@ -147,17 +149,23 @@ def ablation():
 
 def separation():
     rows = [r for r in read('separation-alignment/metrics.json')['aggregate'] if r['group'] == 'japanese']
-    assert len(rows) == 36 and all(r['songs'] == 12 for r in rows), 'Incomplete separator matrix'
+    assert len(rows) == 60 and all(r['songs'] == 12 for r in rows), 'Incomplete separator matrix'
     labels = {'global': '完整人声', 'concat_core': 'core 拼接', 'concat_padded': '带缓冲拼接'}
     write('separation-alignment.md', [
-        '# 六种分离配置对歌词对齐的影响',
-        '本轮对 12 首日语歌曲使用相同人工读音、NextFire 与标准 CTC，'
-        '比较六种分离配置、两条保存路径与三种音频组织方式。' + CORE,
+        '# 十种分离配置对歌词对齐的影响',
+        '对 12 首日语歌曲使用相同人工读音、NextFire 与标准 CTC，'
+        '比较十种分离配置、两条保存路径与三种音频组织方式。下游均使用 GPU 分离结果。' + CORE,
         '浮点路径使用原混音作为活动分析参考；PCM24（24 位音频采样）路径先按峰值限制增益，'
         '写出 FLAC，再读回浮点，并在活动分析时不提供原混音参考。两条路径同时改变保存格式'
-        '和活动分析输入，因此结果衡量整个路径，不能单独归因于量化精度。',
+        '和活动分析输入，因此结果衡量整个路径，不能单独归因于量化精度。'
+        'float 指下游直接读取浮点样本；SUG 与 MiliKara 的输入保留原生保存量化，并非无量化分离输出。',
+        '下表缩写与[模型配置与选择](separation-survey.md)中的十种配置一一对应：',
+        table(['缩写','模型配置'], [[name,label] for name,(label,_) in MODELS.items()]),
         DEFINITIONS,
-        metric_table([(r['separator'] + '／' + r['persistence'] + '／' + labels[r['mode']], r) for r in rows]),
+        *[section for persist in ('float','pcm24') for mode in ('global','concat_core','concat_padded')
+          for section in ('## ' + persist + '／' + labels[mode],
+            metric_table([(name,next(r for r in rows if r['separator']==name and r['persistence']==persist and r['mode']==mode))
+                          for name in MODELS]).replace('| 条件 |','| 模型 |',1))],
         '表中保留原始日语叶级单元（标注树中不再细分的最小定时对象）；'
         '跨删段的预测按无效处理。拉丁片段、潮汕话假名和逐曲结果另存。'
         '[完整指标](../results/separation-alignment/metrics.json)、'
@@ -188,40 +196,57 @@ def resources():
         '实时因子是处理耗时除以歌曲时长。Torch 峰值指张量分配，采样进程显存还包括框架上下文，'
         '两者不能互换；显存列取两次运行中的最大值。两次重复只用于检查本机运行稳定性。',
         '[六份原始记录](../results/ablation/resource-benchmark)保留环境、权重哈希与计时边界。'
-        '六模型预热后分离成本见[分离性能](separation-performance.md)，对齐质量见[八路线比较](comparison.md)。'])
+        '十种配置预热后分离成本见[分离性能](separation-performance.md)，对齐质量见[八路线比较](comparison.md)。'])
 
 def performance():
-    names = {'demucs':'Demucs htdemucs','scnet':'SCNet Small','dttnet':'DTTNet',
-             'bs_roformer':'BS-RoFormer','mel_roformer':'MelBand RoFormer','windowed':'Windowed RoFormer'}
-    rows = []
-    identity = []
-    for name,label in names.items():
-        data = read(f'separation-resources/{name}.json')
-        assert len(data['records']) == 15
-        groups = {s['id']: [r for r in data['records'] if r['song']==s['id']] for s in data['inputs']}
-        assert all(len(rs)==3 for rs in groups.values())
-        seconds = sum(statistics.median(r['seconds'] for r in rs) for rs in groups.values())
-        energy = sum(statistics.median(r['board_energy_joules'] for r in rs) for rs in groups.values())
-        rows.append([label,f'{seconds:.2f}',f"{max(r['allocated_bytes'] for r in data['records'])/2**30:.2f}",
-                     f"{max(r['rss_bytes'] for r in data['records'])/2**30:.2f}",f'{energy/1000:.2f}'])
-        identity.append([label,f"{data['identity']['parameters']/1e6:.3f}",data['torch']])
+    rows=[]; identity=[]; memory=[]; export=[]
+    for name,(label,_) in MODELS.items():
+        both={device:read(f"separation-resources/{name}{'-cpu' if device=='cpu' else ''}.json") for device in ('cuda','cpu')}
+        totals={}
+        for device,data in both.items():
+            assert len(data['records'])==(3 if device=='cpu' else 15)
+            groups={s['id']:[r for r in data['records'] if r['song']==s['id']] for s in data['inputs']}
+            assert all(len(rs)==3 for rs in groups.values())
+            totals[device]=sum(statistics.median(r['seconds'] for r in rs) for rs in groups.values())
+        gpu=both['cuda'];cpu=both['cpu']
+        for device,data in both.items():
+            export.append({'model':name,'device':device,'seconds':totals[device],'rss_bytes':max(r['rss_bytes'] for r in data['records']),
+                'allocated_bytes':max((r['allocated_bytes'] for r in data['records'] if r['allocated_bytes'] is not None),default=None),
+                'process_gpu_bytes':max((r.get('process_gpu_bytes') for r in data['records'] if r.get('process_gpu_bytes') is not None),default=None),
+                'board_energy_joules':sum(statistics.median(r['board_energy_joules'] for r in data['records'] if r['song']==song['id']) for song in data['inputs']) if device=='cuda' else None,
+                'input_scope':'rainbow-30-60' if device=='cpu' else 'five-full-songs',
+                'runs':len(data['records'])})
+        energy=sum(statistics.median(r['board_energy_joules'] for r in gpu['records'] if r['song']==song['id']) for song in gpu['inputs'])
+        rows.append([label,f"{totals['cuda']:.2f}",f"{totals['cpu']:.2f}",f"{energy/1000:.2f}"])
+        def peak(data,key):
+            values=[r.get(key) for r in data['records'] if r.get(key) is not None]
+            return f'{max(values)/2**30:.2f}' if values else '—'
+        memory.append([label,peak(cpu,'rss_bytes'),peak(gpu,'rss_bytes'),peak(gpu,'allocated_bytes'),peak(gpu,'process_gpu_bytes') if name=='sug' else '—'])
+        params=gpu['identity'].get('parameters')
+        identity.append([label,f'{params/1e6:.3f}' if params is not None else '—',gpu['torch'],gpu['identity'].get('audio_separator','—')])
+    with (ROOT/'results/separation-resources/summary.csv').open('w') as stream:
+        writer=csv.DictWriter(stream,fieldnames=list(export[0]));writer.writeheader();writer.writerows(export)
+    (ROOT/'results/separation-resources/summary.json').write_text(json.dumps(export,ensure_ascii=False,indent=2)+'\n')
     write('separation-performance.md', [
-        '# 六种人声分离模型的资源实测',
-        '使用固定五首歌曲，每首每个模型先预热，再完成三次 GPU 分离。'
-        '表中耗时与能量先逐曲取三次的中位数，再对五曲求和；内存与显存取全部运行中的峰值。'
-        '全部测量在质量实验结束后串行执行。',
-        'RSS（Resident Set Size，驻留集大小）是进程驻留在物理内存中的容量；'
-        '这里统计进程树 RSS 之和，共享页可能重复计入。CUDA allocated 表示框架张量分配。',
-        table(['模型','五曲 GPU 分离 s','CUDA allocated 峰值 GiB','进程树 RSS 峰值 GiB','板卡能量 kJ'],rows),
-        '## 配置与计时',
-        '计时覆盖输入搬运、模型计算与结果回到 CPU；解码、模型加载和写盘不计入分离耗时。'
-        '每轮固定随机种子 0，使用 8 个 Torch 线程、batch=1，保留各模型的分块、重叠和归一化设置。'
-        '每首先用最多 30 秒的片段预热。板卡功率按约 20 ms 间隔采样并积分，包含空闲功耗。',
-        table(['模型','参数量／百万','Torch'],identity),
-        '模型实际配置与加载后的状态哈希、逐次耗时、显存、RSS、能量及输入身份保存于'
-        '[原始记录](../results/separation-resources)。五曲清单见'
-        '[输入配置](../configs/separation-resources-inputs.json)。'
-        '本轮资源报告仅包含 GPU 测量。端点质量另见[分离与下游对齐](separation-alignment.md)。'])
+        '# 十种人声分离配置的资源实测',
+        'GPU 使用固定五首整曲，每首先以最多 30 秒预热，再重复三次；CPU 使用《Rainbow Flower》30–60 秒片段，预热一次后重复三次。十种配置共 180 次正式测量（GPU 150 次、CPU 30 次）。'
+        'GPU 耗时与能量先逐曲取三次中位数，再对五曲求和；CPU 耗时取片段三次中位数，两种输入范围不用于计算设备加速比。内存与显存取全部运行的峰值。资源测量串行执行，与质量计算错开。',
+        table(['配置','五曲 GPU s','30 秒片段 CPU s','GPU 板卡能量 kJ'],rows),
+        '板卡能量按约 20 ms 间隔采样积分，包含空闲功耗。',
+        table(['配置','CPU RSS GiB','GPU RSS GiB','Torch allocated GiB','ONNX 进程显存 GiB'],memory),
+        'RSS（Resident Set Size，驻留集大小）统计进程树的物理内存驻留量，共享页可能重复计入。Torch allocated 为框架张量分配峰值；'
+        'ONNX 进程显存包含运行时和设备上下文，两列分别呈现，不能直接排名。破折号表示不适用。',
+        '## 固定条件与计时',
+        '硬件为 NVIDIA GeForce RTX 4090（49140 MiB，驱动 595.58.03）与双路 AMD EPYC 7502。输入统一解码为 44.1 kHz 双声道；'
+        '随机种子为 0，Torch 使用 8 线程，ONNX 使用 8 个计算线程与 1 个调度线程，有效 batch=1。保留各权重的分块、重叠和归一化；CPU 关闭 CUDA 混合精度并禁用 GPU。',
+        '计时包含输入搬运、推理及结果返回 CPU，排除解码、模型加载、编码和写盘。文件入口通过内存适配调用相同算法，并与原生输出核验。'
+        'BS Karaoke 的 CPU 路径沿用同一底层算法，仅适配设备与混合精度开关。',
+        table(['配置','参数量／百万','Torch','audio-separator'],identity),
+        'MDX-Net Inst HQ 3 按 ONNX 文件初始化张量的元素总量统计，包含归一化运行统计量；其他配置按 Torch 模型参数元素量统计。',
+        '权重、配置、环境和逐次数据见[模型清单](../configs/separation-models.json)、[原始记录](../results/separation-resources)及'
+        '[五曲输入](../configs/separation-resources-inputs.json)与 [CPU 片段](../configs/separation-cpu-inputs.json)。原生适配核验与人声来源见[下游数据目录](../results/separation-alignment)。'
+        '单曲实际入口成本见[入口资源报告](resources.md)，固定下游端点见[分离与对齐](separation-alignment.md)。'])
+
 
 def local():
     metrics = read('local-refinement/metrics.json')

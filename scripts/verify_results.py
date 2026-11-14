@@ -1,6 +1,8 @@
 """Require every planned condition, including explicitly recorded failures."""
 from pathlib import Path
-import gzip,json,collections,itertools,hashlib
+import gzip,json,collections,itertools,hashlib,sys,csv,statistics,math
+sys.path.insert(0,str(Path(__file__).resolve().parent/"timing"))
+from separator_registry import MODELS as SEPARATORS, LEGACY
 ROOT=Path(__file__).resolve().parents[1]
 def present(path):return path.is_file() or Path(str(path)+'.gz').is_file()
 def read(path):
@@ -47,7 +49,7 @@ for mode in ('global','concat_core','concat_padded'):
 for r in read(mili/'metrics.json'):
     if r['song']=='ALL' and r['group']=='all':assert r['n']==leaf_n,r
 folder=ROOT/'results/separation-alignment'
-for name,persist,mode,kind in itertools.product(('demucs','scnet','dttnet','bs_roformer','mel_roformer','windowed'),
+for name,persist,mode,kind in itertools.product(SEPARATORS,
     ('float','pcm24'),('global','concat_core','concat_padded'),('confirmed-targets',)):
     expected=primary+['s13']
     for sid in expected:
@@ -55,7 +57,7 @@ for name,persist,mode,kind in itertools.product(('demucs','scnet','dttnet','bs_r
         assert present(path),path
 for model,repeat in itertools.product(('demucs','bs','kim'),(1,2)):
     assert present(matrix/'resource-benchmark'/f'{model}-{repeat}.json')
-print('Complete:',len(all_ids)*3,'Timing pipeline cases;',count+15*len(ids),'module matrix cases;',36*(len(primary)+1),'separation alignment cases;',len(groups),'MiliKara configurations.')
+print('Complete:',len(all_ids)*3,'Timing pipeline cases;',count+15*len(ids),'module matrix cases;',60*(len(primary)+1),'separation alignment cases;',len(groups),'MiliKara configurations.')
 
 for sid,mode,variant in itertools.product(primary,('global','concat_core'),('baseline','cached_window','local_fresh')):
  assert present(ROOT/'results/local-refinement/predictions'/f'{sid}--{mode}--{variant}.json')
@@ -118,11 +120,56 @@ edits=read(ROOT/'results/mms-gap-fill/edits.json')
 for row in edits:
  assert row['before'][0]==row['after'][0] and row['after'][1]>row['before'][1]
 
-for name in ('demucs','scnet','dttnet','bs_roformer','mel_roformer','windowed'):
- record=read(ROOT/'results/separation-resources'/(name+'.json'))
- assert len(record['records'])==15
+for name,device in itertools.product(SEPARATORS,('cpu','cuda')):
+ suffix='-cpu' if device=='cpu' else ''
+ record=read(ROOT/'results/separation-resources'/(name+suffix+'.json'))
+ assert len(record['records'])==(3 if device=='cpu' else 15)
+ assert record['threads']==8
  assert {(x['song'],x['repeat']) for x in record['records']}=={(s['id'],k) for s in record['inputs'] for k in (1,2,3)}
- assert all(x['seconds']>0 and x['allocated_bytes']>0 for x in record['records'])
-print('Complete:',23*6*len(primary),'MMS_FA postprocessing cases; 90 separator warm runs.')
+ assert all(x['seconds']>0 and x['rss_bytes']>0 for x in record['records'])
+ if device=='cuda':
+  assert record['gpu']=='NVIDIA GeForce RTX 4090'
+  assert all(x['board_energy_joules']>0 for x in record['records'])
+  field='process_gpu_bytes' if name=='sug' else 'allocated_bytes'
+  assert all(x[field]>0 for x in record['records'])
+ else:
+  assert record['inputs']==read(ROOT/'configs/separation-cpu-inputs.json')
+  assert all(x['duration']==30 and x['output_shape']==[2,1323000] and x['output_finite'] for x in record['records'])
+  assert record['device']=='cpu' and record['gpu'] is None
+  assert all(x['allocated_bytes'] is None and x['board_energy_joules'] is None for x in record['records'])
+ if name=='sug':
+  expected='CPUExecutionProvider' if device=='cpu' else 'CUDAExecutionProvider'
+  assert record['identity']['providers'][0]==expected
+for name in SEPARATORS:
+ gpu=read(ROOT/'results/separation-resources'/(name+'.json'))
+ cpu=read(ROOT/'results/separation-resources'/(name+'-cpu.json'))
+ for key in ('state_sha256','weight_sha256'):
+  assert gpu['identity'].get(key)==cpu['identity'].get(key),(name,key)
+resource_summary=read(ROOT/'results/separation-resources/summary.json')
+assert len(resource_summary)==20
+assert {(r['model'],r['device']) for r in resource_summary}==set(itertools.product(SEPARATORS,('cpu','cuda')))
+with (ROOT/'results/separation-resources/summary.csv').open() as stream:
+ csv_rows=list(csv.DictReader(stream))
+assert csv_rows==[{k:'' if v is None else str(v) for k,v in r.items()} for r in resource_summary]
+for row in resource_summary:
+ raw=read(ROOT/'results/separation-resources'/(row['model']+('-cpu' if row['device']=='cpu' else '')+'.json'))
+ expected=sum(statistics.median(x['seconds'] for x in raw['records'] if x['song']==song['id']) for song in raw['inputs'])
+ assert math.isclose(row['seconds'],expected,rel_tol=1e-12)
+ assert row['runs']==len(raw['records'])
+for name in ('bs','sug','milikara','yohane'):
+ manifest=read(ROOT/'results/separation-alignment'/('stems-'+name+'.json'))
+ assert {r['song'] for r in manifest['records']}==set(primary+['s13'])
+ audit=manifest['native_equivalence']
+ assert audit['max_absolute_difference']<=audit['tolerance']
+summary=read(ROOT/'results/separation-alignment/metrics.json')
+legacy_metrics={key:sorted((row for row in values if row['separator'] in LEGACY),key=lambda row:json.dumps(row,sort_keys=True)) for key,values in summary.items()}
+assert hashlib.sha256(json.dumps(legacy_metrics,sort_keys=True).encode()).hexdigest()==read(ROOT/'results/separation-alignment/reuse-audit.json')['legacy_metrics_sha256']
+with (ROOT/'results/separation-alignment/metrics.csv').open() as stream:
+ assert list(csv.DictReader(stream))==[{k:str(v) for k,v in r.items()} for r in summary['aggregate']]
+rows=[r for r in summary['aggregate'] if r['group']=='japanese']
+assert len(rows)==60 and all(r['songs']==12 and r['n']==5370 for r in rows)
+for path,expected in read(ROOT/'results/separation-alignment/reuse-audit.json')['preserved_files'].items():
+ with (ROOT/path).open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()==expected,path
+print('Complete:',23*6*len(primary),'MMS_FA postprocessing cases; 180 separator warm runs; 780 separator predictions.')
 import subprocess,sys
 subprocess.run([sys.executable,str(ROOT/'scripts/comparison/verify.py')],check=True)

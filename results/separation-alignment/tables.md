@@ -1,9 +1,27 @@
-# 六模型下游完整结果
+# 十种分离配置下游完整结果
 
 主组为 12 首日语歌曲。表中 100 ms 为歌曲等权宏平均；单元计数和缺失见 CSV。路径代码 float 为浮点音频，pcm24 为 24 位音频采样保存后读回；core 为核心人声区间拼接，padded 为带缓冲拼接，full 为完整人声。
 
 | 分离器 | 路径 | 音频 | 目标 | 语言组 | 单元 | 100 ms 宏平均 | 100 ms 个数 | 缺失 |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: | ---: |
+| bs | float | concat_core | confirmed-targets | all | 5488 | 84.35% | 4642 | 27 |
+| bs | float | concat_core | confirmed-targets | japanese | 5370 | 85.49% | 4609 | 23 |
+| bs | float | concat_core | confirmed-targets | latin | 118 | 43.22% | 33 | 4 |
+| bs | float | concat_padded | confirmed-targets | all | 5488 | 84.02% | 4633 | 9 |
+| bs | float | concat_padded | confirmed-targets | japanese | 5370 | 85.14% | 4599 | 7 |
+| bs | float | concat_padded | confirmed-targets | latin | 118 | 47.63% | 34 | 2 |
+| bs | float | global | confirmed-targets | all | 5488 | 75.29% | 4159 | 2 |
+| bs | float | global | confirmed-targets | japanese | 5370 | 76.41% | 4133 | 2 |
+| bs | float | global | confirmed-targets | latin | 118 | 38.29% | 26 | 0 |
+| bs | pcm24 | concat_core | confirmed-targets | all | 5488 | 84.66% | 4658 | 27 |
+| bs | pcm24 | concat_core | confirmed-targets | japanese | 5370 | 85.73% | 4622 | 23 |
+| bs | pcm24 | concat_core | confirmed-targets | latin | 118 | 45.17% | 36 | 4 |
+| bs | pcm24 | concat_padded | confirmed-targets | all | 5488 | 84.09% | 4636 | 9 |
+| bs | pcm24 | concat_padded | confirmed-targets | japanese | 5370 | 85.21% | 4602 | 7 |
+| bs | pcm24 | concat_padded | confirmed-targets | latin | 118 | 47.63% | 34 | 2 |
+| bs | pcm24 | global | confirmed-targets | all | 5488 | 75.29% | 4159 | 2 |
+| bs | pcm24 | global | confirmed-targets | japanese | 5370 | 76.41% | 4133 | 2 |
+| bs | pcm24 | global | confirmed-targets | latin | 118 | 38.29% | 26 | 0 |
 | bs_roformer | float | concat_core | confirmed-targets | all | 5488 | 83.58% | 4599 | 15 |
 | bs_roformer | float | concat_core | confirmed-targets | japanese | 5370 | 84.53% | 4559 | 13 |
 | bs_roformer | float | concat_core | confirmed-targets | latin | 118 | 43.83% | 40 | 2 |
@@ -76,6 +94,24 @@
 | mel_roformer | pcm24 | global | confirmed-targets | all | 5488 | 75.30% | 4152 | 2 |
 | mel_roformer | pcm24 | global | confirmed-targets | japanese | 5370 | 76.19% | 4118 | 2 |
 | mel_roformer | pcm24 | global | confirmed-targets | latin | 118 | 43.88% | 34 | 0 |
+| milikara | float | concat_core | confirmed-targets | all | 5488 | 83.00% | 4566 | 10 |
+| milikara | float | concat_core | confirmed-targets | japanese | 5370 | 84.13% | 4536 | 10 |
+| milikara | float | concat_core | confirmed-targets | latin | 118 | 39.54% | 30 | 0 |
+| milikara | float | concat_padded | confirmed-targets | all | 5488 | 81.69% | 4496 | 3 |
+| milikara | float | concat_padded | confirmed-targets | japanese | 5370 | 82.77% | 4465 | 3 |
+| milikara | float | concat_padded | confirmed-targets | latin | 118 | 39.79% | 31 | 0 |
+| milikara | float | global | confirmed-targets | all | 5488 | 73.94% | 4079 | 2 |
+| milikara | float | global | confirmed-targets | japanese | 5370 | 74.93% | 4051 | 2 |
+| milikara | float | global | confirmed-targets | latin | 118 | 42.63% | 28 | 0 |
+| milikara | pcm24 | concat_core | confirmed-targets | all | 5488 | 83.00% | 4566 | 10 |
+| milikara | pcm24 | concat_core | confirmed-targets | japanese | 5370 | 84.13% | 4536 | 10 |
+| milikara | pcm24 | concat_core | confirmed-targets | latin | 118 | 39.54% | 30 | 0 |
+| milikara | pcm24 | concat_padded | confirmed-targets | all | 5488 | 81.69% | 4496 | 3 |
+| milikara | pcm24 | concat_padded | confirmed-targets | japanese | 5370 | 82.77% | 4465 | 3 |
+| milikara | pcm24 | concat_padded | confirmed-targets | latin | 118 | 39.79% | 31 | 0 |
+| milikara | pcm24 | global | confirmed-targets | all | 5488 | 73.94% | 4079 | 2 |
+| milikara | pcm24 | global | confirmed-targets | japanese | 5370 | 74.93% | 4051 | 2 |
+| milikara | pcm24 | global | confirmed-targets | latin | 118 | 42.63% | 28 | 0 |
 | scnet | float | concat_core | confirmed-targets | all | 5488 | 80.01% | 4396 | 59 |
 | scnet | float | concat_core | confirmed-targets | japanese | 5370 | 81.06% | 4366 | 53 |
 | scnet | float | concat_core | confirmed-targets | latin | 118 | 38.27% | 30 | 6 |
@@ -94,6 +130,24 @@
 | scnet | pcm24 | global | confirmed-targets | all | 5488 | 76.39% | 4201 | 2 |
 | scnet | pcm24 | global | confirmed-targets | japanese | 5370 | 77.36% | 4171 | 2 |
 | scnet | pcm24 | global | confirmed-targets | latin | 118 | 38.52% | 30 | 0 |
+| sug | float | concat_core | confirmed-targets | all | 5488 | 81.31% | 4473 | 101 |
+| sug | float | concat_core | confirmed-targets | japanese | 5370 | 82.26% | 4434 | 98 |
+| sug | float | concat_core | confirmed-targets | latin | 118 | 46.00% | 39 | 3 |
+| sug | float | concat_padded | confirmed-targets | all | 5488 | 82.52% | 4539 | 18 |
+| sug | float | concat_padded | confirmed-targets | japanese | 5370 | 83.37% | 4496 | 16 |
+| sug | float | concat_padded | confirmed-targets | latin | 118 | 49.50% | 43 | 2 |
+| sug | float | global | confirmed-targets | all | 5488 | 80.86% | 4440 | 2 |
+| sug | float | global | confirmed-targets | japanese | 5370 | 81.87% | 4408 | 2 |
+| sug | float | global | confirmed-targets | latin | 118 | 43.58% | 32 | 0 |
+| sug | pcm24 | concat_core | confirmed-targets | all | 5488 | 81.31% | 4473 | 101 |
+| sug | pcm24 | concat_core | confirmed-targets | japanese | 5370 | 82.26% | 4434 | 98 |
+| sug | pcm24 | concat_core | confirmed-targets | latin | 118 | 46.00% | 39 | 3 |
+| sug | pcm24 | concat_padded | confirmed-targets | all | 5488 | 82.52% | 4539 | 18 |
+| sug | pcm24 | concat_padded | confirmed-targets | japanese | 5370 | 83.37% | 4496 | 16 |
+| sug | pcm24 | concat_padded | confirmed-targets | latin | 118 | 49.50% | 43 | 2 |
+| sug | pcm24 | global | confirmed-targets | all | 5488 | 80.86% | 4440 | 2 |
+| sug | pcm24 | global | confirmed-targets | japanese | 5370 | 81.87% | 4408 | 2 |
+| sug | pcm24 | global | confirmed-targets | latin | 118 | 43.58% | 32 | 0 |
 | windowed | float | concat_core | confirmed-targets | all | 5488 | 83.62% | 4595 | 10 |
 | windowed | float | concat_core | confirmed-targets | japanese | 5370 | 84.63% | 4559 | 9 |
 | windowed | float | concat_core | confirmed-targets | latin | 118 | 43.87% | 36 | 1 |
@@ -112,3 +166,21 @@
 | windowed | pcm24 | global | confirmed-targets | all | 5488 | 74.90% | 4125 | 2 |
 | windowed | pcm24 | global | confirmed-targets | japanese | 5370 | 75.75% | 4089 | 2 |
 | windowed | pcm24 | global | confirmed-targets | latin | 118 | 46.59% | 36 | 0 |
+| yohane | float | concat_core | confirmed-targets | all | 5488 | 79.96% | 4397 | 49 |
+| yohane | float | concat_core | confirmed-targets | japanese | 5370 | 80.99% | 4367 | 47 |
+| yohane | float | concat_core | confirmed-targets | latin | 118 | 35.27% | 30 | 2 |
+| yohane | float | concat_padded | confirmed-targets | all | 5488 | 80.78% | 4446 | 11 |
+| yohane | float | concat_padded | confirmed-targets | japanese | 5370 | 81.73% | 4411 | 10 |
+| yohane | float | concat_padded | confirmed-targets | latin | 118 | 40.72% | 35 | 1 |
+| yohane | float | global | confirmed-targets | all | 5488 | 70.60% | 3883 | 2 |
+| yohane | float | global | confirmed-targets | japanese | 5370 | 71.61% | 3863 | 2 |
+| yohane | float | global | confirmed-targets | latin | 118 | 24.92% | 20 | 0 |
+| yohane | pcm24 | concat_core | confirmed-targets | all | 5488 | 79.98% | 4398 | 49 |
+| yohane | pcm24 | concat_core | confirmed-targets | japanese | 5370 | 81.01% | 4368 | 47 |
+| yohane | pcm24 | concat_core | confirmed-targets | latin | 118 | 35.27% | 30 | 2 |
+| yohane | pcm24 | concat_padded | confirmed-targets | all | 5488 | 80.78% | 4446 | 11 |
+| yohane | pcm24 | concat_padded | confirmed-targets | japanese | 5370 | 81.73% | 4411 | 10 |
+| yohane | pcm24 | concat_padded | confirmed-targets | latin | 118 | 40.72% | 35 | 1 |
+| yohane | pcm24 | global | confirmed-targets | all | 5488 | 70.60% | 3883 | 2 |
+| yohane | pcm24 | global | confirmed-targets | japanese | 5370 | 71.61% | 3863 | 2 |
+| yohane | pcm24 | global | confirmed-targets | latin | 118 | 24.92% | 20 | 0 |

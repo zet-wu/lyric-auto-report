@@ -14,12 +14,12 @@ for row in rows:
     assert path.stat().st_size==row['bytes'],row['path']
     with path.open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()==row['sha256'],row['path']
 checked=0
-for dirname in ('scripts','configs','reports','results','historical','requirements'):
+for dirname in ('scripts','configs','reports','results','requirements'):
     for path in (ROOT/dirname).rglob('*'):
         if not path.is_file() or '__pycache__' in path.parts:continue
         assert not path.is_symlink(),path
         if path.suffix=='.py':ast.parse(path.read_text())
-        if path.suffix in ('.json','.gz'):
+        if path.suffix in ('.json','.gz','.sug'):
             value=read(path)
             text=json.dumps(value,ensure_ascii=False,allow_nan=False)
         elif path.suffix in ('.md','.py','.cjs','.txt','.csv','.yaml','.yml'):

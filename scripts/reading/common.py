@@ -4,7 +4,8 @@ ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'results/reading'
 os.chdir(ROOT)
 os.environ['XDG_CACHE_HOME']=str(ROOT/'.cache')
-sys.path[:0]=[str(ROOT/'.deps/studio'),str(ROOT/'.deps/milikara'),str(ROOT/'.deps/timing')]
+deps=ROOT/'.deps/comparison' if (ROOT/'.deps/comparison/studio').exists() else ROOT/'.deps'
+sys.path[:0]=[str(deps/name) for name in ('studio','milikara','timing')]
 def read(p):return json.loads(Path(p).read_text())
 def dump(p,v):
  p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2,allow_nan=False)+'\n')

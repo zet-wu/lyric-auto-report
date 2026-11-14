@@ -1,21 +1,26 @@
 {
-  "input_files_verified": 27,
-  "public_source_commits_verified": 6,
-  "source_worktrees_clean": true,
-  "inference_environment": "Repository-local research environment; Linux Python 3.13, NVIDIA CUDA",
-  "ctc_equivalence_cases": 120,
-  "timing_pipeline_cases": 42,
-  "module_matrix_cases": 1092,
+  "input_files_verified": 29,
+  "timing_pipeline_cases": 45,
+  "module_matrix_cases": 1176,
   "milikara_configurations": 252,
-  "milikara_song_cases": 3024,
-  "separation_alignment_cases": 432,
+  "milikara_song_cases": 3276,
+  "separation_alignment_cases": 468,
+  "local_refinement_cases": 72,
+  "independent_reading_songs": 13,
+  "independent_reading_cases": 117,
+  "reading_llm_outputs": "26 freshly generated gpt-6.1-terra outputs, direct and Studio-corrected; high reasoning; three isolated batches.",
+  "comparison_song_conditions": 264,
+  "comparison_group_route_rows": 22,
+  "mms_postprocessing_cases": 1656,
   "serial_resource_runs": 6,
+  "separator_warm_runs": 90,
+  "inference_environment": "Linux CUDA source API adapters; exact versions and model hashes in results/comparison.",
   "clean_scoring": {
-    "files": "Independent copy of the Git publication inventory",
-    "dependencies": "requirements/scoring.txt installed in a new virtual environment",
+    "files": "Independent copy of current publication directories, including newly added dataset files",
+    "dependencies": "requirements/scoring.txt; NumPy and Matplotlib only",
     "downloaded_project_sources_present": false,
     "model_weights_present": false,
-    "metric_objects_equal": 13,
+    "metric_objects_equal": 23,
     "verify_passed": true,
     "verify_results_passed": true,
     "semantic_hash_encoding": "SHA256 of UTF-8 JSON, sorted object keys, compact separators, ensure_ascii=False",
@@ -26,15 +31,15 @@
       },
       {
         "path": "results/timing/hybrid-metrics.json",
-        "semantic_sha256": "eecf64f108e3bd013818a198fe20a62d3e9e453a884871a353b4341f185eeb1b"
+        "semantic_sha256": "26fb2a56468cffa3ccb0e53e132c20df2a47d0f77ba9864b0cb6bf4974968de1"
       },
       {
         "path": "results/timing/controlled-metrics.json",
-        "semantic_sha256": "64e914de7efcce31719e0840f8490836fff1ad34369d3fd6301952df73b68620"
+        "semantic_sha256": "f6ec321ef99d0a72ea67e2de89c2730a3d190de547ce21f15125ef829681677e"
       },
       {
         "path": "results/timing/metrics.json",
-        "semantic_sha256": "fb40ef0eedbcb70bcc98f73cf74bd9e03669563f65791920ad3a2bdf0be878f9"
+        "semantic_sha256": "e23785ea0fec9da70420896cc42415bff7bb4a5ab01933b5f20a626100852b26"
       },
       {
         "path": "results/timing/english-metrics.json",
@@ -42,46 +47,95 @@
       },
       {
         "path": "results/separation-alignment/metrics.json",
-        "semantic_sha256": "2e9a3307bba86e445e798a2b4ff190a7dec1be3d2017f0bd2148d64685b67975"
+        "semantic_sha256": "31cdcbf71ce8c424b7199050a91c990a6126a14fdfdba86a24d11223491151aa"
       },
       {
         "path": "results/ablation/metrics.json",
-        "semantic_sha256": "363240210a4fd7fda00333aad71f26ca5df11c37c3d327983774844263d8d736"
+        "semantic_sha256": "254b8c25f5f7734a7f1dac3e471f2b567285fbac5d65eefa54204686e119e243"
       },
       {
         "path": "results/milikara/factor-effects.json",
-        "semantic_sha256": "c1a77b3a581e77caf510665cddd14723599ecdc1fdceff86688cd86681705259"
+        "semantic_sha256": "76af316308be5f354bdfb1824917d37385eea0b4fcfa92965911293e300fdf25"
       },
       {
         "path": "results/milikara/metrics.json",
-        "semantic_sha256": "8cea570510eedc5c0a55ea60e2a761de5891fc03e9c4f941e8f5a88be58f39a1"
+        "semantic_sha256": "8c4b51df85f96a970151d1506c2735df9af97cfc48f6f194b9c5af8c23c9c897"
       },
       {
         "path": "results/reading/metrics.json",
-        "semantic_sha256": "8216b1af36f79825a8a3973392e7649a75fb591d259f31f4a745f4684e5230ef"
+        "semantic_sha256": "1be5271c38fee185de3582fae245402161d12ca03d1807251d0e3bb354ab7c56"
+      },
+      {
+        "path": "results/reading/items.json",
+        "semantic_sha256": "aa0cbce1c76faec6680c3d6fb6f234fa37e65ac6eaa6f05602fe3e8537d07ae0"
+      },
+      {
+        "path": "results/reading/lines.json",
+        "semantic_sha256": "0b236570e431a90cf87f0745d8a7ec5e92ce4b3acac07aadfcdda0bb69bc3850"
+      },
+      {
+        "path": "results/reading/excluded.json",
+        "semantic_sha256": "07095cc7b8efb23f274fbbe70e6426a9a21249f2e9682b220c19733d0f8857b6"
       },
       {
         "path": "results/local-refinement/metrics.json",
-        "semantic_sha256": "b7a66c6ffa1fff8f5bc011680f4d85c08f627ce5bf90d7bcc2ba9c9cb0d83734"
+        "semantic_sha256": "b67a1e12395fcfa34b2cb5b89197e8e60851494667b1fff8bc9e85a5c6713c97"
       },
       {
         "path": "results/mms-gap-fill/metrics.json",
-        "semantic_sha256": "736229e48a7f10c0badfd38b9f2fc3b4f7981a6522344658b55d0e5e09ec2413"
+        "semantic_sha256": "61a6f2c03f104de270b6904cf888de0364348d27050812129285550327f1145e"
       },
       {
-        "path": "results/milikara-native/metrics.json",
-        "semantic_sha256": "99902048dec52bd99b3238cc7c8b928aa54d2dd63e0a175cf64e19c4a3925cb9"
+        "path": "results/mms-gap-fill/edits.json",
+        "semantic_sha256": "375d71b3409e91192a550022e7ec7b99a3540aa988991a6627568b6df36e621a"
+      },
+      {
+        "path": "results/comparison/scores/summary.json",
+        "semantic_sha256": "c253fa532747710172db761f76f535f6f9895867fefd84874201b55e8a94e3e1"
+      },
+      {
+        "path": "results/comparison/scores/items.json",
+        "semantic_sha256": "cc23e6b6df7214d45da58787d6b75e7f9567a4832699e67226cb6667c8370760"
+      },
+      {
+        "path": "results/comparison/scores/status.json",
+        "semantic_sha256": "395c3ba343314e1d2831df792ad91b9490144c00fef84af01cfab1357602791e"
+      },
+      {
+        "path": "results/comparison/scores/studio-leaf-summary.json",
+        "semantic_sha256": "5984402d1d9db032cb1435b9f57e57816bec734fce7edb73f6a6bb32ec29cb9a"
+      },
+      {
+        "path": "results/comparison/scores/studio-leaf-items.json",
+        "semantic_sha256": "782d069ec7547b64521cdbf67241a9a6472373d71f93352210ce1c7eaf44a24b"
+      },
+      {
+        "path": "results/comparison/scores/reading-summary.json",
+        "semantic_sha256": "ffbd55c2de2a82993a9a5a77e156ef271fe8cf7a40a00988d8d9d76f07569372"
+      },
+      {
+        "path": "results/comparison/scores/reading-items.json",
+        "semantic_sha256": "e3cb05d0aebc382fedd983d6157240d3f1d51c88e09f8d89e785693350ee0398"
       }
-    ],
-    "new_per_unit_artifacts_equal": true
+    ]
   },
-  "local_refinement_cases": 66,
-  "reading_song_cases": 110,
-  "reading_methods": 10,
-  "retained_manual_results_unchanged": true,
-  "mms_gap_fill_cases": 1518,
-  "native_milikara_cases": 28,
-  "native_separation_audios": 13,
-  "native_alignment_exports_verified": 28,
-  "native_environment": "Independent requirements/milikara-native-lock.txt environment; upstream UniDic Lite and audio-separator 0.30.2"
+  "comparison_metric_rows": 44,
+  "comparison_text_units_by_group": {
+    "G1": 4249,
+    "G2": 4249,
+    "G3": 2172
+  },
+  "comparison_reading_units_by_group": {
+    "G1": 5370,
+    "G2": 5370,
+    "G3": 5370
+  },
+  "comparison_reading_merge_policy": "Keep all manual reference units; unavailable internal boundaries count as missing. Report lost boundaries and affected units separately.",
+  "comparison_scoring_regressions": 8,
+  "sug_native_saved_projects": 68,
+  "sug_final_output": "Native .sug persisted checkpoints and sentence-end points; save/load round trip verified.",
+  "independent_reading_primary_songs": 12,
+  "independent_reading_mixed_japanese_lines": 10,
+  "studio_native_postprocessing_cases": 72,
+  "studio_native_postprocessing_tests": 9
 }

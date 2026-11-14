@@ -19,7 +19,9 @@ for method in args.methods:
   assert Path(os.environ['OPEN_JTALK_DICT_DIR']).is_dir(), 'Run scripts/download.py reading'
   import pyopenjtalk
  for path in sorted((OUT/'inputs').glob('*.json')):
-  s=read(path);rows=[];t=time.perf_counter()
+  s=read(path)
+  if s['song'] not in read(ROOT/'configs/reading.json')['songs']:continue
+  rows=[];t=time.perf_counter()
   for l in s['lines']:
    text=l['text'];error=None
    try:

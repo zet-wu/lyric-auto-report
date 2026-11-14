@@ -1,7 +1,8 @@
 """Shared source-span and full-line reading accuracy; no alignment scoring."""
 from common import *
 from collections import defaultdict
-METHODS=['studio','sudachi','milikara','milikara-fallback','timing','openjtalk','terra-direct','terra-corrected','luna-direct','luna-corrected']
+PROTOCOL=read(ROOT/'configs/reading.json')
+METHODS=PROTOCOL['methods']
 def distance(a,b):
  row=list(range(len(b)+1))
  for i,x in enumerate(a,1):
@@ -48,11 +49,11 @@ metrics=[]
 for scope,rows in [('kanji_spans',items),('japanese_lines',lineitems)]:
  for m in METHODS:
   selected=[r for r in rows if r['method']==m]
-  for sid in ['ALL',*[s['song'] for s in read(OUT/'references.json')]]:
-   rr=[r for r in selected if sid=='ALL' or r['song']==sid]
+  for sid in ['ALL','PRIMARY',*[s['song'] for s in read(OUT/'references.json')]]:
+   rr=[r for r in selected if sid=='ALL' or (sid=='PRIMARY' and r['song'] in PROTOCOL['primary_songs']) or r['song']==sid]
    result={'scope':scope,'method':m,'song':sid,**summarize(rr)}
-   if sid=='ALL':
-    per=[summarize([r for r in selected if r['song']==s['song']]) for s in read(OUT/'references.json')]
+   if sid in ('ALL','PRIMARY'):
+    per=[summarize([r for r in selected if r['song']==s['song']]) for s in read(OUT/'references.json') if sid=='ALL' or s['song'] in PROTOCOL['primary_songs']]
     result['macro_accuracy_pct']=sum(p['accuracy_pct'] for p in per if p['n'])/sum(bool(p['n']) for p in per)
    metrics.append(result)
 dump(OUT/'metrics.json',metrics);dump(OUT/'items.json',items);dump(OUT/'lines.json',lineitems);dump(OUT/'excluded.json',excluded);dump(OUT/'errors.json',errors)

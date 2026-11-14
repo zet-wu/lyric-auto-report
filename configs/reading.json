@@ -1,5 +1,5 @@
 {
-  "version": "text-reading-v1",
+  "version": "text-reading-v2",
   "songs": [
     "s01",
     "s02",
@@ -11,7 +11,9 @@
     "s08",
     "s09",
     "s10",
-    "s12"
+    "s11",
+    "s12",
+    "s15"
   ],
   "methods": [
     "studio",
@@ -20,17 +22,15 @@
     "milikara-fallback",
     "timing",
     "openjtalk",
+    "sug",
     "terra-direct",
-    "terra-corrected",
-    "luna-direct",
-    "luna-corrected"
+    "terra-corrected"
   ],
   "llm_models": {
-    "terra": "gpt-6.1-terra",
-    "luna": "gpt-6-luna"
+    "terra": "gpt-6.1-terra"
   },
   "reasoning_effort": "high",
-  "execution": "One isolated agent per model. Direct first, then Studio-candidate correction in the same agent context. One exported answer per condition, no sampling repeats. No reference, audio, timestamp, other-model output, web or dictionary lookup. Agents may use tools to serialize and validate their own annotations. Input-format repair was followed by one normalized-input revision in each existing agent; no gold readings or scores were returned to either agent.",
+  "execution": "Fresh isolated GPT-6.1 Terra agents, high reasoning; three song batches. Direct annotations first, then Studio-candidate correction in the same agent. No gold, audio, timestamps, old predictions, external dictionaries or web. One answer per song/condition; only output format may be repaired without reference feedback.",
   "input": "results/reading/inputs/*.json; correction additionally receives results/reading/predictions/studio/*.json",
   "common_prompt": "Read the full Japanese lyric context. Return one reading for every input words item in order, preserving IDs and item count. Convert kanji to contextual hiragana. Preserve existing kana spelling, including particles は/へ/を. Distribute contracted sounds and small っ over the supplied source boundaries. Preserve Latin text, whitespace and punctuation. Read numbers in context; use an empty string when unresolved. Do not consult gold readings, TTML, audio, timestamps, other methods, dictionaries or network. Output song, model, method and lines containing id/readings.",
   "correction_prompt": "Use Studio parts as candidate readings, review them against the original lyric context, and correct errors. Return the same per-input-word schema. Previous direct answers remain in the agent context.",
@@ -39,6 +39,56 @@
   "normalization": "NFKC, katakana to hiragana, remove non-alphanumeric punctuation/space. Preserve small kana, long marks and particle spelling. Orthographic accuracy against original human Ruby; no phonetic substitutions.",
   "alignment": "Reading evaluation is independent of alignment. Local refinement uses confirmed human readings.",
   "input_normalization": "Remove XML layout control characters LF, CR and TAB from source words and reference display text; retain ordinary spaces. Original TTML files are unchanged.",
+  "source_commits": {
+    "studio": {
+      "commit": "5d3183e326614760a8fa9d41473c58248c3432ce",
+      "url": "https://github.com/zet-wu/Lazulite-studio.git"
+    },
+    "timing": {
+      "commit": "d2b46eec1e8ba7ae6e03a3d57f086277943e1f8c",
+      "url": "https://github.com/Zennmn/Timing.git"
+    },
+    "milikara": {
+      "commit": "80c062ba280941b8957236cf37e3e0506ee293a0",
+      "url": "https://github.com/BilyHurington/MiliKara.git"
+    },
+    "sug": {
+      "commit": "423cf28c2b41f3772ddda361dde67026389aa4ee",
+      "url": "https://github.com/karaoke-studio/StrangeUtaGame.git"
+    }
+  },
+  "scope_note": "All twelve Japanese songs plus the ten Japanese lines of mixed-language s11; report primary and mixed subsets separately.",
+  "primary_songs": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s12",
+    "s15"
+  ],
+  "line_selection": {
+    "s11": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "reason": "Japanese verse only; Cantonese lines excluded by source language"
+    }
+  },
   "input_sha256": {
     "s01.json": "0409c760518af908d3f32affc0eae9179f2d1f7c0b754972db254c93c2ec6d75",
     "s02.json": "3ae5ae47678f7fef9d66973d009c03d498ef330f1cf61d7a4c267b96226b0c4d",
@@ -50,6 +100,24 @@
     "s08.json": "ca26099714a4cdb80df03f73c9b8a919af18412e098e52fd37873460079f9dbf",
     "s09.json": "c6ce96e8bd1603b663b3b2937256b3f023f5aca22fd24beb884b698d1d442b23",
     "s10.json": "c218feec6715f3f0dc722ff04790e97081fe7acc13724927f5b36c0e1c09bfff",
-    "s12.json": "492afcd3fa81c84f5d3d7993adfb89d52c4819bf89eac6c019cbdaf981835cf0"
-  }
+    "s11.json": "0ef210217e9f9f6d949563e54c038ff11e290b29cc3a439a352bb98ff7f4061b",
+    "s12.json": "492afcd3fa81c84f5d3d7993adfb89d52c4819bf89eac6c019cbdaf981835cf0",
+    "s15.json": "e83dcf8ab249815c4c8e7c1ae626df4b7a02105ab931422848fa3db1274c8fd7"
+  },
+  "studio_prediction_sha256": {
+    "s01.json": "361936cfd4cf4ac769061b7027d205f9186d9138823e93f358ca48604ff51e1d",
+    "s02.json": "1d662a0175866bc27308acc34c4201d84ee9e4ef1b3d720f793c997f879081fa",
+    "s03.json": "96bec93f707b408dbc0a6adba6ac0b90a5505b9d5f9cdb5ca090b6a9d58c2807",
+    "s04.json": "e156b5ad9042234fb25b74486e2aa705a343020acc96d376786814839d4ac5d7",
+    "s05.json": "f8933d8543fb701795e75eb448a4ecbca45c9204e8b1c8003c24bf4027ba4dfb",
+    "s06.json": "2ce072e05bfcb6ad2d50e8736bc870e810d4cf2b42d7b4522eef1c468f828422",
+    "s07.json": "abcbba806582ea07176210557617447637af9a60de06851b0db654eb77941065",
+    "s08.json": "37b422f5acc90b56aef85a2f17637b31b5f567e0b67d7bb8e4e88cdb9d9e0341",
+    "s09.json": "c5c831eea9fac5dfe80c570e739189ab249ff4662301b3045bfb472e32bcf857",
+    "s10.json": "69542ffc39521cbf2702eaf8995703b8294d9c1bd8aaa1a7ed78c46e3ce15a13",
+    "s11.json": "386e205bbc188acf3282ad621fa89d28614d9aff43d8325457f7858612e288eb",
+    "s12.json": "68c3e7cd62367d0c3ed507c7b7e45df69b1e12af58237152645ca9da9b1897f7",
+    "s15.json": "2f38c54d5bb0914831cf3acc35258479e6f73659ce14ee757721fa151ae3aa40"
+  },
+  "fresh_llm_execution": "Fresh direct and Studio-correction predictions from three isolated gpt-6.1-terra agents; no old prediction reuse in this run."
 }

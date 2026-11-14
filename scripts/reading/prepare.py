@@ -1,11 +1,14 @@
 """Extract text-only inputs and isolated original TTML reading references."""
 from common import *
 def display(s):return s.replace('\n','').replace('\r','').replace('\t','')
+selected=set(read(ROOT/'configs/reading.json')['songs'])
 refs=[]
 for s in read(ROOT/'results/timing/reference.json'):
- if s['id'] in ('s11','s13','s14'):continue
+ if s['id'] not in selected:continue
  data={'song':s['id'],'lines':[]};gold={'song':s['id'],'lines':[]}
- for l in s['lines']:
+ for li,l in enumerate(s['lines']):
+  selection=read(ROOT/'configs/reading.json').get('line_selection',{}).get(s['id'])
+  if selection and li not in selection['indices']:continue
   words=[];truth=[]
   for w in l['words']:
    leaves=[x for x in l['leaves'] if x['word_id']==w['id']]

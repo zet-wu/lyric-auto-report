@@ -1,0 +1,252 @@
+{
+  "protocol": "text-reading-v2",
+  "records": [
+    {
+      "song": "s01",
+      "condition": "direct",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "0409c760518af908d3f32affc0eae9179f2d1f7c0b754972db254c93c2ec6d75",
+      "output_sha256": "4f588679f9717d1ad998b7a9fc498b02e3ebc36c52429722d34cd205c2885da0"
+    },
+    {
+      "song": "s01",
+      "condition": "corrected",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "0409c760518af908d3f32affc0eae9179f2d1f7c0b754972db254c93c2ec6d75",
+      "output_sha256": "3ead5032d50dc25491a0ba18a374ac468e6de7f723ecc8a8c6d22c5f1d601d44",
+      "studio_candidate_sha256": "361936cfd4cf4ac769061b7027d205f9186d9138823e93f358ca48604ff51e1d"
+    },
+    {
+      "song": "s02",
+      "condition": "direct",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "3ae5ae47678f7fef9d66973d009c03d498ef330f1cf61d7a4c267b96226b0c4d",
+      "output_sha256": "28126e16c4768f9eefde0ed20cab7f773ac9bb1afe4944769cddec3d3ff0fd45"
+    },
+    {
+      "song": "s02",
+      "condition": "corrected",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "3ae5ae47678f7fef9d66973d009c03d498ef330f1cf61d7a4c267b96226b0c4d",
+      "output_sha256": "9cdfe7192776bd5906d708aa2c0362b8733b421dc3057dc1b5207d27961c1a14",
+      "studio_candidate_sha256": "1d662a0175866bc27308acc34c4201d84ee9e4ef1b3d720f793c997f879081fa"
+    },
+    {
+      "song": "s03",
+      "condition": "direct",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "e50f85f7f9ff96e81e869a5681a8dd5cc2178123cda89e0729225710626d9a9f",
+      "output_sha256": "0e991f8d3a3785b68d56332fb2d5847a598769430776ee47b740695fcf8fefc2"
+    },
+    {
+      "song": "s03",
+      "condition": "corrected",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "e50f85f7f9ff96e81e869a5681a8dd5cc2178123cda89e0729225710626d9a9f",
+      "output_sha256": "0a228a177c1fb8b3f42736d1d0720e15c12f34d40071c07880cdda2cd5a773f3",
+      "studio_candidate_sha256": "96bec93f707b408dbc0a6adba6ac0b90a5505b9d5f9cdb5ca090b6a9d58c2807"
+    },
+    {
+      "song": "s04",
+      "condition": "direct",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "c449bde0ea8d482dc20c6d2aff665b9128b019604a929993c21af61648ffe5a1",
+      "output_sha256": "09c8a5bcd528d4e2c8fff9d92ceb1777f330a6fe791e3e2a44dc31cfc79a7c69"
+    },
+    {
+      "song": "s04",
+      "condition": "corrected",
+      "batch": "a",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "c449bde0ea8d482dc20c6d2aff665b9128b019604a929993c21af61648ffe5a1",
+      "output_sha256": "5df4b1db62b079821f451e748b2077afa3c29923fbfa28e6ebe46a241bb9b9c2",
+      "studio_candidate_sha256": "e156b5ad9042234fb25b74486e2aa705a343020acc96d376786814839d4ac5d7"
+    },
+    {
+      "song": "s05",
+      "condition": "direct",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "810e0e0479b6387bd19de70bcdcac13807a04c34e926d9e9f4586f7cae6c3c66",
+      "output_sha256": "4c8dd9f763ac234a9f59c8aefcae078515a807b621236f5650957aa43f0585ae"
+    },
+    {
+      "song": "s05",
+      "condition": "corrected",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "810e0e0479b6387bd19de70bcdcac13807a04c34e926d9e9f4586f7cae6c3c66",
+      "output_sha256": "1fa4b9698255b8f2bd6717391491e79d0e0b47b0978df66f0c931f11820c4a20",
+      "studio_candidate_sha256": "f8933d8543fb701795e75eb448a4ecbca45c9204e8b1c8003c24bf4027ba4dfb"
+    },
+    {
+      "song": "s06",
+      "condition": "direct",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "a589947ef0c50871378dfbbe90e45c03a6ad99cdf0fc420826b4ab2501297961",
+      "output_sha256": "07b22a30fc33e733257bada1091bf692a8318d922b7b5816c4d8131bc0977214"
+    },
+    {
+      "song": "s06",
+      "condition": "corrected",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "a589947ef0c50871378dfbbe90e45c03a6ad99cdf0fc420826b4ab2501297961",
+      "output_sha256": "876e8be46796916685b4bede337ce83fe5a5128a202d4cced654cce29b12546e",
+      "studio_candidate_sha256": "2ce072e05bfcb6ad2d50e8736bc870e810d4cf2b42d7b4522eef1c468f828422"
+    },
+    {
+      "song": "s07",
+      "condition": "direct",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "52ca35716ce28a0893be0635930a749be2b9dd2a61d70fbee6f90ecc9005db50",
+      "output_sha256": "269230ec818b957720bc5c66ebf550c0cec4ec6b4780dd14ffec874c7c0a8745"
+    },
+    {
+      "song": "s07",
+      "condition": "corrected",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "52ca35716ce28a0893be0635930a749be2b9dd2a61d70fbee6f90ecc9005db50",
+      "output_sha256": "70406f3d197173344851efa5fb58a98691b97e96fbb61806578454902557b764",
+      "studio_candidate_sha256": "abcbba806582ea07176210557617447637af9a60de06851b0db654eb77941065"
+    },
+    {
+      "song": "s08",
+      "condition": "direct",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "ca26099714a4cdb80df03f73c9b8a919af18412e098e52fd37873460079f9dbf",
+      "output_sha256": "6b09700d18a4d4e78a42760734bee7725c81939a1f910a62eb6a905142ea3fef"
+    },
+    {
+      "song": "s08",
+      "condition": "corrected",
+      "batch": "b",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "ca26099714a4cdb80df03f73c9b8a919af18412e098e52fd37873460079f9dbf",
+      "output_sha256": "438f5960692d7bc2b6a603d8f89303328008693ecc4f2b54937a9bc2bb7a5060",
+      "studio_candidate_sha256": "37b422f5acc90b56aef85a2f17637b31b5f567e0b67d7bb8e4e88cdb9d9e0341"
+    },
+    {
+      "song": "s09",
+      "condition": "direct",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "c6ce96e8bd1603b663b3b2937256b3f023f5aca22fd24beb884b698d1d442b23",
+      "output_sha256": "de9e716010421725b6a5f270043ec06ae794ff502d5a860316646066de31eba7"
+    },
+    {
+      "song": "s09",
+      "condition": "corrected",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "c6ce96e8bd1603b663b3b2937256b3f023f5aca22fd24beb884b698d1d442b23",
+      "output_sha256": "94a4122550a7ccb4712bc64421880577aec7d8b74a69ee78900e225ed05dd983",
+      "studio_candidate_sha256": "c5c831eea9fac5dfe80c570e739189ab249ff4662301b3045bfb472e32bcf857"
+    },
+    {
+      "song": "s10",
+      "condition": "direct",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "c218feec6715f3f0dc722ff04790e97081fe7acc13724927f5b36c0e1c09bfff",
+      "output_sha256": "8d5f42a7f1fab5f8986974df5a84d550176c91d27463076a5799ed70dc4458f4"
+    },
+    {
+      "song": "s10",
+      "condition": "corrected",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "c218feec6715f3f0dc722ff04790e97081fe7acc13724927f5b36c0e1c09bfff",
+      "output_sha256": "c3550678d2e5408e3cc034131cf722c9b07ba42f105f1f8d3a1a470199406130",
+      "studio_candidate_sha256": "69542ffc39521cbf2702eaf8995703b8294d9c1bd8aaa1a7ed78c46e3ce15a13"
+    },
+    {
+      "song": "s11",
+      "condition": "direct",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "0ef210217e9f9f6d949563e54c038ff11e290b29cc3a439a352bb98ff7f4061b",
+      "output_sha256": "790880ac3fd59a30efd21deaabc8800dc2a93240faa7b194193423f7839d9f39"
+    },
+    {
+      "song": "s11",
+      "condition": "corrected",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "0ef210217e9f9f6d949563e54c038ff11e290b29cc3a439a352bb98ff7f4061b",
+      "output_sha256": "1ffffe66290f2dd774d7d1c05f7a6238595976f30a786d991f0bd50b1d4d5d14",
+      "studio_candidate_sha256": "386e205bbc188acf3282ad621fa89d28614d9aff43d8325457f7858612e288eb"
+    },
+    {
+      "song": "s12",
+      "condition": "direct",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "492afcd3fa81c84f5d3d7993adfb89d52c4819bf89eac6c019cbdaf981835cf0",
+      "output_sha256": "618e50dd2eb765db84778b23dc40e5c93a43b64989e63f8599f76a0317ca632d"
+    },
+    {
+      "song": "s12",
+      "condition": "corrected",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "492afcd3fa81c84f5d3d7993adfb89d52c4819bf89eac6c019cbdaf981835cf0",
+      "output_sha256": "b4b833b6ab0cfd0ddc25911cc43bbf7b9802b7b9bc3d08e1e83f0b465b249ac3",
+      "studio_candidate_sha256": "68c3e7cd62367d0c3ed507c7b7e45df69b1e12af58237152645ca9da9b1897f7"
+    },
+    {
+      "song": "s15",
+      "condition": "direct",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "e83dcf8ab249815c4c8e7c1ae626df4b7a02105ab931422848fa3db1274c8fd7",
+      "output_sha256": "f5a10ca737316c949535e2d1e7e0ad2f21bab8511a09c10576dc45442447c9d2"
+    },
+    {
+      "song": "s15",
+      "condition": "corrected",
+      "batch": "c",
+      "model": "gpt-6.1-terra",
+      "reasoning_effort": "high",
+      "input_sha256": "e83dcf8ab249815c4c8e7c1ae626df4b7a02105ab931422848fa3db1274c8fd7",
+      "output_sha256": "d822e0182afd2a52ca6a96bc7df72e3e652c1ca1ddabf4475e244dc81048c2b3",
+      "studio_candidate_sha256": "2f38c54d5bb0914831cf3acc35258479e6f73659ce14ee757721fa151ae3aa40"
+    }
+  ]
+}

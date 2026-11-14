@@ -21,15 +21,15 @@ groups={
               ('milikara/run_factorial.py',),('milikara/run_text.py',),('milikara/run_context.py',),
               ('milikara/run_runner.py',),('milikara/run_calibration.py',),('milikara/run_audio.py',),
               ('milikara/run_original_controls.py',),('milikara/evaluate.py',)],
- 'reading': [('reading/prepare.py',),('reading/local.py',)],
+ 'reading': [('reading/prepare.py',),('reading/local.py',),('reading/sug.py',),('reading/reuse_llm.py',),('reading/score.py',),('reading/report.py',)],
  'local-refinement': [('milikara/local_refinement.py',),('milikara/score_local.py',)],
  'mms-gap-fill': [('timing/mms_gap_fill.py',)],
- 'milikara-native': [('milikara/prepare_native.py',),('milikara/run_native.py',),('milikara/score_native.py',)],
+ 'comparison': [('comparison/run_all.py',)],
  'additional': [('timing/additional_separators.py',model) for model in ('scnet','dttnet','bs_roformer','mel_roformer','windowed')]+[
      ('timing/ablation_run.py',stage,'--separators','scnet','dttnet','bs_roformer','mel_roformer','windowed','--strategies','concat','padded','full')
      for stage in ('audio','nextfire')]+[('timing/ablation_score.py',),('timing/ablation_tables.py',)],
  'separation-alignment': [('milikara/run_separation.py',),('milikara/score_separation.py',)],
- 'resources': [('timing/resource_benchmark.py', model, str(repeat)) for repeat in (1,2) for model in ('demucs','bs','kim')],
+ 'resources': [('timing/resource_benchmark.py', model, str(repeat)) for repeat in (1,2) for model in ('demucs','bs','kim')]+[('timing/separation_resources.py',model) for model in ('demucs','scnet','dttnet','bs_roformer','mel_roformer','windowed')],
 }
 parser=argparse.ArgumentParser()
 parser.add_argument('stage',choices=[*groups,'all'])
@@ -45,6 +45,8 @@ if args.fresh:
     for name in ('results','.cache'):
         source=ROOT/name
         if source.exists():source.rename(backup/name.lstrip('.'))
+    (ROOT/'.cache').mkdir(exist_ok=True)
+    (ROOT/'.cache/reading-reuse.json').write_text(json.dumps({'source':str((backup/'results/reading').relative_to(ROOT))}))
     print('Previous outputs saved in',backup.relative_to(ROOT),flush=True)
 elif args.stage=='all' and (ROOT/'results/timing/baseline').exists() and not (ROOT/'.cache/timing/audio').exists():
     parser.error('Published predictions have no acoustic cache. Use all --fresh to regenerate inference, or scripts/score.py to rescore.')
@@ -58,7 +60,7 @@ for group in groups if args.stage=='all' else [args.stage]:
         print('RUN',group,*task,flush=True)
         path=logdir/f'{group}-{index:02}-{Path(task[0]).stem}.log'
         with path.open('w') as stream:
-            interpreter=str(ROOT/'.venvs/milikara/bin/python') if task[0]=='milikara/run_native.py' else sys.executable
+            interpreter=str(ROOT/'.venvs/sug/bin/python') if task[0]=='reading/sug.py' else sys.executable
             subprocess.run([interpreter,str(ROOT/'scripts'/task[0]),*task[1:]],check=True,
                            stdout=stream,stderr=subprocess.STDOUT,cwd=ROOT)
         print('DONE',group,*task,flush=True)

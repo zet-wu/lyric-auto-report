@@ -40,7 +40,7 @@ Demucs 提供了有实际收益的速度与质量平衡。尽管换用 BS-RoForm
 
 ### 自动注音
 
-Lazulite Studio 的“智能日文注音”使用 Sudachi + JmdictFurigana，以行作为单位处理，以充分利用上下文，基于 Sudachi 这一技术路线的Lazulite Studio 和 SUG 的注音准确率以及整行完全匹配率做到了不依赖 LLM 的最佳，超过了 MiliKara 和 Timing 使用的 MeCab／UniDic 或 pykakasi 路线。而仅靠文本的情况下，LLM 也无法做到完全正确，最好的结果仅做到注音准确率 97.63% 和整行完全匹配率 95.10%。见 [自动注音](reports/auto-reading.md)。
+Lazulite Studio 的“智能日文注音”使用 Sudachi + JmdictFurigana，以行作为单位处理，以充分利用上下文，基于 Sudachi 这一技术路线的Lazulite Studio 和 SUG 的注音准确率以及整行完全匹配率做到了不依赖 Windows 和 LLM 的最佳，超过了 MiliKara 和 Timing 使用的 MeCab／UniDic 或 pykakasi 路线。而仅靠文本的情况下，LLM 也无法做到完全正确，最好的结果仅做到注音准确率 97.63% 和整行完全匹配率 95.10%。见 [自动注音](reports/auto-reading.md)。
 
 ## 报告目录
 

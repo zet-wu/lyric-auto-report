@@ -1,0 +1,136 @@
+{
+  "scope": "SUG Sudachi fallback retained alongside Windows WinRT; other prediction values and timing experiments unchanged",
+  "baseline_file_count": 6682,
+  "unchanged_baseline_files": 6678,
+  "changed_baseline_files": [
+    "configs/reading.json",
+    "results/reading/items.json",
+    "results/reading/lines.json",
+    "results/reading/metrics.json"
+  ],
+  "other_predictions_unchanged": true,
+  "timing_results_unchanged": true,
+  "scoring_partitions_unchanged": true,
+  "excluded_and_errors_unchanged": true,
+  "independent_sug_score_check": true,
+  "score_checks": {
+    "metrics": {
+      "other_method_rows": 270,
+      "other_method_semantic_sha256": "b93e93258fa683b20bdd43ca9033ce6b7314e577352e073957a21f900a719263",
+      "current_semantic_sha256": "54af55bf84034fb767d48c4fe627604893b01c1eb282dac695fe1c7aa31983d9"
+    },
+    "items": {
+      "other_method_rows": 8901,
+      "other_method_semantic_sha256": "aa0cbce1c76faec6680c3d6fb6f234fa37e65ac6eaa6f05602fe3e8537d07ae0",
+      "current_semantic_sha256": "7cf3868bacbd45b7eb93f0a50464e6c25f9f894578ca6f0415716e406cae2669"
+    },
+    "lines": {
+      "other_method_rows": 4500,
+      "other_method_semantic_sha256": "0b236570e431a90cf87f0745d8a7ec5e92ce4b3acac07aadfcdda0bb69bc3850",
+      "current_semantic_sha256": "7c808138e214ed4f554c73579a9ed2a48d5826368d25b2f318a3829884f902eb"
+    }
+  },
+  "songs": 13,
+  "lines": 532,
+  "pending_units": 2,
+  "before_metrics": [
+    {
+      "scope": "kanji_spans",
+      "method": "sug",
+      "song": "PRIMARY",
+      "n": 969,
+      "exact": 916,
+      "accuracy_pct": 94.53044375644996,
+      "edits": 113,
+      "reference_characters": 4127,
+      "cer_pct": 2.738066392052338,
+      "kana_coverage_pct": 99.79360165118679
+    },
+    {
+      "scope": "kanji_spans",
+      "method": "sug",
+      "song": "s11",
+      "n": 20,
+      "exact": 15,
+      "accuracy_pct": 75.0,
+      "edits": 10,
+      "reference_characters": 90,
+      "cer_pct": 11.11111111111111,
+      "kana_coverage_pct": 100.0
+    },
+    {
+      "scope": "japanese_lines",
+      "method": "sug",
+      "song": "PRIMARY",
+      "n": 490,
+      "exact": 439,
+      "accuracy_pct": 89.59183673469387,
+      "edits": 109,
+      "reference_characters": 5246,
+      "cer_pct": 2.077773541746092,
+      "kana_coverage_pct": 99.59183673469387
+    },
+    {
+      "scope": "japanese_lines",
+      "method": "sug",
+      "song": "s11",
+      "n": 10,
+      "exact": 5,
+      "accuracy_pct": 50.0,
+      "edits": 10,
+      "reference_characters": 104,
+      "cer_pct": 9.615384615384615,
+      "kana_coverage_pct": 100.0
+    }
+  ],
+  "after_metrics": [
+    {
+      "scope": "kanji_spans",
+      "method": "sug-winrt",
+      "song": "PRIMARY",
+      "n": 969,
+      "exact": 935,
+      "accuracy_pct": 96.49122807017544,
+      "edits": 88,
+      "reference_characters": 4127,
+      "cer_pct": 2.1322994911558033,
+      "kana_coverage_pct": 99.79360165118679
+    },
+    {
+      "scope": "kanji_spans",
+      "method": "sug-winrt",
+      "song": "s11",
+      "n": 20,
+      "exact": 16,
+      "accuracy_pct": 80.0,
+      "edits": 10,
+      "reference_characters": 90,
+      "cer_pct": 11.11111111111111,
+      "kana_coverage_pct": 100.0
+    },
+    {
+      "scope": "japanese_lines",
+      "method": "sug-winrt",
+      "song": "PRIMARY",
+      "n": 490,
+      "exact": 455,
+      "accuracy_pct": 92.85714285714286,
+      "edits": 89,
+      "reference_characters": 5246,
+      "cer_pct": 1.6965306900495616,
+      "kana_coverage_pct": 99.59183673469387
+    },
+    {
+      "scope": "japanese_lines",
+      "method": "sug-winrt",
+      "song": "s11",
+      "n": 10,
+      "exact": 6,
+      "accuracy_pct": 60.0,
+      "edits": 10,
+      "reference_characters": 104,
+      "cer_pct": 9.615384615384615,
+      "kana_coverage_pct": 100.0
+    }
+  ]
+}

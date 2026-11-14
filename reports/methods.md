@@ -38,7 +38,7 @@ MAE（Mean Absolute Error，平均绝对误差）与绝对误差 P95（第 95 �
 
 ## 独立自动注音范围
 
-[自动注音报告](auto-reading.md)使用 s01–s10、s12、s15 共 12 首日语主组，另列 s11 前 10 行日语部分。本轮重新生成七种本地方法（含 SUG）与 gpt-6.1-terra 直接注音、修正 Lazulite Studio 两种条件。对齐实验 G3 仍使用 12 首主组。
+[自动注音报告](auto-reading.md)使用 s01–s10、s12、s15 共 12 首日语主组，另列 s11 前 10 行日语部分。SUG WinRT 自动注音实验在独立 Windows 环境中进行，其结果与原 Linux Sudachi 回退结果分列，其他六种本地方法与 gpt-6.1-terra 直接注音、修正 Lazulite Studio 两种条件保留原预测。对齐实验 G3 仍使用 12 首主组及原 Linux 结果，未采用此次 WinRT 注音。
 
 ## 模块诊断与资源
 

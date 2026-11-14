@@ -9,8 +9,7 @@
     "edits": 135,
     "reference_characters": 4217,
     "cer_pct": 3.201327958264169,
-    "kana_coverage_pct": 99.29221435793731,
-    "macro_accuracy_pct": 92.40989195623969
+    "kana_coverage_pct": 99.29221435793731
   },
   {
     "scope": "kanji_spans",
@@ -22,8 +21,7 @@
     "edits": 125,
     "reference_characters": 4127,
     "cer_pct": 3.028834504482675,
-    "kana_coverage_pct": 99.27760577915377,
-    "macro_accuracy_pct": 93.86071628592633
+    "kana_coverage_pct": 99.27760577915377
   },
   {
     "scope": "kanji_spans",
@@ -191,8 +189,7 @@
     "edits": 286,
     "reference_characters": 4217,
     "cer_pct": 6.7820725634337204,
-    "kana_coverage_pct": 99.89888776541962,
-    "macro_accuracy_pct": 88.83675709418331
+    "kana_coverage_pct": 99.89888776541962
   },
   {
     "scope": "kanji_spans",
@@ -204,8 +201,7 @@
     "edits": 267,
     "reference_characters": 4127,
     "cer_pct": 6.469590501574994,
-    "kana_coverage_pct": 99.8968008255934,
-    "macro_accuracy_pct": 90.40648685203193
+    "kana_coverage_pct": 99.8968008255934
   },
   {
     "scope": "kanji_spans",
@@ -373,8 +369,7 @@
     "edits": 153,
     "reference_characters": 4217,
     "cer_pct": 3.628171686032725,
-    "kana_coverage_pct": 99.79777553083923,
-    "macro_accuracy_pct": 91.14306330797234
+    "kana_coverage_pct": 99.79777553083923
   },
   {
     "scope": "kanji_spans",
@@ -386,8 +381,7 @@
     "edits": 139,
     "reference_characters": 4127,
     "cer_pct": 3.3680639689847345,
-    "kana_coverage_pct": 99.79360165118679,
-    "macro_accuracy_pct": 92.07165191697004
+    "kana_coverage_pct": 99.79360165118679
   },
   {
     "scope": "kanji_spans",
@@ -555,8 +549,7 @@
     "edits": 178,
     "reference_characters": 4217,
     "cer_pct": 4.221010196822386,
-    "kana_coverage_pct": 99.79777553083923,
-    "macro_accuracy_pct": 90.10064209695219
+    "kana_coverage_pct": 99.79777553083923
   },
   {
     "scope": "kanji_spans",
@@ -568,8 +561,7 @@
     "edits": 164,
     "reference_characters": 4127,
     "cer_pct": 3.9738308698812697,
-    "kana_coverage_pct": 99.79360165118679,
-    "macro_accuracy_pct": 91.77569560503154
+    "kana_coverage_pct": 99.79360165118679
   },
   {
     "scope": "kanji_spans",
@@ -737,8 +729,7 @@
     "edits": 300,
     "reference_characters": 4217,
     "cer_pct": 7.114062129475931,
-    "kana_coverage_pct": 99.69666329625885,
-    "macro_accuracy_pct": 77.591236176714
+    "kana_coverage_pct": 99.69666329625885
   },
   {
     "scope": "kanji_spans",
@@ -750,8 +741,7 @@
     "edits": 284,
     "reference_characters": 4127,
     "cer_pct": 6.881511994184637,
-    "kana_coverage_pct": 99.69040247678019,
-    "macro_accuracy_pct": 78.22383919144018
+    "kana_coverage_pct": 99.69040247678019
   },
   {
     "scope": "kanji_spans",
@@ -919,8 +909,7 @@
     "edits": 277,
     "reference_characters": 4217,
     "cer_pct": 6.568650699549443,
-    "kana_coverage_pct": 99.79777553083923,
-    "macro_accuracy_pct": 79.11125214177862
+    "kana_coverage_pct": 99.79777553083923
   },
   {
     "scope": "kanji_spans",
@@ -932,8 +921,7 @@
     "edits": 257,
     "reference_characters": 4127,
     "cer_pct": 6.22728374121638,
-    "kana_coverage_pct": 99.79360165118679,
-    "macro_accuracy_pct": 80.28718982026017
+    "kana_coverage_pct": 99.79360165118679
   },
   {
     "scope": "kanji_spans",
@@ -1101,8 +1089,7 @@
     "edits": 123,
     "reference_characters": 4217,
     "cer_pct": 2.916765473085132,
-    "kana_coverage_pct": 99.79777553083923,
-    "macro_accuracy_pct": 92.75665630300402
+    "kana_coverage_pct": 99.79777553083923
   },
   {
     "scope": "kanji_spans",
@@ -1114,8 +1101,7 @@
     "edits": 113,
     "reference_characters": 4127,
     "cer_pct": 2.738066392052338,
-    "kana_coverage_pct": 99.79360165118679,
-    "macro_accuracy_pct": 94.2363776615877
+    "kana_coverage_pct": 99.79360165118679
   },
   {
     "scope": "kanji_spans",
@@ -1275,6 +1261,186 @@
   },
   {
     "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "ALL",
+    "n": 989,
+    "exact": 951,
+    "accuracy_pct": 96.1577350859454,
+    "edits": 98,
+    "reference_characters": 4217,
+    "cer_pct": 2.3239269622954706,
+    "kana_coverage_pct": 99.79777553083923
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "PRIMARY",
+    "n": 969,
+    "exact": 935,
+    "accuracy_pct": 96.49122807017544,
+    "edits": 88,
+    "reference_characters": 4127,
+    "cer_pct": 2.1322994911558033,
+    "kana_coverage_pct": 99.79360165118679
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s01",
+    "n": 63,
+    "exact": 59,
+    "accuracy_pct": 93.65079365079364,
+    "edits": 13,
+    "reference_characters": 329,
+    "cer_pct": 3.951367781155015,
+    "kana_coverage_pct": 96.82539682539682
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s15",
+    "n": 75,
+    "exact": 71,
+    "accuracy_pct": 94.66666666666667,
+    "edits": 6,
+    "reference_characters": 364,
+    "cer_pct": 1.6483516483516483,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s02",
+    "n": 67,
+    "exact": 65,
+    "accuracy_pct": 97.01492537313433,
+    "edits": 3,
+    "reference_characters": 276,
+    "cer_pct": 1.0869565217391304,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s03",
+    "n": 92,
+    "exact": 92,
+    "accuracy_pct": 100.0,
+    "edits": 0,
+    "reference_characters": 337,
+    "cer_pct": 0.0,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s04",
+    "n": 66,
+    "exact": 64,
+    "accuracy_pct": 96.96969696969697,
+    "edits": 4,
+    "reference_characters": 319,
+    "cer_pct": 1.2539184952978057,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s05",
+    "n": 71,
+    "exact": 68,
+    "accuracy_pct": 95.77464788732394,
+    "edits": 8,
+    "reference_characters": 284,
+    "cer_pct": 2.816901408450704,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s06",
+    "n": 114,
+    "exact": 112,
+    "accuracy_pct": 98.24561403508773,
+    "edits": 10,
+    "reference_characters": 404,
+    "cer_pct": 2.4752475247524752,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s07",
+    "n": 103,
+    "exact": 102,
+    "accuracy_pct": 99.02912621359224,
+    "edits": 3,
+    "reference_characters": 419,
+    "cer_pct": 0.7159904534606205,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s08",
+    "n": 76,
+    "exact": 74,
+    "accuracy_pct": 97.36842105263158,
+    "edits": 5,
+    "reference_characters": 308,
+    "cer_pct": 1.6233766233766234,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s09",
+    "n": 79,
+    "exact": 74,
+    "accuracy_pct": 93.67088607594937,
+    "edits": 16,
+    "reference_characters": 421,
+    "cer_pct": 3.8004750593824226,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s10",
+    "n": 89,
+    "exact": 89,
+    "accuracy_pct": 100.0,
+    "edits": 0,
+    "reference_characters": 341,
+    "cer_pct": 0.0,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s11",
+    "n": 20,
+    "exact": 16,
+    "accuracy_pct": 80.0,
+    "edits": 10,
+    "reference_characters": 90,
+    "cer_pct": 11.11111111111111,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
+    "method": "sug-winrt",
+    "song": "s12",
+    "n": 74,
+    "exact": 65,
+    "accuracy_pct": 87.83783783783784,
+    "edits": 20,
+    "reference_characters": 325,
+    "cer_pct": 6.153846153846154,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "kanji_spans",
     "method": "terra-direct",
     "song": "ALL",
     "n": 989,
@@ -1283,8 +1449,7 @@
     "edits": 62,
     "reference_characters": 4217,
     "cer_pct": 1.4702395067583591,
-    "kana_coverage_pct": 99.79777553083923,
-    "macro_accuracy_pct": 96.58373652121676
+    "kana_coverage_pct": 99.79777553083923
   },
   {
     "scope": "kanji_spans",
@@ -1296,8 +1461,7 @@
     "edits": 56,
     "reference_characters": 4127,
     "cer_pct": 1.3569178580082384,
-    "kana_coverage_pct": 99.79360165118679,
-    "macro_accuracy_pct": 97.54904789798483
+    "kana_coverage_pct": 99.79360165118679
   },
   {
     "scope": "kanji_spans",
@@ -1465,8 +1629,7 @@
     "edits": 62,
     "reference_characters": 4217,
     "cer_pct": 1.4702395067583591,
-    "kana_coverage_pct": 99.79777553083923,
-    "macro_accuracy_pct": 96.85340201971522
+    "kana_coverage_pct": 99.79777553083923
   },
   {
     "scope": "kanji_spans",
@@ -1478,8 +1641,7 @@
     "edits": 57,
     "reference_characters": 4127,
     "cer_pct": 1.3811485340440999,
-    "kana_coverage_pct": 99.79360165118679,
-    "macro_accuracy_pct": 97.42451885469148
+    "kana_coverage_pct": 99.79360165118679
   },
   {
     "scope": "kanji_spans",
@@ -1647,8 +1809,7 @@
     "edits": 131,
     "reference_characters": 5350,
     "cer_pct": 2.4485981308411215,
-    "kana_coverage_pct": 98.6,
-    "macro_accuracy_pct": 85.5230515778852
+    "kana_coverage_pct": 98.6
   },
   {
     "scope": "japanese_lines",
@@ -1660,8 +1821,7 @@
     "edits": 121,
     "reference_characters": 5246,
     "cer_pct": 2.306519252764011,
-    "kana_coverage_pct": 98.57142857142857,
-    "macro_accuracy_pct": 88.48330587604231
+    "kana_coverage_pct": 98.57142857142857
   },
   {
     "scope": "japanese_lines",
@@ -1829,8 +1989,7 @@
     "edits": 282,
     "reference_characters": 5350,
     "cer_pct": 5.271028037383178,
-    "kana_coverage_pct": 99.8,
-    "macro_accuracy_pct": 78.67827996687943
+    "kana_coverage_pct": 99.8
   },
   {
     "scope": "japanese_lines",
@@ -1842,8 +2001,7 @@
     "edits": 263,
     "reference_characters": 5246,
     "cer_pct": 5.013343499809379,
-    "kana_coverage_pct": 99.79591836734694,
-    "macro_accuracy_pct": 81.90146996411939
+    "kana_coverage_pct": 99.79591836734694
   },
   {
     "scope": "japanese_lines",
@@ -2011,8 +2169,7 @@
     "edits": 187,
     "reference_characters": 5350,
     "cer_pct": 3.4953271028037385,
-    "kana_coverage_pct": 99.6,
-    "macro_accuracy_pct": 77.04713794230562
+    "kana_coverage_pct": 99.6
   },
   {
     "scope": "japanese_lines",
@@ -2024,8 +2181,7 @@
     "edits": 173,
     "reference_characters": 5246,
     "cer_pct": 3.2977506671749905,
-    "kana_coverage_pct": 99.59183673469387,
-    "macro_accuracy_pct": 78.46773277083109
+    "kana_coverage_pct": 99.59183673469387
   },
   {
     "scope": "japanese_lines",
@@ -2193,8 +2349,7 @@
     "edits": 179,
     "reference_characters": 5350,
     "cer_pct": 3.3457943925233646,
-    "kana_coverage_pct": 99.6,
-    "macro_accuracy_pct": 80.75026291683267
+    "kana_coverage_pct": 99.6
   },
   {
     "scope": "japanese_lines",
@@ -2206,8 +2361,7 @@
     "edits": 165,
     "reference_characters": 5246,
     "cer_pct": 3.1452535264963783,
-    "kana_coverage_pct": 99.59183673469387,
-    "macro_accuracy_pct": 84.14611815990206
+    "kana_coverage_pct": 99.59183673469387
   },
   {
     "scope": "japanese_lines",
@@ -2375,8 +2529,7 @@
     "edits": 428,
     "reference_characters": 5350,
     "cer_pct": 8.0,
-    "kana_coverage_pct": 99.4,
-    "macro_accuracy_pct": 43.832534829819444
+    "kana_coverage_pct": 99.4
   },
   {
     "scope": "japanese_lines",
@@ -2388,8 +2541,7 @@
     "edits": 409,
     "reference_characters": 5246,
     "cer_pct": 7.796416317194053,
-    "kana_coverage_pct": 99.38775510204081,
-    "macro_accuracy_pct": 46.651912732304396
+    "kana_coverage_pct": 99.38775510204081
   },
   {
     "scope": "japanese_lines",
@@ -2557,8 +2709,7 @@
     "edits": 332,
     "reference_characters": 5350,
     "cer_pct": 6.205607476635514,
-    "kana_coverage_pct": 99.8,
-    "macro_accuracy_pct": 56.63293696190113
+    "kana_coverage_pct": 99.8
   },
   {
     "scope": "japanese_lines",
@@ -2570,8 +2721,7 @@
     "edits": 312,
     "reference_characters": 5246,
     "cer_pct": 5.947388486465878,
-    "kana_coverage_pct": 99.79591836734694,
-    "macro_accuracy_pct": 58.01901504205956
+    "kana_coverage_pct": 99.79591836734694
   },
   {
     "scope": "japanese_lines",
@@ -2739,8 +2889,7 @@
     "edits": 119,
     "reference_characters": 5350,
     "cer_pct": 2.2242990654205608,
-    "kana_coverage_pct": 99.6,
-    "macro_accuracy_pct": 86.16315752645602
+    "kana_coverage_pct": 99.6
   },
   {
     "scope": "japanese_lines",
@@ -2752,8 +2901,7 @@
     "edits": 109,
     "reference_characters": 5246,
     "cer_pct": 2.077773541746092,
-    "kana_coverage_pct": 99.59183673469387,
-    "macro_accuracy_pct": 89.17675398699402
+    "kana_coverage_pct": 99.59183673469387
   },
   {
     "scope": "japanese_lines",
@@ -2913,6 +3061,186 @@
   },
   {
     "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "ALL",
+    "n": 500,
+    "exact": 461,
+    "accuracy_pct": 92.2,
+    "edits": 99,
+    "reference_characters": 5350,
+    "cer_pct": 1.8504672897196262,
+    "kana_coverage_pct": 99.6
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "PRIMARY",
+    "n": 490,
+    "exact": 455,
+    "accuracy_pct": 92.85714285714286,
+    "edits": 89,
+    "reference_characters": 5246,
+    "cer_pct": 1.6965306900495616,
+    "kana_coverage_pct": 99.59183673469387
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s01",
+    "n": 34,
+    "exact": 30,
+    "accuracy_pct": 88.23529411764706,
+    "edits": 13,
+    "reference_characters": 432,
+    "cer_pct": 3.009259259259259,
+    "kana_coverage_pct": 94.11764705882354
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s15",
+    "n": 41,
+    "exact": 37,
+    "accuracy_pct": 90.2439024390244,
+    "edits": 6,
+    "reference_characters": 474,
+    "cer_pct": 1.2658227848101267,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s02",
+    "n": 35,
+    "exact": 33,
+    "accuracy_pct": 94.28571428571429,
+    "edits": 3,
+    "reference_characters": 347,
+    "cer_pct": 0.8645533141210374,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s03",
+    "n": 41,
+    "exact": 41,
+    "accuracy_pct": 100.0,
+    "edits": 0,
+    "reference_characters": 443,
+    "cer_pct": 0.0,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s04",
+    "n": 37,
+    "exact": 35,
+    "accuracy_pct": 94.5945945945946,
+    "edits": 4,
+    "reference_characters": 370,
+    "cer_pct": 1.0810810810810811,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s05",
+    "n": 42,
+    "exact": 38,
+    "accuracy_pct": 90.47619047619048,
+    "edits": 9,
+    "reference_characters": 399,
+    "cer_pct": 2.255639097744361,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s06",
+    "n": 47,
+    "exact": 45,
+    "accuracy_pct": 95.74468085106383,
+    "edits": 10,
+    "reference_characters": 510,
+    "cer_pct": 1.9607843137254901,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s07",
+    "n": 56,
+    "exact": 55,
+    "accuracy_pct": 98.21428571428571,
+    "edits": 3,
+    "reference_characters": 513,
+    "cer_pct": 0.5847953216374269,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s08",
+    "n": 23,
+    "exact": 21,
+    "accuracy_pct": 91.30434782608695,
+    "edits": 5,
+    "reference_characters": 378,
+    "cer_pct": 1.3227513227513228,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s09",
+    "n": 44,
+    "exact": 39,
+    "accuracy_pct": 88.63636363636364,
+    "edits": 16,
+    "reference_characters": 447,
+    "cer_pct": 3.5794183445190155,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s10",
+    "n": 49,
+    "exact": 49,
+    "accuracy_pct": 100.0,
+    "edits": 0,
+    "reference_characters": 504,
+    "cer_pct": 0.0,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s11",
+    "n": 10,
+    "exact": 6,
+    "accuracy_pct": 60.0,
+    "edits": 10,
+    "reference_characters": 104,
+    "cer_pct": 9.615384615384615,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
+    "method": "sug-winrt",
+    "song": "s12",
+    "n": 41,
+    "exact": 32,
+    "accuracy_pct": 78.04878048780488,
+    "edits": 20,
+    "reference_characters": 429,
+    "cer_pct": 4.662004662004662,
+    "kana_coverage_pct": 100.0
+  },
+  {
+    "scope": "japanese_lines",
     "method": "terra-direct",
     "song": "ALL",
     "n": 500,
@@ -2921,8 +3249,7 @@
     "edits": 63,
     "reference_characters": 5350,
     "cer_pct": 1.1775700934579438,
-    "kana_coverage_pct": 99.6,
-    "macro_accuracy_pct": 93.17340514324549
+    "kana_coverage_pct": 99.6
   },
   {
     "scope": "japanese_lines",
@@ -2934,8 +3261,7 @@
     "edits": 57,
     "reference_characters": 5246,
     "cer_pct": 1.0865421273351126,
-    "kana_coverage_pct": 99.59183673469387,
-    "macro_accuracy_pct": 95.10452223851594
+    "kana_coverage_pct": 99.59183673469387
   },
   {
     "scope": "japanese_lines",
@@ -3103,8 +3429,7 @@
     "edits": 63,
     "reference_characters": 5350,
     "cer_pct": 1.1775700934579438,
-    "kana_coverage_pct": 99.6,
-    "macro_accuracy_pct": 93.85783593146455
+    "kana_coverage_pct": 99.6
   },
   {
     "scope": "japanese_lines",
@@ -3116,8 +3441,7 @@
     "edits": 58,
     "reference_characters": 5246,
     "cer_pct": 1.105604269919939,
-    "kana_coverage_pct": 99.59183673469387,
-    "macro_accuracy_pct": 95.01265559241993
+    "kana_coverage_pct": 99.59183673469387
   },
   {
     "scope": "japanese_lines",

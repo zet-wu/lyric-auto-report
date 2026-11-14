@@ -6,9 +6,9 @@ os.chdir(ROOT)
 os.environ['XDG_CACHE_HOME']=str(ROOT/'.cache')
 deps=ROOT/'.deps/comparison' if (ROOT/'.deps/comparison/studio').exists() else ROOT/'.deps'
 sys.path[:0]=[str(deps/name) for name in ('studio','milikara','timing')]
-def read(p):return json.loads(Path(p).read_text())
+def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
 def dump(p,v):
- p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2,allow_nan=False)+'\n')
+ p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8',newline='\n')
 def hira(s):
  s=unicodedata.normalize('NFKC',s)
  return ''.join(chr(ord(c)-96) if 'ァ'<=c<='ヶ' else c for c in s)

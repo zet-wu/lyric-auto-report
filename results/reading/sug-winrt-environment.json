@@ -1,0 +1,53 @@
+{
+  "source_commit": "423cf28c2b41f3772ddda361dde67026389aa4ee",
+  "python": "3.11.9",
+  "system": "Windows",
+  "windows_version": "10.0.19045",
+  "machine": "AMD64",
+  "require_winrt": true,
+  "packages": {
+    "Deprecated": "1.3.1",
+    "charset-normalizer": "3.4.4",
+    "jaconv": "0.5.0",
+    "pip": "24.0",
+    "pykakasi": "2.3.0",
+    "setuptools": "65.5.0",
+    "typing_extensions": "4.16.0",
+    "winrt-Windows.Foundation": "3.2.1",
+    "winrt-Windows.Foundation.Collections": "3.2.1",
+    "winrt-Windows.Globalization": "3.2.1",
+    "winrt-runtime": "3.2.1",
+    "wrapt": "2.5.2"
+  },
+  "input_sha256": {
+    "s01": "0409c760518af908d3f32affc0eae9179f2d1f7c0b754972db254c93c2ec6d75",
+    "s02": "3ae5ae47678f7fef9d66973d009c03d498ef330f1cf61d7a4c267b96226b0c4d",
+    "s03": "e50f85f7f9ff96e81e869a5681a8dd5cc2178123cda89e0729225710626d9a9f",
+    "s04": "c449bde0ea8d482dc20c6d2aff665b9128b019604a929993c21af61648ffe5a1",
+    "s05": "810e0e0479b6387bd19de70bcdcac13807a04c34e926d9e9f4586f7cae6c3c66",
+    "s06": "a589947ef0c50871378dfbbe90e45c03a6ad99cdf0fc420826b4ab2501297961",
+    "s07": "52ca35716ce28a0893be0635930a749be2b9dd2a61d70fbee6f90ecc9005db50",
+    "s08": "ca26099714a4cdb80df03f73c9b8a919af18412e098e52fd37873460079f9dbf",
+    "s09": "c6ce96e8bd1603b663b3b2937256b3f023f5aca22fd24beb884b698d1d442b23",
+    "s10": "c218feec6715f3f0dc722ff04790e97081fe7acc13724927f5b36c0e1c09bfff",
+    "s11": "0ef210217e9f9f6d949563e54c038ff11e290b29cc3a439a352bb98ff7f4061b",
+    "s12": "492afcd3fa81c84f5d3d7993adfb89d52c4819bf89eac6c019cbdaf981835cf0",
+    "s15": "e83dcf8ab249815c4c8e7c1ae626df4b7a02105ab931422848fa3db1274c8fd7"
+  },
+  "prediction_sha256": {
+    "s01": "c1de751b626292831ca20456055a0fe42e64b757493ab0d72f16204164212d12",
+    "s02": "3b795062372580a09ecda30967643d5ad2794f24877f6eb2204f4d7c2c0b6ca7",
+    "s03": "ca516d5c06d6b9b2e8232d6fff81e98cf2428f85c59df06d3b69468e9b5bb7a1",
+    "s04": "de1e81504396e61012ea12310ab642b79f89bbf55029472e8342bf6c7ece8825",
+    "s05": "5e6ec9f347695a3a042737916fb2353281a103f4801f2354ee04db96d1b054af",
+    "s06": "044315f0b1bcc2b5dcaa9f28e19554ec8f9c34742ca1da500460eb15b0d8f7b7",
+    "s07": "b9457b4265f2bf0a2c0495d74f977665cc5d674f422f1cdbdf27955487350852",
+    "s08": "caa7b42b64961e27eae02f4c7985db8343b945b57750341d97e841c95af8ec12",
+    "s09": "e9f603e5f4e03b721575a0b12928fb075756cc9b1b76fa5892afc6d8a60c8756",
+    "s10": "5e73bc7774afb08c7e0490fc34c85ed568721668dfd02f7e1231fa4ba6738688",
+    "s11": "78abfe629175fd8ea0c525541f857f954c4e3254c15b4046c132f7508b2e622e",
+    "s12": "8997bd1b1a8e7bcb1fd08df2bbc93e60fbe328aea6de08c9849194a3759b4520",
+    "s15": "c2134f51fe328a4beee892025ccc7e5df0e645ff6850787f0b7c837c05980d58"
+  },
+  "method": "sug-winrt"
+}

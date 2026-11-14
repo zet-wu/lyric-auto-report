@@ -1,8 +1,11 @@
 """Shared source-span and full-line reading accuracy; no alignment scoring."""
 from common import *
-from collections import defaultdict
+import argparse
 PROTOCOL=read(ROOT/'configs/reading.json')
 METHODS=PROTOCOL['methods']
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--method',choices=METHODS,help='Refresh only this method; require all other results to agree with saved scores.')
+args=parser.parse_args()
 def distance(a,b):
  row=list(range(len(b)+1))
  for i,x in enumerate(a,1):
@@ -52,10 +55,21 @@ for scope,rows in [('kanji_spans',items),('japanese_lines',lineitems)]:
   for sid in ['ALL','PRIMARY',*[s['song'] for s in read(OUT/'references.json')]]:
    rr=[r for r in selected if sid=='ALL' or (sid=='PRIMARY' and r['song'] in PROTOCOL['primary_songs']) or r['song']==sid]
    result={'scope':scope,'method':m,'song':sid,**summarize(rr)}
-   if sid in ('ALL','PRIMARY'):
-    per=[summarize([r for r in selected if r['song']==s['song']]) for s in read(OUT/'references.json') if sid=='ALL' or s['song'] in PROTOCOL['primary_songs']]
-    result['macro_accuracy_pct']=sum(p['accuracy_pct'] for p in per if p['n'])/sum(bool(p['n']) for p in per)
    metrics.append(result)
-dump(OUT/'metrics.json',metrics);dump(OUT/'items.json',items);dump(OUT/'lines.json',lineitems);dump(OUT/'excluded.json',excluded);dump(OUT/'errors.json',errors)
+def save(name,rows):
+ if args.method:
+  previous=read(OUT/f'{name}.json')
+  assert len(previous)==len(rows),f'{name}: scoring population changed'
+  kept=[]
+  for old,new in zip(previous,rows,strict=True):
+   identity=('scope','method','song') if name=='metrics' else ('song','line','method','a','b','source','reference')
+   assert {k:old.get(k) for k in identity}=={k:new.get(k) for k in identity},f'{name}: scoring partitions changed'
+   if new.get('method')==args.method:
+    kept.append(new);continue
+   assert old==new,(name,'Other method changed')
+   kept.append(old)
+  rows=kept
+ dump(OUT/f'{name}.json',rows)
+save('metrics',metrics);save('items',items);save('lines',lineitems);save('excluded',excluded);save('errors',errors)
 for r in metrics:
  if r['song']=='ALL':print(r['scope'],r['method'],r['exact'],r['n'],round(r['accuracy_pct'],2),round(r['cer_pct'],2))

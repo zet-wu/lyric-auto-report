@@ -23,6 +23,7 @@
     "timing",
     "openjtalk",
     "sug",
+    "sug-winrt",
     "terra-direct",
     "terra-corrected"
   ],
@@ -35,7 +36,7 @@
   "common_prompt": "Read the full Japanese lyric context. Return one reading for every input words item in order, preserving IDs and item count. Convert kanji to contextual hiragana. Preserve existing kana spelling, including particles は/へ/を. Distribute contracted sounds and small っ over the supplied source boundaries. Preserve Latin text, whitespace and punctuation. Read numbers in context; use an empty string when unresolved. Do not consult gold readings, TTML, audio, timestamps, other methods, dictionaries or network. Output song, model, method and lines containing id/readings.",
   "correction_prompt": "Use Studio parts as candidate readings, review them against the original lyric context, and correct errors. Return the same per-input-word schema. Previous direct answers remain in the agent context.",
   "primary_metric": "Exact normalized reading on shared source spans containing kanji, with kana-only human reference. Shared boundaries are the intersection of reference display-word and all method source boundaries. Missing or non-kana predictions remain errors.",
-  "secondary_metrics": "Kana character edit rate, song-equal macro accuracy, kana coverage; exact full-line reading and CER on kana-only reference lines.",
+  "secondary_metrics": "Kana character edit rate, kana coverage; exact full-line reading and CER on kana-only reference lines.",
   "normalization": "NFKC, katakana to hiragana, remove non-alphanumeric punctuation/space. Preserve small kana, long marks and particle spelling. Orthographic accuracy against original human Ruby; no phonetic substitutions.",
   "alignment": "Reading evaluation is independent of alignment. Local refinement uses confirmed human readings.",
   "input_normalization": "Remove XML layout control characters LF, CR and TAB from source words and reference display text; retain ordinary spaces. Original TTML files are unchanged.",

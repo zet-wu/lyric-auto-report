@@ -1982,6 +1982,798 @@
       ]
     },
     {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "human",
+      "line": 2,
+      "reading": "アー",
+      "method": "nextfire",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.3,
+        31.3
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.16,
+        31.3
+      ],
+      "right_unit": [
+        31.3,
+        31.44
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "human",
+      "line": 2,
+      "reading": "アー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.309999998807907,
+        31.309999998807907
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.1699999833107,
+        31.309999998807907
+      ],
+      "right_unit": [
+        31.309999998807907,
+        31.439999964237213
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "auto_nf",
+      "line": 2,
+      "reading": "アー",
+      "method": "nextfire",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.345854166666665,
+        31.345854166666665
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.215854166666666,
+        31.345854166666665
+      ],
+      "right_unit": [
+        31.345854166666665,
+        31.475854166666668
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "auto_nf",
+      "line": 2,
+      "reading": "アー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.30585414759318,
+        31.30585414759318
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.175854152361552,
+        31.30585414759318
+      ],
+      "right_unit": [
+        31.30585414759318,
+        31.445854133288066
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "human",
+      "line": 2,
+      "reading": "アー",
+      "method": "nextfire",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.33,
+        31.33
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.24,
+        31.33
+      ],
+      "right_unit": [
+        31.33,
+        31.419999999999998
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "human",
+      "line": 2,
+      "reading": "アー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.359999980926514,
+        31.359999980926514
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.1699999833107,
+        31.359999980926514
+      ],
+      "right_unit": [
+        31.359999980926514,
+        31.450000014305115
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "auto_nf",
+      "line": 2,
+      "reading": "アー",
+      "method": "nextfire",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.341895833333336,
+        31.341895833333336
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.221895833333335,
+        31.341895833333336
+      ],
+      "right_unit": [
+        31.341895833333336,
+        31.461895833333337
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "auto_nf",
+      "line": 2,
+      "reading": "アー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.34189578564962,
+        31.34189578564962
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.171895828564963,
+        31.34189578564962
+      ],
+      "right_unit": [
+        31.34189578564962,
+        31.451895799954734
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "human",
+      "line": 2,
+      "reading": "アー",
+      "method": "nextfire",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.29,
+        31.29
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.18,
+        31.29
+      ],
+      "right_unit": [
+        31.29,
+        31.4
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "human",
+      "line": 2,
+      "reading": "アー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.32999997973442,
+        31.32999997973442
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.1699999833107,
+        31.32999997973442
+      ],
+      "right_unit": [
+        31.32999997973442,
+        31.450000014305115
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "auto_nf",
+      "line": 2,
+      "reading": "アー",
+      "method": "nextfire",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.319270833333334,
+        31.319270833333334
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.219270833333333,
+        31.319270833333334
+      ],
+      "right_unit": [
+        31.319270833333334,
+        31.419270833333332
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "auto_nf",
+      "line": 2,
+      "reading": "アー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        31.313,
+        31.313
+      ],
+      "prediction": [
+        31.309270814259847,
+        31.309270814259847
+      ],
+      "hit100": true,
+      "left_unit": [
+        31.17927081902822,
+        31.309270814259847
+      ],
+      "right_unit": [
+        31.309270814259847,
+        31.449270799954732
+      ],
+      "left_reference": [
+        31.153,
+        31.313
+      ],
+      "right_reference": [
+        31.313,
+        31.473
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "human",
+      "line": 13,
+      "reading": "ハー",
+      "method": "nextfire",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.83,
+        76.83
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.68,
+        76.83
+      ],
+      "right_unit": [
+        76.83,
+        76.98
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "human",
+      "line": 13,
+      "reading": "ハー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.81000000178814,
+        76.81000000178814
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.64,
+        76.81000000178814
+      ],
+      "right_unit": [
+        76.81000000178814,
+        76.89999999046326
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "auto_nf",
+      "line": 13,
+      "reading": "ハー",
+      "method": "nextfire",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.5694375,
+        76.5694375
+      ],
+      "hit100": false,
+      "left_unit": [
+        76.1794375,
+        76.5694375
+      ],
+      "right_unit": [
+        76.5694375,
+        76.9594375
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "demucs",
+      "strategy": "auto_nf",
+      "line": 13,
+      "reading": "ハー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.68943749046326,
+        76.68943749046326
+      ],
+      "hit100": false,
+      "left_unit": [
+        76.1794375,
+        76.68943749046326
+      ],
+      "right_unit": [
+        76.68943749046326,
+        76.89943746900559
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "human",
+      "line": 13,
+      "reading": "ハー",
+      "method": "nextfire",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.8,
+        76.8
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.68,
+        76.8
+      ],
+      "right_unit": [
+        76.8,
+        76.92
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "human",
+      "line": 13,
+      "reading": "ハー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.81000000178814,
+        76.81000000178814
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.64,
+        76.81000000178814
+      ],
+      "right_unit": [
+        76.81000000178814,
+        76.89999999046326
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "auto_nf",
+      "line": 13,
+      "reading": "ハー",
+      "method": "nextfire",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.80252083333333,
+        76.80252083333333
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.68252083333334,
+        76.80252083333333
+      ],
+      "right_unit": [
+        76.80252083333333,
+        76.92252083333334
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "bs",
+      "strategy": "auto_nf",
+      "line": 13,
+      "reading": "ハー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.75252082975706,
+        76.75252082975706
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.63252082498869,
+        76.75252082975706
+      ],
+      "right_unit": [
+        76.75252082975706,
+        76.89252084525427
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "human",
+      "line": 13,
+      "reading": "ハー",
+      "method": "nextfire",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.82000000000001,
+        76.82000000000001
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.66,
+        76.82000000000001
+      ],
+      "right_unit": [
+        76.82000000000001,
+        76.98
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "human",
+      "line": 13,
+      "reading": "ハー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.79999999642372,
+        76.79999999642372
+      ],
+      "hit100": true,
+      "left_unit": [
+        76.64,
+        76.79999999642372
+      ],
+      "right_unit": [
+        76.79999999642372,
+        76.89999999046326
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "auto_nf",
+      "line": 13,
+      "reading": "ハー",
+      "method": "nextfire",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.58047916666666,
+        76.58047916666666
+      ],
+      "hit100": false,
+      "left_unit": [
+        76.22047916666666,
+        76.58047916666666
+      ],
+      "right_unit": [
+        76.58047916666666,
+        76.94047916666666
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
+      "song": "s15",
+      "separator": "kim",
+      "strategy": "auto_nf",
+      "line": 13,
+      "reading": "ハー",
+      "method": "tifa_duplicate_vowel",
+      "reference": [
+        76.79599999999999,
+        76.79599999999999
+      ],
+      "prediction": [
+        76.68047914520899,
+        76.68047914520899
+      ],
+      "hit100": false,
+      "left_unit": [
+        76.22047916666666,
+        76.68047914520899
+      ],
+      "right_unit": [
+        76.68047914520899,
+        76.90047917381922
+      ],
+      "left_reference": [
+        76.655,
+        76.79599999999999
+      ],
+      "right_reference": [
+        76.79599999999999,
+        76.935
+      ]
+    },
+    {
       "song": "s04",
       "separator": "demucs",
       "strategy": "human",

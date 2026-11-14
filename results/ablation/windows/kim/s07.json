@@ -2,6 +2,6 @@
   "song": "s07",
   "separator": "kim",
   "windows": {},
-  "error": "Traceback (most recent call last):\n  File \"scripts/timing/ablation_run.py\", line 168, in <module>\n    located,rows=align_transcript(lines,probs,backend.vocab,backend.model.config.pad_token_id,meta['frame_ms']/1000,len(wave)/rate,prepared=prepared)\n                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/timing/timing/text_localization.py\", line 73, in align_transcript\n    raise ValueError(f'第 {index+1} 行未找到可用的歌词发音证据，请检查歌词或提供逐句时间。')\nValueError: 第 12 行未找到可用的歌词发音证据，请检查歌词或提供逐句时间。\n",
-  "seconds": 0.8425727058202028
+  "error": "Traceback (most recent call last):\n  File \"scripts/timing/ablation_run.py\", line 173, in <module>\n    located,rows=align_transcript(lines,probs,backend.vocab,backend.model.config.pad_token_id,meta['frame_ms']/1000,len(wave)/rate,prepared=prepared)\n                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/timing/timing/text_localization.py\", line 73, in align_transcript\n    raise ValueError(f'第 {index+1} 行未找到可用的歌词发音证据，请检查歌词或提供逐句时间。')\nValueError: 第 12 行未找到可用的歌词发音证据，请检查歌词或提供逐句时间。\n",
+  "seconds": 0.799531128257513
 }

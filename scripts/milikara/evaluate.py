@@ -61,7 +61,7 @@ if __name__=='__main__':
     dump(OUT/'factor-effects.json',effects)
     # Self-contained human-readable tables, all experiments and all songs.
     for group in ['japanese','latin','all']:
-        lines=[f'# MiliKara 消融完整指标：{group}','', '单位 ms；双边命中需起止同时达标。MAE（Mean Absolute Error，平均绝对误差）汇合起点和终点误差。P 表示百分位数；P5/P95 为有符号误差的第 5/95 百分位数，负值表示提前。P2.5/P97.5 给出中央 95% 的误差范围；abs（绝对值）P95 为绝对误差的第 95 百分位数。ALL 表示合并 11 首日语歌曲的全部单元后计分，s13 单列；缺失仍留分母。起止分列与极端值见 metrics.csv。实验名称中的 concat_core 为人声活动核心区间拼接，concat_padded 为带缓冲区间拼接。','', '| 实验 | 歌曲 | 有效/总数 | ≤100 ms | ≤200 ms | MAE | P5 | P95 | P2.5 | P97.5 | abs P95 |','|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
+        lines=[f'# MiliKara 消融完整指标：{group}','', '单位 ms；双边命中需起止同时达标。MAE（Mean Absolute Error，平均绝对误差）汇合起点和终点误差。P 表示百分位数；P5/P95 为有符号误差的第 5/95 百分位数，负值表示提前。P2.5/P97.5 给出中央 95% 的误差范围；abs（绝对值）P95 为绝对误差的第 95 百分位数。ALL 表示合并 12 首日语歌曲的全部单元后计分，s13 单列；缺失仍留分母。起止分列与极端值见 metrics.csv。实验名称中的 concat_core 为人声活动核心区间拼接，concat_padded 为带缓冲区间拼接。','', '| 实验 | 歌曲 | 有效/总数 | ≤100 ms | ≤200 ms | MAE | P5 | P95 | P2.5 | P97.5 | abs P95 |','|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
         for r in tables:
             if r['group']!=group:continue
             vals=[r['experiment'],r['song'],f"{r['valid']}/{r['n']}",f"{r['hit100']}/{r['n']}",f"{r['hit200']}/{r['n']}"]+[f"{r[k]:.2f}" if r[k] is not None else '—' for k in ['pooled_mae_ms','pooled_q5_ms','pooled_q95_ms','pooled_q2.5_ms','pooled_q97.5_ms','pooled_abs_p95_ms']]

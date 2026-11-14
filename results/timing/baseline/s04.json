@@ -1,7 +1,7 @@
 {
   "song": "s04",
-  "seconds": 4.709499835968018,
-  "stem_origin": "fresh current DemucsSeparator default seed=0",
+  "seconds": 2.5380198676139116,
+  "stem_origin": "this evaluation cache",
   "stem": ".cache/timing/audio/TSU-BA-SA.wav",
   "analysis": {
     "source_id": "datasets/audio/TSU-BA-SA.m4a",
@@ -13284,7 +13284,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s04-n501",
@@ -42259,7 +42259,7 @@
             ]
           },
           "end": {
-            "time": 157.906125,
+            "time": 157.886125,
             "source": "acoustic_path",
             "basis_ids": [
               "s04-n1140"
@@ -42267,8 +42267,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 156.3126875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s04-n1139",
+              "s04-n1140",
+              "s04-n1145"
+            ]
+          },
+          "end": {
+            "time": 157.570625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s04-n1139",
+              "s04-n1140",
+              "s04-n1145"
+            ]
+          }
         },
         "fragments": [
           {
@@ -42278,13 +42294,13 @@
           },
           {
             "start": 157.8840625,
-            "end": 157.906125,
+            "end": 157.886125,
             "piece_index": 5
           }
         ],
         "concat_interval": [
           115.62,
-          116.9
+          116.88
         ],
         "crosses_removed_gap": true,
         "removed_gap_seconds": 0.31343749999999204,
@@ -42311,16 +42327,21 @@
             "character": "y",
             "frames": [
               5819,
-              5845
+              5844
             ],
             "concat_start": 116.38,
-            "concat_end": 116.9
+            "concat_end": 116.88
           }
         ],
         "issues": [
           {
             "object_id": "s04-n1140",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s04-n1140",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -47420,7 +47441,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s04-n497",
@@ -47611,7 +47632,7 @@
       {
         "line_id": "s04-n1119",
         "start": 151.5726875,
-        "end": 156.3126875,
+        "end": 157.570625,
         "first_unit_complete": true
       },
       {
@@ -47666,12 +47687,12 @@
     "coverage": {
       "total": 405,
       "raw_complete": 405,
-      "proposed_complete": 404,
+      "proposed_complete": 405,
       "single_endpoint": 0,
-      "unresolved": 1,
-      "derived": 2,
+      "unresolved": 0,
+      "derived": 3,
       "profile_derived": 2,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 1
     },
     "calibration": {
@@ -47682,8 +47703,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -54119,10 +54140,11 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -4642.599462136626,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -4642.618203267455,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"

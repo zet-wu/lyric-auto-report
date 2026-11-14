@@ -88,6 +88,6 @@ dump(OUT/'protocol.json',{
  'failure':'Missing/invalid/cross-removed-gap spans retained as misses; no oracle fallback, no interpolation. Raw remapped spans also saved.',
  'subsets':['duration >=600ms proxy for sustained singing (not expert phonetic annotation)','written ー','adjacent groups with identical complete phoneme sequence','equal last/first phone across neighbouring groups'],
  'metrics':['both100/200ms','start/end MAE P95 signed bias','missing and >1s errors','duration ratio and short-collapse','repeat boundary end/start errors'],
- 'sources':{str(p):subprocess.check_output(['git','-C',str(p),'rev-parse','HEAD'],text=True).strip() for p in [STUDIO,ROOT/'.deps/lazulite',UPSTREAM]},
+ 'sources':{str(p):subprocess.check_output(['git','-C',str(p),'rev-parse','HEAD'],text=True).strip() for p in [STUDIO,STUDIO.parent/'lazulite',UPSTREAM]},
 })
 print('prepared',len(records),'songs;',sum(g['paired'] for s in records if s['id'] in PRIMARY for l in s['lines'] for g in l['groups']),'primary units')

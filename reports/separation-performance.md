@@ -1,43 +1,29 @@
 # 六种人声分离模型的资源实测
 
-Demucs htdemucs 在这组实测中耗时最低；DTTNet 的 CUDA 张量分配峰值最低。五首歌共 1462.551 秒，每首完成三次热运行（模型与执行环境预热后的重复运行），表中耗时为逐曲中位数之和。
+使用固定五首歌曲，每首每个模型先预热，再完成三次 GPU 分离。表中耗时与能量先逐曲取三次的中位数，再对五曲求和；内存与显存取全部运行中的峰值。全部测量在质量实验结束后串行执行。
 
-本表保留已有性能实测。实验音频已随仓库提供，身份见[输入清单](../historical/separation/inputs.json)，逐次测量与汇总见[数据目录](../historical/separation/)。当前测试集的对齐成绩另行重跑和报告。
+RSS（Resident Set Size，驻留集大小）是进程驻留在物理内存中的容量；这里统计进程树 RSS 之和，共享页可能重复计入。CUDA allocated 表示框架张量分配。
 
-RSS（Resident Set Size，驻留集大小）表示进程当前驻留在物理内存中的容量。
-
-| 模型 | 五曲 GPU 分离 / 秒 | CUDA allocated 峰值 / GiB | 进程树 RSS 峰值 / GiB | 板卡能量 / kJ | 30 秒片段 CPU 耗时 / 秒 |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Demucs htdemucs | 13.55 | 1.64 | 1.90 | 2.61 | 7.96 |
-| SCNet Small | 28.91 | 1.50 | 2.71 | 5.85 | 35.12 |
-| DTTNet | 21.63 | 0.93 | 2.17 | 6.02 | 70.45 |
-| BS-RoFormer | 71.26 | 1.49 | 1.94 | 26.75 | 275.99 |
-| MelBand RoFormer | 35.25 | 1.73 | 2.00 | 12.15 | 100.14 |
-| Windowed RoFormer | 18.30 | 1.39 | 15.89 | 5.66 | 59.04 |
+| 模型 | 五曲 GPU 分离 s | CUDA allocated 峰值 GiB | 进程树 RSS 峰值 GiB | 板卡能量 kJ |
+| --- | --- | --- | --- | --- |
+| Demucs htdemucs | 15.67 | 1.64 | 1.96 | 3.20 |
+| SCNet Small | 38.31 | 1.50 | 2.63 | 7.13 |
+| DTTNet | 24.67 | 0.93 | 2.10 | 6.79 |
+| BS-RoFormer | 73.53 | 1.49 | 2.17 | 28.16 |
+| MelBand RoFormer | 38.57 | 1.73 | 2.10 | 13.35 |
+| Windowed RoFormer | 19.13 | 1.39 | 14.90 | 6.39 |
 
 ## 配置与计时
 
-主机为 Linux、AMD EPYC 7502，推理固定 8 线程、不绑核。GPU 报告为 RTX 4090，容量 49140 MiB，驱动 595.58.03；分离环境为 Torch 2.14.1+cu130。具体硬件记录见 [hardware.json](../historical/separation/hardware.json)。
+计时覆盖输入搬运、模型计算与结果回到 CPU；解码、模型加载和写盘不计入分离耗时。每轮固定随机种子 0，使用 8 个 Torch 线程、batch=1，保留各模型的分块、重叠和归一化设置。每首先用最多 30 秒的片段预热。板卡功率按约 20 ms 间隔采样并积分，包含空闲功耗。
 
-GPU 计时覆盖输入搬运、模型计算和结果回 CPU。解码、权重加载、写盘和活动分析单独记录。所有模型 batch=1，每轮随机种子为 0。CPU 使用 Rainbow Flower 原混音的 [30,60) 秒，FP32（32 位浮点）、8 线程，统计三次热运行的中位数。
+| 模型 | 参数量／百万 | Torch |
+| --- | --- | --- |
+| Demucs htdemucs | 41.984 | 2.14.0+cu130 |
+| SCNet Small | 10.579 | 2.14.0+cu130 |
+| DTTNet | 4.958 | 2.14.0+cu130 |
+| BS-RoFormer | 159.758 | 2.14.0+cu130 |
+| MelBand RoFormer | 228.203 | 2.14.0+cu130 |
+| Windowed RoFormer | 228.387 | 2.14.0+cu130 |
 
-AMP（自动混合精度）；FP16（16 位浮点）。
-
-参数量单位 M 表示百万个参数。
-
-| 模型 | 参数 / M | 权重 / MiB | GPU 精度 | 分块 / 秒 | 重叠 |
-| --- | ---: | ---: | --- | ---: | ---: |
-| Demucs | 41.984 | 80.2 | FP32 | 7.8 | 25% |
-| SCNet Small | 10.579 | 40.5 | AMP FP16 | 11 | 75% |
-| DTTNet | 4.958 | 19.1 | AMP FP16 | 5.921 | 75% |
-| BS-RoFormer | 159.758 | 609.7 | AMP FP16 | 8 | 50% |
-| MelBand RoFormer | 228.203 | 870.8 | AMP FP16 | 8 | 50% |
-| Windowed RoFormer | 228.387 | 871.5 | AMP FP16 | 8 | 0% |
-
-这些配置对应发布权重的实际推理方式。DTTNet 比 Demucs 少约 43.5% 的 CUDA allocated 峰值，耗时约为其 1.60 倍。Windowed 的耗时约为普通 MelBand 的 52%，两者同时存在重叠策略差异。
-
-## 读数解释
-
-CUDA allocated 记录框架张量分配；RSS 为进程树 RSS 之和，共享页可能重复计入。峰值监测覆盖分离阶段，不能用于推算含导入和加载阶段的最低内存。板卡能量由 NVML（NVIDIA Management Library，读取显卡功率和资源状态的管理库）整卡功率积分得到，包含空闲功耗。CPU 表仅对应指定片段。
-
-这组资源结果支持以 Demucs 为速度基线，同时把 DTTNet 作为显存取舍候选。分离质量和对齐端点需要通过当前测试集的独立结果判断。
+模型实际配置与加载后的状态哈希、逐次耗时、显存、RSS、能量及输入身份保存于[原始记录](../results/separation-resources)。五曲清单见[输入配置](../configs/separation-resources-inputs.json)。本轮资源报告仅包含 GPU 测量。端点质量另见[分离与下游对齐](separation-alignment.md)。

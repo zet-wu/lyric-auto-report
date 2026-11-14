@@ -14337,7 +14337,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s13-n58",
@@ -35061,8 +35061,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 82.3068125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s13-n699",
+              "s13-n703",
+              "s13-n707"
+            ]
+          },
+          "end": {
+            "time": 82.8198125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s13-n699",
+              "s13-n703",
+              "s13-n707"
+            ]
+          }
         },
         "fragments": [
           {
@@ -35106,6 +35122,11 @@
           {
             "object_id": "s13-n703",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s13-n703",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -45744,7 +45765,7 @@
             ]
           },
           "end": {
-            "time": 132.5303125,
+            "time": 128.2985,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1167"
@@ -45752,27 +45773,34 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 126.8585,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s13-n1167"
+            ]
+          },
+          "end": {
+            "time": 128.2985,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s13-n1167"
+            ]
+          }
         },
         "fragments": [
           {
             "start": 126.8585,
-            "end": 128.301875,
+            "end": 128.2985,
             "piece_index": 23
-          },
-          {
-            "start": 132.3536875,
-            "end": 132.5303125,
-            "piece_index": 24
           }
         ],
         "concat_interval": [
           94.12,
-          95.74
+          95.56
         ],
-        "crosses_removed_gap": true,
-        "removed_gap_seconds": 4.051812500000011,
+        "crosses_removed_gap": false,
+        "removed_gap_seconds": 0,
         "character_path": [
           {
             "character": "n",
@@ -45786,20 +45814,14 @@
           {
             "character": "i",
             "frames": [
-              4786,
-              4787
+              4777,
+              4778
             ],
-            "concat_start": 95.72,
-            "concat_end": 95.74000000000001
+            "concat_start": 95.54,
+            "concat_end": 95.56
           }
         ],
-        "issues": [
-          {
-            "object_id": "s13-n1167",
-            "code": "crosses_removed_gap",
-            "values": {}
-          }
-        ]
+        "issues": []
       },
       {
         "unit_id": "s13-n1172",
@@ -45808,14 +45830,14 @@
         "model_text": "che",
         "raw_timing": {
           "start": {
-            "time": 132.5303125,
+            "time": 132.4903125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1172"
             ]
           },
           "end": {
-            "time": 132.5903125,
+            "time": 132.5703125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1172"
@@ -45824,14 +45846,14 @@
         },
         "proposed_timing": {
           "start": {
-            "time": 132.5303125,
+            "time": 132.4903125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1172"
             ]
           },
           "end": {
-            "time": 132.5903125,
+            "time": 132.5703125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1172"
@@ -45840,14 +45862,14 @@
         },
         "fragments": [
           {
-            "start": 132.5303125,
-            "end": 132.5903125,
+            "start": 132.4903125,
+            "end": 132.5703125,
             "piece_index": 24
           }
         ],
         "concat_interval": [
-          95.74,
-          95.8
+          95.7,
+          95.78
         ],
         "crosses_removed_gap": false,
         "removed_gap_seconds": 0,
@@ -45855,29 +45877,29 @@
           {
             "character": "c",
             "frames": [
-              4787,
-              4788
+              4785,
+              4786
             ],
-            "concat_start": 95.74000000000001,
-            "concat_end": 95.76
+            "concat_start": 95.7,
+            "concat_end": 95.72
           },
           {
             "character": "h",
             "frames": [
-              4788,
-              4789
+              4786,
+              4787
             ],
-            "concat_start": 95.76,
-            "concat_end": 95.78
+            "concat_start": 95.72,
+            "concat_end": 95.74000000000001
           },
           {
             "character": "e",
             "frames": [
-              4789,
-              4790
+              4787,
+              4789
             ],
-            "concat_start": 95.78,
-            "concat_end": 95.8
+            "concat_start": 95.74000000000001,
+            "concat_end": 95.78
           }
         ],
         "issues": []
@@ -45889,14 +45911,14 @@
         "model_text": "a",
         "raw_timing": {
           "start": {
-            "time": 132.5903125,
+            "time": 132.5703125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1176"
             ]
           },
           "end": {
-            "time": 132.6103125,
+            "time": 132.5903125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1176"
@@ -45905,14 +45927,14 @@
         },
         "proposed_timing": {
           "start": {
-            "time": 132.5903125,
+            "time": 132.5703125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1176"
             ]
           },
           "end": {
-            "time": 132.6103125,
+            "time": 132.5903125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1176"
@@ -45921,14 +45943,14 @@
         },
         "fragments": [
           {
-            "start": 132.5903125,
-            "end": 132.6103125,
+            "start": 132.5703125,
+            "end": 132.5903125,
             "piece_index": 24
           }
         ],
         "concat_interval": [
-          95.8,
-          95.82
+          95.78,
+          95.8
         ],
         "crosses_removed_gap": false,
         "removed_gap_seconds": 0,
@@ -45936,11 +45958,11 @@
           {
             "character": "a",
             "frames": [
-              4790,
-              4791
+              4789,
+              4790
             ],
-            "concat_start": 95.8,
-            "concat_end": 95.82000000000001
+            "concat_start": 95.78,
+            "concat_end": 95.8
           }
         ],
         "issues": []
@@ -45952,7 +45974,7 @@
         "model_text": "ku",
         "raw_timing": {
           "start": {
-            "time": 132.6103125,
+            "time": 132.5903125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1177"
@@ -45968,7 +45990,7 @@
         },
         "proposed_timing": {
           "start": {
-            "time": 132.6103125,
+            "time": 132.5903125,
             "source": "acoustic_path",
             "basis_ids": [
               "s13-n1177"
@@ -45984,13 +46006,13 @@
         },
         "fragments": [
           {
-            "start": 132.6103125,
+            "start": 132.5903125,
             "end": 133.2903125,
             "piece_index": 24
           }
         ],
         "concat_interval": [
-          95.82,
+          95.8,
           96.5
         ],
         "crosses_removed_gap": false,
@@ -45999,10 +46021,10 @@
           {
             "character": "k",
             "frames": [
-              4791,
+              4790,
               4809
             ],
-            "concat_start": 95.82000000000001,
+            "concat_start": 95.8,
             "concat_end": 96.18
           },
           {
@@ -52219,7 +52241,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s13-n54",
@@ -52422,12 +52444,12 @@
       {
         "line_id": "s13-n1132",
         "start": 124.0385,
-        "end": 126.8585,
+        "end": 128.2985,
         "first_unit_complete": true
       },
       {
         "line_id": "s13-n1168",
-        "start": 132.5303125,
+        "start": 132.4903125,
         "end": 136.0103125,
         "first_unit_complete": true
       },
@@ -52477,12 +52499,12 @@
     "coverage": {
       "total": 452,
       "raw_complete": 452,
-      "proposed_complete": 450,
+      "proposed_complete": 452,
       "single_endpoint": 0,
-      "unresolved": 2,
-      "derived": 0,
+      "unresolved": 0,
+      "derived": 1,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 0
     },
     "calibration": {
@@ -52493,8 +52515,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -59793,13 +59815,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -7896.339589193463,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -7899.893035997509,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 1.4152731504291296
+  "seconds": 1.1906545870006084
 }

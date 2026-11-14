@@ -1,0 +1,18 @@
+{
+  "song": "s15",
+  "model": "kim",
+  "source": "datasets/audio/036 - リトルミラクル -Grip it tight-.m4a",
+  "sha256": "0df3b7cc67604b8bc9a2450392062da3037019dfb7dff1e6591414722661028e",
+  "frames": 12030951,
+  "rate": 44100,
+  "channels": 2,
+  "seconds": 20.42434425652027,
+  "peak_gib": 2.2238221168518066,
+  "upstream": {
+    "model": "melband-roformer-kim-vocals",
+    "checkpoint_sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+    "sample_rate": 44100,
+    "frames": 12030951,
+    "timeline_preserved": true
+  }
+}

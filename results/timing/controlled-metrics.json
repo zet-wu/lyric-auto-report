@@ -30,6 +30,36 @@
     "over_1s": 0
   },
   {
+    "song": "s15",
+    "language": "ja_en",
+    "method": "nextfire",
+    "n": 431,
+    "valid": 431,
+    "missing": 0,
+    "both_100": 312,
+    "both_200": 382,
+    "start_mae_ms": 58.34338747099699,
+    "end_mae_ms": 77.6171693735492,
+    "abs_p95_ms": 232.79999999999006,
+    "max_ms": 1885.9999999999957,
+    "over_1s": 5
+  },
+  {
+    "song": "s15",
+    "language": "ja_en",
+    "method": "tifa",
+    "n": 431,
+    "valid": 431,
+    "missing": 0,
+    "both_100": 377,
+    "both_200": 410,
+    "start_mae_ms": 63.46637532792501,
+    "end_mae_ms": 59.78888242800552,
+    "abs_p95_ms": 115.99999761581614,
+    "max_ms": 2545.9999237060347,
+    "over_1s": 4
+  },
+  {
     "song": "s02",
     "language": "ja_en",
     "method": "nextfire",

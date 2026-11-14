@@ -22,12 +22,12 @@ for ax,backend in zip(axes,['nextfire','tifa','mms_fa']):
     for i in range(len(strategies)):
         for j in range(3):ax.text(j,i,f'{values[i,j]:.2f}%',ha='center',va='center',color='black' if values[i,j]>65 else 'white')
 fig.colorbar(im,ax=axes,shrink=.75,label='Both endpoints within 100 ms (%)')
-fig.suptitle('11 songs, equal song weights; fixed readings; failures retained\nHuman windows are a diagnostic condition, not an automatic pipeline')
+fig.suptitle('12 songs, equal song weights; fixed readings; failures retained\nHuman windows are a diagnostic condition, not an automatic pipeline')
 fig.savefig(OUT/'matrix.png',dpi=170);fig.savefig(OUT/'matrix.svg',metadata={'Date':None});plt.close(fig)
 svg=OUT/'matrix.svg'
 svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
 
-lines=['# 自动生成的消融结果表','', '主表为 11 首歌曲等权的双端 100 ms 命中率。MAE（Mean Absolute Error）为平均绝对端点误差。BS Karaoke 为主唱提取权重；后端代码 tifa 和 mms_fa 分别对应 TIFA 与 MMS_FA。策略 concat 为核心人声区间拼接，padded 为带缓冲拼接，full 为完整人声；auto_mms / auto_nf 为两种模型预测的自动行窗口，human 为人工行窗口。','']
+lines=['# 自动生成的消融结果表','', '主表为 12 首歌曲等权的双端 100 ms 命中率。MAE（Mean Absolute Error）为平均绝对端点误差。BS Karaoke 为主唱提取权重；后端代码 tifa 和 mms_fa 分别对应 TIFA 与 MMS_FA。策略 concat 为核心人声区间拼接，padded 为带缓冲拼接，full 为完整人声；auto_mms / auto_nf 为两种模型预测的自动行窗口，human 为人工行窗口。','']
 for backend in ['nextfire','tifa','mms_fa']:
     lines += [f'## {backend}', '', '| 策略 | Demucs | BS Karaoke | Kim |','| --- | ---: | ---: | ---: |']
     for st in strategies:

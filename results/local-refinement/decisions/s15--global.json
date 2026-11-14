@@ -1,0 +1,2210 @@
+{
+  "song": "s15",
+  "baseline": "global",
+  "decisions": [
+    {
+      "line": 0,
+      "line_id": "s15-n90",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5195000522666507,
+        "longest": 1.4599999999999973,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        25.580000000000002,
+        30.68
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 1,
+      "line_id": "s15-n127",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4368583962980968,
+        "longest": 0.480000000000004,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        30.48,
+        34.0
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 2,
+      "line_id": "s15-n158",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4646594085109731,
+        "longest": 1.019999999999996,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        35.38,
+        40.06
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 3,
+      "line_id": "s15-n193",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4776084616780281,
+        "longest": 1.6400000000000006,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        39.660000000000004,
+        44.300000000000004
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 4,
+      "line_id": "s15-n223",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5178674787834839,
+        "longest": 2.020000000000003,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        44.08,
+        49.68
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 5,
+      "line_id": "s15-n255",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.38797500719212824,
+        "longest": 1.519999999999996,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        49.08,
+        54.84
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 6,
+      "line_id": "s15-n286",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.26855667846717146,
+        "longest": 0.5399999999999991,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        54.24,
+        57.38
+      ],
+      "cached_window": {
+        "seconds": 0.0005080103874206543,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2595493600011751,
+          "longest": 0.5999999999999943,
+          "cross_gap": false
+        },
+        "max_shift": 0.27999999999999403,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 54.260000000000005,
+            "end": 54.86,
+            "score": 0.10928862079163082
+          },
+          {
+            "text": "no",
+            "start": 55.1,
+            "end": 55.38,
+            "score": 0.19878835044801235
+          },
+          {
+            "text": "ko",
+            "start": 55.38,
+            "end": 55.5,
+            "score": 0.22190671786665916
+          },
+          {
+            "text": "bu",
+            "start": 55.5,
+            "end": 55.68,
+            "score": 0.3631802201271057
+          },
+          {
+            "text": "shi",
+            "start": 55.68,
+            "end": 55.82,
+            "score": 0.25899630784988403
+          },
+          {
+            "text": "no",
+            "start": 55.82,
+            "end": 56.0,
+            "score": 0.2980549931526184
+          },
+          {
+            "text": "ko",
+            "start": 56.0,
+            "end": 56.28,
+            "score": 0.2943750023841858
+          },
+          {
+            "text": "ta",
+            "start": 56.28,
+            "end": 56.54,
+            "score": 0.272895023226738
+          },
+          {
+            "text": "e",
+            "start": 56.54,
+            "end": 57.08,
+            "score": 0.31845900416374207
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.01888992264866829,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.23796900272234917,
+          "longest": 0.5200000000000031,
+          "cross_gap": false
+        },
+        "max_shift": 0.17999999999999972,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 54.4,
+            "end": 54.68,
+            "score": 0.14978783020160336
+          },
+          {
+            "text": "no",
+            "start": 55.160000000000004,
+            "end": 55.34,
+            "score": 0.13990163593553007
+          },
+          {
+            "text": "ko",
+            "start": 55.36,
+            "end": 55.4,
+            "score": 0.019973265239968896
+          },
+          {
+            "text": "bu",
+            "start": 55.42,
+            "end": 55.64,
+            "score": 0.24158543348312378
+          },
+          {
+            "text": "shi",
+            "start": 55.64,
+            "end": 55.74,
+            "score": 0.21011153360207876
+          },
+          {
+            "text": "no",
+            "start": 55.74,
+            "end": 55.88,
+            "score": 0.24048376828432083
+          },
+          {
+            "text": "ko",
+            "start": 55.88,
+            "end": 56.160000000000004,
+            "score": 0.3559454083442688
+          },
+          {
+            "text": "ta",
+            "start": 56.160000000000004,
+            "end": 56.400000000000006,
+            "score": 0.318443238735199
+          },
+          {
+            "text": "e",
+            "start": 56.42,
+            "end": 56.940000000000005,
+            "score": 0.46548891067504883
+          }
+        ]
+      }
+    },
+    {
+      "line": 7,
+      "line_id": "s15-n302",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.2891747899767425,
+        "longest": 0.5400000000000063,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        57.22,
+        59.82
+      ],
+      "cached_window": {
+        "seconds": 0.0004813205450773239,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2891747899767425,
+          "longest": 0.5399999999999991,
+          "cross_gap": false
+        },
+        "max_shift": 7.105427357601002e-15,
+        "predictions": [
+          {
+            "text": "bu",
+            "start": 57.519999999999996,
+            "end": 57.64,
+            "score": 0.357367604970932
+          },
+          {
+            "text": "ki",
+            "start": 57.64,
+            "end": 57.8,
+            "score": 0.27017517387866974
+          },
+          {
+            "text": "wo",
+            "start": 57.8,
+            "end": 57.94,
+            "score": 0.23446118831634521
+          },
+          {
+            "text": "mo",
+            "start": 57.94,
+            "end": 58.1,
+            "score": 0.3630770444869995
+          },
+          {
+            "text": "ta",
+            "start": 58.1,
+            "end": 58.26,
+            "score": 0.29190678894519806
+          },
+          {
+            "text": "nu",
+            "start": 58.26,
+            "end": 58.4,
+            "score": 0.14449718408286572
+          },
+          {
+            "text": "ko",
+            "start": 58.4,
+            "end": 58.72,
+            "score": 0.2898809164762497
+          },
+          {
+            "text": "ta",
+            "start": 58.72,
+            "end": 58.98,
+            "score": 0.28902667760849
+          },
+          {
+            "text": "e",
+            "start": 58.98,
+            "end": 59.519999999999996,
+            "score": 0.36218053102493286
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.018668968230485916,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3054913667858475,
+          "longest": 0.5799999999999983,
+          "cross_gap": false
+        },
+        "max_shift": 0.0799999999999983,
+        "predictions": [
+          {
+            "text": "bu",
+            "start": 57.48,
+            "end": 57.66,
+            "score": 0.4008326977491379
+          },
+          {
+            "text": "ki",
+            "start": 57.66,
+            "end": 57.8,
+            "score": 0.2375197932124138
+          },
+          {
+            "text": "wo",
+            "start": 57.8,
+            "end": 57.86,
+            "score": 0.1684224009513855
+          },
+          {
+            "text": "mo",
+            "start": 57.86,
+            "end": 58.1,
+            "score": 0.26663461327552795
+          },
+          {
+            "text": "ta",
+            "start": 58.1,
+            "end": 58.24,
+            "score": 0.24777453392744064
+          },
+          {
+            "text": "nu",
+            "start": 58.24,
+            "end": 58.36,
+            "score": 0.1043775868602097
+          },
+          {
+            "text": "ko",
+            "start": 58.36,
+            "end": 58.72,
+            "score": 0.3526429980993271
+          },
+          {
+            "text": "ta",
+            "start": 58.72,
+            "end": 58.94,
+            "score": 0.3808887451887131
+          },
+          {
+            "text": "e",
+            "start": 58.94,
+            "end": 59.519999999999996,
+            "score": 0.5903289318084717
+          }
+        ]
+      }
+    },
+    {
+      "line": 8,
+      "line_id": "s15-n324",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.2903525679582907,
+        "longest": 0.6199999999999974,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        59.5,
+        64.32000000000001
+      ],
+      "cached_window": {
+        "seconds": 0.0008068513125181198,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2903525679582907,
+          "longest": 0.6199999999999974,
+          "cross_gap": false
+        },
+        "max_shift": 0.0,
+        "predictions": [
+          {
+            "text": "i",
+            "start": 59.8,
+            "end": 60.0,
+            "score": 0.2934829294681549
+          },
+          {
+            "text": "chi",
+            "start": 60.0,
+            "end": 60.14,
+            "score": 0.2955892284711202
+          },
+          {
+            "text": "ge",
+            "start": 60.14,
+            "end": 60.34,
+            "score": 0.3334944248199463
+          },
+          {
+            "text": "ki",
+            "start": 60.72,
+            "end": 60.82,
+            "score": 0.4194168746471405
+          },
+          {
+            "text": "hi",
+            "start": 60.82,
+            "end": 60.92,
+            "score": 0.24207481741905212
+          },
+          {
+            "text": "tsu",
+            "start": 60.92,
+            "end": 61.02,
+            "score": 0.08032194742312034
+          },
+          {
+            "text": "a",
+            "start": 61.02,
+            "end": 61.22,
+            "score": 0.4422213137149811
+          },
+          {
+            "text": "i",
+            "start": 61.22,
+            "end": 61.4,
+            "score": 0.4084688425064087
+          },
+          {
+            "text": "bu",
+            "start": 61.62,
+            "end": 62.18,
+            "score": 0.3955701142549515
+          },
+          {
+            "text": "k",
+            "start": 62.18,
+            "end": 62.22,
+            "score": 0.15611915290355682
+          },
+          {
+            "text": "ko",
+            "start": 62.24,
+            "end": 62.7,
+            "score": 0.3054681271314621
+          },
+          {
+            "text": "me",
+            "start": 62.7,
+            "end": 63.12,
+            "score": 0.4165666401386261
+          },
+          {
+            "text": "love",
+            "start": 63.12,
+            "end": 63.4,
+            "score": 0.15925101563334465
+          },
+          {
+            "text": "song",
+            "start": 63.4,
+            "end": 64.02,
+            "score": 0.11689052288420498
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.019418571144342422,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2823565928230805,
+          "longest": 0.7199999999999989,
+          "cross_gap": false
+        },
+        "max_shift": 0.10000000000000142,
+        "predictions": [
+          {
+            "text": "i",
+            "start": 59.86,
+            "end": 59.96,
+            "score": 0.40219244360923767
+          },
+          {
+            "text": "chi",
+            "start": 59.96,
+            "end": 60.1,
+            "score": 0.2621711144844691
+          },
+          {
+            "text": "ge",
+            "start": 60.1,
+            "end": 60.34,
+            "score": 0.3092738166451454
+          },
+          {
+            "text": "ki",
+            "start": 60.72,
+            "end": 60.76,
+            "score": 0.2220837101340294
+          },
+          {
+            "text": "hi",
+            "start": 60.76,
+            "end": 60.94,
+            "score": 0.3204697519540787
+          },
+          {
+            "text": "tsu",
+            "start": 60.94,
+            "end": 61.02,
+            "score": 0.12918009236454964
+          },
+          {
+            "text": "a",
+            "start": 61.02,
+            "end": 61.24,
+            "score": 0.4148693084716797
+          },
+          {
+            "text": "i",
+            "start": 61.24,
+            "end": 61.36,
+            "score": 0.39127862453460693
+          },
+          {
+            "text": "bu",
+            "start": 61.56,
+            "end": 62.08,
+            "score": 0.4111776649951935
+          },
+          {
+            "text": "k",
+            "start": 62.08,
+            "end": 62.14,
+            "score": 0.21880483627319336
+          },
+          {
+            "text": "ko",
+            "start": 62.16,
+            "end": 62.7,
+            "score": 0.38237790763378143
+          },
+          {
+            "text": "me",
+            "start": 62.7,
+            "end": 63.14,
+            "score": 0.31884992867708206
+          },
+          {
+            "text": "love",
+            "start": 63.14,
+            "end": 63.34,
+            "score": 0.04190940683474764
+          },
+          {
+            "text": "song",
+            "start": 63.34,
+            "end": 64.06,
+            "score": 0.12835369291133247
+          }
+        ]
+      }
+    },
+    {
+      "line": 9,
+      "line_id": "s15-n362",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.39129483699798584,
+        "longest": 1.1200000000000045,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        64.22,
+        69.48
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 10,
+      "line_id": "s15-n416",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.42783125223858015,
+        "longest": 1.0600000000000023,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        69.28,
+        74.34
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 11,
+      "line_id": "s15-n437",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.33821933964888257,
+        "longest": 0.9000000000000057,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        73.9,
+        76.78
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 12,
+      "line_id": "s15-n455",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.34669632288730806,
+        "longest": 0.5,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        76.2,
+        78.8
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 13,
+      "line_id": "s15-n471",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.49128760113602593,
+        "longest": 1.3400000000000034,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        78.48,
+        84.08
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 14,
+      "line_id": "s15-n500",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.40890825561319405,
+        "longest": 2.3599999999999994,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        83.64,
+        90.04
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 15,
+      "line_id": "s15-n520",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4455594339718421,
+        "longest": 1.5400000000000063,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        96.74000000000001,
+        101.84
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 16,
+      "line_id": "s15-n547",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5077119371540343,
+        "longest": 0.37999999999999545,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        101.58,
+        105.10000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 17,
+      "line_id": "s15-n583",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4978707054585053,
+        "longest": 1.3200000000000074,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        104.5,
+        111.18
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 18,
+      "line_id": "s15-n612",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4878966796793975,
+        "longest": 1.8599999999999994,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        110.76,
+        115.52
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 19,
+      "line_id": "s15-n636",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4296807118437507,
+        "longest": 2.0799999999999983,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        114.92,
+        120.82000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 20,
+      "line_id": "s15-n666",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3785643817649948,
+        "longest": 2.3599999999999994,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        120.24000000000001,
+        126.0
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 21,
+      "line_id": "s15-n703",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3604983513553937,
+        "longest": 0.5600000000000023,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        125.76,
+        128.46
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 22,
+      "line_id": "s15-n719",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.38949431147840285,
+        "longest": 0.5,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        128.18,
+        130.84
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 23,
+      "line_id": "s15-n738",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3479568288916758,
+        "longest": 0.4200000000000159,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        130.52,
+        134.84
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 24,
+      "line_id": "s15-n770",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3014952160665416,
+        "longest": 1.4399999999999977,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        134.22,
+        140.94
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 25,
+      "line_id": "s15-n818",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.31068617405576837,
+        "longest": 1.0,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        140.3,
+        145.22
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 26,
+      "line_id": "s15-n840",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.29986308901398273,
+        "longest": 1.1999999999999886,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        144.88,
+        148.02
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 27,
+      "line_id": "s15-n870",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.2210529823270109,
+        "longest": 0.5999999999999943,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        147.4,
+        149.78
+      ],
+      "cached_window": {
+        "seconds": 0.0004584565758705139,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.21999350521299574,
+          "longest": 0.5999999999999943,
+          "cross_gap": false
+        },
+        "max_shift": 0.01999999999998181,
+        "predictions": [
+          {
+            "text": "mi",
+            "start": 147.70000000000002,
+            "end": 147.74,
+            "score": 0.04358271136879921
+          },
+          {
+            "text": "ga",
+            "start": 147.74,
+            "end": 147.9,
+            "score": 0.23959633708000183
+          },
+          {
+            "text": "i",
+            "start": 147.9,
+            "end": 148.14000000000001,
+            "score": 0.32258573174476624
+          },
+          {
+            "text": "ta",
+            "start": 148.14000000000001,
+            "end": 148.20000000000002,
+            "score": 0.17118455097079277
+          },
+          {
+            "text": "ki",
+            "start": 148.20000000000002,
+            "end": 148.4,
+            "score": 0.2852204144001007
+          },
+          {
+            "text": "zu",
+            "start": 148.4,
+            "end": 148.5,
+            "score": 0.23886430263519287
+          },
+          {
+            "text": "na",
+            "start": 148.5,
+            "end": 148.72,
+            "score": 0.2954550236463547
+          },
+          {
+            "text": "na",
+            "start": 148.72,
+            "end": 148.86,
+            "score": 0.14192167669534683
+          },
+          {
+            "text": "ra",
+            "start": 148.86,
+            "end": 149.46,
+            "score": 0.24153079837560654
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.017127778381109238,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.17554988652571207,
+          "longest": 0.2400000000000091,
+          "cross_gap": false
+        },
+        "max_shift": 0.5200000000000102,
+        "predictions": [
+          {
+            "text": "mi",
+            "start": 147.70000000000002,
+            "end": 147.86,
+            "score": 0.11271492415107787
+          },
+          {
+            "text": "ga",
+            "start": 147.86,
+            "end": 147.9,
+            "score": 0.19215838611125946
+          },
+          {
+            "text": "i",
+            "start": 147.9,
+            "end": 148.14000000000001,
+            "score": 0.2647354304790497
+          },
+          {
+            "text": "ta",
+            "start": 148.14000000000001,
+            "end": 148.18,
+            "score": 0.15071113780140877
+          },
+          {
+            "text": "ki",
+            "start": 148.36,
+            "end": 148.46,
+            "score": 0.21032464504241943
+          },
+          {
+            "text": "zu",
+            "start": 148.46,
+            "end": 148.5,
+            "score": 0.11638937890529633
+          },
+          {
+            "text": "na",
+            "start": 148.5,
+            "end": 148.54,
+            "score": 0.17177733033895493
+          },
+          {
+            "text": "na",
+            "start": 148.62,
+            "end": 148.74,
+            "score": 0.22003433853387833
+          },
+          {
+            "text": "ra",
+            "start": 148.88,
+            "end": 148.94,
+            "score": 0.14110340736806393
+          }
+        ]
+      }
+    },
+    {
+      "line": 28,
+      "line_id": "s15-n886",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.4217213485389948,
+        "longest": 1.299999999999983,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        149.46,
+        155.06
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 29,
+      "line_id": "s15-n902",
+      "reasons": [
+        "duration",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.36311922623560977,
+        "longest": 3.0999999999999943,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        154.66,
+        161.72
+      ],
+      "cached_window": {
+        "seconds": 0.0008297674357891083,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.36311922623560977,
+          "longest": 3.0999999999999943,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "wa",
+            "start": 154.98,
+            "end": 155.16,
+            "score": 0.33427686989307404
+          },
+          {
+            "text": "ta",
+            "start": 155.16,
+            "end": 155.29999999999998,
+            "score": 0.35274964570999146
+          },
+          {
+            "text": "shi",
+            "start": 155.29999999999998,
+            "end": 155.35999999999999,
+            "score": 0.18528627355893454
+          },
+          {
+            "text": "ha",
+            "start": 155.35999999999999,
+            "end": 155.57999999999998,
+            "score": 0.20931445062160492
+          },
+          {
+            "text": "ma",
+            "start": 155.57999999999998,
+            "end": 155.74,
+            "score": 0.3241628408432007
+          },
+          {
+            "text": "ta",
+            "start": 155.74,
+            "end": 155.98,
+            "score": 0.4005274027585983
+          },
+          {
+            "text": "ta",
+            "start": 155.98,
+            "end": 156.35999999999999,
+            "score": 0.3907891511917114
+          },
+          {
+            "text": "tsu",
+            "start": 156.35999999999999,
+            "end": 156.64,
+            "score": 0.28608885407447815
+          },
+          {
+            "text": "a",
+            "start": 157.07999999999998,
+            "end": 157.35999999999999,
+            "score": 0.5521641373634338
+          },
+          {
+            "text": "shi",
+            "start": 157.35999999999999,
+            "end": 157.7,
+            "score": 0.43618176380793255
+          },
+          {
+            "text": "ta",
+            "start": 157.7,
+            "end": 158.06,
+            "score": 0.45122866332530975
+          },
+          {
+            "text": "he",
+            "start": 158.06,
+            "end": 158.32,
+            "score": 0.2012934684753418
+          },
+          {
+            "text": "to",
+            "start": 158.32,
+            "end": 161.42,
+            "score": 0.5964864194393158
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.019728029146790504,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3742353033560973,
+          "longest": 3.2399999999999807,
+          "cross_gap": false
+        },
+        "max_shift": 0.28000000000000114,
+        "predictions": [
+          {
+            "text": "wa",
+            "start": 155.02,
+            "end": 155.18,
+            "score": 0.36991165578365326
+          },
+          {
+            "text": "ta",
+            "start": 155.18,
+            "end": 155.38,
+            "score": 0.3568056970834732
+          },
+          {
+            "text": "shi",
+            "start": 155.38,
+            "end": 155.44,
+            "score": 0.18254776298999786
+          },
+          {
+            "text": "ha",
+            "start": 155.44,
+            "end": 155.6,
+            "score": 0.19855135679244995
+          },
+          {
+            "text": "ma",
+            "start": 155.6,
+            "end": 155.78,
+            "score": 0.36997129023075104
+          },
+          {
+            "text": "ta",
+            "start": 155.78,
+            "end": 155.94,
+            "score": 0.36073797941207886
+          },
+          {
+            "text": "ta",
+            "start": 156.12,
+            "end": 156.35999999999999,
+            "score": 0.3363999128341675
+          },
+          {
+            "text": "tsu",
+            "start": 156.35999999999999,
+            "end": 156.57999999999998,
+            "score": 0.22139975428581238
+          },
+          {
+            "text": "a",
+            "start": 157.12,
+            "end": 157.4,
+            "score": 0.6225334405899048
+          },
+          {
+            "text": "shi",
+            "start": 157.4,
+            "end": 157.72,
+            "score": 0.4283144474029541
+          },
+          {
+            "text": "ta",
+            "start": 157.72,
+            "end": 158.1,
+            "score": 0.47601208090782166
+          },
+          {
+            "text": "he",
+            "start": 158.1,
+            "end": 158.46,
+            "score": 0.2117251604795456
+          },
+          {
+            "text": "to",
+            "start": 158.46,
+            "end": 161.7,
+            "score": 0.7301484048366547
+          }
+        ]
+      }
+    },
+    {
+      "line": 30,
+      "line_id": "s15-n926",
+      "reasons": [
+        "duration",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 0.9893801965230519,
+        "confidence": 0.4118745315869698,
+        "longest": 2.579999999999984,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        174.14000000000001,
+        184.0
+      ],
+      "cached_window": {
+        "seconds": 0.0006917957216501236,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 0.9894305273452209,
+          "confidence": 0.4118743883179074,
+          "longest": 2.5800000000000125,
+          "cross_gap": false
+        },
+        "max_shift": 0.040000000000020464,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 174.44000000000003,
+            "end": 174.76000000000002,
+            "score": 0.5162032842636108
+          },
+          {
+            "text": "re",
+            "start": 174.76000000000002,
+            "end": 175.20000000000002,
+            "score": 0.5108873397111893
+          },
+          {
+            "text": "ka",
+            "start": 175.20000000000002,
+            "end": 175.68,
+            "score": 0.5062111914157867
+          },
+          {
+            "text": "ra",
+            "start": 175.68,
+            "end": 176.04000000000002,
+            "score": 0.3964456468820572
+          },
+          {
+            "text": "ko",
+            "start": 176.04000000000002,
+            "end": 176.86,
+            "score": 0.23424238339066505
+          },
+          {
+            "text": "ko",
+            "start": 176.86,
+            "end": 176.9,
+            "score": 0.25188209116458893
+          },
+          {
+            "text": "ka",
+            "start": 176.9,
+            "end": 177.24,
+            "score": 0.45205701887607574
+          },
+          {
+            "text": "ra",
+            "start": 177.24,
+            "end": 179.82000000000002,
+            "score": 0.4626745730638504
+          },
+          {
+            "text": "ha",
+            "start": 180.62,
+            "end": 180.9,
+            "score": 0.3504116088151932
+          },
+          {
+            "text": "ji",
+            "start": 180.9,
+            "end": 181.4,
+            "score": 0.4397977441549301
+          },
+          {
+            "text": "ma",
+            "start": 181.4,
+            "end": 182.06,
+            "score": 0.5053299367427826
+          },
+          {
+            "text": "ri",
+            "start": 182.12,
+            "end": 183.74,
+            "score": 0.31634984133415855
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.019836891442537308,
+        "accepted": false,
+        "guard": false,
+        "improves": true,
+        "quality": {
+          "coverage": 0.9945494052222605,
+          "confidence": 0.4553333585060197,
+          "longest": 2.640000000000015,
+          "cross_gap": false
+        },
+        "max_shift": 0.24000000000003752,
+        "predictions": [
+          {
+            "text": "ko",
+            "start": 174.48000000000002,
+            "end": 174.78,
+            "score": 0.48738184571266174
+          },
+          {
+            "text": "re",
+            "start": 174.78,
+            "end": 175.24,
+            "score": 0.48636317253112793
+          },
+          {
+            "text": "ka",
+            "start": 175.24,
+            "end": 175.70000000000002,
+            "score": 0.49246805906295776
+          },
+          {
+            "text": "ra",
+            "start": 175.70000000000002,
+            "end": 176.00000000000003,
+            "score": 0.403215229511261
+          },
+          {
+            "text": "ko",
+            "start": 176.10000000000002,
+            "end": 176.88000000000002,
+            "score": 0.21550830639898777
+          },
+          {
+            "text": "ko",
+            "start": 176.88000000000002,
+            "end": 176.92000000000002,
+            "score": 0.2335926964879036
+          },
+          {
+            "text": "ka",
+            "start": 176.92000000000002,
+            "end": 177.3,
+            "score": 0.4545649290084839
+          },
+          {
+            "text": "ra",
+            "start": 177.3,
+            "end": 179.94000000000003,
+            "score": 0.7574875354766846
+          },
+          {
+            "text": "ha",
+            "start": 180.66000000000003,
+            "end": 180.94000000000003,
+            "score": 0.4673953950405121
+          },
+          {
+            "text": "ji",
+            "start": 180.94000000000003,
+            "end": 181.50000000000003,
+            "score": 0.573880672454834
+          },
+          {
+            "text": "ma",
+            "start": 181.50000000000003,
+            "end": 182.12,
+            "score": 0.5973370969295502
+          },
+          {
+            "text": "ri",
+            "start": 182.14000000000001,
+            "end": 183.94000000000003,
+            "score": 0.2948053634572716
+          }
+        ]
+      }
+    },
+    {
+      "line": 31,
+      "line_id": "s15-n951",
+      "reasons": [
+        "duration",
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.32022420758827747,
+        "longest": 2.259999999999991,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        183.38,
+        193.52
+      ],
+      "cached_window": {
+        "seconds": 0.0004420708864927292,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3202230170144402,
+          "longest": 2.3799999999999955,
+          "cross_gap": false
+        },
+        "max_shift": 0.3199999999999932,
+        "predictions": [
+          {
+            "text": "ze",
+            "start": 183.38,
+            "end": 185.76,
+            "score": 0.2069757347999257
+          },
+          {
+            "text": "n",
+            "start": 185.76,
+            "end": 186.28,
+            "score": 0.5581580400466919
+          },
+          {
+            "text": "re",
+            "start": 186.28,
+            "end": 186.6,
+            "score": 0.20873210299760103
+          },
+          {
+            "text": "i",
+            "start": 186.6,
+            "end": 187.0,
+            "score": 0.3716922104358673
+          },
+          {
+            "text": "de",
+            "start": 187.0,
+            "end": 188.38,
+            "score": 0.5997082889080048
+          },
+          {
+            "text": "u",
+            "start": 188.82,
+            "end": 189.48,
+            "score": 0.5053329467773438
+          },
+          {
+            "text": "ta",
+            "start": 189.5,
+            "end": 190.16,
+            "score": 0.22602016851305962
+          },
+          {
+            "text": "o",
+            "start": 190.94,
+            "end": 193.2,
+            "score": 0.20343855023384094
+          },
+          {
+            "text": "u",
+            "start": 193.2,
+            "end": 193.22,
+            "score": 0.0019491104176267982
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.019419243559241295,
+        "accepted": false,
+        "guard": false,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.26814822101085967,
+          "longest": 3.4199999999999875,
+          "cross_gap": false
+        },
+        "max_shift": 2.9199999999999875,
+        "predictions": [
+          {
+            "text": "ze",
+            "start": 183.38,
+            "end": 185.88,
+            "score": 0.19016876781824976
+          },
+          {
+            "text": "n",
+            "start": 185.88,
+            "end": 186.48,
+            "score": 0.4691387116909027
+          },
+          {
+            "text": "re",
+            "start": 186.57999999999998,
+            "end": 186.82,
+            "score": 0.142982677789405
+          },
+          {
+            "text": "i",
+            "start": 186.82,
+            "end": 187.26,
+            "score": 0.34753552079200745
+          },
+          {
+            "text": "de",
+            "start": 187.51999999999998,
+            "end": 188.68,
+            "score": 0.2902534734457731
+          },
+          {
+            "text": "u",
+            "start": 189.06,
+            "end": 189.6,
+            "score": 0.5754883289337158
+          },
+          {
+            "text": "ta",
+            "start": 189.66,
+            "end": 193.07999999999998,
+            "score": 0.3563067317008972
+          },
+          {
+            "text": "o",
+            "start": 193.07999999999998,
+            "end": 193.1,
+            "score": 0.037696365267038345
+          },
+          {
+            "text": "u",
+            "start": 193.1,
+            "end": 193.12,
+            "score": 0.003763411659747362
+          }
+        ]
+      }
+    },
+    {
+      "line": 32,
+      "line_id": "s15-n970",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5050186971461194,
+        "longest": 1.1000000000000227,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        211.28,
+        216.52
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 33,
+      "line_id": "s15-n995",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5585025366809633,
+        "longest": 0.8000000000000114,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        216.20000000000002,
+        221.26
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 34,
+      "line_id": "s15-n1020",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.501571224278046,
+        "longest": 0.8599999999999852,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        220.78,
+        223.62
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 35,
+      "line_id": "s15-n1036",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5440369993448257,
+        "longest": 0.5,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        223.22,
+        225.78
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 36,
+      "line_id": "s15-n1052",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5122460408343209,
+        "longest": 0.47999999999998977,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        225.38,
+        228.74
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 37,
+      "line_id": "s15-n1068",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.5608339508374532,
+        "longest": 1.0999999999999943,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        228.26,
+        231.24
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 38,
+      "line_id": "s15-n1079",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.41656410676382843,
+        "longest": 1.1400000000000148,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        230.88,
+        235.74
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 39,
+      "line_id": "s15-n1133",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.37692220293839845,
+        "longest": 1.0600000000000023,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        235.12,
+        240.56
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 40,
+      "line_id": "s15-n1154",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.18333584335805087,
+        "longest": 1.0400000000000205,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        240.26,
+        243.26
+      ],
+      "cached_window": {
+        "seconds": 0.0004482641816139221,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.18333584335805087,
+          "longest": 1.039999999999992,
+          "cross_gap": false
+        },
+        "max_shift": 2.842170943040401e-14,
+        "predictions": [
+          {
+            "text": "mo",
+            "start": 240.56,
+            "end": 240.95999999999998,
+            "score": 0.30448970943689346
+          },
+          {
+            "text": "u",
+            "start": 240.95999999999998,
+            "end": 240.98,
+            "score": 0.0833548754453659
+          },
+          {
+            "text": "he",
+            "start": 240.98,
+            "end": 241.22,
+            "score": 0.12299037259072065
+          },
+          {
+            "text": "i",
+            "start": 241.22,
+            "end": 241.23999999999998,
+            "score": 0.20387427508831024
+          },
+          {
+            "text": "ki",
+            "start": 241.23999999999998,
+            "end": 241.48,
+            "score": 0.2254808098077774
+          },
+          {
+            "text": "he",
+            "start": 241.48,
+            "end": 241.66,
+            "score": 0.1474294401705265
+          },
+          {
+            "text": "t",
+            "start": 241.66,
+            "end": 241.67999999999998,
+            "score": 0.07465153187513351
+          },
+          {
+            "text": "cha",
+            "start": 241.67999999999998,
+            "end": 241.92,
+            "score": 0.1671766291062037
+          },
+          {
+            "text": "ra",
+            "start": 241.92,
+            "end": 242.95999999999998,
+            "score": 0.32057494670152664
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.018954655155539513,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.1613946606370586,
+          "longest": 0.7600000000000193,
+          "cross_gap": false
+        },
+        "max_shift": 0.18000000000000682,
+        "predictions": [
+          {
+            "text": "mo",
+            "start": 240.62,
+            "end": 240.88,
+            "score": 0.25359590351581573
+          },
+          {
+            "text": "u",
+            "start": 240.88,
+            "end": 240.95999999999998,
+            "score": 0.12917447090148926
+          },
+          {
+            "text": "he",
+            "start": 241.07999999999998,
+            "end": 241.34,
+            "score": 0.10739981476217508
+          },
+          {
+            "text": "i",
+            "start": 241.34,
+            "end": 241.35999999999999,
+            "score": 0.20017924904823303
+          },
+          {
+            "text": "ki",
+            "start": 241.35999999999999,
+            "end": 241.51999999999998,
+            "score": 0.22263461351394653
+          },
+          {
+            "text": "he",
+            "start": 241.51999999999998,
+            "end": 241.73999999999998,
+            "score": 0.07310077548027039
+          },
+          {
+            "text": "t",
+            "start": 241.73999999999998,
+            "end": 241.84,
+            "score": 0.07624135166406631
+          },
+          {
+            "text": "cha",
+            "start": 241.84,
+            "end": 242.01999999999998,
+            "score": 0.09016236538688342
+          },
+          {
+            "text": "ra",
+            "start": 242.01999999999998,
+            "end": 242.78,
+            "score": 0.3000634014606476
+          }
+        ]
+      }
+    },
+    {
+      "line": 41,
+      "line_id": "s15-n1172",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.26339516090229154,
+        "longest": 0.8599999999999852,
+        "cross_gap": false
+      },
+      "selected": true,
+      "window": [
+        242.82,
+        245.46
+      ],
+      "cached_window": {
+        "seconds": 0.0004714410752058029,
+        "accepted": false,
+        "guard": true,
+        "improves": false,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.2604853343218565,
+          "longest": 0.8600000000000136,
+          "cross_gap": false
+        },
+        "max_shift": 0.3199999999999932,
+        "predictions": [
+          {
+            "text": "haa",
+            "start": 242.82,
+            "end": 243.35999999999999,
+            "score": 0.25297629460692406
+          },
+          {
+            "text": "to",
+            "start": 243.35999999999999,
+            "end": 243.6,
+            "score": 0.1877862550318241
+          },
+          {
+            "text": "hi",
+            "start": 243.6,
+            "end": 243.66,
+            "score": 0.22687534987926483
+          },
+          {
+            "text": "bi",
+            "start": 243.66,
+            "end": 243.98,
+            "score": 0.2745055556297302
+          },
+          {
+            "text": "ka",
+            "start": 243.98,
+            "end": 244.14,
+            "score": 0.2073971852660179
+          },
+          {
+            "text": "se",
+            "start": 244.14,
+            "end": 244.28,
+            "score": 0.23941480368375778
+          },
+          {
+            "text": "a",
+            "start": 244.28,
+            "end": 244.29999999999998,
+            "score": 0.19422318041324615
+          },
+          {
+            "text": "i",
+            "start": 244.29999999999998,
+            "end": 245.16,
+            "score": 0.5007040500640869
+          }
+        ]
+      },
+      "local_fresh": {
+        "seconds": 0.018848415464162827,
+        "accepted": true,
+        "guard": true,
+        "improves": true,
+        "quality": {
+          "coverage": 1,
+          "confidence": 0.3517674043153723,
+          "longest": 0.6399999999999864,
+          "cross_gap": false
+        },
+        "max_shift": 0.3199999999999932,
+        "predictions": [
+          {
+            "text": "haa",
+            "start": 242.82,
+            "end": 243.44,
+            "score": 0.23080247888962427
+          },
+          {
+            "text": "to",
+            "start": 243.44,
+            "end": 243.66,
+            "score": 0.2816591337323189
+          },
+          {
+            "text": "hi",
+            "start": 243.66,
+            "end": 243.82,
+            "score": 0.4184845834970474
+          },
+          {
+            "text": "bi",
+            "start": 243.82,
+            "end": 243.95999999999998,
+            "score": 0.43926332890987396
+          },
+          {
+            "text": "ka",
+            "start": 243.95999999999998,
+            "end": 244.1,
+            "score": 0.4009776711463928
+          },
+          {
+            "text": "se",
+            "start": 244.1,
+            "end": 244.28,
+            "score": 0.35046760737895966
+          },
+          {
+            "text": "a",
+            "start": 244.38,
+            "end": 244.4,
+            "score": 0.07190191000699997
+          },
+          {
+            "text": "i",
+            "start": 244.4,
+            "end": 245.04,
+            "score": 0.6205825209617615
+          }
+        ]
+      }
+    },
+    {
+      "line": 42,
+      "line_id": "s15-n1187",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.3792236979518618,
+        "longest": 1.4799999999999898,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        244.92000000000002,
+        250.64000000000001
+      ],
+      "skip": "budget"
+    },
+    {
+      "line": 43,
+      "line_id": "s15-n1216",
+      "reasons": [
+        "confidence"
+      ],
+      "quality": {
+        "coverage": 1,
+        "confidence": 0.37441889464091027,
+        "longest": 1.8799999999999955,
+        "cross_gap": false
+      },
+      "selected": false,
+      "window": [
+        250.1,
+        257.86
+      ],
+      "skip": "budget"
+    }
+  ]
+}

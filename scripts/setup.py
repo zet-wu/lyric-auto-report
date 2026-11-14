@@ -31,3 +31,5 @@ if not native.exists():run(bindir/'uv','venv',native,'--python',sys.executable)
 run(bindir/'uv','pip','install','--python',native/'bin/python',
     '-r',ROOT/'requirements/milikara-native.txt','-c',ROOT/'requirements/milikara-native-lock.txt')
 if args.models:run(python,ROOT/'scripts/download.py','models')
+
+run(python,ROOT/'scripts/comparison/setup.py')

@@ -21,3 +21,8 @@ __pycache__/
 *.tar.gz
 *.m4a
 !/datasets/audio/*.m4a
+
+# Superseded experiments remain in Git history, never in current results.
+/historical/
+/results/milikara-native/
+/results/reading/predictions/luna-*/

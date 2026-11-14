@@ -1,7 +1,7 @@
 {
   "song": "s05",
-  "seconds": 5.361852515488863,
-  "stem_origin": "fresh current DemucsSeparator default seed=0",
+  "seconds": 2.651656160131097,
+  "stem_origin": "this evaluation cache",
   "stem": ".cache/timing/audio/The Brave Under The Summer Sky.wav",
   "analysis": {
     "source_id": "datasets/audio/The Brave Under The Summer Sky.m4a",
@@ -13025,7 +13025,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s05-n456",
@@ -23201,8 +23201,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 37.8593125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n581",
+              "s05-n582",
+              "s05-n588"
+            ]
+          },
+          "end": {
+            "time": 38.8528125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n581",
+              "s05-n582",
+              "s05-n588"
+            ]
+          }
         },
         "fragments": [
           {
@@ -23246,6 +23262,11 @@
           {
             "object_id": "s05-n582",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n582",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -23983,8 +24004,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 43.00425,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n600",
+              "s05-n601",
+              "s05-n607"
+            ]
+          },
+          "end": {
+            "time": 44.7623125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n600",
+              "s05-n601",
+              "s05-n607"
+            ]
+          }
         },
         "fragments": [
           {
@@ -24028,6 +24065,11 @@
           {
             "object_id": "s05-n601",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n601",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -24459,8 +24501,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 50.3630625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n615",
+              "s05-n619",
+              "s05-n620"
+            ]
+          },
+          "end": {
+            "time": 50.8633125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n615",
+              "s05-n619",
+              "s05-n620"
+            ]
+          }
         },
         "fragments": [
           {
@@ -24504,6 +24562,11 @@
           {
             "object_id": "s05-n619",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n619",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -35933,8 +35996,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 149.85725,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n935",
+              "s05-n936",
+              "s05-n939"
+            ]
+          },
+          "end": {
+            "time": 151.2780625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n935",
+              "s05-n936",
+              "s05-n939"
+            ]
+          }
         },
         "fragments": [
           {
@@ -35978,6 +36057,11 @@
           {
             "object_id": "s05-n936",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n936",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -36698,7 +36782,7 @@
             ]
           },
           "end": {
-            "time": 158.463125,
+            "time": 158.423125,
             "source": "acoustic_path",
             "basis_ids": [
               "s05-n952"
@@ -36706,8 +36790,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 155.0074375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n951",
+              "s05-n952",
+              "s05-n958"
+            ]
+          },
+          "end": {
+            "time": 156.856625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n951",
+              "s05-n952",
+              "s05-n958"
+            ]
+          }
         },
         "fragments": [
           {
@@ -36717,13 +36817,13 @@
           },
           {
             "start": 158.4123125,
-            "end": 158.463125,
+            "end": 158.423125,
             "piece_index": 7
           }
         ],
         "concat_interval": [
           104.04,
-          105.94
+          105.9
         ],
         "crosses_removed_gap": true,
         "removed_gap_seconds": 1.5556875000000048,
@@ -36741,16 +36841,21 @@
             "character": "a",
             "frames": [
               5248,
-              5297
+              5295
             ],
             "concat_start": 104.96000000000001,
-            "concat_end": 105.94
+            "concat_end": 105.9
           }
         ],
         "issues": [
           {
             "object_id": "s05-n952",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n952",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -36984,8 +37089,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 160.543125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n963",
+              "s05-n964",
+              "s05-n965"
+            ]
+          },
+          "end": {
+            "time": 161.013,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n963",
+              "s05-n964",
+              "s05-n965"
+            ]
+          }
         },
         "fragments": [
           {
@@ -37029,6 +37150,11 @@
           {
             "object_id": "s05-n964",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n964",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -46322,7 +46448,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s05-n455",
@@ -46363,13 +46489,13 @@
       {
         "line_id": "s05-n561",
         "start": 34.2993125,
-        "end": 37.8593125,
+        "end": 38.8528125,
         "first_unit_complete": true
       },
       {
         "line_id": "s05-n584",
         "start": 39.80425,
-        "end": 43.00425,
+        "end": 44.7623125,
         "first_unit_complete": true
       },
       {
@@ -46477,13 +46603,13 @@
       {
         "line_id": "s05-n931",
         "start": 148.09725,
-        "end": 149.83725,
+        "end": 151.2780625,
         "first_unit_complete": true
       },
       {
         "line_id": "s05-n938",
         "start": 151.8674375,
-        "end": 155.0074375,
+        "end": 156.856625,
         "first_unit_complete": true
       },
       {
@@ -46580,12 +46706,12 @@
     "coverage": {
       "total": 398,
       "raw_complete": 398,
-      "proposed_complete": 392,
+      "proposed_complete": 398,
       "single_endpoint": 0,
-      "unresolved": 6,
-      "derived": 0,
+      "unresolved": 0,
+      "derived": 6,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 6,
       "empty_targets": 0
     },
     "calibration": {
@@ -46596,8 +46722,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -52960,10 +53086,11 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -5527.112293258309,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -5528.1361308380365,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"

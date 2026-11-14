@@ -1,6 +1,6 @@
 {
   "song": "s14",
-  "seconds": 1.9675669465214014,
+  "seconds": 2.2193647287786007,
   "stem_origin": "this evaluation cache",
   "stem": ".cache/timing/audio/骹车破尼.wav",
   "analysis": {
@@ -10019,7 +10019,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s14-n55",
@@ -14493,8 +14493,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 13.3906875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s14-n64",
+              "s14-n65",
+              "s14-n67"
+            ]
+          },
+          "end": {
+            "time": 14.3209375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s14-n64",
+              "s14-n65",
+              "s14-n67"
+            ]
+          }
         },
         "fragments": [
           {
@@ -14538,6 +14554,11 @@
           {
             "object_id": "s14-n65",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s14-n65",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -16896,7 +16917,7 @@
             ]
           },
           "end": {
-            "time": 26.496625,
+            "time": 26.516625,
             "source": "acoustic_path",
             "basis_ids": [
               "s14-n105"
@@ -16912,7 +16933,7 @@
             ]
           },
           "end": {
-            "time": 26.496625,
+            "time": 26.516625,
             "source": "acoustic_path",
             "basis_ids": [
               "s14-n105"
@@ -16922,13 +16943,13 @@
         "fragments": [
           {
             "start": 26.116625,
-            "end": 26.496625,
+            "end": 26.516625,
             "piece_index": 3
           }
         ],
         "concat_interval": [
           13.52,
-          13.9
+          13.92
         ],
         "crosses_removed_gap": false,
         "removed_gap_seconds": 0,
@@ -16946,10 +16967,10 @@
             "character": "i",
             "frames": [
               688,
-              695
+              696
             ],
             "concat_start": 13.76,
-            "concat_end": 13.9
+            "concat_end": 13.92
           }
         ],
         "issues": []
@@ -16961,7 +16982,7 @@
         "model_text": "pian",
         "raw_timing": {
           "start": {
-            "time": 26.496625,
+            "time": 27.675,
             "source": "acoustic_path",
             "basis_ids": [
               "s14-n107"
@@ -16976,48 +16997,46 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 27.675,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s14-n107"
+            ]
+          },
+          "end": {
+            "time": 27.855,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s14-n107"
+            ]
+          }
         },
         "fragments": [
           {
-            "start": 26.496625,
-            "end": 26.5985,
-            "piece_index": 3
-          },
-          {
-            "start": 27.596875,
+            "start": 27.675,
             "end": 27.855,
             "piece_index": 4
           }
         ],
         "concat_interval": [
-          13.9,
+          14.08,
           14.26
         ],
-        "crosses_removed_gap": true,
-        "removed_gap_seconds": 0.9983749999999993,
+        "crosses_removed_gap": false,
+        "removed_gap_seconds": 0,
         "character_path": [
           {
             "character": "p",
             "frames": [
-              695,
-              696
+              704,
+              705
             ],
-            "concat_start": 13.9,
-            "concat_end": 13.92
+            "concat_start": 14.08,
+            "concat_end": 14.1
           },
           {
             "character": "i",
-            "frames": [
-              696,
-              697
-            ],
-            "concat_start": 13.92,
-            "concat_end": 13.94
-          },
-          {
-            "character": "a",
             "frames": [
               705,
               706
@@ -17026,22 +17045,25 @@
             "concat_end": 14.120000000000001
           },
           {
-            "character": "n",
+            "character": "a",
             "frames": [
               706,
-              713
+              707
             ],
             "concat_start": 14.120000000000001,
+            "concat_end": 14.14
+          },
+          {
+            "character": "n",
+            "frames": [
+              707,
+              713
+            ],
+            "concat_start": 14.14,
             "concat_end": 14.26
           }
         ],
-        "issues": [
-          {
-            "object_id": "s14-n107",
-            "code": "crosses_removed_gap",
-            "values": {}
-          }
-        ]
+        "issues": []
       },
       {
         "unit_id": "s14-n108",
@@ -26435,7 +26457,7 @@
         "model_text": "pian",
         "raw_timing": {
           "start": {
-            "time": 90.68375,
+            "time": 91.6738125,
             "source": "acoustic_path",
             "basis_ids": [
               "s14-n262"
@@ -26450,48 +26472,37 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 91.6738125,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s14-n262"
+            ]
+          },
+          "end": {
+            "time": 91.8738125,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s14-n262"
+            ]
+          }
         },
         "fragments": [
           {
-            "start": 90.68375,
-            "end": 90.7784375,
-            "piece_index": 16
-          },
-          {
-            "start": 91.6085,
+            "start": 91.6738125,
             "end": 91.8738125,
             "piece_index": 17
           }
         ],
         "concat_interval": [
-          60.76,
+          60.92,
           61.12
         ],
-        "crosses_removed_gap": true,
-        "removed_gap_seconds": 0.830062500000011,
+        "crosses_removed_gap": false,
+        "removed_gap_seconds": 0,
         "character_path": [
           {
             "character": "p",
-            "frames": [
-              3038,
-              3039
-            ],
-            "concat_start": 60.76,
-            "concat_end": 60.78
-          },
-          {
-            "character": "i",
-            "frames": [
-              3039,
-              3040
-            ],
-            "concat_start": 60.78,
-            "concat_end": 60.800000000000004
-          },
-          {
-            "character": "a",
             "frames": [
               3046,
               3047
@@ -26500,22 +26511,34 @@
             "concat_end": 60.94
           },
           {
-            "character": "n",
+            "character": "i",
             "frames": [
               3047,
-              3056
+              3048
             ],
             "concat_start": 60.94,
+            "concat_end": 60.96
+          },
+          {
+            "character": "a",
+            "frames": [
+              3048,
+              3049
+            ],
+            "concat_start": 60.96,
+            "concat_end": 60.980000000000004
+          },
+          {
+            "character": "n",
+            "frames": [
+              3049,
+              3056
+            ],
+            "concat_start": 60.980000000000004,
             "concat_end": 61.120000000000005
           }
         ],
-        "issues": [
-          {
-            "object_id": "s14-n262",
-            "code": "crosses_removed_gap",
-            "values": {}
-          }
-        ]
+        "issues": []
       },
       {
         "unit_id": "s14-n263",
@@ -29464,8 +29487,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 107.7569375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s14-n305",
+              "s14-n306",
+              "s14-n307"
+            ]
+          },
+          "end": {
+            "time": 108.239875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s14-n305",
+              "s14-n306",
+              "s14-n307"
+            ]
+          }
         },
         "fragments": [
           {
@@ -29527,6 +29566,11 @@
           {
             "object_id": "s14-n306",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s14-n306",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -36057,8 +36101,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 153.327125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s14-n409",
+              "s14-n413",
+              "s14-n414"
+            ]
+          },
+          "end": {
+            "time": 154.44075,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s14-n409",
+              "s14-n413",
+              "s14-n414"
+            ]
+          }
         },
         "fragments": [
           {
@@ -36120,6 +36180,11 @@
           {
             "object_id": "s14-n413",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s14-n413",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -37606,7 +37671,7 @@
       {
         "line_id": "s14-n54",
         "start": 11.2506875,
-        "end": 13.3906875,
+        "end": 14.3209375,
         "first_unit_complete": true
       },
       {
@@ -37630,14 +37695,14 @@
       {
         "line_id": "s14-n94",
         "start": 24.096625,
-        "end": 26.496625,
+        "end": 26.516625,
         "first_unit_complete": true
       },
       {
         "line_id": "s14-n106",
-        "start": 27.855,
+        "start": 27.675,
         "end": 29.615,
-        "first_unit_complete": false
+        "first_unit_complete": true
       },
       {
         "line_id": "s14-n115",
@@ -37737,9 +37802,9 @@
       },
       {
         "line_id": "s14-n261",
-        "start": 91.8738125,
+        "start": 91.6738125,
         "end": 93.6738125,
-        "first_unit_complete": false
+        "first_unit_complete": true
       },
       {
         "line_id": "s14-n270",
@@ -37859,12 +37924,12 @@
     "coverage": {
       "total": 300,
       "raw_complete": 300,
-      "proposed_complete": 290,
+      "proposed_complete": 295,
       "single_endpoint": 0,
-      "unresolved": 10,
-      "derived": 0,
+      "unresolved": 5,
+      "derived": 3,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 3,
       "empty_targets": 0
     },
     "calibration": {
@@ -37875,8 +37940,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -42913,10 +42978,11 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -9642.106942594051,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -9646.935334702968,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"

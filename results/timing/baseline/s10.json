@@ -1,7 +1,7 @@
 {
   "song": "s10",
-  "seconds": 5.7525607366114855,
-  "stem_origin": "fresh current DemucsSeparator default seed=0",
+  "seconds": 3.60781922750175,
+  "stem_origin": "this evaluation cache",
   "stem": ".cache/timing/audio/恋桜開花前線.wav",
   "analysis": {
     "source_id": "datasets/audio/恋桜開花前線.m4a",
@@ -16167,7 +16167,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s10-n68",
@@ -34132,8 +34132,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 77.69975,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s10-n382",
+              "s10-n384",
+              "s10-n385"
+            ]
+          },
+          "end": {
+            "time": 77.9611875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s10-n382",
+              "s10-n384",
+              "s10-n385"
+            ]
+          }
         },
         "fragments": [
           {
@@ -34177,6 +34193,11 @@
           {
             "object_id": "s10-n384",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s10-n384",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -41188,7 +41209,7 @@
             ]
           },
           "end": {
-            "time": 126.3725,
+            "time": 126.3925,
             "source": "acoustic_path",
             "basis_ids": [
               "s10-n573"
@@ -41204,7 +41225,7 @@
             ]
           },
           "end": {
-            "time": 126.3725,
+            "time": 126.3925,
             "source": "acoustic_path",
             "basis_ids": [
               "s10-n573"
@@ -41214,13 +41235,13 @@
         "fragments": [
           {
             "start": 124.8125,
-            "end": 126.3725,
+            "end": 126.3925,
             "piece_index": 5
           }
         ],
         "concat_interval": [
           96.38,
-          97.94
+          97.96
         ],
         "crosses_removed_gap": false,
         "removed_gap_seconds": 0,
@@ -41229,10 +41250,10 @@
             "character": "i",
             "frames": [
               4819,
-              4897
+              4898
             ],
             "concat_start": 96.38,
-            "concat_end": 97.94
+            "concat_end": 97.96000000000001
           }
         ],
         "issues": []
@@ -41244,14 +41265,14 @@
         "model_text": "i",
         "raw_timing": {
           "start": {
-            "time": 126.3925,
+            "time": 138.9325625,
             "source": "acoustic_path",
             "basis_ids": [
               "s10-n575"
             ]
           },
           "end": {
-            "time": 126.4125,
+            "time": 138.9525625,
             "source": "acoustic_path",
             "basis_ids": [
               "s10-n575"
@@ -41260,14 +41281,14 @@
         },
         "proposed_timing": {
           "start": {
-            "time": 126.3925,
+            "time": 138.9325625,
             "source": "acoustic_path",
             "basis_ids": [
               "s10-n575"
             ]
           },
           "end": {
-            "time": 126.4125,
+            "time": 138.9525625,
             "source": "acoustic_path",
             "basis_ids": [
               "s10-n575"
@@ -41276,14 +41297,14 @@
         },
         "fragments": [
           {
-            "start": 126.3925,
-            "end": 126.4125,
-            "piece_index": 5
+            "start": 138.9325625,
+            "end": 138.9525625,
+            "piece_index": 6
           }
         ],
         "concat_interval": [
-          97.96,
-          97.98
+          98.24,
+          98.26
         ],
         "crosses_removed_gap": false,
         "removed_gap_seconds": 0,
@@ -41291,11 +41312,11 @@
           {
             "character": "i",
             "frames": [
-              4898,
-              4899
+              4912,
+              4913
             ],
-            "concat_start": 97.96000000000001,
-            "concat_end": 97.98
+            "concat_start": 98.24000000000001,
+            "concat_end": 98.26
           }
         ],
         "issues": []
@@ -57949,9 +57970,9 @@
       },
       {
         "line_id": "s10-n383",
-        "start": 77.9611875,
+        "start": 77.69975,
         "end": 82.1411875,
-        "first_unit_complete": false
+        "first_unit_complete": true
       },
       {
         "line_id": "s10-n402",
@@ -58004,12 +58025,12 @@
       {
         "line_id": "s10-n558",
         "start": 123.4325,
-        "end": 126.3725,
+        "end": 126.3925,
         "first_unit_complete": true
       },
       {
         "line_id": "s10-n574",
-        "start": 126.3925,
+        "start": 138.9325625,
         "end": 141.8525625,
         "first_unit_complete": true
       },
@@ -58143,12 +58164,12 @@
     "coverage": {
       "total": 496,
       "raw_complete": 496,
-      "proposed_complete": 494,
+      "proposed_complete": 495,
       "single_endpoint": 0,
-      "unresolved": 2,
-      "derived": 0,
+      "unresolved": 1,
+      "derived": 1,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 0
     },
     "calibration": {
@@ -58159,8 +58180,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -66048,10 +66069,11 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -5432.425686929375,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -5433.4109578510825,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"

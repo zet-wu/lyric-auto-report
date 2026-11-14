@@ -1,14 +1,21 @@
 {
   "version": "manual-reading-local-refinement-v1",
   "frozen_before_scoring": true,
-  "inputs": "11 Japanese songs; confirmed human readings; Demucs; NextFire; standard CTC",
-  "baselines": ["global", "concat_core"],
-  "conditions": ["baseline", "cached_window", "local_fresh"],
+  "inputs": "12 Japanese songs; confirmed human readings; Demucs; NextFire; standard CTC",
+  "baselines": [
+    "global",
+    "concat_core"
+  ],
+  "conditions": [
+    "baseline",
+    "cached_window",
+    "local_fresh"
+  ],
   "rounds": 1,
   "selection": "Any cross-removed-gap or invalid emitting unit; nonfinal duration >2s or final >3s; acoustic-core coverage <0.70; mean unit confidence <0.60. Rank by gap/invalid, duration, coverage, confidence, then line index.",
   "budget": "At most ceil(0.20*line_count) lines and sum of scheduled clip durations <=0.20*original audio duration. Window first/last emitting endpoint +/-0.30s, outward 20ms rounding, maximum 35s. Over-budget windows skipped without changing ranking.",
   "candidate_audio": "Contiguous original-axis Demucs vocals, including removed gaps; cached control uses corresponding first-pass emission slice and its original mapping.",
   "acceptance": "All emitting units present and positive; no cross-removed-gap; nonfinal <=2s and final <=3s; core coverage >=0.70; mean confidence no more than 0.05 below baseline; max displacement <=2s unless previous longest >3s, coverage <0.70, or cross-gap. Must improve coverage >=0.03, longest duration >=0.20s, confidence >=0.01, or remove a cross-gap.",
   "reference_use": "Human readings only during inference; reference timestamps read exclusively by scoring. Same selected lines/windows for cached and fresh candidates. No rescoring-driven parameter changes.",
-  "timing": "Single serial GPU process. Model loaded once; warm-up and JIT excluded. First-pass forward measured on each actual full/core waveform; original baseline predictions retained. Local timings include crop normalization, forward and CTC. Cache control includes slice and CTC. Source I/O and shared model load reported separately."
+  "timing": "One GPU process; other quality experiments may run concurrently, so elapsed times are diagnostic only. Model loaded once; warm-up and JIT excluded. First-pass forward measured on each actual full/core waveform; original baseline predictions retained. Local timings include crop normalization, forward and CTC. Cache control includes slice and CTC. Source I/O and shared model load reported separately."
 }

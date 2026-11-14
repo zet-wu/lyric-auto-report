@@ -12645,7 +12645,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s05-n456",
@@ -22821,8 +22821,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 37.8599375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n581",
+              "s05-n582",
+              "s05-n588"
+            ]
+          },
+          "end": {
+            "time": 38.9456875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n581",
+              "s05-n582",
+              "s05-n588"
+            ]
+          }
         },
         "fragments": [
           {
@@ -22866,6 +22882,11 @@
           {
             "object_id": "s05-n582",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n582",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -23603,8 +23624,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 43.020375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n600",
+              "s05-n601",
+              "s05-n607"
+            ]
+          },
+          "end": {
+            "time": 44.80875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s05-n600",
+              "s05-n601",
+              "s05-n607"
+            ]
+          }
         },
         "fragments": [
           {
@@ -23648,6 +23685,11 @@
           {
             "object_id": "s05-n601",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s05-n601",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -45946,7 +45988,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s05-n455",
@@ -45987,13 +46029,13 @@
       {
         "line_id": "s05-n561",
         "start": 34.2399375,
-        "end": 37.8599375,
+        "end": 38.9456875,
         "first_unit_complete": true
       },
       {
         "line_id": "s05-n584",
         "start": 39.840375,
-        "end": 43.020375,
+        "end": 44.80875,
         "first_unit_complete": true
       },
       {
@@ -46204,12 +46246,12 @@
     "coverage": {
       "total": 398,
       "raw_complete": 398,
-      "proposed_complete": 396,
+      "proposed_complete": 398,
       "single_endpoint": 0,
-      "unresolved": 2,
-      "derived": 0,
+      "unresolved": 0,
+      "derived": 2,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 2,
       "empty_targets": 0
     },
     "calibration": {
@@ -46220,8 +46262,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -52566,13 +52608,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -5299.6891962476075,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -5300.069633747607,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 1.5519633889198303
+  "seconds": 1.5267738029360771
 }

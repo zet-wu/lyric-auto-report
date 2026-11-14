@@ -8109,7 +8109,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s11-n32",
@@ -19551,7 +19551,7 @@
             ]
           },
           "end": {
-            "time": 124.0343125,
+            "time": 122.7919375,
             "source": "acoustic_path",
             "basis_ids": [
               "s11-n236"
@@ -19559,27 +19559,34 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 122.4319375,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s11-n236"
+            ]
+          },
+          "end": {
+            "time": 122.7919375,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s11-n236"
+            ]
+          }
         },
         "fragments": [
           {
             "start": 122.4319375,
-            "end": 123.286375,
+            "end": 122.7919375,
             "piece_index": 12
-          },
-          {
-            "start": 123.98875,
-            "end": 124.0343125,
-            "piece_index": 13
           }
         ],
         "concat_interval": [
           82.68,
-          83.58
+          83.04
         ],
-        "crosses_removed_gap": true,
-        "removed_gap_seconds": 0.7023749999999893,
+        "crosses_removed_gap": false,
+        "removed_gap_seconds": 0,
         "character_path": [
           {
             "character": "j",
@@ -19603,28 +19610,22 @@
             "character": "n",
             "frames": [
               4136,
-              4153
+              4151
             ],
             "concat_start": 82.72,
-            "concat_end": 83.06
+            "concat_end": 83.02
           },
           {
             "character": "g",
             "frames": [
-              4178,
-              4179
+              4151,
+              4152
             ],
-            "concat_start": 83.56,
-            "concat_end": 83.58
+            "concat_start": 83.02,
+            "concat_end": 83.04
           }
         ],
-        "issues": [
-          {
-            "object_id": "s11-n236",
-            "code": "crosses_removed_gap",
-            "values": {}
-          }
-        ]
+        "issues": []
       },
       {
         "unit_id": "s11-n238",
@@ -27881,8 +27882,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 230.0936875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s11-n346",
+              "s11-n347",
+              "s11-n349"
+            ]
+          },
+          "end": {
+            "time": 231.990625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s11-n346",
+              "s11-n347",
+              "s11-n349"
+            ]
+          }
         },
         "fragments": [
           {
@@ -27944,6 +27961,11 @@
           {
             "object_id": "s11-n347",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s11-n347",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -30471,8 +30493,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 261.8565,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s11-n381",
+              "s11-n382",
+              "s11-n383"
+            ]
+          },
+          "end": {
+            "time": 263.9238125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s11-n381",
+              "s11-n382",
+              "s11-n383"
+            ]
+          }
         },
         "fragments": [
           {
@@ -30534,6 +30572,11 @@
           {
             "object_id": "s11-n382",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s11-n382",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -30847,7 +30890,7 @@
       {
         "line_id": "s11-n226",
         "start": 118.1119375,
-        "end": 122.4319375,
+        "end": 122.7919375,
         "first_unit_complete": true
       },
       {
@@ -30901,7 +30944,7 @@
       {
         "line_id": "s11-n336",
         "start": 220.8136875,
-        "end": 230.0936875,
+        "end": 231.990625,
         "first_unit_complete": true
       },
       {
@@ -30926,12 +30969,12 @@
     "coverage": {
       "total": 251,
       "raw_complete": 251,
-      "proposed_complete": 244,
+      "proposed_complete": 247,
       "single_endpoint": 0,
-      "unresolved": 7,
-      "derived": 0,
+      "unresolved": 4,
+      "derived": 2,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 2,
       "empty_targets": 0
     },
     "calibration": {
@@ -30942,8 +30985,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -35040,13 +35083,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -10241.344692517072,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -10243.936905116825,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 1.6867469754070044
+  "seconds": 1.9112685546278954
 }

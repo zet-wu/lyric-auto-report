@@ -19,6 +19,6 @@ Kim Vocals 与表中的 MelBand RoFormer 使用相同权重，分别通过 Timin
 
 Lazulite 的分离输出经过人声活动分析、音频拼接和强制对齐。歌曲中的弱唱、长音与背景演唱会影响活动边界，因此分离质量需要结合目标工作流判断。分离器输出相同声道数、采样率和长度，能够让比较集中于人声内容；推理时保留各权重发布的分块和重叠设置。
 
-已有六模型资源测试见[性能报告](separation-performance.md)。当前测试集的下游对齐重跑结果与分离配置一起发布。音频没有配套干净人声真值，本仓库用人工歌词时间评价下游端点，并记录活动覆盖和缺失；这些指标回答歌词工作流问题。
+六模型本轮资源测试见[性能报告](separation-performance.md)。当前测试集的下游对齐重跑结果与分离配置一起发布。音频没有配套干净人声真值，本仓库用人工歌词时间评价下游端点，并记录活动覆盖和缺失；这些指标回答歌词工作流问题。
 
 源码入口：[Lazulite](https://github.com/wuchenyanmo/Lazulite)、[MSST](https://github.com/ZFTurbo/Music-Source-Separation-Training)、[Windowed RoFormer](https://github.com/smulelabs/windowed-roformer)、[Timing](https://github.com/Zennmn/Timing)。

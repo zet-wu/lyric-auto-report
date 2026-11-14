@@ -13558,7 +13558,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s12-n524",
@@ -21870,8 +21870,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 47.3745,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n588",
+              "s12-n593",
+              "s12-n597"
+            ]
+          },
+          "end": {
+            "time": 47.781875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n588",
+              "s12-n593",
+              "s12-n597"
+            ]
+          }
         },
         "fragments": [
           {
@@ -21915,6 +21931,11 @@
           {
             "object_id": "s12-n593",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n593",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -32237,8 +32258,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 140.8315625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n866",
+              "s12-n867",
+              "s12-n868"
+            ]
+          },
+          "end": {
+            "time": 141.7636875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n866",
+              "s12-n867",
+              "s12-n868"
+            ]
+          }
         },
         "fragments": [
           {
@@ -32282,6 +32319,11 @@
           {
             "object_id": "s12-n867",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n867",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -49360,7 +49402,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s12-n523",
@@ -49388,9 +49430,9 @@
       },
       {
         "line_id": "s12-n589",
-        "start": 47.781875,
+        "start": 47.3745,
         "end": 52.021875,
-        "first_unit_complete": false
+        "first_unit_complete": true
       },
       {
         "line_id": "s12-n610",
@@ -49612,12 +49654,12 @@
     "coverage": {
       "total": 427,
       "raw_complete": 427,
-      "proposed_complete": 425,
+      "proposed_complete": 427,
       "single_endpoint": 0,
-      "unresolved": 2,
-      "derived": 0,
+      "unresolved": 0,
+      "derived": 2,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 2,
       "empty_targets": 0
     },
     "calibration": {
@@ -49628,8 +49670,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -56498,13 +56540,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -5442.969692276791,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -5444.250317276791,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 2.1181928794831038
+  "seconds": 2.0685412250459194
 }

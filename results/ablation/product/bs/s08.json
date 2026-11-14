@@ -11889,7 +11889,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s08-n423",
@@ -24996,8 +24996,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 81.7176875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s08-n667",
+              "s08-n668",
+              "s08-n674"
+            ]
+          },
+          "end": {
+            "time": 82.547,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s08-n667",
+              "s08-n668",
+              "s08-n674"
+            ]
+          }
         },
         "fragments": [
           {
@@ -25041,6 +25057,11 @@
           {
             "object_id": "s08-n668",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s08-n668",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -43435,7 +43456,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s08-n419",
@@ -43476,7 +43497,7 @@
       {
         "line_id": "s08-n637",
         "start": 75.3976875,
-        "end": 81.7176875,
+        "end": 82.547,
         "first_unit_complete": true
       },
       {
@@ -43579,12 +43600,12 @@
     "coverage": {
       "total": 377,
       "raw_complete": 377,
-      "proposed_complete": 376,
+      "proposed_complete": 377,
       "single_endpoint": 0,
-      "unresolved": 1,
-      "derived": 8,
+      "unresolved": 0,
+      "derived": 9,
       "profile_derived": 8,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 4
     },
     "calibration": {
@@ -43595,8 +43616,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -49559,13 +49580,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
       "first_pass_score": -5217.821030648425,
-      "completion": "local-piece-completion-v1"
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 1.7125088069587946
+  "seconds": 1.7770039066672325
 }

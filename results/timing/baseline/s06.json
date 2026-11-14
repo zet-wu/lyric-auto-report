@@ -1,7 +1,7 @@
 {
   "song": "s06",
-  "seconds": 5.442719763144851,
-  "stem_origin": "fresh current DemucsSeparator default seed=0",
+  "seconds": 2.888925341889262,
+  "stem_origin": "this evaluation cache",
   "stem": ".cache/timing/audio/Worlds Pain.wav",
   "analysis": {
     "source_id": "datasets/audio/Worlds Pain.m4a",
@@ -16459,7 +16459,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s06-n636",
@@ -37339,8 +37339,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 111.3570625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s06-n1012",
+              "s06-n1013",
+              "s06-n1014"
+            ]
+          },
+          "end": {
+            "time": 111.54825,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s06-n1012",
+              "s06-n1013",
+              "s06-n1014"
+            ]
+          }
         },
         "fragments": [
           {
@@ -37375,6 +37391,11 @@
           {
             "object_id": "s06-n1013",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s06-n1013",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -59556,12 +59577,12 @@
     "coverage": {
       "total": 507,
       "raw_complete": 507,
-      "proposed_complete": 505,
+      "proposed_complete": 506,
       "single_endpoint": 0,
-      "unresolved": 2,
-      "derived": 0,
+      "unresolved": 1,
+      "derived": 1,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 0
     },
     "calibration": {
@@ -59572,8 +59593,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -67672,10 +67693,11 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -6134.905504588038,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -6135.600192088037,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"

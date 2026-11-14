@@ -1,9 +1,16 @@
 {
   "version": "mms-fa-intraline-gap-fill-v1",
-  "input": "Existing fixed-human-reading MMS_FA predictions; 11 primary Japanese songs, all 23 separator/strategy combinations",
-  "variants": {"baseline": 0, "fill_all": null, "cap100": 0.1, "cap200": 0.2, "cap300": 0.3, "cap500": 0.5},
+  "input": "Existing fixed-human-reading MMS_FA predictions; 12 primary Japanese songs, all 23 separator/strategy combinations",
+  "variants": {
+    "baseline": 0,
+    "fill_all": null,
+    "cap100": 0.1,
+    "cap200": 0.2,
+    "cap300": 0.3,
+    "cap500": 0.5
+  },
   "rule": "For immediate adjacent target units within the same source lyric line, extend the earlier end to the later start only if both original intervals are valid and the positive gap is within the specified cap. Never cross a line boundary, skip a missing unit, shorten overlap, modify starts, or recover invalid intervals. fill_all has no gap cap.",
-  "scoring": "4590 paired kana units; song-equal macro primary. Report all, line-final, nonfinal, sustained >=600ms, and genuine reference pauses >=100ms between scored adjacent targets. Gold timestamps only define post-hoc scoring subsets, never select edits.",
+  "scoring": "5021 paired kana units; song-equal macro primary. Report all, line-final, nonfinal, sustained >=600ms, and genuine reference pauses >=100ms between scored adjacent targets. Gold timestamps only define post-hoc scoring subsets, never select edits.",
   "selection": "All caps declared together before scoring. No per-song selection or test-set optimized deployment threshold.",
   "compute": "Postprocess saved timestamps in linear time; no new acoustic inference."
 }

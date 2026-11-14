@@ -1462,14 +1462,14 @@
             {
               "unit_id": "s02-n579",
               "source_range": [
-                3,
+                4,
                 7
               ],
-              "reading": " the",
+              "reading": "the",
               "reading_language": "unknown",
               "reading_source": "body",
               "reading_range": [
-                0,
+                1,
                 4
               ],
               "input_group": "s02-n579"
@@ -1477,14 +1477,14 @@
             {
               "unit_id": "s02-n580",
               "source_range": [
-                8,
+                9,
                 14
               ],
-              "reading": " white",
+              "reading": "white",
               "reading_language": "unknown",
               "reading_source": "body",
               "reading_range": [
-                0,
+                1,
                 6
               ],
               "input_group": "s02-n580"
@@ -1492,14 +1492,14 @@
             {
               "unit_id": "s02-n581",
               "source_range": [
-                15,
+                16,
                 20
               ],
-              "reading": " snow",
+              "reading": "snow",
               "reading_language": "unknown",
               "reading_source": "body",
               "reading_range": [
-                0,
+                1,
                 5
               ],
               "input_group": "s02-n581"
@@ -1507,14 +1507,14 @@
             {
               "unit_id": "s02-n582",
               "source_range": [
-                21,
+                22,
                 26
               ],
-              "reading": " fall",
+              "reading": "fall",
               "reading_language": "unknown",
               "reading_source": "body",
               "reading_range": [
-                0,
+                1,
                 5
               ],
               "input_group": "s02-n582"
@@ -11858,7 +11858,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s02-n404",
@@ -13059,10 +13059,10 @@
         {
           "unit_id": "s02-n579",
           "object_id": "s02-n579",
-          "reading": " the",
+          "reading": "the",
           "original_reading": " the",
           "reading_range": [
-            0,
+            1,
             4
           ],
           "model_text": "the",
@@ -13072,10 +13072,10 @@
         {
           "unit_id": "s02-n580",
           "object_id": "s02-n580",
-          "reading": " white",
+          "reading": "white",
           "original_reading": " white",
           "reading_range": [
-            0,
+            1,
             6
           ],
           "model_text": "white",
@@ -13085,10 +13085,10 @@
         {
           "unit_id": "s02-n581",
           "object_id": "s02-n581",
-          "reading": " snow",
+          "reading": "snow",
           "original_reading": " snow",
           "reading_range": [
-            0,
+            1,
             5
           ],
           "model_text": "snow",
@@ -13098,10 +13098,10 @@
         {
           "unit_id": "s02-n582",
           "object_id": "s02-n582",
-          "reading": " fall",
+          "reading": "fall",
           "original_reading": " fall",
           "reading_range": [
-            0,
+            1,
             5
           ],
           "model_text": "fall",
@@ -23195,7 +23195,7 @@
       {
         "unit_id": "s02-n579",
         "line_id": "s02-n577",
-        "reading": " the",
+        "reading": "the",
         "model_text": "the",
         "raw_timing": {
           "start": {
@@ -23276,7 +23276,7 @@
       {
         "unit_id": "s02-n580",
         "line_id": "s02-n577",
-        "reading": " white",
+        "reading": "white",
         "model_text": "white",
         "raw_timing": {
           "start": {
@@ -23375,7 +23375,7 @@
       {
         "unit_id": "s02-n581",
         "line_id": "s02-n577",
-        "reading": " snow",
+        "reading": "snow",
         "model_text": "snow",
         "raw_timing": {
           "start": {
@@ -23465,7 +23465,7 @@
       {
         "unit_id": "s02-n582",
         "line_id": "s02-n577",
-        "reading": " fall",
+        "reading": "fall",
         "model_text": "fall",
         "raw_timing": {
           "start": {
@@ -33897,8 +33897,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 298.8291875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s02-n837",
+              "s02-n843",
+              "s02-n844"
+            ]
+          },
+          "end": {
+            "time": 299.8856875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s02-n837",
+              "s02-n843",
+              "s02-n844"
+            ]
+          }
         },
         "fragments": [
           {
@@ -33933,6 +33949,11 @@
           {
             "object_id": "s02-n843",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s02-n843",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -43208,7 +43229,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s02-n400",
@@ -43362,9 +43383,9 @@
       },
       {
         "line_id": "s02-n839",
-        "start": 299.8856875,
+        "start": 298.8291875,
         "end": 303.7456875,
-        "first_unit_complete": false
+        "first_unit_complete": true
       },
       {
         "line_id": "s02-n860",
@@ -43454,12 +43475,12 @@
     "coverage": {
       "total": 369,
       "raw_complete": 369,
-      "proposed_complete": 368,
+      "proposed_complete": 369,
       "single_endpoint": 0,
-      "unresolved": 1,
-      "derived": 0,
+      "unresolved": 0,
+      "derived": 1,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 0
     },
     "calibration": {
@@ -43470,8 +43491,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -44941,14 +44962,14 @@
               {
                 "unit_id": "s02-n579",
                 "source_range": [
-                  3,
+                  4,
                   7
                 ],
-                "reading": " the",
+                "reading": "the",
                 "reading_language": "unknown",
                 "reading_source": "body",
                 "reading_range": [
-                  0,
+                  1,
                   4
                 ],
                 "input_group": "s02-n579"
@@ -44956,14 +44977,14 @@
               {
                 "unit_id": "s02-n580",
                 "source_range": [
-                  8,
+                  9,
                   14
                 ],
-                "reading": " white",
+                "reading": "white",
                 "reading_language": "unknown",
                 "reading_source": "body",
                 "reading_range": [
-                  0,
+                  1,
                   6
                 ],
                 "input_group": "s02-n580"
@@ -44971,14 +44992,14 @@
               {
                 "unit_id": "s02-n581",
                 "source_range": [
-                  15,
+                  16,
                   20
                 ],
-                "reading": " snow",
+                "reading": "snow",
                 "reading_language": "unknown",
                 "reading_source": "body",
                 "reading_range": [
-                  0,
+                  1,
                   5
                 ],
                 "input_group": "s02-n581"
@@ -44986,14 +45007,14 @@
               {
                 "unit_id": "s02-n582",
                 "source_range": [
-                  21,
+                  22,
                   26
                 ],
-                "reading": " fall",
+                "reading": "fall",
                 "reading_language": "unknown",
                 "reading_source": "body",
                 "reading_range": [
-                  0,
+                  1,
                   5
                 ],
                 "input_group": "s02-n582"
@@ -49409,13 +49430,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -6819.502843214199,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -6820.475405714199,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 2.1257632970809937
+  "seconds": 2.190773045644164
 }

@@ -4412,14 +4412,14 @@
               "unit_id": "s01-n1104",
               "source_range": [
                 11,
-                17
+                16
               ],
-              "reading": "Brave ",
+              "reading": "Brave",
               "reading_language": "unknown",
               "reading_source": "body",
               "reading_range": [
                 0,
-                6
+                5
               ],
               "input_group": "s01-n1104"
             },
@@ -16030,7 +16030,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s01-n594",
@@ -19714,11 +19714,11 @@
         {
           "unit_id": "s01-n1104",
           "object_id": "s01-n1104",
-          "reading": "Brave ",
+          "reading": "Brave",
           "original_reading": "Brave ",
           "reading_range": [
             0,
-            6
+            5
           ],
           "model_text": "brave",
           "problem": null,
@@ -41809,7 +41809,7 @@
         "model_text": "ah",
         "raw_timing": {
           "start": {
-            "time": 111.3934375,
+            "time": 112.037125,
             "source": "acoustic_path",
             "basis_ids": [
               "s01-n1085"
@@ -41824,35 +41824,42 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 112.037125,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s01-n1085"
+            ]
+          },
+          "end": {
+            "time": 112.717125,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s01-n1085"
+            ]
+          }
         },
         "fragments": [
           {
-            "start": 111.3934375,
-            "end": 111.4325625,
-            "piece_index": 3
-          },
-          {
-            "start": 112.03625,
+            "start": 112.037125,
             "end": 112.717125,
             "piece_index": 4
           }
         ],
         "concat_interval": [
-          80.9,
+          80.94,
           81.62
         ],
-        "crosses_removed_gap": true,
-        "removed_gap_seconds": 0.6036874999999924,
+        "crosses_removed_gap": false,
+        "removed_gap_seconds": 0,
         "character_path": [
           {
             "character": "a",
             "frames": [
-              4045,
+              4047,
               4080
             ],
-            "concat_start": 80.9,
+            "concat_start": 80.94,
             "concat_end": 81.60000000000001
           },
           {
@@ -41865,13 +41872,7 @@
             "concat_end": 81.62
           }
         ],
-        "issues": [
-          {
-            "object_id": "s01-n1085",
-            "code": "crosses_removed_gap",
-            "values": {}
-          }
-        ]
+        "issues": []
       },
       {
         "unit_id": "s01-n1089",
@@ -42513,7 +42514,7 @@
       {
         "unit_id": "s01-n1104",
         "line_id": "s01-n1084",
-        "reading": "Brave ",
+        "reading": "Brave",
         "model_text": "brave",
         "raw_timing": {
           "start": {
@@ -51500,14 +51501,14 @@
         "model_text": "a",
         "raw_timing": {
           "start": {
-            "time": 172.2344375,
+            "time": 156.095875,
             "source": "acoustic_path",
             "basis_ids": [
               "s01-n1310"
             ]
           },
           "end": {
-            "time": 172.2544375,
+            "time": 171.9344375,
             "source": "acoustic_path",
             "basis_ids": [
               "s01-n1310"
@@ -51516,45 +51517,65 @@
         },
         "proposed_timing": {
           "start": {
-            "time": 172.2344375,
-            "source": "acoustic_path",
+            "time": 156.095875,
+            "source": "fragment_selected",
             "basis_ids": [
-              "s01-n1310"
+              "s01-n1309",
+              "s01-n1310",
+              "s01-n1315"
             ]
           },
           "end": {
-            "time": 172.2544375,
-            "source": "acoustic_path",
+            "time": 156.1135625,
+            "source": "fragment_selected",
             "basis_ids": [
-              "s01-n1310"
+              "s01-n1309",
+              "s01-n1310",
+              "s01-n1315"
             ]
           }
         },
         "fragments": [
           {
-            "start": 172.2344375,
-            "end": 172.2544375,
+            "start": 156.095875,
+            "end": 156.1135625,
+            "piece_index": 7
+          },
+          {
+            "start": 171.932125,
+            "end": 171.9344375,
             "piece_index": 8
           }
         ],
         "concat_interval": [
-          123.74,
-          123.76
+          123.42,
+          123.44
         ],
-        "crosses_removed_gap": false,
-        "removed_gap_seconds": 0,
+        "crosses_removed_gap": true,
+        "removed_gap_seconds": 15.818562500000013,
         "character_path": [
           {
             "character": "a",
             "frames": [
-              6187,
-              6188
+              6171,
+              6172
             ],
-            "concat_start": 123.74000000000001,
-            "concat_end": 123.76
+            "concat_start": 123.42,
+            "concat_end": 123.44
           }
         ],
-        "issues": []
+        "issues": [
+          {
+            "object_id": "s01-n1310",
+            "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s01-n1310",
+            "code": "fragment_selected",
+            "values": {}
+          }
+        ]
       },
       {
         "unit_id": "s01-n1315",
@@ -51563,7 +51584,7 @@
         "model_text": "ka",
         "raw_timing": {
           "start": {
-            "time": 172.2544375,
+            "time": 172.2144375,
             "source": "acoustic_path",
             "basis_ids": [
               "s01-n1315"
@@ -51579,7 +51600,7 @@
         },
         "proposed_timing": {
           "start": {
-            "time": 172.2544375,
+            "time": 172.2144375,
             "source": "acoustic_path",
             "basis_ids": [
               "s01-n1315"
@@ -51595,13 +51616,13 @@
         },
         "fragments": [
           {
-            "start": 172.2544375,
+            "start": 172.2144375,
             "end": 172.4544375,
             "piece_index": 8
           }
         ],
         "concat_interval": [
-          123.76,
+          123.72,
           123.96
         ],
         "crosses_removed_gap": false,
@@ -51610,10 +51631,10 @@
           {
             "character": "k",
             "frames": [
-              6188,
+              6186,
               6192
             ],
-            "concat_start": 123.76,
+            "concat_start": 123.72,
             "concat_end": 123.84
           },
           {
@@ -58061,9 +58082,9 @@
       },
       {
         "line_id": "s01-n1084",
-        "start": 113.434375,
+        "start": 112.037125,
         "end": 118.100625,
-        "first_unit_complete": false
+        "first_unit_complete": true
       },
       {
         "line_id": "s01-n1106",
@@ -58122,12 +58143,12 @@
       {
         "line_id": "s01-n1284",
         "start": 149.795875,
-        "end": 172.2544375,
+        "end": 156.1135625,
         "first_unit_complete": true
       },
       {
         "line_id": "s01-n1311",
-        "start": 172.2544375,
+        "start": 172.2144375,
         "end": 178.1344375,
         "first_unit_complete": true
       },
@@ -58165,12 +58186,12 @@
     "coverage": {
       "total": 502,
       "raw_complete": 502,
-      "proposed_complete": 499,
+      "proposed_complete": 500,
       "single_endpoint": 0,
-      "unresolved": 3,
-      "derived": 10,
+      "unresolved": 2,
+      "derived": 11,
       "profile_derived": 10,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 5
     },
     "calibration": {
@@ -58181,8 +58202,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -62602,14 +62623,14 @@
                 "unit_id": "s01-n1104",
                 "source_range": [
                   11,
-                  17
+                  16
                 ],
-                "reading": "Brave ",
+                "reading": "Brave",
                 "reading_language": "unknown",
                 "reading_source": "body",
                 "reading_range": [
                   0,
-                  6
+                  5
                 ],
                 "input_group": "s01-n1104"
               },
@@ -66084,13 +66105,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -5294.311565542594,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -5298.333472944632,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 9.02870904840529
+  "seconds": 9.187916742637753
 }

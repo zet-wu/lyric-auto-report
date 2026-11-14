@@ -17,7 +17,7 @@ def sha(p):
     with p.open('rb') as f: return hashlib.file_digest(f,'sha256').hexdigest()
 records=[]
 for i,path in enumerate(sorted((ROOT/'datasets/annotations').glob('*.ttml'))):
-    sid=f's{i+1:02}'
+    sid=read(ROOT/'configs/dataset-ids.json')[path.name]
     name=path.stem; audio=ROOT/'datasets/audio'/f'{name.removesuffix("-假名注音")}.m4a'
     tree=ET.parse(path); root=tree.getroot()
     for j,node in enumerate(root.iter()): node.set(D+'id',f'{sid}-n{j}')
@@ -69,7 +69,7 @@ dump(OUT/'reference.json',records)
 dump(OUT/'protocol.json',{
     'timing_commit':subprocess.check_output(['git','-C',str(UPSTREAM),'rev-parse','HEAD'],text=True).strip(),
     'studio_commit':subprocess.check_output(['git','-C',str(STUDIO),'rev-parse','HEAD'],text=True).strip(),
-    'input':'13 audio files / 14 TTML variants; primary chain only; background counts reported separately',
+    'input':'14 audio files / 15 TTML variants; primary chain only; background counts reported separately',
     'audio':'same Demucs htdemucs seed=0 complete stem supplied to both systems; all stems generated in this evaluation',
     'conditions':['current Studio projection + default NextFire, no hints or gap fill','Timing tifa with untimed surface text, source mode on shared stem','Timing tifa with trusted human line windows, surface text'],
     'dialects':'Cantonese and Teochew out of declared model scope, kept separate; kana transcription is not Japanese speech',

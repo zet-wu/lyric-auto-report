@@ -13558,7 +13558,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s12-n524",
@@ -32310,8 +32310,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 142.4079375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n867",
+              "s12-n868",
+              "s12-n869"
+            ]
+          },
+          "end": {
+            "time": 142.8134375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n867",
+              "s12-n868",
+              "s12-n869"
+            ]
+          }
         },
         "fragments": [
           {
@@ -32346,6 +32362,11 @@
           {
             "object_id": "s12-n868",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n868",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -49361,7 +49382,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s12-n523",
@@ -49613,12 +49634,12 @@
     "coverage": {
       "total": 427,
       "raw_complete": 427,
-      "proposed_complete": 426,
+      "proposed_complete": 427,
       "single_endpoint": 0,
-      "unresolved": 1,
-      "derived": 0,
+      "unresolved": 0,
+      "derived": 1,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 0
     },
     "calibration": {
@@ -49629,8 +49650,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -56493,13 +56514,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -5157.578927466646,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -5158.499614966646,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 2.2931491266936064
+  "seconds": 1.9435327034443617
 }

@@ -1,0 +1,5702 @@
+{
+  "song": "s15",
+  "mode": "trusted",
+  "seconds": 21.952145567163825,
+  "report": {
+    "language": "mixed",
+    "duration": 272.8106875,
+    "source": "original",
+    "audio_mode": "source",
+    "separation": null,
+    "lead_separation": null,
+    "aligner": "tifa",
+    "trust_line_timestamps": true,
+    "timestamp_grid_ms": 10,
+    "warnings": [
+      "第 6 行：有片段持续较长。",
+      "第 9 行：有片段过短。",
+      "第 17 行：有片段过短。",
+      "第 25 行：有片段过短。",
+      "第 30 行：有片段持续较长。",
+      "第 31 行：有片段持续较长。",
+      "第 32 行：有片段持续较长。",
+      "第 33 行：有片段过短。",
+      "第 44 行：时间靠近句段边缘。"
+    ],
+    "lines": [
+      {
+        "text": "奇跡が宿った機械仕掛けの",
+        "start": 25.922,
+        "end": 30.392,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "奇跡",
+            "spoken": "奇跡",
+            "reading": "",
+            "start": 25.922,
+            "end": 26.422,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "が",
+            "spoken": "が",
+            "reading": "",
+            "start": 26.422,
+            "end": 26.552,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "宿",
+            "spoken": "宿",
+            "reading": "",
+            "start": 26.552,
+            "end": 27.132,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 27.132,
+            "end": 27.182,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 27.182,
+            "end": 27.432,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "機械",
+            "spoken": "機械",
+            "reading": "",
+            "start": 27.432,
+            "end": 28.232,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "仕掛",
+            "spoken": "仕掛",
+            "reading": "",
+            "start": 28.232,
+            "end": 28.662,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 28.662,
+            "end": 29.012,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 29.012,
+            "end": 30.392,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "このアームには意味がある",
+        "start": 30.802,
+        "end": 33.662,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "こ",
+            "spoken": "こ",
+            "reading": "",
+            "start": 30.802,
+            "end": 31.002,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 31.002,
+            "end": 31.192,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "アー",
+            "spoken": "アー",
+            "reading": "",
+            "start": 31.192,
+            "end": 31.442,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ム",
+            "spoken": "ム",
+            "reading": "",
+            "start": 31.442,
+            "end": 31.592,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "に",
+            "spoken": "に",
+            "reading": "",
+            "start": 31.592,
+            "end": 31.902,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "は",
+            "spoken": "は",
+            "reading": "",
+            "start": 31.902,
+            "end": 32.112,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "意味",
+            "spoken": "意味",
+            "reading": "",
+            "start": 32.112,
+            "end": 32.642,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "が",
+            "spoken": "が",
+            "reading": "",
+            "start": 32.642,
+            "end": 32.902,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "あ",
+            "spoken": "あ",
+            "reading": "",
+            "start": 32.902,
+            "end": 33.232,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 33.232,
+            "end": 33.662,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "普通の日常なんでもない日々",
+        "start": 35.673,
+        "end": 39.793,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "普通",
+            "spoken": "普通",
+            "reading": "",
+            "start": 35.673,
+            "end": 36.203,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 36.203,
+            "end": 36.353,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "日常",
+            "spoken": "日常",
+            "reading": "",
+            "start": 36.353,
+            "end": 37.243,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 37.243,
+            "end": 37.503,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ん",
+            "spoken": "ん",
+            "reading": "",
+            "start": 37.503,
+            "end": 37.573,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "で",
+            "spoken": "で",
+            "reading": "",
+            "start": 37.573,
+            "end": 37.683,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "も",
+            "spoken": "も",
+            "reading": "",
+            "start": 37.683,
+            "end": 38.043,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 38.043,
+            "end": 38.263,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 38.263,
+            "end": 38.313,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "日々",
+            "spoken": "日々",
+            "reading": "",
+            "start": 38.313,
+            "end": 39.793,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "そんな夢の為だと",
+        "start": 39.952,
+        "end": 44.342,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "そ",
+            "spoken": "そ",
+            "reading": "",
+            "start": 39.952,
+            "end": 40.142,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ん",
+            "spoken": "ん",
+            "reading": "",
+            "start": 40.232,
+            "end": 40.352,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 40.352,
+            "end": 40.612,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "夢",
+            "spoken": "夢",
+            "reading": "",
+            "start": 40.612,
+            "end": 41.232,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 41.232,
+            "end": 41.522,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "為",
+            "spoken": "為",
+            "reading": "",
+            "start": 41.522,
+            "end": 42.152,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "だ",
+            "spoken": "だ",
+            "reading": "",
+            "start": 42.152,
+            "end": 42.272,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と",
+            "spoken": "と",
+            "reading": "",
+            "start": 42.272,
+            "end": 44.342,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "温もりを伝える",
+        "start": 44.766,
+        "end": 47.806,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "温",
+            "spoken": "温",
+            "reading": "",
+            "start": 44.766,
+            "end": 45.546,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "も",
+            "spoken": "も",
+            "reading": "",
+            "start": 45.546,
+            "end": 45.826,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "り",
+            "spoken": "り",
+            "reading": "",
+            "start": 45.826,
+            "end": 46.186,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "を",
+            "spoken": "を",
+            "reading": "",
+            "start": 46.186,
+            "end": 46.376,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "伝",
+            "spoken": "伝",
+            "reading": "",
+            "start": 46.376,
+            "end": 47.136,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "え",
+            "spoken": "え",
+            "reading": "",
+            "start": 47.136,
+            "end": 47.406,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 47.406,
+            "end": 47.806,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "言葉じゃなくたって",
+        "start": 49.846,
+        "end": 54.456,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "言葉",
+            "spoken": "言葉",
+            "reading": "",
+            "start": 49.846,
+            "end": 50.696,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "じゃ",
+            "spoken": "じゃ",
+            "reading": "",
+            "start": 50.696,
+            "end": 51.046,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 51.046,
+            "end": 51.326,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く",
+            "spoken": "く",
+            "reading": "",
+            "start": 51.326,
+            "end": 51.636,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "たって",
+            "spoken": "たって",
+            "reading": "",
+            "start": 51.636,
+            "end": 54.456,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment",
+              "long_sustain_check"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "この拳の答え",
+        "start": 55.026,
+        "end": 57.156,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "こ",
+            "spoken": "こ",
+            "reading": "",
+            "start": 55.026,
+            "end": 55.226,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 55.226,
+            "end": 55.316,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "拳",
+            "spoken": "拳",
+            "reading": "",
+            "start": 55.316,
+            "end": 55.816,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 55.816,
+            "end": 55.896,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "答",
+            "spoken": "答",
+            "reading": "",
+            "start": 55.896,
+            "end": 56.586,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "え",
+            "spoken": "え",
+            "reading": "",
+            "start": 56.586,
+            "end": 57.156,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "武器を持たぬ答え",
+        "start": 57.466,
+        "end": 59.546,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "武器",
+            "spoken": "武器",
+            "reading": "",
+            "start": 57.466,
+            "end": 57.816,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "を",
+            "spoken": "を",
+            "reading": "",
+            "start": 57.816,
+            "end": 57.916,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "持",
+            "spoken": "持",
+            "reading": "",
+            "start": 57.916,
+            "end": 58.046,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 58.046,
+            "end": 58.256,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ぬ",
+            "spoken": "ぬ",
+            "reading": "",
+            "start": 58.256,
+            "end": 58.346,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "答",
+            "spoken": "答",
+            "reading": "",
+            "start": 58.346,
+            "end": 59.036,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "え",
+            "spoken": "え",
+            "reading": "",
+            "start": 59.036,
+            "end": 59.546,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "「一撃必愛」ぶっ込めラブソング",
+        "start": 59.756,
+        "end": 64.426,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "「一撃",
+            "spoken": "一撃",
+            "reading": "",
+            "start": 59.756,
+            "end": 60.386,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "必",
+            "spoken": "必",
+            "reading": "",
+            "start": 60.386,
+            "end": 60.956,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "愛」",
+            "spoken": "愛",
+            "reading": "",
+            "start": 60.956,
+            "end": 61.526,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ぶ",
+            "spoken": "ぶ",
+            "reading": "",
+            "start": 61.526,
+            "end": 62.106,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 62.106,
+            "end": 62.176,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "込",
+            "spoken": "込",
+            "reading": "",
+            "start": 62.176,
+            "end": 62.666,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "め",
+            "spoken": "め",
+            "reading": "",
+            "start": 62.666,
+            "end": 63.076,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ラ",
+            "spoken": "ラ",
+            "reading": "",
+            "start": 63.076,
+            "end": 63.346,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ブ",
+            "spoken": "ブ",
+            "reading": "",
+            "start": 63.346,
+            "end": 63.366,
+            "flags": [
+              "tifa_native_alignment",
+              "short_unit_check"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ソ",
+            "spoken": "ソ",
+            "reading": "",
+            "start": 63.366,
+            "end": 64.236,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ン",
+            "spoken": "ン",
+            "reading": "",
+            "start": 64.236,
+            "end": 64.406,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "グ",
+            "spoken": "グ",
+            "reading": "",
+            "start": 64.406,
+            "end": 64.426,
+            "flags": [
+              "tifa_native_alignment",
+              "short_unit_check"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "正義を信じ握りしめよう",
+        "start": 64.427,
+        "end": 69.517,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "正義",
+            "spoken": "正義",
+            "reading": "",
+            "start": 64.427,
+            "end": 66.347,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "を",
+            "spoken": "を",
+            "reading": "",
+            "start": 66.347,
+            "end": 66.437,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "信",
+            "spoken": "信",
+            "reading": "",
+            "start": 66.437,
+            "end": 66.887,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "じ",
+            "spoken": "じ",
+            "reading": "",
+            "start": 66.887,
+            "end": 67.257,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "握",
+            "spoken": "握",
+            "reading": "",
+            "start": 67.257,
+            "end": 67.457,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "り",
+            "spoken": "り",
+            "reading": "",
+            "start": 67.457,
+            "end": 67.537,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "し",
+            "spoken": "し",
+            "reading": "",
+            "start": 67.537,
+            "end": 67.737,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "め",
+            "spoken": "め",
+            "reading": "",
+            "start": 67.737,
+            "end": 67.887,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "よう",
+            "spoken": "よう",
+            "reading": "",
+            "start": 67.887,
+            "end": 69.517,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "やり直せばいい 壊れたって",
+        "start": 68.16,
+        "end": 74.03,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "や",
+            "spoken": "や",
+            "reading": "",
+            "start": 68.16,
+            "end": 69.74,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "り",
+            "spoken": "り",
+            "reading": "",
+            "start": 69.74,
+            "end": 69.87,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "直",
+            "spoken": "直",
+            "reading": "",
+            "start": 69.87,
+            "end": 70.12,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "せ",
+            "spoken": "せ",
+            "reading": "",
+            "start": 70.12,
+            "end": 70.32,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ば",
+            "spoken": "ば",
+            "reading": "",
+            "start": 70.32,
+            "end": 70.63,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "いい ",
+            "spoken": "いい",
+            "reading": "",
+            "start": 70.63,
+            "end": 70.94,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "壊",
+            "spoken": "壊",
+            "reading": "",
+            "start": 71.04,
+            "end": 71.74,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "れ",
+            "spoken": "れ",
+            "reading": "",
+            "start": 71.74,
+            "end": 71.98,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 71.98,
+            "end": 73.08,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 73.08,
+            "end": 73.12,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 73.12,
+            "end": 74.03,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "もうへいきへっちゃら",
+        "start": 74.039,
+        "end": 76.659,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "もう",
+            "spoken": "もう",
+            "reading": "",
+            "start": 74.039,
+            "end": 74.439,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "へい",
+            "spoken": "へい",
+            "reading": "",
+            "start": 74.439,
+            "end": 74.759,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "き",
+            "spoken": "き",
+            "reading": "",
+            "start": 74.759,
+            "end": 74.909,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "へ",
+            "spoken": "へ",
+            "reading": "",
+            "start": 74.909,
+            "end": 75.139,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 75.139,
+            "end": 75.209,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ちゃ",
+            "spoken": "ちゃ",
+            "reading": "",
+            "start": 75.209,
+            "end": 75.539,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ら",
+            "spoken": "ら",
+            "reading": "",
+            "start": 75.539,
+            "end": 76.659,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "ハート響かせ合い",
+        "start": 76.436,
+        "end": 78.506,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "ハー",
+            "spoken": "ハー",
+            "reading": "",
+            "start": 76.436,
+            "end": 76.896,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ト",
+            "spoken": "ト",
+            "reading": "",
+            "start": 76.896,
+            "end": 77.046,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "響か",
+            "spoken": "響か",
+            "reading": "",
+            "start": 77.046,
+            "end": 77.496,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "せ",
+            "spoken": "せ",
+            "reading": "",
+            "start": 77.496,
+            "end": 77.726,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "合",
+            "spoken": "合",
+            "reading": "",
+            "start": 77.726,
+            "end": 78.036,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 78.036,
+            "end": 78.506,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "なけなしの勇気だって「勇気」",
+        "start": 78.735,
+        "end": 83.805,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 78.735,
+            "end": 79.035,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 79.035,
+            "end": 79.355,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 79.355,
+            "end": 79.475,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "し",
+            "spoken": "し",
+            "reading": "",
+            "start": 79.475,
+            "end": 79.815,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 79.815,
+            "end": 80.065,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "勇気",
+            "spoken": "勇気",
+            "reading": "",
+            "start": 80.065,
+            "end": 80.775,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "だ",
+            "spoken": "だ",
+            "reading": "",
+            "start": 81.195,
+            "end": 81.435,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 81.435,
+            "end": 81.515,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て「",
+            "spoken": "て",
+            "reading": "",
+            "start": 81.515,
+            "end": 81.805,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "勇気」",
+            "spoken": "勇気",
+            "reading": "",
+            "start": 81.805,
+            "end": 83.805,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "泣けるほどギュッと 愛になる",
+        "start": 83.956,
+        "end": 89.706,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "泣",
+            "spoken": "泣",
+            "reading": "",
+            "start": 83.956,
+            "end": 84.106,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 84.106,
+            "end": 84.286,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 84.286,
+            "end": 84.386,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ほ",
+            "spoken": "ほ",
+            "reading": "",
+            "start": 84.386,
+            "end": 84.586,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ど",
+            "spoken": "ど",
+            "reading": "",
+            "start": 84.586,
+            "end": 84.696,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ギュ",
+            "spoken": "ギュ",
+            "reading": "",
+            "start": 84.696,
+            "end": 84.946,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ッ",
+            "spoken": "ッ",
+            "reading": "",
+            "start": 84.946,
+            "end": 85.046,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と ",
+            "spoken": "と",
+            "reading": "",
+            "start": 85.046,
+            "end": 85.276,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "愛",
+            "spoken": "愛",
+            "reading": "",
+            "start": 85.276,
+            "end": 86.456,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "に",
+            "spoken": "に",
+            "reading": "",
+            "start": 86.456,
+            "end": 87.186,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 87.186,
+            "end": 87.366,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 87.366,
+            "end": 89.706,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "託されたかった…抱いて欲しかった…",
+        "start": 96.977,
+        "end": 101.597,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "託",
+            "spoken": "託",
+            "reading": "",
+            "start": 96.977,
+            "end": 97.287,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "さ",
+            "spoken": "さ",
+            "reading": "",
+            "start": 97.287,
+            "end": 97.487,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "れ",
+            "spoken": "れ",
+            "reading": "",
+            "start": 97.487,
+            "end": 97.607,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 97.607,
+            "end": 97.757,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "か",
+            "spoken": "か",
+            "reading": "",
+            "start": 97.757,
+            "end": 98.207,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 98.207,
+            "end": 98.247,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た…",
+            "spoken": "た",
+            "reading": "",
+            "start": 98.247,
+            "end": 98.477,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "抱い",
+            "spoken": "抱い",
+            "reading": "",
+            "start": 98.477,
+            "end": 98.807,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 98.807,
+            "end": 98.957,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "欲",
+            "spoken": "欲",
+            "reading": "",
+            "start": 98.957,
+            "end": 99.247,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "し",
+            "spoken": "し",
+            "reading": "",
+            "start": 99.247,
+            "end": 99.447,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "か",
+            "spoken": "か",
+            "reading": "",
+            "start": 99.447,
+            "end": 99.987,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 99.987,
+            "end": 100.057,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た…",
+            "spoken": "た",
+            "reading": "",
+            "start": 100.057,
+            "end": 101.597,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "おっきな手で褒められたくて…",
+        "start": 101.909,
+        "end": 105.899,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "お",
+            "spoken": "お",
+            "reading": "",
+            "start": 101.909,
+            "end": 102.099,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 102.099,
+            "end": 102.139,
+            "flags": [
+              "tifa_native_alignment",
+              "short_unit_check"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "き",
+            "spoken": "き",
+            "reading": "",
+            "start": 102.139,
+            "end": 102.299,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 102.299,
+            "end": 102.489,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "手",
+            "spoken": "手",
+            "reading": "",
+            "start": 102.489,
+            "end": 102.629,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "で",
+            "spoken": "で",
+            "reading": "",
+            "start": 102.629,
+            "end": 102.889,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "褒",
+            "spoken": "褒",
+            "reading": "",
+            "start": 102.889,
+            "end": 103.119,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "め",
+            "spoken": "め",
+            "reading": "",
+            "start": 103.119,
+            "end": 103.409,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ら",
+            "spoken": "ら",
+            "reading": "",
+            "start": 103.409,
+            "end": 103.729,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "れ",
+            "spoken": "れ",
+            "reading": "",
+            "start": 103.729,
+            "end": 103.879,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 103.879,
+            "end": 104.279,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く",
+            "spoken": "く",
+            "reading": "",
+            "start": 104.279,
+            "end": 104.849,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て…",
+            "spoken": "て",
+            "reading": "",
+            "start": 104.929,
+            "end": 105.899,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "強くあって欲しい…そんな本音を",
+        "start": 106.665,
+        "end": 110.875,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "強",
+            "spoken": "強",
+            "reading": "",
+            "start": 106.665,
+            "end": 107.055,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く",
+            "spoken": "く",
+            "reading": "",
+            "start": 107.055,
+            "end": 107.245,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "あ",
+            "spoken": "あ",
+            "reading": "",
+            "start": 107.245,
+            "end": 107.445,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 107.445,
+            "end": 107.515,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 107.515,
+            "end": 107.825,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "欲",
+            "spoken": "欲",
+            "reading": "",
+            "start": 107.825,
+            "end": 107.945,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "しい…",
+            "spoken": "しい",
+            "reading": "",
+            "start": 107.945,
+            "end": 108.225,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "そ",
+            "spoken": "そ",
+            "reading": "",
+            "start": 108.225,
+            "end": 108.615,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ん",
+            "spoken": "ん",
+            "reading": "",
+            "start": 108.615,
+            "end": 108.745,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 108.745,
+            "end": 109.065,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "本音",
+            "spoken": "本音",
+            "reading": "",
+            "start": 109.065,
+            "end": 109.865,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "を",
+            "spoken": "を",
+            "reading": "",
+            "start": 109.865,
+            "end": 110.875,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "ガムシャラに打つけてた",
+        "start": 110.986,
+        "end": 116.016,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "ガ",
+            "spoken": "ガ",
+            "reading": "",
+            "start": 110.986,
+            "end": 111.196,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ム",
+            "spoken": "ム",
+            "reading": "",
+            "start": 111.196,
+            "end": 111.346,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "シャ",
+            "spoken": "シャ",
+            "reading": "",
+            "start": 111.346,
+            "end": 111.656,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ラ",
+            "spoken": "ラ",
+            "reading": "",
+            "start": 111.656,
+            "end": 111.986,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "に",
+            "spoken": "に",
+            "reading": "",
+            "start": 111.986,
+            "end": 112.226,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "打",
+            "spoken": "打",
+            "reading": "",
+            "start": 112.226,
+            "end": 112.556,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "つ",
+            "spoken": "つ",
+            "reading": "",
+            "start": 112.556,
+            "end": 112.846,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 112.846,
+            "end": 113.166,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 113.166,
+            "end": 115.106,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 115.636,
+            "end": 116.016,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "いつだって貰っていた",
+        "start": 116.129,
+        "end": 118.859,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 116.129,
+            "end": 116.389,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "つ",
+            "spoken": "つ",
+            "reading": "",
+            "start": 116.389,
+            "end": 116.589,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "だ",
+            "spoken": "だ",
+            "reading": "",
+            "start": 116.589,
+            "end": 116.809,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 116.809,
+            "end": 116.859,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 116.859,
+            "end": 117.159,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "貰",
+            "spoken": "貰",
+            "reading": "",
+            "start": 117.159,
+            "end": 117.719,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 117.719,
+            "end": 117.769,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 117.769,
+            "end": 118.129,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 118.129,
+            "end": 118.389,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 118.389,
+            "end": 118.859,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "あったかい大切なもの",
+        "start": 121.074,
+        "end": 125.624,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "あ",
+            "spoken": "あ",
+            "reading": "",
+            "start": 121.074,
+            "end": 121.234,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 121.234,
+            "end": 121.304,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 121.304,
+            "end": 121.454,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "か",
+            "spoken": "か",
+            "reading": "",
+            "start": 121.454,
+            "end": 121.684,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 121.684,
+            "end": 121.744,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "大切",
+            "spoken": "大切",
+            "reading": "",
+            "start": 121.744,
+            "end": 122.714,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 122.714,
+            "end": 122.974,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "も",
+            "spoken": "も",
+            "reading": "",
+            "start": 122.974,
+            "end": 123.334,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 123.334,
+            "end": 125.624,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "負けるなと言ってる",
+        "start": 126.052,
+        "end": 128.342,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "負",
+            "spoken": "負",
+            "reading": "",
+            "start": 126.052,
+            "end": 126.192,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 126.192,
+            "end": 126.392,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 126.392,
+            "end": 126.522,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 126.522,
+            "end": 126.642,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と",
+            "spoken": "と",
+            "reading": "",
+            "start": 126.642,
+            "end": 126.892,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "言",
+            "spoken": "言",
+            "reading": "",
+            "start": 126.892,
+            "end": 127.212,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 127.212,
+            "end": 127.302,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 127.302,
+            "end": 127.492,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 127.492,
+            "end": 128.342,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "受け取れと言ってる",
+        "start": 128.536,
+        "end": 130.626,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "受",
+            "spoken": "受",
+            "reading": "",
+            "start": 128.536,
+            "end": 128.636,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 128.636,
+            "end": 128.796,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "取",
+            "spoken": "取",
+            "reading": "",
+            "start": 128.796,
+            "end": 128.986,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "れ",
+            "spoken": "れ",
+            "reading": "",
+            "start": 128.986,
+            "end": 129.096,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と",
+            "spoken": "と",
+            "reading": "",
+            "start": 129.096,
+            "end": 129.306,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "言",
+            "spoken": "言",
+            "reading": "",
+            "start": 129.306,
+            "end": 129.626,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 129.626,
+            "end": 129.696,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 129.696,
+            "end": 129.936,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 129.936,
+            "end": 130.626,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "胸を焦がす最愛のラブコール",
+        "start": 130.78,
+        "end": 137.2,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "胸",
+            "spoken": "胸",
+            "reading": "",
+            "start": 130.78,
+            "end": 131.12,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "を",
+            "spoken": "を",
+            "reading": "",
+            "start": 131.12,
+            "end": 131.35,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "焦",
+            "spoken": "焦",
+            "reading": "",
+            "start": 131.67,
+            "end": 131.87,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "が",
+            "spoken": "が",
+            "reading": "",
+            "start": 131.87,
+            "end": 132.0,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "す",
+            "spoken": "す",
+            "reading": "",
+            "start": 132.0,
+            "end": 132.36,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "最愛",
+            "spoken": "最愛",
+            "reading": "",
+            "start": 132.55,
+            "end": 133.71,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 133.71,
+            "end": 134.09,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ラ",
+            "spoken": "ラ",
+            "reading": "",
+            "start": 134.09,
+            "end": 135.15,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ブ",
+            "spoken": "ブ",
+            "reading": "",
+            "start": 135.77,
+            "end": 135.99,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "コー",
+            "spoken": "コー",
+            "reading": "",
+            "start": 136.32,
+            "end": 136.53,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ル",
+            "spoken": "ル",
+            "reading": "",
+            "start": 136.76,
+            "end": 137.2,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "そう簡単に離しはしない",
+        "start": 137.188,
+        "end": 140.508,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "そう",
+            "spoken": "そう",
+            "reading": "",
+            "start": 137.188,
+            "end": 137.218,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment",
+              "short_unit_check"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "簡単",
+            "spoken": "簡単",
+            "reading": "",
+            "start": 137.218,
+            "end": 137.938,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "に",
+            "spoken": "に",
+            "reading": "",
+            "start": 137.938,
+            "end": 138.138,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "離",
+            "spoken": "離",
+            "reading": "",
+            "start": 138.138,
+            "end": 138.408,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "し",
+            "spoken": "し",
+            "reading": "",
+            "start": 138.408,
+            "end": 138.618,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "は",
+            "spoken": "は",
+            "reading": "",
+            "start": 138.618,
+            "end": 138.698,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "し",
+            "spoken": "し",
+            "reading": "",
+            "start": 138.698,
+            "end": 138.858,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 138.858,
+            "end": 140.428,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 140.428,
+            "end": 140.508,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "それが私の見つけた道",
+        "start": 140.496,
+        "end": 144.956,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "そ",
+            "spoken": "そ",
+            "reading": "",
+            "start": 140.496,
+            "end": 140.756,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "れ",
+            "spoken": "れ",
+            "reading": "",
+            "start": 140.756,
+            "end": 140.896,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "が",
+            "spoken": "が",
+            "reading": "",
+            "start": 140.896,
+            "end": 141.026,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "私",
+            "spoken": "私",
+            "reading": "",
+            "start": 141.026,
+            "end": 141.626,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 141.626,
+            "end": 142.016,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "見",
+            "spoken": "見",
+            "reading": "",
+            "start": 142.136,
+            "end": 142.356,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "つ",
+            "spoken": "つ",
+            "reading": "",
+            "start": 142.356,
+            "end": 142.716,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 142.716,
+            "end": 143.016,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 143.016,
+            "end": 143.916,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "道",
+            "spoken": "道",
+            "reading": "",
+            "start": 143.916,
+            "end": 144.956,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "傷つけ傷ついて",
+        "start": 145.162,
+        "end": 147.502,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "傷",
+            "spoken": "傷",
+            "reading": "",
+            "start": 145.162,
+            "end": 145.472,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "つ",
+            "spoken": "つ",
+            "reading": "",
+            "start": 145.472,
+            "end": 145.632,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 145.632,
+            "end": 145.772,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "傷",
+            "spoken": "傷",
+            "reading": "",
+            "start": 145.772,
+            "end": 146.062,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "つ",
+            "spoken": "つ",
+            "reading": "",
+            "start": 146.062,
+            "end": 146.322,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 146.322,
+            "end": 146.512,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 146.512,
+            "end": 147.502,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "磨いた絆なら",
+        "start": 147.588,
+        "end": 149.568,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "磨",
+            "spoken": "磨",
+            "reading": "",
+            "start": 147.588,
+            "end": 147.978,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 147.978,
+            "end": 148.068,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 148.068,
+            "end": 148.198,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "絆",
+            "spoken": "絆",
+            "reading": "",
+            "start": 148.198,
+            "end": 148.668,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 148.668,
+            "end": 149.028,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ら",
+            "spoken": "ら",
+            "reading": "",
+            "start": 149.028,
+            "end": 149.568,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "どんなものより煌めくさ",
+        "start": 149.747,
+        "end": 154.757,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "ど",
+            "spoken": "ど",
+            "reading": "",
+            "start": 149.747,
+            "end": 150.127,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ん",
+            "spoken": "ん",
+            "reading": "",
+            "start": 150.127,
+            "end": 150.337,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 150.337,
+            "end": 150.557,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "も",
+            "spoken": "も",
+            "reading": "",
+            "start": 150.557,
+            "end": 150.797,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 150.797,
+            "end": 151.097,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "よ",
+            "spoken": "よ",
+            "reading": "",
+            "start": 151.097,
+            "end": 151.497,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "り",
+            "spoken": "り",
+            "reading": "",
+            "start": 151.497,
+            "end": 151.777,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "煌",
+            "spoken": "煌",
+            "reading": "",
+            "start": 152.197,
+            "end": 152.827,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "め",
+            "spoken": "め",
+            "reading": "",
+            "start": 152.827,
+            "end": 153.267,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く",
+            "spoken": "く",
+            "reading": "",
+            "start": 153.267,
+            "end": 153.397,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "さ",
+            "spoken": "さ",
+            "reading": "",
+            "start": 153.397,
+            "end": 154.757,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "私はまた立つ…! 明日へと",
+        "start": 154.97,
+        "end": 162.17,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "私",
+            "spoken": "私",
+            "reading": "",
+            "start": 154.97,
+            "end": 155.45,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "は",
+            "spoken": "は",
+            "reading": "",
+            "start": 155.45,
+            "end": 155.57,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ま",
+            "spoken": "ま",
+            "reading": "",
+            "start": 155.57,
+            "end": 155.72,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 155.72,
+            "end": 155.97,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "立",
+            "spoken": "立",
+            "reading": "",
+            "start": 155.97,
+            "end": 156.32,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "つ…! ",
+            "spoken": "つ",
+            "reading": "",
+            "start": 156.32,
+            "end": 156.69,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "明日",
+            "spoken": "明日",
+            "reading": "",
+            "start": 157.14,
+            "end": 157.7,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "へ",
+            "spoken": "へ",
+            "reading": "",
+            "start": 157.7,
+            "end": 158.37,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と",
+            "spoken": "と",
+            "reading": "",
+            "start": 158.37,
+            "end": 162.17,
+            "flags": [
+              "tifa_native_alignment",
+              "long_sustain_check"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "此れから此処から始まる",
+        "start": 174.488,
+        "end": 185.298,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "此",
+            "spoken": "此",
+            "reading": "",
+            "start": 174.488,
+            "end": 174.898,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "れ",
+            "spoken": "れ",
+            "reading": "",
+            "start": 174.898,
+            "end": 175.308,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "か",
+            "spoken": "か",
+            "reading": "",
+            "start": 175.308,
+            "end": 175.828,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ら",
+            "spoken": "ら",
+            "reading": "",
+            "start": 175.828,
+            "end": 176.088,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "此処",
+            "spoken": "此処",
+            "reading": "",
+            "start": 176.088,
+            "end": 177.018,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "か",
+            "spoken": "か",
+            "reading": "",
+            "start": 177.018,
+            "end": 177.398,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ら",
+            "spoken": "ら",
+            "reading": "",
+            "start": 177.398,
+            "end": 180.118,
+            "flags": [
+              "tifa_native_alignment",
+              "long_sustain_check"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "始",
+            "spoken": "始",
+            "reading": "",
+            "start": 180.658,
+            "end": 181.598,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ま",
+            "spoken": "ま",
+            "reading": "",
+            "start": 181.598,
+            "end": 182.288,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 182.288,
+            "end": 185.298,
+            "flags": [
+              "tifa_native_alignment",
+              "long_sustain_check"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "全霊で歌おう",
+        "start": 185.461,
+        "end": 194.711,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "全霊",
+            "spoken": "全霊",
+            "reading": "",
+            "start": 185.461,
+            "end": 187.121,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "で",
+            "spoken": "で",
+            "reading": "",
+            "start": 187.121,
+            "end": 188.701,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "歌",
+            "spoken": "歌",
+            "reading": "",
+            "start": 189.021,
+            "end": 190.431,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "おう",
+            "spoken": "おう",
+            "reading": "",
+            "start": 190.771,
+            "end": 194.711,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment",
+              "long_sustain_check"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "愛は響く 強く響く",
+        "start": 192.156,
+        "end": 216.236,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "愛",
+            "spoken": "愛",
+            "reading": "",
+            "start": 192.156,
+            "end": 192.196,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment",
+              "short_unit_check"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "は",
+            "spoken": "は",
+            "reading": "",
+            "start": 192.196,
+            "end": 194.686,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "響",
+            "spoken": "響",
+            "reading": "",
+            "start": 211.886,
+            "end": 212.676,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く ",
+            "spoken": "く",
+            "reading": "",
+            "start": 212.676,
+            "end": 213.896,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "強く",
+            "spoken": "強く",
+            "reading": "",
+            "start": 214.096,
+            "end": 214.546,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "響",
+            "spoken": "響",
+            "reading": "",
+            "start": 214.546,
+            "end": 215.126,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く",
+            "spoken": "く",
+            "reading": "",
+            "start": 215.126,
+            "end": 216.236,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "握った分 繋いだ分",
+        "start": 216.495,
+        "end": 220.895,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "握",
+            "spoken": "握",
+            "reading": "",
+            "start": 216.495,
+            "end": 217.035,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 217.035,
+            "end": 217.105,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 217.105,
+            "end": 217.335,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "分 ",
+            "spoken": "分",
+            "reading": "",
+            "start": 217.335,
+            "end": 217.915,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "繋",
+            "spoken": "繋",
+            "reading": "",
+            "start": 218.045,
+            "end": 218.745,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 218.745,
+            "end": 219.015,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "だ",
+            "spoken": "だ",
+            "reading": "",
+            "start": 219.015,
+            "end": 219.855,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "分",
+            "spoken": "分",
+            "reading": "",
+            "start": 219.855,
+            "end": 220.895,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "言葉がなくたって",
+        "start": 221.09,
+        "end": 223.3,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "言葉",
+            "spoken": "言葉",
+            "reading": "",
+            "start": 221.09,
+            "end": 221.58,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "が",
+            "spoken": "が",
+            "reading": "",
+            "start": 221.58,
+            "end": 221.73,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 221.73,
+            "end": 221.87,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く",
+            "spoken": "く",
+            "reading": "",
+            "start": 221.87,
+            "end": 222.13,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "たって",
+            "spoken": "たって",
+            "reading": "",
+            "start": 222.13,
+            "end": 223.3,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "言葉じゃなくたって",
+        "start": 223.494,
+        "end": 225.444,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "言葉",
+            "spoken": "言葉",
+            "reading": "",
+            "start": 223.494,
+            "end": 224.004,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "じゃ",
+            "spoken": "じゃ",
+            "reading": "",
+            "start": 224.004,
+            "end": 224.164,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 224.164,
+            "end": 224.304,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "く",
+            "spoken": "く",
+            "reading": "",
+            "start": 224.304,
+            "end": 224.574,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "たって",
+            "spoken": "たって",
+            "reading": "",
+            "start": 224.574,
+            "end": 225.444,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "心へと 空へと",
+        "start": 225.655,
+        "end": 228.545,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "心",
+            "spoken": "心",
+            "reading": "",
+            "start": 225.655,
+            "end": 226.555,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "へ",
+            "spoken": "へ",
+            "reading": "",
+            "start": 226.555,
+            "end": 226.735,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と ",
+            "spoken": "と",
+            "reading": "",
+            "start": 226.735,
+            "end": 227.045,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "空",
+            "spoken": "空",
+            "reading": "",
+            "start": 227.045,
+            "end": 227.775,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "へ",
+            "spoken": "へ",
+            "reading": "",
+            "start": 227.775,
+            "end": 227.965,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と",
+            "spoken": "と",
+            "reading": "",
+            "start": 227.965,
+            "end": 228.545,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "この想いよ…!",
+        "start": 228.555,
+        "end": 230.905,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "こ",
+            "spoken": "こ",
+            "reading": "",
+            "start": 228.555,
+            "end": 228.775,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 228.775,
+            "end": 229.005,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "想",
+            "spoken": "想",
+            "reading": "",
+            "start": 229.125,
+            "end": 229.725,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 229.725,
+            "end": 229.825,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "よ…!",
+            "spoken": "よ",
+            "reading": "",
+            "start": 229.825,
+            "end": 230.905,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "正義を信じ握りしめよう",
+        "start": 231.115,
+        "end": 234.695,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "正義",
+            "spoken": "正義",
+            "reading": "",
+            "start": 231.115,
+            "end": 231.675,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "を",
+            "spoken": "を",
+            "reading": "",
+            "start": 231.675,
+            "end": 231.765,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "信",
+            "spoken": "信",
+            "reading": "",
+            "start": 231.765,
+            "end": 232.245,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "じ",
+            "spoken": "じ",
+            "reading": "",
+            "start": 232.245,
+            "end": 232.965,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "握",
+            "spoken": "握",
+            "reading": "",
+            "start": 232.965,
+            "end": 233.985,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "り",
+            "spoken": "り",
+            "reading": "",
+            "start": 233.985,
+            "end": 234.075,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "し",
+            "spoken": "し",
+            "reading": "",
+            "start": 234.075,
+            "end": 234.295,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "め",
+            "spoken": "め",
+            "reading": "",
+            "start": 234.295,
+            "end": 234.445,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "よう",
+            "spoken": "よう",
+            "reading": "",
+            "start": 234.445,
+            "end": 234.695,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "やり直せばいい 壊れたって",
+        "start": 236.095,
+        "end": 240.495,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "や",
+            "spoken": "や",
+            "reading": "",
+            "start": 236.095,
+            "end": 236.305,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "り",
+            "spoken": "り",
+            "reading": "",
+            "start": 236.305,
+            "end": 236.445,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "直",
+            "spoken": "直",
+            "reading": "",
+            "start": 236.445,
+            "end": 236.685,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "せ",
+            "spoken": "せ",
+            "reading": "",
+            "start": 236.685,
+            "end": 236.885,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ば",
+            "spoken": "ば",
+            "reading": "",
+            "start": 236.885,
+            "end": 237.195,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "いい ",
+            "spoken": "いい",
+            "reading": "",
+            "start": 237.195,
+            "end": 237.435,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "壊",
+            "spoken": "壊",
+            "reading": "",
+            "start": 237.615,
+            "end": 238.295,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "れ",
+            "spoken": "れ",
+            "reading": "",
+            "start": 238.295,
+            "end": 238.525,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "た",
+            "spoken": "た",
+            "reading": "",
+            "start": 238.525,
+            "end": 239.365,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 239.365,
+            "end": 239.635,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て",
+            "spoken": "て",
+            "reading": "",
+            "start": 239.635,
+            "end": 240.495,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "もうへいきへっちゃら",
+        "start": 240.658,
+        "end": 242.988,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "もう",
+            "spoken": "もう",
+            "reading": "",
+            "start": 240.658,
+            "end": 240.958,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "へい",
+            "spoken": "へい",
+            "reading": "",
+            "start": 240.958,
+            "end": 241.288,
+            "flags": [
+              "shared_vowel_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "き",
+            "spoken": "き",
+            "reading": "",
+            "start": 241.288,
+            "end": 241.428,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "へ",
+            "spoken": "へ",
+            "reading": "",
+            "start": 241.428,
+            "end": 241.678,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 241.678,
+            "end": 241.738,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ちゃ",
+            "spoken": "ちゃ",
+            "reading": "",
+            "start": 241.738,
+            "end": 242.088,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ら",
+            "spoken": "ら",
+            "reading": "",
+            "start": 242.088,
+            "end": 242.988,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "ハート響かせ合い",
+        "start": 243.15,
+        "end": 245.06,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "ハー",
+            "spoken": "ハー",
+            "reading": "",
+            "start": 243.15,
+            "end": 243.42,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ト",
+            "spoken": "ト",
+            "reading": "",
+            "start": 243.42,
+            "end": 243.59,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "響か",
+            "spoken": "響か",
+            "reading": "",
+            "start": 243.59,
+            "end": 244.02,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "せ",
+            "spoken": "せ",
+            "reading": "",
+            "start": 244.02,
+            "end": 244.26,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "合",
+            "spoken": "合",
+            "reading": "",
+            "start": 244.26,
+            "end": 244.6,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "い",
+            "spoken": "い",
+            "reading": "",
+            "start": 244.6,
+            "end": 245.06,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "なけなしの勇気だって「勇気」",
+        "start": 245.261,
+        "end": 250.251,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 245.261,
+            "end": 245.571,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 245.571,
+            "end": 245.901,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 245.901,
+            "end": 246.001,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "し",
+            "spoken": "し",
+            "reading": "",
+            "start": 246.001,
+            "end": 246.311,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "の",
+            "spoken": "の",
+            "reading": "",
+            "start": 246.311,
+            "end": 246.591,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "勇気",
+            "spoken": "勇気",
+            "reading": "",
+            "start": 246.591,
+            "end": 247.611,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "だ",
+            "spoken": "だ",
+            "reading": "",
+            "start": 247.611,
+            "end": 247.951,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "っ",
+            "spoken": "っ",
+            "reading": "",
+            "start": 247.951,
+            "end": 248.011,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "て「",
+            "spoken": "て",
+            "reading": "",
+            "start": 248.011,
+            "end": 248.311,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "勇気」",
+            "spoken": "勇気",
+            "reading": "",
+            "start": 248.311,
+            "end": 250.251,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": []
+      },
+      {
+        "text": "泣けるほどギュッと 愛になる",
+        "start": 250.38,
+        "end": 258.14,
+        "agent": "v1",
+        "role": "main",
+        "parent": null,
+        "language": "mixed",
+        "translation": "",
+        "roman": "",
+        "words": [
+          {
+            "text": "泣",
+            "spoken": "泣",
+            "reading": "",
+            "start": 250.38,
+            "end": 250.62,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "け",
+            "spoken": "け",
+            "reading": "",
+            "start": 250.62,
+            "end": 250.8,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 250.8,
+            "end": 250.92,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ほ",
+            "spoken": "ほ",
+            "reading": "",
+            "start": 250.92,
+            "end": 251.11,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ど",
+            "spoken": "ど",
+            "reading": "",
+            "start": 251.11,
+            "end": 251.23,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ギュ",
+            "spoken": "ギュ",
+            "reading": "",
+            "start": 251.23,
+            "end": 251.5,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "ッ",
+            "spoken": "ッ",
+            "reading": "",
+            "start": 251.5,
+            "end": 251.57,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "と ",
+            "spoken": "と",
+            "reading": "",
+            "start": 251.57,
+            "end": 251.83,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "愛",
+            "spoken": "愛",
+            "reading": "",
+            "start": 251.83,
+            "end": 253.0,
+            "flags": [
+              "reading_mapping_indivisible",
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "に",
+            "spoken": "に",
+            "reading": "",
+            "start": 253.0,
+            "end": 255.4,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "な",
+            "spoken": "な",
+            "reading": "",
+            "start": 255.4,
+            "end": 255.74,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          },
+          {
+            "text": "る",
+            "spoken": "る",
+            "reading": "",
+            "start": 255.74,
+            "end": 258.14,
+            "flags": [
+              "tifa_native_alignment"
+            ],
+            "source_pronunciation": ""
+          }
+        ],
+        "flags": [
+          "tifa_crop_edge_check"
+        ]
+      }
+    ],
+    "background_source": null,
+    "english_splitter": "word",
+    "coarse_localization": [
+      {
+        "start": 25.942,
+        "end": 30.423,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 30.853,
+        "end": 33.693,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 35.732,
+        "end": 39.776,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 40.016,
+        "end": 44.0,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 45.056,
+        "end": 49.952,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 50.016,
+        "end": 54.851,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 55.056,
+        "end": 57.171,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 57.516,
+        "end": 59.587,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 59.587,
+        "end": 64.28,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 64.5,
+        "end": 68.936,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 69.549,
+        "end": 74.076,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 74.196,
+        "end": 76.5,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 76.655,
+        "end": 78.556,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 78.756,
+        "end": 83.977,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 83.977,
+        "end": 89.696,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 97.039,
+        "end": 101.695,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 101.88499999999999,
+        "end": 105.09899999999999,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 106.79599999999999,
+        "end": 110.888,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 111.07900000000001,
+        "end": 115.405,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 116.104,
+        "end": 120.904,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 121.052,
+        "end": 125.968,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 126.076,
+        "end": 128.375,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 128.5,
+        "end": 130.638,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 130.808,
+        "end": 135.382,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 135.576,
+        "end": 140.532,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 140.59199999999998,
+        "end": 145.028,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 145.208,
+        "end": 147.468,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 147.617,
+        "end": 149.608,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 149.78,
+        "end": 154.808,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 154.988,
+        "end": 161.688,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 174.541,
+        "end": 184.86599999999999,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 185.606,
+        "end": 194.786,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 211.615,
+        "end": 216.255,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 216.5,
+        "end": 220.895,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 221.13400000000001,
+        "end": 223.335,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 223.555,
+        "end": 225.515,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 225.695,
+        "end": 228.45499999999998,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 228.575,
+        "end": 231.14600000000002,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 231.195,
+        "end": 235.947,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 236.118,
+        "end": 240.515,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 240.67,
+        "end": 243.035,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 243.151,
+        "end": 245.074,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 245.314,
+        "end": 250.359,
+        "method": "trusted_line_timestamps"
+      },
+      {
+        "start": 250.5,
+        "end": 258.199,
+        "method": "trusted_line_timestamps"
+      }
+    ],
+    "tifa": {
+      "model": "TIFA-1.0-ST",
+      "runtime_revision": "d246be1cc2e202613213ca60a4e5d35e71a2fb6a",
+      "frame_ms": 10,
+      "seconds": 10.619257079437375,
+      "peak_torch_allocated_gib": 0.2773571014404297,
+      "checks": [
+        {
+          "line": 1,
+          "mode": "initial",
+          "id": "line_001",
+          "range_start": 25.82199546485261,
+          "range_end": 34.04299319727891,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.999674379825592,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 2,
+          "mode": "initial",
+          "id": "line_002",
+          "range_start": 25.82199546485261,
+          "range_end": 40.126009070294785,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9994969367980957,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 3,
+          "mode": "initial",
+          "id": "line_003",
+          "range_start": 30.732993197278912,
+          "range_end": 44.35,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9991261959075928,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 4,
+          "mode": "initial",
+          "id": "line_004",
+          "range_start": 35.611995464852605,
+          "range_end": 50.30199546485261,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9984633326530457,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 5,
+          "mode": "initial",
+          "id": "line_005",
+          "range_start": 39.89600907029479,
+          "range_end": 55.2009977324263,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9981300830841064,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 6,
+          "mode": "initial",
+          "id": "line_006",
+          "range_start": 44.93600907029479,
+          "range_end": 57.5209977324263,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9964005947113037,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 7,
+          "mode": "initial",
+          "id": "line_007",
+          "range_start": 49.89600907029479,
+          "range_end": 59.937006802721086,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9992857575416565,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 8,
+          "mode": "initial",
+          "id": "line_008",
+          "range_start": 54.93600907029479,
+          "range_end": 64.63,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9863541126251221,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 9,
+          "mode": "initial",
+          "id": "line_009",
+          "range_start": 57.39600907029479,
+          "range_end": 69.28600907029478,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.99685138463974,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 10,
+          "mode": "initial",
+          "id": "line_010",
+          "range_start": 59.46700680272109,
+          "range_end": 74.42600907029478,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9921072721481323,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 11,
+          "mode": "initial",
+          "id": "line_011",
+          "range_start": 64.38,
+          "range_end": 76.85,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9944084882736206,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 12,
+          "mode": "initial",
+          "id": "line_012",
+          "range_start": 69.4290022675737,
+          "range_end": 78.90600907029479,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9993785619735718,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 13,
+          "mode": "initial",
+          "id": "line_013",
+          "range_start": 74.07600907029479,
+          "range_end": 84.32700680272109,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9992926716804504,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 14,
+          "mode": "initial",
+          "id": "line_014",
+          "range_start": 76.53501133786848,
+          "range_end": 90.04600907029479,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9989308714866638,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 15,
+          "mode": "initial",
+          "id": "line_015",
+          "range_start": 78.63600907029479,
+          "range_end": 102.04498866213152,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9973326325416565,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 16,
+          "mode": "initial",
+          "id": "line_016",
+          "range_start": 83.85700680272109,
+          "range_end": 105.44900226757369,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9986675381660461,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 17,
+          "mode": "initial",
+          "id": "line_017",
+          "range_start": 96.9190022675737,
+          "range_end": 111.2380045351474,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9992275238037109,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 18,
+          "mode": "initial",
+          "id": "line_018",
+          "range_start": 101.76498866213151,
+          "range_end": 115.75501133786848,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.998748242855072,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 19,
+          "mode": "initial",
+          "id": "line_019",
+          "range_start": 106.67600907029478,
+          "range_end": 121.25399092970521,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.998466432094574,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 20,
+          "mode": "initial",
+          "id": "line_020",
+          "range_start": 110.9590022675737,
+          "range_end": 126.3180045351474,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9949919581413269,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 21,
+          "mode": "initial",
+          "id": "line_021",
+          "range_start": 115.98399092970521,
+          "range_end": 128.72498866213152,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9993191361427307,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 22,
+          "mode": "initial",
+          "id": "line_022",
+          "range_start": 120.9319954648526,
+          "range_end": 130.98800453514738,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9992820024490356,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 23,
+          "mode": "initial",
+          "id": "line_023",
+          "range_start": 125.95600907029478,
+          "range_end": 135.73199546485262,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9993734955787659,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 24,
+          "mode": "initial",
+          "id": "line_024",
+          "range_start": 128.38,
+          "range_end": 140.8819954648526,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9941563606262207,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 25,
+          "mode": "initial",
+          "id": "line_025",
+          "range_start": 130.6880045351474,
+          "range_end": 145.3780045351474,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9982504844665527,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 26,
+          "mode": "initial",
+          "id": "line_026",
+          "range_start": 135.45600907029478,
+          "range_end": 147.8180045351474,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9993624091148376,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 27,
+          "mode": "initial",
+          "id": "line_027",
+          "range_start": 140.4719954648526,
+          "range_end": 149.95800453514738,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9993829131126404,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 28,
+          "mode": "initial",
+          "id": "line_028",
+          "range_start": 145.0880045351474,
+          "range_end": 155.1580045351474,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9990490078926086,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 29,
+          "mode": "initial",
+          "id": "line_029",
+          "range_start": 147.49700680272107,
+          "range_end": 162.0380045351474,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9885897040367126,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 30,
+          "mode": "initial",
+          "id": "line_030",
+          "range_start": 149.66,
+          "range_end": 185.21600907029477,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9992572069168091,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 31,
+          "mode": "initial",
+          "id": "line_031",
+          "range_start": 154.8680045351474,
+          "range_end": 195.1360090702948,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9917566776275635,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 32,
+          "mode": "initial",
+          "id": "line_032",
+          "range_start": 174.42099773242631,
+          "range_end": 216.60498866213152,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9944244623184204,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 33,
+          "mode": "initial",
+          "id": "line_033",
+          "range_start": 185.48600907029478,
+          "range_end": 221.24498866213153,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9906526207923889,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 34,
+          "mode": "initial",
+          "id": "line_034",
+          "range_start": 211.49501133786848,
+          "range_end": 223.68498866213153,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9992452263832092,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 35,
+          "mode": "initial",
+          "id": "line_035",
+          "range_start": 216.38,
+          "range_end": 225.8649886621315,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9994570016860962,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 36,
+          "mode": "initial",
+          "id": "line_036",
+          "range_start": 221.01399092970522,
+          "range_end": 228.8049886621315,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.99921715259552,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 37,
+          "mode": "initial",
+          "id": "line_037",
+          "range_start": 223.43501133786847,
+          "range_end": 231.49600907029478,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9995818734169006,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 38,
+          "mode": "initial",
+          "id": "line_038",
+          "range_start": 225.5750113378685,
+          "range_end": 236.29700680272109,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.99885094165802,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 39,
+          "mode": "initial",
+          "id": "line_039",
+          "range_start": 228.45501133786848,
+          "range_end": 240.8649886621315,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9968683123588562,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 40,
+          "mode": "initial",
+          "id": "line_040",
+          "range_start": 231.0750113378685,
+          "range_end": 243.38498866213152,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9986403584480286,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 41,
+          "mode": "initial",
+          "id": "line_041",
+          "range_start": 235.9980045351474,
+          "range_end": 245.4239909297052,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9993823170661926,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 42,
+          "mode": "initial",
+          "id": "line_042",
+          "range_start": 240.55,
+          "range_end": 250.7090022675737,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9992570281028748,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 43,
+          "mode": "initial",
+          "id": "line_043",
+          "range_start": 243.0309977324263,
+          "range_end": 258.5490022675737,
+          "gate": null,
+          "crop_edge": false,
+          "agreement": 0.9990745186805725,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        },
+        {
+          "line": 44,
+          "mode": "initial",
+          "id": "line_044",
+          "range_start": 250.38,
+          "range_end": 258.5490022675737,
+          "gate": null,
+          "crop_edge": true,
+          "agreement": 0.9978727698326111,
+          "note": "agreement 为模型内部指标，不是准确率。"
+        }
+      ],
+      "note": "原生音素边界；10ms 网格不等于10ms准确度。英文音节映射为候选，连续长元音保留不可分组。"
+    },
+    "quality": {
+      "status": "needs_review",
+      "issues": [
+        {
+          "line": 6,
+          "text": "言葉じゃなくたって",
+          "reasons": [
+            "long_sustain_check"
+          ]
+        },
+        {
+          "line": 9,
+          "text": "「一撃必愛」ぶっ込めラブソング",
+          "reasons": [
+            "short_unit_check"
+          ]
+        },
+        {
+          "line": 17,
+          "text": "おっきな手で褒められたくて…",
+          "reasons": [
+            "short_unit_check"
+          ]
+        },
+        {
+          "line": 25,
+          "text": "そう簡単に離しはしない",
+          "reasons": [
+            "short_unit_check"
+          ]
+        },
+        {
+          "line": 30,
+          "text": "私はまた立つ…! 明日へと",
+          "reasons": [
+            "long_sustain_check"
+          ]
+        },
+        {
+          "line": 31,
+          "text": "此れから此処から始まる",
+          "reasons": [
+            "long_sustain_check"
+          ]
+        },
+        {
+          "line": 32,
+          "text": "全霊で歌おう",
+          "reasons": [
+            "long_sustain_check"
+          ]
+        },
+        {
+          "line": 33,
+          "text": "愛は響く 強く響く",
+          "reasons": [
+            "short_unit_check"
+          ]
+        },
+        {
+          "line": 44,
+          "text": "泣けるほどギュッと 愛になる",
+          "reasons": [
+            "tifa_crop_edge_check"
+          ]
+        }
+      ],
+      "reading_notices": [],
+      "note": "请对照歌曲检查时间；过短或过长的片段会列为检查提示。"
+    },
+    "manual_timing_lines": [],
+    "partial_timing_lines": [],
+    "sentence_only": false
+  }
+}

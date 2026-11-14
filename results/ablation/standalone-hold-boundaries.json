@@ -346,6 +346,144 @@
   },
   {
     "separator": "demucs",
+    "song": "s15",
+    "line": 2,
+    "text": "アー",
+    "left_text": "ア",
+    "right_text": "ー",
+    "reference": [
+      31.313,
+      31.313
+    ],
+    "product_prediction": [
+      31.31575,
+      31.31575
+    ],
+    "endpoint_sources": [
+      "profile_hold",
+      "profile_hold"
+    ],
+    "hit100": true,
+    "tifa_internal_boundary": null,
+    "reason": "No separate phoneme target for standalone long mark; envelope scores do not measure this internal boundary."
+  },
+  {
+    "separator": "demucs",
+    "song": "s15",
+    "line": 13,
+    "text": "ハー",
+    "left_text": "ハ",
+    "right_text": "ー",
+    "reference": [
+      76.79599999999999,
+      76.79599999999999
+    ],
+    "product_prediction": [
+      76.73925,
+      76.73925
+    ],
+    "endpoint_sources": [
+      "profile_hold",
+      "profile_hold"
+    ],
+    "hit100": true,
+    "tifa_internal_boundary": null,
+    "reason": "No separate phoneme target for standalone long mark; envelope scores do not measure this internal boundary."
+  },
+  {
+    "separator": "bs",
+    "song": "s15",
+    "line": 2,
+    "text": "アー",
+    "left_text": "ア",
+    "right_text": "ー",
+    "reference": [
+      31.313,
+      31.313
+    ],
+    "product_prediction": [
+      31.351875,
+      31.351875
+    ],
+    "endpoint_sources": [
+      "profile_hold",
+      "profile_hold"
+    ],
+    "hit100": true,
+    "tifa_internal_boundary": null,
+    "reason": "No separate phoneme target for standalone long mark; envelope scores do not measure this internal boundary."
+  },
+  {
+    "separator": "bs",
+    "song": "s15",
+    "line": 13,
+    "text": "ハー",
+    "left_text": "ハ",
+    "right_text": "ー",
+    "reference": [
+      76.79599999999999,
+      76.79599999999999
+    ],
+    "product_prediction": [
+      76.7724375,
+      76.7724375
+    ],
+    "endpoint_sources": [
+      "profile_hold",
+      "profile_hold"
+    ],
+    "hit100": true,
+    "tifa_internal_boundary": null,
+    "reason": "No separate phoneme target for standalone long mark; envelope scores do not measure this internal boundary."
+  },
+  {
+    "separator": "kim",
+    "song": "s15",
+    "line": 2,
+    "text": "アー",
+    "left_text": "ア",
+    "right_text": "ー",
+    "reference": [
+      31.313,
+      31.313
+    ],
+    "product_prediction": [
+      31.31925,
+      31.31925
+    ],
+    "endpoint_sources": [
+      "profile_hold",
+      "profile_hold"
+    ],
+    "hit100": true,
+    "tifa_internal_boundary": null,
+    "reason": "No separate phoneme target for standalone long mark; envelope scores do not measure this internal boundary."
+  },
+  {
+    "separator": "kim",
+    "song": "s15",
+    "line": 13,
+    "text": "ハー",
+    "left_text": "ハ",
+    "right_text": "ー",
+    "reference": [
+      76.79599999999999,
+      76.79599999999999
+    ],
+    "product_prediction": [
+      76.740375,
+      76.740375
+    ],
+    "endpoint_sources": [
+      "profile_hold",
+      "profile_hold"
+    ],
+    "hit100": true,
+    "tifa_internal_boundary": null,
+    "reason": "No separate phoneme target for standalone long mark; envelope scores do not measure this internal boundary."
+  },
+  {
+    "separator": "demucs",
     "song": "s04",
     "line": 6,
     "text": "メー",

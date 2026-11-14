@@ -1,0 +1,207 @@
+{
+  "model": "demucs",
+  "identity": {
+    "model": "demucs",
+    "device": "cuda",
+    "config": {
+      "model_name": "htdemucs",
+      "device": "cuda",
+      "split": true,
+      "overlap": 0.25,
+      "shifts": 1,
+      "seed": 0,
+      "transition_power": 1.0,
+      "num_workers": 0,
+      "segment": null,
+      "model_repo": null
+    },
+    "parameters": 41984456,
+    "state_sha256": "7f570237bc0bd28e792bfba06fa7420e06c5271d31a72da3e4a8e5de469d2366",
+    "model_load_seconds": 0.7643265090882778,
+    "load_and_identity_seconds": 0.9897617325186729,
+    "process_import_load_seconds": 2.721360832452774
+  },
+  "inputs": [
+    {
+      "id": "kouin",
+      "audio": "datasets/audio/光陰の海原.m4a",
+      "sha256": "92d32d4fda0dd4a91b8a303f8d1451f4d5b94d8836d2b5dbdf8f0e5c09411664"
+    },
+    {
+      "id": "brave",
+      "audio": "datasets/audio/The Brave Under The Summer Sky.m4a",
+      "sha256": "a4612ccb881a83e8407a9a30d44dd0dc3245b36b10e9078d68065bce3ec5ce6a"
+    },
+    {
+      "id": "powder",
+      "audio": "datasets/audio/POWDER SNOW (Live Ver.).m4a",
+      "sha256": "678980e3cad36970579c48cfe7b79fd798e309e50383363506657150b31c5978"
+    },
+    {
+      "id": "brilliance",
+      "audio": "datasets/audio/両翼のBrilliance.m4a",
+      "sha256": "107e5e3b04f348a6494706198046fc770c37f0fc683cfcda42e7a78a47fe9f89"
+    },
+    {
+      "id": "rainbow",
+      "audio": "datasets/audio/Rainbow Flower.m4a",
+      "sha256": "d15cd0566cc011e557369aa60f748490eb5a058c6c3e5a5536681f370ab28dc5"
+    }
+  ],
+  "records": [
+    {
+      "song": "kouin",
+      "repeat": 1,
+      "seconds": 2.6759477220475674,
+      "duration": 266.4257596371882,
+      "allocated_bytes": 1188556800,
+      "rss_bytes": 1806598144,
+      "board_energy_joules": 515.8450931777684,
+      "power_samples": 31
+    },
+    {
+      "song": "kouin",
+      "repeat": 2,
+      "seconds": 3.101636379957199,
+      "duration": 266.4257596371882,
+      "allocated_bytes": 1188556800,
+      "rss_bytes": 1900679168,
+      "board_energy_joules": 616.0450534439012,
+      "power_samples": 32
+    },
+    {
+      "song": "kouin",
+      "repeat": 3,
+      "seconds": 3.2392513770610094,
+      "duration": 266.4257596371882,
+      "allocated_bytes": 1188556800,
+      "rss_bytes": 1900732416,
+      "board_energy_joules": 632.0255539383907,
+      "power_samples": 35
+    },
+    {
+      "song": "brave",
+      "repeat": 1,
+      "seconds": 2.7634053882211447,
+      "duration": 255.04798185941044,
+      "allocated_bytes": 1162589184,
+      "rss_bytes": 1887764480,
+      "board_energy_joules": 525.6730534095606,
+      "power_samples": 31
+    },
+    {
+      "song": "brave",
+      "repeat": 2,
+      "seconds": 2.6942665614187717,
+      "duration": 255.04798185941044,
+      "allocated_bytes": 1162589184,
+      "rss_bytes": 1883750400,
+      "board_energy_joules": 550.0936022958532,
+      "power_samples": 34
+    },
+    {
+      "song": "brave",
+      "repeat": 3,
+      "seconds": 3.2499374076724052,
+      "duration": 255.04798185941044,
+      "allocated_bytes": 1162589184,
+      "rss_bytes": 1871519744,
+      "board_energy_joules": 620.0002348173214,
+      "power_samples": 27
+    },
+    {
+      "song": "powder",
+      "repeat": 1,
+      "seconds": 4.628218958154321,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1762049024,
+      "rss_bytes": 2029703168,
+      "board_energy_joules": 928.664748297859,
+      "power_samples": 49
+    },
+    {
+      "song": "powder",
+      "repeat": 2,
+      "seconds": 4.67677222378552,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1762049024,
+      "rss_bytes": 2065543168,
+      "board_energy_joules": 974.0598004469126,
+      "power_samples": 50
+    },
+    {
+      "song": "powder",
+      "repeat": 3,
+      "seconds": 4.7249425407499075,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1762049024,
+      "rss_bytes": 2106417152,
+      "board_energy_joules": 988.1062578212182,
+      "power_samples": 50
+    },
+    {
+      "song": "brilliance",
+      "repeat": 1,
+      "seconds": 2.623100621625781,
+      "duration": 253.93068027210884,
+      "allocated_bytes": 1158981632,
+      "rss_bytes": 1950859264,
+      "board_energy_joules": 507.3597612447347,
+      "power_samples": 33
+    },
+    {
+      "song": "brilliance",
+      "repeat": 2,
+      "seconds": 2.826112039387226,
+      "duration": 253.93068027210884,
+      "allocated_bytes": 1158981632,
+      "rss_bytes": 1882226688,
+      "board_energy_joules": 572.8512248527883,
+      "power_samples": 27
+    },
+    {
+      "song": "brilliance",
+      "repeat": 3,
+      "seconds": 2.5829472597688437,
+      "duration": 253.93068027210884,
+      "allocated_bytes": 1158981632,
+      "rss_bytes": 1848606720,
+      "board_energy_joules": 542.9075330733368,
+      "power_samples": 31
+    },
+    {
+      "song": "rainbow",
+      "repeat": 1,
+      "seconds": 2.5080563072115183,
+      "duration": 238.42133786848072,
+      "allocated_bytes": 1124464128,
+      "rss_bytes": 1780301824,
+      "board_energy_joules": 476.8158974300371,
+      "power_samples": 27
+    },
+    {
+      "song": "rainbow",
+      "repeat": 2,
+      "seconds": 2.5023129153996706,
+      "duration": 238.42133786848072,
+      "allocated_bytes": 1124464128,
+      "rss_bytes": 1783349248,
+      "board_energy_joules": 519.7142855118858,
+      "power_samples": 28
+    },
+    {
+      "song": "rainbow",
+      "repeat": 3,
+      "seconds": 2.501682175323367,
+      "duration": 238.42133786848072,
+      "allocated_bytes": 1124464128,
+      "rss_bytes": 1836142592,
+      "board_energy_joules": 518.2200838894192,
+      "power_samples": 29
+    }
+  ],
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "threads": 8,
+  "scope": "Serial CUDA; warm inference including transfer and CPU return; decode, load and disk output excluded. Three repeats per song; board power includes idle consumption."
+}

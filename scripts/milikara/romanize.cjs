@@ -1,5 +1,5 @@
 const fs=require('node:fs'),path=require('node:path');
-const root=path.resolve(__dirname,'../..'),front=path.join(root,'.deps/studio/frontend');
+const root=path.resolve(__dirname,'../..'),front=path.join(root,fs.existsSync(path.join(root,'.deps/comparison/studio'))?'.deps/comparison/studio/frontend':'.deps/studio/frontend');
 const ts=require(path.join(root,'.deps/node/node_modules/typescript'));
 require.extensions['.ts']=(module,filename)=>module._compile(ts.transpileModule(fs.readFileSync(filename,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,filename);
 const {createLyricDocument,createLine,createWord}=require(path.join(front,'src/domain/lyric-document.ts'));

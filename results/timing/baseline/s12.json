@@ -1,7 +1,7 @@
 {
   "song": "s12",
-  "seconds": 6.892395228147507,
-  "stem_origin": "fresh current DemucsSeparator default seed=0",
+  "seconds": 3.4864433389157057,
+  "stem_origin": "this evaluation cache",
   "stem": ".cache/timing/audio/白い季節.wav",
   "analysis": {
     "source_id": "datasets/audio/白い季節.m4a",
@@ -14068,7 +14068,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s12-n524",
@@ -24306,8 +24306,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 62.7725625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n645",
+              "s12-n646",
+              "s12-n648"
+            ]
+          },
+          "end": {
+            "time": 63.6981875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n645",
+              "s12-n646",
+              "s12-n648"
+            ]
+          }
         },
         "fragments": [
           {
@@ -24351,6 +24367,11 @@
           {
             "object_id": "s12-n646",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n646",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -27419,8 +27440,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 84.1606875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n726",
+              "s12-n730",
+              "s12-n731"
+            ]
+          },
+          "end": {
+            "time": 84.416375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n726",
+              "s12-n730",
+              "s12-n731"
+            ]
+          }
         },
         "fragments": [
           {
@@ -27473,6 +27510,11 @@
           {
             "object_id": "s12-n730",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n730",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -32441,7 +32483,7 @@
             ]
           },
           "end": {
-            "time": 136.106,
+            "time": 136.046,
             "source": "acoustic_path",
             "basis_ids": [
               "s12-n853"
@@ -32449,8 +32491,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 116.7736875,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n852",
+              "s12-n853",
+              "s12-n858"
+            ]
+          },
+          "end": {
+            "time": 118.5959375,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n852",
+              "s12-n853",
+              "s12-n858"
+            ]
+          }
         },
         "fragments": [
           {
@@ -32460,13 +32518,13 @@
           },
           {
             "start": 136.02825,
-            "end": 136.106,
+            "end": 136.046,
             "piece_index": 15
           }
         ],
         "concat_interval": [
           85.12,
-          87.02
+          86.96
         ],
         "crosses_removed_gap": true,
         "removed_gap_seconds": 17.43231250000001,
@@ -32484,16 +32542,21 @@
             "character": "e",
             "frames": [
               4305,
-              4351
+              4348
             ],
             "concat_start": 86.10000000000001,
-            "concat_end": 87.02
+            "concat_end": 86.96000000000001
           }
         ],
         "issues": [
           {
             "object_id": "s12-n853",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n853",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -32745,8 +32808,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 140.858,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n866",
+              "s12-n867",
+              "s12-n868"
+            ]
+          },
+          "end": {
+            "time": 141.734625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n866",
+              "s12-n867",
+              "s12-n868"
+            ]
+          }
         },
         "fragments": [
           {
@@ -32790,6 +32869,11 @@
           {
             "object_id": "s12-n867",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n867",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -44786,8 +44870,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 246.0618125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n1196",
+              "s12-n1200",
+              "s12-n1201"
+            ]
+          },
+          "end": {
+            "time": 246.295625,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s12-n1196",
+              "s12-n1200",
+              "s12-n1201"
+            ]
+          }
         },
         "fragments": [
           {
@@ -44840,6 +44940,11 @@
           {
             "object_id": "s12-n1200",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s12-n1200",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -49867,7 +49972,7 @@
         "issues": []
       }
     ],
-    "status": "partial",
+    "status": "complete",
     "lines": [
       {
         "line_id": "s12-n523",
@@ -49908,7 +50013,7 @@
       {
         "line_id": "s12-n624",
         "start": 58.9325625,
-        "end": 62.7725625,
+        "end": 63.6981875,
         "first_unit_complete": true
       },
       {
@@ -49974,7 +50079,7 @@
       {
         "line_id": "s12-n842",
         "start": 112.7936875,
-        "end": 116.7736875,
+        "end": 118.5959375,
         "first_unit_complete": true
       },
       {
@@ -50119,12 +50224,12 @@
     "coverage": {
       "total": 427,
       "raw_complete": 427,
-      "proposed_complete": 422,
+      "proposed_complete": 427,
       "single_endpoint": 0,
-      "unresolved": 5,
-      "derived": 0,
+      "unresolved": 0,
+      "derived": 5,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 5,
       "empty_targets": 0
     },
     "calibration": {
@@ -50135,8 +50240,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -57065,10 +57170,11 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -5344.46456672065,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -5346.789536706611,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"

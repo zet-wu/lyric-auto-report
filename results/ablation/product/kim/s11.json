@@ -8109,7 +8109,7 @@
     ],
     "summary": {
       "unknown_objects": [],
-      "input_version": "alignment-input/1",
+      "input_version": "alignment-input/2",
       "inputs": [
         {
           "unit_id": "s11-n32",
@@ -20406,7 +20406,7 @@
             ]
           },
           "end": {
-            "time": 129.3595625,
+            "time": 128.7894375,
             "source": "acoustic_path",
             "basis_ids": [
               "s11-n247"
@@ -20414,27 +20414,34 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 128.1294375,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s11-n247"
+            ]
+          },
+          "end": {
+            "time": 128.7894375,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s11-n247"
+            ]
+          }
         },
         "fragments": [
           {
             "start": 128.1294375,
-            "end": 128.7895,
+            "end": 128.7894375,
             "piece_index": 14
-          },
-          {
-            "start": 129.259625,
-            "end": 129.3595625,
-            "piece_index": 15
           }
         ],
         "concat_interval": [
           87.78,
-          88.54
+          88.44
         ],
-        "crosses_removed_gap": true,
-        "removed_gap_seconds": 0.4701249999999959,
+        "crosses_removed_gap": false,
+        "removed_gap_seconds": 0,
         "character_path": [
           {
             "character": "n",
@@ -20466,20 +20473,14 @@
           {
             "character": "g",
             "frames": [
-              4426,
-              4427
+              4421,
+              4422
             ],
-            "concat_start": 88.52,
-            "concat_end": 88.54
+            "concat_start": 88.42,
+            "concat_end": 88.44
           }
         ],
-        "issues": [
-          {
-            "object_id": "s11-n247",
-            "code": "crosses_removed_gap",
-            "values": {}
-          }
-        ]
+        "issues": []
       },
       {
         "unit_id": "s11-n249",
@@ -26011,7 +26012,7 @@
             ]
           },
           "end": {
-            "time": 201.389125,
+            "time": 190.2856875,
             "source": "acoustic_path",
             "basis_ids": [
               "s11-n322"
@@ -26019,32 +26020,34 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 184.0056875,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s11-n322"
+            ]
+          },
+          "end": {
+            "time": 190.2856875,
+            "source": "acoustic_path",
+            "basis_ids": [
+              "s11-n322"
+            ]
+          }
         },
         "fragments": [
           {
             "start": 184.0056875,
-            "end": 192.249625,
+            "end": 190.2856875,
             "piece_index": 17
-          },
-          {
-            "start": 192.7778125,
-            "end": 197.8340625,
-            "piece_index": 18
-          },
-          {
-            "start": 198.4493125,
-            "end": 201.389125,
-            "piece_index": 19
           }
         ],
         "concat_interval": [
           142.42,
-          158.66
+          148.7
         ],
-        "crosses_removed_gap": true,
-        "removed_gap_seconds": 1.1434375000000045,
+        "crosses_removed_gap": false,
+        "removed_gap_seconds": 0,
         "character_path": [
           {
             "character": "j",
@@ -26076,20 +26079,14 @@
           {
             "character": "g",
             "frames": [
-              7932,
-              7933
+              7434,
+              7435
             ],
-            "concat_start": 158.64000000000001,
-            "concat_end": 158.66
+            "concat_start": 148.68,
+            "concat_end": 148.70000000000002
           }
         ],
-        "issues": [
-          {
-            "object_id": "s11-n322",
-            "code": "crosses_removed_gap",
-            "values": {}
-          }
-        ]
+        "issues": []
       },
       {
         "unit_id": "s11-n324",
@@ -27886,8 +27883,24 @@
           }
         },
         "proposed_timing": {
-          "start": null,
-          "end": null
+          "start": {
+            "time": 230.0418125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s11-n346",
+              "s11-n347",
+              "s11-n349"
+            ]
+          },
+          "end": {
+            "time": 232.0138125,
+            "source": "fragment_selected",
+            "basis_ids": [
+              "s11-n346",
+              "s11-n347",
+              "s11-n349"
+            ]
+          }
         },
         "fragments": [
           {
@@ -27949,6 +27962,11 @@
           {
             "object_id": "s11-n347",
             "code": "crosses_removed_gap",
+            "values": {}
+          },
+          {
+            "object_id": "s11-n347",
+            "code": "fragment_selected",
             "values": {}
           }
         ]
@@ -30860,7 +30878,7 @@
       {
         "line_id": "s11-n237",
         "start": 124.0294375,
-        "end": 128.1294375,
+        "end": 128.7894375,
         "first_unit_complete": true
       },
       {
@@ -30896,7 +30914,7 @@
       {
         "line_id": "s11-n311",
         "start": 176.5056875,
-        "end": 183.6456875,
+        "end": 190.2856875,
         "first_unit_complete": true
       },
       {
@@ -30908,7 +30926,7 @@
       {
         "line_id": "s11-n336",
         "start": 220.8018125,
-        "end": 230.0418125,
+        "end": 232.0138125,
         "first_unit_complete": true
       },
       {
@@ -30933,12 +30951,12 @@
     "coverage": {
       "total": 251,
       "raw_complete": 251,
-      "proposed_complete": 246,
+      "proposed_complete": 249,
       "single_endpoint": 0,
-      "unresolved": 5,
-      "derived": 0,
+      "unresolved": 2,
+      "derived": 1,
       "profile_derived": 0,
-      "completion_derived": 0,
+      "completion_derived": 1,
       "empty_targets": 0
     },
     "calibration": {
@@ -30949,8 +30967,8 @@
     "execution": {
       "adoption_policy": "proposed_endpoints_only; null_means_no_new_suggestion",
       "route": "japanese",
-      "profile": "alignment-input/1",
-      "ctc": "global-ctc-f64-v2",
+      "profile": "alignment-input/2",
+      "ctc": "global-ctc-f64-v3",
       "config": {
         "hint_mode": "off",
         "max_decode_memory_bytes": 536870912,
@@ -35053,13 +35071,14 @@
           "rest_blank": 0,
           "rest_token": 0
         },
-        "activity": null
+        "activity": null,
+        "removed_gap_weight": 1
       },
-      "first_pass_score": -10852.191817522049,
-      "completion": "local-piece-completion-v1"
+      "first_pass_score": -10854.05873558399,
+      "completion": "local-piece-completion-v2"
     },
     "issues": [],
     "schema": "lazulite-japanese-result-v1"
   },
-  "seconds": 1.8904915750026703
+  "seconds": 1.951173646375537
 }

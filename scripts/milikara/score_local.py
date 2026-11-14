@@ -4,7 +4,9 @@ from evaluate import score,stats
 import collections
 folder=ROOT/'results/local-refinement';refs={s['id']:s for s in read(OUT/'references.json')}
 cache={};metrics=[];pooled=collections.defaultdict(list)
-for path in sorted((folder/'predictions').glob('*.json')):
+paths=sorted({p.with_suffix('') if p.suffix=='.gz' else p for p in (folder/'predictions').glob('*.json*')})
+assert paths, 'No refinement predictions found'
+for path in paths:
  r=read(path);rows,_=score(refs[r['song']],r);cache[(r['song'],r['baseline'],r['variant'])]=rows
  for group in ('japanese','latin','all'):
   rr=[x for x in rows if group=='all' or x['language']==group];pooled[(r['baseline'],r['variant'],group)]+=rr

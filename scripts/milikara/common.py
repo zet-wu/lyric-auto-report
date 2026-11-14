@@ -15,12 +15,14 @@ os.environ['OMP_NUM_THREADS']='8'
 
 OUT=ROOT/'results/milikara'
 CACHE=ROOT/'.cache/milikara'
-UPSTREAM=ROOT/'.deps/milikara'
-STUDIO=ROOT/'.deps/studio'
+DEPS=ROOT/'.deps/comparison' if (ROOT/'.deps/comparison/studio').exists() else ROOT/'.deps'
+UPSTREAM=DEPS/'milikara'
+STUDIO=DEPS/'studio'
 for p in (OUT,CACHE): p.mkdir(parents=True,exist_ok=True)
 def portable(value):
     if isinstance(value,str):
-        value=value.replace(str(ROOT)+'/', '')
+        value=value.replace(str(ROOT)+'/', '').replace(str((ROOT/'datasets').resolve().parent)+'/', '')
+        value=re.sub(r'/(?:opt)/Miniconda3/', '<python>/', value)
         value=re.sub(r'\x1b\[[0-9;]*m','',value)
         value=re.sub(r'(?m)^20\d\d-\d\d-\d\d \d\d:\d\d:\d\d(?:\.\d+)? \| ', '', value)
         return value
@@ -37,7 +39,7 @@ def read(path):
     if path.exists():return json.loads(path.read_text())
     with gzip.open(str(path)+'.gz','rt') as f:return json.load(f)
 def exists(path):return Path(path).exists() or Path(str(path)+'.gz').exists()
-def product_imports():sys.path[:0]=[str(STUDIO),str(ROOT/'.deps/lazulite/src')]
+def product_imports():sys.path[:0]=[str(STUDIO),str(DEPS/'lazulite/src')]
 def timing_imports():sys.path.insert(0,str(UPSTREAM))
 
 import hashlib

@@ -16,7 +16,22 @@
 
 ### 人声分离模型
 
-Demucs 提供了有实际收益的速度与质量平衡。尽管换用 BS-RoFormer Karaoke 可把目前路线的 100 ms 命中率提高到 85.88%，比 Demucs 高 1.46 个百分点，但是其分离 GPU 耗时达到 Demucs 的五倍以上，在 CPU 推理情况下更甚。在本项目测试的数个人声分离模型中，Demucs 在 GPU 和 CPU 上都有极其显著的性能优势。
+Demucs 提供了有实际收益的速度与质量平衡。尽管 BS Karaoke 的双端 100 ms 命中率为 85.83%，比 Demucs 的 83.89% 高 1.94 个百分点，但代价是耗时的大幅增加。在本项目测试的十种人声分离配置中，综合参数量、CPU 与 GPU 性能及下游任务表现，Demucs 是较优选择。
+
+| 配置 | GPU 相对耗时 | CPU 相对耗时 | 参数量 | 下游对齐任务双端 100 ms 命中率 |
+| --- | ---: | ---: | ---: | ---: |
+| Demucs htdemucs | 1.00 | 1.00 | 41.984 M | 83.89% |
+| SCNet Small | 2.45 | 3.25 | 10.579 M | 81.30% |
+| DTTNet | 1.57 | 7.08 | 4.958 M | 84.26% |
+| BS-RoFormer viperx | 4.69 | 31.17 | 159.758 M | 84.90% |
+| MelBand RoFormer Kim | 2.46 | 11.72 | 228.203 M | 84.75% |
+| Windowed RoFormer | 1.22 | 4.39 | 228.387 M | 84.90% |
+| BS Karaoke | 7.28 | 22.37 | 51.049 M | 85.83% |
+| MDX-Net Inst HQ 3 | 4.60 | 1.39 | 16.684 M | 82.57% |
+| MelBand RoFormer ep_3005 | 4.19 | 8.17 | 251.870 M | 84.47% |
+| HybridDemucs MUSDB Plus | 0.50 | 0.33 | 83.639 M | 81.32% |
+
+完整方法和数据见 [模型分离性能](reports/separation-performance.md) 和 [模型下游对齐](reports/separation-alignment.md)。
 
 ### 对齐模型
 
@@ -49,10 +64,10 @@ Lazulite Studio 的“智能日文注音”使用 Sudachi + JmdictFurigana，以
 | [八条路线对齐比较](reports/comparison.md) | 人工／自动读音、各自／统一分离三组；组内共同正文边界与人工读音单元两表、合并数、六项误差指标及叠唱区间 |
 | [测试集](datasets/README.md)与[方法](reports/methods.md) | 14 段录音、15 份标注；比较层次、不同评分分母、缺失处理、人工读音与窗口条件 |
 | [分离模型选择](reports/separation-survey.md) | 候选分离器、权重与推理路径的区别，以及选择依据 |
-| [六模型分离性能](reports/separation-performance.md) | 六模型五曲 GPU 串行重复测量；耗时、内存、显存和能量 |
+| [模型分离性能](reports/separation-performance.md) | 十模型 GPU 五曲整曲、CPU 固定 30 秒片段；耗时、内存、显存和能量 |
 | [当前分离资源](reports/resources.md) | Demucs、BS Karaoke、Kim Vocals 的单曲串行重复测量与计时边界 |
 | [对齐后端与窗口](reports/alignment-backends.md) | 1176 个模块条件；延音与窗口覆盖；1656 个 MMS_FA 空隙填补条件及真实停顿、行末问题 |
-| [六模型下游对齐](reports/separation-alignment.md) | 468 个条件；人工读音下，分离器、浮点与 24 位保存路径、整曲与拼接策略的端点表现 |
+| [模型下游对齐](reports/separation-alignment.md) | 60 个条件、780 份歌曲预测；人工读音下，分离器、浮点与 24 位保存路径、整曲与拼接策略的端点表现 |
 | [Timing 完整链路](reports/timing.md) | 三种输入条件与逐曲失败原因；固定人工读音／行窗口、局部修正及英文／粤语诊断 |
 | [MiliKara 原生管线与模块](reports/milikara.md) | 原生路线见八路线比较；252 种模块配置，分隔符、活动代价、尾点与重试消融 |
 | [自动读音](reports/auto-reading.md) | 12 首日语主组及单列 s11 日语部分；Lazulite Studio、SUG 与词典／规则注音、6.1 Terra 直接注音及候选修正；片段、整行准确率与字符错误率 |

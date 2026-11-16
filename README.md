@@ -61,7 +61,7 @@ Lazulite Studio 的“智能日文注音”使用 Sudachi + JmdictFurigana，以
 
 | 报告 | 内容 |
 | --- | --- |
-| [八条路线对齐比较](reports/comparison.md) | 人工／自动读音、各自／统一分离三组；组内共同正文边界与人工读音单元两表、合并数、六项误差指标及叠唱区间 |
+| [八条路线对齐比较](reports/comparison.md) | 人工／自动读音、各自／统一分离三组；组内共同正文边界与人工读音边界两表、合并数、六项误差指标及叠唱区间 |
 | [测试集](datasets/README.md)与[方法](reports/methods.md) | 14 段录音、15 份标注；比较层次、不同评分分母、缺失处理、人工读音与窗口条件 |
 | [分离模型选择](reports/separation-survey.md) | 候选分离器、权重与推理路径的区别，以及选择依据 |
 | [模型分离性能](reports/separation-performance.md) | 十模型 GPU 五曲整曲、CPU 固定 30 秒片段；耗时、内存、显存和能量 |

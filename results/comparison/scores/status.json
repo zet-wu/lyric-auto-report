@@ -154,26 +154,18 @@
   {
     "group": "G3",
     "song": "s01",
-    "route": "timing",
-    "status": "error",
-    "path": "results/comparison/timing/s01-bs-auto.json",
-    "error": "Traceback (most recent call last):\n  File \".deps/comparison/timing/timing/singing.py\", line 152, in kana_phones\n    groups = [group for word in kana_converter().convert(mora)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/base.py\", line 61, in convert\n    return normalize_words(self._convert(text))\n                           ~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/paradigm.py\", line 103, in _convert\n    for path in self.script_to_paths(s):\n                ~~~~~~~~~~~~~~~~~~~~^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/japanese.py\", line 161, in script_to_paths\n    return super().script_to_paths(script)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/dictionary.py\", line 92, in script_to_paths\n    raise KeyError(\n        f\"Script token {script!r} not found in script-to-phoneme dict.\"\n    )\nKeyError: \"Script token 'さぁ' not found in script-to-phoneme dict.\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"scripts/comparison/run_timing.py\", line 24, in <module>\n    if a.condition=='auto':pipeline.run(stem,text,work,language='mixed',audio_mode='source',aligner='tifa',trust_line_timestamps=False)\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/pipeline.py\", line 59, in run\n    route(plan.lines, tracks, out_dir, report, log, syllables=plan.syllables, direct_config=config)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/alignment.py\", line 63, in align_tifa\n    return align_text_tifa(lines, tracks, out_dir, report, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/alignment.py\", line 206, in align_text_tifa\n    fragments, windows, owners, localization = locate(tracks.working, tracks.rate, mains,\n                                               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                                     engine, out_dir, log)\n                                                     ^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 130, in locate\n    located, rows = align_transcript(lines, probs, engine.vocab, engine.model.config.pad_token_id,\n                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                     info['frame_ms']/1000, len(samples)/rate)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 29, in align_transcript\n    text_units(line.text, False, language=line.language))\n    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/ctc.py\", line 116, in text_units\n    parts, pronunciation = japanese_acoustic_parts(word, True, manual)\n                           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/singing.py\", line 291, in japanese_acoustic_parts\n    lengths = [len(kana_phones(reading)) for _, reading in parts]\n                   ~~~~~~~~~~~^^^^^^^^^\n  File \".deps/comparison/timing/timing/singing.py\", line 155, in kana_phones\n    raise ValueError(f\"无法转换日语读音：{reading}\") from exc\nValueError: 无法转换日语读音：サァ\n"
-  },
-  {
-    "group": "G3",
-    "song": "s01",
     "route": "sug-nextfire",
-    "status": "error",
+    "status": "ok",
     "path": "results/comparison/sug/s01-sug-nextfire-auto.json",
-    "error": "Traceback (most recent call last):\n  File \"scripts/comparison/run_sug.py\", line 41, in <module>\n    if not plan.is_complete:raise ValueError('Unresolved readings: '+repr([(u.char_text,u.location) for u in plan.pending_units]))\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unresolved readings: [('0', (9, 2, 0)), ('万', (9, 3, 0))]\n"
+    "error": null
   },
   {
     "group": "G3",
     "song": "s01",
     "route": "sug-mms-fa",
-    "status": "error",
+    "status": "ok",
     "path": "results/comparison/sug/s01-sug-mms-fa-auto.json",
-    "error": "Traceback (most recent call last):\n  File \"scripts/comparison/run_sug.py\", line 41, in <module>\n    if not plan.is_complete:raise ValueError('Unresolved readings: '+repr([(u.char_text,u.location) for u in plan.pending_units]))\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unresolved readings: [('0', (9, 2, 0)), ('万', (9, 3, 0))]\n"
+    "error": null
   },
   {
     "group": "G1",
@@ -325,14 +317,6 @@
     "route": "milikara",
     "status": "ok",
     "path": "results/comparison/milikara/runs/s15-milikara-auto.json",
-    "error": null
-  },
-  {
-    "group": "G3",
-    "song": "s15",
-    "route": "timing",
-    "status": "ok",
-    "path": "results/comparison/timing/s15-bs-auto.json",
     "error": null
   },
   {
@@ -506,14 +490,6 @@
   {
     "group": "G3",
     "song": "s02",
-    "route": "timing",
-    "status": "error",
-    "path": "results/comparison/timing/s02-bs-auto.json",
-    "error": "Traceback (most recent call last):\n  File \"scripts/comparison/run_timing.py\", line 24, in <module>\n    if a.condition=='auto':pipeline.run(stem,text,work,language='mixed',audio_mode='source',aligner='tifa',trust_line_timestamps=False)\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/pipeline.py\", line 59, in run\n    route(plan.lines, tracks, out_dir, report, log, syllables=plan.syllables, direct_config=config)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/alignment.py\", line 63, in align_tifa\n    return align_text_tifa(lines, tracks, out_dir, report, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/alignment.py\", line 206, in align_text_tifa\n    fragments, windows, owners, localization = locate(tracks.working, tracks.rate, mains,\n                                               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                                     engine, out_dir, log)\n                                                     ^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 132, in locate\n    fragments, windows, owners = split_windows(located, len(samples)/rate)\n                                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 106, in split_windows\n    raise ValueError(f'第 {source_index+1} 行有无法安全分段的过长单元，请提供逐句时间。')\nValueError: 第 40 行有无法安全分段的过长单元，请提供逐句时间。\n"
-  },
-  {
-    "group": "G3",
-    "song": "s02",
     "route": "sug-nextfire",
     "status": "ok",
     "path": "results/comparison/sug/s02-sug-nextfire-auto.json",
@@ -678,14 +654,6 @@
     "status": "ok",
     "path": "results/comparison/milikara/runs/s03-milikara-auto.json",
     "error": null
-  },
-  {
-    "group": "G3",
-    "song": "s03",
-    "route": "timing",
-    "status": "error",
-    "path": "results/comparison/timing/s03-bs-auto.json",
-    "error": "Traceback (most recent call last):\n  File \".deps/comparison/timing/timing/singing.py\", line 152, in kana_phones\n    groups = [group for word in kana_converter().convert(mora)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/base.py\", line 61, in convert\n    return normalize_words(self._convert(text))\n                           ~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/paradigm.py\", line 103, in _convert\n    for path in self.script_to_paths(s):\n                ~~~~~~~~~~~~~~~~~~~~^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/japanese.py\", line 161, in script_to_paths\n    return super().script_to_paths(script)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/dictionary.py\", line 92, in script_to_paths\n    raise KeyError(\n        f\"Script token {script!r} not found in script-to-phoneme dict.\"\n    )\nKeyError: \"Script token '*' not found in script-to-phoneme dict.\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"scripts/comparison/run_timing.py\", line 24, in <module>\n    if a.condition=='auto':pipeline.run(stem,text,work,language='mixed',audio_mode='source',aligner='tifa',trust_line_timestamps=False)\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/pipeline.py\", line 59, in run\n    route(plan.lines, tracks, out_dir, report, log, syllables=plan.syllables, direct_config=config)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/alignment.py\", line 63, in align_tifa\n    return align_text_tifa(lines, tracks, out_dir, report, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/alignment.py\", line 206, in align_text_tifa\n    fragments, windows, owners, localization = locate(tracks.working, tracks.rate, mains,\n                                               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                                     engine, out_dir, log)\n                                                     ^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 130, in locate\n    located, rows = align_transcript(lines, probs, engine.vocab, engine.model.config.pad_token_id,\n                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                     info['frame_ms']/1000, len(samples)/rate)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 29, in align_transcript\n    text_units(line.text, False, language=line.language))\n    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/ctc.py\", line 116, in text_units\n    parts, pronunciation = japanese_acoustic_parts(word, True, manual)\n                           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/singing.py\", line 292, in japanese_acoustic_parts\n    actual = kana_phones(spoken)\n  File \".deps/comparison/timing/timing/singing.py\", line 155, in kana_phones\n    raise ValueError(f\"无法转换日语读音：{reading}\") from exc\nValueError: 无法转换日语读音：*\n"
   },
   {
     "group": "G3",
@@ -858,14 +826,6 @@
   {
     "group": "G3",
     "song": "s04",
-    "route": "timing",
-    "status": "error",
-    "path": "results/comparison/timing/s04-bs-auto.json",
-    "error": "Traceback (most recent call last):\n  File \"scripts/comparison/run_timing.py\", line 24, in <module>\n    if a.condition=='auto':pipeline.run(stem,text,work,language='mixed',audio_mode='source',aligner='tifa',trust_line_timestamps=False)\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/pipeline.py\", line 59, in run\n    route(plan.lines, tracks, out_dir, report, log, syllables=plan.syllables, direct_config=config)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/alignment.py\", line 63, in align_tifa\n    return align_text_tifa(lines, tracks, out_dir, report, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/alignment.py\", line 213, in align_text_tifa\n    fine = tifa.align(audio, rate, fragments, out_dir, windows, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/tifa.py\", line 451, in align\n    raw=run_worker(folder,clips,log,pronunciations=pronunciations)\n  File \".deps/comparison/timing/timing/tifa.py\", line 211, in run_worker\n    raise RuntimeError(\"TIFA 运行失败：\" + detail)\nRuntimeError: TIFA 运行失败：t/.deps/comparison/timing/timing/tifa_worker.py\", line 117, in display_plans\n    plan = display_plan(text, choice, kana, overrides, fallback)\n  File \".deps/comparison/timing/timing/tifa_worker.py\", line 92, in display_plan\n    groups = [g for w in kana._convert(actual) for g in w.readings[0].paths[0]]\n                         ~~~~~~~~~~~~~^^^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/paradigm.py\", line 103, in _convert\n    for path in self.script_to_paths(s):\n                ~~~~~~~~~~~~~~~~~~~~^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/japanese.py\", line 161, in script_to_paths\n    return super().script_to_paths(script)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/dictionary.py\", line 92, in script_to_paths\n    raise KeyError(\n        f\"Script token {script!r} not found in script-to-phoneme dict.\"\n    )\nKeyError: \"Script token '*' not found in script-to-phoneme dict.\"\n\n"
-  },
-  {
-    "group": "G3",
-    "song": "s04",
     "route": "sug-nextfire",
     "status": "ok",
     "path": "results/comparison/sug/s04-sug-nextfire-auto.json",
@@ -1034,26 +994,18 @@
   {
     "group": "G3",
     "song": "s05",
-    "route": "timing",
-    "status": "error",
-    "path": "results/comparison/timing/s05-bs-auto.json",
-    "error": "Traceback (most recent call last):\n  File \".deps/comparison/timing/timing/singing.py\", line 152, in kana_phones\n    groups = [group for word in kana_converter().convert(mora)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/base.py\", line 61, in convert\n    return normalize_words(self._convert(text))\n                           ~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/paradigm.py\", line 103, in _convert\n    for path in self.script_to_paths(s):\n                ~~~~~~~~~~~~~~~~~~~~^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/japanese.py\", line 161, in script_to_paths\n    return super().script_to_paths(script)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/dictionary.py\", line 92, in script_to_paths\n    raise KeyError(\n        f\"Script token {script!r} not found in script-to-phoneme dict.\"\n    )\nKeyError: \"Script token '隱' not found in script-to-phoneme dict.\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"scripts/comparison/run_timing.py\", line 24, in <module>\n    if a.condition=='auto':pipeline.run(stem,text,work,language='mixed',audio_mode='source',aligner='tifa',trust_line_timestamps=False)\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/pipeline.py\", line 59, in run\n    route(plan.lines, tracks, out_dir, report, log, syllables=plan.syllables, direct_config=config)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/alignment.py\", line 63, in align_tifa\n    return align_text_tifa(lines, tracks, out_dir, report, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/alignment.py\", line 206, in align_text_tifa\n    fragments, windows, owners, localization = locate(tracks.working, tracks.rate, mains,\n                                               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                                     engine, out_dir, log)\n                                                     ^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 130, in locate\n    located, rows = align_transcript(lines, probs, engine.vocab, engine.model.config.pad_token_id,\n                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                     info['frame_ms']/1000, len(samples)/rate)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 29, in align_transcript\n    text_units(line.text, False, language=line.language))\n    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/ctc.py\", line 116, in text_units\n    parts, pronunciation = japanese_acoustic_parts(word, True, manual)\n                           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/singing.py\", line 291, in japanese_acoustic_parts\n    lengths = [len(kana_phones(reading)) for _, reading in parts]\n                   ~~~~~~~~~~~^^^^^^^^^\n  File \".deps/comparison/timing/timing/singing.py\", line 155, in kana_phones\n    raise ValueError(f\"无法转换日语读音：{reading}\") from exc\nValueError: 无法转换日语读音：隱\n"
-  },
-  {
-    "group": "G3",
-    "song": "s05",
     "route": "sug-nextfire",
-    "status": "error",
+    "status": "ok",
     "path": "results/comparison/sug/s05-sug-nextfire-auto.json",
-    "error": "Traceback (most recent call last):\n  File \"scripts/comparison/run_sug.py\", line 41, in <module>\n    if not plan.is_complete:raise ValueError('Unresolved readings: '+repr([(u.char_text,u.location) for u in plan.pending_units]))\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unresolved readings: [('隱', (19, 5, 0))]\n"
+    "error": null
   },
   {
     "group": "G3",
     "song": "s05",
     "route": "sug-mms-fa",
-    "status": "error",
+    "status": "ok",
     "path": "results/comparison/sug/s05-sug-mms-fa-auto.json",
-    "error": "Traceback (most recent call last):\n  File \"scripts/comparison/run_sug.py\", line 41, in <module>\n    if not plan.is_complete:raise ValueError('Unresolved readings: '+repr([(u.char_text,u.location) for u in plan.pending_units]))\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Unresolved readings: [('隱', (19, 5, 0))]\n"
+    "error": null
   },
   {
     "group": "G1",
@@ -1205,14 +1157,6 @@
     "route": "milikara",
     "status": "ok",
     "path": "results/comparison/milikara/runs/s06-milikara-auto.json",
-    "error": null
-  },
-  {
-    "group": "G3",
-    "song": "s06",
-    "route": "timing",
-    "status": "ok",
-    "path": "results/comparison/timing/s06-bs-auto.json",
     "error": null
   },
   {
@@ -1386,14 +1330,6 @@
   {
     "group": "G3",
     "song": "s07",
-    "route": "timing",
-    "status": "error",
-    "path": "results/comparison/timing/s07-bs-auto.json",
-    "error": "Traceback (most recent call last):\n  File \"scripts/comparison/run_timing.py\", line 24, in <module>\n    if a.condition=='auto':pipeline.run(stem,text,work,language='mixed',audio_mode='source',aligner='tifa',trust_line_timestamps=False)\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/pipeline.py\", line 59, in run\n    route(plan.lines, tracks, out_dir, report, log, syllables=plan.syllables, direct_config=config)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/alignment.py\", line 63, in align_tifa\n    return align_text_tifa(lines, tracks, out_dir, report, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/alignment.py\", line 206, in align_text_tifa\n    fragments, windows, owners, localization = locate(tracks.working, tracks.rate, mains,\n                                               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                                     engine, out_dir, log)\n                                                     ^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 132, in locate\n    fragments, windows, owners = split_windows(located, len(samples)/rate)\n                                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 106, in split_windows\n    raise ValueError(f'第 {source_index+1} 行有无法安全分段的过长单元，请提供逐句时间。')\nValueError: 第 1 行有无法安全分段的过长单元，请提供逐句时间。\n"
-  },
-  {
-    "group": "G3",
-    "song": "s07",
     "route": "sug-nextfire",
     "status": "ok",
     "path": "results/comparison/sug/s07-sug-nextfire-auto.json",
@@ -1557,14 +1493,6 @@
     "route": "milikara",
     "status": "ok",
     "path": "results/comparison/milikara/runs/s08-milikara-auto.json",
-    "error": null
-  },
-  {
-    "group": "G3",
-    "song": "s08",
-    "route": "timing",
-    "status": "ok",
-    "path": "results/comparison/timing/s08-bs-auto.json",
     "error": null
   },
   {
@@ -1738,14 +1666,6 @@
   {
     "group": "G3",
     "song": "s09",
-    "route": "timing",
-    "status": "error",
-    "path": "results/comparison/timing/s09-bs-auto.json",
-    "error": "Traceback (most recent call last):\n  File \".deps/comparison/timing/timing/singing.py\", line 152, in kana_phones\n    groups = [group for word in kana_converter().convert(mora)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/base.py\", line 61, in convert\n    return normalize_words(self._convert(text))\n                           ~~~~~~~~~~~~~^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/paradigm.py\", line 103, in _convert\n    for path in self.script_to_paths(s):\n                ~~~~~~~~~~~~~~~~~~~~^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/japanese.py\", line 161, in script_to_paths\n    return super().script_to_paths(script)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \".deps/comparison/timing/models/tifa/deps/g2pflow/converters/dictionary.py\", line 92, in script_to_paths\n    raise KeyError(\n        f\"Script token {script!r} not found in script-to-phoneme dict.\"\n    )\nKeyError: \"Script token '*' not found in script-to-phoneme dict.\"\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"scripts/comparison/run_timing.py\", line 24, in <module>\n    if a.condition=='auto':pipeline.run(stem,text,work,language='mixed',audio_mode='source',aligner='tifa',trust_line_timestamps=False)\n                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/pipeline.py\", line 59, in run\n    route(plan.lines, tracks, out_dir, report, log, syllables=plan.syllables, direct_config=config)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/alignment.py\", line 63, in align_tifa\n    return align_text_tifa(lines, tracks, out_dir, report, log, syllables=syllables)\n  File \".deps/comparison/timing/timing/alignment.py\", line 206, in align_text_tifa\n    fragments, windows, owners, localization = locate(tracks.working, tracks.rate, mains,\n                                               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                                     engine, out_dir, log)\n                                                     ^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 130, in locate\n    located, rows = align_transcript(lines, probs, engine.vocab, engine.model.config.pad_token_id,\n                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                                     info['frame_ms']/1000, len(samples)/rate)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/text_localization.py\", line 29, in align_transcript\n    text_units(line.text, False, language=line.language))\n    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/ctc.py\", line 116, in text_units\n    parts, pronunciation = japanese_acoustic_parts(word, True, manual)\n                           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \".deps/comparison/timing/timing/singing.py\", line 291, in japanese_acoustic_parts\n    lengths = [len(kana_phones(reading)) for _, reading in parts]\n                   ~~~~~~~~~~~^^^^^^^^^\n  File \".deps/comparison/timing/timing/singing.py\", line 155, in kana_phones\n    raise ValueError(f\"无法转换日语读音：{reading}\") from exc\nValueError: 无法转换日语读音：*\n"
-  },
-  {
-    "group": "G3",
-    "song": "s09",
     "route": "sug-nextfire",
     "status": "ok",
     "path": "results/comparison/sug/s09-sug-nextfire-auto.json",
@@ -1914,14 +1834,6 @@
   {
     "group": "G3",
     "song": "s10",
-    "route": "timing",
-    "status": "ok",
-    "path": "results/comparison/timing/s10-bs-auto.json",
-    "error": null
-  },
-  {
-    "group": "G3",
-    "song": "s10",
     "route": "sug-nextfire",
     "status": "ok",
     "path": "results/comparison/sug/s10-sug-nextfire-auto.json",
@@ -2085,14 +1997,6 @@
     "route": "milikara",
     "status": "ok",
     "path": "results/comparison/milikara/runs/s12-milikara-auto.json",
-    "error": null
-  },
-  {
-    "group": "G3",
-    "song": "s12",
-    "route": "timing",
-    "status": "ok",
-    "path": "results/comparison/timing/s12-bs-auto.json",
     "error": null
   },
   {

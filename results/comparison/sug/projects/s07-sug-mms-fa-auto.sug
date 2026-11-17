@@ -6,8 +6,8 @@
     "artist": "",
     "album": "",
     "language": "ja",
-    "created_at": "2026-11-14T08:28:02.068032",
-    "updated_at": "2026-11-14T08:28:02.068048",
+    "created_at": "2026-11-17T00:23:11.013410",
+    "updated_at": "2026-11-17T00:23:11.013424",
     "extra": {}
   },
   "audio_duration_ms": 253931,
@@ -34,9 +34,10 @@
       "characters": [
         {
           "char": "運",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            7925
+            7925,
+            10567
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -46,13 +47,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "う",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 2642
+              }
+            ]
+          }
         },
         {
           "char": "命",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            33803
+            33803,
+            34403
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -62,7 +76,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "め",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 600
+              }
+            ]
+          }
         },
         {
           "char": "は",
@@ -82,9 +108,10 @@
         },
         {
           "char": "残",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            34863
+            34863,
+            35144
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -94,13 +121,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ざ",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 281
+              }
+            ]
+          }
         },
         {
           "char": "酷",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            35224
+            35224,
+            35744
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -110,7 +150,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "こ",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 520
+              }
+            ]
+          }
         },
         {
           "char": "に",
@@ -148,7 +200,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "あ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "け",
@@ -200,9 +260,10 @@
         },
         {
           "char": "夜",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            38026
+            38026,
+            38546
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -212,7 +273,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "よ",
+                "offset_ms": 0
+              },
+              {
+                "text": "る",
+                "offset_ms": 520
+              }
+            ]
+          }
         },
         {
           "char": "に",
@@ -250,7 +323,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "けっ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "し",
@@ -286,9 +367,10 @@
         },
         {
           "char": "夢",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            40847
+            40847,
+            41188
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -298,7 +380,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ゆ",
+                "offset_ms": 0
+              },
+              {
+                "text": "め",
+                "offset_ms": 341
+              }
+            ]
+          }
         },
         {
           "char": "は",
@@ -318,9 +412,10 @@
         },
         {
           "char": "曇",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            42188
+            42188,
+            42589
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -330,7 +425,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "く",
+                "offset_ms": 0
+              },
+              {
+                "text": "も",
+                "offset_ms": 401
+              }
+            ]
+          }
         },
         {
           "char": "ら",
@@ -388,9 +495,10 @@
       "characters": [
         {
           "char": "救",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            44650
+            44650,
+            44990
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -400,7 +508,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "す",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 340
+              }
+            ]
+          }
         },
         {
           "char": "い",
@@ -436,9 +556,10 @@
         },
         {
           "char": "正",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            46031
+            46031,
+            46511
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -448,7 +569,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "せ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 480
+              }
+            ]
+          }
         },
         {
           "char": "義",
@@ -464,7 +597,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぎ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "に",
@@ -490,9 +631,10 @@
       "characters": [
         {
           "char": "悲",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            47632
+            47632,
+            47792
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -502,7 +644,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              },
+              {
+                "text": "な",
+                "offset_ms": 160
+              }
+            ]
+          }
         },
         {
           "char": "し",
@@ -550,7 +704,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "た",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ち",
@@ -582,7 +744,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "き",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "り",
@@ -620,7 +790,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ま",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "け",
@@ -704,9 +882,11 @@
         },
         {
           "char": "戦",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            51815
+            51815,
+            52195,
+            52355
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -716,7 +896,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "た",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 380
+              },
+              {
+                "text": "か",
+                "offset_ms": 540
+              }
+            ]
+          }
         },
         {
           "char": "い",
@@ -758,9 +954,11 @@
       "characters": [
         {
           "char": "証",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            52956
+            52956,
+            53896,
+            54056
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -770,7 +968,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "あ",
+                "offset_ms": 0
+              },
+              {
+                "text": "か",
+                "offset_ms": 940
+              },
+              {
+                "text": "し",
+                "offset_ms": 1100
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -860,9 +1074,11 @@
       "characters": [
         {
           "char": "心",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            57939
+            57939,
+            58259,
+            58639
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -872,7 +1088,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "こ",
+                "offset_ms": 0
+              },
+              {
+                "text": "こ",
+                "offset_ms": 320
+              },
+              {
+                "text": "ろ",
+                "offset_ms": 700
+              }
+            ]
+          }
         },
         {
           "char": "と",
@@ -898,9 +1130,11 @@
       "characters": [
         {
           "char": "心",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            60841
+            60841,
+            61021,
+            61401
           ],
           "sentence_end_ts": 61501,
           "linked_to_next": false,
@@ -910,7 +1144,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "こ",
+                "offset_ms": 0
+              },
+              {
+                "text": "こ",
+                "offset_ms": 180
+              },
+              {
+                "text": "ろ",
+                "offset_ms": 560
+              }
+            ]
+          }
         }
       ]
     },
@@ -920,25 +1170,39 @@
       "characters": [
         {
           "char": "純",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            61922
+            61922,
+            62162
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "じゅ",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 240
+              }
+            ]
+          }
         },
         {
           "char": "白",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            62242
+            62242,
+            62662
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -948,7 +1212,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぱ",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 420
+              }
+            ]
+          }
         },
         {
           "char": "が",
@@ -968,9 +1244,11 @@
         },
         {
           "char": "導",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            63323
+            63323,
+            63483,
+            63663
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -980,7 +1258,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "み",
+                "offset_ms": 0
+              },
+              {
+                "text": "ち",
+                "offset_ms": 160
+              },
+              {
+                "text": "び",
+                "offset_ms": 340
+              }
+            ]
+          }
         },
         {
           "char": "く",
@@ -1011,19 +1305,28 @@
             64884
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぶ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "台",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            65244,
             65484
           ],
           "sentence_end_ts": null,
@@ -1034,7 +1337,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "た",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 240
+              }
+            ]
+          }
         },
         {
           "char": "は",
@@ -1054,9 +1369,10 @@
         },
         {
           "char": "幕",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            65904
+            65904,
+            66445
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1066,7 +1382,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ま",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 541
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -1098,7 +1426,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "あ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "け",
@@ -1142,26 +1478,32 @@
           "char": "R",
           "check_count": 1,
           "timestamps": [
-            68586
+            67866
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ライド",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "i",
-          "check_count": 1,
-          "timestamps": [
-            68786
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -1172,12 +1514,10 @@
         },
         {
           "char": "d",
-          "check_count": 1,
-          "timestamps": [
-            70347
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -1188,14 +1528,12 @@
         },
         {
           "char": "e",
-          "check_count": 1,
-          "timestamps": [
-            70527
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 70007,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -1204,10 +1542,8 @@
         },
         {
           "char": " ",
-          "check_count": 1,
-          "timestamps": [
-            70547
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
           "linked_to_next": false,
           "is_line_end": false,
@@ -1222,25 +1558,31 @@
           "char": "o",
           "check_count": 1,
           "timestamps": [
-            70728
+            68786
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "オン",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "n",
-          "check_count": 1,
-          "timestamps": [
-            70748
-          ],
-          "sentence_end_ts": 70748,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 70007,
           "linked_to_next": false,
           "is_line_end": true,
           "is_sentence_end": true,
@@ -1260,26 +1602,32 @@
           "char": "S",
           "check_count": 1,
           "timestamps": [
-            70808
+            70948
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "スタンド",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "t",
-          "check_count": 1,
-          "timestamps": [
-            70988
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -1290,12 +1638,10 @@
         },
         {
           "char": "a",
-          "check_count": 1,
-          "timestamps": [
-            71168
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -1306,12 +1652,10 @@
         },
         {
           "char": "n",
-          "check_count": 1,
-          "timestamps": [
-            71188
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -1322,14 +1666,12 @@
         },
         {
           "char": "d",
-          "check_count": 1,
-          "timestamps": [
-            71348
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 71608,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -1338,10 +1680,8 @@
         },
         {
           "char": " ",
-          "check_count": 1,
-          "timestamps": [
-            71428
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
           "linked_to_next": false,
           "is_line_end": false,
@@ -1356,28 +1696,34 @@
           "char": "u",
           "check_count": 1,
           "timestamps": [
-            71528
+            71368
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "アップ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "p",
-          "check_count": 1,
-          "timestamps": [
-            71568
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 71608,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -1386,10 +1732,8 @@
         },
         {
           "char": "!",
-          "check_count": 1,
-          "timestamps": [
-            71608
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": 71608,
           "linked_to_next": false,
           "is_line_end": true,
@@ -1408,9 +1752,10 @@
       "characters": [
         {
           "char": "例",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            71648
+            71648,
+            71868
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1420,7 +1765,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "た",
+                "offset_ms": 0
+              },
+              {
+                "text": "と",
+                "offset_ms": 220
+              }
+            ]
+          }
         },
         {
           "char": "え",
@@ -1440,9 +1797,10 @@
         },
         {
           "char": "僅",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            72229
+            72229,
+            72409
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1452,7 +1810,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "わ",
+                "offset_ms": 0
+              },
+              {
+                "text": "ず",
+                "offset_ms": 180
+              }
+            ]
+          }
         },
         {
           "char": "か",
@@ -1488,9 +1858,11 @@
         },
         {
           "char": "光",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            72969
+            72969,
+            73069,
+            73269
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1500,7 +1872,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ひ",
+                "offset_ms": 0
+              },
+              {
+                "text": "か",
+                "offset_ms": 100
+              },
+              {
+                "text": "り",
+                "offset_ms": 300
+              }
+            ]
+          }
         },
         {
           "char": "で",
@@ -1542,9 +1930,10 @@
       "characters": [
         {
           "char": "最",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            74290
+            74290,
+            74590
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1554,7 +1943,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "さ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 300
+              }
+            ]
+          }
         },
         {
           "char": "後",
@@ -1570,7 +1971,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ご",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "の",
@@ -1590,9 +1999,10 @@
         },
         {
           "char": "最",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            75171
+            75171,
+            75431
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1602,7 +2012,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "さ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 260
+              }
+            ]
+          }
         },
         {
           "char": "後",
@@ -1618,7 +2040,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ご",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ま",
@@ -1672,7 +2102,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "て",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -1704,7 +2142,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "の",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ば",
@@ -1740,9 +2186,10 @@
         },
         {
           "char": "続",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            78473
+            78473,
+            79013
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1752,7 +2199,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "つ",
+                "offset_ms": 0
+              },
+              {
+                "text": "づ",
+                "offset_ms": 540
+              }
+            ]
+          }
         },
         {
           "char": "け",
@@ -1778,9 +2237,11 @@
       "characters": [
         {
           "char": "諦",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            79954
+            79954,
+            80054,
+            80254
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1790,7 +2251,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "あ",
+                "offset_ms": 0
+              },
+              {
+                "text": "き",
+                "offset_ms": 100
+              },
+              {
+                "text": "ら",
+                "offset_ms": 300
+              }
+            ]
+          }
         },
         {
           "char": "め",
@@ -1858,9 +2335,10 @@
         },
         {
           "char": "歌",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            81355
+            81355,
+            81455
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -1870,7 +2348,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "う",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 100
+              }
+            ]
+          }
         },
         {
           "char": "う",
@@ -1940,12 +2430,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "き",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "跡",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            83016,
             83216
           ],
           "sentence_end_ts": null,
@@ -1956,7 +2455,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "せ",
+                "offset_ms": 0
+              },
+              {
+                "text": "き",
+                "offset_ms": 200
+              }
+            ]
+          }
         },
         {
           "char": "は",
@@ -1988,7 +2499,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ま",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "い",
@@ -2020,7 +2539,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "お",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "り",
@@ -2094,9 +2621,11 @@
       "characters": [
         {
           "char": "私",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            85497
+            85497,
+            85678,
+            85818
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2106,7 +2635,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "わ",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 181
+              },
+              {
+                "text": "し",
+                "offset_ms": 321
+              }
+            ]
+          }
         },
         {
           "char": "た",
@@ -2158,9 +2703,10 @@
         },
         {
           "char": "前",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            86698
+            86698,
+            87119
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2170,7 +2716,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ま",
+                "offset_ms": 0
+              },
+              {
+                "text": "え",
+                "offset_ms": 421
+              }
+            ]
+          }
         },
         {
           "char": "に",
@@ -2196,9 +2754,10 @@
       "characters": [
         {
           "char": "決",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            88119
+            88119,
+            88259
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2208,7 +2767,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "け",
+                "offset_ms": 0
+              },
+              {
+                "text": "つ",
+                "offset_ms": 140
+              }
+            ]
+          }
         },
         {
           "char": "意",
@@ -2224,7 +2795,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "い",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "と",
@@ -2244,9 +2823,10 @@
         },
         {
           "char": "覚",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            89500
+            89500,
+            89660
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2256,7 +2836,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 160
+              }
+            ]
+          }
         },
         {
           "char": "悟",
@@ -2272,7 +2864,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ご",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "の",
@@ -2292,9 +2892,10 @@
         },
         {
           "char": "両",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            109354
+            109354,
+            109434
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2304,13 +2905,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "りょ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 80
+              }
+            ]
+          }
         },
         {
           "char": "翼",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            109454
+            109454,
+            109574
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2320,7 +2934,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "よ",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 120
+              }
+            ]
+          }
         },
         {
           "char": "で",
@@ -2346,9 +2972,10 @@
       "characters": [
         {
           "char": "望",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            109834
+            109834,
+            109874
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2358,7 +2985,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "の",
+                "offset_ms": 0
+              },
+              {
+                "text": "ぞ",
+                "offset_ms": 40
+              }
+            ]
+          }
         },
         {
           "char": "む",
@@ -2390,12 +3029,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "み",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "来",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            110594,
             111035
           ],
           "sentence_end_ts": null,
@@ -2406,7 +3054,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ら",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 441
+              }
+            ]
+          }
         },
         {
           "char": "ま",
@@ -2460,7 +3120,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "は",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ば",
@@ -2534,9 +3202,10 @@
       "characters": [
         {
           "char": "勝",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            111975
+            111975,
+            112255
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2546,7 +3215,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "しょ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 280
+              }
+            ]
+          }
         },
         {
           "char": "利",
@@ -2562,7 +3243,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "り",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -2680,13 +3369,22 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ふ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "平",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            113216
+            113216,
+            113316
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2696,13 +3394,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "びょ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 100
+              }
+            ]
+          }
         },
         {
           "char": "等",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            113396
+            113396,
+            113736
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2712,7 +3423,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ど",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 340
+              }
+            ]
+          }
         },
         {
           "char": "な",
@@ -2744,12 +3467,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "せ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "界",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            114097,
             114337
           ],
           "sentence_end_ts": 114357,
@@ -2760,7 +3492,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 240
+              }
+            ]
+          }
         }
       ]
     },
@@ -2782,7 +3526,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ゆ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ら",
@@ -2818,9 +3570,10 @@
         },
         {
           "char": "灯",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            114857
+            114857,
+            114997
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -2830,7 +3583,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "あ",
+                "offset_ms": 0
+              },
+              {
+                "text": "か",
+                "offset_ms": 140
+              }
+            ]
+          }
         },
         {
           "char": "り",
@@ -2968,19 +3733,32 @@
         },
         {
           "char": "精",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            118960
+            118960,
+            119420
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "せ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 460
+              }
+            ]
+          }
         },
         {
           "char": "一",
@@ -2989,19 +3767,28 @@
             119680
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "いっ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "杯",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            120021,
             120461
           ],
           "sentence_end_ts": null,
@@ -3012,7 +3799,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぱ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 440
+              }
+            ]
+          }
         },
         {
           "char": "に",
@@ -3038,9 +3837,10 @@
       "characters": [
         {
           "char": "枝",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            121482
+            121482,
+            121762
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3050,7 +3850,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "え",
+                "offset_ms": 0
+              },
+              {
+                "text": "だ",
+                "offset_ms": 280
+              }
+            ]
+          }
         },
         {
           "char": "葉",
@@ -3066,7 +3878,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "は",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -3086,9 +3906,10 @@
         },
         {
           "char": "渡",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            123143
+            123143,
+            123663
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3098,7 +3919,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "わ",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 520
+              }
+            ]
+          }
         },
         {
           "char": "る",
@@ -3124,9 +3957,10 @@
       "characters": [
         {
           "char": "幾",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            124404
+            124404,
+            124524
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3136,7 +3970,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "い",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 120
+              }
+            ]
+          }
         },
         {
           "char": "つ",
@@ -3188,9 +4034,10 @@
         },
         {
           "char": "祈",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            125845
+            125845,
+            125945
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3200,7 +4047,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "い",
+                "offset_ms": 0
+              },
+              {
+                "text": "の",
+                "offset_ms": 100
+              }
+            ]
+          }
         },
         {
           "char": "り",
@@ -3254,12 +4113,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "せ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "中",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            127506,
             127686
           ],
           "sentence_end_ts": null,
@@ -3270,7 +4138,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "な",
+                "offset_ms": 0
+              },
+              {
+                "text": "か",
+                "offset_ms": 180
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -3290,9 +4170,10 @@
         },
         {
           "char": "優",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            128046
+            128046,
+            128206
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3302,7 +4183,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "や",
+                "offset_ms": 0
+              },
+              {
+                "text": "さ",
+                "offset_ms": 160
+              }
+            ]
+          }
         },
         {
           "char": "し",
@@ -3350,7 +4243,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "お",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "し",
@@ -3472,9 +4373,10 @@
         },
         {
           "char": "思",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            131949
+            131949,
+            132049
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3484,7 +4386,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "お",
+                "offset_ms": 0
+              },
+              {
+                "text": "も",
+                "offset_ms": 100
+              }
+            ]
+          }
         },
         {
           "char": "い",
@@ -3510,9 +4424,12 @@
       "characters": [
         {
           "char": "私",
-          "check_count": 1,
+          "check_count": 4,
           "timestamps": [
-            134671
+            134671,
+            135011,
+            135191,
+            135351
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3522,7 +4439,27 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "わ",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 340
+              },
+              {
+                "text": "く",
+                "offset_ms": 520
+              },
+              {
+                "text": "し",
+                "offset_ms": 680
+              }
+            ]
+          }
         },
         {
           "char": "と",
@@ -3548,9 +4485,12 @@
       "characters": [
         {
           "char": "私",
-          "check_count": 1,
+          "check_count": 4,
           "timestamps": [
-            136051
+            136051,
+            136592,
+            137773,
+            138153
           ],
           "sentence_end_ts": 138253,
           "linked_to_next": false,
@@ -3560,7 +4500,27 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "わ",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 541
+              },
+              {
+                "text": "く",
+                "offset_ms": 1722
+              },
+              {
+                "text": "し",
+                "offset_ms": 2102
+              }
+            ]
+          }
         }
       ]
     },
@@ -3646,12 +4606,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "き",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "望",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            140254,
             140514
           ],
           "sentence_end_ts": null,
@@ -3662,7 +4631,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぼ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 260
+              }
+            ]
+          }
         },
         {
           "char": "が",
@@ -3690,7 +4671,7 @@
           "char": "打",
           "check_count": 1,
           "timestamps": [
-            141755
+            141135
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3700,13 +4681,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "う",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ち",
           "check_count": 1,
           "timestamps": [
-            141975
+            141175
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3720,9 +4709,10 @@
         },
         {
           "char": "砕",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            142316
+            141375,
+            141475
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3732,13 +4722,25 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "く",
+                "offset_ms": 0
+              },
+              {
+                "text": "だ",
+                "offset_ms": 100
+              }
+            ]
+          }
         },
         {
           "char": "か",
           "check_count": 1,
           "timestamps": [
-            143156
+            141655
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3754,7 +4756,7 @@
           "char": "れ",
           "check_count": 1,
           "timestamps": [
-            143376
+            141695
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3770,7 +4772,7 @@
           "char": "て",
           "check_count": 1,
           "timestamps": [
-            143897
+            141775
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -3786,9 +4788,9 @@
           "char": "も",
           "check_count": 1,
           "timestamps": [
-            144057
+            141815
           ],
-          "sentence_end_ts": 144157,
+          "sentence_end_ts": 141855,
           "linked_to_next": false,
           "is_line_end": true,
           "is_sentence_end": true,
@@ -3808,10 +4810,32 @@
           "char": "A",
           "check_count": 1,
           "timestamps": [
-            144417
+            141955
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
+          "is_line_end": false,
+          "is_sentence_end": false,
+          "is_rest": false,
+          "singer_id": "s1",
+          "needs_guide": false,
+          "is_guide": false,
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "アタック",
+                "offset_ms": 0
+              }
+            ]
+          }
+        },
+        {
+          "char": "t",
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": null,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -3824,26 +4848,10 @@
           "char": "t",
           "check_count": 1,
           "timestamps": [
-            144597
+            142576
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
-          "is_line_end": false,
-          "is_sentence_end": false,
-          "is_rest": false,
-          "singer_id": "s1",
-          "needs_guide": false,
-          "is_guide": false,
-          "force_singer_tag": false
-        },
-        {
-          "char": "t",
-          "check_count": 1,
-          "timestamps": [
-            144657
-          ],
-          "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -3854,12 +4862,10 @@
         },
         {
           "char": "a",
-          "check_count": 1,
-          "timestamps": [
-            144717
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -3870,12 +4876,10 @@
         },
         {
           "char": "c",
-          "check_count": 1,
-          "timestamps": [
-            144757
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -3886,11 +4890,9 @@
         },
         {
           "char": "k",
-          "check_count": 1,
-          "timestamps": [
-            144857
-          ],
-          "sentence_end_ts": 144957,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 143176,
           "linked_to_next": false,
           "is_line_end": true,
           "is_sentence_end": true,
@@ -3910,26 +4912,32 @@
           "char": "S",
           "check_count": 1,
           "timestamps": [
-            145058
+            143376
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "スタンド",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "t",
-          "check_count": 1,
-          "timestamps": [
-            147119
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -3940,12 +4948,10 @@
         },
         {
           "char": "a",
-          "check_count": 1,
-          "timestamps": [
-            147159
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -3956,12 +4962,10 @@
         },
         {
           "char": "n",
-          "check_count": 1,
-          "timestamps": [
-            147199
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -3972,14 +4976,12 @@
         },
         {
           "char": "d",
-          "check_count": 1,
-          "timestamps": [
-            147259
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 146959,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -3988,10 +4990,8 @@
         },
         {
           "char": " ",
-          "check_count": 1,
-          "timestamps": [
-            147319
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
           "linked_to_next": false,
           "is_line_end": false,
@@ -4006,28 +5006,34 @@
           "char": "u",
           "check_count": 1,
           "timestamps": [
-            147319
+            145798
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "アップ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "p",
-          "check_count": 1,
-          "timestamps": [
-            147359
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 146959,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -4036,11 +5042,9 @@
         },
         {
           "char": "!",
-          "check_count": 1,
-          "timestamps": [
-            147399
-          ],
-          "sentence_end_ts": 147399,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 146959,
           "linked_to_next": false,
           "is_line_end": true,
           "is_sentence_end": true,
@@ -4058,9 +5062,10 @@
       "characters": [
         {
           "char": "譲",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            147399
+            147319,
+            147359
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4070,13 +5075,25 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ゆ",
+                "offset_ms": 0
+              },
+              {
+                "text": "ず",
+                "offset_ms": 40
+              }
+            ]
+          }
         },
         {
           "char": "れ",
           "check_count": 1,
           "timestamps": [
-            147559
+            147459
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4122,9 +5139,10 @@
         },
         {
           "char": "願",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            149320
+            149320,
+            149500
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4134,7 +5152,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ね",
+                "offset_ms": 0
+              },
+              {
+                "text": "が",
+                "offset_ms": 180
+              }
+            ]
+          }
         },
         {
           "char": "い",
@@ -4170,9 +5200,10 @@
         },
         {
           "char": "掲",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            150021
+            150021,
+            150161
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4182,7 +5213,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              },
+              {
+                "text": "か",
+                "offset_ms": 140
+              }
+            ]
+          }
         },
         {
           "char": "げ",
@@ -4208,9 +5251,11 @@
       "characters": [
         {
           "char": "輝",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            151022
+            151022,
+            151222,
+            151382
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4220,7 +5265,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              },
+              {
+                "text": "が",
+                "offset_ms": 200
+              },
+              {
+                "text": "や",
+                "offset_ms": 360
+              }
+            ]
+          }
         },
         {
           "char": "き",
@@ -4288,9 +5349,10 @@
         },
         {
           "char": "強",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            152543
+            152543,
+            152783
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4300,7 +5362,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "つ",
+                "offset_ms": 0
+              },
+              {
+                "text": "よ",
+                "offset_ms": 240
+              }
+            ]
+          }
         },
         {
           "char": "く",
@@ -4326,9 +5400,10 @@
       "characters": [
         {
           "char": "天",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            153683
+            153683,
+            153803
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4338,7 +5413,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "て",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 120
+              }
+            ]
+          }
         },
         {
           "char": "よ",
@@ -4386,7 +5473,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "お",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "り",
@@ -4418,7 +5513,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "た",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "つ",
@@ -4444,9 +5547,10 @@
       "characters": [
         {
           "char": "運",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            156705
+            156705,
+            156885
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4456,13 +5560,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "う",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 180
+              }
+            ]
+          }
         },
         {
           "char": "命",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            156966
+            156966,
+            157226
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4472,7 +5589,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "め",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 260
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -4504,7 +5633,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "え",
@@ -4606,7 +5743,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "お",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "わ",
@@ -4690,9 +5835,11 @@
         },
         {
           "char": "私",
-          "check_count": 1,
+          "check_count": 3,
           "timestamps": [
-            160648
+            160648,
+            160988,
+            161148
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4702,7 +5849,23 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "わ",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 340
+              },
+              {
+                "text": "し",
+                "offset_ms": 500
+              }
+            ]
+          }
         },
         {
           "char": "自",
@@ -4718,12 +5881,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "じ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "身",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            161509,
             161709
           ],
           "sentence_end_ts": 161729,
@@ -4734,7 +5906,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "し",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 200
+              }
+            ]
+          }
         }
       ]
     },
@@ -4744,9 +5928,10 @@
       "characters": [
         {
           "char": "先",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            162209
+            162209,
+            162449
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4756,13 +5941,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "せ",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 240
+              }
+            ]
+          }
         },
         {
           "char": "導",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            162569
+            162569,
+            162889
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -4772,7 +5970,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ど",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 320
+              }
+            ]
+          }
         },
         {
           "char": "者",
@@ -4788,7 +5998,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "しゃ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "は",
@@ -4820,7 +6038,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "け",
@@ -4874,7 +6100,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ふ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "り",
@@ -4954,7 +6188,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "い",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "思",
@@ -4970,7 +6212,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "し",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "と",
@@ -5008,12 +6258,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "しっ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "敗",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            168173,
             168373
           ],
           "sentence_end_ts": null,
@@ -5024,7 +6283,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぱ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 200
+              }
+            ]
+          }
         },
         {
           "char": "を",
@@ -5044,9 +6315,10 @@
         },
         {
           "char": "恐",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            169094
+            169094,
+            169334
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5056,7 +6328,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "お",
+                "offset_ms": 0
+              },
+              {
+                "text": "そ",
+                "offset_ms": 240
+              }
+            ]
+          }
         },
         {
           "char": "れ",
@@ -5108,9 +6392,10 @@
         },
         {
           "char": "勇",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            170254
+            170254,
+            170334
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5120,7 +6405,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ゆ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 80
+              }
+            ]
+          }
         },
         {
           "char": "気",
@@ -5136,7 +6433,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "き",
+                "offset_ms": 0
+              }
+            ]
+          }
         }
       ]
     },
@@ -5146,9 +6451,10 @@
       "characters": [
         {
           "char": "永",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            173417
+            173417,
+            173597
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5158,13 +6464,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "え",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 180
+              }
+            ]
+          }
         },
         {
           "char": "遠",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            173777
+            173777,
+            174017
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5174,7 +6493,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "え",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 240
+              }
+            ]
+          }
         },
         {
           "char": "に",
@@ -5194,9 +6525,10 @@
         },
         {
           "char": "色",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            174858
+            174858,
+            174958
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5206,7 +6538,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "い",
+                "offset_ms": 0
+              },
+              {
+                "text": "ろ",
+                "offset_ms": 100
+              }
+            ]
+          }
         },
         {
           "char": "褪",
@@ -5222,7 +6566,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "あ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "せ",
@@ -5428,10 +6780,10 @@
           "timestamps": [
             191168
           ],
-          "sentence_end_ts": null,
+          "sentence_end_ts": 191269,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -5440,10 +6792,8 @@
         },
         {
           "char": " ",
-          "check_count": 1,
-          "timestamps": [
-            191269
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
           "linked_to_next": false,
           "is_line_end": false,
@@ -5456,9 +6806,10 @@
         },
         {
           "char": "全",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            191489
+            191489,
+            192089
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5468,7 +6819,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぜ",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 600
+              }
+            ]
+          }
         },
         {
           "char": "部",
@@ -5484,7 +6847,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぶ",
+                "offset_ms": 0
+              }
+            ]
+          }
         }
       ]
     },
@@ -5580,9 +6951,10 @@
       "characters": [
         {
           "char": "信",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            195672
+            195672,
+            195912
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5592,7 +6964,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "し",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 240
+              }
+            ]
+          }
         },
         {
           "char": "じ",
@@ -5612,9 +6996,10 @@
         },
         {
           "char": "続",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            196552
+            196552,
+            196932
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5624,7 +7009,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "つ",
+                "offset_ms": 0
+              },
+              {
+                "text": "づ",
+                "offset_ms": 380
+              }
+            ]
+          }
         },
         {
           "char": "け",
@@ -5714,9 +7111,10 @@
       "characters": [
         {
           "char": "痛",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            203857
+            203857,
+            207940
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5726,7 +7124,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "い",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 4083
+              }
+            ]
+          }
         },
         {
           "char": "み",
@@ -5762,9 +7172,10 @@
         },
         {
           "char": "分",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            211242
+            211242,
+            211442
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5774,7 +7185,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぶ",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 200
+              }
+            ]
+          }
         },
         {
           "char": "だ",
@@ -5816,9 +7239,10 @@
       "characters": [
         {
           "char": "強",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            212243
+            212243,
+            213143
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -5828,7 +7252,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "つ",
+                "offset_ms": 0
+              },
+              {
+                "text": "よ",
+                "offset_ms": 900
+              }
+            ]
+          }
         },
         {
           "char": "く",
@@ -5936,26 +7372,32 @@
           "char": "T",
           "check_count": 1,
           "timestamps": [
-            215785
+            216626
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ターン",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "u",
-          "check_count": 1,
-          "timestamps": [
-            216606
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -5966,12 +7408,10 @@
         },
         {
           "char": "r",
-          "check_count": 1,
-          "timestamps": [
-            216646
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -5982,14 +7422,12 @@
         },
         {
           "char": "n",
-          "check_count": 1,
-          "timestamps": [
-            216746
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 218267,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -5998,10 +7436,8 @@
         },
         {
           "char": " ",
-          "check_count": 1,
-          "timestamps": [
-            217506
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
           "linked_to_next": false,
           "is_line_end": false,
@@ -6016,25 +7452,31 @@
           "char": "u",
           "check_count": 1,
           "timestamps": [
-            217987
+            217786
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "アップ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "p",
-          "check_count": 1,
-          "timestamps": [
-            218347
-          ],
-          "sentence_end_ts": 218387,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 218267,
           "linked_to_next": false,
           "is_line_end": true,
           "is_sentence_end": true,
@@ -6054,26 +7496,32 @@
           "char": "S",
           "check_count": 1,
           "timestamps": [
-            218467
+            218847
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "スタンド",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "t",
-          "check_count": 1,
-          "timestamps": [
-            218907
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -6084,12 +7532,10 @@
         },
         {
           "char": "a",
-          "check_count": 1,
-          "timestamps": [
-            218987
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -6100,12 +7546,10 @@
         },
         {
           "char": "n",
-          "check_count": 1,
-          "timestamps": [
-            219127
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
@@ -6116,14 +7560,12 @@
         },
         {
           "char": "d",
-          "check_count": 1,
-          "timestamps": [
-            219267
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 219528,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -6132,10 +7574,8 @@
         },
         {
           "char": " ",
-          "check_count": 1,
-          "timestamps": [
-            219307
-          ],
+          "check_count": 0,
+          "timestamps": [],
           "sentence_end_ts": null,
           "linked_to_next": false,
           "is_line_end": false,
@@ -6150,28 +7590,34 @@
           "char": "u",
           "check_count": 1,
           "timestamps": [
-            219307
+            219287
           ],
           "sentence_end_ts": null,
-          "linked_to_next": false,
+          "linked_to_next": true,
           "is_line_end": false,
           "is_sentence_end": false,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "アップ",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "p",
-          "check_count": 1,
-          "timestamps": [
-            219367
-          ],
-          "sentence_end_ts": null,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 219528,
           "linked_to_next": false,
           "is_line_end": false,
-          "is_sentence_end": false,
+          "is_sentence_end": true,
           "is_rest": false,
           "singer_id": "s1",
           "needs_guide": false,
@@ -6180,11 +7626,9 @@
         },
         {
           "char": "!",
-          "check_count": 1,
-          "timestamps": [
-            219407
-          ],
-          "sentence_end_ts": 219407,
+          "check_count": 0,
+          "timestamps": [],
+          "sentence_end_ts": 219528,
           "linked_to_next": false,
           "is_line_end": true,
           "is_sentence_end": true,
@@ -6204,7 +7648,7 @@
           "char": "ど",
           "check_count": 1,
           "timestamps": [
-            219407
+            219588
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6266,9 +7710,10 @@
         },
         {
           "char": "絶",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            220108
+            220108,
+            220248
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6278,13 +7723,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぜ",
+                "offset_ms": 0
+              },
+              {
+                "text": "つ",
+                "offset_ms": 140
+              }
+            ]
+          }
         },
         {
           "char": "望",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            220468
+            220468,
+            220748
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6294,13 +7752,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ぼ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 280
+              }
+            ]
+          }
         },
         {
           "char": "的",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            220989
+            220989,
+            221129
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6310,7 +7781,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "て",
+                "offset_ms": 0
+              },
+              {
+                "text": "き",
+                "offset_ms": 140
+              }
+            ]
+          }
         },
         {
           "char": "で",
@@ -6352,9 +7835,10 @@
       "characters": [
         {
           "char": "最",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            222209
+            222209,
+            222490
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6364,7 +7848,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "さ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 281
+              }
+            ]
+          }
         },
         {
           "char": "後",
@@ -6380,7 +7876,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ご",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "の",
@@ -6400,9 +7904,10 @@
         },
         {
           "char": "最",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            223090
+            223090,
+            223310
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6412,7 +7917,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "さ",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 220
+              }
+            ]
+          }
         },
         {
           "char": "後",
@@ -6428,7 +7945,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ご",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ま",
@@ -6470,9 +7995,10 @@
       "characters": [
         {
           "char": "叶",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            224851
+            224851,
+            225011
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6482,7 +8008,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              },
+              {
+                "text": "な",
+                "offset_ms": 160
+              }
+            ]
+          }
         },
         {
           "char": "え",
@@ -6620,9 +8158,10 @@
         },
         {
           "char": "眩",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            228153
+            228153,
+            228333
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6632,7 +8171,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ま",
+                "offset_ms": 0
+              },
+              {
+                "text": "ぶ",
+                "offset_ms": 180
+              }
+            ]
+          }
         },
         {
           "char": "し",
@@ -6696,7 +8247,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "き",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "え",
@@ -6766,12 +8325,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "き",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "跡",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            230915,
             231115
           ],
           "sentence_end_ts": null,
@@ -6782,7 +8350,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "せ",
+                "offset_ms": 0
+              },
+              {
+                "text": "き",
+                "offset_ms": 200
+              }
+            ]
+          }
         },
         {
           "char": "は",
@@ -6802,9 +8382,12 @@
         },
         {
           "char": "私",
-          "check_count": 1,
+          "check_count": 4,
           "timestamps": [
-            231476
+            231476,
+            231636,
+            231676,
+            231816
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6814,7 +8397,27 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "わ",
+                "offset_ms": 0
+              },
+              {
+                "text": "た",
+                "offset_ms": 160
+              },
+              {
+                "text": "く",
+                "offset_ms": 200
+              },
+              {
+                "text": "し",
+                "offset_ms": 340
+              }
+            ]
+          }
         },
         {
           "char": "の",
@@ -6834,9 +8437,10 @@
         },
         {
           "char": "元",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            232356
+            232356,
+            232516
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6846,7 +8450,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "も",
+                "offset_ms": 0
+              },
+              {
+                "text": "と",
+                "offset_ms": 160
+              }
+            ]
+          }
         },
         {
           "char": "へ",
@@ -6872,9 +8488,10 @@
       "characters": [
         {
           "char": "始",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            233397
+            233397,
+            233577
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6884,7 +8501,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "は",
+                "offset_ms": 0
+              },
+              {
+                "text": "じ",
+                "offset_ms": 180
+              }
+            ]
+          }
         },
         {
           "char": "ま",
@@ -6920,9 +8549,10 @@
         },
         {
           "char": "運",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            234338
+            234338,
+            234538
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6932,13 +8562,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "う",
+                "offset_ms": 0
+              },
+              {
+                "text": "ん",
+                "offset_ms": 200
+              }
+            ]
+          }
         },
         {
           "char": "命",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            234598
+            234598,
+            234978
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6948,7 +8591,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "め",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 380
+              }
+            ]
+          }
         },
         {
           "char": "に",
@@ -6974,9 +8629,10 @@
       "characters": [
         {
           "char": "決",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            235979
+            235979,
+            236119
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -6986,7 +8642,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "け",
+                "offset_ms": 0
+              },
+              {
+                "text": "つ",
+                "offset_ms": 140
+              }
+            ]
+          }
         },
         {
           "char": "意",
@@ -7002,7 +8670,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "い",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "と",
@@ -7022,9 +8698,10 @@
         },
         {
           "char": "覚",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            237420
+            237420,
+            237580
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -7034,7 +8711,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "か",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 160
+              }
+            ]
+          }
         },
         {
           "char": "悟",
@@ -7050,7 +8739,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ご",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "の",
@@ -7070,9 +8767,10 @@
         },
         {
           "char": "両",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            238961
+            238961,
+            239181
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -7082,13 +8780,26 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "りょ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 220
+              }
+            ]
+          }
         },
         {
           "char": "翼",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            239301
+            239301,
+            239501
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -7098,7 +8809,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "よ",
+                "offset_ms": 0
+              },
+              {
+                "text": "く",
+                "offset_ms": 200
+              }
+            ]
+          }
         },
         {
           "char": "で",
@@ -7124,9 +8847,10 @@
       "characters": [
         {
           "char": "望",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            240201
+            240201,
+            240522
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -7136,7 +8860,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "の",
+                "offset_ms": 0
+              },
+              {
+                "text": "ぞ",
+                "offset_ms": 321
+              }
+            ]
+          }
         },
         {
           "char": "む",
@@ -7168,12 +8904,21 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "み",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "来",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
+            241062,
             241282
           ],
           "sentence_end_ts": null,
@@ -7184,7 +8929,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "ら",
+                "offset_ms": 0
+              },
+              {
+                "text": "い",
+                "offset_ms": 220
+              }
+            ]
+          }
         },
         {
           "char": "ま",
@@ -7238,7 +8995,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "は",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "ば",
@@ -7312,9 +9077,10 @@
       "characters": [
         {
           "char": "勝",
-          "check_count": 1,
+          "check_count": 2,
           "timestamps": [
-            245745
+            245745,
+            246185
           ],
           "sentence_end_ts": null,
           "linked_to_next": false,
@@ -7324,7 +9090,19 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "しょ",
+                "offset_ms": 0
+              },
+              {
+                "text": "う",
+                "offset_ms": 440
+              }
+            ]
+          }
         },
         {
           "char": "利",
@@ -7340,7 +9118,15 @@
           "singer_id": "s1",
           "needs_guide": false,
           "is_guide": false,
-          "force_singer_tag": false
+          "force_singer_tag": false,
+          "ruby": {
+            "parts": [
+              {
+                "text": "り",
+                "offset_ms": 0
+              }
+            ]
+          }
         },
         {
           "char": "を",

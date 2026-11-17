@@ -15,6 +15,13 @@
       "sentence_end_count": 39
     },
     {
+      "path": "results/comparison/sug/projects/s01-sug-nextfire-auto.sug",
+      "sha256": "8e6122d30561fd7690fe04973c0e50e6a879442b1fdf468a2544a84f828b5a54",
+      "round_trip_equal": true,
+      "checkpoint_count": 486,
+      "sentence_end_count": 50
+    },
+    {
       "path": "results/comparison/sug/projects/s01-sug-mms-fa-manual.sug",
       "sha256": "8ee476c979ce06c9f26e5d03e12e671464636e4914123b5ce216d8d9a82a6b78",
       "round_trip_equal": true,
@@ -27,6 +34,13 @@
       "round_trip_equal": true,
       "checkpoint_count": 502,
       "sentence_end_count": 39
+    },
+    {
+      "path": "results/comparison/sug/projects/s01-sug-mms-fa-auto.sug",
+      "sha256": "c28dd3870dd49041e28f99d64aaaf0bba801c92fc0302aa971ee5b6f409f0e8c",
+      "round_trip_equal": true,
+      "checkpoint_count": 486,
+      "sentence_end_count": 50
     },
     {
       "path": "results/comparison/sug/projects/s15-sug-nextfire-manual.sug",
@@ -44,10 +58,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s15-sug-nextfire-auto.sug",
-      "sha256": "eae6518cdf92728a4ecf8fbcd54c55b8e7dc9aa23e91896a05d91e38464e8951",
+      "sha256": "f02976c59f934b9a4a170489c9d6b9f7429855f2a6a9490f2a5f9dc0ca620bfb",
       "round_trip_equal": true,
-      "checkpoint_count": 462,
-      "sentence_end_count": 44
+      "checkpoint_count": 513,
+      "sentence_end_count": 52
     },
     {
       "path": "results/comparison/sug/projects/s15-sug-mms-fa-manual.sug",
@@ -65,10 +79,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s15-sug-mms-fa-auto.sug",
-      "sha256": "20fa07133a8b98e794c8757d4c7335328fbb3abcf9743bc8f81f490c8bd22822",
+      "sha256": "a22a547f753cba91a95341bef3e1e4cc7c3006fc8eaa8c71022e1b9b217f9709",
       "round_trip_equal": true,
-      "checkpoint_count": 462,
-      "sentence_end_count": 44
+      "checkpoint_count": 513,
+      "sentence_end_count": 52
     },
     {
       "path": "results/comparison/sug/projects/s02-sug-nextfire-manual.sug",
@@ -86,10 +100,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s02-sug-nextfire-auto.sug",
-      "sha256": "ca68f55405555fdcca34c13fdae962135a2af843155878f0fd2fc294c4ce1497",
+      "sha256": "e5d4735ba1a0094bed43c66b44ee3b6c57cdeb5c90a16658ef0a46150becd287",
       "round_trip_equal": true,
-      "checkpoint_count": 375,
-      "sentence_end_count": 40
+      "checkpoint_count": 373,
+      "sentence_end_count": 58
     },
     {
       "path": "results/comparison/sug/projects/s02-sug-mms-fa-manual.sug",
@@ -107,10 +121,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s02-sug-mms-fa-auto.sug",
-      "sha256": "3d8c086e3f4c23cbe7485826fd64ed5ab06e4559b44ce0804d864ed60f9e8c73",
+      "sha256": "ce7dcf56f807e91c44f92b35e38ff12f650cc5c0caca94d8097f048160fe27ad",
       "round_trip_equal": true,
-      "checkpoint_count": 375,
-      "sentence_end_count": 40
+      "checkpoint_count": 373,
+      "sentence_end_count": 58
     },
     {
       "path": "results/comparison/sug/projects/s03-sug-nextfire-manual.sug",
@@ -128,10 +142,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s03-sug-nextfire-auto.sug",
-      "sha256": "49948b7a4015687114d18cf2d686c60f9d57ac256117b1b1e31b3e204bbc3cc4",
+      "sha256": "712a0aae631405bcf3a289bdbf0bf7117c7847b95f5c50e1f8a16f215f56bf84",
       "round_trip_equal": true,
-      "checkpoint_count": 4837,
-      "sentence_end_count": 47
+      "checkpoint_count": 460,
+      "sentence_end_count": 59
     },
     {
       "path": "results/comparison/sug/projects/s03-sug-mms-fa-manual.sug",
@@ -149,10 +163,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s03-sug-mms-fa-auto.sug",
-      "sha256": "5754d15bc8a9dba53e372d5813e971278b197b7e0af02b2679bd86d935f0ac82",
+      "sha256": "89fce64cea6e2461218019d25614da89e2acf62df5d39e1a8d4c0ca334587faf",
       "round_trip_equal": true,
-      "checkpoint_count": 4837,
-      "sentence_end_count": 47
+      "checkpoint_count": 460,
+      "sentence_end_count": 59
     },
     {
       "path": "results/comparison/sug/projects/s04-sug-nextfire-manual.sug",
@@ -170,10 +184,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s04-sug-nextfire-auto.sug",
-      "sha256": "db015b093ea690155b35464847cd54627e6f990cebaf5baa34112d2b6dccf25d",
+      "sha256": "6c380b70e770be2851bbe15c415454033c5d6ca390880984159f8e913e0bb907",
       "round_trip_equal": true,
-      "checkpoint_count": 354,
-      "sentence_end_count": 40
+      "checkpoint_count": 404,
+      "sentence_end_count": 58
     },
     {
       "path": "results/comparison/sug/projects/s04-sug-mms-fa-manual.sug",
@@ -191,10 +205,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s04-sug-mms-fa-auto.sug",
-      "sha256": "0a18e2420e796cf22aedddf7c0e0ca136159f1f317e30a89f5248d3e2242094d",
+      "sha256": "d2f70705a82921db5047987a1a1acbf978f57e0329ebd49b02b50596b44b2b9f",
       "round_trip_equal": true,
-      "checkpoint_count": 354,
-      "sentence_end_count": 40
+      "checkpoint_count": 404,
+      "sentence_end_count": 58
     },
     {
       "path": "results/comparison/sug/projects/s05-sug-nextfire-manual.sug",
@@ -211,6 +225,13 @@
       "sentence_end_count": 42
     },
     {
+      "path": "results/comparison/sug/projects/s05-sug-nextfire-auto.sug",
+      "sha256": "4368d747440bc39c803b090d4435af564f29d02a3b397c66958514c7192dbdf6",
+      "round_trip_equal": true,
+      "checkpoint_count": 396,
+      "sentence_end_count": 42
+    },
+    {
       "path": "results/comparison/sug/projects/s05-sug-mms-fa-manual.sug",
       "sha256": "997eb47fdde44277c975cdc97ea6728a9c626b9788509df186c8545bfa091c22",
       "round_trip_equal": true,
@@ -222,6 +243,13 @@
       "sha256": "ca6334e79c933393de57d2fe34992a0676f90b3fad56fae527ab3dd286fac4ba",
       "round_trip_equal": true,
       "checkpoint_count": 398,
+      "sentence_end_count": 42
+    },
+    {
+      "path": "results/comparison/sug/projects/s05-sug-mms-fa-auto.sug",
+      "sha256": "b96b6cb957e93c8bf44c46b804798f6e33e0888bb462fecf18a6d6b6175edf5f",
+      "round_trip_equal": true,
+      "checkpoint_count": 396,
       "sentence_end_count": 42
     },
     {
@@ -240,9 +268,9 @@
     },
     {
       "path": "results/comparison/sug/projects/s06-sug-nextfire-auto.sug",
-      "sha256": "5a1ad9c59fb942aea9dd34a9095edb2dfac731b39fb36e84d867fff7a1b26037",
+      "sha256": "1a2c0df6c33bd121afc9ea1e29ac8cb4621400c5718d0f704ae78f4fc0ac21b8",
       "round_trip_equal": true,
-      "checkpoint_count": 398,
+      "checkpoint_count": 512,
       "sentence_end_count": 47
     },
     {
@@ -261,9 +289,9 @@
     },
     {
       "path": "results/comparison/sug/projects/s06-sug-mms-fa-auto.sug",
-      "sha256": "da35d0ab0a831d38bf1fc7ea9cf0fd591778897ac88d8555849f62f38a4d4eed",
+      "sha256": "40982c319f7c474578b5bde8af7623fd018184fc1cbd3647ff0d3a2f855ba6e8",
       "round_trip_equal": true,
-      "checkpoint_count": 398,
+      "checkpoint_count": 512,
       "sentence_end_count": 47
     },
     {
@@ -282,10 +310,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s07-sug-nextfire-auto.sug",
-      "sha256": "fa3ef246bfe6effb538988b50f49f07ed82bcf7c5ad6e0f7ccabf1ddec187532",
+      "sha256": "a7f6c4cede16076cfb3c121269154c39e883db66943bf8a7e7eb3f5fce4dd56d",
       "round_trip_equal": true,
-      "checkpoint_count": 440,
-      "sentence_end_count": 62
+      "checkpoint_count": 518,
+      "sentence_end_count": 71
     },
     {
       "path": "results/comparison/sug/projects/s07-sug-mms-fa-manual.sug",
@@ -303,10 +331,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s07-sug-mms-fa-auto.sug",
-      "sha256": "e4bb846bb91e03cc152756450c5717c017cb3e2ced7402e0d74513b4e9a7af15",
+      "sha256": "a9a78f07c3b99059f8f6e71e9713c8a85167aa0afb992c9993affc837208b818",
       "round_trip_equal": true,
-      "checkpoint_count": 440,
-      "sentence_end_count": 62
+      "checkpoint_count": 518,
+      "sentence_end_count": 71
     },
     {
       "path": "results/comparison/sug/projects/s08-sug-nextfire-manual.sug",
@@ -324,10 +352,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s08-sug-nextfire-auto.sug",
-      "sha256": "ba4366fa4c8b68cd935e91202e60777736e52a74c2db3f0251cdb17895985e37",
+      "sha256": "c67a8913420d14fca5960bdd69863a78c1567672e929a98f3fc085074569931a",
       "round_trip_equal": true,
-      "checkpoint_count": 315,
-      "sentence_end_count": 23
+      "checkpoint_count": 375,
+      "sentence_end_count": 27
     },
     {
       "path": "results/comparison/sug/projects/s08-sug-mms-fa-manual.sug",
@@ -345,10 +373,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s08-sug-mms-fa-auto.sug",
-      "sha256": "dcc85486233055526c443fe2fed74b09c7a362c454dca4cae68055e6071fb083",
+      "sha256": "a1295d725d4c8ff53372211a9435ef4ae6785bdfd99e0c6ae560921c0f0e7753",
       "round_trip_equal": true,
-      "checkpoint_count": 315,
-      "sentence_end_count": 23
+      "checkpoint_count": 375,
+      "sentence_end_count": 27
     },
     {
       "path": "results/comparison/sug/projects/s09-sug-nextfire-manual.sug",
@@ -366,10 +394,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s09-sug-nextfire-auto.sug",
-      "sha256": "6cc40469a0add8c61cb8e3abd65862e0601f8ab67dc426d95c72291868ea413c",
+      "sha256": "798c721bfbdd244a85c3dbca5e9780db1487ad41fbe1d6257210789279a7db0d",
       "round_trip_equal": true,
-      "checkpoint_count": 448,
-      "sentence_end_count": 48
+      "checkpoint_count": 493,
+      "sentence_end_count": 65
     },
     {
       "path": "results/comparison/sug/projects/s09-sug-mms-fa-manual.sug",
@@ -387,10 +415,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s09-sug-mms-fa-auto.sug",
-      "sha256": "39a3934b5fe88225410842609b02e27125e76966aa134ac7970207485df0ea93",
+      "sha256": "e9464bcd5d0d81673bcc66d40e5b9c87b6b83fe39a14d206b6a53b1f7861cfe7",
       "round_trip_equal": true,
-      "checkpoint_count": 448,
-      "sentence_end_count": 48
+      "checkpoint_count": 493,
+      "sentence_end_count": 65
     },
     {
       "path": "results/comparison/sug/projects/s10-sug-nextfire-manual.sug",
@@ -408,9 +436,9 @@
     },
     {
       "path": "results/comparison/sug/projects/s10-sug-nextfire-auto.sug",
-      "sha256": "86323cb7da7796d8bdfcdfe150ac2cf2668f47aaa342cabc94a12bc2ab223af2",
+      "sha256": "29c9e70cbbef363bd2ccf962b75f9532b0a174376cd69d1945fa274aa866d20a",
       "round_trip_equal": true,
-      "checkpoint_count": 415,
+      "checkpoint_count": 497,
       "sentence_end_count": 49
     },
     {
@@ -429,9 +457,9 @@
     },
     {
       "path": "results/comparison/sug/projects/s10-sug-mms-fa-auto.sug",
-      "sha256": "cfac5a43d683566750ca518f0269307897c85fb96f51d3bc9054b9149275bad1",
+      "sha256": "16827e186e87b7e2c9578e31e36094fd56363100000ee6c8a0e66ac31952bb34",
       "round_trip_equal": true,
-      "checkpoint_count": 415,
+      "checkpoint_count": 497,
       "sentence_end_count": 49
     },
     {
@@ -450,10 +478,10 @@
     },
     {
       "path": "results/comparison/sug/projects/s12-sug-nextfire-auto.sug",
-      "sha256": "0241db097a363a2e0760d8ee44bb54e0454276399ea62368790e9e86b5a5574d",
+      "sha256": "46b00464cad227c28daa723dc4c803a4ae80bfceb69a9753eeb5f3ff09b025f5",
       "round_trip_equal": true,
-      "checkpoint_count": 358,
-      "sentence_end_count": 41
+      "checkpoint_count": 423,
+      "sentence_end_count": 43
     },
     {
       "path": "results/comparison/sug/projects/s12-sug-mms-fa-manual.sug",
@@ -471,12 +499,12 @@
     },
     {
       "path": "results/comparison/sug/projects/s12-sug-mms-fa-auto.sug",
-      "sha256": "424edc08a1994d93742340d57d0c3c591d25fea5751056aff9e37e8f4f023570",
+      "sha256": "114d296371bbfcf9d28b9b926d0cfd6397db5701d5d22669acdc956f273fdef5",
       "round_trip_equal": true,
-      "checkpoint_count": 358,
-      "sentence_end_count": 41
+      "checkpoint_count": 423,
+      "sentence_end_count": 43
     }
   ],
-  "source": "Native ApplyAiTimingCommand, SugProjectParser.save and load; original frozen model results reused.",
+  "source": "Native ApplyAiTimingCommand and SugProjectParser save/load; G3 regenerated with native automatic reading and checkpoints.",
   "round_trip_equal": true
 }

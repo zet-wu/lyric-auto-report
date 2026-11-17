@@ -10,11 +10,13 @@
 | --- | --- | --- | --- |
 | G1 | 人工读音 | 各自分离器 | 8 条 |
 | G2 | 人工读音 | 统一 BS Karaoke | 8 条 |
-| G3 | 各工具自动注音 | 各自分离器 | 前 6 条 |
+| G3 | 各工具自动分词注音 | 各自分离器 | Lazulite Studio、MiliKara、SUG |
 
-Lazulite Studio NextFire 关闭智能延长；Lazulite Studio MMS_FA 开启智能延长。两者均关闭间隙合并。SUG 使用 UVR-MDX-NET-Inst_HQ_3；MiliKara 使用原生 MelBand RoFormer 默认权重；yohane 使用原生 HybridDemucs；Timing 使用 BS Karaoke。FA-Kara 不提供分离器，以外部 BS Karaoke 人声作为输入，因此 G1、G2 共用同一次结果。
+输入不带人工起止时间、行窗口或行首提示。人工组保留人工读音；格式转换可合并接口无法独立表达的长音符、连接英文词片段，不能根据参考时间改变输入。自动组只保留逐行正文，重新执行各工具的分词和注音。
 
-输入不带人工起止时间、行窗口或行首提示。人工组保留人工读音；格式转换可合并接口无法独立表达的长音符、连接英文词片段，不能根据参考时间改变输入。自动组只保留逐行正文，重新执行各工具的分词和注音。MiliKara 原生异常行重试可能选择原曲，保留该行为并记录最终采用的音轨。
+各自分离器指各个工具使用其默认或自带的人声分离器，Lazulite Studio的人声分离器为 Demucs；SUG 使用 UVR-MDX-NET-Inst_HQ_3；MiliKara 使用原生 MelBand RoFormer 默认权重；yohane 使用原生 HybridDemucs；Timing 使用 BS Karaoke。FA-Kara 不提供分离器，以外部 BS Karaoke 人声作为输入，因此 G1、G2 共用同一次结果。
+
+各个工具均尽可能保留其默认行为、对齐选项和参数。Lazulite Studio NextFire 关闭智能延长；Lazulite Studio MMS_FA 开启智能延长。两者均关闭间隙合并、以及三项可选的软代价。MiliKara 原生异常行重试可能选择原曲，保留该行为并记录最终采用的音轨。MiliKara 三组均开启原生 `energy` 尾点策略，按人声能量延长或裁短尾点。其余参数保持默认。
 
 ## 评分
 

@@ -1,0 +1,20 @@
+{
+  "source": "results/comparison/scores/summary.json",
+  "source_sha256": "235e53d998569a3b3f3790ac4d44b366b34a9b9886a036aee02d763d68c71334",
+  "group": "G2",
+  "boundary": "common text",
+  "songs": 12,
+  "units_per_route": 4249,
+  "routes": 8,
+  "metrics": 6,
+  "rows": 48,
+  "excluded_routes": [],
+  "stars": "Unrounded maximum hit rate or minimum error; absolute tie tolerance 1e-9.",
+  "uncertainty": "Pooled descriptive metrics from one fixed experiment; no repeat-based intervals.",
+  "design": "Quantitative grid: coverage, mean error, tail error. White background; consistent paired blue palette.",
+  "backend": "Python / Matplotlib",
+  "size_mm": [
+    183,
+    110
+  ]
+}

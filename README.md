@@ -8,9 +8,17 @@
 
 针对日语歌曲，在本测试集上，综合表现最好的就是 [Lazulite Studio](https://github.com/zet-wu/Lazulite-studio) 目前所使用的路线：用 Demucs 人声分离后，用人声相对能量分片，把所有分片拼接起来整体送入模型（在 Wav2Vec 阶段，实际的实现是 20 s 分片逐片推理），模型使用 [NextFire/mms-300m-ForcedAligner-karaoke-ja-Latn](https://huggingface.co/NextFire/mms-300m-ForcedAligner-karaoke-ja-Latn)，将输出映射回原曲时间，即 **Demucs 人声分离 + 人声片段整体拼接 + NextFire mms 模型**。与其他对齐路线相比，Lazulite Studio 的多项指标均做到最佳，如下图。具体比较结果见 [八条路线对齐比较](reports/comparison.md)。
 
-![G1 共同正文边界：八条路线的双端 100 ms／200 ms 命中率、起止平均绝对误差及起止绝对误差 P95](results/figures/g1-comparison.png)
+人工读音 + 各自分离器：共同正文边界的误差指标：
+![人工读音 + 各自分离器：共同正文边界的误差指标](results/figures/g1-comparison.png)
 
-图中 `*` 标记各指标最佳值：命中率越高越好，平均绝对误差与绝对误差 P95 越低越好；不表示统计显著性。
+由于某些路线在对齐时会将某些读音单元合并（如长音、促音等），因此输出的总单元数量，即准确率的分母会不一致。共同正文边界即指将所有路线的结果的单元边界取交集，仅计算这些共同边界的准确率。
+图中 `*` 标记各指标最佳值：命中率越高越好，平均绝对误差与绝对误差 P95 越低越好，以下两图相同，不再赘述。
+
+人工读音 + 统一 BS Karaoke 分离器：共同正文边界的误差指标，此组衡量剔除人声分离器的差异后的各路线对齐效果：
+![人工读音 + 统一 BS Karaoke 分离器：共同正文边界的误差指标](results/figures/g2-comparison.png)
+
+自动分词注音 + 各自分离器：人工读音边界的误差指标，此组衡量在完全自动化情形下，从无注音、无分词的歌词正文开始进行分词、注音、对齐的最终效果：
+![自动分词注音 + 各自分离器：人工读音边界的误差指标](results/figures/g3-comparison.png)
 
 以下从几个方面说明：
 

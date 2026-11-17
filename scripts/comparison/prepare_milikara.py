@@ -7,7 +7,7 @@ def reading(s):return ''.join(c for c in unicodedata.normalize('NFKC',s) if c.is
 for song in songs():
  text={'song':song['id'],'name':song['name'],'audio':song['audio'],'lines':[]};manual={**text,'lines':[]}
  for l in song['lines']:
-  source=layout(l['text']).strip();text['lines'].append({'id':l['id'],'text':source})
+  source=plain_line(l['text']);text['lines'].append({'id':l['id'],'text':source})
   words=[]
   for w in l['words']:
    units=[{'id':u['id'],'reading':reading(u['text'])} for u in l['leaves'] if u['word_id']==w['id'] and reading(u['text'])]

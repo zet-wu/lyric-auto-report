@@ -7,12 +7,12 @@ research=ROOT/'.venvs/research/bin/python';native=ROOT/'.venvs/milikara/bin/pyth
 def call(name,args,python=research):
  print('RUN',name,flush=True)
  with (logs/(name+'.log')).open('w') as out:subprocess.run([str(python),str(ROOT/'scripts/comparison'/args[0]),*args[1:]],check=True,cwd=ROOT,stdout=out,stderr=subprocess.STDOUT)
-def node(action):
+def node(action,extra=()):
  front=ROOT/'.deps/comparison/studio/frontend';build=next((front/'node_modules/.pnpm').glob('esbuild@*/node_modules/esbuild/bin/esbuild'))
  env={**os.environ,'NODE_PATH':str(front/'node_modules')}
  subprocess.run([str(build),str(ROOT/'scripts/comparison/studio_frontend.ts'),'--bundle','--platform=node','--format=cjs','--packages=external','--external:../../.deps/comparison/studio/frontend/node_modules/jsdom/lib/api.js','--outfile='+str(CACHE/'studio_frontend.cjs')],check=True,env=env)
- if action!='roman':subprocess.run(['node',str(CACHE/'studio_frontend.cjs'),action],check=True,env=env)
- if action in ('prepare','roman'):
+ if action!='roman':subprocess.run(['node',str(CACHE/'studio_frontend.cjs'),action,*extra],check=True,env=env)
+ if action in ('prepare','roman') and not extra:
   subprocess.run([str(build),str(ROOT/'scripts/comparison/romanize.ts'),'--bundle','--platform=node','--format=cjs','--packages=external','--outfile='+str(CACHE/'romanize.cjs')],check=True,env=env)
   subprocess.run(['node',str(CACHE/'romanize.cjs')],check=True,env=env)
 if not a.score_only:
@@ -23,6 +23,11 @@ if not a.score_only:
  call('studio-reading',['prepare_studio.py'])
  # Reuse exact serialized project IDs when resuming an interrupted run.
  if not all((CACHE/'inputs'/f"{s['id']}-studio-auto-project.json").exists() for s in songs()):node('prepare')
+ else:
+  for s in songs():
+   cached=read(CACHE/'inputs'/f"{s['id']}-studio-auto-project.json")
+   if [''.join(w['text'] for w in l['words']) for l in cached['lyrics']['lines']] != [plain_line(l['text']) for l in s['lines']]:
+    node('prepare',('--song',s['id'],'--condition','auto'))
  if not all((OUT/'yohane/inputs'/f"{s['id']}.json").exists() for s in songs()):node('roman')
  call('studio',['run_studio.py']);node('adopt')
  for sep,c in [('milikara','manual'),('bs','manual'),('milikara','auto')]:call('milikara-'+sep+'-'+c,['run_milikara.py','--sep',sep,'--condition',c],native)

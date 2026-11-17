@@ -4,7 +4,7 @@ import subprocess,platform,shutil,hashlib,importlib.metadata as md
 inputs=OUT/'inputs';inputs.mkdir(exist_ok=True)
 manifest=[]
 for s in songs():
- manifest.append({k:s[k] for k in ('id','name','audio','audio_sha256','ttml','ttml_sha256','duration')}|{'lines':[{'id':l['id'],'text':l['text']} for l in s['lines']]})
+ manifest.append({k:s[k] for k in ('id','name','audio','audio_sha256','ttml','ttml_sha256','duration')}|{'lines':[{'id':l['id'],'text':plain_line(l['text'])} for l in s['lines']]})
  for condition in ('manual','auto'):
   for suffix in ('','-project'):
    src=CACHE/'inputs'/f"{s['id']}-studio-{condition}{suffix}.json"

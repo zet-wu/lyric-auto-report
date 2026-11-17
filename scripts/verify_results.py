@@ -168,7 +168,15 @@ with (ROOT/'results/separation-alignment/metrics.csv').open() as stream:
  assert list(csv.DictReader(stream))==[{k:str(v) for k,v in r.items()} for r in summary['aggregate']]
 rows=[r for r in summary['aggregate'] if r['group']=='japanese']
 assert len(rows)==60 and all(r['songs']==12 and r['n']==5370 for r in rows)
-for path,expected in read(ROOT/'results/separation-alignment/reuse-audit.json')['preserved_files'].items():
+g3_audit_path=ROOT/'results/comparison/g3-pipeline-audit.json'
+superseded=read(g3_audit_path).get('superseded_scoring_files',{}) if g3_audit_path.exists() else {}
+preserved=read(ROOT/'results/separation-alignment/reuse-audit.json')['preserved_files']
+assert set(superseded)<=set(preserved)
+for path,expected in preserved.items():
+ if path in superseded:
+  revision=superseded[path]
+  assert path.startswith('results/comparison/scores/') and revision['previous_sha256']==expected
+  expected=revision['current_sha256']
  with (ROOT/path).open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()==expected,path
 print('Complete:',23*6*len(primary),'MMS_FA postprocessing cases; 180 separator warm runs; 780 separator predictions.')
 import subprocess,sys

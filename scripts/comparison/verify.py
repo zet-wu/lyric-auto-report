@@ -3,10 +3,11 @@ from common import *
 import math,statistics
 from collections import Counter
 from score_reading import native
-from score import ROUTES
+from score import GROUPS, ROUTES
 items=read(OUT/'scores/items.json');summary=read(OUT/'scores/summary.json');states=read(OUT/'scores/status.json')
 reading_items=read(OUT/'scores/reading-items.json');reading_summary=read(OUT/'scores/reading-summary.json')
-assert len(states)==12*(8+8+6)
+assert len(states)==len(songs())*sum(map(len,GROUPS.values()))
+assert {(x['group'],x['song'],x['route']) for x in states}=={(g,s['id'],r) for g,routes in GROUPS.items() for s in songs() for r in routes}
 assert not any(x['status']=='pending' for x in states)
 
 def check_metric(rows,m):
@@ -89,11 +90,12 @@ for s in songs():
 for entry in read(OUT/'input-audit.json')['checks']:assert sha(ROOT/entry['file'])==entry['sha256']
 assert not read(OUT/'input-audit.json')['manual_reading_supplements']
 sug_audit=read(OUT/'sug-project-audit.json')
-assert len(sug_audit['projects'])==68 and sug_audit['round_trip_equal']
+expected_sug=sum(x['status']=='ok' for x in states if x['route'] in ('sug-nextfire','sug-mms-fa'))
+assert len(sug_audit['projects'])==expected_sug and sug_audit['round_trip_equal']
 for entry in sug_audit['projects']:
  assert entry['round_trip_equal'] and sha(ROOT/entry['path'])==entry['sha256']
  saved=read(ROOT/entry['path'])
  assert entry['checkpoint_count']==sum(len(c['timestamps']) for l in saved['sentences'] for c in l['characters'])
 dump(OUT/'verification.json',{'conditions':len(states),'metric_rows':checked,'text_items_by_group':counts['text'],'reading_items_by_group':counts['reading'],
- 'independent_mae_p95':True,'untimed_inputs':True,'complete_matrix':True,'native_reading_endpoints_only':True,'manual_studio_leaf_equivalence':True,'native_sug_round_trip_projects':68})
+ 'independent_mae_p95':True,'untimed_inputs':True,'complete_matrix':True,'native_reading_endpoints_only':True,'manual_studio_leaf_equivalence':True,'native_sug_round_trip_projects':expected_sug})
 print('Verified',len(states),'song conditions;',checked,'aggregate rows;',counts)

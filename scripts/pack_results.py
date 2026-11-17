@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 count = before = after = 0
 folders=[ROOT/'results'/group/'predictions' for group in ('ablation','milikara','separation-alignment')]
 folders += [ROOT/'results/comparison'/name for name in ('studio','sug','timing','milikara','yohane','fa-kara')]
+folders += [ROOT/'results/comparison/milikara/runs']
 extra=[ROOT/'results/comparison/scores'/name for name in ('items.json','studio-leaf-items.json','reading-items.json')]
 sources=[p for folder in folders for p in (folder.glob('*.json') if 'comparison' in folder.parts else folder.rglob('*.json'))]+[p for p in extra if p.exists()]
 for source in sorted(sources):

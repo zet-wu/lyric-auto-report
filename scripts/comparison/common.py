@@ -48,3 +48,7 @@ def sha(path):
     with Path(path).open("rb") as f:return hashlib.file_digest(f,"sha256").hexdigest()
 def songs():
     return [s for s in read(OUT/"reference.json") if s["id"] not in ("s11","s13","s14")]
+
+def plain_line(text):
+    """Remove XML layout whitespace, retaining the lyric's internal spaces."""
+    return text.replace('\n','').replace('\r','').replace('\t','').strip()

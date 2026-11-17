@@ -4,6 +4,7 @@ import math,unicodedata,xml.etree.ElementTree as ET
 import numpy as np
 T='{http://www.w3.org/ns/ttml}';S='{http://www.w3.org/ns/ttml#styling}'
 ROUTES={'studio-nextfire':('studio','nextfire','demucs'),'studio-mms-fa':('studio','mms-fa','demucs'),'milikara':('milikara',None,'milikara'),'timing':('timing',None,'bs'),'sug-nextfire':('sug','nextfire','sug'),'sug-mms-fa':('sug','mms-fa','sug'),'yohane':('yohane',None,'yohane'),'fa-kara':('fa-kara',None,'bs')}
+GROUPS={g:[k for k in ROUTES if g!='G3' or k not in ('yohane','fa-kara','timing')] for g in ('G1','G2','G3')}
 def norm(s):return ''.join(c for c in unicodedata.normalize('NFKC',s).lower() if c.isalnum() or c=='ー')
 def valid(a,b):return isinstance(a,(int,float)) and isinstance(b,(int,float)) and math.isfinite(a+b) and 0<=a<b
 
@@ -45,9 +46,12 @@ def load_prediction(sid,route,group):
    if not l['sing']:continue
    parts=[]
    for w in l['segments']:
-    timed=[times.get(u['id'],{}) for u in w['units']]
-    a,b=envelope([row('',u.get('start_ms'),u.get('end_ms'),1000) for u in timed])
-    parts.append(row(w['surface'],a,b))
+    from text_units import split_timed_text
+    units=[]
+    for u in w['units']:
+     t=times.get(u['id'],{})
+     units.append({**row(u['reading'],t.get('start_ms'),t.get('end_ms'),1000),'surface':u.get('surface','')})
+    parts.extend(split_timed_text(w['surface'],units,norm,envelope))
    lines.append(parts)
  elif kind=='timing':
   for l in r['result']['lines']:
@@ -101,7 +105,6 @@ def measure(items):
  return {'n':n,'valid':len(good),'missing':n-len(good),'hit100':h100,'hit200':h200,'hit100_pct':100*h100/n if n else None,'hit200_pct':100*h200/n if n else None,'start_mae_ms':float(a.mean()) if len(a) else None,'end_mae_ms':float(b.mean()) if len(b) else None,'start_p95_ms':float(np.percentile(a,95)) if len(a) else None,'end_p95_ms':float(np.percentile(b,95)) if len(b) else None,'over1s':sum(max(abs(x['ds']),abs(x['de']))>1 for x in good)}
 def main():
  allrows=[];summary={};states=[];partitions=[];loaded={};shared_edges={}
- GROUPS={g:[k for k in ROUTES if g!='G3' or k not in ('yohane','fa-kara')] for g in ('G1','G2','G3')}
  for song in songs():
   sid=song['id']
   for group,routes in GROUPS.items():

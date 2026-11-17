@@ -5,7 +5,7 @@ import torch
 sys.path.insert(0,str(ROOT/'.deps/comparison/sug/src'))
 from strange_uta_game.backend.domain import Project,Sentence,Singer,Character,Ruby,RubyPart
 from strange_uta_game.backend.infrastructure.parsers.ttml_parser import TTMLParser,build_ttml_sentences
-from sug_project import save_project
+from sug_project import save_project,prepare_auto_project
 from strange_uta_game.backend.application.ai_timing import PronunciationResolver,build_alignment_request,MediaIdentity,checkpoint_timestamps,ApplyAiTimingCommand
 from strange_uta_game.backend.application.ai_timing.worker.providers import create_provider
 p=argparse.ArgumentParser();p.add_argument('--model',default='nextfire');p.add_argument('--sep',default='sug');p.add_argument('--condition',default='manual');p.add_argument('--song');a=p.parse_args()
@@ -16,7 +16,9 @@ for s in songs():
  sid=s['id']
  if a.song and sid!=a.song:continue
  target=OUT/'sug'/f'{sid}-{a.sep}-{a.model}-{a.condition}.json'
- if exists(target) and read(target)['status']=='ok':continue
+ if exists(target):
+  previous=read(target)
+  if previous['status']=='ok' and (a.condition!='auto' or previous.get('input_pipeline_version')==2):continue
  stem=CACHE/'stems'/a.sep/(sid+'.wav')
  if not stem.exists():raise FileNotFoundError(stem)
  r={'song':sid,'model':a.model,'condition':a.condition,'separator':a.sep,'status':'error','stem_sha256':sha(stem)};start=time.monotonic()
@@ -32,7 +34,10 @@ for s in songs():
      chars.append(Character(char=w['text'],ruby=Ruby(parts=[RubyPart(u['reading']) for u in units]) if units else None,check_count=len(units),singer_id='s1'))
     chars[-1].is_line_end=True;chars[-1].is_sentence_end=True
     project.sentences.append(Sentence(characters=chars,singer_id='s1'))
-  else:project.sentences=[Sentence.from_text(l['text'],singer_id='s1') for l in s['lines']]
+  else:
+   project.sentences=[Sentence.from_text(plain_line(l['text']),singer_id='s1') for l in s['lines']]
+   r['automatic_preparation']=prepare_auto_project(project)
+   r['input_pipeline_version']=2
   assert len(project.sentences)==len(s['lines'])
   for l in project.sentences:l.clear_all_timestamps()
   resolver=PronunciationResolver(chinese_mode=False)

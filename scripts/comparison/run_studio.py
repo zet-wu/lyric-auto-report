@@ -1,6 +1,7 @@
 from common import *
 product_imports()
 import numpy as np,soundfile as sf,torch,time,traceback
+import argparse
 from dataclasses import asdict
 from lazulite.audio.io import decode_audio
 from lazulite.audio.preparation import prepare_existing_vocals
@@ -12,14 +13,23 @@ from lazulite.alignment.japanese.stages import AcousticResult
 from lazulite.alignment.japanese.run import align_japanese,JapaneseConfig
 from server.alignment_projection import project_alignment
 from server.alignment_postprocessing import object_timings
+p=argparse.ArgumentParser();p.add_argument('--song');p.add_argument('--condition',choices=['manual','auto']);a=p.parse_args()
 torch.set_num_threads(8);assert torch.cuda.is_available()
 for model in ('nextfire','mms-fa'):
     backend=open_backend(ROOT/'.models'/model,'cuda')
     for sep,conditions in [('demucs',['manual','auto']),('bs',['manual'])]:
+        conditions=[c for c in conditions if not a.condition or c==a.condition]
+        if not conditions:continue
         for s in songs():
             sid=s['id'];stem=CACHE/'stems'/sep/(sid+'.wav')
+            if a.song and sid!=a.song:continue
             if not stem.exists():raise FileNotFoundError(stem)
-            if all(exists(OUT/'studio'/f'{sid}-{sep}-{model}-{c}.json') for c in conditions):continue
+            def current(c):
+                path=OUT/'studio'/f'{sid}-{sep}-{model}-{c}.json'
+                if not exists(path):return False
+                previous=read(path)
+                return previous['status']=='ok' and (c!='auto' or previous.get('input_sha256')==sha(CACHE/'inputs'/f'{sid}-studio-{c}.json'))
+            if all(current(c) for c in conditions):continue
             original=decode_audio(ROOT/s['audio'],sample_rate=44100,channels=2)
             samples,rate=sf.read(stem,dtype='float32',always_2d=True);v=AudioBuffer(samples.T.copy(),rate,sid)
             prepared=prepare_existing_vocals(v,reference=original,original_duration=original.duration)
@@ -30,9 +40,9 @@ for model in ('nextfire','mms-fa'):
             acoustic=AcousticResult(probs,backend.vocab,backend.blank,backend.frames,concat.mapping,v.duration,special_tokens=backend.special_tokens)
             for condition in conditions:
                 target=OUT/'studio'/f'{sid}-{sep}-{model}-{condition}.json'
-                if exists(target):continue
+                if current(condition):continue
                 start=time.monotonic()
-                record={'song':sid,'model':model,'separator':sep,'condition':condition,'duration':v.duration,'status':'error','stem_sha256':sha(stem)}
+                record={'song':sid,'model':model,'separator':sep,'condition':condition,'duration':v.duration,'status':'error','stem_sha256':sha(stem),'input_sha256':sha(CACHE/'inputs'/f'{sid}-studio-{condition}.json')}
                 try:
                     projection=project_alignment(read(CACHE/'inputs'/f'{sid}-studio-{condition}.json'),False,model={'vocabulary':backend.vocab,'blank':backend.blank})
                     result=align_japanese(None,JapaneseAlignmentRequest.from_dict(projection['request']),acoustic=acoustic,config=JapaneseConfig(hint_mode='off'))

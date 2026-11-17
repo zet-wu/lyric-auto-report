@@ -12,7 +12,7 @@ for song in songs():
  sid=song['id'];sep=a.sep;condition=a.condition
  if a.song and sid!=a.song:continue
  target=OUT/'milikara/runs'/f'{sid}-{sep}-{condition}.json'
- if exists(target) and read(target)['status']=='ok':continue
+ if exists(target) and read(target)['status']=='ok' and read(target)['result']['config']['tail']['strategy']=='energy':continue
  source=read(OUT/'milikara/inputs'/('manual' if condition=='manual' else 'text')/f'{sid}.json')
  stem=CACHE/'stems'/sep/(sid+'.wav')
  if not stem.exists():raise FileNotFoundError(stem)
@@ -46,7 +46,7 @@ for song in songs():
      lang='en' if reading.isascii() and any(c.isalpha() for c in reading) else 'ja'
      line.segments.append(Segment(id=word['id'],surface=word['text'],reading=reading,lang=lang,units=units,reading_source='manual',confirmed=True))
   h.save();record['lyrics']=h.project.lyrics.model_dump(mode='json')
-  S.update_settings(h,config={'device':'cuda','model_id':str(ROOT/'.models/nextfire')})
+  S.update_settings(h,config={'device':'cuda','model_id':str(ROOT/'.models/nextfire'),'tail':{'strategy':'energy'}})
   record['config']=h.project.config.model_dump(mode='json')
   result=S.run_align(h,audio_role='vocals',progress=lambda f,m='':print(sid,sep,condition,m,flush=True))
   record['result']=result.model_dump(mode='json');record['export']=json.loads(S.export(h,'alignment').content);record['status']='ok'

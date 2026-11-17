@@ -9,7 +9,10 @@ import {createProjectDocument} from '../../.deps/comparison/studio/frontend/src/
 import {mergeAlignment} from '../../.deps/comparison/studio/frontend/src/domain/alignment';
 const win=new JSDOM('').window;Object.assign(globalThis,{NodeFilter:win.NodeFilter,Node:win.Node,DOMParser:win.DOMParser,XMLSerializer:win.XMLSerializer});
 const C='.cache/comparison',O='results/comparison';const read=(p:string)=>JSON.parse(existsSync(p)?readFileSync(p,'utf8'):gunzipSync(readFileSync(p+'.gz')).toString('utf8')),write=(p:string,x:any)=>writeFileSync(p,JSON.stringify(x));
+const option=(name:string)=>{const i=process.argv.indexOf(name);return i<0?undefined:process.argv[i+1];};
+const onlySong=option('--song'),onlyCondition=option('--condition');
 if(process.argv[2]==='prepare')for(const s of read(`${O}/reference.json`).filter((s:any)=>!['s11','s13','s14'].includes(s.id))){
+ if(onlySong&&s.id!==onlySong)continue;
  const sid=s.id,raw=read(`${C}/inputs/${sid}-studio.json`);
  const xml=new DOMParser().parseFromString(raw.lyrics.draftTtml,'application/xml');
  for(const e of Array.from(xml.getElementsByTagName('*')))if(!['p','span'].includes(e.localName))e.removeAttributeNS('urn:lazulite:studio:draft','id');
@@ -22,6 +25,7 @@ if(process.argv[2]==='prepare')for(const s of read(`${O}/reference.json`).filter
  const rows=proposeJapaneseRuby(auto,auto.lines.map(l=>l.id),reading.proposals,true);
  if(hasJapaneseRubyChanges(rows,auto))auto=(japaneseRubyCommand(auto,auto,rows) as any).document;
  for(const [condition,doc] of [['manual',manual],['auto',auto]] as const){
+ if(onlyCondition&&condition!==onlyCondition)continue;
  const project=createProjectDocument(doc);project.lineOrder=doc.lines.map(l=>l.id);
  write(`${C}/inputs/${sid}-studio-${condition}-project.json`,project);
  write(`${C}/inputs/${sid}-studio-${condition}.json`,{lyrics:{draftTtml:serializeLyricTtml(doc,{draft:true})},lineOrder:project.lineOrder,editing:project.editing});
@@ -29,6 +33,7 @@ if(process.argv[2]==='prepare')for(const s of read(`${O}/reference.json`).filter
  console.log('PREPARED',sid);
 }else for(const f of [...new Set(readdirSync(`${O}/studio`).map(f=>f.replace(/\.gz$/,'')))].filter(f=>f.endsWith('.json')&&!f.endsWith('-adopt.json'))){
  const data=read(`${O}/studio/${f}`);if(data.status!=='ok')continue;
+ if(onlySong&&data.song!==onlySong||onlyCondition&&data.condition!==onlyCondition)continue;
  const project=read(`${C}/inputs/${data.song}-studio-${data.condition}-project.json`);
  const scope=new Set(data.projection.scope.map((x:any)=>x.object_id));
  for(const l of project.lyrics.lines)l.words=l.words.filter((w:any)=>w.rubyUnits.length||scope.has(w.id)||w.text.trim());

@@ -1,10 +1,9 @@
 """Score native reading endpoints against fixed manual leaves without interpolation."""
 from common import *
-from score import ROUTES, T, S, row, clock, norm, valid, positioned, envelope, measure
+from score import GROUPS, ROUTES, T, S, row, clock, norm, valid, positioned, envelope, measure
 import xml.etree.ElementTree as ET
 from collections import Counter
 
-GROUPS={g:[r for r in ROUTES if g!='G3' or r not in ('yohane','fa-kara')] for g in ('G1','G2','G3')}
 def kana(text):
  import unicodedata
  text=unicodedata.normalize('NFKC',text).lower()

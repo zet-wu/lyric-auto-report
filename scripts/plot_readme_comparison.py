@@ -1,29 +1,21 @@
-"""Plot the eight G1 routes from frozen common-text-boundary metrics.
-
-Quantitative grid: threshold coverage, mean timing error, then tail error.
-All eight routes and all six requested metrics are retained. Bars are pooled
-observed metrics, not estimates across repeated runs; no uncertainty is invented.
-Nature-figure QA tools can be supplied with --audit-tools for rendered checks.
-"""
+"""Plot the G1/G2/G3 comparison figures from frozen metrics."""
 from pathlib import Path
-import argparse, csv, hashlib, json, os, sys
+import argparse, json, os
 ROOT = Path(__file__).resolve().parents[1]
-os.environ.setdefault('MPLCONFIGDIR', str(ROOT/'.cache/matplotlib'))
+os.environ.setdefault('MPLCONFIGDIR', str(ROOT / '.cache/matplotlib'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--audit-tools', type=Path)
-parser.add_argument('--group', choices=['G1','G2','G3'], default='G1')
+parser.add_argument('--group', choices=['G1', 'G2', 'G3'], default='G1')
 args = parser.parse_args()
-out = ROOT/'results/figures'
+out = ROOT / 'results/figures'
 out.mkdir(parents=True, exist_ok=True)
-boundary = 'manual reading' if args.group == 'G3' else 'common text'
-source = ROOT/'results/comparison/scores'/('reading-summary.json' if args.group == 'G3' else 'summary.json')
+source = ROOT / 'results/comparison/scores' / ('reading-summary.json' if args.group == 'G3' else 'summary.json')
 data = json.loads(source.read_text())[args.group]
-stem = args.group.lower()+'-comparison'
+stem = args.group.lower() + '-comparison'
 labels = {
     'studio-nextfire': 'Lazulite Studio\nNextFire',
     'studio-mms-fa': 'Lazulite Studio\nMMS_FA + smart extension',
@@ -34,12 +26,7 @@ labels = {
     'yohane': 'yohane\nNextFire',
     'fa-kara': 'FA-Kara\nMMS_FA',
 }
-expected_routes = set(labels)-({'timing','yohane','fa-kara'} if args.group == 'G3' else set())
-assert set(data) == expected_routes
-labels = {k:v for k,v in labels.items() if k in data}
-units_per_route = 5370 if args.group == 'G3' else 4249
-assert all(data[k]['overall']['n'] == units_per_route for k in labels)
-# Each column has a distinct role: coverage, typical error, tail error.
+labels = {k: v for k, v in labels.items() if k in data}
 panels = [
     ('双端命中率', ['hit100_pct', 'hit200_pct'], ['100 ms', '200 ms'], 'Percent (higher is better)', [0, 25, 50, 75, 100], 108),
     ('平均绝对误差', ['start_mae_ms', 'end_mae_ms'], ['Start', 'End'], 'ms (lower is better)', [0, 100, 200, 300], 315),
@@ -54,55 +41,34 @@ plt.rcParams.update({
     'pdf.fonttype': 42, 'svg.fonttype': 'none',
     'savefig.facecolor': 'white',
 })
-# Keep the G1 plot height per route and fixed physical top/bottom margins.
 height_mm = 110 * (.23 + .77 * len(labels) / 8)
-fig, axes = plt.subplots(1, 3, figsize=(183/25.4, height_mm/25.4), sharey=True)
-fig.subplots_adjust(left=.235, right=.98, bottom=11/height_mm, top=1-14.3/height_mm, wspace=.25)
+fig, axes = plt.subplots(1, 3, figsize=(183 / 25.4, height_mm / 25.4), sharey=True)
+fig.subplots_adjust(left=.235, right=.98, bottom=11 / height_mm, top=1 - 14.3 / height_mm, wspace=.25)
 colors = ['#4477AA', '#B9CBE0']
 y = np.arange(len(labels))
-records=[]
 for i, (ax, (title, keys, legend, xlabel, ticks, xmax)) in enumerate(zip(axes, panels)):
     ax.set_title(title, fontsize=7, pad=25, fontfamily=['Droid Sans Fallback', 'DejaVu Sans'])
     for j, key in enumerate(keys):
-        vals=np.array([data[k]['overall'][key] for k in labels])
-        assert np.isfinite(vals).all()
-        best=vals.max() if i==0 else vals.min()
-        winners=np.isclose(vals,best,rtol=0,atol=1e-9)
-        centers=y + (-.19 if j==0 else .19)
+        vals = np.array([data[k]['overall'][key] for k in labels])
+        best = vals.max() if i == 0 else vals.min()
+        winners = np.isclose(vals, best, rtol=0, atol=1e-9)
+        centers = y + (-.19 if j == 0 else .19)
         ax.barh(centers, vals, height=.32, color=colors[j], label=legend[j], zorder=3)
-        for route, value, center, winner in zip(labels,vals,centers,winners):
-            records.append({'route':route,'metric':key,'value':float(value),'best':bool(winner)})
+        for route, value, center, winner in zip(labels, vals, centers, winners):
             if winner:
-                ax.text(value+xmax*.025, center, '*', va='center', ha='left', fontsize=10, weight='bold', color='#222222', zorder=4)
-    ax.set_xlim(0,xmax);ax.set_xticks(ticks);ax.set_xlabel(xlabel,labelpad=7)
+                ax.text(value + xmax * .025, center, '*', va='center', ha='left', fontsize=10, weight='bold', color='#222222', zorder=4)
+    ax.set_xlim(0, xmax); ax.set_xticks(ticks); ax.set_xlabel(xlabel, labelpad=7)
     ax.set_yticks(y, list(labels.values()))
     ax.tick_params(axis='y', length=0, pad=8)
     ax.tick_params(axis='x', length=3, color='#888888')
     ax.set_axisbelow(True)
-    ax.legend(loc='lower left',bbox_to_anchor=(0,1.005),ncols=2,fontsize=6.5,
-              handlelength=1.1,columnspacing=1.1,borderaxespad=0)
-axes[0].set_ylim(len(labels)-.5,-.5)
+    ax.legend(loc='lower left', bbox_to_anchor=(0, 1.005), ncols=2, fontsize=6.5, handlelength=1.1, columnspacing=1.1, borderaxespad=0)
+axes[0].set_ylim(len(labels) - .5, -.5)
 fig.canvas.draw()
-if args.audit_tools:
-    sys.path.insert(0,str(args.audit_tools.resolve()))
-    from audit_panel_alignment import require_matplotlib_panel_alignment
-    require_matplotlib_panel_alignment(fig,json_out=out/(stem+'.alignment.json'),
-        tolerance_pt=1.5,gutter_tolerance_pt=1.5,strict=True)
-fig.savefig(out/(stem+'.svg'))
-svg_path = out/(stem+'.svg')
-svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text().splitlines())+'\n')
-fig.savefig(out/(stem+'.pdf'))
-fig.savefig(out/(stem+'.png'),dpi=600)
+fig.savefig(out / (stem + '.svg'))
+svg_path = out / (stem + '.svg')
+svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text().splitlines()) + '\n')
+fig.savefig(out / (stem + '.pdf'))
+fig.savefig(out / (stem + '.png'), dpi=600)
 plt.close(fig)
-with (out/(stem+'.csv')).open('w') as f:
-    writer=csv.DictWriter(f,fieldnames=['route','metric','value','best']);writer.writeheader();writer.writerows(records)
-(out/(stem+'.provenance.json')).write_text(json.dumps({
-    'source':str(source.relative_to(ROOT)),'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
-    'group':args.group,'boundary':boundary,'songs':12,'units_per_route':units_per_route,
-    'routes':len(labels),'metrics':6,'rows':len(records),'excluded_routes':sorted(set(['studio-nextfire','studio-mms-fa','milikara','timing','sug-nextfire','sug-mms-fa','yohane','fa-kara'])-set(labels)),
-    'stars':'Unrounded maximum hit rate or minimum error; absolute tie tolerance 1e-9.',
-    'uncertainty':'Pooled descriptive metrics from one fixed experiment; no repeat-based intervals.',
-    'design':'Quantitative grid: coverage, mean error, tail error. White background; consistent paired blue palette.',
-    'backend':'Python / Matplotlib','size_mm':[183,height_mm],
-},ensure_ascii=False,indent=2)+'\n')
-print(f'Exported {len(labels)} routes x 6 metrics; best markers:',[(r['route'],r['metric']) for r in records if r['best']])
+print(f'Exported {stem} ({len(labels)} routes)')

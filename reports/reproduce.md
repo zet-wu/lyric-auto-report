@@ -1,126 +1,96 @@
-# 复现实验
+# 实验复现说明
 
-音频模型实验使用 Linux、Python 3.13、NVIDIA GPU，以及 Git、FFmpeg、Node.js、npm 和 C/C++ 编译工具链。音频模型推理使用 CUDA；文本注音与评分无需 GPU。SUG WinRT 自动注音实验在独立 Windows 环境中进行，使用系统日语注音引擎。
+本仓库已随 Git 保存了全套测试集音频、人工 TTML 标注、逐条件预测结果（`.json` / `.json.gz`）以及汇总指标。读者既可以在无 GPU、无模型权重的轻量环境中直接复算所有评分，也可以在配备 NVIDIA GPU 的 Linux 环境中从头重跑声学推理。
 
-## 安装与版本
+## 1. 轻量评分复核（无需 GPU 或模型权重）
 
-在仓库根目录执行：
+仅需 Python 3.13 及 `NumPy`、`Matplotlib`（定义在 [`requirements/scoring.txt`](../requirements/scoring.txt)），即可从已发布的预测文件重新计算全部实验指标并校验仓库数据与链接完整性：
+
+```sh
+python3.13 -m venv .venvs/scoring
+.venvs/scoring/bin/pip install -r requirements/scoring.txt
+.venvs/scoring/bin/python scripts/score.py
+python3.13 scripts/verify.py
+```
+
+- `scripts/score.py`：依次调用各专题的独立评分脚本，从 `results/` 下的预测文件重新汇总生成各目录的 `metrics.json`、`metrics.csv`、`summary.json` 以及消融热力图 `results/ablation/matrix.png`。
+- `scripts/verify.py`：校验 [`datasets/files.json`](../datasets/files.json) 中 29 个音频与标注文件的 SHA256、所有 Python/JSON 文件语法、无本机绝对路径残留、所有 Markdown 报告的相对链接有效性，以及核心汇总文件完整性。
+
+## 2. 完整推理环境与模型准备
+
+从头运行人声分离与声学对齐推理需要：
+- **操作系统与硬件**：Linux（x86_64）、NVIDIA GPU（实验基准为 RTX 4090）；
+- **系统工具**：Python 3.13、Git、FFmpeg（含 `ffprobe`）、Node.js、npm 及 C/C++ 编译工具链。
+
+在仓库根目录执行以下命令，自动创建本地虚拟环境（`.venvs/`）、检出固定提交的上游源码（`.deps/`）并下载校验全部模型权重（`.models/`）：
 
 ```sh
 python3.13 scripts/setup.py --models
 ```
 
-源码提交见 [sources.json](../configs/sources.json) 和 [comparison-sources.json](../configs/comparison-sources.json)。源码保存在 .deps，权重保存在 .models 与 .deps/timing/models，运行缓存保存在 .cache；这些目录不纳入 Git。模型、音频和标注均按固定身份读取。
+上游仓库的固定提交记录在 [`configs/sources.json`](../configs/sources.json) 与 [`configs/comparison-sources.json`](../configs/comparison-sources.json)，模型权重地址与 SHA256 记录在 [`configs/models.json`](../configs/models.json) 与 [`configs/separation-models.json`](../configs/separation-models.json)。
 
-八路线实验通过固定源码接口调用模型、对齐、结果采用和导出，不测试官方安装包或 GUI 操作。Lazulite Studio 包含当前固定管线与智能延长实现。各路线实际运行环境见 [environment.json](../results/comparison/environment.json)，模型文件身份见 [model-files.json](../results/comparison/model-files.json)。
+為隔离不同开源工具对 `transformers`、`audio-separator` 和 `librosa` 的版本需求，`setup.py` 会自动配置五个本地虚拟环境：
 
-| 环境 | 用途 | 核心版本 |
+| 虚拟环境路径 | 用途 | 关键依赖版本 |
 | --- | --- | --- |
-| .venvs/research | Lazulite Studio、固定环境的模块诊断、评分 | Transformers 4.57.6；完整依赖见 comparison-research-lock.txt |
-| .venvs/milikara | MiliKara 原生服务、默认分离与注音 | audio-separator 0.30.2、UniDic Lite；见 comparison-native-lock.txt |
-| .venvs/sug | SUG 对齐与指定 UVR 分离 | Transformers 5.15.0、audio-separator 0.47.0、librosa 0.10.2.post1 |
-| .venvs/native5 | 主比较中的 Timing、yohane | Transformers 5.15.0；见 comparison-native5-lock.txt |
-| .venvs/fakara | FA-Kara MMS_FA 路径 | librosa 0.11.0；见 comparison-fakara-lock.txt |
+| `.venvs/research` | Lazulite Studio、共用环境模块消融与统一评分 | Transformers 4.57.6（详见 `requirements/linux-cuda-lock.txt`） |
+| `.venvs/milikara` | MiliKara 原生服务、默认分离与注音 | `audio-separator` 0.30.2、`unidic-lite` |
+| `.venvs/sug` | SUG 对齐与 UVR MDX-Net 分离 | Transformers 5.15.0、`audio-separator` 0.47.0、`librosa` 0.10.2.post1 |
+| `.venvs/native5` | 八路线比较中的 Timing 与 yohane | Transformers 5.15.0 |
+| `.venvs/fakara` | FA-Kara 的 `MMS_FA` 与静音后处理路径 | `librosa` 0.11.0 |
 
-SUG、native5 和 FA-Kara 环境优先加载自己的依赖，并共享研究环境的 CUDA 基础运行库。FA-Kara 的本次 MMS_FA 路径不调用 Transformers。Linux 源码适配使用本机固定的 Torch／torchaudio，而非复刻 FA-Kara 的 Windows 冻结环境或 yohane 的 CLI 可选依赖组合；Timing 源码接口在 Python 3.13 实测，其应用元数据声明的 Python 范围为 3.12。这些适配与实际版本均应随复现结果保留。
+## 3. 重跑实验与分阶段执行
 
-仅补装比较环境可执行：
-
-```sh
-.venvs/research/bin/python scripts/comparison/setup.py
-```
-
-## 完整重跑与续跑
+### 3.1 全量重跑
 
 ```sh
 .venvs/research/bin/python scripts/run.py all --fresh
 ```
 
---fresh 将已有 results 和 .cache 移入被忽略的 .runs 编号备份，再重新生成质量实验。中断后去掉 --fresh 续跑。源码、依赖和权重可以继续使用。修改输入、模型、源码或参数后须重新开始，不能把旧声学缓存混入新条件。
+`--fresh` 会将当前已有的 `results/` 和 `.cache/` 移入被忽略的 `.runs/run-001` 等编号备份目录，然后按依赖顺序从头执行全部实验。若中途中断，去掉 `--fresh` 即可从断点续跑。
 
-阶段依次为 prepare、separate、matrix、pipeline、milikara、reading、local-refinement、mms-gap-fill、comparison、additional、separation-alignment、resources。例如：
+### 3.2 按专题阶段单独运行
+
+`scripts/run.py` 支持指定单个专题阶段（或使用 `--start-at <脚本名>` 从阶段内某一步恢复）：
 
 ```sh
+# 运行八条路线三组对比实验（G1 / G2 / G3）
 .venvs/research/bin/python scripts/run.py comparison
-.venvs/research/bin/python scripts/run.py milikara --start-at run_runner
-```
 
-comparison 执行八条路线的三组实验，运行 264 个歌曲条件，输出 22 个组别／路线条件，每个条件分别汇总正文与读音两层，共 44 行指标。Timing 与 FA-Kara 的第一、二组复用相同 BS Karaoke 输出。智能延长只在 Lazulite Studio MMS_FA 条件开启，两条 Lazulite Studio 路线都关闭间隙合并。背景歌词不作为对齐目标；音频叠唱保留。
+# 运行三大对齐后端与行窗口消融矩阵
+.venvs/research/bin/python scripts/run.py matrix
 
-matrix 使用共用研究环境诊断三种后端与窗口，comparison 使用各路线记录的运行环境进行产品输出比较，两者分别计分。mms-gap-fill 只处理已有端点，不重新声学推理。资源阶段应在其他 GPU 任务结束后串行运行，质量实验日志中的耗时不用于速度排名。
+# 运行 MiliKara 解码机制消融或异常行局部重算
+.venvs/research/bin/python scripts/run.py milikara
+.venvs/research/bin/python scripts/run.py local-refinement
 
-原始输出与失败状态保存在 results；中间音频、项目、概率缓存与日志保存在 .cache。输入准备、原生导出与共同边界评分的说明见[方法](methods.md)及[八路线报告](comparison.md)。
-
-## 自动注音范围与生成
-
-独立报告使用全部 12 首日语主组，另列 s11 前 10 行日语部分。范围、固定源码、输入及 Lazulite Studio 候选哈希见 [reading.json](../configs/reading.json)。初次生成七种本地方法与两种 Terra 条件；SUG 的原 Linux Sudachi 回退结果保留为 sug，在独立 Windows 环境中进行的 WinRT 注音实验结果另列为 sug-winrt，共十种方法。其他预测保持冻结。
-
-本地方法由 reading/prepare.py、reading/local.py 和 reading/sug.py 依次生成；前两者使用研究环境，SUG Sudachi 回退使用 .venvs/sug/bin/python，输出到 predictions/sug；该入口显式选择 SudachiAnalyzer。随后运行 reading/score.py 与 reading/report.py。scripts/run.py reading 已包含这些步骤。
-
-Linux 阶段入口生成 SUG Sudachi 回退条件；报告中的独立 WinRT 条件须在 Windows 生成或保留已发布预测。在独立 Windows 环境中进行该实验时，于仓库根目录执行以下 PowerShell 命令；要求系统日语注音接口可用，且 .deps/comparison/sug 已检出 comparison-sources.json 中的固定提交。
-
-```powershell
-py -3.11 -m venv .venvs/sug-winrt
-.venvs/sug-winrt/Scripts/python.exe -X utf8 -m pip install --cache-dir .cache/pip -r requirements/reading-sug-winrt-lock.txt
-.venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/verify_sug_winrt.py --baseline .cache/sug-winrt-before --capture
-.venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/sug.py --require-winrt
-.venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/score.py --method sug-winrt
-.venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/verify_sug_winrt.py --baseline .cache/sug-winrt-before
-.venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/report.py
-```
-
---require-winrt 将结果独立写入 predictions/sug-winrt 和 runtime/sug-winrt.json，并核对源码提交、正文输入哈希及实际分析器，WinRT 不可用时终止，禁止静默回退。原生 pykakasi 单字参考依赖也必须可用。--output-dir 可将预测与运行记录先写入被忽略的临时目录；评分固定读取 results/reading。--capture 保存实验运行前的核验快照，目录已存在时须换一个未使用的目录名。UTF-8 模式用于避免 Windows 默认编码改变歌词或依赖清单。此环境仅安装文本路径所需依赖，不安装声学模型、分离器或 GUI。
-
-本次 Windows 版本、Python 与依赖版本、输入和预测哈希见[运行环境](../results/reading/sug-winrt-environment.json)，WinRT 实际分析器与未决单元见[运行记录](../results/reading/runtime/sug-winrt.json)。[独立 Windows 实验核验](../results/reading/sug-winrt-audit.json)记录共同边界、其他方法评分及时间对齐文件的不变性。WinRT 依赖系统日语组件，跨系统版本复现时应重新核对输出哈希。时间对齐实验仍使用原 Linux 注音与声学结果。
-
-外部 LLM（大语言模型）模拟使用 gpt-6.1-terra、high 推理强度，按协议分为三个隔离批次。每批先只读正文直接注音，再在相同代理上下文中读取新生成的 Lazulite Studio 候选并修正；不读取人工参考、音频、时间、其他模型结果、网络或词典。26 份新输出及其哈希记录在 results/reading/llm-execution.json。
-
-发布预测已冻结。后续完整重跑的 reuse_llm.py 仅在正文和 Lazulite Studio 候选哈希一致时复用本次两种 Terra 预测，不自动请求外部模型；改变输入时必须重新生成。这个复现入口不代表本轮复用了旧实验输出。
-
-## Lazulite Studio 智能延长更新
-
-固定实现为 5d3183e。智能延长取 FA-Kara 静音搜索、全部片段核心区终点 core_end（含连续长片段寻谷形成的分界）、下一有效单元起点中的最早候选，末尾以音频终点封顶；两条路线都关闭间隙合并，仅 MMS_FA 开启延长。
-
-本轮核对源码后确认声学推理与解码未变，复用已有 GPU 声学结果及经哈希核验的人声，使用 scripts/comparison/refresh_studio_postprocessing.py 重新调用产品后处理，再执行原生前端采用与评分。72 个 Lazulite Studio 条件全部复核，其中 36 个 MMS_FA 条件使用新终点，36 个 NextFire 条件保持一致。原始推理耗时不视为本轮耗时。记录见 [后处理核验](../results/comparison/studio-postprocessing-audit.json)。完整新推理仍通过 run_studio.py 调用相同实现，并传入准备阶段的全部片段。
-
-## 独立评分与验证
-
-只复核已发布的预测，无需源码依赖、模型或 GPU：
-
-```sh
-python3.13 -m venv .venvs/scoring
-.venvs/scoring/bin/pip install -r requirements/scoring.txt
-.venvs/scoring/bin/python scripts/comparison/test_scoring.py
-.venvs/scoring/bin/python scripts/score.py
-python3.13 scripts/verify.py
-python3.13 scripts/verify_results.py
-python3.13 scripts/comparison/verify.py
-```
-
-verify 检查输入哈希、相对路径、语法与文档链接；verify_results 检查全部预定条件和分母；comparison/verify 检查组内正文分区、固定读音分母、合并缺失及原生时间端点，并使用独立的统计实现重算命中、MAE（Mean Absolute Error，平均绝对误差）、绝对误差 P95（第 95 百分位数）、缺失与超过 1 秒的项数。缺失保留在命中分母，误差分布只统计有效端点。
-
-预测可无损压缩为 .json.gz，评分同时支持两种形式。报告由 scripts/refresh_reports.py、scripts/comparison/report.py 和 scripts/reading/report.py 从当前指标生成。README 保持原样，由作者另行统一修改。
-
-原 Linux 发布结果曾在不含 .deps 与 .models 的独立发布目录中，使用仅安装 NumPy 和 Matplotlib 的评分环境重新计分。23 份指标对象逐项一致，29 份输入文件、全部实验条件与文档链接通过检查；指标语义哈希和检查范围见[复核记录](../results/reproducibility.json)。该记录中的自动注音指标哈希对应纳入独立 Windows 实验结果之前的快照，当前自动注音结果以[独立 Windows 实验核验](../results/reading/sug-winrt-audit.json)为准。
-
-SUG 按原生 .sug 项目评分。已有冻结模型结果可通过 `.venvs/sug/bin/python scripts/comparison/sug_project.py` 重新执行采用、保存与加载校验；此步骤不重新运行声学模型。项目里的节奏点和句末点是正文与读音两层评分的时间来源。
-
-
-## 十种分离配置实验
-
-GPU 资源实验使用 configs/separation-resources-inputs.json 固定的五曲整曲；CPU 使用 configs/separation-cpu-inputs.json 固定的《Rainbow Flower》30–60 秒片段，均预热后三次重复，共 180 条记录。质量实验保持人工读音、NextFire 与标准 CTC，主组为 12 首日语歌曲，s13 单列；两条保存路径与三种音频组织方式组成每配置六个条件。资源测试统一使用 44.1 kHz 双声道，质量测试保留原生输出采样率与保存语义，再由统一下游流程重采样。
-
-先完成源码、模型和 comparison 环境安装。MiliKara 的测量环境另需 mutagen==1.47.0、psutil==7.2.2、nvidia-ml-py==13.615.71；分离运行库保持 audio-separator 0.30.2，SUG 保持 0.47.0。脚本按配置选择固定环境：research、sug、milikara、native5。
-
-```sh
-.venvs/research/bin/python scripts/timing/separation_reuse.py
+# 运行十种人声分离模型的下游对齐或串行资源测试
 .venvs/research/bin/python scripts/run.py separation-alignment
-.venvs/research/bin/python scripts/timing/separation_suite.py
-.venvs/research/bin/python scripts/refresh_reports.py separation performance
-python3.13 scripts/verify.py
-python3.13 scripts/verify_results.py
+.venvs/research/bin/python scripts/run.py resources
+
+# 运行跨平台本地自动注音实验
+.venvs/research/bin/python scripts/run.py reading
 ```
 
-separation_reuse 核验本机固定资产及保留结果；发布目录仅评分时无需执行该入口。资源调度串行执行 CPU／GPU 任务，测量期间不运行下游质量计算。单独恢复某种配置可使用 separation_suite.py --models sug --devices cpu；已完整且身份一致的结果直接复用。
+若需要重新绘制 `README.md` 中的三组横向对比柱状图（`results/figures/g{1,2,3}-comparison.png`），可执行：
 
-资源计时覆盖输入搬运、计算及结果返回 CPU，排除解码、加载、编码和写盘。CPU 片段协议沿用归档实验；旧记录因 Torch 版本不同未计入当前统计，来源与未纳入统计的整曲记录见 results/separation-resources/cpu-provenance.json。原生一致性核验及人声身份保存在 results/separation-alignment/stems-*.json，保留数据的来源核验在 reuse-audit.json。下游和资源输出按统一配置汇总；原八路线评分及 README 保持不变。
+```sh
+for g in G1 G2 G3; do
+  .venvs/research/bin/python scripts/plot_readme_comparison.py --group "$g"
+done
+```
+
+## 4. 补充实验说明（Windows WinRT 注音与在线 LLM 注音）
+
+1. **Windows 下的 SUG `WinRT` 自动注音**：
+   - Linux 下运行 `scripts/run.py reading` 会生成 SUG 的跨平台 `Sudachi` 注音结果（`predictions/sug`），并保留仓库中已冻结的 Windows `WinRT` 预测（`predictions/sug-winrt`）。
+   - 如需在 Windows 机器上重新生成 `sug-winrt` 预测，可在检出固定 SUG 源码并确保系统日语组件可用后，在 PowerShell 中执行：
+     ```powershell
+     py -3.11 -m venv .venvs/sug-winrt
+     .venvs/sug-winrt/Scripts/python.exe -X utf8 -m pip install -r requirements/reading-sug-winrt-lock.txt
+     .venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/sug.py --require-winrt
+     .venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/score.py --method sug-winrt
+     ```
+2. **GPT-6.1 Terra 自动注音对照**：
+   - 自动注音报告中的两组在线 LLM 预测（`terra-direct` 与 `terra-corrected`）已随仓库冻结在 `results/reading/predictions/` 中，重跑 `reading` 阶段时若输入正文与 Studio 候选哈希未变，`scripts/reading/reuse_llm.py` 会自动复用已保存的 LLM 输出。

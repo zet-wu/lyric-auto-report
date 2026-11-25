@@ -111,7 +111,7 @@ def main():
                         dump(target,record);continue
                     projection=cached['projection']
                 else:
-                    projection=project_alignment(snapshot_for(sid,args.condition),False,model={'vocabulary':backend.vocab,'blank':backend.blank})
+                    projection=project_alignment(snapshot_for(sid,args.condition),False,model={'vocabulary':backend.vocab,'blank':backend.blank},strip_tone_digits=sid in ('y01','y02','jy01'))
                 record.update(projection=projection,input_tokens=projection['summary']['inputs'])
                 request = JapaneseAlignmentRequest.from_dict(projection['request'])
                 outputs = []; all_units = []; times = {}; stage = 'alignment_inference'
@@ -139,7 +139,7 @@ def main():
                             acoustic = AcousticResult(backend.emissions(clip), backend.vocab, backend.blank, backend.frames, mapping, original.duration, special_tokens=backend.special_tokens)
                         np.save(prefix.with_suffix('.npy'), acoustic.log_probabilities)
                         dump(prefix.with_suffix('.json'), {'mapping': asdict(acoustic.mapping), 'frames': asdict(acoustic.frames)})
-                    result = align_japanese(None, req, acoustic=acoustic, config=JapaneseConfig(hint_mode='off'))
+                    result = align_japanese(None, req, acoustic=acoustic, config=JapaneseConfig(hint_mode='off', strip_tone_digits=sid in ('y01', 'y02', 'jy01')))
                     outputs.append({'line_id': line_id, 'status': result.status}); all_units.extend(result.units)
                     selected = [item for item in projection['mapping'] if line_id is None or item['line_id'] == line_id]
                     times.update(object_timings(result, selected, vocals, args.smart, segments=prepared.segments))

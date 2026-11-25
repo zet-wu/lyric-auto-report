@@ -36,7 +36,7 @@ def main():
             for model,options in models.items():
                 target=ROOT/'.cache/phase2/projections'/f'{sid}-{condition}-{model}.json.gz'
                 try:
-                    projection=project_alignment(snapshot_for(sid,condition),False,model=options)
+                    projection=project_alignment(snapshot_for(sid,condition),False,model=options,strip_tone_digits=sid in ('y01','y02','jy01'))
                     record={'status':'ok','projection':projection};count+=1
                 except Exception as exc:
                     record={'status':'failed','error':{'type':type(exc).__name__,'message':portable(exc)[:800]}};failed+=1

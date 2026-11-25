@@ -1857,14 +1857,12 @@
         "cer_pct": "Kana edit distance divided by reference kana length, as a percentage",
         "kana_coverage_pct": "Percentage of outputs containing only normalized kana"
       },
-      "status": "waiting_for_winrt",
+      "status": "complete",
       "failed_or_unsupported": [],
       "additional_data": []
     }
   },
-  "stage": "interim",
-  "missing_reading_methods": [
-    "sug-winrt"
-  ],
+  "stage": "complete",
+  "missing_reading_methods": [],
   "pending_gpu_benchmarks": []
 }

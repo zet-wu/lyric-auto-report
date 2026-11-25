@@ -54,7 +54,7 @@ def build_jobs():
         for mode in (['global','core'] if model in config['modules']['M5']['core_models'] else ['core']):
             native('M5',model+'-'+mode,ja,sep=model,mode=mode)
         for device in ('cuda','cpu'):
-            add(f'benchmark-{model}-{device}','M5','timing/separation_resources.py',[model,'--device',device],config['modules']['M5']['benchmark_songs'],
+            add(f'benchmark-{model}-{device}','M5','timing/separation_resources.py',[model,'--device',device],config['modules']['M5']['benchmark_cpu_songs'] if device=='cpu' else config['modules']['M5']['benchmark_songs'],
                 {'sug':'sug','milikara':'milikara','yohane':'yohane'}.get(model,'research'),
                 [f'results/separation-resources/{model}{"-cpu" if device=="cpu" else ""}.json.gz'],kind='benchmark',separator=model,device=device)
     for sep in ('demucs','bs'):

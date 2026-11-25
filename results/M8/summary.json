@@ -1,0 +1,5131 @@
+{
+  "metrics": [
+    {
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "triggered_lines": 181,
+      "line_count": 875,
+      "triggered_fraction": 0.20685714285714285,
+      "fixed_count": 0,
+      "broken_count": 0,
+      "net_gain": 0,
+      "n": 8909,
+      "valid": 8893,
+      "missing": 16,
+      "hit100": 7529,
+      "hit200": 8364,
+      "hit100_pct": 84.51004602087777,
+      "hit200_pct": 93.88259063867999,
+      "start_mae_ms": 49.506585235578775,
+      "end_mae_ms": 56.33108203081095,
+      "start_p95_ms": 126.34999999999641,
+      "end_p95_ms": 173.64999999999756,
+      "over1s": 80,
+      "abs_p95_ms": 152.04687499999991
+    },
+    {
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "triggered_lines": 181,
+      "line_count": 875,
+      "triggered_fraction": 0.20685714285714285,
+      "fixed_count": 129,
+      "broken_count": 198,
+      "net_gain": -69,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7460,
+      "hit200": 8344,
+      "hit100_pct": 83.73554832192166,
+      "hit200_pct": 93.65809855202605,
+      "start_mae_ms": 51.11105887965889,
+      "end_mae_ms": 58.95718735967682,
+      "start_p95_ms": 132.9781250000053,
+      "end_p95_ms": 187.54062500000825,
+      "over1s": 86,
+      "abs_p95_ms": 161.4687500000036
+    },
+    {
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "triggered_lines": 181,
+      "line_count": 875,
+      "triggered_fraction": 0.20685714285714285,
+      "fixed_count": 328,
+      "broken_count": 237,
+      "net_gain": 91,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7620,
+      "hit200": 8445,
+      "hit100_pct": 85.53148501515322,
+      "hit200_pct": 94.79178358962847,
+      "start_mae_ms": 43.10402868208369,
+      "end_mae_ms": 55.58649001903572,
+      "start_p95_ms": 114.28750000000667,
+      "end_p95_ms": 165.99999999999682,
+      "over1s": 75,
+      "abs_p95_ms": 138.00000000000523
+    },
+    {
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "triggered_lines": 181,
+      "line_count": 875,
+      "triggered_fraction": 0.20685714285714285,
+      "fixed_count": 328,
+      "broken_count": 232,
+      "net_gain": 96,
+      "n": 8909,
+      "valid": 8905,
+      "missing": 4,
+      "hit100": 7625,
+      "hit200": 8460,
+      "hit100_pct": 85.5876080368167,
+      "hit200_pct": 94.96015265461892,
+      "start_mae_ms": 46.61121560920847,
+      "end_mae_ms": 55.8059264871961,
+      "start_p95_ms": 113.48750000000219,
+      "end_p95_ms": 159.89999999998744,
+      "over1s": 78,
+      "abs_p95_ms": 135.63749999998845
+    },
+    {
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "triggered_lines": 211,
+      "line_count": 875,
+      "triggered_fraction": 0.24114285714285713,
+      "fixed_count": 0,
+      "broken_count": 0,
+      "net_gain": 0,
+      "n": 8909,
+      "valid": 8893,
+      "missing": 16,
+      "hit100": 7529,
+      "hit200": 8364,
+      "hit100_pct": 84.51004602087777,
+      "hit200_pct": 93.88259063867999,
+      "start_mae_ms": 49.506585235578775,
+      "end_mae_ms": 56.33108203081095,
+      "start_p95_ms": 126.34999999999641,
+      "end_p95_ms": 173.64999999999756,
+      "over1s": 80,
+      "abs_p95_ms": 152.04687499999991
+    },
+    {
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "triggered_lines": 211,
+      "line_count": 875,
+      "triggered_fraction": 0.24114285714285713,
+      "fixed_count": 145,
+      "broken_count": 242,
+      "net_gain": -97,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7432,
+      "hit200": 8333,
+      "hit100_pct": 83.42125940060613,
+      "hit200_pct": 93.53462790436637,
+      "start_mae_ms": 51.45600864391571,
+      "end_mae_ms": 59.40220167265395,
+      "start_p95_ms": 135.74999999997317,
+      "end_p95_ms": 191.20312499998835,
+      "over1s": 85,
+      "abs_p95_ms": 164.99999999999915
+    },
+    {
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "triggered_lines": 211,
+      "line_count": 875,
+      "triggered_fraction": 0.24114285714285713,
+      "fixed_count": 387,
+      "broken_count": 271,
+      "net_gain": 116,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7645,
+      "hit200": 8465,
+      "hit100_pct": 85.81210012347064,
+      "hit200_pct": 95.0162756762824,
+      "start_mae_ms": 40.781039515042806,
+      "end_mae_ms": 54.223628000818806,
+      "start_p95_ms": 110.78749999999494,
+      "end_p95_ms": 161.60312500000927,
+      "over1s": 65,
+      "abs_p95_ms": 135.31250000001194
+    },
+    {
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "triggered_lines": 211,
+      "line_count": 875,
+      "triggered_fraction": 0.24114285714285713,
+      "fixed_count": 390,
+      "broken_count": 268,
+      "net_gain": 122,
+      "n": 8909,
+      "valid": 8905,
+      "missing": 4,
+      "hit100": 7651,
+      "hit200": 8476,
+      "hit100_pct": 85.87944774946683,
+      "hit200_pct": 95.13974632394208,
+      "start_mae_ms": 46.81135597978673,
+      "end_mae_ms": 56.78317706363855,
+      "start_p95_ms": 110.67499999999764,
+      "end_p95_ms": 158.75065192741994,
+      "over1s": 81,
+      "abs_p95_ms": 133.0024943310704
+    },
+    {
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "triggered_lines": 81,
+      "line_count": 875,
+      "triggered_fraction": 0.09257142857142857,
+      "fixed_count": 0,
+      "broken_count": 0,
+      "net_gain": 0,
+      "n": 8909,
+      "valid": 8893,
+      "missing": 16,
+      "hit100": 7529,
+      "hit200": 8364,
+      "hit100_pct": 84.51004602087777,
+      "hit200_pct": 93.88259063867999,
+      "start_mae_ms": 49.506585235578775,
+      "end_mae_ms": 56.33108203081095,
+      "start_p95_ms": 126.34999999999641,
+      "end_p95_ms": 173.64999999999756,
+      "over1s": 80,
+      "abs_p95_ms": 152.04687499999991
+    },
+    {
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "triggered_lines": 81,
+      "line_count": 875,
+      "triggered_fraction": 0.09257142857142857,
+      "fixed_count": 51,
+      "broken_count": 88,
+      "net_gain": -37,
+      "n": 8909,
+      "valid": 8898,
+      "missing": 11,
+      "hit100": 7492,
+      "hit200": 8349,
+      "hit100_pct": 84.09473566056796,
+      "hit200_pct": 93.71422157368953,
+      "start_mae_ms": 50.73590273095096,
+      "end_mae_ms": 57.93377022926517,
+      "start_p95_ms": 128.0000000000001,
+      "end_p95_ms": 181.76874999999336,
+      "over1s": 83,
+      "abs_p95_ms": 155.9999999999775
+    },
+    {
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "triggered_lines": 81,
+      "line_count": 875,
+      "triggered_fraction": 0.09257142857142857,
+      "fixed_count": 156,
+      "broken_count": 91,
+      "net_gain": 65,
+      "n": 8909,
+      "valid": 8898,
+      "missing": 11,
+      "hit100": 7594,
+      "hit200": 8407,
+      "hit100_pct": 85.23964530250309,
+      "hit200_pct": 94.36524862498597,
+      "start_mae_ms": 45.354005113508826,
+      "end_mae_ms": 54.30286752634688,
+      "start_p95_ms": 120.27812499999577,
+      "end_p95_ms": 167.89374999998253,
+      "over1s": 69,
+      "abs_p95_ms": 143.00000000000068
+    },
+    {
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "triggered_lines": 81,
+      "line_count": 875,
+      "triggered_fraction": 0.09257142857142857,
+      "fixed_count": 154,
+      "broken_count": 87,
+      "net_gain": 67,
+      "n": 8909,
+      "valid": 8898,
+      "missing": 11,
+      "hit100": 7596,
+      "hit200": 8437,
+      "hit100_pct": 85.26209451116848,
+      "hit200_pct": 94.70198675496688,
+      "start_mae_ms": 45.65604630254013,
+      "end_mae_ms": 53.39088833817802,
+      "start_p95_ms": 116.69687500000944,
+      "end_p95_ms": 161.57187500000114,
+      "over1s": 68,
+      "abs_p95_ms": 138.8437499999995
+    },
+    {
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 0,
+      "broken_count": 0,
+      "net_gain": 0,
+      "n": 8909,
+      "valid": 8893,
+      "missing": 16,
+      "hit100": 7529,
+      "hit200": 8364,
+      "hit100_pct": 84.51004602087777,
+      "hit200_pct": 93.88259063867999,
+      "start_mae_ms": 49.506585235578775,
+      "end_mae_ms": 56.33108203081095,
+      "start_p95_ms": 126.34999999999641,
+      "end_p95_ms": 173.64999999999756,
+      "over1s": 80,
+      "abs_p95_ms": 152.04687499999991
+    },
+    {
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 130,
+      "broken_count": 205,
+      "net_gain": -75,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7454,
+      "hit200": 8338,
+      "hit100_pct": 83.66820069592546,
+      "hit200_pct": 93.59075092602986,
+      "start_mae_ms": 51.57085625280662,
+      "end_mae_ms": 59.36137460709489,
+      "start_p95_ms": 133.99999999998613,
+      "end_p95_ms": 188.0000000000024,
+      "over1s": 87,
+      "abs_p95_ms": 161.93749999999696
+    },
+    {
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 340,
+      "broken_count": 247,
+      "net_gain": 93,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7622,
+      "hit200": 8444,
+      "hit100_pct": 85.55393422381862,
+      "hit200_pct": 94.78055898529577,
+      "start_mae_ms": 43.170920801526876,
+      "end_mae_ms": 55.53889960882584,
+      "start_p95_ms": 114.76250000000032,
+      "end_p95_ms": 164.8624999999951,
+      "over1s": 74,
+      "abs_p95_ms": 138.00000000000523
+    },
+    {
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 338,
+      "broken_count": 239,
+      "net_gain": 99,
+      "n": 8909,
+      "valid": 8905,
+      "missing": 4,
+      "hit100": 7628,
+      "hit200": 8463,
+      "hit100_pct": 85.62128184981479,
+      "hit200_pct": 94.99382646761701,
+      "start_mae_ms": 46.65416900617645,
+      "end_mae_ms": 55.78726445753302,
+      "start_p95_ms": 112.9499999999977,
+      "end_p95_ms": 158.90328798186022,
+      "over1s": 77,
+      "abs_p95_ms": 134.45000000000053
+    },
+    {
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "triggered_lines": 214,
+      "line_count": 875,
+      "triggered_fraction": 0.24457142857142858,
+      "fixed_count": 0,
+      "broken_count": 0,
+      "net_gain": 0,
+      "n": 8909,
+      "valid": 8893,
+      "missing": 16,
+      "hit100": 7529,
+      "hit200": 8364,
+      "hit100_pct": 84.51004602087777,
+      "hit200_pct": 93.88259063867999,
+      "start_mae_ms": 49.506585235578775,
+      "end_mae_ms": 56.33108203081095,
+      "start_p95_ms": 126.34999999999641,
+      "end_p95_ms": 173.64999999999756,
+      "over1s": 80,
+      "abs_p95_ms": 152.04687499999991
+    },
+    {
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "triggered_lines": 214,
+      "line_count": 875,
+      "triggered_fraction": 0.24457142857142858,
+      "fixed_count": 146,
+      "broken_count": 246,
+      "net_gain": -100,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7429,
+      "hit200": 8328,
+      "hit100_pct": 83.38758558760804,
+      "hit200_pct": 93.47850488270288,
+      "start_mae_ms": 51.884836663673234,
+      "end_mae_ms": 59.77544763134276,
+      "start_p95_ms": 136.00000000001415,
+      "end_p95_ms": 191.84687500000575,
+      "over1s": 86,
+      "abs_p95_ms": 166.45312500000387
+    },
+    {
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "triggered_lines": 214,
+      "line_count": 875,
+      "triggered_fraction": 0.24457142857142858,
+      "fixed_count": 393,
+      "broken_count": 277,
+      "net_gain": 116,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7645,
+      "hit200": 8461,
+      "hit100_pct": 85.81210012347064,
+      "hit200_pct": 94.97137725895162,
+      "start_mae_ms": 40.892849124382735,
+      "end_mae_ms": 54.161076739856405,
+      "start_p95_ms": 111.55937500000014,
+      "end_p95_ms": 161.60312500000927,
+      "over1s": 64,
+      "abs_p95_ms": 135.56249999999892
+    },
+    {
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "triggered_lines": 214,
+      "line_count": 875,
+      "triggered_fraction": 0.24457142857142858,
+      "fixed_count": 396,
+      "broken_count": 271,
+      "net_gain": 125,
+      "n": 8909,
+      "valid": 8905,
+      "missing": 4,
+      "hit100": 7654,
+      "hit200": 8476,
+      "hit100_pct": 85.91312156246492,
+      "hit200_pct": 95.13974632394208,
+      "start_mae_ms": 46.89612577203828,
+      "end_mae_ms": 56.74412382021877,
+      "start_p95_ms": 110.67499999999764,
+      "end_p95_ms": 158.66250000001392,
+      "over1s": 80,
+      "abs_p95_ms": 132.79062499999256
+    },
+    {
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "triggered_lines": 174,
+      "line_count": 875,
+      "triggered_fraction": 0.19885714285714284,
+      "fixed_count": 0,
+      "broken_count": 0,
+      "net_gain": 0,
+      "n": 8909,
+      "valid": 8893,
+      "missing": 16,
+      "hit100": 7529,
+      "hit200": 8364,
+      "hit100_pct": 84.51004602087777,
+      "hit200_pct": 93.88259063867999,
+      "start_mae_ms": 49.506585235578775,
+      "end_mae_ms": 56.33108203081095,
+      "start_p95_ms": 126.34999999999641,
+      "end_p95_ms": 173.64999999999756,
+      "over1s": 80,
+      "abs_p95_ms": 152.04687499999991
+    },
+    {
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "triggered_lines": 174,
+      "line_count": 875,
+      "triggered_fraction": 0.19885714285714284,
+      "fixed_count": 122,
+      "broken_count": 220,
+      "net_gain": -98,
+      "n": 8909,
+      "valid": 8907,
+      "missing": 2,
+      "hit100": 7431,
+      "hit200": 8347,
+      "hit100_pct": 83.41003479627344,
+      "hit200_pct": 93.69177236502414,
+      "start_mae_ms": 51.101766868755135,
+      "end_mae_ms": 58.96639581228275,
+      "start_p95_ms": 137.4437499999855,
+      "end_p95_ms": 183.79374999999737,
+      "over1s": 84,
+      "abs_p95_ms": 161.21875000000523
+    },
+    {
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "triggered_lines": 174,
+      "line_count": 875,
+      "triggered_fraction": 0.19885714285714284,
+      "fixed_count": 256,
+      "broken_count": 195,
+      "net_gain": 61,
+      "n": 8909,
+      "valid": 8907,
+      "missing": 2,
+      "hit100": 7590,
+      "hit200": 8398,
+      "hit100_pct": 85.1947468851723,
+      "hit200_pct": 94.2642271859917,
+      "start_mae_ms": 44.29363843044818,
+      "end_mae_ms": 55.344270280808246,
+      "start_p95_ms": 120.56874999998664,
+      "end_p95_ms": 170.6999999999947,
+      "over1s": 75,
+      "abs_p95_ms": 145.75312500000138
+    },
+    {
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "triggered_lines": 174,
+      "line_count": 875,
+      "triggered_fraction": 0.19885714285714284,
+      "fixed_count": 263,
+      "broken_count": 202,
+      "net_gain": 61,
+      "n": 8909,
+      "valid": 8905,
+      "missing": 4,
+      "hit100": 7590,
+      "hit200": 8393,
+      "hit100_pct": 85.1947468851723,
+      "hit200_pct": 94.2081041643282,
+      "start_mae_ms": 60.78681920269535,
+      "end_mae_ms": 70.25903938779354,
+      "start_p95_ms": 122.73749999999661,
+      "end_p95_ms": 173.09999999999772,
+      "over1s": 100,
+      "abs_p95_ms": 148.90937499999518
+    },
+    {
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 0,
+      "broken_count": 0,
+      "net_gain": 0,
+      "n": 8909,
+      "valid": 8893,
+      "missing": 16,
+      "hit100": 7529,
+      "hit200": 8364,
+      "hit100_pct": 84.51004602087777,
+      "hit200_pct": 93.88259063867999,
+      "start_mae_ms": 49.506585235578775,
+      "end_mae_ms": 56.33108203081095,
+      "start_p95_ms": 126.34999999999641,
+      "end_p95_ms": 173.64999999999756,
+      "over1s": 80,
+      "abs_p95_ms": 152.04687499999991
+    },
+    {
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 128,
+      "broken_count": 209,
+      "net_gain": -81,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7448,
+      "hit200": 8352,
+      "hit100_pct": 83.60085306992929,
+      "hit200_pct": 93.74789538668762,
+      "start_mae_ms": 51.8826967332737,
+      "end_mae_ms": 59.95645767849147,
+      "start_p95_ms": 133.00000000000978,
+      "end_p95_ms": 182.99999999999733,
+      "over1s": 83,
+      "abs_p95_ms": 158.56250000001637
+    },
+    {
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 344,
+      "broken_count": 224,
+      "net_gain": 120,
+      "n": 8909,
+      "valid": 8908,
+      "missing": 1,
+      "hit100": 7649,
+      "hit200": 8502,
+      "hit100_pct": 85.85699854080144,
+      "hit200_pct": 95.43158603659221,
+      "start_mae_ms": 39.56184749663241,
+      "end_mae_ms": 50.2464659050645,
+      "start_p95_ms": 112.66562500001666,
+      "end_p95_ms": 153.5375000000072,
+      "over1s": 40,
+      "abs_p95_ms": 132.99999999999557
+    },
+    {
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "triggered_lines": 186,
+      "line_count": 875,
+      "triggered_fraction": 0.21257142857142858,
+      "fixed_count": 354,
+      "broken_count": 236,
+      "net_gain": 118,
+      "n": 8909,
+      "valid": 8905,
+      "missing": 4,
+      "hit100": 7647,
+      "hit200": 8508,
+      "hit100_pct": 85.83454933213604,
+      "hit200_pct": 95.4989336625884,
+      "start_mae_ms": 60.441942728804314,
+      "end_mae_ms": 69.19801477487887,
+      "start_p95_ms": 112.78750000000733,
+      "end_p95_ms": 153.23749999999706,
+      "over1s": 76,
+      "abs_p95_ms": 131.437499999997
+    }
+  ],
+  "completion": [
+    {
+      "song": "j01",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "short_unit_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "same_vowel_imbalance",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_30ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_30ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_40ms",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "combined_40ms",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "legacy_conf",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "legacy_conf",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_baseline",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "oracle_top_k",
+      "strategy": "nextfire_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_local",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j01",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j02",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j03",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j04",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j05",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j06",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j07",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j08",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j09",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j10",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j11",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j12",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j13",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j14",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j15",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j16",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j17",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j18",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j19",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    },
+    {
+      "song": "j20",
+      "trigger": "oracle_top_k",
+      "strategy": "mms_fa_global_swap",
+      "status": "ok",
+      "error": null,
+      "line_failures": {}
+    }
+  ],
+  "oracle_top_k": "Reference-error top K; K equals combined_30ms selected count for the same song. Excluded from deployable triggers."
+}

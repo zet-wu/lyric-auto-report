@@ -1,0 +1,606 @@
+{
+  "records": [
+    {
+      "model": "demucs",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 8.830023739486933,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1881104384,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 8.977845204994082,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1856974848,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 9.303561586886644,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1857658880,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 33.182466028258204,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1521639424,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 32.916207171976566,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1505390592,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 33.06028147228062,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1521602560,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 72.43355196528137,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1462013952,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 70.58319103717804,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1470898176,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 72.23951775953174,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 1467846656,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 280.14155083335936,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2617303040,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 276.1051104608923,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2610470912,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 271.9028388876468,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2619371520,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 106.61431007273495,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2814697472,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 106.28857843205333,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2814869504,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 106.3021708317101,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2814853120,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 43.35084371268749,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3057541120,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 43.21786489710212,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3026743296,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 42.65336675941944,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3042414592,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 210.18357574380934,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2942496768,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 208.0427291635424,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2906419200,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 207.07174813747406,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2915102720,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 15.09256648644805,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3921244160,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 14.86719200387597,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3933552640,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 15.30793228559196,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3945971712,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 78.53018743544817,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3009323008,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 80.36336352303624,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3009695744,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 80.48393244668841,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 3045548032,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 1,
+      "seconds": 3.0472508799284697,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2425888768,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 2,
+      "seconds": 3.1131235379725695,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2442776576,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cpu",
+      "song": "j03",
+      "repeat": 3,
+      "seconds": 3.1145074367523193,
+      "duration": 30.0,
+      "allocated_bytes": null,
+      "process_gpu_bytes": null,
+      "rss_bytes": 2399154176,
+      "board_energy_joules": null,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": "PermissionError: [Errno 13] Permission denied: '/sys/class/powercap/intel-rapl:0/energy_uj'",
+      "power_samples": 0,
+      "output_shape": [
+        2,
+        1323000
+      ],
+      "output_finite": true
+    }
+  ],
+  "gpu_energy_scope": "GPU board energy including idle; serial warm inference; decode, model load, file encoding excluded.",
+  "cpu_energy": "CPU package RAPL counter differences when readable; unavailable counter reasons are recorded with null, never zero."
+}

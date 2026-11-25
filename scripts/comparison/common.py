@@ -17,4 +17,6 @@ def timing_imports():
     sys.path.insert(0, str(UPSTREAM))
 
 def songs():
-    return [s for s in read(OUT / 'reference.json') if s['id'] in read(ROOT / 'configs/reading.json')['songs']]
+    selected = os.environ.get('PHASE2_SONGS', '').split(',')
+    wanted = set(selected) if selected != [''] else set(read(ROOT / 'configs/reading.json')['songs'])
+    return [s for s in read(OUT / 'reference.json') if s['id'] in wanted]

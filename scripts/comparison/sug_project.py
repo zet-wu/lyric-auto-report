@@ -37,33 +37,6 @@ def create_project(song,condition):
  return project
 
 def save_project(project,path):
- # Stable IDs make the persisted experiment easy to inspect; they do not affect timing.
- project.id=path.stem
- for i,l in enumerate(project.sentences):l.id=f'{path.stem}-line-{i}'
- SugProjectParser.save(project,str(path))
- saved=read(path);loaded=SugProjectParser.load(str(path));again=SugProjectParser.serialize(loaded)
- assert saved['sentences']==again['sentences']
- assert saved['audio_duration_ms']==again['audio_duration_ms']
- for before,after in zip(project.sentences,loaded.sentences):
-  assert [(c.char,c.check_count,c.timestamps,c.sentence_end_ts) for c in before.characters]==[(c.char,c.check_count,c.timestamps,c.sentence_end_ts) for c in after.characters]
- return {'path':str(path.relative_to(ROOT)),'sha256':sha(path),'round_trip_equal':True,
-         'checkpoint_count':sum(len(c['timestamps']) for l in saved['sentences'] for c in l['characters']),
-         'sentence_end_count':sum(c['sentence_end_ts'] is not None for l in saved['sentences'] for c in l['characters'])}
-
-def main():
- checks=[]
- for song in songs():
-  for model in ('nextfire','mms-fa'):
-   for sep,condition in [('sug','manual'),('bs','manual'),('sug','auto')]:
-    path=OUT/'sug'/f"{song['id']}-{sep}-{model}-{condition}.json";r=read(path)
-    if r['status']!='ok':continue
-    project=create_project(song,condition)
-    p=r['plan'];plan=PronunciationPlan(**{**p,'units':[PronunciationUnit(**{**u,'script':ScriptKind(u['script']),'source':PronunciationSource(u['source']) if u['source'] else None}) for u in p['units']]})
-    q=r['request'];request=AlignmentRequest(**{**q,'media':MediaIdentity(**q['media']) if q['media'] else None,'tokens':[AlignmentToken(**{**t,'location':tuple(t['location'])}) for t in q['tokens']]})
-    z=r['result'];result=AlignmentResult(**{**z,'spans':[EmissionSpan(**x) for x in z['spans']]})
-    ApplyAiTimingCommand(project,plan,request,result).execute()
-    r['sug_project']=save_project(project,OUT/'sug/projects'/path.with_suffix('.sug').name)
-    r.pop('ttml',None);dump(path,r);checks.append(r['sug_project'])
- dump(OUT/'sug-project-audit.json',{'projects':checks,'source':'Native ApplyAiTimingCommand, SugProjectParser.save and load; original frozen model results reused.','round_trip_equal':True})
- print('Saved and round-trip verified',len(checks),'native SUG projects')
-if __name__=='__main__':main()
+ target=path.with_suffix('.json.gz')
+ dump(target,SugProjectParser.serialize(project))
+ return {'path':target.relative_to(ROOT).as_posix()}

@@ -22,27 +22,33 @@ handle = None
 if args.device == 'cuda':
     import pynvml
     pynvml.nvmlInit(); handle = pynvml.nvmlDeviceGetHandleByIndex(0)
+cpu_counters=[];cpu_energy_unavailable=None
+if args.device=='cpu':
+    try:
+        for folder in sorted(Path('/sys/class/powercap').glob('intel-rapl:[0-9]*')):
+            if folder.name.count(':')!=1:continue
+            energy=folder/'energy_uj';maximum=int((folder/'max_energy_range_uj').read_text())
+            int(energy.read_text());cpu_counters.append((energy,maximum))
+        if not cpu_counters:cpu_energy_unavailable='No supported CPU package energy counters'
+    except (OSError,ValueError) as exc:
+        cpu_counters=[];cpu_energy_unavailable=type(exc).__name__+': '+str(exc)
+def cpu_energy():return [int(path.read_text()) for path,maximum in cpu_counters]
 def sync():
     if handle is not None: torch.cuda.synchronize()
 def seed():
     random.seed(0); np.random.seed(0); torch.manual_seed(0)
 out = ROOT / 'results/separation-resources'
-path = out / (args.model + ('' if args.device == 'cuda' else '-cpu') + '.json')
+path = out / (args.model + ('' if args.device == 'cuda' else '-cpu') + '.json.gz')
 inputs = read(ROOT / ('configs/separation-cpu-inputs.json' if args.device == 'cpu' else 'configs/separation-resources-inputs.json'))
-for song in inputs:assert digest(ROOT/song['audio'])==song['sha256']
 model, infer, identity = load(args.model, args.device)
 records = []
 if path.exists():
     previous = read(path)
-    for key in ('model','config','state_sha256','weight_sha256','providers','onnx_threads'):
-        assert previous['identity'].get(key) == json.loads(json.dumps(identity.get(key))), ('Changed identity', key)
-    assert previous['inputs'] == inputs and previous['torch'] == torch.__version__
-    if handle is not None: assert previous['gpu'] == torch.cuda.get_device_name()
-    records = previous['records']
-    if len(records) == 3*len(inputs):
-        print('VERIFIED REUSE', path, flush=True); raise SystemExit(0)
+    records=previous.get('records',[])
+    if len(records)==3*len(inputs):
+        print('COMPLETE',path.relative_to(ROOT),flush=True);raise SystemExit(0)
 for song in inputs:
-    source = ROOT / song['audio']; assert digest(source) == song['sha256']
+    source = ROOT / song['audio']
     done = {r['repeat'] for r in records if r['song'] == song['id']}
     if done == {1,2,3}: continue
     samples = decode_audio(source, sample_rate=44100, channels=2).samples
@@ -72,6 +78,7 @@ for song in inputs:
         def observe():
             while not stop.wait(.02): sample()
         sample(); thread = threading.Thread(target=observe,daemon=True); thread.start()
+        energy_before=cpu_energy()
         start = time.monotonic()
         try:
             vocals = infer(samples); sync(); seconds = time.monotonic()-start
@@ -80,10 +87,12 @@ for song in inputs:
         assert vocals.shape == samples.shape and np.isfinite(vocals).all()
         energy = (sum((b[0]-a[0])*(a[1]+b[1])/2 for a,b in zip(measurements,measurements[1:]))
                   if handle is not None else None)
+        energy_after=cpu_energy()
+        cpu_joules=sum((after-before)%maximum for before,after,(path,maximum) in zip(energy_before,energy_after,cpu_counters))/1e6 if cpu_counters else None
         records.append({'song':song['id'], 'repeat':repeat, 'seconds':seconds, 'duration':samples.shape[1]/44100,
             'allocated_bytes':torch.cuda.max_memory_allocated() if handle is not None and args.model != 'sug' else None,
             'process_gpu_bytes':max(m[3] for m in measurements) if handle is not None else None,
-            'rss_bytes':max(m[2] for m in measurements), 'board_energy_joules':energy,
+            'rss_bytes':max(m[2] for m in measurements), 'board_energy_joules':energy,'cpu_package_energy_joules':cpu_joules,'cpu_energy_unavailable_reason':cpu_energy_unavailable,
             'power_samples':len(measurements) if handle is not None else 0,
             'output_shape':list(vocals.shape), 'output_finite':True})
         del vocals

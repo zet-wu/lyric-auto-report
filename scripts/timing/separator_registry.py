@@ -11,7 +11,7 @@ MODELS = {
     'bs': ('BS Karaoke', 'research'),
     'sug': ('MDX-Net Inst HQ 3', 'sug'),
     'milikara': ('MelBand RoFormer ep_3005', 'milikara'),
-    'yohane': ('HybridDemucs MUSDB Plus', 'native5'),
+    'yohane': ('HybridDemucs MUSDB Plus', 'yohane'),
 }
 LEGACY = tuple(MODELS)[:6]
 NEW = tuple(MODELS)[6:]

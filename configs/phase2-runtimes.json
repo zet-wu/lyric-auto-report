@@ -1,0 +1,39 @@
+{
+  "research": {
+    "torch": "2.14.0",
+    "torchaudio": "2.11.0",
+    "transformers": "4.57.6",
+    "role": "Current Studio and shared scientific runtime"
+  },
+  "milikara": {
+    "torch": "2.14.0",
+    "torchaudio": "2.11.0",
+    "transformers": "4.57.6",
+    "role": "Native MiliKara app"
+  },
+  "sug": {
+    "torch": "2.14.0",
+    "torchaudio": "2.11.0",
+    "transformers": "5.15.0",
+    "role": "Native SUG app"
+  },
+  "native5": {
+    "torch": "2.14.0",
+    "torchaudio": "2.11.0",
+    "transformers": "5.15.0",
+    "role": "Native Timing app"
+  },
+  "fakara": {
+    "torch": "2.14.0",
+    "torchaudio": "2.11.0",
+    "transformers": "5.14.1",
+    "role": "Native FA-Kara app"
+  },
+  "yohane": {
+    "torch": "2.15.0",
+    "torchaudio": "2.11.1",
+    "transformers": "5.15.0",
+    "role": "Native Yohane pinned Torch/TorchAudio/TorchCodec extras",
+    "torchcodec": "0.17.0"
+  }
+}

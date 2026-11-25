@@ -1,5 +1,8 @@
 """Score final product output on common original-text boundaries, no interpolation."""
-from common import *
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from comparison.common import *
 import math,unicodedata,xml.etree.ElementTree as ET
 import numpy as np
 T='{http://www.w3.org/ns/ttml}';S='{http://www.w3.org/ns/ttml#styling}'
@@ -33,8 +36,8 @@ def load_prediction(sid,route,group):
  name=f'{sid}-{sep}'+(f'-{model}' if model else '')+f'-{cond}.json'
  folder=OUT/('milikara/runs' if kind=='milikara' else kind)
  path=folder/name
- if not exists(path):return [],{'status':'pending','path':str(path)}
- r=read(path);meta={'status':r['status'],'path':str(path),'error':r.get('error')}
+ if not exists(path):return [],{'status':'pending','path':path.relative_to(ROOT).as_posix()}
+ r=read(path);meta={'status':r['status'],'path':path.relative_to(ROOT).as_posix(),'error':r.get('error')}
  if r['status']!='ok':return [],meta
  lines=[]
  if kind=='studio':

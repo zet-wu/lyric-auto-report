@@ -16,6 +16,22 @@ def english_phones(surface):
         return [p for w in converter.convert(surface.lower()) for g in w.readings[0].paths[0] for p in g.phonemes]
 
 def parts_for_line(line):
+    language=line.get('language','ja')
+    if language in ('yue','teochew'):
+        return compile_parts(line['text'],[{'text':line['text'],'lang':language,'reading':' '.join(u['reading'] for w in line['words'] for u in w['units'])}],'auto')
+    if language=='cmn':
+        parts=[];prefix=''
+        for word in line['words']:
+            text=word['text'];units=word['units']
+            if not units:
+                if parts:parts[-1]['text']+=text
+                else:prefix+=text
+                continue
+            if len(text)!=len(units):
+                raise ValueError('Native Chinese PFML requires one source Han character per supplied syllable')
+            for char,unit in zip(text,units,strict=True):
+                parts.append({'text':prefix+char,'lang':'zh','reading':unit['reading']});prefix=''
+        return compile_parts(line['text'],parts,'zh')
     words=line['words'];parts=[];prefix='';i=0
     def attach(text):
         nonlocal prefix

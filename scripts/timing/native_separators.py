@@ -13,12 +13,6 @@ def digest(path):
     with Path(path).open('rb') as f:
         return hashlib.file_digest(f, 'sha256').hexdigest()
 
-def state_identity(model):
-    h = hashlib.sha256()
-    for key, value in sorted(model.state_dict().items()):
-        h.update(key.encode()); h.update(value.detach().cpu().numpy().tobytes())
-    return {'parameters': sum(p.numel() for p in model.parameters()), 'state_sha256': h.hexdigest()}
-
 def load(name, device):
     product_imports()
     if name in LEGACY:
@@ -30,29 +24,15 @@ def load(name, device):
     for asset in read(ROOT/'configs/separation-models.json'):
         if asset['model']==name:assert digest(ROOT/asset['path'])==asset['sha256'],asset['path']
     if name == 'bs':
-        import yaml
-        from types import SimpleNamespace
+        from lazulite.audio.bs_karaoke import BSKaraokeConfig, BSKaraokeSeparator
+        from lazulite.models.audio import AudioBuffer
         folder = ROOT / '.deps/timing/models/bs-karaoke'
-        assets = read(folder / 'assets.json')
-        for path, asset in assets['assets'].items():
-            assert digest(folder / path) == asset['sha256'], path
-        sys.path.insert(0, str(folder / 'runtime'))
-        from models.bs_roformer.bs_roformer import BSRoformer
-        import mel_band_roformer.utils as utils
-        cfg = yaml.load((folder / 'config_karaoke_frazer_becruily.yaml').read_text(), Loader=yaml.FullLoader)
-        config = SimpleNamespace(**{k: SimpleNamespace(**v) for k,v in cfg.items()})
-        model = BSRoformer(**cfg['model'])
-        weight = folder / 'bs_roformer_karaoke_frazer_becruily.ckpt'
-        model.load_state_dict(torch.load(weight, map_location='cpu', weights_only=True), strict=True)
-        model.to(device).eval()
-        # Native demix_track processes one chunk at a time, irrespective of the
-        # unused inference.batch_size=2 field in the published YAML.
+        sep = BSKaraokeSeparator(BSKaraokeConfig(str(folder), device=device))
+        model = sep._load()
         def infer(x):
-            output = utils.demix_track(config, model, torch.from_numpy(x.copy()), device)[0]['Vocals']
-            if not np.isfinite(output).all():
-                raise ValueError('Nonfinite separator output')
-            return output
-        identity.update(config=cfg, effective_batch_size=1, weight_sha256=digest(weight))
+            return sep.separate(AudioBuffer(x.copy(), 44100, 'benchmark')).samples
+        identity.update(config={'implementation':'lazulite.audio.bs_karaoke.BSKaraokeSeparator'},
+                        weight_sha256=digest(folder / sep.config.weights))
     elif name == 'yohane':
         spec = importlib.util.spec_from_file_location('frozen_yohane_audio', ROOT / '.deps/comparison/yohane/yohane/audio.py')
         module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
@@ -153,12 +133,8 @@ def load(name, device):
             torch.manual_seed(0)
             return sep(torch.from_numpy(x.copy()), 44100)[0].detach().cpu().numpy()
         infer.native_check = native_check
-    elif name == 'bs':
-        def native_check(x, folder):
-            return utils.demix_track(config, model, torch.from_numpy(x.copy()), device)[0]['Vocals']
-        infer.native_check = native_check
     if model is not None:
-        identity.update(state_identity(model))
+        identity.update(parameters=sum(p.numel() for p in model.parameters()))
     else:
         import onnx, math
         elements = sum(math.prod(t.dims) for t in onnx.load(weight).graph.initializer)

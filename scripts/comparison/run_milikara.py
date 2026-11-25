@@ -16,7 +16,7 @@ for song in songs():
  source=read(OUT/'milikara/inputs'/('manual' if condition=='manual' else 'text')/f'{sid}.json')
  stem=CACHE/'stems'/sep/(sid+'.wav')
  if not stem.exists():raise FileNotFoundError(stem)
- record={'song':sid,'condition':condition,'separator':sep,'status':'error','stem_sha256':sha(stem)};start=time.monotonic()
+ record={'song':sid,'condition':condition,'separator':sep,'status':'failed','stem':stem.relative_to(ROOT).as_posix()};stage='frontend_g2p';start=time.monotonic()
  try:
   work=CACHE/'milikara-projects'/f'{sid}-{sep}-{condition}'
   h=S.open_dir(work) if (work/'project.json').exists() else S.create_dir(work,source['name'],mode='plain')
@@ -46,9 +46,11 @@ for song in songs():
      lang='en' if reading.isascii() and any(c.isalpha() for c in reading) else 'ja'
      line.segments.append(Segment(id=word['id'],surface=word['text'],reading=reading,lang=lang,units=units,reading_source='manual',confirmed=True))
   h.save();record['lyrics']=h.project.lyrics.model_dump(mode='json')
-  S.update_settings(h,config={'device':'cuda','model_id':str(ROOT/'.models/nextfire'),'tail':{'strategy':'energy'}})
+  S.update_settings(h,config={'device':'cuda','model_id':'.models/nextfire','tail':{'strategy':'energy'}})
   record['config']=h.project.config.model_dump(mode='json')
+  stage='alignment_inference'
   result=S.run_align(h,audio_role='vocals',progress=lambda f,m='':print(sid,sep,condition,m,flush=True))
-  record['result']=result.model_dump(mode='json');record['export']=json.loads(S.export(h,'alignment').content);record['status']='ok'
- except Exception:record['error']=traceback.format_exc();print(record['error'],flush=True)
- record['seconds']=time.monotonic()-start;dump(target,record);print('DONE',sid,sep,condition,record['status'],flush=True)
+  stage='export'
+  record['result']={'config':{'tail':{'strategy':'energy'}},'status':getattr(result,'status',None)};native_export=json.loads(S.export(h,'alignment').content);record['export']={key:native_export[key] for key in ('lyrics','units')};record['status']='ok'
+ except Exception as exc:record['error']={'type':type(exc).__name__,'message':portable(exc)[:800]};record['failed_stage']=stage;print(portable(traceback.format_exc()),flush=True)
+ record['seconds']=time.monotonic()-start;dump(target.with_suffix('.json.gz'),record);print('DONE',sid,sep,condition,record['status'],flush=True)

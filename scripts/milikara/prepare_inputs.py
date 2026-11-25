@@ -4,7 +4,7 @@ import re, subprocess, unicodedata
 reference = read(ROOT / 'results/timing/reference.json')
 records = []
 for song in reference:
-    if song['id'] in ('s11', 's14'):
+    if song['id'] not in read(ROOT/'configs/reading.json')['songs']:
         continue
     rows = []
     for line in song['lines']:
@@ -18,7 +18,7 @@ for song in reference:
         if not units:
             continue
         rows.append({'id': line['id'], 'index': line['index'], 'text': line['text'], 'start': line['vocal_start'], 'end': line['vocal_end'], 'units': units})
-    records.append({'id': song['id'], 'name': song['name'], 'cohort': 'teochew_kana' if song['id'] == 's13' else 'japanese', 'lines': rows})
+    records.append({'id': song['id'], 'name': song['name'], 'cohort': 'japanese', 'lines': rows})
 dump(OUT / 'reading-input.json', records)
 subprocess.run(['node', str(ROOT / 'scripts/milikara/romanize.cjs')], check=True)
 records = read(OUT / 'romanized.json')

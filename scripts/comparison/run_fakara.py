@@ -1,6 +1,6 @@
 from common import *
 os.environ['NLTK_DATA']=str(ROOT/'.models/comparison/nltk')
-import time,traceback,torch,librosa,unicodedata
+import time,traceback,torch,librosa,unicodedata,argparse
 sys.path.insert(0,str(ROOT/'.deps/comparison/fa-kara'))
 import haruraw2norm as hn
 from align import align_audio_with_text
@@ -8,18 +8,21 @@ from utils_audio import non_silent_recog,func_tail_correct_v250615
 from utils_basic import non_silent_head_adjust
 import norm2ass
 from norm2lrc import process_rlf
+p=argparse.ArgumentParser();p.add_argument('--sep',default='bs');p.add_argument('--condition',choices=['manual','auto'],default='manual');a=p.parse_args()
 assert torch.cuda.is_available();torch.set_num_threads(8)
 # Reuse the identical official torchaudio bundle checkpoint, without a download.
 import torchaudio
 checkpoint=ROOT/'.models/torch/hub/checkpoints'/Path(torchaudio.pipelines.MMS_FA._path).name
 if not checkpoint.exists():checkpoint.symlink_to(ROOT/'.models/mms-fa/model.pt')
 for s in songs():
- sid=s['id'];target=OUT/'fa-kara'/f'{sid}-bs-manual.json'
+ sid=s['id'];target=OUT/'fa-kara'/f'{sid}-{a.sep}-{a.condition}.json'
  if exists(target) and read(target)['status']=='ok':continue
- stem=CACHE/'stems/bs'/f'{sid}.wav';r={'song':sid,'separator':'bs','condition':'manual','status':'error','stem_sha256':sha(stem)};start=time.monotonic()
+ stem=CACHE/'stems'/a.sep/f'{sid}.wav';r={'song':sid,'separator':a.sep,'condition':a.condition,'status':'failed','stem':stem.relative_to(ROOT).as_posix()};stage='frontend_g2p';start=time.monotonic()
  try:
-  src=read(OUT/'milikara/inputs/manual'/f'{sid}.json');rows=[]
+  src=read(OUT/'milikara/inputs'/('manual' if a.condition=='manual' else 'text')/f'{sid}.json');rows=[]
   for l in src['lines']:
+   if a.condition=='auto':
+    rows.append(l['text']);continue
    pieces=[]
    for w in l['words']:
     rd=''.join(u['reading'] for u in w['units'])
@@ -32,9 +35,11 @@ for s in songs():
   indexes=[i for i,x in enumerate(items) if x.get('pron')];tokens=[items[i]['pron'] for i in indexes]
   r['input_items']=items.copy();audio,rate=librosa.load(stem,sr=None)
   ranges=non_silent_recog(audio,rate,.8,10,.1)
+  stage='alignment_inference'
   result=align_audio_with_text(audio,tokens,ranges,rate,1,use_gpu=True)
   for i,x in zip(indexes,result):items[i].update(start=x['start'],end=x['end'])
   items=non_silent_head_adjust(items,ranges);items=func_tail_correct_v250615(items,audio,rate,10,.1)
+  stage='export'
   r.update(items=items,ass=norm2ass.process_norm2assV2(items),rlf=process_rlf(items),status='ok')
- except Exception:r['error']=traceback.format_exc();print(r['error'],flush=True)
- r['seconds']=time.monotonic()-start;dump(target,r);torch.cuda.empty_cache();print('DONE',sid,r['status'],flush=True)
+ except Exception as exc:r['error']={'type':type(exc).__name__,'message':portable(exc)[:800]};r['failed_stage']=stage;print(portable(traceback.format_exc()),flush=True)
+ r['seconds']=time.monotonic()-start;dump(target.with_suffix('.json.gz'),r);torch.cuda.empty_cache();print('DONE',sid,r['status'],flush=True)

@@ -65,11 +65,8 @@ def load(name,device):
                 return result*std+mean
     sync(device)
     load_seconds=time.perf_counter()-start
-    weights=hashlib.sha256()
-    for key,value in sorted(model.state_dict().items()):
-        weights.update(key.encode());weights.update(value.detach().cpu().numpy().tobytes())
     identity={'model':name,'device':device,'config':cfg,'parameters':sum(p.numel() for p in model.parameters()),
-              'state_sha256':weights.hexdigest(),'model_load_seconds':load_seconds,'load_and_identity_seconds':time.perf_counter()-start,
+              'model_load_seconds':load_seconds,'load_and_identity_seconds':time.perf_counter()-start,
               'process_import_load_seconds':time.perf_counter()-PROCESS_START}
     return model,infer,identity
 

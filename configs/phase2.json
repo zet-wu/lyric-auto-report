@@ -72,7 +72,14 @@
         "yohane"
       ],
       "G2_separator": "bs",
-      "overlap_scope": "primary reference units intersecting any x-bg interval"
+      "overlap_scope": "primary reference units intersecting any x-bg interval",
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions"
+      }
     },
     "M2": {
       "songs": [
@@ -148,7 +155,14 @@
       ],
       "input_token_export": [
         "t01"
-      ]
+      ],
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions"
+      }
     },
     "M3": {
       "songs": [
@@ -199,7 +213,7 @@
         "channels": 2,
         "movie_timescale": "sample_rate",
         "movflags": "+faststart",
-        "gain": 1
+        "gain": "min(1, (1 - 2**-15) / peak) when peak > 0, else 1; exactly the native Studio persistence caller"
       },
       "segment_metrics": [
         "count",
@@ -238,7 +252,15 @@
           "jy01",
           "t01"
         ]
-      }
+      },
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions"
+      },
+      "decoded_sample_format": "float32"
     },
     "M4": {
       "songs": [
@@ -309,7 +331,17 @@
       "paired_arrangements": [
         "j14",
         "j15"
-      ]
+      ],
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions",
+        "coefficient": "Pearson or Spearman correlation across paired songs",
+        "p_value": "Two-sided correlation p value",
+        "syllables_per_second": "Positive human reference unit count divided by union reference duration; no inferred within-word splits"
+      }
     },
     "M5": {
       "songs": [
@@ -376,7 +408,20 @@
       ],
       "other_model_modes": [
         "core"
-      ]
+      ],
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions",
+        "seconds": "Serial warm inference, excluding decode, model load, and file encoding",
+        "rss_bytes": "Peak sampled process-tree resident memory",
+        "allocated_bytes": "Peak Torch CUDA allocation when applicable",
+        "process_gpu_bytes": "Peak sampled process GPU memory",
+        "board_energy_joules": "GPU board energy including idle",
+        "cpu_package_energy_joules": "Summed readable CPU package RAPL energy; null with explicit error if unavailable"
+      }
     },
     "M6": {
       "songs": [
@@ -418,7 +463,15 @@
           "raw",
           "studio_smart_extend"
         ]
-      }
+      },
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions"
+      },
+      "mms_postprocessing_policy": "Both cases keep the current native decoder/completion fixed; raw disables object smart-end extension, studio_smart_extend enables it. Native raw_timing remains in per-unit details."
     },
     "M7": {
       "songs": [
@@ -459,10 +512,18 @@
         "free_tail"
       ],
       "original_mix_controls": [
-        "00000",
-        "00001"
+        "retry-vocals",
+        "retry-original"
       ],
-      "reuse_acoustic_emissions": true
+      "reuse_acoustic_emissions": true,
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions",
+        "condition": "Eight native soft-cost combinations, delimiter/free-tail single controls, or native retry role controls"
+      }
     },
     "M8": {
       "songs": [
@@ -520,7 +581,34 @@
         "fixed_count",
         "broken_count",
         "net_gain"
-      ]
+      ],
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions",
+        "fixed_count": "Previously missed units now within 100 ms at both endpoints",
+        "broken_count": "Previously hit units now missed",
+        "net_gain": "fixed_count minus broken_count",
+        "triggered_fraction": "Triggered reference-independent prediction lines divided by total source lines; oracle is separate"
+      },
+      "same_vowel_policy": "Identical adjacent normalized syllables, or a vowel at the end of one unit immediately repeated at the start of the next; trigger if a unit is under 40 ms, or under 80 ms with at least 4:1 duration imbalance. Fixed before inference.",
+      "local_window": {
+        "padding_seconds": 0.3,
+        "grid_seconds": 0.02,
+        "max_seconds": 35,
+        "selection": "Same baseline-selected line collection for all four strategies; local results are cached once per line/backend; global swap uses no local inference."
+      },
+      "legacy_conf_policy": {
+        "confidence_below": 0.6,
+        "core_coverage_below": 0.7,
+        "nonfinal_duration_above_seconds": 2,
+        "final_duration_above_seconds": 3,
+        "invalid_or_cross_gap": true,
+        "max_line_fraction": 0.2,
+        "max_duration_fraction": 0.2
+      }
     },
     "M9": {
       "songs": [
@@ -556,7 +644,15 @@
       ],
       "llm_isolation": "Only source text and Studio candidate readings; no annotation/reference access",
       "windows_inputs": "results/reading/inputs",
-      "windows_predictions": "results/reading/predictions/sug-winrt"
+      "windows_predictions": "results/reading/predictions/sug-winrt",
+      "field_descriptions": {
+        "n": "Eligible common kanji surface spans or kana-only full lines",
+        "exact": "Exact normalized reading matches",
+        "accuracy_pct": "100 * exact / n",
+        "cer_pct": "Kana edit distance divided by reference kana length, as a percentage",
+        "kana_coverage_pct": "Percentage of outputs containing only normalized kana"
+      },
+      "llm_prediction_directory": "results/reading/predictions/llm-corrected"
     }
   },
   "output": {

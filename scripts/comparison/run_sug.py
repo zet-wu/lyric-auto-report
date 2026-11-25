@@ -10,7 +10,7 @@ from strange_uta_game.backend.application.ai_timing import PronunciationResolver
 from strange_uta_game.backend.application.ai_timing.worker.providers import create_provider
 p=argparse.ArgumentParser();p.add_argument('--model',default='nextfire');p.add_argument('--sep',default='sug');p.add_argument('--condition',default='manual');p.add_argument('--song');a=p.parse_args()
 torch.set_num_threads(8);assert torch.cuda.is_available()
-spec={'provider':'wav2vec2' if a.model=='nextfire' else 'mms_fa','model_id':str(ROOT/'.models/nextfire') if a.model=='nextfire' else 'MMS_FA','device':'cuda'}
+spec={'provider':'wav2vec2' if a.model=='nextfire' else 'mms_fa','model_id':'.models/nextfire' if a.model=='nextfire' else 'MMS_FA','device':'cuda'}
 provider=create_provider(spec);provider.load(spec,lambda f,m:print(m,flush=True),lambda:False)
 for s in songs():
  sid=s['id']
@@ -21,7 +21,7 @@ for s in songs():
   if previous['status']=='ok' and (a.condition!='auto' or previous.get('input_pipeline_version')==2):continue
  stem=CACHE/'stems'/a.sep/(sid+'.wav')
  if not stem.exists():raise FileNotFoundError(stem)
- r={'song':sid,'model':a.model,'condition':a.condition,'separator':a.sep,'status':'error','stem_sha256':sha(stem)};start=time.monotonic()
+ r={'song':sid,'model':a.model,'condition':a.condition,'separator':a.sep,'status':'failed','stem':stem.relative_to(ROOT).as_posix()};stage='frontend_g2p';start=time.monotonic()
  try:
   project=Project();project.audio_duration_ms=round(s['duration']*1000);project.singers=[Singer(id='s1',name='main')]
   if a.condition=='manual':
@@ -40,16 +40,19 @@ for s in songs():
    r['input_pipeline_version']=2
   assert len(project.sentences)==len(s['lines'])
   for l in project.sentences:l.clear_all_timestamps()
-  resolver=PronunciationResolver(chinese_mode=False)
+  resolver=PronunciationResolver(chinese_mode=sid.startswith(('m','y','t')) and not sid.startswith('jy'))
   plan=resolver.resolve_project(project,fill_missing=a.condition=='auto')
   r['plan']=asdict(plan);r['input_characters']=[[{'text':c.char,'check_count':c.check_count,'end':c.is_sentence_end} for c in l.characters] for l in project.sentences]
   if not plan.is_complete:raise ValueError('Unresolved readings: '+repr([(u.char_text,u.location) for u in plan.pending_units]))
   tail=3 if a.model=='mms-fa' else 0
-  req=build_alignment_request(plan,MediaIdentity(str(stem),sha(stem),round(s['duration']*1000)),{'tail_snap':bool(tail),'tail_correct':tail,'tail_silence':5,'latin_word_split':1})
+  stage='vocabulary'
+  req=build_alignment_request(plan,MediaIdentity(stem.relative_to(ROOT).as_posix(),sha(stem),round(s['duration']*1000)),{'tail_snap':bool(tail),'tail_correct':tail,'tail_silence':5,'latin_word_split':1})
+  stage='alignment_inference'
   result=provider.align(req,str(stem),lambda f,m:print(sid,m,flush=True),lambda:False)
   r.update(request=asdict(req),result=asdict(result),checkpoint_spans=[{'location':k,'start':v[0]/1000,'end':v[1]/1000} for k,v in checkpoint_timestamps(result,req).items()])
+  stage='export'
   ApplyAiTimingCommand(project,plan,req,result).execute()
   r['sug_project']=save_project(project,OUT/'sug/projects'/target.with_suffix('.sug').name);r['status']='ok'
- except Exception:r['error']=traceback.format_exc();print(r['error'],flush=True)
- r['seconds']=time.monotonic()-start;dump(target,r);print('DONE',sid,a.sep,a.model,a.condition,r['status'],flush=True)
+ except Exception as exc:r['error']={'type':type(exc).__name__,'message':portable(exc)[:800]};r['failed_stage']=stage;print(portable(traceback.format_exc()),flush=True)
+ r['seconds']=time.monotonic()-start;dump(target.with_suffix('.json.gz'),r);print('DONE',sid,a.sep,a.model,a.condition,r['status'],flush=True)
 provider.unload()

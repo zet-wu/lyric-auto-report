@@ -17,7 +17,7 @@ for song in songs():
   while words and not words[-1]['text'].strip():words.pop()
   if words:words[0]['text']=words[0]['text'].lstrip();words[-1]['text']=words[-1]['text'].rstrip()
   assert ''.join(w['text'] for w in words)==source
-  manual['lines'].append({'id':l['id'],'text':source,'words':words})
+  manual['lines'].append({'id':l['id'],'text':source,'language':l['language'],'words':words})
  units=[u for line in manual['lines'] for word in line['words'] for u in word['units']]
  missing=[u['id'] for u in units if re.search('[\u3400-\u9fff]',u['reading'])]
  manual['reading_audit']={'units':len(units),'untranscribed_han_units':missing,

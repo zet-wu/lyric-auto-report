@@ -17,13 +17,6 @@ def main():
             raise ValueError('Expected exactly the 26 Phase 2 song IDs')
     if {p.stem for p in audio} != {p.stem for p in ttml}:
         raise ValueError('Audio and annotation filenames do not match')
-    backup = ROOT / '.runs/phase1'
-    if not backup.exists():
-        backup.mkdir(parents=True)
-        for name in ('results', '.cache'):
-            source = ROOT / name
-            if source.exists():
-                source.rename(backup / name.lstrip('.'))
     for dirname, paths in [('audio', audio), ('annotations', ttml)]:
         dest = ROOT / 'datasets' / dirname
         dest.mkdir(parents=True, exist_ok=True)

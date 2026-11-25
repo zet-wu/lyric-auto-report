@@ -1,9 +1,8 @@
 """M7: eight soft-cost combinations and delimiter/free-tail single controls."""
 from common import *
 from modules import *
-from fast_ctc import install
 import itertools, time
-install()
+from shared import portable
 for song, evidence, cache in inputs():
     sid = song['id']; doc = document(song)
     for mode in MODES:
@@ -20,10 +19,13 @@ for song, evidence, cache in inputs():
             if exists(dest):
                 continue
             started = time.perf_counter()
-            em = emission(cache, sid, mode, flags['delimiter'])
-            units, outcome = global_decode(doc, em, activity, flags)
-            dump(dest, {'song': sid, 'experiment': f'{mode}/{name}', 'kind': 'confirmed-targets',
-                        'status': 'ok' if outcome.feasible else 'failed', 'flags': flags,
-                        'predictions': predictions(doc, units, mapping), 'seconds': time.perf_counter() - started,
-                        'feasible': outcome.feasible})
+            record={'song':sid,'experiment':f'{mode}/{name}','kind':'confirmed-targets','status':'failed','flags':flags}
+            try:
+                em=emission(cache,sid,mode,flags['delimiter'])
+                units,outcome=global_decode(doc,em,activity,flags)
+                record.update(status='ok' if outcome.feasible else 'failed',predictions=predictions(doc,units,mapping),feasible=outcome.feasible)
+            except Exception as exc:
+                record['error']={'type':type(exc).__name__,'message':portable(exc)[:800]}
+            record['seconds']=time.perf_counter()-started
+            dump(dest,record)
         print(sid, mode, '8 soft-cost combinations + 2 single controls complete', flush=True)

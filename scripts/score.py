@@ -20,11 +20,14 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--allow-missing-winrt',action='store_true')
     parser.add_argument('--reading-only',action='store_true')
+    parser.add_argument('--allow-pending-gpu-benchmarks',action='store_true',help='Publish completed experiments while the operator-run GPU resource benchmark is pending')
     args=parser.parse_args()
     reading=score_reading(args.allow_missing_winrt)
     if args.reading_only:return
     config=read(ROOT/'configs/phase2.json');jobs,views=build_jobs()
-    missing=[relative for job in jobs for relative in job['outputs'] if not exists(ROOT/relative)]
+    pending_gpu=[job for job in jobs if job['kind']=='benchmark' and job.get('device')=='cuda' and any(not exists(ROOT/path) for path in job['outputs'])]
+    allowed={path for job in pending_gpu for path in job['outputs']} if args.allow_pending_gpu_benchmarks else set()
+    missing=[relative for job in jobs for relative in job['outputs'] if relative not in allowed and not exists(ROOT/relative)]
     if missing:raise FileNotFoundError(f'{len(missing)} planned experiment outputs are missing; first: {missing[0]}')
     refs={song['id']:song for song in read(ROOT/'results/timing/reference.json')}
     native,datasets,states=score_alignment_modules(config,jobs,views,refs)
@@ -43,7 +46,7 @@ def main():
             if human and automatic:
                 paired.append({'separator':sep,'song':sid,**{name+'_delta_auto_minus_human':automatic[name]-human[name] if automatic[name] is not None and human[name] is not None else None for name in ('hit100_pct','start_mae_ms','end_mae_ms')}})
     summary['dictionary_alignment_change']=paired;dump(ROOT/'results/M2/summary.json',summary);table(ROOT/'results/M2/dictionary/alignment-change.csv',paired)
-    index={'dataset':[],'sources':{**read(ROOT/'configs/sources.json'),**read(ROOT/'configs/comparison-sources.json')},'modules':{},'stage':'interim' if reading['missing_methods'] else 'complete','missing_reading_methods':reading['missing_methods']}
+    index={'dataset':[],'sources':{**read(ROOT/'configs/sources.json'),**read(ROOT/'configs/comparison-sources.json')},'modules':{},'stage':'interim' if reading['missing_methods'] or pending_gpu else 'complete','missing_reading_methods':reading['missing_methods'],'pending_gpu_benchmarks':[{'id':job['id'],'songs':job['songs'],'outputs':job['outputs']} for job in pending_gpu]}
     import json,subprocess
     for sid,song in refs.items():
         probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','a:0','-show_entries','stream=sample_rate','-of','json',str(ROOT/song['audio'])]))
@@ -51,7 +54,7 @@ def main():
     for module in config['modules']:
         summary=read(ROOT/'results'/module/'summary.json')
         failures=[state for state in summary.get('completion',[]) if state['status'] in ('failed','unsupported')]
-        index['modules'][module]={'summary':f'results/{module}/summary.json','metrics':f'results/{module}/metrics.csv','songs':config['modules'][module]['songs'],'fields':config['modules'][module]['field_descriptions'],'failed_or_unsupported':failures,'additional_data':[path.relative_to(ROOT).as_posix() for path in sorted((ROOT/'results'/module).glob('*')) if path.is_file() and path.name not in ('summary.json','metrics.csv')]}
+        index['modules'][module]={'summary':f'results/{module}/summary.json','metrics':f'results/{module}/metrics.csv','songs':config['modules'][module]['songs'],'fields':config['modules'][module]['field_descriptions'],'status':'pending_gpu_benchmarks' if module=='M5' and pending_gpu else 'waiting_for_winrt' if module=='M9' and reading['missing_methods'] else 'complete_with_failures' if failures else 'complete','failed_or_unsupported':failures,'additional_data':[path.relative_to(ROOT).as_posix() for path in sorted((ROOT/'results'/module).glob('*')) if path.is_file() and path.name not in ('summary.json','metrics.csv')]}
     dump(ROOT/'results/EXPERIMENT_INDEX.json',index)
     print('Rebuilt M1-M9 summaries and results/EXPERIMENT_INDEX.json ('+index['stage']+').')
 

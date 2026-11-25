@@ -4134,7 +4134,8 @@
       ],
       "kind": "benchmark",
       "separator": "demucs",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-demucs-cpu",
@@ -4154,7 +4155,8 @@
       ],
       "kind": "benchmark",
       "separator": "demucs",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-scnet-core",
@@ -4271,7 +4273,8 @@
       ],
       "kind": "benchmark",
       "separator": "scnet",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-scnet-cpu",
@@ -4291,7 +4294,8 @@
       ],
       "kind": "benchmark",
       "separator": "scnet",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-dttnet-core",
@@ -4408,7 +4412,8 @@
       ],
       "kind": "benchmark",
       "separator": "dttnet",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-dttnet-cpu",
@@ -4428,7 +4433,8 @@
       ],
       "kind": "benchmark",
       "separator": "dttnet",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-bs_roformer-core",
@@ -4545,7 +4551,8 @@
       ],
       "kind": "benchmark",
       "separator": "bs_roformer",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-bs_roformer-cpu",
@@ -4565,7 +4572,8 @@
       ],
       "kind": "benchmark",
       "separator": "bs_roformer",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-mel_roformer-core",
@@ -4682,7 +4690,8 @@
       ],
       "kind": "benchmark",
       "separator": "mel_roformer",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-mel_roformer-cpu",
@@ -4702,7 +4711,8 @@
       ],
       "kind": "benchmark",
       "separator": "mel_roformer",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-windowed-global",
@@ -4912,7 +4922,8 @@
       ],
       "kind": "benchmark",
       "separator": "windowed",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-windowed-cpu",
@@ -4932,7 +4943,8 @@
       ],
       "kind": "benchmark",
       "separator": "windowed",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-bs-global",
@@ -5142,7 +5154,8 @@
       ],
       "kind": "benchmark",
       "separator": "bs",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-bs-cpu",
@@ -5162,7 +5175,8 @@
       ],
       "kind": "benchmark",
       "separator": "bs",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-sug-global",
@@ -5372,7 +5386,8 @@
       ],
       "kind": "benchmark",
       "separator": "sug",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-sug-cpu",
@@ -5392,7 +5407,8 @@
       ],
       "kind": "benchmark",
       "separator": "sug",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-milikara-core",
@@ -5509,7 +5525,8 @@
       ],
       "kind": "benchmark",
       "separator": "milikara",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-milikara-cpu",
@@ -5529,7 +5546,8 @@
       ],
       "kind": "benchmark",
       "separator": "milikara",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M5-yohane-core",
@@ -5646,7 +5664,8 @@
       ],
       "kind": "benchmark",
       "separator": "yohane",
-      "device": "cuda"
+      "device": "cuda",
+      "execution": "manual"
     },
     {
       "id": "benchmark-yohane-cpu",
@@ -5666,7 +5685,8 @@
       ],
       "kind": "benchmark",
       "separator": "yohane",
-      "device": "cpu"
+      "device": "cpu",
+      "execution": "automatic"
     },
     {
       "id": "M6-demucs-nextfire-core",

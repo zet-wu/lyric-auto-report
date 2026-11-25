@@ -29,7 +29,7 @@ def failure_outputs(job, detail):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('stage', choices=['prepare','matrix','score','all','list'])
+    parser.add_argument('stage', choices=['prepare','matrix','score','all','list','gpu-benchmarks'])
     parser.add_argument('--gpu-confirmed', action='store_true', help='Use only after the user confirms the completed Stage 0 handoff')
     parser.add_argument('--start-at')
     args = parser.parse_args()
@@ -41,10 +41,14 @@ def main():
         return
     jobs, views = build_jobs()
     if args.stage == 'list':
-        for job in jobs:print(job['id'],job['runtime'],len(job['songs']))
+        for job in jobs:print(job['id'],job['runtime'],len(job['songs']),job.get('execution','automatic'))
         return
     if not args.gpu_confirmed:
         parser.error('Complete Stage 0 and obtain user confirmation before GPU batch inference')
+    if args.stage=='gpu-benchmarks':
+        jobs=[job for job in jobs if job['kind']=='benchmark' and job.get('device')=='cuda']
+    else:
+        jobs=[job for job in jobs if job.get('execution')!='manual']
     logs = ROOT/'.cache/phase2/logs'; logs.mkdir(parents=True,exist_ok=True)
     started = args.start_at is None
     for job in jobs:
@@ -62,7 +66,7 @@ def main():
         else:print('DONE',job['id'],flush=True)
     if not started:parser.error('Unknown --start-at partition')
     if args.stage == 'all':
-        subprocess.run([str(ROOT/'.venvs/research/bin/python'),str(ROOT/'scripts/score.py'),'--allow-missing-winrt'],check=True,cwd=ROOT)
+        subprocess.run([str(ROOT/'.venvs/research/bin/python'),str(ROOT/'scripts/score.py'),'--allow-missing-winrt','--allow-pending-gpu-benchmarks'],check=True,cwd=ROOT)
 
 
 if __name__ == '__main__':main()

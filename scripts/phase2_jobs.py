@@ -56,7 +56,7 @@ def build_jobs():
         for device in ('cuda','cpu'):
             add(f'benchmark-{model}-{device}','M5','timing/separation_resources.py',[model,'--device',device],config['modules']['M5']['benchmark_cpu_songs'] if device=='cpu' else config['modules']['M5']['benchmark_songs'],
                 {'sug':'sug','milikara':'milikara','yohane':'yohane'}.get(model,'research'),
-                [f'results/separation-resources/{model}{"-cpu" if device=="cpu" else ""}.json.gz'],kind='benchmark',separator=model,device=device)
+                [f'results/separation-resources/{model}{"-cpu" if device=="cpu" else ""}.json.gz'],kind='benchmark',separator=model,device=device,execution='manual' if device=='cuda' and config['modules']['M5'].get('gpu_benchmark_execution')=='manual_after_other_experiments' else 'automatic')
     for sep in ('demucs','bs'):
         for mode in ('core','human'):
             native('M6',f'{sep}-nextfire-{mode}',ja,sep=sep,mode=mode)

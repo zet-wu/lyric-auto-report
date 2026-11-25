@@ -2,6 +2,306 @@
   "records": [
     {
       "model": "demucs",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 1.7256852090358734,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 978506240,
+      "process_gpu_bytes": 1965031424,
+      "rss_bytes": 1626169344,
+      "board_energy_joules": 274.5829865687573,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 24,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 1.705945448949933,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 978506240,
+      "process_gpu_bytes": 1965031424,
+      "rss_bytes": 1626218496,
+      "board_energy_joules": 350.5837389356857,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 24,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 1.7090931329876184,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 978506240,
+      "process_gpu_bytes": 1965031424,
+      "rss_bytes": 1626750976,
+      "board_energy_joules": 346.2557250328641,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 24,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 2.0454699713736773,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1062163456,
+      "process_gpu_bytes": 2564816896,
+      "rss_bytes": 1655496704,
+      "board_energy_joules": 388.7295461672647,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 28,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 2.036956099793315,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1062163456,
+      "process_gpu_bytes": 2564816896,
+      "rss_bytes": 1655513088,
+      "board_energy_joules": 410.32905086594263,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 28,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 2.0432481188327074,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1062163456,
+      "process_gpu_bytes": 2564816896,
+      "rss_bytes": 1655504896,
+      "board_energy_joules": 420.91146107424885,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 28,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 2.3811732046306133,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1146618880,
+      "process_gpu_bytes": 3265265664,
+      "rss_bytes": 1705304064,
+      "board_energy_joules": 454.813796284711,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 32,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 2.3682166878134012,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1146618880,
+      "process_gpu_bytes": 3265265664,
+      "rss_bytes": 1705324544,
+      "board_energy_joules": 496.51405905774516,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 32,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 2.410249587148428,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1146618880,
+      "process_gpu_bytes": 3265265664,
+      "rss_bytes": 1705353216,
+      "board_energy_joules": 498.92709837100654,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 32,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 3.136209536343813,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1337537024,
+      "process_gpu_bytes": 4196401152,
+      "rss_bytes": 1769787392,
+      "board_energy_joules": 616.205371719663,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 44,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 3.143723089247942,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1337537024,
+      "process_gpu_bytes": 4196401152,
+      "rss_bytes": 1769787392,
+      "board_energy_joules": 654.5914045807822,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 43,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 3.1523723416030407,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1337537024,
+      "process_gpu_bytes": 4196401152,
+      "rss_bytes": 1769787392,
+      "board_energy_joules": 660.8971319845309,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 42,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 4.252875501289964,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1762049024,
+      "process_gpu_bytes": 5465178112,
+      "rss_bytes": 1825722368,
+      "board_energy_joules": 857.7684265963481,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 56,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 4.248392019420862,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1762049024,
+      "process_gpu_bytes": 5465178112,
+      "rss_bytes": 1825730560,
+      "board_energy_joules": 903.600328332358,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 57,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 4.224390646442771,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1762049024,
+      "process_gpu_bytes": 5465178112,
+      "rss_bytes": 1825726464,
+      "board_energy_joules": 910.106543641774,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 59,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "demucs",
       "device": "cpu",
       "song": "j03",
       "repeat": 1,
@@ -57,6 +357,306 @@
       "output_shape": [
         2,
         1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 3.7402581721544266,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 804983808,
+      "process_gpu_bytes": 1853882368,
+      "rss_bytes": 2240122880,
+      "board_energy_joules": 766.1198513061302,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 61,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 3.702242163941264,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 804983808,
+      "process_gpu_bytes": 1853882368,
+      "rss_bytes": 2139721728,
+      "board_energy_joules": 740.247854327552,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 60,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 3.7561074644327164,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 804983808,
+      "process_gpu_bytes": 1853882368,
+      "rss_bytes": 2202619904,
+      "board_energy_joules": 762.4970648231572,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 61,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 4.444457247853279,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 874106368,
+      "process_gpu_bytes": 2476736512,
+      "rss_bytes": 2303057920,
+      "board_energy_joules": 920.4262052468862,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 72,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 4.395318791270256,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 874106368,
+      "process_gpu_bytes": 2476736512,
+      "rss_bytes": 2296283136,
+      "board_energy_joules": 897.3471781289903,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 71,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 4.437343684956431,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 874106368,
+      "process_gpu_bytes": 2476736512,
+      "rss_bytes": 2306772992,
+      "board_energy_joules": 901.8826819342365,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 72,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 5.157186347991228,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 944929792,
+      "process_gpu_bytes": 3200253952,
+      "rss_bytes": 2349993984,
+      "board_energy_joules": 1090.4588231908176,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 82,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 5.071437247097492,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 944929792,
+      "process_gpu_bytes": 3200253952,
+      "rss_bytes": 2371805184,
+      "board_energy_joules": 1049.7162491798847,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 82,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 5.131028527393937,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 944929792,
+      "process_gpu_bytes": 3200253952,
+      "rss_bytes": 2535784448,
+      "board_energy_joules": 1050.4507032822828,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 83,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 6.648693865165114,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1217015296,
+      "process_gpu_bytes": 4154458112,
+      "rss_bytes": 2785755136,
+      "board_energy_joules": 1428.0871896040085,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 105,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 6.689214494079351,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1217015296,
+      "process_gpu_bytes": 4154458112,
+      "rss_bytes": 2799923200,
+      "board_energy_joules": 1383.6789048434161,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 107,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 6.652455093339086,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1217015296,
+      "process_gpu_bytes": 4154458112,
+      "rss_bytes": 2791530496,
+      "board_energy_joules": 1391.6830857736645,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 106,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 8.980131080374122,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1620556288,
+      "process_gpu_bytes": 5446303744,
+      "rss_bytes": 3124600832,
+      "board_energy_joules": 1931.4609626626,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 142,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 9.041243134066463,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1620556288,
+      "process_gpu_bytes": 5446303744,
+      "rss_bytes": 3137585152,
+      "board_energy_joules": 1892.3188546182969,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 144,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "scnet",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 8.980471801012754,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1620556288,
+      "process_gpu_bytes": 5446303744,
+      "rss_bytes": 3171143680,
+      "board_energy_joules": 1887.4946896967479,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 144,
+      "output_shape": [
+        2,
+        19788788
       ],
       "output_finite": true
     },
@@ -122,6 +722,306 @@
     },
     {
       "model": "dttnet",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 2.676974216476083,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 763608576,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1649258496,
+      "board_energy_joules": 755.7055159073844,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 44,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 2.6987300105392933,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 763608576,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1693667328,
+      "board_energy_joules": 780.7767724880119,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 41,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 2.672865077853203,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 763608576,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1739980800,
+      "board_energy_joules": 781.6581087850668,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 41,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 3.20120164193213,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 794063360,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1744375808,
+      "board_energy_joules": 920.6561670085061,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 48,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 3.195394763723016,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 794063360,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1758244864,
+      "board_energy_joules": 944.487679314564,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 49,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 3.167858799919486,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 794063360,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1690079232,
+      "board_energy_joules": 944.52485829286,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 49,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 3.759332563728094,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 825807360,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1815965696,
+      "board_energy_joules": 1100.0592062534597,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 57,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 3.734668968245387,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 825807360,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1781440512,
+      "board_energy_joules": 1119.3978395676893,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 57,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 3.7358967643231153,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 825807360,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1781280768,
+      "board_energy_joules": 1125.7444353170767,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 56,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 4.8829942997545,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 897409536,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1858232320,
+      "board_energy_joules": 1463.9592563621206,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 73,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 4.903485046699643,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 897409536,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1905618944,
+      "board_energy_joules": 1461.6913612222131,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 71,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 4.788568379357457,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 897409536,
+      "process_gpu_bytes": 1671430144,
+      "rss_bytes": 1805910016,
+      "board_energy_joules": 1464.4061820813986,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 67,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 6.645400753244758,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1003512320,
+      "process_gpu_bytes": 2076180480,
+      "rss_bytes": 2174279680,
+      "board_energy_joules": 2007.6364253726044,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 96,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 11.866758972406387,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1003512320,
+      "process_gpu_bytes": 2076180480,
+      "rss_bytes": 2026184704,
+      "board_energy_joules": 4186.770157236278,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 195,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 14.148150419816375,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1003512320,
+      "process_gpu_bytes": 2076180480,
+      "rss_bytes": 2138935296,
+      "board_energy_joules": 5359.60356778827,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 230,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "dttnet",
       "device": "cpu",
       "song": "j03",
       "repeat": 1,
@@ -177,6 +1077,306 @@
       "output_shape": [
         2,
         1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 18.284111646935344,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1685882880,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1699696640,
+      "board_energy_joules": 7446.837284312635,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 320,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 17.878992781043053,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1685882880,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1723174912,
+      "board_energy_joules": 7292.925877262645,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 314,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 8.664196342229843,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1685882880,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1725284352,
+      "board_energy_joules": 3328.396209830524,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 142,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 10.344242556020617,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1712841216,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1762938880,
+      "board_energy_joules": 3999.4650261820752,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 169,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 10.321260346099734,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1712841216,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1763102720,
+      "board_energy_joules": 3926.984756787953,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 169,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 10.303924467414618,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1712841216,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1763172352,
+      "board_energy_joules": 3922.0914821553306,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 169,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 12.02257022075355,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1745197568,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1869021184,
+      "board_energy_joules": 4643.553099773385,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 196,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 12.037561913952231,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1745197568,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1839685632,
+      "board_energy_joules": 4605.789468282002,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 196,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 11.998935967683792,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1745197568,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1801334784,
+      "board_energy_joules": 4601.217007890641,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 196,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 15.986548474058509,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1814276096,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1915969536,
+      "board_energy_joules": 6213.589998442964,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 260,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 16.010917272418737,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1814276096,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1829072896,
+      "board_energy_joules": 6056.384250292978,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 260,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 16.043443832546473,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1814276096,
+      "process_gpu_bytes": 2688548864,
+      "rss_bytes": 1827057664,
+      "board_energy_joules": 6085.290888637687,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 251,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 21.577011238783598,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1921047040,
+      "process_gpu_bytes": 2891972608,
+      "rss_bytes": 2004221952,
+      "board_energy_joules": 8310.69976385787,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 351,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 21.518235800787807,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1921047040,
+      "process_gpu_bytes": 2891972608,
+      "rss_bytes": 2006515712,
+      "board_energy_joules": 8228.94384912589,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 351,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs_roformer",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 21.530068716034293,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1921047040,
+      "process_gpu_bytes": 2891972608,
+      "rss_bytes": 2026913792,
+      "board_energy_joules": 8235.118631616284,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 351,
+      "output_shape": [
+        2,
+        19788788
       ],
       "output_finite": true
     },
@@ -242,6 +1442,306 @@
     },
     {
       "model": "mel_roformer",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 4.381203545257449,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 2103673344,
+      "process_gpu_bytes": 2720006144,
+      "rss_bytes": 1733267456,
+      "board_energy_joules": 1569.5740245802328,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 65,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 4.387684652581811,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 2103673344,
+      "process_gpu_bytes": 2720006144,
+      "rss_bytes": 1727279104,
+      "board_energy_joules": 1533.2552092151893,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 66,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 4.3805390279740095,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 2103673344,
+      "process_gpu_bytes": 2720006144,
+      "rss_bytes": 1788043264,
+      "board_energy_joules": 1534.8013033588566,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 67,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 5.2362537905573845,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 2135920128,
+      "process_gpu_bytes": 2868903936,
+      "rss_bytes": 1846796288,
+      "board_energy_joules": 1888.648506298935,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 78,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 5.268827544525266,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 2135920128,
+      "process_gpu_bytes": 2868903936,
+      "rss_bytes": 1802043392,
+      "board_energy_joules": 1868.7529909369014,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 77,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 5.240804094821215,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 2135920128,
+      "process_gpu_bytes": 2868903936,
+      "rss_bytes": 1796493312,
+      "board_energy_joules": 1849.3275571084898,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 78,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 6.084697972983122,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 2167864832,
+      "process_gpu_bytes": 2868903936,
+      "rss_bytes": 1777795072,
+      "board_energy_joules": 2197.1546322940885,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 92,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 6.096750032156706,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 2167864832,
+      "process_gpu_bytes": 2868903936,
+      "rss_bytes": 1821687808,
+      "board_energy_joules": 2149.2695345288216,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 91,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 6.092369269579649,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 2167864832,
+      "process_gpu_bytes": 2868903936,
+      "rss_bytes": 1771667456,
+      "board_energy_joules": 2165.529560476695,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 91,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 8.055020892992616,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 2241387008,
+      "process_gpu_bytes": 3017801728,
+      "rss_bytes": 2027823104,
+      "board_energy_joules": 2911.319140399848,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 120,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 8.111584465950727,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 2241387008,
+      "process_gpu_bytes": 3017801728,
+      "rss_bytes": 1914380288,
+      "board_energy_joules": 2864.363605850503,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 118,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 8.137350713834167,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 2241387008,
+      "process_gpu_bytes": 3017801728,
+      "rss_bytes": 1929281536,
+      "board_energy_joules": 2858.699340217133,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 120,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 10.941296767443419,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 2348412928,
+      "process_gpu_bytes": 3500146688,
+      "rss_bytes": 2066526208,
+      "board_energy_joules": 3934.269365067177,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 163,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 10.994005860760808,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 2348412928,
+      "process_gpu_bytes": 3500146688,
+      "rss_bytes": 2112626688,
+      "board_energy_joules": 3864.194136148545,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 161,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 10.95968421176076,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 2348412928,
+      "process_gpu_bytes": 3500146688,
+      "rss_bytes": 2209284096,
+      "board_energy_joules": 3850.528535045694,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 159,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "mel_roformer",
       "device": "cpu",
       "song": "j03",
       "repeat": 1,
@@ -297,6 +1797,306 @@
       "output_shape": [
         2,
         1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 2.226109055802226,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16205574144,
+      "board_energy_joules": 671.1963252902599,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 29,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 2.1899228654801846,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16203776000,
+      "board_energy_joules": 736.5734592881938,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 30,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 2.213193153962493,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16147464192,
+      "board_energy_joules": 748.7584523448628,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 31,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 2.7097294963896275,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16200888320,
+      "board_energy_joules": 868.49139572825,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 36,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 2.708309479057789,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16227692544,
+      "board_energy_joules": 925.8699169296957,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 36,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 2.728161608800292,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16200880128,
+      "board_energy_joules": 933.2278768639183,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 36,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 3.133218877017498,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16274010112,
+      "board_energy_joules": 1000.0745070140343,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 43,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 3.117599967867136,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16198074368,
+      "board_energy_joules": 1072.8278454254344,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 43,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 3.1234887912869453,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16198074368,
+      "board_energy_joules": 1057.2803744539972,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 42,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 4.232131764292717,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16306171904,
+      "board_energy_joules": 1382.2319219431085,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 57,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 4.217515395954251,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16306171904,
+      "board_energy_joules": 1460.9972899667825,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 57,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 4.2341773603111506,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16306171904,
+      "board_energy_joules": 1453.0495970982731,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 53,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 5.747510341927409,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16452681728,
+      "board_energy_joules": 1921.4038472791976,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 68,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 5.751394484192133,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16374120448,
+      "board_energy_joules": 1987.6160458671272,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 77,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "windowed",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 5.739781964570284,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1489396224,
+      "process_gpu_bytes": 2638217216,
+      "rss_bytes": 16448495616,
+      "board_energy_joules": 1986.2224124021707,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 70,
+      "output_shape": [
+        2,
+        19788788
       ],
       "output_finite": true
     },
@@ -362,6 +2162,306 @@
     },
     {
       "model": "bs",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 28.738276103511453,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1714114560,
+      "board_energy_joules": 12128.626686403317,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 503,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 28.21289836987853,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1744760832,
+      "board_energy_joules": 11841.347345089123,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 498,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 28.215452199801803,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1672245248,
+      "board_energy_joules": 11852.853710286698,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 486,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 32.89029671251774,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1753239552,
+      "board_energy_joules": 13938.176860384543,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 556,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 32.920617911964655,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1753255936,
+      "board_energy_joules": 13918.944763678832,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 573,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 32.93916540034115,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1738387456,
+      "board_energy_joules": 13881.680203008858,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 584,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 37.598032627254725,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1916276736,
+      "board_energy_joules": 16028.408043768159,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 660,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 37.684338465332985,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1818554368,
+      "board_energy_joules": 15817.958035966016,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 622,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 37.722303953021765,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1818570752,
+      "board_energy_joules": 16003.582863851774,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 657,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 48.38958287984133,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1980166144,
+      "board_energy_joules": 20626.312843660275,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 848,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 48.50371577590704,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1980194816,
+      "board_energy_joules": 20367.364475934613,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 784,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 48.51285722851753,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 1980194816,
+      "board_energy_joules": 20484.249065878586,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 836,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 64.61151589080691,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 2364141568,
+      "board_energy_joules": 27141.533623132862,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 1126,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 64.5632305406034,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 2244812800,
+      "board_energy_joules": 27288.734280789984,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 1066,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 64.60895775072277,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 2018808320,
+      "process_gpu_bytes": 3244294144,
+      "rss_bytes": 2349772800,
+      "board_energy_joules": 27247.938089894637,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 1120,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "bs",
       "device": "cpu",
       "song": "j03",
       "repeat": 1,
@@ -417,6 +2517,306 @@
       "output_shape": [
         2,
         1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 8.833363188430667,
+      "duration": 175.57333333333332,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2669584384,
+      "board_energy_joules": 1075.6153954873391,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 46,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 8.85876265540719,
+      "duration": 175.57333333333332,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2549157888,
+      "board_energy_joules": 1023.5391922063734,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 49,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 8.94202765636146,
+      "duration": 175.57333333333332,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2558193664,
+      "board_energy_joules": 985.6664722270733,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 47,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 10.739422088488936,
+      "duration": 211.25514739229024,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2761818112,
+      "board_energy_joules": 1179.7252454831498,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 59,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 10.63960599899292,
+      "duration": 211.25514739229024,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2646028288,
+      "board_energy_joules": 1153.531150999722,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 61,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 10.57355110347271,
+      "duration": 211.25514739229024,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2712129536,
+      "board_energy_joules": 1137.6572941682302,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 63,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 12.381542151793838,
+      "duration": 247.24607709750566,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2834853888,
+      "board_energy_joules": 1343.652741693708,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 72,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 12.386389452964067,
+      "duration": 247.24607709750566,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2759045120,
+      "board_energy_joules": 1318.9416399456477,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 73,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 12.349762711673975,
+      "duration": 247.24607709750566,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2756976640,
+      "board_energy_joules": 1321.0784601297155,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 72,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 16.39619390666485,
+      "duration": 328.4266666666667,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2886082560,
+      "board_energy_joules": 1752.4765746130738,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 95,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 16.388933131471276,
+      "duration": 328.4266666666667,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 3151794176,
+      "board_energy_joules": 1747.2207648920323,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 99,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 16.270430028438568,
+      "duration": 328.4266666666667,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 2917920768,
+      "board_energy_joules": 1734.2782049941673,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 94,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 22.2447543554008,
+      "duration": 448.7253514739229,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 3378634752,
+      "board_energy_joules": 2357.259127231121,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 128,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 22.338008223101497,
+      "duration": 448.7253514739229,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 3369857024,
+      "board_energy_joules": 2327.1383191071163,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 126,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "sug",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 22.17497438006103,
+      "duration": 448.7253514739229,
+      "allocated_bytes": null,
+      "process_gpu_bytes": 2902458368,
+      "rss_bytes": 3546877952,
+      "board_energy_joules": 2317.022053454226,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 128,
+      "output_shape": [
+        2,
+        19788788
       ],
       "output_finite": true
     },
@@ -482,6 +2882,306 @@
     },
     {
       "model": "milikara",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 7.781584927812219,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2055548928,
+      "board_energy_joules": 3083.2307231464115,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 132,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 7.836907152086496,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 1889406976,
+      "board_energy_joules": 3049.160972157089,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 131,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 7.784375749528408,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 1944219648,
+      "board_energy_joules": 3067.946961438909,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 131,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 9.598370974883437,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2211049472,
+      "board_energy_joules": 3918.710866882245,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 162,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 9.590921415016055,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2109440000,
+      "board_energy_joules": 3855.4917288270763,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 161,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 9.580321442335844,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2120830976,
+      "board_energy_joules": 3835.3005484899486,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 161,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 10.997812394052744,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2184503296,
+      "board_energy_joules": 4520.4487162936575,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 184,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 10.973661174997687,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2412478464,
+      "board_energy_joules": 4422.442877552888,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 182,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 10.963122492656112,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2064244736,
+      "board_energy_joules": 4417.86582452628,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 185,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 14.86220014281571,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2650001408,
+      "board_energy_joules": 6085.738463554364,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 246,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 14.826313139870763,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2271883264,
+      "board_energy_joules": 5992.065193398383,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 246,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 14.837385630235076,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2525782016,
+      "board_energy_joules": 6019.902351025034,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 246,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 20.0938127823174,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2887061504,
+      "board_energy_joules": 8258.263606972694,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 331,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 20.138259494677186,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2979098624,
+      "board_energy_joules": 8172.949776956672,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 330,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 20.16465120576322,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1884195328,
+      "process_gpu_bytes": 2908749824,
+      "rss_bytes": 2937581568,
+      "board_energy_joules": 8188.400261911233,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 336,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "milikara",
       "device": "cpu",
       "song": "j03",
       "repeat": 1,
@@ -537,6 +3237,306 @@
       "output_shape": [
         2,
         1323000
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 1,
+      "seconds": 0.8757269959896803,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1185075712,
+      "process_gpu_bytes": 2327838720,
+      "rss_bytes": 2077360128,
+      "board_energy_joules": 106.33911095204203,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 15,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 2,
+      "seconds": 0.868164099752903,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1185075712,
+      "process_gpu_bytes": 2327838720,
+      "rss_bytes": 2082562048,
+      "board_energy_joules": 169.20277068905813,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 15,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "t01",
+      "repeat": 3,
+      "seconds": 0.8635245189070702,
+      "duration": 175.57333333333332,
+      "allocated_bytes": 1185075712,
+      "process_gpu_bytes": 2327838720,
+      "rss_bytes": 2082562048,
+      "board_energy_joules": 174.3853801331725,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 15,
+      "output_shape": [
+        2,
+        7742784
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 1,
+      "seconds": 1.065421862527728,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1253429248,
+      "process_gpu_bytes": 2927624192,
+      "rss_bytes": 2111315968,
+      "board_energy_joules": 179.7053454148956,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 18,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 2,
+      "seconds": 1.0496315397322178,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1253429248,
+      "process_gpu_bytes": 2927624192,
+      "rss_bytes": 2113224704,
+      "board_energy_joules": 214.440006055627,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 18,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "y02",
+      "repeat": 3,
+      "seconds": 1.0482628233730793,
+      "duration": 211.25514739229024,
+      "allocated_bytes": 1253429248,
+      "process_gpu_bytes": 2927624192,
+      "rss_bytes": 2113646592,
+      "board_energy_joules": 212.93290799359977,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 18,
+      "output_shape": [
+        2,
+        9316352
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 1,
+      "seconds": 1.2347132246941328,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1323692032,
+      "process_gpu_bytes": 3630170112,
+      "rss_bytes": 2131152896,
+      "board_energy_joules": 206.0765871043671,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 20,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 2,
+      "seconds": 1.219329483807087,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1323692032,
+      "process_gpu_bytes": 3630170112,
+      "rss_bytes": 2144301056,
+      "board_energy_joules": 249.25856626969204,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 20,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j06",
+      "repeat": 3,
+      "seconds": 1.2211732268333435,
+      "duration": 247.24607709750566,
+      "allocated_bytes": 1323692032,
+      "process_gpu_bytes": 3630170112,
+      "rss_bytes": 2144301056,
+      "board_energy_joules": 247.3620048578279,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 20,
+      "output_shape": [
+        2,
+        10903552
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 1,
+      "seconds": 1.6227630004286766,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1481505280,
+      "process_gpu_bytes": 4561305600,
+      "rss_bytes": 2190692352,
+      "board_energy_joules": 274.336268941626,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 26,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 2,
+      "seconds": 1.6109623108059168,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1481505280,
+      "process_gpu_bytes": 4561305600,
+      "rss_bytes": 2211016704,
+      "board_energy_joules": 321.22980262598116,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 26,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j11",
+      "repeat": 3,
+      "seconds": 1.6111931651830673,
+      "duration": 328.4266666666667,
+      "allocated_bytes": 1481505280,
+      "process_gpu_bytes": 4561305600,
+      "rss_bytes": 2211024896,
+      "board_energy_joules": 330.4606568167051,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 26,
+      "output_shape": [
+        2,
+        14483616
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 1,
+      "seconds": 2.2109255250543356,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1840033792,
+      "process_gpu_bytes": 5827985408,
+      "rss_bytes": 2277879808,
+      "board_energy_joules": 385.55958101184666,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 35,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 2,
+      "seconds": 2.1968047749251127,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1840033792,
+      "process_gpu_bytes": 5827985408,
+      "rss_bytes": 2277900288,
+      "board_energy_joules": 443.4603321362194,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 35,
+      "output_shape": [
+        2,
+        19788788
+      ],
+      "output_finite": true
+    },
+    {
+      "model": "yohane",
+      "device": "cuda",
+      "song": "j02",
+      "repeat": 3,
+      "seconds": 2.1985611766576767,
+      "duration": 448.7253514739229,
+      "allocated_bytes": 1840033792,
+      "process_gpu_bytes": 5827985408,
+      "rss_bytes": 2277892096,
+      "board_energy_joules": 447.4999650604483,
+      "cpu_package_energy_joules": null,
+      "cpu_energy_unavailable_reason": null,
+      "power_samples": 35,
+      "output_shape": [
+        2,
+        19788788
       ],
       "output_finite": true
     },

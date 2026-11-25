@@ -1491,11 +1491,13 @@
         "board_energy_joules": "GPU board energy including idle",
         "cpu_package_energy_joules": "Summed readable CPU package RAPL energy; null with explicit error if unavailable"
       },
-      "status": "pending_gpu_benchmarks",
+      "status": "complete",
       "failed_or_unsupported": [],
       "additional_data": [
         "results/M5/items.json.gz",
         "results/M5/reading-items.json.gz",
+        "results/M5/resources-summary.csv",
+        "results/M5/resources-summary.json",
         "results/M5/resources.csv",
         "results/M5/resources.json"
       ]
@@ -1864,136 +1866,5 @@
   "missing_reading_methods": [
     "sug-winrt"
   ],
-  "pending_gpu_benchmarks": [
-    {
-      "id": "benchmark-demucs-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/demucs.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-scnet-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/scnet.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-dttnet-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/dttnet.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-bs_roformer-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/bs_roformer.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-mel_roformer-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/mel_roformer.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-windowed-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/windowed.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-bs-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/bs.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-sug-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/sug.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-milikara-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/milikara.json.gz"
-      ]
-    },
-    {
-      "id": "benchmark-yohane-cuda",
-      "songs": [
-        "t01",
-        "y02",
-        "j06",
-        "j11",
-        "j02"
-      ],
-      "outputs": [
-        "results/separation-resources/yohane.json.gz"
-      ]
-    }
-  ]
+  "pending_gpu_benchmarks": []
 }

@@ -133,7 +133,34 @@ def m5(config):
             data=read(path) if exists(path) else {'status':'pending','records':[]}
             for record in data.get('records',[]):rows.append({'model':model,'device':device,**record,'cpu_energy_unavailable_reason':record.get('cpu_energy_unavailable_reason') if device=='cpu' else None})
     table(ROOT/'results/M5/resources.csv',rows);dump(ROOT/'results/M5/resources.json',{'records':rows,'gpu_energy_scope':'GPU board energy including idle; serial warm inference; decode, model load, file encoding excluded.','cpu_energy':'CPU package RAPL counter differences when readable; unavailable counter reasons are recorded with null, never zero.'})
-    summary=read(ROOT/'results/M5/summary.json');summary['resources']=rows
+    aggregates=[]
+    for model in config['modules']['M5']['models']:
+        for device in ('cuda','cpu'):
+            records=[row for row in rows if row['model']==model and row['device']==device]
+            for song in ['ALL',*dict.fromkeys(row['song'] for row in records)]:
+                selected=[row for row in records if song=='ALL' or row['song']==song]
+                if not selected:continue
+                seconds=np.array([row['seconds'] for row in selected]);duration=sum(row['duration'] for row in selected)
+                def complete_sum(key):
+                    values=[row.get(key) for row in selected]
+                    return sum(values) if all(value is not None for value in values) else None
+                def peak(key):
+                    values=[row[key] for row in selected if row.get(key) is not None]
+                    return max(values) if values else None
+                energy=complete_sum('board_energy_joules')
+                aggregates.append({'model':model,'device':device,'song':song,'measurements':len(selected),
+                    'mean_seconds':float(seconds.mean()),'std_seconds':float(seconds.std(ddof=1)) if len(seconds)>1 else None,
+                    'min_seconds':float(seconds.min()),'max_seconds':float(seconds.max()),
+                    'total_inference_seconds':float(seconds.sum()),'total_audio_seconds':duration,
+                    'rtf':float(seconds.sum()/duration) if duration else None,
+                    'max_rss_bytes':peak('rss_bytes'),'max_process_gpu_bytes':peak('process_gpu_bytes'),'max_allocated_bytes':peak('allocated_bytes'),
+                    'total_board_energy_joules':energy,'mean_board_power_w':energy/float(seconds.sum()) if energy is not None else None,
+                    'total_cpu_package_energy_joules':complete_sum('cpu_package_energy_joules'),
+                    'cpu_energy_unavailable_reason':'; '.join(dict.fromkeys(row['cpu_energy_unavailable_reason'] for row in selected if row.get('cpu_energy_unavailable_reason'))) or None})
+    table(ROOT/'results/M5/resources-summary.csv',aggregates)
+    dump(ROOT/'results/M5/resources-summary.json',{'metrics':aggregates,'aggregation':'Per song and ALL measured repeats; warm-ups excluded. Sample standard deviation uses ddof=1. RTF is total inference time / total audio duration. Energy totals cover all listed measurements; unavailable energy remains null.'})
+    summary=read(ROOT/'results/M5/summary.json');summary['resources']=rows;summary['resource_summary']=aggregates
+    summary['completion']=[row for row in summary['completion'] if not row['condition'].startswith(('resources-','separation-'))]
     for model in config['modules']['M5']['models']:
         for device in ('cuda','cpu'):
             path=ROOT/'results/separation-resources'/f'{model}{"-cpu" if device=="cpu" else ""}.json'

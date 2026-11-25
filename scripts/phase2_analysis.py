@@ -3,7 +3,7 @@ import collections
 import unicodedata
 import re
 from shared import ROOT,read,dump,exists
-from phase2_metrics import measure,publish,reading_items,item,span,table
+from phase2_metrics import measure,publish,reading_items,item,span,table,primary_reference_unit
 import numpy as np
 
 
@@ -82,13 +82,13 @@ def m3(native,config):
         for fmt in ('float','aac'):
             for backend in ('nextfire','mms-fa'):
                 data=native.get(('M3',f'{sep}-{fmt}-{backend}','t01'),{})
-                tokens.append({'separator':sep,'format':fmt,'backend':backend,'status':data.get('status','pending'),'inputs':data.get('input_tokens',[])})
+                tokens.append({'separator':sep,'format':fmt,'backend':backend,'status':data.get('status','pending'),'input_count':len(data['input_tokens']) if 'input_tokens' in data else None,'empty_model_text_count':sum(not unit['model_text'] for unit in data['input_tokens']) if 'input_tokens' in data else None,'empty_model_text_units':[unit for unit in data.get('input_tokens',[]) if not unit['model_text']],'inputs':data.get('input_tokens',[])})
     cohort_metrics=[]
     summary=read(ROOT/'results/M3/summary.json')
     leaf=read(ROOT/'results/M3/reading-items.json')
     for condition in sorted({row['condition'] for row in leaf}):
         for cohort,songs in config['modules']['M3']['cohorts'].items():
-            cohort_metrics.append({'condition':condition,'cohort':cohort,**measure([row for row in leaf if row['condition']==condition and row['song'] in songs])})
+            cohort_metrics.append({'condition':condition,'cohort':cohort,**measure([row for row in leaf if row['primary_reading_unit'] and row['condition']==condition and row['song'] in songs])})
     summary['persistence_recipe']='Original float/wav vs current Studio AAC encoder, including its peak-overflow prevention gain; both decoded to float32 for alignment. Per-song gain is retained in prediction details.';summary['cohorts']=cohort_metrics;dump(ROOT/'results/M3/summary.json',summary);table(ROOT/'results/M3/cohorts.csv',cohort_metrics)
     dump(ROOT/'results/M3/core-boundaries.json',{'matching':'Bidirectional nearest endpoint distances; segment-count changes reported separately; no forced one-to-one correspondence.','songs':rows});table(ROOT/'results/M3/core-boundaries.csv',rows)
     dump(ROOT/'results/M2/t01-input-tokens.json.gz',tokens)
@@ -98,7 +98,7 @@ def m4(config,refs,leaf):
     from scipy.stats import pearsonr,spearmanr
     features=[]
     for sid in config['modules']['M4']['songs']:
-        reference=[unit for line in refs[sid]['lines'] for unit in line['leaves'] if unit['start'] is not None and unit['end'] is not None and unit['end']>unit['start'] and any(char.isalnum() for char in unit['text'])]
+        reference=[unit for line in refs[sid]['lines'] for unit in line['leaves'] if primary_reference_unit(line,unit)]
         durations=np.array([unit['end']-unit['start'] for unit in reference])*1000
         merged=[]
         for unit in sorted(reference,key=lambda unit:unit['start']):
@@ -106,7 +106,7 @@ def m4(config,refs,leaf):
             else:merged.append([unit['start'],unit['end']])
         active=sum(b-a for a,b in merged)
         features.append({'song':sid,'unit_count':len(reference),'mean_duration_ms':float(durations.mean()),'median_duration_ms':float(np.median(durations)),'p10_duration_ms':float(np.percentile(durations,10)),'p90_duration_ms':float(np.percentile(durations,90)),'syllables_per_second':len(reference)/active if active else None})
-    rows=leaf;song_rows=[];correlations=[];bins=[]
+    rows=[row for row in leaf if row['primary_reading_unit']];song_rows=[];correlations=[];bins=[]
     for condition in sorted({row['condition'] for row in rows}):
         for feature in features:song_rows.append({**feature,'condition':condition,**measure([row for row in rows if row['condition']==condition and row['song']==feature['song']])})
         selected=[row for row in song_rows if row['condition']==condition]
@@ -158,9 +158,9 @@ def m7(config):
                 if ref['start'] is None or ref['end'] is None or ref['end']<=ref['start']:continue
                 p=predictions[li][ui] if li<len(predictions) and ui<len(predictions[li]) else None
                 valid=p and not p.get('crosses_removed_gap')
-                rows.append(item(sid,line['index'],ref['id'],(ref['start'],ref['end']),(p['start'],p['end']) if valid else (None,None),condition=name))
-    metrics=[{'condition':condition,'song':sid,**measure([row for row in rows if row['condition']==condition and (sid=='ALL' or row['song']==sid)])} for condition in sorted({row['condition'] for row in rows}) for sid in ['ALL',*config['dataset']['ja']]]
-    publish('M7',{'metrics':metrics,'completion':states,'soft_factorial':8,'single_controls':2,'original_mix_controls':2,'decoder':'Unmodified native MiliKara decoder; shared cached emissions.'},metrics,rows)
+                rows.append(item(sid,line['index'],ref['id'],(ref['start'],ref['end']),(p['start'],p['end']) if valid else (None,None),condition=name,language=ref['language']))
+    metrics=[{'condition':condition,'song':sid,'scope':scope,**measure([row for row in rows if row['condition']==condition and (sid=='ALL' or row['song']==sid) and (scope=='all' or row['language']=='japanese')])} for condition in sorted({row['condition'] for row in rows}) for sid in ['ALL',*config['dataset']['ja']] for scope in ('japanese','all')]
+    publish('M7',{'metrics':metrics,'completion':states,'soft_factorial':8,'single_controls':2,'original_mix_controls':2,'reading_policy':'Japanese primary units and all-unit secondary scope follow Phase 1.','decoder':'Unmodified native MiliKara decoder; shared cached emissions.'},metrics,rows)
 
 
 def m8(config,refs):
@@ -175,6 +175,7 @@ def m8(config,refs):
                 states.append({'song':sid,'trigger':trigger,'strategy':strategy,'status':data['status'],'error':data.get('error'),'line_failures':{key:value for key,value in data.get('local_results',{}).items() if value.get('status')=='failed'}})
                 current=reading_items(refs[sid],data);before={row['unit']:row for row in baselines[sid]}
                 for row in current:
+                    if not row['primary_reading_unit']:continue
                     base=before[row['unit']];was=base['valid'] and max(abs(base['ds']),abs(base['de']))<=.100000001
                     now=row['valid'] and max(abs(row['ds']),abs(row['de']))<=.100000001
                     fixed+=int(now and not was);broken+=int(was and not now)

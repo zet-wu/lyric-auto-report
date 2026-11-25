@@ -27,10 +27,22 @@ def parts_for_line(line):
                 if parts:parts[-1]['text']+=text
                 else:prefix+=text
                 continue
-            if len(text)!=len(units):
+            if re.search('[A-Za-z]',text) and all(u['reading'].isascii() for u in units):
+                last=0
+                for match in re.finditer(r"[A-Za-z]+(?:['’][A-Za-z]+)*",text):
+                    prefix+=text[last:match.start()]
+                    surface=match.group()
+                    parts.append({'text':prefix+surface,'lang':'en','reading':english_phones(surface)})
+                    prefix='';last=match.end()
+                parts[-1]['text']+=text[last:]
+                continue
+            characters=[(index,char) for index,char in enumerate(text) if char.isalnum()]
+            if len(characters)!=len(units):
                 raise ValueError('Native Chinese PFML requires one source Han character per supplied syllable')
-            for char,unit in zip(text,units,strict=True):
-                parts.append({'text':prefix+char,'lang':'zh','reading':unit['reading']});prefix=''
+            start=0
+            for index,((position,char),unit) in enumerate(zip(characters,units,strict=True)):
+                end=characters[index+1][0] if index+1<len(characters) else len(text)
+                parts.append({'text':prefix+text[start:end],'lang':'zh','reading':unit['reading']});prefix='';start=end
         return compile_parts(line['text'],parts,'zh')
     words=line['words'];parts=[];prefix='';i=0
     def attach(text):

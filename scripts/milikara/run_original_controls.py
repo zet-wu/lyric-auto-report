@@ -17,7 +17,7 @@ for song,evidence,cache in inputs():
     original=Emission(np.load(cache/f'{sid}-concat_core-original.npy'),FrameMap(16000,320,0,0),29)
     emissions={'original':original,'vocals':vocals}
     original_samples=decode_audio(ROOT/media[sid]['audio'],sample_rate=16000,channels=1).samples[0]
-    signals={'vocals':concatenate(y,mapping),'original':concatenate(original_samples,mapping)}
+    signals={'vocals':y,'original':concatenate(original_samples,mapping)}
     count=mapping[-1]['concat_end']
     # These virtual input assets live on the same native concatenated axis as the cached emissions.
     assets={role:AudioAsset(id=role,role=role,sha256=hashlib.sha256(signal.astype('<f4').tobytes()).hexdigest(),duration_ms=round(count/16),sample_rate=16000,channels=1,num_samples=count) for role,signal in signals.items()}

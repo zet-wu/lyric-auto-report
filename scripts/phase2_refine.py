@@ -140,7 +140,7 @@ def main():
                         result = align_japanese(None, req, acoustic=acoustic, config=JapaneseConfig(hint_mode='off'))
                         selected = [item for item in projection['mapping'] if item['line_id'] == lid]
                         timings = object_timings(result, selected, vocals, model == 'mms-fa', segments=segments)
-                        local[lid, model] = {'status': 'ok', 'object_timings': timings, 'seconds': time.monotonic()-started}
+                        local[lid, model] = {'status': 'failed' if result.status=='unresolved' else 'ok', 'native_status':result.status,'native_issues':[asdict(issue) for unit in result.units for issue in unit.issues], 'object_timings': timings, 'seconds': time.monotonic()-started}
                     except Exception as exc:
                         local[lid, model] = {'status':'failed','error':{'type':type(exc).__name__,'message':portable(exc)[:800]}, 'seconds':time.monotonic()-started}
             for trigger, selected in triggers.items():
@@ -152,7 +152,7 @@ def main():
                         for lid in selected:
                             candidate = swap if strategy == 'mms_fa_global_swap' else local[lid, 'nextfire' if strategy == 'nextfire_local' else 'mms-fa']
                             if candidate['status'] != 'ok':
-                                result['status']='failed'; result['local_results'][lid]={'status':'failed','error':candidate.get('error'), 'retained_baseline':True}; continue
+                                result['status']='failed'; result['local_results'][lid]={'status':'failed','error':candidate.get('error'),'native_status':candidate.get('native_status'),'native_issues':candidate.get('native_issues',[]), 'retained_baseline':True}; continue
                             object_ids = {item['object_id'] for item in baseline['projection']['mapping'] if item['line_id']==lid}
                             result['object_timings'].update({key:value for key,value in candidate['object_timings'].items() if key in object_ids})
                             result['local_results'][lid]={'status':'ok','seconds':candidate.get('seconds',0) if strategy!='mms_fa_global_swap' else 0}

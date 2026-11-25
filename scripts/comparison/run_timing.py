@@ -17,7 +17,7 @@ for s in songs():
  if a.song and sid!=a.song:continue
  target=OUT/'timing'/f'{sid}-{a.sep}-{a.condition}.json'
  if exists(target) and read(target)['status']=='ok':continue
- stem=CACHE/'stems'/a.sep/f'{sid}.wav';r={'song':sid,'separator':a.sep,'condition':a.condition,'status':'failed','stem':stem.relative_to(ROOT).as_posix()};stage='frontend_g2p';stage='frontend_g2p';start=time.monotonic();work=CACHE/'timing'/f'{sid}-{a.sep}-{a.condition}';work.mkdir(parents=True,exist_ok=True)
+ stem=CACHE/'stems'/a.sep/f'{sid}.wav';r={'song':sid,'separator':a.sep,'condition':a.condition,'status':'failed','stem':stem.relative_to(ROOT).as_posix()};stage='frontend_g2p';start=time.monotonic();work=CACHE/'timing'/f'{sid}-{a.sep}-{a.condition}';work.mkdir(parents=True,exist_ok=True)
  try:
   src=read(OUT/'milikara/inputs'/('manual' if a.condition=='manual' else 'text')/f'{sid}.json')
   text='\n'.join(l['text'] for l in src['lines']);r['input']=text

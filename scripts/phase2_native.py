@@ -80,6 +80,13 @@ def main():
                 samples, rate = sf.read(source, dtype='float32', always_2d=True)
                 vocals = AudioBuffer(samples.T.copy(), rate, sid)
                 original = decode_audio(ROOT / song['audio'], sample_rate=rate, channels=2)
+                difference = vocals.samples.shape[1] - original.samples.shape[1]
+                if abs(difference) == 1:
+                    # Independent decoders round the final sample differently.
+                    # Preserve the source axis; adjust only its final sample.
+                    adjusted = vocals.samples[:, :original.samples.shape[1]] if difference > 0 else np.pad(vocals.samples, ((0, 0), (0, 1)))
+                    record['decoder_endpoint_adjustment'] = {'input_frames': vocals.samples.shape[1], 'original_frames': original.samples.shape[1], 'end_trimmed': max(difference, 0), 'end_padded': max(-difference, 0), 'stretched': False}
+                    vocals = AudioBuffer(adjusted.copy(), rate, sid)
                 if args.audio_format == 'aac':
                     stage = 'aac_encoding'
                     path = ROOT / '.cache/phase2/aac' / args.separator / f'{sid}.m4a'; path.parent.mkdir(parents=True, exist_ok=True)

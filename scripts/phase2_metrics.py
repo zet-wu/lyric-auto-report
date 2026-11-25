@@ -2,6 +2,7 @@
 import collections
 import csv
 import math
+import re
 import sys
 import unicodedata
 from shared import ROOT, read, dump, exists, portable
@@ -43,13 +44,19 @@ def item(song,line,unit,ref,pred,**meta):
             'valid':valid,'ds':x-a if valid else None,'de':y-b if valid else None,**meta}
 
 
+def primary_reference_unit(line,leaf):
+    if not legacy.valid(leaf['start'],leaf['end']) or not any(char.isalnum() for char in leaf['text']):return False
+    clean=''.join(char for char in unicodedata.normalize('NFKC',leaf['text']) if char.isalnum() or char in "ー'’")
+    return line.get('language','ja')!='ja' or bool(re.fullmatch('[ぁ-ゖァ-ヺー]+',clean))
+
+
 def reading_items(song,data):
     result=[]
     times=data.get('object_timings',{})
     for line in song['lines']:
         for index,leaf in enumerate(line['leaves']):
             if not legacy.valid(leaf['start'],leaf['end']) or not any(char.isalnum() for char in leaf['text']):continue
-            row=item(song['id'],line['index'],leaf['id'],(leaf['start'],leaf['end']),span(times.get(leaf['id'],{})),text=leaf['text'],reference_kind=leaf['kind'],unit_index=index)
+            row=item(song['id'],line['index'],leaf['id'],(leaf['start'],leaf['end']),span(times.get(leaf['id'],{})),text=leaf['text'],reference_kind=leaf['kind'],unit_index=index,primary_reading_unit=primary_reference_unit(line,leaf))
             result.append(row)
     return result
 
@@ -76,7 +83,7 @@ def external_lines(song,view):
     group='G3' if view['input_condition']=='auto' else 'G1'
     lines,state=legacy.load_prediction(song['id'],'phase2',group)
     if lines:
-        if len(lines)!=len(song['lines']):raise ValueError('Native exported line count differs from source text')
+        if len(lines)!=len(song['lines']):raise ValueError(f"Native exported line count {len(lines)} differs from source text {len(song['lines'])}")
         return [legacy.positioned(parts,line['text']) for parts,line in zip(lines,song['lines'],strict=True)],state
     return [[] for _ in song['lines']],state
 
@@ -90,6 +97,7 @@ def common_rows(song,conditions):
             if present is not None:edges &= present
         edges=sorted(edges)
         for a,b in zip(edges,edges[1:]):
+            if line.get('language','ja')=='ja' and not re.search('[\u3040-\u30ff\u3400-\u9fff]',legacy.norm(line['text'])[a:b]):continue
             truth=[word for word in gold if a<=word['a'] and word['b']<=b]
             start,end=legacy.envelope(truth)
             if not legacy.valid(start,end):continue
@@ -146,10 +154,11 @@ def score_alignment_modules(config,jobs,views,refs):
         for (mod,name,sid),data in all_native.items():
             if mod==module and data.get('condition') not in ('auto','dictionary'):
                 leaf.extend(dict(row,condition=name) for row in reading_items(refs[sid],data))
-        leaf_metrics=[{'condition':name,'song':sid,**measure([row for row in leaf if row['condition']==name and (sid=='ALL' or row['song']==sid)])} for name in conditions for sid in ['ALL',*config['modules'][module]['songs']] if any(row['condition']==name and (sid=='ALL' or row['song']==sid) for row in leaf)]
+        leaf_metrics=[{'condition':name,'song':sid,**measure([row for row in leaf if row['primary_reading_unit'] and row['condition']==name and (sid=='ALL' or row['song']==sid)])} for name in conditions for sid in ['ALL',*config['modules'][module]['songs']] if any(row['condition']==name and (sid=='ALL' or row['song']==sid) for row in leaf)]
+        all_leaf_metrics=[{'condition':name,'song':sid,**measure([row for row in leaf if row['condition']==name and (sid=='ALL' or row['song']==sid)])} for name in conditions for sid in ['ALL',*config['modules'][module]['songs']] if any(row['condition']==name and (sid=='ALL' or row['song']==sid) for row in leaf)]
         macro=[{'condition':name,'macro_hit100_pct':float(np.mean([row['hit100_pct'] for row in table_rows if row['condition']==name and row['song']!='ALL' and row['scope']=='all' and row['n']]))} for name in conditions if any(row['condition']==name and row['song']!='ALL' and row['scope']=='all' and row['n'] for row in table_rows)]
-        summary={'macro':macro,'surface':table_rows,'reading_units':leaf_metrics,'completion':state,'surface_policy':'Shared original body boundaries among native exports; missing predictions remain misses.','reading_policy':'Original timed human reading leaves; no interpolation.'}
-        publish(module,summary,table_rows+[{**row,'scope':'reading_units'} for row in leaf_metrics],rows)
+        summary={'macro':macro,'surface':table_rows,'reading_units':leaf_metrics,'all_reading_units':all_leaf_metrics,'completion':state,'surface_policy':'Shared original body boundaries among native exports; Japanese spans require Japanese body characters as in Phase 1. Missing predictions remain misses.','reading_policy':'Original timed human reading leaves; Japanese primary units use the Phase 1 kana-only criterion. All alphanumeric leaves are retained separately. No interpolation.'}
+        publish(module,summary,table_rows+[{**row,'scope':'reading_units'} for row in leaf_metrics]+[{**row,'scope':'all_reading_units'} for row in all_leaf_metrics],rows)
         dump(ROOT/'results'/module/'reading-items.json.gz',leaf)
         datasets[module]=leaf;states[module]=state
     return all_native,datasets,states

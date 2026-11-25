@@ -37,7 +37,7 @@ def load_prediction(sid,route,group):
  folder=OUT/('milikara/runs' if kind=='milikara' else kind)
  path=folder/name
  if not exists(path):return [],{'status':'pending','path':path.relative_to(ROOT).as_posix()}
- r=read(path);meta={'status':r['status'],'path':path.relative_to(ROOT).as_posix(),'error':r.get('error')}
+ r=read(path);meta={'status':r['status'],'path':path.relative_to(ROOT).as_posix(),'error':r.get('error'),'failed_stage':r.get('failed_stage')}
  if r['status']!='ok':return [],meta
  lines=[]
  if kind=='studio':

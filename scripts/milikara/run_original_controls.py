@@ -10,4 +10,4 @@ for song,ev,cache in inputs():
         for code in ['00000','00001']:
             flags=dict(zip(FACTORS,[c=='1' for c in code]));us,out=global_decode(doc,em,activity,flags)
             name=f'original-control-f{code}'
-            dump(OUT/'predictions'/f'{sid}--{mode}--{name}.json',{'song':sid,'experiment':f'{mode}/{name}','kind':'confirmed-targets','predictions':predictions(doc,us,mapping),'note':'original mixture logits; frozen vocal activity available but all activity costs off'})
+            dump(OUT/'predictions'/f'{sid}--{mode}--{name}.json.gz',{'song':sid,'experiment':f'{mode}/{name}','kind':'confirmed-targets','predictions':predictions(doc,us,mapping),'note':'original mixture logits; frozen vocal activity available but all activity costs off'})

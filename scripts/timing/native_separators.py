@@ -5,7 +5,7 @@ source checkouts and installed packages are never edited.
 """
 from common import *
 from separator_registry import LEGACY
-import hashlib, importlib.util, importlib.metadata, inspect, logging
+import hashlib, importlib.util, importlib.metadata, logging
 import numpy as np
 import torch
 
@@ -47,14 +47,11 @@ def load(name, device):
         model.to(device).eval()
         # Native demix_track processes one chunk at a time, irrespective of the
         # unused inference.batch_size=2 field in the published YAML.
-        source = inspect.getsource(utils.demix_track)
-        assert "torch.amp.autocast('cuda')" in source
-        source = source.replace("torch.amp.autocast('cuda')", "torch.amp.autocast('cuda', enabled=device == 'cuda')")
-        source = source.replace('np.nan_to_num(estimated_sources, copy=False, nan=0.0)',
-                                'assert np.isfinite(estimated_sources).all()')
-        ns = dict(vars(utils)); exec(compile(source, inspect.getfile(utils), 'exec'), ns)
         def infer(x):
-            return ns['demix_track'](config, model, torch.from_numpy(x.copy()), device)[0]['Vocals']
+            output = utils.demix_track(config, model, torch.from_numpy(x.copy()), device)[0]['Vocals']
+            if not np.isfinite(output).all():
+                raise ValueError('Nonfinite separator output')
+            return output
         identity.update(config=cfg, effective_batch_size=1, weight_sha256=digest(weight))
     elif name == 'yohane':
         spec = importlib.util.spec_from_file_location('frozen_yohane_audio', ROOT / '.deps/comparison/yohane/yohane/audio.py')

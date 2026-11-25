@@ -18,7 +18,7 @@ def timing_imports():
     sys.path.insert(0, str(UPSTREAM))
 
 sys.path.insert(0, str(UPSTREAM))
-MODES = ['global', 'concat_core', 'concat_padded']
+MODES = ['concat_core']
 FACTORS = ['delimiter', 'line_gap', 'rest_gap', 'rest_token', 'free_tail']
 SOURCES = [(OUT, CACHE)]
 

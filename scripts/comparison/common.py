@@ -17,4 +17,4 @@ def timing_imports():
     sys.path.insert(0, str(UPSTREAM))
 
 def songs():
-    return [s for s in read(OUT / 'reference.json') if s['id'] not in ('s11', 's13', 's14')]
+    return [s for s in read(OUT / 'reference.json') if s['id'] in read(ROOT / 'configs/reading.json')['songs']]

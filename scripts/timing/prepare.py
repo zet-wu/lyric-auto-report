@@ -1,5 +1,8 @@
 """Extract reference lyric structure and prepare untimed inputs for evaluation."""
-from common import *
+from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from timing.common import *
 import xml.etree.ElementTree as ET
 import hashlib, subprocess, re
 
@@ -54,7 +57,7 @@ def prepare_dataset(out_dir, cache_dir, include_protocol=False):
                     })
             text = ''.join(w['text'] for w in words)
             valid = [x for x in leaves if x['start'] is not None and x['end'] is not None and x['end'] > x['start'] and any(c.isalnum() for c in x['text'])]
-            language = 'yue' if name.startswith('星 ') and not re.search('[ぁ-ヺ]', text) else 'teochew' if name.startswith('骹车') else 'ja_en'
+            language = ('ja' if index < 10 else 'yue') if sid == 'jy01' else ('teochew' if sid.startswith('t') else 'cmn' if sid.startswith('m') else 'yue' if sid.startswith('y') else 'ja')
             rows.append({
                 'id': p.get(D + 'id'),
                 'index': index + 1,
@@ -104,7 +107,7 @@ def prepare_dataset(out_dir, cache_dir, include_protocol=False):
         dump(out_dir / 'protocol.json', {
             'timing_commit': subprocess.check_output(['git', '-C', str(UPSTREAM), 'rev-parse', 'HEAD'], text=True).strip(),
             'studio_commit': subprocess.check_output(['git', '-C', str(STUDIO), 'rev-parse', 'HEAD'], text=True).strip(),
-            'input': '14 audio files / 15 TTML variants; primary chain only; background counts reported separately',
+            'input': '26 audio files / 26 TTML references; primary chain only; background intervals retained',
             'audio': 'same Demucs htdemucs seed=0 complete stem supplied to both systems; all stems generated in this evaluation',
             'conditions': ['current Studio projection + default NextFire, no hints or gap fill', 'Timing tifa with untimed surface text, source mode on shared stem', 'Timing tifa with trusted human line windows, surface text'],
             'dialects': 'Cantonese and Teochew out of declared model scope, kept separate; kana transcription is not Japanese speech',

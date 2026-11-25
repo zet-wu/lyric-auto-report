@@ -2,8 +2,7 @@
 from pathlib import Path
 import argparse, hashlib, json, os, subprocess, sys, urllib.request
 
-ROOT = Path(__file__).resolve().parents[1]
-os.environ.update(HF_HOME=str(ROOT/'.cache/huggingface'),TORCH_HOME=str(ROOT/'.models/torch'),UV_CACHE_DIR=str(ROOT/'.cache/uv'),XDG_CACHE_HOME=str(ROOT/'.cache'))
+from shared import ROOT
 os.environ['PATH']=str(Path(sys.executable).parent)+os.pathsep+os.environ['PATH']
 
 def run(*args):
@@ -22,16 +21,9 @@ def fetch(url,path,sha256=None):
     temporary.replace(path)
 
 def sources():
-    for name,item in json.loads((ROOT/'configs/sources.json').read_text()).items():
-        folder=ROOT/'.deps'/name
-        if (folder/'.git').exists():
-            head=subprocess.check_output(['git','-C',str(folder),'rev-parse','HEAD'],text=True).strip()
-            if head==item['commit']:continue
-            raise RuntimeError('Unexpected checkout: '+name)
-        folder.mkdir(parents=True,exist_ok=True)
-        run('git','init',folder)
-        run('git','-C',folder,'fetch','--depth','1',item['url'],item['commit'])
-        run('git','-C',folder,'checkout','--detach','FETCH_HEAD')
+    from phase2_sources import checkout
+    for name, item in json.loads((ROOT / 'configs/sources.json').read_text()).items():
+        checkout(ROOT / '.deps' / name, item)
 
 def reading():
     import tarfile

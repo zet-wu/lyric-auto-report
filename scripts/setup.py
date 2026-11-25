@@ -1,8 +1,7 @@
 """Create the repository-local Python and Node runtime from a fresh clone."""
 from pathlib import Path
 import argparse, os, shutil, subprocess, sys
-ROOT=Path(__file__).resolve().parents[1]
-os.chdir(ROOT)
+from shared import ROOT
 parser=argparse.ArgumentParser()
 parser.add_argument('--models',action='store_true')
 args=parser.parse_args()

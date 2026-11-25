@@ -5,6 +5,9 @@ from shared import ROOT
 
 os.environ.update(HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1')
 
+if (ROOT / 'configs/phase2.json').exists():
+    raise SystemExit('This runner is the historical Phase 1 matrix. Phase 2 preparation uses phase2_prepare.py, phase2_sources.py and phase2_runtime.py; the Phase 2 GPU matrix is not enabled yet.')
+
 groups = {
     'prepare': [
         ('timing/prepare.py',),

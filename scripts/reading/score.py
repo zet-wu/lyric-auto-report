@@ -69,7 +69,7 @@ def save(name,rows):
    assert old==new,(name,'Other method changed')
    kept.append(old)
   rows=kept
- dump(OUT/f'{name}.json',rows)
+ dump(OUT/f'{name}.json' if name=='metrics' else OUT/f'{name}.json.gz',rows)
 save('metrics',metrics);save('items',items);save('lines',lineitems);save('excluded',excluded);save('errors',errors)
 for r in metrics:
  if r['song']=='ALL':print(r['scope'],r['method'],r['exact'],r['n'],round(r['accuracy_pct'],2),round(r['cer_pct'],2))

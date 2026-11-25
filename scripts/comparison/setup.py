@@ -4,14 +4,12 @@ import subprocess,urllib.request,shutil
 research=ROOT/'.venvs/research/bin/python';native=ROOT/'.venvs/milikara/bin/python'
 os.environ['PIP_CACHE_DIR']=str(ROOT/'.cache/pip')
 def run(*args,**kwargs):subprocess.run(list(map(str,args)),check=True,cwd=ROOT,**kwargs)
+from phase2_sources import checkout
 for name,item in read(ROOT/'configs/comparison-sources.json').items():
- folder=ROOT/'.deps/comparison'/name
- if not (folder/'.git').exists():
-  folder.mkdir(parents=True,exist_ok=True);run('git','init',folder);run('git','-C',folder,'fetch','--depth','1',item['url'],item['commit']);run('git','-C',folder,'checkout','--detach','FETCH_HEAD')
- assert subprocess.check_output(['git','-C',str(folder),'rev-parse','HEAD'],text=True).strip()==item['commit'],name
+ checkout(ROOT/'.deps/comparison'/name,item)
 models=ROOT/'.deps/comparison/timing/models'
 if not models.exists():models.symlink_to(ROOT/'.deps/timing/models',target_is_directory=True)
-run(research,'-m','pip','install','PyQt6==6.10.2','Janome==0.5.0','pysubs2==1.8.1','jieba==0.42.1','jaconv==0.5.0','nltk==3.10.4','nvidia-ml-py==13.615.71')
+run(research,'-m','pip','install','PyQt6==6.11.0','msgspec==0.19.0','Janome==0.5.0','pysubs2==1.8.1','jieba==0.42.1','jaconv==0.5.0','nltk==3.10.4','nvidia-ml-py==13.615.71')
 run(research,'-m','pip','install','--no-deps',ROOT/'.deps/comparison/yohane')
 run(research,'-m','pip','--python',native,'install','onnxruntime-gpu==1.23.2','ml_dtypes==0.5.3',
     'mutagen==1.47.0','psutil==7.2.2','nvidia-ml-py==13.615.71')

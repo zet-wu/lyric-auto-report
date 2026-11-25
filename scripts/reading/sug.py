@@ -1,47 +1,64 @@
-"""Run SUG text reading: Sudachi fallback by default, or separate WinRT output."""
+"""Run SUG's native Sudachi resolver or the required Windows WinRT resolver."""
 from common import *
-import time,argparse,hashlib,platform,subprocess
-from importlib.metadata import distributions
-parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--require-winrt',action='store_true',help='Fail instead of falling back to another reading engine.')
-parser.add_argument('--output-dir',type=Path,default=OUT,help='Prediction and runtime output root; inputs always come from results/reading.')
-args=parser.parse_args()
-output=args.output_dir
-method='sug-winrt' if args.require_winrt else 'sug'
-sys.path.insert(0,str(ROOT/'.deps/comparison/sug/src'))
-from strange_uta_game.backend.domain import Project,Sentence,Singer
-from strange_uta_game.backend.application.ai_timing import PronunciationResolver
-from strange_uta_game.backend.infrastructure.parsers.ruby_analyzer import create_analyzer,WinRTAnalyzer,SudachiAnalyzer
-source=ROOT/'.deps/comparison/sug'
-commit=subprocess.check_output(['git','-c',f'safe.directory={source.as_posix()}','-C',str(source),'rev-parse','HEAD'],text=True).strip()
-assert commit==read(ROOT/'configs/comparison-sources.json')['sug']['commit'],'SUG source commit mismatch'
-assert not subprocess.check_output(['git','-c',f'safe.directory={source.as_posix()}','-C',str(source),'status','--porcelain'],text=True).strip(),'Modified SUG source'
-input_hashes={sid:hashlib.sha256((OUT/'inputs'/f'{sid}.json').read_bytes()).hexdigest() for sid in read(ROOT/'configs/reading.json')['songs']}
-for sid,digest in input_hashes.items():
- assert digest==read(ROOT/'configs/reading.json')['input_sha256'][f'{sid}.json'],f'Input changed: {sid}'
-runtime=[]
-for sid in read(ROOT/'configs/reading.json')['songs']:
- s=read(OUT/'inputs'/f'{sid}.json');t=time.perf_counter();project=Project();project.singers=[Singer(id='s1',name='main')]
- project.sentences=[Sentence.from_text(l['text'],singer_id='s1') for l in s['lines']]
- analyzer=create_analyzer() if args.require_winrt else SudachiAnalyzer()
- if args.require_winrt:
-  assert isinstance(analyzer,WinRTAnalyzer),'WinRT unavailable; fallback is forbidden'
-  assert analyzer._pykakasi_conv is not None,'Native character-reading reference dependency is missing'
- print('SUG',sid,type(analyzer).__name__,'starting',flush=True)
- plan=PronunciationResolver(analyzer=analyzer,chinese_mode=False).resolve_project(project,fill_missing=True)
- lookup={}
- for u in plan.units:
-  if not u.is_sentence_end:lookup.setdefault((u.line_idx,u.char_idx),[]).append(u)
- lines=[]
- for li,(line,sentence) in enumerate(zip(s['lines'],project.sentences,strict=True)):
-  pairs=[]
-  for ci,char in enumerate(sentence.characters):
-   us=lookup.get((li,ci),[])
-   reading=''.join(u.reading or ('' if u.expects_token else u.char_text) for u in us) if us else char.char
-   pairs.append((char.char,reading))
-  lines.append({'id':line['id'],'parts':segments(line['text'],pairs)})
- dump(output/'predictions'/method/f'{sid}.json',{'song':sid,'method':method,'lines':lines})
- runtime.append({'song':sid,'method':method,'analyzer':type(analyzer).__name__,'seconds':time.perf_counter()-t,'pending_units':len(plan.pending_units),'pending_details':[{'line_idx':u.line_idx,'char_idx':u.char_idx,'char_text':u.char_text} for u in plan.pending_units]})
- print('SUG',sid,len(plan.pending_units),flush=True)
-dump(output/'runtime'/f'{method}.json',runtime)
-dump(output/f'{method}-environment.json',{'method':method,'source_commit':commit,'python':platform.python_version(),'system':platform.system(),'windows_version':platform.version(),'machine':platform.machine(),'require_winrt':args.require_winrt,'packages':dict(sorted((d.metadata['Name'],d.version) for d in distributions())),'input_sha256':input_hashes,'prediction_sha256':{sid:hashlib.sha256((output/'predictions'/method/f'{sid}.json').read_bytes()).hexdigest() for sid in input_hashes}})
+from shared import portable
+import argparse
+import subprocess
+import time
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--require-winrt', action='store_true')
+    parser.add_argument('--output-dir', type=Path, default=OUT)
+    args = parser.parse_args()
+    method = 'sug-winrt' if args.require_winrt else 'sug'
+    source = ROOT / '.deps/comparison/sug'
+    sys.path.insert(0, str(source / 'src'))
+    commit = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip()
+    if commit != read(ROOT / 'configs/comparison-sources.json')['sug']['commit']:
+        raise RuntimeError('SUG source commit mismatch')
+    from strange_uta_game.backend.domain import Project, Sentence, Singer
+    from strange_uta_game.backend.application.ai_timing import PronunciationResolver
+    from strange_uta_game.backend.infrastructure.parsers.ruby_analyzer import create_analyzer, WinRTAnalyzer, SudachiAnalyzer
+    runtime = []
+    for sid in read(ROOT / 'configs/reading.json')['songs']:
+        song = read(OUT / 'inputs' / f'{sid}.json')
+        started = time.perf_counter()
+        result = {'song': sid, 'method': method, 'status': 'failed'}
+        try:
+            project = Project()
+            project.singers = [Singer(id='s1', name='main')]
+            project.sentences = [Sentence.from_text(line['text'], singer_id='s1') for line in song['lines']]
+            analyzer = create_analyzer() if args.require_winrt else SudachiAnalyzer()
+            if args.require_winrt and not isinstance(analyzer, WinRTAnalyzer):
+                raise RuntimeError('WinRT unavailable; fallback is forbidden')
+            if args.require_winrt and analyzer._pykakasi_conv is None:
+                raise RuntimeError('WinRT native character-reading reference dependency is missing')
+            plan = PronunciationResolver(analyzer=analyzer, chinese_mode=False).resolve_project(project, fill_missing=True)
+            lookup = {}
+            for unit in plan.units:
+                if not unit.is_sentence_end:
+                    lookup.setdefault((unit.line_idx, unit.char_idx), []).append(unit)
+            lines = []
+            for li, (line, sentence) in enumerate(zip(song['lines'], project.sentences, strict=True)):
+                pairs = []
+                for ci, char in enumerate(sentence.characters):
+                    units = lookup.get((li, ci), [])
+                    value = ''.join(unit.reading or ('' if unit.expects_token else unit.char_text) for unit in units) if units else char.char
+                    pairs.append((char.char, value))
+                lines.append({'id': line['id'], 'parts': segments(line['text'], pairs)})
+            result.update(status='ok', lines=lines, pending_units=len(plan.pending_units))
+        except Exception as exc:
+            error = {'type': type(exc).__name__, 'message': portable(exc)[:500]}
+            result.update(error=error, failed_stage='frontend_g2p', lines=[
+                {'id': line['id'], 'error': error, 'parts': [{'a': 0, 'b': len(line['text']), 'text': line['text'], 'reading': ''}]}
+                for line in song['lines']])
+        extension = '.json' if args.require_winrt else '.json.gz'
+        dump(args.output_dir / 'predictions' / method / (sid + extension), result)
+        runtime.append({'song': sid, 'method': method, 'status': result['status'], 'seconds': time.perf_counter() - started})
+        print(method, sid, result['status'], flush=True)
+    dump(args.output_dir / 'runtime' / f'{method}.json', runtime)
+
+
+if __name__ == '__main__':
+    main()

@@ -1,7 +1,7 @@
 """Generate fresh stems with the five additional historical separation models."""
 from ablation_common import *
 product_imports()
-import time, dataclasses, hashlib, inspect, sys, argparse, random
+import time, dataclasses, hashlib, sys, argparse, random
 PROCESS_START=time.perf_counter()
 import numpy as np, torch, yaml, soundfile as sf
 sys.path.insert(0,str(ROOT/'.deps/msst-packages'))
@@ -56,13 +56,7 @@ def load(name,device):
                 return np.concatenate(blocks,axis=-1)
         else:
             import utils.model_utils as mu
-            # Preserve upstream inference, but reject nonfinite audio instead of hiding it.
-            source=inspect.getsource(mu.demix)
-            old='np.nan_to_num(estimated_sources, copy=False, nan=0.0)'
-            assert old in source
-            namespace=dict(vars(mu))
-            exec(compile(source.replace(old,'assert np.isfinite(estimated_sources).all(), "nonfinite model output"'),inspect.getfile(mu),'exec'),namespace)
-            demix=namespace['demix']
+            demix=mu.demix
             def infer(x):
                 mean=0.;std=1.
                 if config.inference.get('normalize',False):

@@ -8,10 +8,10 @@ OUT = ROOT / 'results/ablation'
 CACHE = ROOT / '.cache/ablation'
 for folder in (OUT, CACHE):
     folder.mkdir(parents=True, exist_ok=True)
-PRIMARY = [f's{i:02}' for i in range(1, 13) if i != 11] + ['s15']
+PRIMARY = [f'j{i:02}' for i in range(1, 21)]
 
 def songs():
-    return [s for s in read(PREVIOUS / 'reference.json') if s['id'] != 's14']
+    return [s for s in read(PREVIOUS / 'reference.json') if s['id'] in PRIMARY]
 
 def stem_path(song, separator):
     if separator == 'demucs':

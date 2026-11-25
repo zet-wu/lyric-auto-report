@@ -1,0 +1,587 @@
+{
+  "stage1_requires_user_confirmation": true,
+  "dataset": {
+    "ja": [
+      "j01",
+      "j02",
+      "j03",
+      "j04",
+      "j05",
+      "j06",
+      "j07",
+      "j08",
+      "j09",
+      "j10",
+      "j11",
+      "j12",
+      "j13",
+      "j14",
+      "j15",
+      "j16",
+      "j17",
+      "j18",
+      "j19",
+      "j20"
+    ],
+    "non_ja": [
+      "m01",
+      "m02",
+      "y01",
+      "y02",
+      "jy01",
+      "t01"
+    ]
+  },
+  "modules": {
+    "M1": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "routes": [
+        "studio-demucs-nextfire",
+        "studio-bs-nextfire",
+        "studio-demucs-mms_fa-smart",
+        "fa-kara",
+        "sug",
+        "milikara",
+        "timing",
+        "yohane"
+      ],
+      "G2_separator": "bs",
+      "overlap_scope": "primary reference units intersecting any x-bg interval"
+    },
+    "M2": {
+      "songs": [
+        "m01",
+        "m02",
+        "y01",
+        "y02",
+        "jy01",
+        "t01"
+      ],
+      "compatibility_tools": [
+        "studio-demucs-nextfire",
+        "studio-bs-nextfire",
+        "studio-demucs-mms_fa-smart",
+        "fa-kara",
+        "sug",
+        "milikara",
+        "timing",
+        "yohane"
+      ],
+      "separators": [
+        "demucs",
+        "bs"
+      ],
+      "backends": [
+        "nextfire",
+        "mms_fa-smart"
+      ],
+      "line_subsets": {
+        "y01": {
+          "spoken": [
+            1,
+            13
+          ],
+          "sung": [
+            14,
+            55
+          ]
+        },
+        "jy01": {
+          "ja": [
+            1,
+            10
+          ],
+          "yue": [
+            11,
+            23
+          ]
+        }
+      },
+      "phonetic_groups": [
+        "open_cv",
+        "nasal_coda",
+        "stop_coda",
+        "non_ja_phoneme"
+      ],
+      "dictionary_songs": {
+        "zh-pinyin": [
+          "m01",
+          "m02"
+        ],
+        "yue-jyutping": [
+          "y01",
+          "y02"
+        ],
+        "teochew-chaozhou-puj": [
+          "t01"
+        ]
+      },
+      "dictionary_tone_modes": [
+        "with_tone",
+        "without_tone"
+      ],
+      "input_token_export": [
+        "t01"
+      ]
+    },
+    "M3": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20",
+        "m01",
+        "m02",
+        "y01",
+        "y02",
+        "jy01",
+        "t01"
+      ],
+      "separators": [
+        "demucs",
+        "bs"
+      ],
+      "formats": [
+        "float-wav",
+        "aac-m4a"
+      ],
+      "backends": [
+        "nextfire",
+        "mms_fa-smart"
+      ],
+      "encoder": {
+        "implementation": "server.vocal_audio.encode_vocals",
+        "codec": "aac",
+        "profile": "aac_low",
+        "bitrate": "192k",
+        "channels": 2,
+        "movie_timescale": "sample_rate",
+        "movflags": "+faststart",
+        "gain": 1
+      },
+      "segment_metrics": [
+        "count",
+        "mean_abs_boundary_shift_ms",
+        "p95_abs_boundary_shift_ms",
+        "max_abs_boundary_shift_ms"
+      ],
+      "cohorts": {
+        "ja": [
+          "j01",
+          "j02",
+          "j03",
+          "j04",
+          "j05",
+          "j06",
+          "j07",
+          "j08",
+          "j09",
+          "j10",
+          "j11",
+          "j12",
+          "j13",
+          "j14",
+          "j15",
+          "j16",
+          "j17",
+          "j18",
+          "j19",
+          "j20"
+        ],
+        "non_ja": [
+          "m01",
+          "m02",
+          "y01",
+          "y02",
+          "jy01",
+          "t01"
+        ]
+      }
+    },
+    "M4": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20",
+        "m01",
+        "m02",
+        "y01",
+        "y02",
+        "jy01",
+        "t01"
+      ],
+      "source_modules": [
+        "M1",
+        "M2"
+      ],
+      "separators": [
+        "demucs",
+        "bs"
+      ],
+      "backends": [
+        "nextfire",
+        "mms_fa-smart"
+      ],
+      "correlations": [
+        "pearson",
+        "spearman"
+      ],
+      "song_features": [
+        "unit_count",
+        "mean_duration_ms",
+        "median_duration_ms",
+        "p10_duration_ms",
+        "p90_duration_ms",
+        "syllables_per_second"
+      ],
+      "outcomes": [
+        "hit100_pct",
+        "start_mae_ms",
+        "end_mae_ms"
+      ],
+      "duration_bins_ms": [
+        0,
+        120,
+        250,
+        500,
+        1000,
+        null
+      ],
+      "paired_arrangements": [
+        "j14",
+        "j15"
+      ]
+    },
+    "M5": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "models": [
+        "demucs",
+        "scnet",
+        "dttnet",
+        "bs_roformer",
+        "mel_roformer",
+        "windowed",
+        "bs",
+        "sug",
+        "milikara",
+        "yohane"
+      ],
+      "benchmark_songs": [
+        "t01",
+        "y02",
+        "j06",
+        "j11",
+        "j02"
+      ],
+      "benchmark_devices": {
+        "cuda": "full_song",
+        "cpu": "30_second_excerpt"
+      },
+      "benchmark_metrics": [
+        "seconds",
+        "peak_rss_bytes",
+        "peak_vram_bytes",
+        "energy_joules"
+      ],
+      "alignment_backend": "nextfire",
+      "core_models": [
+        "demucs",
+        "bs",
+        "sug",
+        "windowed"
+      ],
+      "core_model_modes": [
+        "global",
+        "core"
+      ],
+      "other_model_modes": [
+        "core"
+      ]
+    },
+    "M6": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "separators": [
+        "demucs",
+        "bs"
+      ],
+      "cases": {
+        "nextfire": [
+          "core",
+          "human_line"
+        ],
+        "tifa": [
+          "human_line",
+          "timing_native_two_stage"
+        ],
+        "mms_fa": [
+          "raw",
+          "studio_smart_extend"
+        ]
+      }
+    },
+    "M7": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "mode": "concat_core",
+      "soft_factors": [
+        "line_gap",
+        "rest_gap",
+        "rest_token"
+      ],
+      "soft_factorial": 8,
+      "fixed_off": [
+        "delimiter",
+        "free_tail"
+      ],
+      "single_controls": [
+        "delimiter",
+        "free_tail"
+      ],
+      "original_mix_controls": [
+        "00000",
+        "00001"
+      ],
+      "reuse_acoustic_emissions": true
+    },
+    "M8": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "separators": [
+        "demucs"
+      ],
+      "strategies": [
+        "nextfire_baseline",
+        "nextfire_local",
+        "mms_fa_local",
+        "mms_fa_global_swap"
+      ],
+      "triggers": [
+        "short_unit_30ms",
+        "short_unit_40ms",
+        "same_vowel_imbalance",
+        "combined_30ms",
+        "combined_40ms",
+        "legacy_conf",
+        "oracle_top_k"
+      ],
+      "short_thresholds_ms": [
+        30,
+        40
+      ],
+      "oracle_scope": "theoretical ceiling only; reference-error top K uses the same K as combined per song",
+      "metrics": [
+        "triggered_lines",
+        "triggered_fraction",
+        "hit100_pct",
+        "start_mae_ms",
+        "end_mae_ms",
+        "abs_p95_ms",
+        "fixed_count",
+        "broken_count",
+        "net_gain"
+      ]
+    },
+    "M9": {
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "methods": [
+        "studio",
+        "sug",
+        "sug-winrt",
+        "milikara",
+        "timing",
+        "openjtalk",
+        "studio-llm-corrected"
+      ],
+      "llm_isolation": "Only source text and Studio candidate readings; no annotation/reference access",
+      "windows_inputs": "results/reading/inputs",
+      "windows_predictions": "results/reading/predictions/sug-winrt"
+    }
+  },
+  "output": {
+    "summary": "results/{module}/summary.json",
+    "metrics": "results/{module}/metrics.csv",
+    "details": "results/{module}/predictions/{condition}/{song}.json.gz",
+    "index": "results/EXPERIMENT_INDEX.json"
+  },
+  "metric_policy": {
+    "joint_endpoint_threshold_ms": 100,
+    "missing_prediction": "miss; retained in denominator",
+    "mae_p95": "valid predictions only; missing count reported separately",
+    "surface_boundaries": "shared original body text boundaries; no timestamp interpolation",
+    "reading_boundaries": "human reading units; missing units retained"
+  },
+  "storage": {
+    "summaries": [
+      ".json",
+      ".csv"
+    ],
+    "details": ".json.gz",
+    "reading_small_exceptions": [
+      "inputs",
+      "sug-winrt"
+    ],
+    "git_lfs": false
+  }
+}

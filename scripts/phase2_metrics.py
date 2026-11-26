@@ -79,7 +79,7 @@ def native_lines(song,data):
 
 
 def external_lines(song,view):
-    legacy.ROUTES['phase2']=(view['tool'],'nextfire' if view['tool']=='sug' else None,view['separator'])
+    legacy.ROUTES['phase2']=(view['tool'],view.get('model','nextfire') if view['tool']=='sug' else None,view['separator'])
     group='G3' if view['input_condition']=='auto' else 'G1'
     lines,state=legacy.load_prediction(song['id'],'phase2',group)
     if lines:

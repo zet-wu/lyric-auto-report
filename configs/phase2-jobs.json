@@ -1200,17 +1200,20 @@
       "kind": "external",
       "tool": "fa-kara",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
-      "id": "external-sug-sug-manual",
+      "id": "external-sug-nextfire-sug-manual",
       "module": "M1",
       "script": "comparison/run_sug.py",
       "args": [
         "--sep",
         "sug",
         "--condition",
-        "manual"
+        "manual",
+        "--model",
+        "nextfire"
       ],
       "songs": [
         "j01",
@@ -1260,7 +1263,8 @@
       "kind": "external",
       "tool": "sug",
       "separator": "sug",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": "nextfire"
     },
     {
       "id": "external-milikara-milikara-manual",
@@ -1320,7 +1324,8 @@
       "kind": "external",
       "tool": "milikara",
       "separator": "milikara",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "id": "external-timing-bs-manual",
@@ -1392,7 +1397,8 @@
       "kind": "external",
       "tool": "timing",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "id": "external-yohane-yohane-manual",
@@ -1452,7 +1458,71 @@
       "kind": "external",
       "tool": "yohane",
       "separator": "yohane",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
+    },
+    {
+      "id": "external-sug-mms-fa-sug-manual",
+      "module": "M1",
+      "script": "comparison/run_sug.py",
+      "args": [
+        "--sep",
+        "sug",
+        "--condition",
+        "manual",
+        "--model",
+        "mms-fa"
+      ],
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "runtime": "sug",
+      "outputs": [
+        "results/comparison/sug/j01-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j02-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j03-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j04-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j05-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j06-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j07-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j08-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j09-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j10-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j11-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j12-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j13-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j14-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j15-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j16-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j17-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j18-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j19-sug-mms-fa-manual.json.gz",
+        "results/comparison/sug/j20-sug-mms-fa-manual.json.gz"
+      ],
+      "kind": "external",
+      "tool": "sug",
+      "separator": "sug",
+      "input_condition": "manual",
+      "model": "mms-fa"
     },
     {
       "id": "M1-G2-studio-demucs-nextfire",
@@ -1735,14 +1805,16 @@
       "smart": true
     },
     {
-      "id": "external-sug-bs-manual",
+      "id": "external-sug-nextfire-bs-manual",
       "module": "M1",
       "script": "comparison/run_sug.py",
       "args": [
         "--sep",
         "bs",
         "--condition",
-        "manual"
+        "manual",
+        "--model",
+        "nextfire"
       ],
       "songs": [
         "j01",
@@ -1804,7 +1876,8 @@
       "kind": "external",
       "tool": "sug",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": "nextfire"
     },
     {
       "id": "external-milikara-bs-manual",
@@ -1876,7 +1949,8 @@
       "kind": "external",
       "tool": "milikara",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "id": "external-yohane-bs-manual",
@@ -1948,7 +2022,83 @@
       "kind": "external",
       "tool": "yohane",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
+    },
+    {
+      "id": "external-sug-mms-fa-bs-manual",
+      "module": "M1",
+      "script": "comparison/run_sug.py",
+      "args": [
+        "--sep",
+        "bs",
+        "--condition",
+        "manual",
+        "--model",
+        "mms-fa"
+      ],
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20",
+        "m01",
+        "m02",
+        "y01",
+        "y02",
+        "jy01",
+        "t01"
+      ],
+      "runtime": "sug",
+      "outputs": [
+        "results/comparison/sug/j01-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j02-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j03-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j04-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j05-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j06-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j07-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j08-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j09-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j10-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j11-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j12-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j13-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j14-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j15-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j16-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j17-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j18-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j19-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/j20-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/m01-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/m02-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/y01-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/y02-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/jy01-bs-mms-fa-manual.json.gz",
+        "results/comparison/sug/t01-bs-mms-fa-manual.json.gz"
+      ],
+      "kind": "external",
+      "tool": "sug",
+      "separator": "bs",
+      "input_condition": "manual",
+      "model": "mms-fa"
     },
     {
       "id": "M1-G3-studio-demucs-nextfire",
@@ -2288,17 +2438,20 @@
       "kind": "external",
       "tool": "fa-kara",
       "separator": "bs",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
     },
     {
-      "id": "external-sug-sug-auto",
+      "id": "external-sug-nextfire-sug-auto",
       "module": "M1",
       "script": "comparison/run_sug.py",
       "args": [
         "--sep",
         "sug",
         "--condition",
-        "auto"
+        "auto",
+        "--model",
+        "nextfire"
       ],
       "songs": [
         "j01",
@@ -2348,7 +2501,8 @@
       "kind": "external",
       "tool": "sug",
       "separator": "sug",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": "nextfire"
     },
     {
       "id": "external-milikara-milikara-auto",
@@ -2408,7 +2562,8 @@
       "kind": "external",
       "tool": "milikara",
       "separator": "milikara",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
     },
     {
       "id": "external-timing-bs-auto",
@@ -2468,7 +2623,8 @@
       "kind": "external",
       "tool": "timing",
       "separator": "bs",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
     },
     {
       "id": "external-yohane-yohane-auto",
@@ -2528,7 +2684,71 @@
       "kind": "external",
       "tool": "yohane",
       "separator": "yohane",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
+    },
+    {
+      "id": "external-sug-mms-fa-sug-auto",
+      "module": "M1",
+      "script": "comparison/run_sug.py",
+      "args": [
+        "--sep",
+        "sug",
+        "--condition",
+        "auto",
+        "--model",
+        "mms-fa"
+      ],
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "runtime": "sug",
+      "outputs": [
+        "results/comparison/sug/j01-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j02-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j03-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j04-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j05-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j06-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j07-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j08-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j09-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j10-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j11-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j12-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j13-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j14-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j15-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j16-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j17-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j18-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j19-sug-mms-fa-auto.json.gz",
+        "results/comparison/sug/j20-sug-mms-fa-auto.json.gz"
+      ],
+      "kind": "external",
+      "tool": "sug",
+      "separator": "sug",
+      "input_condition": "auto",
+      "model": "mms-fa"
     },
     {
       "id": "M2-demucs-nextfire",
@@ -2663,17 +2883,20 @@
       "kind": "external",
       "tool": "fa-kara",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
-      "id": "external-sug-demucs-manual",
+      "id": "external-sug-nextfire-demucs-manual",
       "module": "M2",
       "script": "comparison/run_sug.py",
       "args": [
         "--sep",
         "demucs",
         "--condition",
-        "manual"
+        "manual",
+        "--model",
+        "nextfire"
       ],
       "songs": [
         "m01",
@@ -2695,7 +2918,8 @@
       "kind": "external",
       "tool": "sug",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": "nextfire"
     },
     {
       "id": "external-milikara-demucs-manual",
@@ -2727,7 +2951,8 @@
       "kind": "external",
       "tool": "milikara",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "id": "external-timing-demucs-manual",
@@ -2799,7 +3024,8 @@
       "kind": "external",
       "tool": "timing",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "id": "external-yohane-demucs-manual",
@@ -2831,7 +3057,43 @@
       "kind": "external",
       "tool": "yohane",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
+    },
+    {
+      "id": "external-sug-mms-fa-demucs-manual",
+      "module": "M2",
+      "script": "comparison/run_sug.py",
+      "args": [
+        "--sep",
+        "demucs",
+        "--condition",
+        "manual",
+        "--model",
+        "mms-fa"
+      ],
+      "songs": [
+        "m01",
+        "m02",
+        "y01",
+        "y02",
+        "jy01",
+        "t01"
+      ],
+      "runtime": "sug",
+      "outputs": [
+        "results/comparison/sug/m01-demucs-mms-fa-manual.json.gz",
+        "results/comparison/sug/m02-demucs-mms-fa-manual.json.gz",
+        "results/comparison/sug/y01-demucs-mms-fa-manual.json.gz",
+        "results/comparison/sug/y02-demucs-mms-fa-manual.json.gz",
+        "results/comparison/sug/jy01-demucs-mms-fa-manual.json.gz",
+        "results/comparison/sug/t01-demucs-mms-fa-manual.json.gz"
+      ],
+      "kind": "external",
+      "tool": "sug",
+      "separator": "demucs",
+      "input_condition": "manual",
+      "model": "mms-fa"
     },
     {
       "id": "M2-demucs-dictionary-mms-fa",
@@ -7604,10 +7866,11 @@
       ],
       "tool": "fa-kara",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
-      "job": "external-sug-sug-manual",
+      "job": "external-sug-nextfire-sug-manual",
       "module": "M1",
       "condition": "G1-sug",
       "songs": [
@@ -7634,7 +7897,8 @@
       ],
       "tool": "sug",
       "separator": "sug",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": "nextfire"
     },
     {
       "job": "external-milikara-milikara-manual",
@@ -7664,7 +7928,8 @@
       ],
       "tool": "milikara",
       "separator": "milikara",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-timing-bs-manual",
@@ -7694,7 +7959,8 @@
       ],
       "tool": "timing",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-yohane-yohane-manual",
@@ -7724,7 +7990,39 @@
       ],
       "tool": "yohane",
       "separator": "yohane",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
+    },
+    {
+      "job": "external-sug-mms-fa-sug-manual",
+      "module": "M1",
+      "condition": "G1-sug-mms-fa",
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "tool": "sug",
+      "separator": "sug",
+      "input_condition": "manual",
+      "model": "mms-fa"
     },
     {
       "job": "external-fa-kara-bs-manual",
@@ -7754,10 +8052,11 @@
       ],
       "tool": "fa-kara",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
-      "job": "external-sug-bs-manual",
+      "job": "external-sug-nextfire-bs-manual",
       "module": "M1",
       "condition": "G2-sug",
       "songs": [
@@ -7784,7 +8083,8 @@
       ],
       "tool": "sug",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": "nextfire"
     },
     {
       "job": "external-milikara-bs-manual",
@@ -7814,7 +8114,8 @@
       ],
       "tool": "milikara",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-timing-bs-manual",
@@ -7844,7 +8145,8 @@
       ],
       "tool": "timing",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-yohane-bs-manual",
@@ -7874,7 +8176,39 @@
       ],
       "tool": "yohane",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
+    },
+    {
+      "job": "external-sug-mms-fa-bs-manual",
+      "module": "M1",
+      "condition": "G2-sug-mms-fa",
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "tool": "sug",
+      "separator": "bs",
+      "input_condition": "manual",
+      "model": "mms-fa"
     },
     {
       "job": "external-fa-kara-bs-auto",
@@ -7904,10 +8238,11 @@
       ],
       "tool": "fa-kara",
       "separator": "bs",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
     },
     {
-      "job": "external-sug-sug-auto",
+      "job": "external-sug-nextfire-sug-auto",
       "module": "M1",
       "condition": "G3-sug",
       "songs": [
@@ -7934,7 +8269,8 @@
       ],
       "tool": "sug",
       "separator": "sug",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": "nextfire"
     },
     {
       "job": "external-milikara-milikara-auto",
@@ -7964,7 +8300,8 @@
       ],
       "tool": "milikara",
       "separator": "milikara",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
     },
     {
       "job": "external-timing-bs-auto",
@@ -7994,7 +8331,8 @@
       ],
       "tool": "timing",
       "separator": "bs",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
     },
     {
       "job": "external-yohane-yohane-auto",
@@ -8024,7 +8362,39 @@
       ],
       "tool": "yohane",
       "separator": "yohane",
-      "input_condition": "auto"
+      "input_condition": "auto",
+      "model": null
+    },
+    {
+      "job": "external-sug-mms-fa-sug-auto",
+      "module": "M1",
+      "condition": "G3-sug-mms-fa",
+      "songs": [
+        "j01",
+        "j02",
+        "j03",
+        "j04",
+        "j05",
+        "j06",
+        "j07",
+        "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j12",
+        "j13",
+        "j14",
+        "j15",
+        "j16",
+        "j17",
+        "j18",
+        "j19",
+        "j20"
+      ],
+      "tool": "sug",
+      "separator": "sug",
+      "input_condition": "auto",
+      "model": "mms-fa"
     },
     {
       "job": "external-fa-kara-demucs-manual",
@@ -8040,10 +8410,11 @@
       ],
       "tool": "fa-kara",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
-      "job": "external-sug-demucs-manual",
+      "job": "external-sug-nextfire-demucs-manual",
       "module": "M2",
       "condition": "demucs-sug",
       "songs": [
@@ -8056,7 +8427,8 @@
       ],
       "tool": "sug",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": "nextfire"
     },
     {
       "job": "external-milikara-demucs-manual",
@@ -8072,7 +8444,8 @@
       ],
       "tool": "milikara",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-timing-demucs-manual",
@@ -8088,7 +8461,8 @@
       ],
       "tool": "timing",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-yohane-demucs-manual",
@@ -8104,7 +8478,25 @@
       ],
       "tool": "yohane",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
+    },
+    {
+      "job": "external-sug-mms-fa-demucs-manual",
+      "module": "M2",
+      "condition": "demucs-sug-mms-fa",
+      "songs": [
+        "m01",
+        "m02",
+        "y01",
+        "y02",
+        "jy01",
+        "t01"
+      ],
+      "tool": "sug",
+      "separator": "demucs",
+      "input_condition": "manual",
+      "model": "mms-fa"
     },
     {
       "job": "external-fa-kara-bs-manual",
@@ -8120,10 +8512,11 @@
       ],
       "tool": "fa-kara",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
-      "job": "external-sug-bs-manual",
+      "job": "external-sug-nextfire-bs-manual",
       "module": "M2",
       "condition": "bs-sug",
       "songs": [
@@ -8136,7 +8529,8 @@
       ],
       "tool": "sug",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": "nextfire"
     },
     {
       "job": "external-milikara-bs-manual",
@@ -8152,7 +8546,8 @@
       ],
       "tool": "milikara",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-timing-bs-manual",
@@ -8168,7 +8563,8 @@
       ],
       "tool": "timing",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-yohane-bs-manual",
@@ -8184,7 +8580,25 @@
       ],
       "tool": "yohane",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
+    },
+    {
+      "job": "external-sug-mms-fa-bs-manual",
+      "module": "M2",
+      "condition": "bs-sug-mms-fa",
+      "songs": [
+        "m01",
+        "m02",
+        "y01",
+        "y02",
+        "jy01",
+        "t01"
+      ],
+      "tool": "sug",
+      "separator": "bs",
+      "input_condition": "manual",
+      "model": "mms-fa"
     },
     {
       "job": "external-timing-demucs-manual",
@@ -8214,7 +8628,8 @@
       ],
       "tool": "timing",
       "separator": "demucs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     },
     {
       "job": "external-timing-bs-manual",
@@ -8244,7 +8659,8 @@
       ],
       "tool": "timing",
       "separator": "bs",
-      "input_condition": "manual"
+      "input_condition": "manual",
+      "model": null
     }
   ]
 }

@@ -17,22 +17,23 @@ def build_jobs():
         args=['--separator',sep,'--backend',backend,'--condition',condition,'--mode',mode,'--audio-format',audio_format,'--songs',*songs,'--output-dir',folder]
         if smart:args+=['--smart']
         add(module+'-'+name,module,'phase2_native.py',args,songs,outputs=[f'{folder}/{sid}.json.gz' for sid in songs],kind='native',condition=name,separator=sep,backend=backend,input_condition=condition,mode=mode,audio_format=audio_format,smart=smart)
-    def external(module,name,songs,tool,sep,condition='manual'):
+    def external(module,name,songs,tool,sep,condition='manual',sug_model='nextfire'):
         runtime={'milikara':'milikara','timing':'native5','sug':'sug','yohane':'yohane','fa-kara':'fakara'}[tool]
         script={'fa-kara':'run_fakara','milikara':'run_milikara','timing':'run_timing','sug':'run_sug','yohane':'run_yohane'}[tool]
         args=['--sep',sep,'--condition',condition]
-        model='-nextfire' if tool=='sug' else ''
+        if tool=='sug':args+=['--model',sug_model]
+        model=f'-{sug_model}' if tool=='sug' else ''
         folder='milikara/runs' if tool=='milikara' else tool
         outputs=[f'results/comparison/{folder}/{sid}-{sep}{model}-{condition}.json.gz' for sid in songs]
         # The same native export serves multiple module views; infer it once.
-        key='external-'+tool+'-'+sep+'-'+condition
+        key=f'external-{tool}{model}-{sep}-{condition}'
         existing=next((job for job in jobs if job['id']==key),None)
         if existing:
             for sid,path in zip(songs,outputs):
                 if sid not in existing['songs']:existing['songs'].append(sid);existing['outputs'].append(path)
         else:
-            add(key,module,'comparison/'+script+'.py',args,songs[:],runtime,outputs,kind='external',tool=tool,separator=sep,input_condition=condition)
-        return {'job':key,'module':module,'condition':name,'songs':songs,'tool':tool,'separator':sep,'input_condition':condition}
+            add(key,module,'comparison/'+script+'.py',args,songs[:],runtime,outputs,kind='external',tool=tool,separator=sep,input_condition=condition,model=sug_model if tool=='sug' else None)
+        return {'job':key,'module':module,'condition':name,'songs':songs,'tool':tool,'separator':sep,'input_condition':condition,'model':sug_model if tool=='sug' else None}
     views=[]
     routes=[('studio-demucs-nextfire','demucs','nextfire',False),('studio-bs-nextfire','bs','nextfire',False),('studio-demucs-mms_fa-smart','demucs','mms-fa',True)]
     for group in ('G1','G2','G3'):
@@ -40,11 +41,13 @@ def build_jobs():
             native('M1',group+'-'+route,ja,sep='bs' if group=='G2' else sep,backend=backend,smart=smart,condition='auto' if group=='G3' else 'manual')
         for tool,own in [('fa-kara','bs'),('sug','sug'),('milikara','milikara'),('timing','bs'),('yohane','yohane')]:
             views.append(external('M1',group+'-'+tool,ja,tool,'bs' if group=='G2' else own,'auto' if group=='G3' else 'manual'))
+        views.append(external('M1',group+'-sug-mms-fa',ja,'sug','bs' if group=='G2' else 'sug','auto' if group=='G3' else 'manual',sug_model='mms-fa'))
     for sep in ('demucs','bs'):
         for backend in ('nextfire','mms-fa'):
             native('M2',f'{sep}-{backend}',other,sep=sep,backend=backend,smart=backend=='mms-fa')
         for tool in ('fa-kara','sug','milikara','timing','yohane'):
             views.append(external('M2',sep+'-'+tool,other,tool,sep))
+        views.append(external('M2',sep+'-sug-mms-fa',other,'sug',sep,sug_model='mms-fa'))
         native('M2',sep+'-dictionary-mms-fa',[sid for sid in other if sid!='jy01'],sep=sep,backend='mms-fa',smart=True,condition='dictionary')
     for sep in ('demucs','bs'):
         for audio_format in ('float','aac'):

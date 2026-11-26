@@ -941,6 +941,17 @@
           }
         },
         {
+          "condition": "demucs-sug-mms-fa",
+          "song": "t01",
+          "status": "failed",
+          "path": "results/comparison/sug/t01-demucs-mms-fa-manual.json",
+          "error": {
+            "type": "KeyError",
+            "message": "' '"
+          },
+          "failed_stage": "alignment_inference"
+        },
+        {
           "condition": "bs-fa-kara",
           "song": "m01",
           "status": "failed",
@@ -1079,6 +1090,17 @@
             "type": "AssertionError",
             "message": ""
           }
+        },
+        {
+          "condition": "bs-sug-mms-fa",
+          "song": "t01",
+          "status": "failed",
+          "path": "results/comparison/sug/t01-bs-mms-fa-manual.json",
+          "error": {
+            "type": "KeyError",
+            "message": "' '"
+          },
+          "failed_stage": "alignment_inference"
         }
       ],
       "additional_data": [

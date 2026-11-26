@@ -69,7 +69,14 @@ def trigger_sets(baseline, probabilities, vocab):
 
 
 def main():
-    parser = argparse.ArgumentParser(); parser.add_argument('--songs', nargs='+', required=True); args = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--songs', nargs='+', required=True)
+    parser.add_argument('--separator', choices=['demucs', 'bs'], default='demucs')
+    args = parser.parse_args()
+    sep = args.separator
+    base_dir = 'G1-studio-demucs-nextfire' if sep == 'demucs' else 'G1-studio-bs-nextfire'
+    swap_dir = 'G1-studio-demucs-mms_fa-smart' if sep == 'demucs' else 'G2-studio-demucs-mms_fa-smart'
+    out_prefix = '' if sep == 'demucs' else f'{sep}-'
     sys.path[:0] = [str(ROOT / '.deps/comparison/studio'), str(ROOT / '.deps/comparison/lazulite/src')]
     import numpy as np
     import soundfile as sf
@@ -86,14 +93,14 @@ def main():
     backends = {}
     try:
         for sid in args.songs:
-            baseline = read(ROOT / 'results/M1/predictions/G1-studio-demucs-nextfire' / f'{sid}.json')
-            swap = read(ROOT / 'results/M1/predictions/G1-studio-demucs-mms_fa-smart' / f'{sid}.json')
+            baseline = read(ROOT / 'results/M1/predictions' / base_dir / f'{sid}.json')
+            swap = read(ROOT / 'results/M1/predictions' / swap_dir / f'{sid}.json')
             if baseline['status'] != 'ok':
                 for trigger in read(ROOT/'configs/phase2.json')['modules']['M8']['triggers']:
                     for strategy in read(ROOT/'configs/phase2.json')['modules']['M8']['strategies']:
-                        dump(ROOT/'results/M8/predictions'/f'{trigger}-{strategy}'/f'{sid}.json.gz',{'song':sid,'status':'failed','failed_stage':'baseline_dependency','error':baseline.get('error'),'native_cases':baseline.get('cases',[]),'trigger':trigger,'strategy':strategy})
+                        dump(ROOT/'results/M8/predictions'/f'{out_prefix}{trigger}-{strategy}'/f'{sid}.json.gz',{'song':sid,'separator':sep,'status':'failed','failed_stage':'baseline_dependency','error':baseline.get('error'),'native_cases':baseline.get('cases',[]),'trigger':trigger,'strategy':strategy})
                 continue
-            prefix = ROOT / '.cache/phase2/emissions' / f'{sid}-demucs-nextfire-float-core-all'
+            prefix = ROOT / '.cache/phase2/emissions' / f'{sid}-{sep}-nextfire-float-core-all'
             probabilities = np.load(prefix.with_suffix('.npy'))
             vocab = read(ROOT / '.models/nextfire/vocab.json')
             by_line, triggers, features = trigger_sets(baseline, probabilities, vocab)
@@ -110,7 +117,7 @@ def main():
                 error_ranks.append((max(errors, default=0), lid))
             k = len(triggers['combined_30ms'])
             triggers['oracle_top_k'] = {lid for _, lid in sorted(error_ranks, reverse=True)[:k]}
-            wave, rate = sf.read(ROOT / '.cache/comparison/stems/demucs' / f'{sid}.wav', dtype='float32', always_2d=True)
+            wave, rate = sf.read(ROOT / '.cache/comparison/stems' / sep / f'{sid}.wav', dtype='float32', always_2d=True)
             vocals = AudioBuffer(wave.T.copy(), rate, sid)
             segments=tuple(VocalSegment(**segment) for segment in baseline['core_segments'])
             request = JapaneseAlignmentRequest.from_dict(baseline['projection']['request'])
@@ -145,7 +152,7 @@ def main():
                         local[lid, model] = {'status':'failed','error':{'type':type(exc).__name__,'message':portable(exc)[:800]}, 'seconds':time.monotonic()-started}
             for trigger, selected in triggers.items():
                 for strategy in ('nextfire_baseline','nextfire_local','mms_fa_local','mms_fa_global_swap'):
-                    result = {'song':sid,'separator':'demucs','trigger':trigger,'strategy':strategy,'status':'ok',
+                    result = {'song':sid,'separator':sep,'trigger':trigger,'strategy':strategy,'status':'ok',
                               'object_timings':copy.deepcopy(baseline['object_timings']), 'projection':baseline['projection'],
                               'triggered_lines':sorted(selected),'line_count':len(by_line),'features':features,'local_results':{}}
                     if strategy != 'nextfire_baseline':
@@ -156,8 +163,8 @@ def main():
                             object_ids = {item['object_id'] for item in baseline['projection']['mapping'] if item['line_id']==lid}
                             result['object_timings'].update({key:value for key,value in candidate['object_timings'].items() if key in object_ids})
                             result['local_results'][lid]={'status':'ok','seconds':candidate.get('seconds',0) if strategy!='mms_fa_global_swap' else 0}
-                    dump(ROOT/'results/M8/predictions'/f'{trigger}-{strategy}'/f'{sid}.json.gz',result)
-            print('M8',sid,'complete',flush=True)
+                    dump(ROOT/'results/M8/predictions'/f'{out_prefix}{trigger}-{strategy}'/f'{sid}.json.gz',result)
+            print('M8',sep,sid,'complete',flush=True)
     finally:
         for backend in backends.values():backend.close()
 

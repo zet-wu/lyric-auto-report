@@ -192,22 +192,26 @@ def m7(config):
 
 def m8(config,refs):
     rows=[];metrics=[];states=[]
-    baselines={sid:reading_items(refs[sid],read(ROOT/'results/M1/predictions/G1-studio-demucs-nextfire'/f'{sid}.json')) for sid in config['dataset']['ja']}
-    for trigger in config['modules']['M8']['triggers']:
-        for strategy in config['modules']['M8']['strategies']:
-            all_items=[];fixed=broken=triggered=lines=0
-            for sid in config['dataset']['ja']:
-                path=ROOT/'results/M8/predictions'/f'{trigger}-{strategy}'/f'{sid}.json'
-                data=read(path) if exists(path) else {'status':'pending'}
-                states.append({'song':sid,'trigger':trigger,'strategy':strategy,'status':data['status'],'error':data.get('error'),'line_failures':{key:value for key,value in data.get('local_results',{}).items() if value.get('status')=='failed'}})
-                current=reading_items(refs[sid],data);before={row['unit']:row for row in baselines[sid]}
-                for row in current:
-                    if not row['primary_reading_unit']:continue
-                    base=before[row['unit']];was=base['valid'] and max(abs(base['ds']),abs(base['de']))<=.100000001
-                    now=row['valid'] and max(abs(row['ds']),abs(row['de']))<=.100000001
-                    fixed+=int(now and not was);broken+=int(was and not now)
-                    all_items.append(dict(row,trigger=trigger,strategy=strategy))
-                triggered+=len(data.get('triggered_lines',[]));lines+=data.get('line_count',len(refs[sid]['lines']))
-            metrics.append({'trigger':trigger,'strategy':strategy,'triggered_lines':triggered,'line_count':lines,'triggered_fraction':triggered/lines if lines else None,'fixed_count':fixed,'broken_count':broken,'net_gain':fixed-broken,**measure(all_items)})
-            rows.extend(all_items)
+    separators=[('demucs','G1-studio-demucs-nextfire','')]
+    if (ROOT/'results/M8/predictions/bs-short_unit_30ms-nextfire_baseline').exists():
+        separators.append(('bs','G1-studio-bs-nextfire','bs-'))
+    for sep,base_dir,prefix in separators:
+        baselines={sid:reading_items(refs[sid],read(ROOT/'results/M1/predictions'/base_dir/f'{sid}.json')) for sid in config['dataset']['ja']}
+        for trigger in config['modules']['M8']['triggers']:
+            for strategy in config['modules']['M8']['strategies']:
+                all_items=[];fixed=broken=triggered=lines=0
+                for sid in config['dataset']['ja']:
+                    path=ROOT/'results/M8/predictions'/f'{prefix}{trigger}-{strategy}'/f'{sid}.json'
+                    data=read(path) if exists(path) else {'status':'pending'}
+                    states.append({'separator':sep,'song':sid,'trigger':trigger,'strategy':strategy,'status':data['status'],'error':data.get('error'),'line_failures':{key:value for key,value in data.get('local_results',{}).items() if value.get('status')=='failed'}})
+                    current=reading_items(refs[sid],data);before={row['unit']:row for row in baselines[sid]}
+                    for row in current:
+                        if not row['primary_reading_unit']:continue
+                        base=before[row['unit']];was=base['valid'] and max(abs(base['ds']),abs(base['de']))<=.100000001
+                        now=row['valid'] and max(abs(row['ds']),abs(row['de']))<=.100000001
+                        fixed+=int(now and not was);broken+=int(was and not now)
+                        all_items.append(dict(row,separator=sep,trigger=trigger,strategy=strategy))
+                    triggered+=len(data.get('triggered_lines',[]));lines+=data.get('line_count',len(refs[sid]['lines']))
+                metrics.append({'separator':sep,'trigger':trigger,'strategy':strategy,'triggered_lines':triggered,'line_count':lines,'triggered_fraction':triggered/lines if lines else None,'fixed_count':fixed,'broken_count':broken,'net_gain':fixed-broken,**measure(all_items)})
+                rows.extend(all_items)
     publish('M8',{'metrics':metrics,'completion':states,'oracle_top_k':'Reference-error top K; K equals combined_30ms selected count for the same song. Excluded from deployable triggers.'},metrics,rows)

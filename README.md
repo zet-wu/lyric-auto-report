@@ -1,110 +1,115 @@
 # 歌词自动对齐管线探索
 
-本仓库记录 [Lazulite](https://github.com/wuchenyanmo/Lazulite) 与 [Lazulite Studio](https://github.com/zet-wu/Lazulite-studio) 开发过程中的歌词工作流实验，主要的比较对象是 [MiliKara](https://github.com/BilyHurington/MiliKara)、[Timing](https://github.com/Zennmn/Timing)、[StrangeUtaGame](https://github.com/karaoke-studio/StrangeUtaGame)（简称 SUG）、[yohane](https://github.com/Japan7/yohane) 和 [FA-Kara](https://github.com/moriwx/FA-Kara)，希望对有兴趣于歌曲自动打轴的读者有所帮助和启发。
+本仓库记录 [Lazulite](https://github.com/wuchenyanmo/Lazulite) 与 [Lazulite Studio](https://github.com/zet-wu/Lazulite-studio) 开发过程中的歌词工作流实验，对比当前主流开源打轴工具 [MiliKara](https://github.com/BilyHurington/MiliKara)、[Timing](https://github.com/Zennmn/Timing)、[StrangeUtaGame](https://github.com/karaoke-studio/StrangeUtaGame)（简称 SUG，分别测试其 `NextFire` 与 `MMS_FA` 两条后端）、[yohane](https://github.com/Japan7/yohane) 和 [FA-Kara](https://github.com/moriwx/FA-Kara)。
 
-测试集包含 14 段录音、15 份人工 TTML（均为笔者对着频谱图手动精调过的）；其中 12 首为参与主要比较的日语歌曲，另有 1 首日语／粤语混合歌曲及 1 首潮汕话歌曲（其中一份使用日语假名对潮汕话发音做转写标注）。源码、配置、输入和逐条件预测随仓库发布，模型及第三方运行环境由脚本下载。
+测试集包含 **26 段 AAC-LC（`.m4a`）歌曲录音与 26 份人工精调的 TTML 歌词标注**（共 1,131 行正文、10,884 个主评估读音单元），分为两组：
+- **20 首日语主组（`j01`–`j20`）**：共 875 行正文、7,064 个共同正文区间、8,909 个纯假名主评估读音单元（含英文词共 9,050 个），其中 8 首包含背景人声与主唱叠唱区间，`j14` 与 `j15` 为同一首歌《Spica》的两种编曲版本；
+- **6 首跨语种与方言组（`m01`–`m02`、`y01`–`y02`、`jy01`、`t01`）**：包含国语 2 首、粤语 2 首（含 `y01` 演唱会口白与歌唱段）、日语／粤语混合 1 首（`jy01`）和潮州话 1 首（`t01`），共 256 行正文、1,957 个共同正文区间、1,975 个读音单元。
+
+源码、配置、输入和逐条件预测随仓库发布，模型及第三方运行环境由脚本自动检出。
 
 ## 总体结论
 
-针对日语歌曲，在本测试集上，综合表现最好的就是 [Lazulite Studio](https://github.com/zet-wu/Lazulite-studio) 目前所使用的路线：先通过 Demucs 分离人声，再按人声相对能量切出活跃片段并拼接起来整体送入模型（在 Wav2Vec2 阶段，实际的实现是 20 s 分片逐片推理），模型使用 [NextFire/mms-300m-ForcedAligner-karaoke-ja-Latn](https://huggingface.co/NextFire/mms-300m-ForcedAligner-karaoke-ja-Latn)（下称 NextFire），最后将输出映射回原曲时间，即 **Demucs 人声分离 + 人声片段整体拼接 + NextFire 模型**。与其他对齐路线相比，Lazulite Studio 的多项指标均做到最佳，如下图。具体比较结果见 [八条路线对齐比较](reports/comparison.md)。
+**日语歌曲**：在 20 首日语主组的全部三组实验（G1 人工读音 + 各自分离器、G2 人工读音 + 统一 `BS Karaoke`、G3 纯文本自动分词注音 + 各自分离器）中，综合表现最稳健的是 **Lazulite Studio** 采用的 **人声分离 + 人声活跃片段整体拼接（`core`） + `NextFire` / `MMS_FA + 智能延长`** 方案。
+- 在 G1 共同正文边界（`n = 7,064`）上，`Studio (BS Karaoke + NextFire)` 的双端 100 ms 命中率达 **85.32%**（人工读音边界 `n = 8,909` 下达 **86.59%**）；轻量默认档 `Studio (Demucs + NextFire)` 在人声分离耗时仅约为 `BS Karaoke` 十六分之一的前提下达到 **83.59%**（人工读音边界 **84.51%**），与依赖 `BS Karaoke` 输入的 `FA-Kara`（**83.83%**）相当，并高于 `Studio (Demucs + MMS_FA + 智能延长)`（**81.84%**）、`SUG (NextFire)`（**81.74%**）、`yohane`（**71.50%**）、`MiliKara`（**71.22%**）、`SUG (MMS_FA)`（**70.10%**）和 `Timing`（**69.39%**，3 首失败）。
+- 同为 `MMS_FA` 模型，`Studio (MMS_FA + 智能延长)` 在 G1（**81.84%**）与 G2（**84.82%**）上均大幅领先 `SUG (MMS_FA)`（**70.10%** / **70.78%**），说明先做 `core` 活跃片段拼接、再结合细粒度人声静音搜索做智能尾点延长，比整曲直传加简单尾部修正有效得多。
 
-人工读音 + 各自分离器：共同正文边界的误差指标：
+人工读音 + 各自分离器（G1）：共同正文边界（`n = 7,064`）的误差指标：
 ![人工读音 + 各自分离器：共同正文边界的误差指标](results/figures/g1-comparison.png)
 
-由于某些路线在对齐时会将某些读音单元合并（如长音、促音等），因此输出的总单元数量，即准确率的分母会不一致。共同正文边界即指将所有路线的结果的单元边界取交集，仅计算这些共同边界的准确率。
-图中 `*` 标记各指标最佳值：命中率越高越好，平均绝对误差与绝对误差 P95 越低越好，以下两图相同，不再赘述。
+图中 `*` 标记各指标最佳值：双端命中率越高越好，平均绝对误差（MAE）与绝对误差 P95 越低越好，以下两图相同。
 
-人工读音 + 统一 BS Karaoke 分离器：共同正文边界的误差指标，此组衡量剔除人声分离器的差异后的各路线对齐效果：
+人工读音 + 统一 BS Karaoke 分离器（G2）：共同正文边界（`n = 7,064`）的误差指标：
 ![人工读音 + 统一 BS Karaoke 分离器：共同正文边界的误差指标](results/figures/g2-comparison.png)
 
-自动分词注音 + 各自分离器：人工读音边界的误差指标。此组衡量在完全自动化情形下，从无注音、无分词的歌词正文开始进行分词、注音、对齐的最终效果；这里展示人工读音边界（以参考标注的 5,370 个读音单元为固定分母，合并或漏掉的内部边界直接记为未命中），以同时衡量自动分词注音过程中的粒度损失与错误：
+在 G3（纯文本自动分词注音）组中，由于部分开源工具（如 `Timing`）的自动分词器会把多个汉字词拼成超长片段，全组可对齐的共同正文区间从 G1/G2 的 7,064 个缩水到 5,513 个；而真正支持细粒度假名级自动注音打轴的 6 条完整路线（Studio 三条路线、SUG 两条路线与 MiliKara）在各自词边界内的假名切分要精细得多。因此，**G3 的对比图改回采用全部 8,909 个人工读音单元边界（[九条路线对齐比较](reports/comparison.md) 中同时提供共同正文与人工读音两套完整表格）**。在 `n = 8,909` 的人工读音边界上，`Studio (BS Karaoke + NextFire)` 达到 **83.70%**（7,457/8,909，双端 200 ms 达 **92.40%**），`Studio (Demucs + NextFire)` 达 **81.93%**，`Studio (Demucs + MMS_FA + 智能延长)` 达 **80.14%**，均领先于 `SUG (NextFire)`（**79.34%**）、`MiliKara`（**71.58%**）和 `SUG (MMS_FA)`（**68.23%**）。
+
+自动分词注音 + 各自分离器（G3）：人工读音边界（`n = 8,909`，展示内置完整自动注音的 6 条路线）的误差指标：
 ![自动分词注音 + 各自分离器：人工读音边界的误差指标](results/figures/g3-comparison.png)
 
-以下从几个方面说明：
+**跨语种与方言歌曲**：在 6 首国语、粤语、日粤混合与潮州话歌曲（共同正文边界 `n = 1,957`，细粒度读音边界 `n = 1,975`）上，**`Lazulite Studio (MMS_FA + 智能延长)` 是唯一跑通全部 6 首并保持 82% 以上命中率的路线**（`Demucs` **82.83%** / `BS Karaoke` **82.42%**）。
+- 基于日语数据微调的 `NextFire` 在非日语歌曲上大幅回落（`Studio NextFire` 为 **46.40%–49.72%**，`SUG NextFire` 为 **39.24%–42.00%**，`MiliKara` 仅 **28.00%–29.43%**）。按音节类型拆开看，潮州话 `t01` 的 300 个音节全都生成了有效拉丁字母输入，掉点并非分词断链，而是因为 `NextFire` 习惯了日语“辅音 + 元音”的发音规律，遇到汉语族常见的鼻音尾（`-n/-ng/-m`，命中率仅 **44.81%** vs `MMS_FA` **86.32%**）、日语里没有的声母韵母（**42.90%** vs **82.10%**）和入声短促收尾（`-p/-t/-k/-h`，**38.24%** vs **73.53%–75.00%**）时难以准确判断音节收尾位置。
+- `SUG (MMS_FA)` 在国语、粤语、日粤混合 5 首歌上能正常跑通（单曲命中率 **62.7%–78.7%**），但在潮州话 `t01` 上因输入含空格触发 `torchaudio` 分词器 `KeyError: ' '` 失败，6 首总计命中率为 **60.65%**（Demucs）/ **59.17%**（BS Karaoke），明显高于 `SUG (NextFire)`，但仍比 `Studio (MMS_FA + 智能延长)` 低 22 个百分点以上。
+- 直接用 Studio 内置的国语、粤语、潮州话词典自动注音（5 首单语种汉字歌带调准确率 **94.04%**、不带调 **94.38%**），下游 `MMS_FA + 智能延长` 的双端 100 ms 命中率（Demucs **84.22%** / BS **83.64%**）与人工注音（**84.05%** / **83.64%**）基本持平。详见 [多语言与方言对齐及多语种词典评估](reports/multilingual.md)。
 
-### 人声分离模型
+## 人声分离模型与音频持久化
 
-Demucs 提供了有实际收益的速度与质量平衡。尽管 BS Karaoke 的双端 100 ms 命中率为 85.83%，比 Demucs 的 83.89% 高 1.94 个百分点，但代价是耗时的大幅增加。在本项目测试的十种人声分离配置中，综合参数量、CPU 与 GPU 性能及下游任务表现，Demucs 是较优选择。
+我们在同一套 5 首代表曲目（单轮音频总长 1,411.23 秒）上实测了 10 种主流人声分离模型的 GPU / CPU 耗时与显存能耗，并在 20 首日语歌（`n = 8,909`）上固定下游 `NextFire core` 测试它们的打轴准确率：
+- **为什么先切掉间奏静音（`core`）再打轴**：在对比整曲直传（`global`）与人声活跃片段拼接（`core`）的 4 种代表性分离器上，先剔除前奏、间奏、尾奏长静音段可将双端 100 ms 命中率提升 **2.63 至 10.16 个百分点**（`Demucs` 从 **74.35%** 升至 **84.51%**，`BS Karaoke` 从 **76.88%** 升至 **86.59%**）。
+- **为什么提供 `Demucs` 与 `BS Karaoke` 双档配置**：开启 `core` 片段拼接后，主流分离器的下游命中率大多集中在 84.5%–86.6% 之间。`Demucs htdemucs` 跑完 5 首代表曲目 GPU 耗时仅 **13.53 s**（单曲平均 **2.71 s**，实时率 RTF **0.0096**，GPU 整卡能耗 **2.75 kJ**），下游纯假名命中率已达 **84.51%**，与慢 2.6–5.2 倍的 `MDX-Net`（**84.68%**）和 `MelBand RoFormer`（**84.78%–84.97%**）差距不到 0.5 个百分点，适合作为快速默认档；而 `BS Karaoke` 能同时剥离伴奏与背景和声，把全集纯假名命中率推高到 **86.59%**（在 8 首叠唱歌曲的 236 个叠唱区间上更把命中率从 78%–79% 提升到 **83.47%–85.17%**），代价是 GPU 耗时为 `Demucs` 的 **15.67 倍**（5 首耗时 **212.04 s**）、CPU 耗时为 **23.06 倍**，适合作为高质量与主唱伴唱重叠曲目的进阶档位。
+- **为什么人声缓存可以存成 192 kbps AAC-LC（`.m4a`）**：在全部 26 首歌（`n = 10,884`）上，将分离出的人声轨压缩保存为 192 kbps AAC-LC M4A（单曲体积从 40–100 MiB 降至 4–10 MiB）与无损浮点 WAV 直传相比，下游打轴命中率几乎没有损失（20 首日语歌上 `BS Karaoke` 仅差 **-0.12% 至 -0.24%**，`Demucs` 差 **-0.62% 至 -1.01%**；6 首非日语歌上 `BS Karaoke` 甚至微增 **+0.10% 至 +1.82%**）。`BS Karaoke` 在 26 首歌中有 24 首切出的活跃片段数分毫不差，片段边界偏移中位数不到 **0.81 ms**。详见 [十种人声分离模型的配置与性能实测](reports/separation-performance.md) 和 [十种人声分离配置及 AAC-LC 持久化对下游歌词对齐的影响](reports/separation-alignment.md)。
 
-| 配置 | GPU 相对耗时 | CPU 相对耗时 | 参数量 | 下游对齐任务双端 100 ms 命中率 |
-| --- | ---: | ---: | ---: | ---: |
-| Demucs htdemucs | 1.00 | 1.00 | 41.984 M | 83.89% |
-| SCNet Small | 2.45 | 3.25 | 10.579 M | 81.30% |
-| DTTNet | 1.57 | 7.08 | 4.958 M | 84.26% |
-| BS-RoFormer viperx | 4.69 | 31.17 | 159.758 M | 84.90% |
-| MelBand RoFormer Kim | 2.46 | 11.72 | 228.203 M | 84.75% |
-| Windowed RoFormer | 1.22 | 4.39 | 228.387 M | 84.90% |
-| BS Karaoke | 7.28 | 22.37 | 51.049 M | 85.83% |
-| MDX-Net Inst HQ 3 | 4.60 | 1.39 | 16.684 M | 82.57% |
-| MelBand RoFormer ep_3005 | 4.19 | 8.17 | 251.870 M | 84.47% |
-| HybridDemucs MUSDB Plus | 0.50 | 0.33 | 83.639 M | 81.32% |
+| 分离模型 | 5 首代表曲目 GPU 耗时 (s) | GPU 相对耗时 | CPU 30s 相对耗时 | 参数量 | 5 首 GPU 整卡能耗 (kJ) | 20 首日语 `core` 纯假名 100 ms (`n=8,909`) | 20 首日语 `core` 共同正文 100 ms (`n=7,170`) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| **Demucs htdemucs** (`demucs`) | 13.53 | 1.00x | 1.00x | 41.984 M | 2.75 | 84.51% | 83.42% |
+| **HybridDemucs MUSDB Plus** (`yohane`) | **6.97** | **0.51x** | **0.34x** | 83.639 M | **1.32** | 81.47% | 80.14% |
+| **Windowed RoFormer** (`windowed`) | 18.02 | 1.33x | 4.77x | 228.387 M | 6.07 | 85.04% | 83.81% |
+| **DTTNet** (`dttnet`) | 25.36 | 1.87x | 7.94x | **4.958 M** | 8.14 | 83.42% | 82.16% |
+| **SCNet Small** (`scnet`) | 28.94 | 2.14x | 3.66x | 10.579 M | 6.03 | 81.75% | 80.13% |
+| **MelBand RoFormer Kim** (`mel_roformer`) | 34.79 | 2.57x | 11.77x | 228.203 M | 12.35 | 84.97% | 84.02% |
+| **MelBand RoFormer ep_3005** (`milikara`) | 63.34 | 4.68x | 8.83x | 251.870 M | 25.63 | 84.78% | 83.70% |
+| **MDX-Net Inst HQ 3** (`sug`) | 70.51 | 5.21x | 1.67x | 16.684 M | 7.59 | 84.68% | 83.58% |
+| **BS-RoFormer viperx** (`bs_roformer`) | 74.84 | 5.53x | 30.55x | 159.758 M | 28.97 | 85.55% | 84.32% |
+| **BS Karaoke** (`bs`) | 212.04 | 15.67x | 23.06x | 51.049 M | 89.52 | **86.59%** | **85.23%** |
 
-完整方法和数据见 [模型分离性能](reports/separation-performance.md) 和 [模型下游对齐](reports/separation-alignment.md)。
+## 对齐策略、MiliKara 消融与跨模型异常行重算
 
-### 对齐模型
+围绕打轴后半程的窗口切分、解码规则、音节时长规律与二次修正，实验得出四项直接指导产品设计的结论：
 
-- `NextFire`：这个模型对于日语歌的效果极好，对于独唱、歌唱清晰的歌曲，完全自动化可以交付相当准确的轴（平均误差 50–70 ms，绝对误差上 95 分位数小于 200 ms），主要的出错点出现在连续两个相同读音的时候，两个词的分隔点会找得不太好。其他的错误集中在日语歌中经常出现的长音缩成一个音拍、促音被省略等情况，但这严格来讲属于歌词和音频本身不匹配的问题。
+1. **整曲 `core` 拼接 vs 按行切窗口与智能尾点延长（M6）**：
+   - 对 `NextFire` 来说，不需要预先知道每行起止时间的整曲 `core` 片段拼接（共同正文 Demucs **83.53%** / BS **85.25%**）反而比事先给定完美人工行起止时间按行切分（**79.14%** / **82.76%**）高出 **2.49–4.39 个百分点**，因为逐行硬切音频会截断行首与行尾的声学上下文。
+   - `TIFA` 即便在给定完美人工行时间窗时（**78.62%** / **79.28%**）仍低于无需行时间的 `NextFire core`，一旦换成 Timing 实际的两阶段自动粗定位切行，会因第一阶段粗定位在 3–5 首歌上报错中断而跌至 **57.46%–68.57%**。
+   - 原始 `MMS_FA` 的起点定位很准（起点 MAE 仅 51.01–83.50 ms），但尾音经常提前收束（原始双端 100 ms 仅 **23.10%–23.17%**）；加上 Studio 的智能尾点延长后，纯假名双端 100 ms 命中率直接跃升至 **82.19%**（Demucs）与 **84.64%**（BS Karaoke）。详见 [对齐模型后端、行时间窗口策略与智能尾点延长](reports/alignment-backends.md)。
+2. **不同音节时长与语速的表现（M4）**：
+   - 在全部 26 首歌的 10,884 个读音单元上，时长在 `120–250 ms` 的常规紧凑音节命中率最高（`BS + MMS_FA + 智能延长` 双端 100 ms 达 **92.00%**，双端 200 ms 达 **97.81%**）；而 `>1,000 ms` 的超长拖音（561 个）命中率回落至 **47.24%–62.21%**，且误差主要来自渐弱尾音提前结束（起点 MAE 仅 86.80 ms，终点 MAE 达 189.31 ms）。因此整首歌语速越快、音节越紧凑，全曲双端 100 ms 命中率反而越高。详见 [语速、音节时长与对齐误差相关性分析](reports/tempo-correlation.md)。
+3. **MiliKara 解码附加规则与原曲／人声重试的跨模型验证（M7）**：
+   - 在 20 首日语歌（`n = 8,909`）上，无论使用 `Demucs` 还是 `BS Karaoke`、无论后端是 `NextFire` 还是 `MMS_FA`（原始或带智能延长），MiliKara 引入的三项静音与能量软代价（`line_gap`、`rest_gap`、`rest_token`）全组合对命中率的影响都极小（`NextFire` 下最大仅 **+0.12% 至 +0.24%**；`MMS_FA + 智能延长` 下反而微降 **-0.13% 至 -0.17%**）。
+   - 将词间分隔符 `|` 并入空白帧（`+delimiter`）会让相邻同音字提前滑移，在 `NextFire` 下重挫 **-6.97%**（Demucs）与 **-6.51%**（BS Karaoke）；而用同一模型在原曲与人声轨之间挑高分行覆写（`+retry`）在全部 6 条测试主线上一致倒退 **-0.55% 至 -3.86%**（在最强的 `BS Karaoke + NextFire` 上倒退 344 个单元）。因此 Studio 只保留干净的 `core` 片段拼接，不引入这些启发式附加项。详见 [MiliKara 软代价解码与原曲／人声重试消融分析](reports/milikara.md)。
+4. **跨模型异常行重算与替换：将双端 100 ms 命中率推至 88.06%（M8）**：
+   - 首轮 `NextFire` 打轴后，如果用**同一个 `NextFire` 模型**对筛出的异常行做局部重算，在所有筛选条件下都会净亏损（`Demucs` 下亏损 37–100 个单元，`BS Karaoke` 下亏损 60–117 个单元）。
+   - 反过来，利用 `NextFire` 局部失准时常把某些音节挤成 `<30 ms` / `<40 ms` 极短时长、或让同行同元音字长短严重失衡的特征筛出异常行，**换用 `MMS_FA + 智能延长` 重算或替换**，就能在两种分离器下都获得显著提升：在 `Demucs` 组中从 **84.51%** 提升至 **85.91%**（净增 **+125 单元 / +1.40%**）；在 `BS Karaoke` 组中更从 **86.59%** 一举推高至 **88.06%**（7,845/8,909，净增 **+131 单元 / +1.47%**，双端 200 ms 达 **95.62%**，综合 P95 仅 **117.74 ms**）；仅对 **9.03%**（79/875 行）的同元音失衡行做 `MMS_FA + 智能延长` 局部重算，也能在 `BS Karaoke` 下达到 **87.46%**（净增 +78 单元）。详见 [基于极短音节与同元音失衡筛选的跨模型异常行重算与替换](reports/local-refinement.md)。
 
-- `MMS_FA`：即 `torchaudio` 自带的 `MMS_FA`，这个模型的优势是跨语言通用。NextFire 毕竟是用日语做的后训练，实测发现，对于日语中不存在的元音、闭音节（如汉语方言中的入声、英语中的辅音尾）表现很差。`MMS_FA` 的问题是结束时间普遍偏早，不止出现在刻意延长的尾音上，即使在行内正常时长或者略长一点的词也会给一个很早的结束时间，留下大量空隙，这可能还是歌唱和平时说话的区别导致的。不过，它给出的起始时间还是挺准的，所以在行内，可以用把空隙并入前一个词的方式来优化结果（相当于拿后一个词的起始来校正前词的结束）。
+## 自动注音
 
- > 这两个 `mms` 系模型的特点是只能接受英文字母输入，意味着要做拉丁化。多音字的存在决定了仅靠文本无法完全脱离人工（即使调用在线 LLM 来注音，在不听实际音频的情况下还是会存在错误），完全自动化的实现在当前阶段完全依赖本地声学模型是很难的。
-
-- `TIFA`：`TIFA` 的问题在于它的路线不同，出于模型上下文的限制，动辄 3–4 分钟的歌曲音频无法一次性送入模型。`mms` 系模型可以只在 Wav2Vec2 阶段分片，然后拿整曲声学概率和整曲歌词做对齐；而 `TIFA` 需要把歌词也一起分片，那么问题就陷入如何在对齐之前就得到较可靠的行级时间。排除人工对齐的话，还是需要用 `mms` 模型来做粗对齐，这不仅要做两次完整推理，而且实际效果并不佳。事实上，使用这一路线的 [Timing](https://github.com/Zennmn/Timing) 只有在预先提供准确的行级时间的情况下，对齐效果才能达到或超过 Lazulite Studio 当前路线的水平，而且其超过 Lazulite 的部分也是因为人声分离模型（Timing 使用 BS Karaoke）的差异带来的。
-
-三个模型后端的结果见 [对齐后端与窗口](reports/alignment-backends.md)。
-
-### 对齐策略
-
-一个反直觉的结果是，使用 `NextFire` 模型时，将歌曲和歌词按行分片、每行分别对齐并不能带来收益。在测试集上，逐行对齐的准确率甚至稍低于人声片段整体拼接；而且逐行对齐依赖人工提供的行级时间，如果使用整曲结果自动粗分行级时间，最终准确率会更低。见 [对齐后端与窗口](reports/alignment-backends.md)。
-
-**复杂的对齐算法并不能带来显著收益**。以当前路线作为基线，对 [MiliKara](https://github.com/BilyHurington/MiliKara) 所使用的算法模块进行消融实验，结果显示这些看似漂亮的 trick 并没有多少实际提升。见 [MiliKara 消融](reports/milikara.md) 和 [异常行局部重算](reports/local-refinement.md)。
-
-`MMS_FA` 模型的过早结束可以通过适当的后处理大幅改进。事实上，[FA-Kara](https://github.com/moriwx/FA-Kara) 以及借鉴了其算法的 Lazulite Studio，使用静音搜索和下一单元起始共同限定的方式，就将 `MMS_FA` 模型的对齐结果改进到了接近 `NextFire` 的水平。
-
-### 自动注音
-
-Lazulite Studio 的“智能日文注音”使用 Sudachi + JmdictFurigana，以行作为单位处理以充分利用上下文。在跨平台方案中，基于 Sudachi 这一技术路线的 Lazulite Studio 和 SUG 的注音准确率以及整行完全匹配率做到了不依赖 Windows 和 LLM 的最佳，超过了 MiliKara 和 Timing 使用的 MeCab／UniDic 或 pykakasi 路线；在 Windows 平台上，SUG 调用系统原生 WinRT 接口可进一步提升至 96.49%。而在仅靠文本的情况下，LLM 也无法做到完全正确，最好的结果仅做到注音准确率 97.63% 和整行完全匹配率 95.10%。见 [自动注音](reports/auto-reading.md)。
+在 20 首日语主组的 **1,623 个含汉字共同正文片段** 与 **835 行纯日语参考行** 上，跨平台本地注音方案中 **Lazulite Studio**（`Sudachi C 模式 + JmdictFurigana`）与 **SUG（Sudachi 模式）** 并列第一梯队（含汉字片段准确率 **92.98%** vs **92.91%**，字符错误率 CER **3.68%** vs **3.72%**，整行完全匹配率 **86.71%** vs **86.59%**），明显优于 `MiliKara`（片段 **91.13%** / 整行 **75.81%**）、`OpenJTalk`（**80.78%** / **57.49%**）和 `Timing`（**77.70%** / **43.83%**）。Windows 专属的 `sug-winrt` 为 **93.90%** / **88.86%**，而结合整首歌词上下文用大语言模型复核的 `studio-llm-corrected` 达到 **95.19%** / **90.42%**（剩余 ~4.8% 为纯文本无法唯一确定的特殊唱法当て字与多音词）。结合 G3 与 M2 的打轴结果来看，直接采用 Studio 本地词典自动注音即可满足全自动打轴需求。详见 [日语歌词自动注音与词典覆盖准确率比较](reports/auto-reading.md)。
 
 ## 报告目录
 
-| 报告 | 内容说明 |
-| --- | --- |
-| [八条路线对齐比较](reports/comparison.md) | 对比 8 条主流工具路线在人工读音（各自分离器／统一 BS Karaoke）与自动分词注音三组条件下的对齐准确率及叠唱表现 |
-| [测试集](datasets/README.md)与[评价方法](reports/methods.md) | 14 段录音与 15 份标注说明；共同正文边界与人工读音边界的构造方法及评价指标定义 |
-| [模型分离性能](reports/separation-performance.md) | 10 种人声分离模型的候选配置、参数量，以及 GPU 整曲与 CPU 片段的耗时、内存、显存和能耗实测 |
-| [模型下游对齐](reports/separation-alignment.md) | 10 种人声分离模型在完整人声、片段拼接、带缓冲拼接以及浮点／24 位 FLAC 保存路径下的下游对齐表现 |
-| [对齐后端与窗口](reports/alignment-backends.md) | NextFire、TIFA、MMS_FA 三种对齐后端在整曲拼接与逐行窗口下的对比，以及 MMS_FA 行内空隙填补实验 |
-| [Timing 完整链路](reports/timing.md) | Timing 两阶段管线（MMS 粗定位 + TIFA 细对齐）在正文输入、人工行窗口及二次细化下的专项诊断 |
-| [MiliKara 消融](reports/milikara.md) | 对 MiliKara 的 CTC 解码改动（分隔符处理、停顿与静音软代价、自由尾部）及原曲混音重试机制的消融分析 |
-| [自动注音](reports/auto-reading.md) | 对比 Lazulite Studio、SUG（Sudachi／WinRT）、MiliKara、Timing、OpenJTalk 与 GPT-6.1 Terra 的日语自动注音准确率 |
-| [异常行局部重算](reports/local-refinement.md) | 检验对首轮对齐中的异常行做局部概率裁剪重解码或局部声学重算能否带来实际收益 |
-| [复现说明](reports/reproduce.md) | 独立评分校验与完整实验环境配置、分阶段重跑指南 |
+- [测试集说明](datasets/README.md) 与 [评价方法](reports/methods.md)
+- [九条路线对齐比较](reports/comparison.md)（M1：G1 / G2 / G3 共同正文与人工读音双边界对比、叠唱区间表现）
+- [多语言与方言对齐及多语种词典评估](reports/multilingual.md)（M2：6 首国语、粤语、日粤混合与潮州话歌曲对比及音节类型拆解）
+- [十种人声分离模型的配置与性能实测](reports/separation-performance.md)（M5 资源：GPU / CPU 耗时、实时率、内存显存与整卡能耗）
+- [十种人声分离配置及 AAC-LC 持久化对下游歌词对齐的影响](reports/separation-alignment.md)（M5 对齐 + M3：`core` vs `global` 与 192 kbps AAC-LC M4A 持久化验证）
+- [语速、音节时长与对齐误差相关性分析](reports/tempo-correlation.md)（M4：5 档音节时长表现、语速相关性与《Spica》双编曲对照）
+- [对齐模型后端、行时间窗口策略与智能尾点延长](reports/alignment-backends.md)（M6：`NextFire`、`TIFA`、`MMS_FA` 与行窗口对照实验）
+- [MiliKara 软代价解码与原曲／人声重试消融分析](reports/milikara.md)（M7：跨分离器与对齐模型的解码规则及原曲／人声重试消融）
+- [基于极短音节与同元音失衡筛选的跨模型异常行重算与替换](reports/local-refinement.md)（M8：`Demucs` 85.91% 与 `BS Karaoke` 88.06% 跨模型二次修正）
+- [日语歌词自动注音与词典覆盖准确率比较](reports/auto-reading.md)（M9：7 种日语注音方案准确率与字符错误率对比）
+- [实验复现说明](reports/reproduce.md)
 
 ## 快速复核
 
-只重算已发布预测的评分并验证仓库完整性，无需 GPU 或模型权重：
+仅从仓库已保存的预测文件重新计算 M1–M9 全部汇总指标、生成 [`results/EXPERIMENT_INDEX.json`](results/EXPERIMENT_INDEX.json) 并校验仓库完整性，无需 GPU 或模型权重：
 
 ```sh
-python3.13 -m venv .venvs/scoring
-.venvs/scoring/bin/pip install -r requirements/scoring.txt
-.venvs/scoring/bin/python scripts/score.py
-python3.13 scripts/verify.py
+.venvs/research/bin/python scripts/score.py
+python3 scripts/verify.py
 ```
 
-完整推理需要 Linux、Python 3.13、NVIDIA GPU，以及 Git、FFmpeg、Node.js 和 npm，环境安装与分阶段运行步骤见 [复现说明](reports/reproduce.md)。
+完整的 GPU 推理环境搭建、模型下载与分阶段复现流程见 [实验复现说明](reports/reproduce.md)。
 
 ## 仓库结构
 
 ```text
-datasets/       原始音频、TTML 标注与文件校验清单
-reports/        各专题实验报告
-results/        测试集预测、评分汇总与结果图表
-configs/        上游源码版本、模型清单与实验配置
-scripts/        环境安装、数据准备、模型推理、评分与静态校验脚本
+datasets/       26 首 AAC-LC (.m4a) 测试音频、26 份人工 TTML 标注与文件校验清单 (files.json)
+reports/        评价方法、复现指南与 M1–M9 各专题实验报告
+results/        M1–M9 汇总指标 (summary.json / *.csv)、EXPERIMENT_INDEX.json、各模块压缩预测与结果图表 (figures/)
+configs/        上游源码版本 (sources.json / comparison-sources.json)、模型清单与实验配置 (phase2.json)
+scripts/        环境安装、数据准备、模型推理、M1–M9 统一评分、图表绘制与静态校验脚本
 requirements/   研究环境、各工具适配环境与轻量评分依赖锁定清单
 licenses/       代码改编对应的第三方许可
 ```
 
-Git 跟踪测试音频、标注、实验脚本和压缩预测；`.deps`、`.models`、`.cache`、`.venvs` 均被忽略。所有运行路径从仓库根目录派生，公开上游提交固定在 [sources.json](configs/sources.json) 与 [comparison-sources.json](configs/comparison-sources.json)。
+Git 跟踪测试音频、标注、实验脚本、汇总表和压缩预测；`.deps`、`.models`、`.cache`、`.venvs` 均被忽略。所有运行路径从仓库根目录派生，公开上游提交固定在 [`configs/sources.json`](configs/sources.json)、[`configs/comparison-sources.json`](configs/comparison-sources.json) 与 [`results/EXPERIMENT_INDEX.json`](results/EXPERIMENT_INDEX.json)。
 
 代码采用 [AGPL-3.0](LICENSE)。第三方代码、权重、录音和歌词的归属见 [来源与许可](THIRD_PARTY.md)。

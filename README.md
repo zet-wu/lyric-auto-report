@@ -68,6 +68,9 @@
 4. **跨模型异常行重算与替换：将双端 100 ms 命中率推至 88.32%（M8）**：
    - 首轮 `NextFire` 打轴后，如果用**同一个 `NextFire` 模型**对筛出的异常行做局部重算，在所有筛选条件下都会净亏损（`Demucs` 下亏损 32–103 个单元，`BS Karaoke` 下亏损 22–112 个单元）。
    - 反过来，利用 `NextFire` 局部失准时常把某些音节挤成 `<30 ms` / `<40 ms` 极短时长、或让同行同元音字长短严重失衡的特征筛出异常行，**换用 `MMS_FA + 智能延长` 重算或替换**，就能在两种分离器下都获得显著提升：在 `Demucs` 组中从 **84.78%** 提升至 **86.18%**（净增 **+124 单元 / +1.39%**）；在 `BS Karaoke` 组中更从 **86.80%** 一举推高至 **88.32%**（7,871/8,912，净增 **+135 单元 / +1.51%**，双端 200 ms 达 **96.31%**，综合 P95 仅 **112.82 ms**）；仅对 **9.26%**（81/875 行）的同元音失衡行做 `MMS_FA + 智能延长` 局部重算，也能在 `BS Karaoke` 下达到 **87.71%**（净增 +81 单元）。详见 [基于极短音节与同元音失衡筛选的跨模型异常行重算与替换](reports/local-refinement.md)。
+5. **无音频输入的 LLM 经 MCP 全自动视觉精调：将常规与抒情曲目推上 96%–99% 双端 100 ms 精度（M10）**：
+   - 在选取的 3 首代表性日语歌曲（`j18`《真紅の刃》、《光陰の海原》`j08`、《Spica》`j14`，合计 **1,130 个日语主评估单元**，含英文全量 **1,141 单元**）上，让无音频输入能力的 `GPT-6.1 sol`（`xhigh`）从纯文本歌词出发，完全经由 Lazulite Studio MCP 完成分词注音、联网核对特殊唱法、`BS Karaoke` 主唱分离、`NextFire` 与 `MMS_FA + 智能延长` 候选比较、逐行频谱图与人声 RMS 能量曲线审阅及边界微调，可将三曲合计双端 100 ms 命中率从同次初轴的 **85.93%**（971/1,130；`M1 G3` 纯文本基线为 **80.62%**，`M8` 人工读音跨模型行替换为 **85.93%–86.19%**）大幅推高至 **94.16%**（1,064/1,130，净增 **+93 单元 / +8.23 个百分点**，双端 200 ms 达 **98.32%**，综合 P95 从 140.00 ms 压至 **79.00 ms**）。
+   - 其中 `j18` 全量 413 单元从 **93.46%** 升至 **99.27%**（410/413，双端 200 ms **100%**，起/终点 MAE **19.27 / 19.03 ms**；日语 402 单元达 **99.50%**，英语 11 单元从 54.55% 升至 **90.91%**），`j08` 从 **85.41%** 升至 **96.29%**（363/377，+10.88 pp，起/终点 MAE **14.38 / 14.66 ms**）；极端慢板 `j14` 从 **76.64%** 升至 **85.75%**（301/351，+9.12 pp，9 个促音 **100%** 命中），同时也暴露出无听觉 Agent 面对原唱极度压缩尾音（「わるひ」「ける」）时容易按视觉常理误改正确初轴的边界。详见 [无音频输入的 LLM 经 MCP 全自动视觉精调实测](reports/agent-mcp-refinement.md)。
 
 ## 自动注音
 
@@ -85,11 +88,12 @@
 - [MiliKara 软代价解码与原曲／人声重试消融分析](reports/milikara.md)（M7：跨分离器与对齐模型的解码规则及原曲／人声重试消融）
 - [基于极短音节与同元音失衡筛选的跨模型异常行重算与替换](reports/local-refinement.md)（M8：`Demucs` 86.18% 与 `BS Karaoke` 88.32% 跨模型二次修正）
 - [日语歌词自动注音与词典覆盖准确率比较](reports/auto-reading.md)（M9：7 种日语注音方案准确率与字符错误率对比）
+- [无音频输入的 LLM 经 MCP 全自动视觉精调实测](reports/agent-mcp-refinement.md)（M10：3 首代表曲目从纯文本出发经频谱与能量图精调至 85.75%–99.27%）
 - [实验复现说明](reports/reproduce.md)
 
 ## 快速复核
 
-仅从仓库已保存的预测文件重新计算 M1–M9 全部汇总指标、生成 [`results/EXPERIMENT_INDEX.json`](results/EXPERIMENT_INDEX.json) 并校验仓库完整性，无需 GPU 或模型权重：
+仅从仓库已保存的预测文件重新计算 M1–M10 全部汇总指标、生成 [`results/EXPERIMENT_INDEX.json`](results/EXPERIMENT_INDEX.json) 并校验仓库完整性，无需 GPU 或模型权重：
 
 ```sh
 .venvs/research/bin/python scripts/score.py
@@ -102,10 +106,10 @@ python3 scripts/verify.py
 
 ```text
 datasets/       26 首 AAC-LC (.m4a) 测试音频、26 份人工 TTML 标注与文件校验清单 (files.json)
-reports/        评价方法、复现指南与 M1–M9 各专题实验报告
-results/        M1–M9 汇总指标 (summary.json / *.csv)、EXPERIMENT_INDEX.json、各模块压缩预测与结果图表 (figures/)
-configs/        上游源码版本 (sources.json / comparison-sources.json)、模型清单与实验配置 (phase2.json)
-scripts/        环境安装、数据准备、模型推理、M1–M9 统一评分、图表绘制与静态校验脚本
+reports/        评价方法、复现指南与 M1–M10 各专题实验报告
+results/        M1–M10 汇总指标 (summary.json / *.csv)、EXPERIMENT_INDEX.json、各模块压缩预测与结果图表 (figures/)
+configs/        上游源码版本 (sources.json / comparison-sources.json)、模型清单、实验配置 (phase2.json) 与 Agent 精调提示词模板 (agent-mcp-prompt.md)
+scripts/        环境安装、数据准备、模型推理、M1–M10 统一评分、图表绘制与静态校验脚本
 requirements/   研究环境、各工具适配环境与轻量评分依赖锁定清单
 licenses/       代码改编对应的第三方许可
 ```

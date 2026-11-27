@@ -37,6 +37,11 @@ def dump(path, data):
     if path.name.endswith('.json.gz'):
         with gzip.open(temporary, 'wt', encoding='utf-8', newline='\n') as stream:
             stream.write(text)
+        if path.exists():
+            with gzip.open(path, 'rt', encoding='utf-8') as stream:
+                if stream.read() == text:
+                    temporary.unlink(missing_ok=True)
+                    return
     else:
         temporary.write_text(text, encoding='utf-8', newline='\n')
     temporary.replace(path)

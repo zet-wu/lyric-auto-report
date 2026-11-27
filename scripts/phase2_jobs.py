@@ -77,6 +77,10 @@ def build_jobs():
         elif script=='run_original_controls':outputs=[f'results/milikara/predictions/{sid}--concat_core--{name}.json.gz' for sid in ja for name in ['retry-vocals','retry-original']]
         add('M7-'+script,'M7','milikara/'+script+'.py',[],ja,outputs=outputs,kind='decoder')
     add('M8-refine','M8','phase2_refine.py',['--songs',*ja],ja,outputs=[f'results/M8/predictions/{trigger}-{strategy}/{sid}.json.gz' for trigger in config['modules']['M8']['triggers'] for strategy in config['modules']['M8']['strategies'] for sid in ja],kind='refinement')
+    if 'M10' in config['modules']:
+        m10_songs=config['modules']['M10']['songs']
+        m10_stages=config['modules']['M10']['stages']
+        add('M10-agent','M10','score.py',[],m10_songs,outputs=[f'results/M10/predictions/{stage}/{sid}.json.gz' for stage in m10_stages for sid in m10_songs],kind='agent_refinement')
     return jobs, views
 
 

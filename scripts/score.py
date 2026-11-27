@@ -1,14 +1,17 @@
 """Rebuild Phase 2 metrics and the data index; never run model inference."""
 import argparse
+from pathlib import Path
 import subprocess
+import sys
 from shared import ROOT, read, dump, exists
 from phase2_jobs import build_jobs
 from phase2_metrics import publish,table,score_alignment_modules
-from phase2_analysis import m2,m3,m4,m5,m7,m8
+from phase2_analysis import m2,m3,m4,m5,m7,m8,m10
 
 
 def score_reading(allow_missing):
-    command=[str(ROOT/'.venvs/research/bin/python'),str(ROOT/'scripts/reading/score.py')]
+    py=ROOT/'.venvs/research/bin/python'
+    command=[str(py if py.exists() else Path(sys.executable)),str(ROOT/'scripts/reading/score.py')]
     if allow_missing:command.append('--allow-missing-winrt')
     subprocess.run(command,check=True,cwd=ROOT)
     summary=read(ROOT/'results/reading/summary.json')
@@ -35,7 +38,7 @@ def main():
     source_map={'G1-studio-demucs-nextfire':'demucs-nextfire','G1-studio-bs-nextfire':'bs-nextfire','G1-studio-demucs-mms_fa-smart':'demucs-mms-fa','G2-studio-demucs-mms_fa-smart':'bs-mms-fa'}
     m4_rows=[dict(row,condition=source_map[row['condition']]) for row in datasets['M1'] if row['condition'] in source_map]
     m4_rows += [row for row in datasets['M2'] if row['condition'] in ('demucs-nextfire','bs-nextfire','demucs-mms-fa','bs-mms-fa')]
-    m4(config,refs,m4_rows);m5(config);m7(config);m8(config,refs)
+    m4(config,refs,m4_rows);m5(config);m7(config);m8(config,refs);m10(config,refs)
     dictionaries=read(ROOT/'results/M2/dictionary/summary.json')
     summary=read(ROOT/'results/M2/summary.json');summary['dictionary_reading']=dictionaries
     paired=[]
@@ -56,7 +59,7 @@ def main():
         failures=[state for state in summary.get('completion',[]) if state['status'] in ('failed','unsupported')]
         index['modules'][module]={'summary':f'results/{module}/summary.json','metrics':f'results/{module}/metrics.csv','songs':config['modules'][module]['songs'],'fields':config['modules'][module]['field_descriptions'],'status':'pending_gpu_benchmarks' if module=='M5' and pending_gpu else 'waiting_for_winrt' if module=='M9' and reading['missing_methods'] else 'complete_with_failures' if failures else 'complete','failed_or_unsupported':failures,'additional_data':[path.relative_to(ROOT).as_posix() for path in sorted((ROOT/'results'/module).glob('*')) if path.is_file() and path.name not in ('summary.json','metrics.csv')]}
     dump(ROOT/'results/EXPERIMENT_INDEX.json',index)
-    print('Rebuilt M1-M9 summaries and results/EXPERIMENT_INDEX.json ('+index['stage']+').')
+    print('Rebuilt M1-M10 summaries and results/EXPERIMENT_INDEX.json ('+index['stage']+').')
 
 
 if __name__=='__main__':main()

@@ -25,18 +25,18 @@ for dirname in ('scripts', 'configs', 'results', 'datasets'):
             text = json.dumps(value, ensure_ascii=False, allow_nan=False)
         elif path.suffix == '.json':
             text = json.dumps(read(path), ensure_ascii=False, allow_nan=False)
-        elif path.suffix in ('.py', '.csv', '.ts', '.cjs'):
+        elif path.suffix in ('.py', '.csv', '.ts', '.cjs', '.md'):
             text = path.read_text(encoding='utf-8')
         else:
             continue
         assert '/' + 'home/' not in text, (path.relative_to(ROOT).as_posix(), 'local absolute path')
         checked += 1
 required = [f'results/reading/inputs/j{i:02}.json' for i in range(1, 21)]
-required += ['results/timing/reference.json', 'results/reading/references.json.gz']
+required += ['results/timing/reference.json', 'results/reading/references.json.gz', 'configs/agent-mcp-prompt.md']
 if args.stage == '2':
     required += ['results/EXPERIMENT_INDEX.json']
-    required += [f'results/M{i}/summary.json' for i in range(1, 10)]
-    required += [f'results/M{i}/metrics.csv' for i in range(1, 10)]
+    required += [f'results/M{i}/summary.json' for i in range(1, 11)]
+    required += [f'results/M{i}/metrics.csv' for i in range(1, 11)]
 for relative in required:
     assert (ROOT / relative).is_file(), relative
 print(f'Validated {len(rows)} dataset files, {checked} data/code files, {len(required)} required outputs (Stage {args.stage}).')

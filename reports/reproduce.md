@@ -1,10 +1,10 @@
 # 实验复现说明
 
-本仓库已随 Git 保存了全部 26 首测试集音频、26 份人工 TTML 标注（共 52 个数据文件）、M1–M9 全部逐条件预测结果（`.json` / `.json.gz`）、汇总指标（`results/M1..M9/summary.json` 与 `*.csv`）以及统一实验索引 [`results/EXPERIMENT_INDEX.json`](../results/EXPERIMENT_INDEX.json)。读者既可以在无 GPU、无模型权重的环境中直接复算所有评分并校验仓库完整性，也可以在配备 NVIDIA GPU 的 Linux 环境中从头重跑声学推理。
+本仓库已随 Git 保存了全部 26 首测试集音频、26 份人工 TTML 标注（共 52 个数据文件）、M1–M10 全部逐条件预测结果（`.json` / `.json.gz`）、汇总指标（`results/M1..M10/summary.json` 与 `*.csv`）以及统一实验索引 [`results/EXPERIMENT_INDEX.json`](../results/EXPERIMENT_INDEX.json)。读者既可以在无 GPU、无模型权重的环境中直接复算所有评分并校验仓库完整性，也可以在配备 NVIDIA GPU 的 Linux 环境中从头重跑声学推理。
 
 ## 1. 轻量评分复核与完整性校验（无需 GPU 或模型权重）
 
-`scripts/score.py` 严格只读取仓库内已保存的预测结果与参考标注，绝不触发任何模型推理；`scripts/verify.py` 则使用 Python 标准库对数据集 SHA256、代码与 JSON 语法、无本机绝对路径泄露、Markdown 相对链接及 41 项必需输出产物进行静态校验。
+`scripts/score.py` 严格只读取仓库内已保存的预测结果与参考标注，绝不触发任何模型推理；`scripts/verify.py` 则使用 Python 标准库对数据集 SHA256、代码与 JSON 语法、无本机绝对路径泄露、Markdown 相对链接及 44 项必需输出产物进行静态校验。
 
 在已配置 `.venvs/research`（或安装了 [`requirements/scoring.txt`](../requirements/scoring.txt) 及 `ffprobe` 的本地环境）中执行：
 
@@ -16,13 +16,13 @@ python3 scripts/verify.py
 - **`scripts/score.py`**：
   1. 调用 `scripts/reading/score.py` 汇总 20 首日语主组的自动注音准确率并发布至 `results/M9/`；
   2. 对照 [`configs/phase2.json`](../configs/phase2.json) 与 `scripts/phase2_jobs.py` 检查所有计划实验产物是否齐全；
-  3. 统一重算并发布 `results/M1/` 至 `results/M8/` 的 `summary.json`、`metrics.csv` 及专题附表（如 `surface.csv`、`reading-units.csv`、`phonetic-groups.csv`、`cohorts.csv`、`core-boundaries.csv`、`duration-bins.csv`、`correlations.csv`、`resources-summary.csv`）；
+  3. 统一重算并发布 `results/M1/` 至 `results/M8/` 及 `results/M10/` 的 `summary.json`、`metrics.csv` 及专题附表（如 `surface.csv`、`reading-units.csv`、`phonetic-groups.csv`、`cohorts.csv`、`core-boundaries.csv`、`duration-bins.csv`、`correlations.csv`、`resources-summary.csv`）；
   4. 生成顶层数据索引 [`results/EXPERIMENT_INDEX.json`](../results/EXPERIMENT_INDEX.json)（当前状态为 `stage: "complete"`）。
 - **`scripts/verify.py`**：
   - 校验 [`datasets/files.json`](../datasets/files.json) 中全部 **52 个音频与 TTML 标注文件**的字节数与 SHA256；
-  - 校验全仓库所有 `.py`、`.json`、`.json.gz` 文件的语法合法性及无宿主机绝对路径残留；
+  - 校验全仓库所有 `.py`、`.json`、`.json.gz`、`.md` 配置文件的语法合法性及无宿主机绝对路径残留；
   - 校验 `README.md`、`datasets/README.md`、`reports/*.md`、`THIRD_PARTY.md` 中的所有相对链接与图片路径存在；
-  - 校验 M1–M9 全部 41 项必需汇总输出文件存在且非空。
+  - 校验 M1–M10 全部 44 项必需汇总输出与归档配置文件存在且非空。
 
 ## 2. 完整推理环境与模型权重准备
 
@@ -99,9 +99,20 @@ py -3.11 -m venv .venvs/sug-winrt
 .venvs/sug-winrt/Scripts/python.exe -X utf8 scripts/reading/score.py --method sug-winrt
 ```
 
-### 4.2 重新生成全部报告图表（`results/figures/`）
+### 4.2 无音频输入 LLM 的 MCP 视觉精调实验（M10）
 
-仓库中的所有可视化图表均由纯绘图脚本直接读取 `results/M1..M8/summary.json` 动态绘制，同时导出 600 DPI `.png` 与可编辑文本 `.svg`：
+M10 的三首代表曲目（`j08`、`j14`、`j18`）初轴与最终轴冻结预测保存在 [`results/M10/predictions/initial/`](../results/M10/predictions/initial/) 与 [`results/M10/predictions/final/`](../results/M10/predictions/final/)，执行 Agent 使用的完整脱敏提示词模板归档于 [`configs/agent-mcp-prompt.md`](../configs/agent-mcp-prompt.md)（移除了宿主机本地绝对路径，保留完整的四步 MCP 工作流、义训核对要求与三项人工定界规则）。
+
+- **直接复算评分**：运行 `.venvs/research/bin/python scripts/score.py` 会自动读取 `results/M10/predictions/` 下的冻结预测，对照人工参考 TTML 与 [`configs/phase2.json`](../configs/phase2.json) 中的 `M10` 配置重算 `results/M10/summary.json`、`results/M10/metrics.csv` 及 `results/M10/items.json.gz`。
+- **在隔离 Studio 实例中复现 Agent 精调流程**：
+  1. 启动独立的 Lazulite Studio 服务端与回环 MCP 端点（默认 `http://127.0.0.1:15174/mcp`），创建空项目并仅导入剥离了内嵌歌词轨的测试音频（`datasets/audio/` 下对应 `.m4a`）；
+  2. 从对应人工标注 TTML 提取纯文本歌词（仅保留正文行与行内空格，剥离全部时间戳、分词与注音）存为 `{LYRICS_FILE}.txt`；
+  3. 将 [`configs/agent-mcp-prompt.md`](../configs/agent-mcp-prompt.md) 中的 `{PROJECT_NAME}`、`{SONG_ID} / {SONG_TITLE}` 与 `{LYRICS_FILE}.txt` 替换为当前测试曲目信息，在不挂载人工参考 TTML 或本仓库 `results/` 目录的隔离环境中交给 `GPT-6.1 sol`（思考等级 `xhigh`）执行；
+  4. 将首轮 `NextFire` 应用后导出的初轴 JSON 与二轮复查完成后导出的最终轴 JSON 分别存入 `results/M10/predictions/initial/<song_id>.json.gz` 和 `results/M10/predictions/final/<song_id>.json.gz`，再运行 `.venvs/research/bin/python scripts/score.py` 即可获得完整对比评分。
+
+### 4.3 重新生成全部报告图表（`results/figures/`）
+
+仓库中的所有可视化图表均由纯绘图脚本直接读取 `results/M1..M10/summary.json` 动态绘制，同时导出 600 DPI `.png` 与可编辑文本 `.svg`：
 
 ```sh
 # 生成 README.md 与 reports/comparison.md 中的 G1 / G2 / G3 三组横向对比图
@@ -109,6 +120,6 @@ for g in G1 G2 G3; do
   .venvs/research/bin/python scripts/plot_readme_comparison.py --group "$g"
 done
 
-# 生成 M2 多语言音节与分段图、M3 AAC-LC 持久化对比图、M4 音节时长分档图、M7 MiliKara 消融图与 M8 跨模型重算图
+# 生成 M2 多语言音节与分段图、M3 AAC-LC 持久化对比图、M4 音节时长分档图、M7 MiliKara 消融图、M8 跨模型重算图与 M10 Agent 视觉精调对比图
 .venvs/research/bin/python scripts/plot_phase2_figures.py
 ```

@@ -1,4 +1,4 @@
-"""Generate Phase 2 thematic figures (M2 multilingual, M3 AAC persistence, M4 tempo correlation, M7 MiliKara ablation, M8 cross-model refinement)."""
+"""Generate Phase 2 thematic figures (M2 multilingual, M3 AAC persistence, M4 tempo correlation, M7 MiliKara ablation, M8 cross-model refinement, M10 agent MCP refinement)."""
 from pathlib import Path
 import argparse, json, os
 ROOT = Path(__file__).resolve().parents[1]
@@ -382,9 +382,94 @@ def plot_refinement():
     save_fig(fig, 'm8-local-refinement')
 
 
+def plot_agent():
+    m10 = json.loads((ROOT / 'results/M10/summary.json').read_text())
+    m10_map = {(r['condition'], r['song'], r['scope']): r for r in m10['metrics']}
+    base_map = {(r['source_module'], r['condition'], r['song'], r['scope']): r for r in m10['baselines']}
+
+    fig, axes = plt.subplots(1, 2, figsize=(183 / 25.4, 76 / 25.4))
+    fig.subplots_adjust(left=0.075, right=0.985, bottom=0.19, top=0.76, wspace=0.20)
+
+    songs_a = [
+        ('j18', 'j18 真紅の刃\n(n=402 JA)'),
+        ('j08', 'j08 光陰の海原\n(n=377)'),
+        ('j14', 'j14 Spica\n(n=351)'),
+        ('ALL', '三曲合计\n(n=1,130)'),
+    ]
+    series_a = [
+        ('M1', 'G3-studio-bs-nextfire', 'M1 G3 pure-text auto', '#E9A6A1'),
+        ('M8', 'bs-combined_40ms-mms_fa_global_swap', 'M8 cross-model swap (human reading)', '#42949E'),
+        ('M10', 'initial', 'M10 Agent initial (NextFire)', '#3775BA'),
+        ('M10', 'final', 'M10 Agent final (MCP visual refine)', '#0F4D92'),
+    ]
+
+    ax = axes[0]
+    add_panel_label(ax, 'a', x_pt=-12, y_pt=24)
+    ax.set_title('三首代表曲目的双端 100 ms 命中率对比 (日语主评估单元)', fontsize=7, pad=24, fontfamily=CJK_FONT)
+    x = np.arange(len(songs_a))
+    w = 0.19
+    for idx, (src, ckey, clabel, color) in enumerate(series_a):
+        vals = [
+            m10_map[(ckey, sid, 'reading_units')]['hit100_pct'] if src == 'M10'
+            else base_map[(src, ckey, sid, 'reading_units')]['hit100_pct']
+            for sid, _ in songs_a
+        ]
+        offset = (idx - 1.5) * w
+        bars = ax.bar(x + offset, vals, width=w * 0.92, color=color, label=clabel, zorder=3)
+        if src == 'M10' and ckey == 'final':
+            init_vals = [m10_map[('initial', sid, 'reading_units')]['hit100_pct'] for sid, _ in songs_a]
+            for xi, bar, fv, iv in zip(x + offset, bars, vals, init_vals):
+                ax.text(xi, fv + 1.5, f'{fv:.1f}%\n(+{fv - iv:.1f})', ha='center', va='bottom', fontsize=5.3, color='#0F4D92', fontweight='bold')
+    ax.set_xticks(x, [lbl for _, lbl in songs_a], fontfamily=CJK_FONT, fontsize=5.8)
+    ax.set_ylim(0, 115)
+    ax.set_yticks([0, 25, 50, 75, 100])
+    ax.set_ylabel('Joint 100 ms hit rate (%)')
+    ax.tick_params(axis='x', length=0, pad=5)
+    ax.tick_params(axis='y', length=3, color='#888888')
+    ax.legend(loc='lower left', bbox_to_anchor=(0, 1.015), ncols=2, fontsize=5.5, handlelength=1.1, columnspacing=0.8, borderaxespad=0)
+
+    ax = axes[1]
+    add_panel_label(ax, 'b', x_pt=-12, y_pt=24)
+    ax.set_title('视觉精调前后的起点/终点 MAE 与综合 P95 误差', fontsize=7, pad=24, fontfamily=CJK_FONT)
+    songs_b = [
+        ('j18', 'all_reading_units', 'j18 全量\n(n=413)'),
+        ('j08', 'reading_units', 'j08\n(n=377)'),
+        ('j14', 'reading_units', 'j14\n(n=351)'),
+        ('ALL', 'all_reading_units', '三曲全量\n(n=1,141)'),
+    ]
+    x2 = np.arange(len(songs_b))
+    series_b = [
+        ('initial', 'start_mae_ms', 'Initial Start MAE', '#E9A6A1'),
+        ('final', 'start_mae_ms', 'Final Start MAE', '#0F4D92'),
+        ('initial', 'end_mae_ms', 'Initial End MAE', '#B64342'),
+        ('final', 'end_mae_ms', 'Final End MAE', '#42949E'),
+    ]
+    for idx, (st, mkey, mlabel, color) in enumerate(series_b):
+        vals = [m10_map[(st, sid, sc)][mkey] for sid, sc, _ in songs_b]
+        offset = (idx - 1.5) * w
+        ax.bar(x2 + offset, vals, width=w * 0.92, color=color, label=mlabel, zorder=3)
+    p95_init = [m10_map[('initial', sid, sc)]['abs_p95_ms'] for sid, sc, _ in songs_b]
+    p95_final = [m10_map[('final', sid, sc)]['abs_p95_ms'] for sid, sc, _ in songs_b]
+    ax.plot(x2 - 0.5 * w, p95_init, color='#767676', linestyle='--', marker='o', markersize=3.5, lw=1.1, label='Initial P95', zorder=4)
+    ax.plot(x2 + 0.5 * w, p95_final, color='#272727', linestyle='-', marker='s', markersize=3.5, lw=1.2, label='Final P95', zorder=5)
+    for idx_pt, (xi, pv) in enumerate(zip(x2 + 0.5 * w, p95_final)):
+        offsets = [(-0.08, 7), (-0.18, 7), (0.0, 8), (0.14, 7)]
+        dx, dy = offsets[idx_pt]
+        ax.text(xi + dx, pv + dy, f'{pv:.0f} ms', ha='center', va='bottom', fontsize=5.4, color='#272727', fontweight='bold')
+    ax.set_xticks(x2, [lbl for _, _, lbl in songs_b], fontfamily=CJK_FONT, fontsize=5.8)
+    ax.set_ylim(0, 250)
+    ax.set_yticks([0, 50, 100, 150, 200, 250])
+    ax.set_ylabel('Absolute endpoint error (ms)')
+    ax.tick_params(axis='x', length=0, pad=5)
+    ax.tick_params(axis='y', length=3, color='#888888')
+    ax.legend(loc='lower left', bbox_to_anchor=(0, 1.015), ncols=3, fontsize=5.4, handlelength=1.0, columnspacing=0.65, borderaxespad=0)
+
+    save_fig(fig, 'm10-agent-mcp-refinement')
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--only', choices=['all', 'm2', 'm3', 'm4', 'm7', 'm8'], default='all')
+    parser.add_argument('--only', choices=['all', 'm2', 'm3', 'm4', 'm7', 'm8', 'm10'], default='all')
     args = parser.parse_args()
     if args.only in ('all', 'm2'):
         plot_multilingual()
@@ -396,3 +481,5 @@ if __name__ == '__main__':
         plot_milikara()
     if args.only in ('all', 'm8'):
         plot_refinement()
+    if args.only in ('all', 'm10'):
+        plot_agent()

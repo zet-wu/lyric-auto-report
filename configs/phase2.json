@@ -657,6 +657,91 @@
         "kana_coverage_pct": "Percentage of outputs containing only normalized kana"
       },
       "llm_prediction_directory": "results/reading/predictions/llm-corrected"
+    },
+    "M10": {
+      "songs": [
+        "j08",
+        "j14",
+        "j18"
+      ],
+      "stages": [
+        "initial",
+        "final"
+      ],
+      "input_condition": "pure_text",
+      "prompt_template": "configs/agent-mcp-prompt.md",
+      "separator": "bs",
+      "initial_backend": "nextfire",
+      "complementary_backend": "mms_fa-smart",
+      "english_syllable_mappings": {
+        "j18": [
+          {
+            "line": 4,
+            "surface": "静寂",
+            "reference": [
+              "Si",
+              "lence"
+            ],
+            "prediction": [
+              "サイ",
+              "レンス"
+            ]
+          },
+          {
+            "line": 12,
+            "surface": "忍耐",
+            "reference": [
+              "my",
+              "pa",
+              "tience"
+            ],
+            "prediction": [
+              "マイ",
+              "ペイ",
+              "シェンス"
+            ]
+          },
+          {
+            "line": 27,
+            "surface": "犠牲",
+            "reference": [
+              "sa",
+              "cri",
+              "fice"
+            ],
+            "prediction": [
+              "サク",
+              "リ",
+              "ファイス"
+            ]
+          },
+          {
+            "line": 35,
+            "surface": "忍耐",
+            "reference": [
+              "my",
+              "pa",
+              "tience"
+            ],
+            "prediction": [
+              "マイ",
+              "ペイ",
+              "シェンス"
+            ]
+          }
+        ]
+      },
+      "field_descriptions": {
+        "n": "Reference scoring population, retaining missing predictions",
+        "hit100_pct": "Both endpoints within 100 ms; missing predictions count as misses",
+        "hit200_pct": "Both endpoints within 200 ms; missing predictions count as misses",
+        "start_mae_ms": "Start MAE over valid predictions",
+        "end_mae_ms": "End MAE over valid predictions",
+        "abs_p95_ms": "P95 of absolute endpoint error over valid predictions",
+        "fixed_count": "Previously missed units now within 100 ms at both endpoints",
+        "broken_count": "Previously hit units now missed",
+        "net_gain": "fixed_count minus broken_count"
+      }
     }
   },
   "output": {

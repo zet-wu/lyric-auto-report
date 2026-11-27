@@ -110,6 +110,37 @@ def common_rows(song,conditions):
     return output
 
 
+def mapped_reading_items(config, refs, native):
+    """Score automatic and external exports with the existing unique-boundary mapping."""
+    from comparison.score_reading import collect_items, native as external, segment, row
+    routes={'studio-demucs-nextfire':'studio-nextfire','studio-bs-nextfire':'studio-nextfire',
+            'studio-demucs-mms_fa-smart':'studio-mms-fa','sug':'sug-nextfire',
+            'sug-mms-fa':'sug-mms-fa','milikara':'milikara','timing':'timing','yohane':'yohane','fa-kara':'fa-kara'}
+    groups={group:list(routes) for group in ('G1','G2','G3')}
+    def load(sid, route, group):
+        condition=group+'-'+route
+        if not route.startswith('studio-'):
+            lines=external(sid,routes[route],group)
+            return lines if lines is None or len(lines)==len(refs[sid]['lines']) else None
+        data=native.get(('M1',condition,sid),{})
+        if data.get('status')!='ok' or 'projection' not in data:return None
+        times=data.get('object_timings',{})
+        mapping={entry['unit_id']:entry for entry in data['projection']['mapping']}
+        lines={}
+        for line in data['projection']['request']['lines']:
+            parts=[];units=collections.defaultdict(list)
+            for unit in line['units']:units[tuple(unit['source_range'])].append(unit)
+            for (a,b),members in sorted(units.items()):
+                leaves=[row(unit['reading'],*span(times.get(mapping[unit['unit_id']]['object_id'],{}))) for unit in members]
+                parts.append(segment(line['text'][a:b],leaves,*legacy.envelope(leaves)))
+            lines[line['line_id']]=parts
+        return [lines.get(line['id'],[]) for line in refs[sid]['lines']]
+    items=collect_items(groups,[refs[sid] for sid in config['dataset']['ja']],load)
+    return [dict(entry,condition=entry['group']+'-'+entry['route'],
+                 unit=entry['id'],line=entry['line']+1,primary_reading_unit=True)
+            for entry in items if entry['group']=='G3' or not entry['route'].startswith('studio-')]
+
+
 def score_alignment_modules(config,jobs,views,refs):
     all_native={};datasets={};states={}
     for module in ('M1','M2','M3','M5','M6'):
@@ -154,8 +185,15 @@ def score_alignment_modules(config,jobs,views,refs):
         for (mod,name,sid),data in all_native.items():
             if mod==module and data.get('condition') not in ('auto','dictionary'):
                 leaf.extend(dict(row,condition=name) for row in reading_items(refs[sid],data))
+        all_reading_conditions={entry['condition'] for entry in leaf}
+        if module=='M1':leaf.extend(mapped_reading_items(config,refs,all_native))
         leaf_metrics=[{'condition':name,'song':sid,**measure([row for row in leaf if row['primary_reading_unit'] and row['condition']==name and (sid=='ALL' or row['song']==sid)])} for name in conditions for sid in ['ALL',*config['modules'][module]['songs']] if any(row['condition']==name and (sid=='ALL' or row['song']==sid) for row in leaf)]
-        all_leaf_metrics=[{'condition':name,'song':sid,**measure([row for row in leaf if row['condition']==name and (sid=='ALL' or row['song']==sid)])} for name in conditions for sid in ['ALL',*config['modules'][module]['songs']] if any(row['condition']==name and (sid=='ALL' or row['song']==sid) for row in leaf)]
+        if module=='M1':
+            for metric in leaf_metrics:
+                selected=[row for row in leaf if row['primary_reading_unit'] and row['condition']==metric['condition'] and (metric['song']=='ALL' or row['song']==metric['song'])]
+                metric.update(merged_units=sum(row.get('missing_reason')=='merged' for row in selected),
+                              merged_boundaries=len({tuple(key) for row in selected for key in row.get('merged_boundary_keys',[])}))
+        all_leaf_metrics=[{'condition':name,'song':sid,**measure([row for row in leaf if row['condition']==name and (sid=='ALL' or row['song']==sid)])} for name in conditions if name in all_reading_conditions for sid in ['ALL',*config['modules'][module]['songs']] if any(row['condition']==name and (sid=='ALL' or row['song']==sid) for row in leaf)]
         macro=[{'condition':name,'macro_hit100_pct':float(np.mean([row['hit100_pct'] for row in table_rows if row['condition']==name and row['song']!='ALL' and row['scope']=='all' and row['n']]))} for name in conditions if any(row['condition']==name and row['song']!='ALL' and row['scope']=='all' and row['n'] for row in table_rows)]
         summary={'macro':macro,'surface':table_rows,'reading_units':leaf_metrics,'all_reading_units':all_leaf_metrics,'completion':state,'surface_policy':'Shared original body boundaries among native exports; Japanese spans require Japanese body characters as in Phase 1. Missing predictions remain misses.','reading_policy':'Original timed human reading leaves; Japanese primary units use the Phase 1 kana-only criterion. All alphanumeric leaves are retained separately. No interpolation.'}
         publish(module,summary,table_rows+[{**row,'scope':'reading_units'} for row in leaf_metrics]+[{**row,'scope':'all_reading_units'} for row in all_leaf_metrics],rows)

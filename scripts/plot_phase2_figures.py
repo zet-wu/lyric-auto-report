@@ -198,7 +198,8 @@ def plot_tempo():
     m4 = json.loads((ROOT / 'results/M4/summary.json').read_text())
     bins = m4['duration_bins']
     bin_order = ['<120', '120-250', '250-500', '500-1000', '>1000']
-    bin_labels = ['<120 ms\n(n=275)', '120-250 ms\n(n=4,161)', '250-500 ms\n(n=4,634)', '500-1,000 ms\n(n=1,253)', '>1,000 ms\n(n=561)']
+    bin_names = ['<120 ms', '120-250 ms', '250-500 ms', '500-1,000 ms', '>1,000 ms']
+    bin_labels = [f"{label}\n(n={next(row['n'] for row in bins if row['duration_bin_ms'] == key):,})" for label, key in zip(bin_names, bin_order)]
     bin_map = {(r['condition'], r['duration_bin_ms']): r for r in bins}
 
     fig, axes = plt.subplots(1, 2, figsize=(183 / 25.4, 72 / 25.4))
@@ -324,14 +325,15 @@ def plot_refinement():
     m8_map = {(r.get('separator', 'demucs'), r['trigger'], r['strategy']): r for r in m8}
 
     triggers = [
-        ('same_vowel_imbalance', '同元音/同读音时长失衡\n(Demucs 81 行 / BS 79 行)'),
-        ('legacy_conf', '一期旧置信度规则\n(Demucs 174 行 / BS 179 行)'),
-        ('short_unit_30ms', '含 <30 ms 极短单元\n(Demucs 181 行 / BS 163 行)'),
-        ('combined_30ms', '30 ms 极短或同元音失衡\n(Demucs 186 行 / BS 166 行)'),
-        ('short_unit_40ms', '含 <40 ms 极短单元\n(Demucs 211 行 / BS 178 行)'),
-        ('combined_40ms', '40 ms 极短或同元音失衡\n(Demucs 214 行 / BS 188 行)'),
-        ('oracle_top_k', '按真实误差挑出最差行\n(Demucs 186 行 / BS 166 行)'),
+        ('same_vowel_imbalance', '同元音/同读音时长失衡'),
+        ('legacy_conf', '一期旧置信度规则'),
+        ('short_unit_30ms', '含 <30 ms 极短单元'),
+        ('combined_30ms', '30 ms 极短或同元音失衡'),
+        ('short_unit_40ms', '含 <40 ms 极短单元'),
+        ('combined_40ms', '40 ms 极短或同元音失衡'),
+        ('oracle_top_k', '按真实误差挑出最差行'),
     ]
+    triggers = [(key, f"{label}\n(Demucs {m8_map[('demucs', key, 'nextfire_baseline')]['triggered_lines']} 行 / BS {m8_map[('bs', key, 'nextfire_baseline')]['triggered_lines']} 行)") for key, label in triggers]
     strategies = [
         ('nextfire_local', 'NextFire local window re-align', '#B64342'),
         ('mms_fa_local', 'MMS_FA + smart ext. local window', '#0F4D92'),
@@ -345,12 +347,13 @@ def plot_refinement():
     h = 0.25
 
     for p_idx, (sep, p_label, title) in enumerate([
-        ('demucs', 'a', 'Demucs 组：相对首轮 (84.51%) 的净增命中数'),
-        ('bs', 'b', 'BS Karaoke 组：相对首轮 (86.59%) 的净增命中数'),
+        ('demucs', 'a', 'Demucs'),
+        ('bs', 'b', 'BS Karaoke'),
     ]):
         ax = axes[p_idx]
         add_panel_label(ax, p_label, x_pt=-14, y_pt=23)
-        ax.set_title(title, fontsize=7, pad=23, fontfamily=CJK_FONT)
+        baseline = m8_map[(sep, 'same_vowel_imbalance', 'nextfire_baseline')]['hit100_pct']
+        ax.set_title(f'{title} 组：相对首轮 ({baseline:.2f}%) 的净增命中数', fontsize=7, pad=23, fontfamily=CJK_FONT)
         ax.axvline(0, color='#888888', lw=0.8, linestyle='--', zorder=1)
         for idx, (skey, slabel, color) in enumerate(strategies):
             vals = [m8_map[(sep, tkey, skey)]['net_gain'] for tkey, _ in triggers]
@@ -369,7 +372,7 @@ def plot_refinement():
             ax.legend(loc='lower left', bbox_to_anchor=(0, 1.015), ncols=2, fontsize=5.8, handlelength=1.1, columnspacing=0.9, borderaxespad=0)
         else:
             ax.tick_params(axis='y', length=0)
-        ax.set_xlim(-145, 225)
+        ax.set_xlim(-145, 240)
         ax.set_xticks([-100, -50, 0, 50, 100, 150])
         ax.set_xlabel('Net unit change in joint 100 ms hits (fixed - broken)')
         ax.tick_params(axis='x', length=3, color='#888888')

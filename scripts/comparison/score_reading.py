@@ -1,6 +1,9 @@
 """Score native reading endpoints against fixed manual leaves without interpolation."""
-from common import *
-from score import GROUPS, ROUTES, T, S, row, clock, norm, valid, positioned, envelope, measure
+from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from comparison.common import *
+from comparison.score import GROUPS, ROUTES, T, S, row, clock, norm, valid, positioned, envelope, measure
 import xml.etree.ElementTree as ET
 from collections import Counter
 
@@ -100,12 +103,15 @@ def metrics(rows):
                merged_boundaries=len({tuple(k) for r in rows for k in r['merged_boundary_keys']}))
  return result
 
-def main():
+def collect_items(groups=None, corpus=None, load_native=None):
  items=[]
- for g,routes in GROUPS.items():
+ groups=GROUPS if groups is None else groups
+ corpus=songs() if corpus is None else corpus
+ load_native=native if load_native is None else load_native
+ for g,routes in groups.items():
   for route in routes:
-   for song in songs():
-    sid=song['id'];pred=native(sid,route,g)
+   for song in corpus:
+    sid=song['id'];pred=load_native(sid,route,g)
     romans={u['id']:u['roman'] for l in read(OUT/'yohane/inputs'/f'{sid}.json')['lines'] for w in l['words'] for u in w['units']} if route=='yohane' else {}
     if pred is not None:assert len(pred)==len(song['lines'])
     for li,line in enumerate(song['lines']):
@@ -162,6 +168,10 @@ def main():
        ok=bool(us) and us[0]['a']==a and us[-1]['b']==b and valid(x,y)
        out.update(pred_start=x,pred_end=y,valid=ok,ds=x-u['start'] if ok else None,de=y-u['end'] if ok else None,missing_reason=None if ok else 'invalid_time')
      items.extend(rows.values())
+ return items
+
+def main():
+ items=collect_items()
  summary={}
  for g,routes in GROUPS.items():
   summary[g]={}

@@ -387,82 +387,98 @@ def plot_agent():
     m10_map = {(r['condition'], r['song'], r['scope']): r for r in m10['metrics']}
     base_map = {(r['source_module'], r['condition'], r['song'], r['scope']): r for r in m10['baselines']}
 
-    fig, axes = plt.subplots(1, 2, figsize=(183 / 25.4, 76 / 25.4))
-    fig.subplots_adjust(left=0.075, right=0.985, bottom=0.19, top=0.76, wspace=0.20)
+    fig, axes = plt.subplots(1, 2, figsize=(183 / 25.4, 96 / 25.4))
+    fig.subplots_adjust(left=0.085, right=0.94, bottom=0.14, top=0.80, wspace=0.28)
 
-    songs_a = [
-        ('j18', 'j18 真紅の刃\n(n=402 JA)'),
-        ('j08', 'j08 光陰の海原\n(n=377)'),
-        ('j14', 'j14 Spica\n(n=351)'),
-        ('ALL', '三曲合计\n(n=1,130)'),
-    ]
-    series_a = [
-        ('M1', 'G3-studio-bs-nextfire', 'M1 G3 pure-text auto', '#E9A6A1'),
-        ('M8', 'bs-combined_40ms-mms_fa_global_swap', 'M8 cross-model swap (human reading)', '#42949E'),
-        ('M10', 'initial', 'M10 Agent initial (NextFire)', '#3775BA'),
-        ('M10', 'final', 'M10 Agent final (MCP visual refine)', '#0F4D92'),
-    ]
-
+    songs_16 = ['j18', 'j19', 'j08', 'j16', 'j13', 'j09', 'j20', 'j10', 'j11', 'j01', 'j04', 'j05', 'j02', 'j14', 'j15', 'jy01']
     ax = axes[0]
-    add_panel_label(ax, 'a', x_pt=-12, y_pt=24)
-    ax.set_title('三首代表曲目的双端 100 ms 命中率对比 (日语主评估单元)', fontsize=7, pad=24, fontfamily=CJK_FONT)
-    x = np.arange(len(songs_a))
-    w = 0.19
-    for idx, (src, ckey, clabel, color) in enumerate(series_a):
-        vals = [
-            m10_map[(ckey, sid, 'reading_units')]['hit100_pct'] if src == 'M10'
-            else base_map[(src, ckey, sid, 'reading_units')]['hit100_pct']
-            for sid, _ in songs_a
-        ]
-        offset = (idx - 1.5) * w
-        bars = ax.bar(x + offset, vals, width=w * 0.92, color=color, label=clabel, zorder=3)
-        if src == 'M10' and ckey == 'final':
-            init_vals = [m10_map[('initial', sid, 'reading_units')]['hit100_pct'] for sid, _ in songs_a]
-            for xi, bar, fv, iv in zip(x + offset, bars, vals, init_vals):
-                ax.text(xi, fv + 1.5, f'{fv:.1f}%\n(+{fv - iv:.1f})', ha='center', va='bottom', fontsize=5.3, color='#0F4D92', fontweight='bold')
-    ax.set_xticks(x, [lbl for _, lbl in songs_a], fontfamily=CJK_FONT, fontsize=5.8)
-    ax.set_ylim(0, 115)
-    ax.set_yticks([0, 25, 50, 75, 100])
-    ax.set_ylabel('Joint 100 ms hit rate (%)')
-    ax.tick_params(axis='x', length=0, pad=5)
-    ax.tick_params(axis='y', length=3, color='#888888')
-    ax.legend(loc='lower left', bbox_to_anchor=(0, 1.015), ncols=2, fontsize=5.5, handlelength=1.1, columnspacing=0.8, borderaxespad=0)
+    add_panel_label(ax, 'a', x_pt=-14, y_pt=24)
+    ax.set_title('16 首曲目初轴到最终精调的双端 100 ms 命中率', fontsize=7, pad=24, fontfamily=CJK_FONT)
+    y = np.arange(len(songs_16))
+    init_v = [m10_map[('initial', sid, 'reading_units')]['hit100_pct'] for sid in songs_16]
+    fin_v = [m10_map[('final', sid, 'reading_units')]['hit100_pct'] for sid in songs_16]
+    m12_v = [
+        max(r['hit100_pct'] for r in m10['baselines'] if r['source_module'] == 'M2' and r['song'] == 'jy01' and r['scope'] == 'reading_units')
+        if sid == 'jy01' else base_map[('M1', 'M1_per_song_best', sid, 'reading_units')]['hit100_pct']
+        for sid in songs_16
+    ]
+    m8_v = [
+        None if sid == 'jy01' else base_map[('M8', 'bs-same_vowel_imbalance-mms_fa_global_swap', sid, 'reading_units')]['hit100_pct']
+        for sid in songs_16
+    ]
+    for yi, iv, fv in zip(y, init_v, fin_v):
+        ax.plot([iv, fv], [yi, yi], color='#7BA7D7', lw=1.6, zorder=2)
+    ax.scatter(init_v, y, color='#3775BA', s=18, label='M10 Initial', zorder=3)
+    ax.scatter(fin_v, y, color='#0F4D92', s=22, label='M10 Final', zorder=4)
+    ax.scatter(m12_v, y, color='#D97724', marker='D', s=13, label='M1/M2 Best', zorder=5)
+    m8_pts = [(mv, yi) for mv, yi in zip(m8_v, y) if mv is not None]
+    ax.scatter([p[0] for p in m8_pts], [p[1] for p in m8_pts], color='#42949E', marker='^', s=14, label='M8 Best Heuristic', zorder=5)
+    for yi, fv in zip(y, fin_v):
+        ax.text(fv + 1.1, yi, f'{fv:.1f}%', va='center', ha='left', fontsize=5.0, color='#0F4D92')
+    ax.set_yticks(y, songs_16, fontsize=5.8)
+    ax.invert_yaxis()
+    ax.set_xlim(40, 108)
+    ax.set_xticks([40, 55, 70, 85, 100])
+    ax.set_xlabel('Joint 100 ms hit rate (%)')
+    ax.grid(axis='x', linestyle=':', linewidth=0.5, color='#DDDDDD', zorder=0)
+    ax.tick_params(axis='y', length=0, pad=4)
+    ax.tick_params(axis='x', length=3, color='#888888')
+    ax.legend(loc='lower left', bbox_to_anchor=(0, 1.015), ncols=2, fontsize=5.2, handlelength=1.1, columnspacing=0.8, borderaxespad=0)
 
     ax = axes[1]
-    add_panel_label(ax, 'b', x_pt=-12, y_pt=24)
-    ax.set_title('视觉精调前后的起点/终点 MAE 与综合 P95 误差', fontsize=7, pad=24, fontfamily=CJK_FONT)
-    songs_b = [
-        ('j18', 'all_reading_units', 'j18 全量\n(n=413)'),
-        ('j08', 'reading_units', 'j08\n(n=377)'),
-        ('j14', 'reading_units', 'j14\n(n=351)'),
-        ('ALL', 'all_reading_units', '三曲全量\n(n=1,141)'),
+    add_panel_label(ax, 'b', x_pt=-14, y_pt=24)
+    ax.set_title('15 首日语非叠唱主组阶梯对比 (n=6,500)', fontsize=7, pad=24, fontfamily=CJK_FONT)
+    steps = [
+        ('M1', 'G3-studio-bs-nextfire', 'M1 G3\n(pure text)'),
+        ('M1', 'G1-studio-bs-nextfire', 'M1 G1\n(human rd)'),
+        ('M8', 'bs-same_vowel_imbalance-mms_fa_global_swap', 'M8 Best\nHeuristic'),
+        ('M8', 'bs-oracle_top_k-mms_fa_global_swap', 'M8\nOracle'),
+        ('M10', 'initial', 'M10\nInitial'),
+        ('M10', 'final', 'M10\nFinal'),
     ]
-    x2 = np.arange(len(songs_b))
-    series_b = [
-        ('initial', 'start_mae_ms', 'Initial Start MAE', '#E9A6A1'),
-        ('final', 'start_mae_ms', 'Final Start MAE', '#0F4D92'),
-        ('initial', 'end_mae_ms', 'Initial End MAE', '#B64342'),
-        ('final', 'end_mae_ms', 'Final End MAE', '#42949E'),
+    x2 = np.arange(len(steps))
+    w = 0.34
+    h100 = [
+        m10_map[(ckey, 'ALL', 'reading_units')]['hit100_pct'] if src == 'M10'
+        else base_map[(src, ckey, 'ALL', 'reading_units')]['hit100_pct']
+        for src, ckey, _ in steps
     ]
-    for idx, (st, mkey, mlabel, color) in enumerate(series_b):
-        vals = [m10_map[(st, sid, sc)][mkey] for sid, sc, _ in songs_b]
-        offset = (idx - 1.5) * w
-        ax.bar(x2 + offset, vals, width=w * 0.92, color=color, label=mlabel, zorder=3)
-    p95_init = [m10_map[('initial', sid, sc)]['abs_p95_ms'] for sid, sc, _ in songs_b]
-    p95_final = [m10_map[('final', sid, sc)]['abs_p95_ms'] for sid, sc, _ in songs_b]
-    ax.plot(x2 - 0.5 * w, p95_init, color='#767676', linestyle='--', marker='o', markersize=3.5, lw=1.1, label='Initial P95', zorder=4)
-    ax.plot(x2 + 0.5 * w, p95_final, color='#272727', linestyle='-', marker='s', markersize=3.5, lw=1.2, label='Final P95', zorder=5)
-    for idx_pt, (xi, pv) in enumerate(zip(x2 + 0.5 * w, p95_final)):
-        offsets = [(-0.08, 7), (-0.18, 7), (0.0, 8), (0.14, 7)]
-        dx, dy = offsets[idx_pt]
-        ax.text(xi + dx, pv + dy, f'{pv:.0f} ms', ha='center', va='bottom', fontsize=5.4, color='#272727', fontweight='bold')
-    ax.set_xticks(x2, [lbl for _, _, lbl in songs_b], fontfamily=CJK_FONT, fontsize=5.8)
-    ax.set_ylim(0, 250)
-    ax.set_yticks([0, 50, 100, 150, 200, 250])
-    ax.set_ylabel('Absolute endpoint error (ms)')
-    ax.tick_params(axis='x', length=0, pad=5)
+    h200 = [
+        m10_map[(ckey, 'ALL', 'reading_units')]['hit200_pct'] if src == 'M10'
+        else base_map[(src, ckey, 'ALL', 'reading_units')]['hit200_pct']
+        for src, ckey, _ in steps
+    ]
+    p95 = [
+        m10_map[(ckey, 'ALL', 'reading_units')]['abs_p95_ms'] if src == 'M10'
+        else base_map[(src, ckey, 'ALL', 'reading_units')]['abs_p95_ms']
+        for src, ckey, _ in steps
+    ]
+    b1 = ax.bar(x2 - w / 2, h100, width=w * 0.92, color='#0F4D92', label='Joint 100 ms (%)', zorder=3)
+    b2 = ax.bar(x2 + w / 2, h200, width=w * 0.92, color='#8FB6DF', label='Joint 200 ms (%)', zorder=3)
+    for bar, val in zip(b1, h100):
+        ax.text(bar.get_x() + bar.get_width() / 2, val + 0.6, f'{val:.2f}', ha='center', va='bottom', fontsize=4.8, color='#0F4D92', fontweight='bold')
+    ax.set_xticks(x2, [lbl for _, _, lbl in steps], fontsize=5.3)
+    ax.set_ylim(75, 103)
+    ax.set_yticks([75, 80, 85, 90, 95, 100])
+    ax.set_ylabel('Joint hit rate (%)')
+    ax.tick_params(axis='x', length=0, pad=4)
     ax.tick_params(axis='y', length=3, color='#888888')
-    ax.legend(loc='lower left', bbox_to_anchor=(0, 1.015), ncols=3, fontsize=5.4, handlelength=1.0, columnspacing=0.65, borderaxespad=0)
+
+    ax2 = ax.twinx()
+    ax2.spines['top'].set_visible(False)
+    ax2.spines['left'].set_visible(False)
+    ax2.spines['right'].set_linewidth(0.6)
+    ax2.plot(x2, p95, color='#B64342', marker='o', markersize=3.4, lw=1.3, label='Abs P95 (ms)', zorder=5)
+    for xi, pv in zip(x2, p95):
+        ax2.text(xi, pv + 3.0, f'{pv:.0f}', ha='center', va='bottom', fontsize=4.9, color='#B64342')
+    ax2.set_ylim(60, 155)
+    ax2.set_yticks([60, 80, 100, 120, 140])
+    ax2.set_ylabel('Abs P95 error (ms)', color='#B64342')
+    ax2.tick_params(axis='y', length=3, color='#B64342', labelcolor='#B64342')
+
+    h1, l1 = ax.get_legend_handles_labels()
+    h2, l2 = ax2.get_legend_handles_labels()
+    ax.legend(h1 + h2, l1 + l2, loc='lower left', bbox_to_anchor=(0, 1.015), ncols=3, fontsize=5.1, handlelength=1.0, columnspacing=0.65, borderaxespad=0)
 
     save_fig(fig, 'm10-agent-mcp-refinement')
 

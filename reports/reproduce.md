@@ -101,7 +101,7 @@ py -3.11 -m venv .venvs/sug-winrt
 
 ### 4.2 无音频输入 LLM 的 MCP 视觉精调实验（M10）
 
-M10 的三首代表曲目（`j08`、`j14`、`j18`）初轴与最终轴冻结预测保存在 [`results/M10/predictions/initial/`](../results/M10/predictions/initial/) 与 [`results/M10/predictions/final/`](../results/M10/predictions/final/)，执行 Agent 使用的完整脱敏提示词模板归档于 [`configs/agent-mcp-prompt.md`](../configs/agent-mcp-prompt.md)（移除了宿主机本地绝对路径，保留完整的四步 MCP 工作流、义训核对要求与三项人工定界规则）。
+M10 的 16 首曲目（15 首日语非叠唱 + `jy01` 日粤混唱，含 `j15`/`j16`/`j19` 背景人声行）初轴与最终轴冻结预测保存在 [`results/M10/predictions/initial/`](../results/M10/predictions/initial/) 与 [`results/M10/predictions/final/`](../results/M10/predictions/final/)，执行 Agent 使用的完整脱敏提示词模板归档于 [`configs/agent-mcp-prompt.md`](../configs/agent-mcp-prompt.md)（移除了宿主机本地绝对路径，保留完整的四步 MCP 工作流、义训核对要求、背景人声处理及三项人工定界规则）。
 
 - **直接复算评分**：运行 `.venvs/research/bin/python scripts/score.py` 会自动读取 `results/M10/predictions/` 下的冻结预测，对照人工参考 TTML 与 [`configs/phase2.json`](../configs/phase2.json) 中的 `M10` 配置重算 `results/M10/summary.json`、`results/M10/metrics.csv` 及 `results/M10/items.json.gz`。
 - **在隔离 Studio 实例中复现 Agent 精调流程**：

@@ -218,22 +218,58 @@ def m8(config,refs):
 
 
 def m10(config,refs):
+    import xml.etree.ElementTree as ET
     from comparison.score_reading import kana,unique_boundaries,segment,row as rrow
     from comparison import score as legacy
-    songs=config['modules']['M10']['songs']
-    stages=config['modules']['M10']['stages']
-    eng_cfg=config['modules']['M10'].get('english_syllable_mappings',{})
+    m10_cfg=config['modules']['M10']
+    songs=m10_cfg['songs']
+    ja_songs=m10_cfg.get('japanese_songs',[s for s in songs if s!='jy01'])
+    bg_songs=m10_cfg.get('background_songs',['j15','j16','j19'])
+    stages=m10_cfg['stages']
+    eng_cfg=m10_cfg.get('english_syllable_mappings',{})
+    def parse_ts(val):
+        if not val:return None
+        parts=val.split(':')
+        if len(parts)==2:return int(parts[0])*60+float(parts[1])
+        if len(parts)==3:return int(parts[0])*3600+int(parts[1])*60+float(parts[2])
+        return float(val)
+    def parse_bg_refs(sid):
+        NS={'ttml':'http://www.w3.org/ns/ttml','ttm':'http://www.w3.org/ns/ttml#metadata','tts':'http://www.w3.org/ns/ttml#styling'}
+        tree=ET.parse(ROOT/refs[sid]['ttml'])
+        out=[]
+        for li,bg in enumerate(tree.findall('.//ttml:span[@ttm:role="x-bg"]',NS),1):
+            leaves=[]
+            for ch in bg:
+                if ch.attrib.get('{http://www.w3.org/ns/ttml#styling}ruby')=='container':
+                    for tc in ch:
+                        if tc.attrib.get('{http://www.w3.org/ns/ttml#styling}ruby')=='textContainer':
+                            for rt in tc:
+                                t=''.join(rt.itertext()).strip()
+                                if t and any(c.isalnum() for c in t):
+                                    leaves.append({'text':t,'start':parse_ts(rt.attrib.get('begin')),'end':parse_ts(rt.attrib.get('end'))})
+                else:
+                    t=''.join(ch.itertext()).strip()
+                    clean=''.join(c for c in t if c.isalnum())
+                    if clean:
+                        leaves.append({'text':clean,'start':parse_ts(ch.attrib.get('begin')),'end':parse_ts(ch.attrib.get('end'))})
+            out.append({'index':li,'text':''.join(bg.itertext()),'leaves':leaves})
+        return out
+    def to_parts(line_obj):
+        parts=[]
+        for word in line_obj['words']:
+            units=[rrow(u['reading'],u['begin_ms'],u['end_ms'],1000) for u in word.get('ruby_units',[])]
+            if not units and legacy.norm(word['text']):
+                units=[rrow(word['text'],word.get('begin_ms'),word.get('end_ms'),1000)]
+            parts.append(segment(word['text'],units,word['begin_ms']/1000 if word.get('begin_ms') is not None else None,word['end_ms']/1000 if word.get('end_ms') is not None else None))
+        return parts
     def load_stage(sid,stage):
-        data=read(ROOT/'results/M10/predictions'/stage/f'{sid}.json');lines=[]
-        for line in data['lines']:
-            parts=[]
-            for word in line['words']:
-                units=[rrow(u['reading'],u['begin_ms'],u['end_ms'],1000) for u in word.get('ruby_units',[])]
-                if not units and legacy.norm(word['text']):
-                    units=[rrow(word['text'],word.get('begin_ms'),word.get('end_ms'),1000)]
-                parts.append(segment(word['text'],units,word['begin_ms']/1000 if word.get('begin_ms') is not None else None,word['end_ms']/1000 if word.get('end_ms') is not None else None))
-            lines.append(parts)
-        return data,lines
+        data=read(ROOT/'results/M10/predictions'/stage/f'{sid}.json')
+        if sid=='j19':
+            main_raw=data['lines'][:50];bg_raw=data['lines'][50:]
+        else:
+            main_raw=[l for l in data['lines'] if not l.get('background_of')]
+            bg_raw=[l for l in data['lines'] if l.get('background_of')]
+        return data,[to_parts(l) for l in main_raw],[to_parts(l) for l in bg_raw]
     def score_song(sid,stage,pred_lines):
         song=refs[sid];eng_map={(e['line'],e['surface']):(e['reference'],e['prediction']) for e in eng_cfg.get(sid,[])}
         items=[]
@@ -241,12 +277,13 @@ def m10(config,refs):
             gold=legacy.positioned(line['words'],line['text']);parts=legacy.positioned(pred_lines[li],line['text'])
             edges=sorted({0,*[w['b'] for w in gold]} & {0,*[p['b'] for p in parts]})
             leaf_rows={}
+            line_lang=line.get('language','ja')
             for idx,u in enumerate(line['leaves']):
                 if not legacy.valid(u['start'],u['end']) or not any(c.isalnum() for c in u['text']):continue
                 pri=primary_reference_unit(line,u)
-                leaf_rows[u['id']]={'condition':stage,'song':sid,'line':line['index'],'unit':u['id'],'unit_index':idx,'text':u['text'],'start':u['start'],'end':u['end'],
+                leaf_rows[u['id']]={'condition':stage,'song':sid,'line':line['index'],'line_language':line_lang,'unit':u['id'],'unit_index':idx,'text':u['text'],'start':u['start'],'end':u['end'],
                     'pred_start':None,'pred_end':None,'ds':None,'de':None,'valid':False,'missing_reason':'reading_mapping',
-                    'primary_reading_unit':pri,'language':'ja' if pri else 'en','sokuon':kana(u['text'])=='っ','over1s_ref':(u['end']-u['start'])>1.0}
+                    'primary_reading_unit':pri,'language':line_lang if pri else 'en','sokuon':kana(u['text'])=='っ','over1s_ref':(u['end']-u['start'])>1.0}
             for left,right in zip(edges,edges[1:]):
                 gw=[w for w in gold if left<=w['a'] and w['b']<=right];pw=[p for p in parts if left<=p['a'] and p['b']<=right]
                 gids={w['id'] for w in gw};gu=[u for u in line['leaves'] if u['word_id'] in gids and u['id'] in leaf_rows]
@@ -280,15 +317,41 @@ def m10(config,refs):
                     out.update(pred_start=x,pred_end=y,valid=ok,ds=x-u['start'] if ok else None,de=y-u['end'] if ok else None,missing_reason=None if ok else 'invalid_time')
             items.extend(leaf_rows.values())
         return items
-    all_items=[];completion=[]
-    loaded={}
+    def score_bg(sid,stage,bg_pred_lines):
+        bg_refs=parse_bg_refs(sid);bg_items=[]
+        for li,(ref_bg,pred_parts) in enumerate(zip(bg_refs,bg_pred_lines,strict=True),1):
+            nu=[u for p in pred_parts for u in p['units']]
+            pu=[];pos=0
+            for u in nu:
+                rd=kana(u['text'])
+                if rd:pu.append({**u,'a':pos,'b':pos+len(rd)});pos+=len(rd)
+            ga=[];pos=0
+            for idx,u in enumerate(ref_bg['leaves']):
+                rd=kana(u['text'])
+                if rd:ga.append({**u,'id':f'{sid}:bg:{li}:{idx}','a':pos,'b':pos+len(rd),'normalized':rd});pos+=len(rd)
+            gs=''.join(u['normalized'] for u in ga);ps=''.join(kana(u['text']) for u in pu)
+            mapping=unique_boundaries(gs,ps) if gs and ps else {};pe={0,*[u['b'] for u in pu]}
+            for u in ga:
+                a,b=mapping.get(u['a']),mapping.get(u['b'])
+                x,y=(None,None);ok=False
+                if a is not None and b is not None and b>a and a in pe and b in pe:
+                    us=[p for p in pu if a<=p['a'] and p['b']<=b]
+                    if us and us[0]['a']==a and us[-1]['b']==b:
+                        x,y=legacy.envelope(us);ok=legacy.valid(x,y)
+                bg_items.append({'condition':stage,'song':sid,'line':li,'unit':u['id'],'text':u['text'],'start':u['start'],'end':u['end'],
+                    'pred_start':x,'pred_end':y,'valid':ok,'ds':x-u['start'] if ok else None,'de':y-u['end'] if ok else None})
+        return bg_items
+    all_items=[];bg_all_items=[];completion=[];loaded={}
     for stage in stages:
         for sid in songs:
-            data,lines=load_stage(sid,stage);loaded[stage,sid]=(data,lines)
+            data,lines,bg_lines=load_stage(sid,stage);loaded[stage,sid]=(data,lines,bg_lines)
             items=score_song(sid,stage,lines);all_items.extend(items)
-            completion.append({'condition':stage,'song':sid,'status':'ok','project_id':data.get('project_id'),'revision':data.get('revision'),'lines':len(lines),'units':len(items)})
+            if sid in bg_songs:
+                bg_all_items.extend(score_bg(sid,stage,bg_lines))
+            completion.append({'condition':stage,'song':sid,'status':'ok','project_id':data.get('project_id'),'revision':data.get('revision'),'lines':len(lines),'bg_lines':len(bg_lines),'units':len(items)})
     by_stage_unit={(r['condition'],r['song'],r['unit']):r for r in all_items}
-    metrics=[];subsets=[];changes=[]
+    by_bg_unit={(r['condition'],r['song'],r['unit']):r for r in bg_all_items}
+    metrics=[];changes=[]
     for sid in songs:
         init_rows=[r for r in all_items if r['condition']=='initial' and r['song']==sid]
         for r in init_rows:
@@ -299,9 +362,9 @@ def m10(config,refs):
                 changes.append({'song':sid,'line':r['line'],'unit':r['unit'],'text':r['text'],'language':r['language'],'start':r['start'],'end':r['end'],
                     'initial_start':r['pred_start'],'initial_end':r['pred_end'],'final_start':fin['pred_start'],'final_end':fin['pred_end'],
                     'initial_hit100':was,'final_hit100':now,'final_ds_ms':round(fin['ds']*1000,3) if fin['valid'] else None,'final_de_ms':round(fin['de']*1000,3) if fin['valid'] else None})
-    def add_metric(cond,sid,scope,rows):
+    def add_metric(cond,sid,scope,rows,ref_map=by_stage_unit):
         if not rows:return
-        base_rows=[by_stage_unit['initial',r['song'],r['unit']] for r in rows]
+        base_rows=[ref_map['initial',r['song'],r['unit']] for r in rows]
         fixed=broken=changed=0
         for b,c in zip(base_rows,rows):
             was=b['valid'] and max(abs(b['ds']),abs(b['de']))<=.100000001
@@ -310,25 +373,70 @@ def m10(config,refs):
             changed+=int((b['pred_start'],b['pred_end'])!=(c['pred_start'],c['pred_end']))
         metrics.append({'condition':cond,'song':sid,'scope':scope,'changed_units':changed,'fixed_count':fixed,'broken_count':broken,'net_gain':fixed-broken,**measure(rows)})
     for stage in stages:
-        for sid in ['ALL',*songs]:
-            sel=[r for r in all_items if r['condition']==stage and (sid=='ALL' or r['song']==sid)]
+        ja_sel=[r for r in all_items if r['condition']==stage and r['song'] in ja_songs]
+        add_metric(stage,'ALL','reading_units',[r for r in ja_sel if r['primary_reading_unit']])
+        add_metric(stage,'ALL','all_reading_units',ja_sel)
+        add_metric(stage,'ALL','sokuon',[r for r in ja_sel if r['sokuon']])
+        add_metric(stage,'ALL','reference_duration_over1s',[r for r in ja_sel if r['over1s_ref']])
+        for sid in songs:
+            sel=[r for r in all_items if r['condition']==stage and r['song']==sid]
             add_metric(stage,sid,'reading_units',[r for r in sel if r['primary_reading_unit']])
             add_metric(stage,sid,'all_reading_units',sel)
             if sid=='j18':
                 add_metric(stage,sid,'english_units',[r for r in sel if r['language']=='en'])
-            if sid=='j14':
-                add_metric(stage,sid,'sokuon',[r for r in sel if r['sokuon']])
-                add_metric(stage,sid,'reference_duration_over1s',[r for r in sel if r['over1s_ref']])
+            if sid=='jy01':
+                add_metric(stage,sid,'ja_segment',[r for r in sel if r['line_language']=='ja'])
+                add_metric(stage,sid,'yue_segment',[r for r in sel if r['line_language']=='yue'])
+            if sid in ja_songs:
+                sokuon_rows=[r for r in sel if r['sokuon']]
+                over1s_rows=[r for r in sel if r['over1s_ref']]
+                if sokuon_rows:add_metric(stage,sid,'sokuon',sokuon_rows)
+                if over1s_rows:add_metric(stage,sid,'reference_duration_over1s',over1s_rows)
+        add_metric(stage,'ALL_BG','background_lines',[r for r in bg_all_items if r['condition']==stage],by_bg_unit)
+        for sid in bg_songs:
+            add_metric(stage,sid,'background_lines',[r for r in bg_all_items if r['condition']==stage and r['song']==sid],by_bg_unit)
+    # jy01 common body spans vs M2 demucs-mms-fa
+    jy01_surface=[]
+    m2_items=read(ROOT/'results/M2/items.json.gz')
+    m2_jy01_surface=[r for r in m2_items if r['song']=='jy01' and r['condition']=='demucs-mms-fa']
+    from phase2_metrics import common_rows
+    jy01_pred_conds={stage:[legacy.positioned(p,l['text']) for p,l in zip(loaded[stage,'jy01'][1],refs['jy01']['lines'],strict=True)] for stage in stages}
+    jy01_common=common_rows(refs['jy01'],jy01_pred_conds)
+    jy01_lang={l['index']:l.get('language','ja') for l in refs['jy01']['lines']}
+    for cond_name,src_mod,rows in [('initial','M10',[r for r in jy01_common if r['condition']=='initial']),('final','M10',[r for r in jy01_common if r['condition']=='final']),('demucs-mms-fa','M2',m2_jy01_surface)]:
+        for sc,pred in [('all',lambda r:True),('ja',lambda r:jy01_lang[r['line']]=='ja'),('yue',lambda r:jy01_lang[r['line']]=='yue')]:
+            sel=[r for r in rows if pred(r)]
+            if sel:jy01_surface.append({'source_module':src_mod,'condition':cond_name,'song':'jy01','scope':sc,**measure(sel)})
     baselines=[]
     m1_items=read(ROOT/'results/M1/reading-items.json.gz')
+    m1_all_conds=sorted({r['condition'] for r in m1_items})
     for cond in ('G3-studio-bs-nextfire','G3-studio-demucs-nextfire','G3-studio-demucs-mms_fa-smart','G1-studio-bs-nextfire','G2-studio-demucs-mms_fa-smart'):
-        for sid in ['ALL',*songs]:
-            sel=[r for r in m1_items if r['condition']==cond and r['primary_reading_unit'] and (r['song'] in songs if sid=='ALL' else r['song']==sid)]
+        for sid in ['ALL',*ja_songs]:
+            sel=[r for r in m1_items if r['condition']==cond and r['primary_reading_unit'] and (r['song'] in ja_songs if sid=='ALL' else r['song']==sid)]
             if sel:baselines.append({'source_module':'M1','condition':cond,'song':sid,'scope':'reading_units',**measure(sel)})
+    for sid in ja_songs:
+        best_m1=max((measure([r for r in m1_items if r['condition']==c and r['primary_reading_unit'] and r['song']==sid])|{'condition':c} for c in m1_all_conds if any(r['condition']==c and r['song']==sid for r in m1_items)),key=lambda d:d['hit100_pct'])
+        baselines.append({'source_module':'M1','best_route':best_m1['condition'],'condition':'M1_per_song_best','song':sid,'scope':'reading_units',**{k:v for k,v in best_m1.items() if k!='condition'}})
+    m6_items=read(ROOT/'results/M6/reading-items.json.gz')
+    for cond in ('bs-nextfire-core','bs-mms-fa-smart','demucs-mms-fa-smart'):
+        for sid in ['ALL',*ja_songs]:
+            sel=[r for r in m6_items if r['condition']==cond and r['primary_reading_unit'] and (r['song'] in ja_songs if sid=='ALL' else r['song']==sid)]
+            if sel:baselines.append({'source_module':'M6','condition':cond,'song':sid,'scope':'reading_units',**measure(sel)})
     m8_items=read(ROOT/'results/M8/items.json.gz')
-    for trig in ('combined_40ms','same_vowel_imbalance'):
+    for trig in ('combined_40ms','same_vowel_imbalance','oracle_top_k'):
         for strat in ('nextfire_baseline','mms_fa_local','mms_fa_global_swap'):
-            for sid in ['ALL',*songs]:
-                sel=[r for r in m8_items if r.get('separator')=='bs' and r['trigger']==trig and r['strategy']==strat and (r['song'] in songs if sid=='ALL' else r['song']==sid)]
+            for sid in ['ALL',*ja_songs]:
+                sel=[r for r in m8_items if r.get('separator')=='bs' and r['trigger']==trig and r['strategy']==strat and (r['song'] in ja_songs if sid=='ALL' else r['song']==sid)]
                 if sel:baselines.append({'source_module':'M8','condition':f'bs-{trig}-{strat}','song':sid,'scope':'reading_units',**measure(sel)})
-    publish('M10',{'metrics':metrics,'baselines':baselines,'changed_units':changes,'completion':completion,'reading_policy':'Fixed human reading units on common body spans; Japanese primary reading units (n=1,130 across j08/j14/j18) and all reading units including j18 English syllables (n=1,141). No timestamp interpolation.'},metrics,all_items)
+    m8_combos=sorted({(r.get('separator'),r['trigger'],r['strategy']) for r in m8_items})
+    for sid in ja_songs:
+        best_m8=max((measure([r for r in m8_items if (r.get('separator'),r['trigger'],r['strategy'])==c and r['song']==sid])|{'condition':f'{c[0]}-{c[1]}-{c[2]}'} for c in m8_combos),key=lambda d:d['hit100_pct'])
+        baselines.append({'source_module':'M8','best_route':best_m8['condition'],'condition':'M8_per_song_best','song':sid,'scope':'reading_units',**{k:v for k,v in best_m8.items() if k!='condition'}})
+    m2_reading=read(ROOT/'results/M2/reading-items.json.gz')
+    for cond in ('demucs-mms-fa','bs-mms-fa','demucs-nextfire','bs-nextfire'):
+        sel=[r for r in m2_reading if r['song']=='jy01' and r['condition']==cond]
+        if sel:
+            baselines.append({'source_module':'M2','condition':cond,'song':'jy01','scope':'reading_units',**measure(sel)})
+            baselines.append({'source_module':'M2','condition':cond,'song':'jy01','scope':'ja_segment',**measure([r for r in sel if r['line']<=10])})
+            baselines.append({'source_module':'M2','condition':cond,'song':'jy01','scope':'yue_segment',**measure([r for r in sel if r['line']>=11])})
+    publish('M10',{'metrics':metrics,'baselines':baselines,'jy01_surface':jy01_surface,'changed_units':changes,'completion':completion,'reading_policy':'Fixed human reading units on common body spans; 15 Japanese non-overlap primary reading units (n=6,500), mixed ja/yue jy01 (n=251), and 3-song background lines (6 lines, n=32). No timestamp interpolation.'},metrics,all_items)

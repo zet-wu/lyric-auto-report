@@ -52,7 +52,7 @@
       "duration": 255.04,
       "sample_rate": 44100,
       "lines": 42,
-      "reference_units": 398,
+      "reference_units": 397,
       "has_overlap": false
     },
     {
@@ -1620,9 +1620,22 @@
       "summary": "results/M10/summary.json",
       "metrics": "results/M10/metrics.csv",
       "songs": [
+        "j01",
+        "j02",
+        "j04",
+        "j05",
         "j08",
+        "j09",
+        "j10",
+        "j11",
+        "j13",
         "j14",
-        "j18"
+        "j15",
+        "j16",
+        "j18",
+        "j19",
+        "j20",
+        "jy01"
       ],
       "fields": {
         "n": "Reference scoring population, retaining missing predictions",
